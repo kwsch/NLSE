@@ -33,6 +33,8 @@
             this.L_Info = new System.Windows.Forms.Label();
             this.B_Save = new System.Windows.Forms.Button();
             this.B_Cancel = new System.Windows.Forms.Button();
+            this.B_Import = new System.Windows.Forms.Button();
+            this.B_Export = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,11 +78,35 @@
             this.B_Cancel.UseVisualStyleBackColor = true;
             this.B_Cancel.Click += new System.EventHandler(this.B_Cancel_Click);
             // 
+            // B_Import
+            // 
+            this.B_Import.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_Import.Location = new System.Drawing.Point(12, 198);
+            this.B_Import.Name = "B_Import";
+            this.B_Import.Size = new System.Drawing.Size(75, 23);
+            this.B_Import.TabIndex = 4;
+            this.B_Import.Text = "Import RAM";
+            this.B_Import.UseVisualStyleBackColor = true;
+            this.B_Import.Click += new System.EventHandler(this.B_Import_Click);
+            // 
+            // B_Export
+            // 
+            this.B_Export.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_Export.Location = new System.Drawing.Point(12, 227);
+            this.B_Export.Name = "B_Export";
+            this.B_Export.Size = new System.Drawing.Size(75, 23);
+            this.B_Export.TabIndex = 5;
+            this.B_Export.Text = "Export RAM";
+            this.B_Export.UseVisualStyleBackColor = true;
+            this.B_Export.Click += new System.EventHandler(this.B_Export_Click);
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.B_Export);
+            this.Controls.Add(this.B_Import);
             this.Controls.Add(this.B_Cancel);
             this.Controls.Add(this.B_Save);
             this.Controls.Add(this.L_Info);
@@ -103,5 +129,7 @@
         private System.Windows.Forms.Label L_Info;
         private System.Windows.Forms.Button B_Save;
         private System.Windows.Forms.Button B_Cancel;
+        private System.Windows.Forms.Button B_Import;
+        private System.Windows.Forms.Button B_Export;
     }
 }

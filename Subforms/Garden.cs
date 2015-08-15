@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace NLSE
@@ -23,6 +24,44 @@ namespace NLSE
         private void B_Cancel_Click(object sender, EventArgs e)
         {
             Close();
+        }
+        private void B_Import_Click(object sender, EventArgs e)
+        {
+            var ofd = new OpenFileDialog
+            {
+                Filter = "RAM Dump|*.bin"
+            };
+            if (ofd.ShowDialog() != DialogResult.OK)
+                return;
+
+            var len = new FileInfo(ofd.FileName).Length;
+            if (new FileInfo(ofd.FileName).Length != 0x80000)
+            {
+                Util.Error(String.Format(
+                    "Data lengths do not match.{0}" +
+                    "Expected: 0x{1}{0}" +
+                    "Received: 0x{2}",
+                    Environment.NewLine, 0x80000.ToString("X5"), len.ToString("X5")));
+                return;
+            }
+
+            byte[] data = File.ReadAllBytes(ofd.FileName);
+            Array.Copy(data, 0, Save.Data, 0x80, Save.Data.Length - 0x80);
+        }
+        private void B_Export_Click(object sender, EventArgs e)
+        {
+            saveData();
+            var sfd = new SaveFileDialog
+            {
+                Filter = "RAM Dump|*.bin"
+            };
+            if (sfd.ShowDialog() != DialogResult.OK)
+                return;
+
+            byte[] RAM = Save.Data.Skip(0x80).ToArray();
+            Array.Resize(ref RAM, 0x80000);
+
+            File.WriteAllBytes(sfd.FileName, RAM);
         }
 
         // Garden Save Editing
@@ -71,6 +110,5 @@ namespace NLSE
             Array.Copy(BitConverter.GetBytes(0x8CF95678), 0, Save.Data, offset, 4);
             Array.Copy(BitConverter.GetBytes(0x0D118636), 0, Save.Data, offset, 4);
         }
-
     }
 }
