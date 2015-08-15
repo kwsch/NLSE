@@ -22,9 +22,9 @@ namespace NLSE
             if (Length != Inject.Length)
                 throw new Exception(String.Format(
                     "Data lengths do not match.{0}" +
-                    "Expected:{1}{0}" +
-                    "Received:{2}", 
-                    Environment.NewLine, Length, Inject.Length));
+                    "Expected: 0x{1}{0}" +
+                    "Received: 0x{2}",
+                    Environment.NewLine, Length.ToString("X5"), Inject.Length.ToString("X5")));
             Array.Copy(Save, Offset, Inject, 0, Length);
         }
 
@@ -37,9 +37,9 @@ namespace NLSE
             if (Length > s.Length*2)
                 throw new Exception(String.Format(
                     "String byte lengths do not match.{0}" +
-                    "Expected:{1}{0}" +
-                    "Received:{2}",
-                    Environment.NewLine, Length, s.Length));
+                    "Expected: 0x{1}{0}" +
+                    "Received: 0x{2}",
+                    Environment.NewLine, Length.ToString("X5"), s.Length.ToString("X5")));
             byte[] newARR = Encoding.Unicode.GetBytes(s.PadRight(Length/2));
             Array.Copy(newARR, 0, Save, 0, Length);
         }
