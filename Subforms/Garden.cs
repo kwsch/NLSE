@@ -330,16 +330,26 @@ namespace NLSE
 
             return ctr;
         }
+
+        private const int mapScale = 2;
         private void mouseTown(object sender, MouseEventArgs e)
         {
             int acre = Array.IndexOf(TownAcres, sender as PictureBox);
             int baseX = acre % 7;
             int baseY = acre / 7;
 
-            int X = baseX * 16 + e.X / 4;
-            int Y = baseY * 16 + e.Y / 4;
+            int X = baseX * 16 + e.X / (4 * mapScale);
+            int Y = baseY * 16 + e.Y / (4 * mapScale);
 
-            L_TownCoord.Text = String.Format("X: {0}{2}Y: {1}", X, Y, Environment.NewLine);
+            // Get Base Acre
+            int zX = (X - 16)/16;
+            int zY = (Y - 16)/16;
+            int zAcre = zX + zY*5;
+            int index = zAcre * 0x100 + (X%16) + (Y%16) * 0x10;
+
+            Item item = TownItems[index];
+
+            L_TownCoord.Text = String.Format("X: {1}{0}Y: {2}{0}Item: {3}", Environment.NewLine, X, Y, item.ID.ToString("X4"));
         }
 
         private void mouseIsland(object sender, MouseEventArgs e)
@@ -348,16 +358,23 @@ namespace NLSE
             int baseX = acre % 4;
             int baseY = acre / 4;
 
-            int X = baseX * 16 + e.X / 4;
-            int Y = baseY * 16 + e.Y / 4;
+            int X = baseX * 16 + e.X / (4 * mapScale);
+            int Y = baseY * 16 + e.Y / (4 * mapScale);
 
-            L_IslandCoord.Text = String.Format("X: {0}{2}Y: {1}", X, Y, Environment.NewLine);
+            // Get Base Acre
+            int zX = (X - 16) / 16;
+            int zY = (Y - 16) / 16;
+            int zAcre = zX + zY * 2;
+            int index = zAcre * 0x100 + (X % 16) + (Y % 16) * 0x10;
+
+            Item item = IslandItems[index];
+
+            L_IslandCoord.Text = String.Format("X: {1}{0}Y: {2}{0}Item: {3}", Environment.NewLine, X, Y, item.ID.ToString("X4"));
         }
 
         private Image getAcreItemPic(int quadrant, Item[] items)
         {
-            const int scale = 1;
-            const int itemsize = 4*scale;
+            const int itemsize = 4;
             Bitmap b = new Bitmap(64, 64);
             for (int i = 0; i < 0x100; i++) // loop over acre data
             {
@@ -387,9 +404,10 @@ namespace NLSE
 
         private string getItemType(ushort ID)
         {
+            if (getIsWilted(ID)) return "wiltedflower";
+            if (getIsWeed(ID)) return "weed";
             if (ID==0x009d) return "pattern";
 	        if (ID>=0x9f && ID<=0xca) return "flower";
-	        if (getIsWilted(ID)) return "wiltedflower";
 	        if (ID>=0x20a7 && ID<=0x2112) return "money";
 	        if (ID>=0x98 && ID<=0x9c) return "rock";
 	        if (ID>=0x2126 && ID<=0x2239) return "song";
