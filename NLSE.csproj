@@ -32,6 +32,24 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -108,6 +126,555 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_197.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_198.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_199.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_188.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_189.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_193.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_194.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_195.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_182.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_183.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_184.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_185.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_186.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_187.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_166.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_157.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_158.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_159.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_148.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_153.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_145.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_147.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_133.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_136.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_137.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_138.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_139.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_127.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_125.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_116.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_117.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_119.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_108.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_104.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_105.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_95.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_97.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_98.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_69.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_203.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_196.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
