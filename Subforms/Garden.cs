@@ -16,7 +16,7 @@ namespace NLSE
         private Player[] Players;
         private Building[] Buildings;
         private Villager[] Villagers;
-        private uint[] TownItems, IslandItems;
+        private Item[] TownItems, IslandItems;
 
         // Form Handling
         public Garden()
@@ -31,18 +31,19 @@ namespace NLSE
                 PB_acre03, PB_acre13, PB_acre23, PB_acre33, PB_acre43, PB_acre53, PB_acre63,
                 PB_acre04, PB_acre14, PB_acre24, PB_acre34, PB_acre44, PB_acre54, PB_acre64,
                 PB_acre05, PB_acre15, PB_acre25, PB_acre35, PB_acre45, PB_acre55, PB_acre65,
-            };
+            }; foreach (PictureBox p in TownAcres) p.MouseMove += mouseTown;
             IslandAcres = new[]
             {
                 PB_island00, PB_island10, PB_island20, PB_island30,
                 PB_island01, PB_island11, PB_island21, PB_island31,
                 PB_island02, PB_island12, PB_island22, PB_island32,
                 PB_island03, PB_island13, PB_island23, PB_island33,
-            };
+            }; foreach (PictureBox p in IslandAcres) p.MouseMove += mouseIsland;
             PlayerPics = new[]
             {
                 PB_JPEG0, PB_JPEG1, PB_JPEG2, PB_JPEG3
             };
+
             // Load
             loadData();
         }
@@ -212,6 +213,28 @@ namespace NLSE
                 return Data;
             }
         }
+        class Item
+        {
+            public byte Flag1, Flag2;
+            public ushort ID;
+            public Item(byte[] data)
+            {
+                ID = BitConverter.ToUInt16(data, 0);
+                Flag1 = data[2];
+                Flag2 = data[3];
+            }
+            public byte[] Write()
+            {
+                using (var ms = new MemoryStream())
+                using (var bw = new BinaryWriter(ms))
+                {
+                    bw.Write(ID);
+                    bw.Write(Flag1);
+                    bw.Write(Flag2);
+                    return ms.ToArray();
+                }
+            }
+        }
 
         // Data Usage
         private void loadData()
@@ -230,10 +253,12 @@ namespace NLSE
                 Players[0].Name, Players[1].Name, Players[2].Name, Players[3].Name);
 
             // Load Maps
-            fillMap(Save.Data, 0x4DA84, TownAcres);
+            fillMapAcres(Save.Data, 0x4DA84, TownAcres);
             TownItems = getMapItems(Save.Data.Skip(0x4DAD8).Take(0x5000).ToArray());
-            fillMap(Save.Data, 0x6A488, IslandAcres);
+            fillTownItems(TownItems, TownAcres);
+            fillMapAcres(Save.Data, 0x6A488, IslandAcres);
             IslandItems = getMapItems(Save.Data.Skip(0x6A4A8).Take(0x1000).ToArray());
+            fillIslandItems(IslandItems, IslandAcres);
 
             // Load Buildings
             Buildings = new Building[58];
@@ -251,25 +276,50 @@ namespace NLSE
         }
 
         // Utility
-        private void fillMap(byte[] acreData, int offset, PictureBox[] Tiles)
+        private void fillMapAcres(byte[] acreData, int offset, PictureBox[] Tiles)
         {
             for (int i = 0; i < Tiles.Length; i++)
             {
                 int file = BitConverter.ToUInt16(acreData, offset + i*2);
-                Tiles[i].Image = (Image)Properties.Resources.ResourceManager.GetObject("acre_" + file);
+                Tiles[i].BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("acre_" + file);
+            }
+        }
+        private void fillTownItems(Item[] items, PictureBox[] Tiles)
+        {
+            int ctr = 0;
+            for (int i = 0; i < Tiles.Length; i++)
+            {
+                if (i%7 == 0 || i/7 == 0 || i%7 == 6 || i/36 > 0) continue;
+                Tiles[i].Image = getAcreItemPic(ctr, items);
+                ctr++;
+            }
+        }
+        private void fillIslandItems(Item[] items, PictureBox[] Tiles)
+        {
+            int ctr = 0;
+            for (int i = 0; i < Tiles.Length; i++)
+            {
+                if (i % 4 == 0 || i / 4 == 0 || i % 4 == 3 || i / 12 > 0) continue;
+                Tiles[i].Image = getAcreItemPic(ctr, items);
+                ctr++;
             }
         }
 
-        private uint[] getMapItems(byte[] itemData)
+        private Item[] getMapItems(byte[] itemData)
         {
-            var items = new uint[itemData.Length/4];
+            var items = new Item[itemData.Length / 4];
             for (int i = 0; i < items.Length; i++)
-                items[i] = BitConverter.ToUInt32(itemData, i*4);
+                items[i] = new Item(itemData.Skip(4*i).Take(4).ToArray());
             return items;
         }
         private bool getIsWeed(uint item)
         {
             return (item >= 0x7c && item <= 0x7f) || (item >= 0xcb && item <= 0xcd) || (item == 0xf8);
+        }
+
+        private bool getIsWilted(ushort item)
+        {
+            return (item >= 0xce && item <= 0xfb);
         }
         private int clearWeeds(ref uint[] items)
         {
@@ -279,6 +329,110 @@ namespace NLSE
                 { ctr++; items[i] = 0x7FFE; }
 
             return ctr;
+        }
+        private void mouseTown(object sender, MouseEventArgs e)
+        {
+            int acre = Array.IndexOf(TownAcres, sender as PictureBox);
+            int baseX = acre % 7;
+            int baseY = acre / 7;
+
+            int X = baseX * 16 + e.X / 4;
+            int Y = baseY * 16 + e.Y / 4;
+
+            L_TownCoord.Text = String.Format("X: {0}{2}Y: {1}", X, Y, Environment.NewLine);
+        }
+
+        private void mouseIsland(object sender, MouseEventArgs e)
+        {
+            int acre = Array.IndexOf(IslandAcres, sender as PictureBox);
+            int baseX = acre % 4;
+            int baseY = acre / 4;
+
+            int X = baseX * 16 + e.X / 4;
+            int Y = baseY * 16 + e.Y / 4;
+
+            L_IslandCoord.Text = String.Format("X: {0}{2}Y: {1}", X, Y, Environment.NewLine);
+        }
+
+        private Image getAcreItemPic(int quadrant, Item[] items)
+        {
+            const int scale = 1;
+            const int itemsize = 4*scale;
+            Bitmap b = new Bitmap(64, 64);
+            for (int i = 0; i < 0x100; i++) // loop over acre data
+            {
+                int X = i % 16;
+                int Y = i / 16;
+
+                int index = quadrant*0x100 + X + Y*0x10;
+
+                var item = items[index];
+                if (item.ID == 0x7FFE)
+                    continue; // skip this one.
+                
+                string itemType = getItemType(item.ID);
+                Color itemColor = getItemColor(itemType);
+                itemColor = Color.FromArgb(200, itemColor.R, itemColor.G, itemColor.B);
+
+                // Plop into image
+                for (int x = 0; x < itemsize*itemsize; x++)
+                {
+                    int rX = (X * itemsize + x % itemsize);
+                    int rY = (Y * itemsize + x / itemsize);
+                    b.SetPixel(rX, rY, itemColor);
+                }
+            }
+            return b;
+        }
+
+        private string getItemType(ushort ID)
+        {
+            if (ID==0x009d) return "pattern";
+	        if (ID>=0x9f && ID<=0xca) return "flower";
+	        if (getIsWilted(ID)) return "wiltedflower";
+	        if (ID>=0x20a7 && ID<=0x2112) return "money";
+	        if (ID>=0x98 && ID<=0x9c) return "rock";
+	        if (ID>=0x2126 && ID<=0x2239) return "song";
+	        if (ID>=0x223a && ID<=0x227a) return "paper";
+	        if (ID>=0x227b && ID<=0x2285) return "turnip";
+	        if (ID>=0x2286 && ID<=0x2341) return "catchable";
+	        if ((ID>=0x2342 && ID<=0x2445) || ID==0x2119 || ID==0x211a) return "wallfloor";
+	        if (ID>=0x2446 && ID<=0x28b1) return "clothes";
+	        if (ID>=0x28b2 && ID<=0x2934) return "gyroids";
+	        if (ID>=0x2e2c && ID<=0x2e2f) return "mannequin";
+	        if (ID>=0x2e30 && ID<=0x2e8f) return "art";
+	        if (ID>=0x2e90 && ID<=0x2ed2) return "fossil";
+	        if (ID>=0x303b && ID<=0x307a) return "tool";
+	        if (ID!=0x7ffe) return "furniture";
+
+            return "unknown";
+        }
+
+        private Color getItemColor(string itemType)
+        {
+            switch (itemType)
+            {
+                case "furniture": return ColorTranslator.FromHtml("#3cde30");
+                case "flower": return ColorTranslator.FromHtml("#ec67b8");
+                case "wiltedflower": return ColorTranslator.FromHtml("#ac2778");
+                case "pattern": return ColorTranslator.FromHtml("#877861");
+                case "money": return Color.Yellow;
+                case "rock": return Color.Black;
+                case "song": return ColorTranslator.FromHtml("#a4ecb8)");
+                case "paper": return ColorTranslator.FromHtml("#a4ece8");
+                case "turnip": return ColorTranslator.FromHtml("#bbac9d");
+                case "catchable": return ColorTranslator.FromHtml("#bae33e");
+                case "wallfloor": return ColorTranslator.FromHtml("#994040");
+                case "clothes": return ColorTranslator.FromHtml("#2874aa");
+                case "gyroids": return ColorTranslator.FromHtml("#d48324");
+                case "mannequin": return ColorTranslator.FromHtml("#2e5570");
+                case "art": return ColorTranslator.FromHtml("#cf540a");
+                case "fossil": return ColorTranslator.FromHtml("#868686");
+                case "tool": return ColorTranslator.FromHtml("#818181");
+                case "tree": return Color.White;
+                case "weed": return Color.Green;
+            }
+            return Color.Red;
         }
     }
 }

@@ -99,6 +99,8 @@
             this.PB_JPEG1 = new System.Windows.Forms.PictureBox();
             this.PB_JPEG2 = new System.Windows.Forms.PictureBox();
             this.PB_JPEG3 = new System.Windows.Forms.PictureBox();
+            this.L_TownCoord = new System.Windows.Forms.Label();
+            this.L_IslandCoord = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -246,6 +248,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.L_TownCoord);
             this.tabPage1.Controls.Add(this.PB_acre65);
             this.tabPage1.Controls.Add(this.PB_acre64);
             this.tabPage1.Controls.Add(this.PB_acre63);
@@ -678,6 +681,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.L_IslandCoord);
             this.tabPage2.Controls.Add(this.PB_island33);
             this.tabPage2.Controls.Add(this.PB_island32);
             this.tabPage2.Controls.Add(this.PB_island31);
@@ -890,6 +894,24 @@
             this.PB_JPEG3.TabIndex = 9;
             this.PB_JPEG3.TabStop = false;
             // 
+            // L_TownCoord
+            // 
+            this.L_TownCoord.AutoSize = true;
+            this.L_TownCoord.Location = new System.Drawing.Point(265, 6);
+            this.L_TownCoord.Name = "L_TownCoord";
+            this.L_TownCoord.Size = new System.Drawing.Size(63, 13);
+            this.L_TownCoord.TabIndex = 10;
+            this.L_TownCoord.Text = "Coordinates";
+            // 
+            // L_IslandCoord
+            // 
+            this.L_IslandCoord.AutoSize = true;
+            this.L_IslandCoord.Location = new System.Drawing.Point(265, 6);
+            this.L_IslandCoord.Name = "L_IslandCoord";
+            this.L_IslandCoord.Size = new System.Drawing.Size(63, 13);
+            this.L_IslandCoord.TabIndex = 38;
+            this.L_IslandCoord.Text = "Coordinates";
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -914,6 +936,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre65)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre64)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre63)).EndInit();
@@ -957,6 +980,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre00)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island31)).EndInit();
@@ -1053,5 +1077,7 @@
         private System.Windows.Forms.PictureBox PB_JPEG1;
         private System.Windows.Forms.PictureBox PB_JPEG2;
         private System.Windows.Forms.PictureBox PB_JPEG3;
+        private System.Windows.Forms.Label L_TownCoord;
+        private System.Windows.Forms.Label L_IslandCoord;
     }
 }
