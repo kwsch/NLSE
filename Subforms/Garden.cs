@@ -31,14 +31,24 @@ namespace NLSE
                 PB_acre03, PB_acre13, PB_acre23, PB_acre33, PB_acre43, PB_acre53, PB_acre63,
                 PB_acre04, PB_acre14, PB_acre24, PB_acre34, PB_acre44, PB_acre54, PB_acre64,
                 PB_acre05, PB_acre15, PB_acre25, PB_acre35, PB_acre45, PB_acre55, PB_acre65,
-            }; foreach (PictureBox p in TownAcres) p.MouseMove += mouseTown;
+            };
+            foreach (PictureBox p in TownAcres)
+            {
+                p.MouseMove += mouseTown;
+                p.MouseClick += clickTown;
+            }
             IslandAcres = new[]
             {
                 PB_island00, PB_island10, PB_island20, PB_island30,
                 PB_island01, PB_island11, PB_island21, PB_island31,
                 PB_island02, PB_island12, PB_island22, PB_island32,
                 PB_island03, PB_island13, PB_island23, PB_island33,
-            }; foreach (PictureBox p in IslandAcres) p.MouseMove += mouseIsland;
+            };
+            foreach (PictureBox p in IslandAcres)
+            {
+                p.MouseMove += mouseIsland;
+                p.MouseClick += clickIsland;
+            }
             PlayerPics = new[]
             {
                 PB_JPEG0, PB_JPEG1, PB_JPEG2, PB_JPEG3
@@ -316,7 +326,6 @@ namespace NLSE
         {
             return (item >= 0x7c && item <= 0x7f) || (item >= 0xcb && item <= 0xcd) || (item == 0xf8);
         }
-
         private bool getIsWilted(ushort item)
         {
             return (item >= 0xce && item <= 0xfb);
@@ -342,16 +351,12 @@ namespace NLSE
             int Y = baseY * 16 + e.Y / (4 * mapScale);
 
             // Get Base Acre
-            int zX = (X - 16)/16;
-            int zY = (Y - 16)/16;
-            int zAcre = zX + zY*5;
-            int index = zAcre * 0x100 + (X%16) + (Y%16) * 0x10;
 
+            int index = getItemIndex(X, Y, 5);
             Item item = TownItems[index];
 
             L_TownCoord.Text = String.Format("X: {1}{0}Y: {2}{0}Item: {3}", Environment.NewLine, X, Y, item.ID.ToString("X4"));
         }
-
         private void mouseIsland(object sender, MouseEventArgs e)
         {
             int acre = Array.IndexOf(IslandAcres, sender as PictureBox);
@@ -362,16 +367,68 @@ namespace NLSE
             int Y = baseY * 16 + e.Y / (4 * mapScale);
 
             // Get Base Acre
-            int zX = (X - 16) / 16;
-            int zY = (Y - 16) / 16;
-            int zAcre = zX + zY * 2;
-            int index = zAcre * 0x100 + (X % 16) + (Y % 16) * 0x10;
-
+            int index = getItemIndex(X, Y, 2);
             Item item = IslandItems[index];
 
             L_IslandCoord.Text = String.Format("X: {1}{0}Y: {2}{0}Item: {3}", Environment.NewLine, X, Y, item.ID.ToString("X4"));
         }
+        private void clickTown(object sender, MouseEventArgs e)
+        {
+            int acre = Array.IndexOf(TownAcres, sender as PictureBox);
+            int baseX = acre % 7;
+            int baseY = acre / 7;
 
+            int X = baseX * 16 + e.X / (4 * mapScale);
+            int Y = baseY * 16 + e.Y / (4 * mapScale);
+
+            // Get Base Acre
+            int index = getItemIndex(X, Y, 5);
+
+            if (e.Button == MouseButtons.Right) // Read
+                choiceTownItem = TownItems[index]; // replace this with updating the item view
+            else // Write
+            {
+                TownItems[index] = choiceTownItem;
+                int zX = (X - 16) / 16;
+                int zY = (Y - 16) / 16;
+                int zAcre = zX + zY * 5;
+                TownAcres[acre].Image = getAcreItemPic(zAcre, TownItems);
+            }
+        }
+        private void clickIsland(object sender, MouseEventArgs e)
+        {
+            int acre = Array.IndexOf(IslandAcres, sender as PictureBox);
+            int baseX = acre % 4;
+            int baseY = acre / 4;
+
+            int X = baseX * 16 + e.X / (4 * mapScale);
+            int Y = baseY * 16 + e.Y / (4 * mapScale);
+
+            // Get Base Acre
+            int index = getItemIndex(X, Y, 2);
+
+            if (e.Button == MouseButtons.Right) // Read
+                choiceIslandItem = IslandItems[index]; // replace this with updating the item view
+            else // Write
+            {
+                IslandItems[index] = choiceTownItem;
+                int zX = (X - 16) / 16;
+                int zY = (Y - 16) / 16;
+                int zAcre = zX + zY * 2;
+                IslandAcres[acre].Image = getAcreItemPic(zAcre, IslandItems);
+            }
+        }
+
+        private Item choiceTownItem;
+        private Item choiceIslandItem;
+        private int getItemIndex(int X, int Y, int width)
+        {
+            int zX = (X - 16) / 16;
+            int zY = (Y - 16) / 16;
+            int zAcre = zX + zY * width;
+            int index = zAcre * 0x100 + (X % 16) + (Y % 16) * 0x10;
+            return index;
+        }
         private Image getAcreItemPic(int quadrant, Item[] items)
         {
             const int itemsize = 4;
@@ -425,7 +482,6 @@ namespace NLSE
 
             return "unknown";
         }
-
         private Color getItemColor(string itemType)
         {
             switch (itemType)
