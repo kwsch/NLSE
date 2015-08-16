@@ -5,10 +5,10 @@ namespace NLSE
 {
     public partial class Exhibition : Form
     {
-        public Exhibition(byte[] data)
+        public Exhibition()
         {
             InitializeComponent();
-            Save = new ExhibitionData(data);
+            Save = new ExhibitionData(Main.SaveData);
 
             // Load
             loadData();
@@ -32,6 +32,10 @@ namespace NLSE
             {
                 Data = data;
             }
+            public byte[] Write()
+            {
+                return Data;
+            }
         }
         private void loadData()
         {
@@ -39,7 +43,7 @@ namespace NLSE
         }
         private void saveData()
         {
-
+            Main.SaveData = Save.Write();
         }
 
         //

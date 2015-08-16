@@ -5,10 +5,10 @@ namespace NLSE
 {
     public partial class Friend : Form
     {
-        public Friend(byte[] data)
+        public Friend()
         {
             InitializeComponent();
-            Save = new FriendData(data);
+            Save = new FriendData(Main.SaveData);
 
             // Load
             loadData();
@@ -32,6 +32,10 @@ namespace NLSE
             {
                 Data = data;
             }
+            public byte[] Write()
+            {
+                return Data;
+            }
         }
         private void loadData()
         {
@@ -39,7 +43,7 @@ namespace NLSE
         }
         private void saveData()
         {
-
+            Main.SaveData = Save.Write();
         }
 
         //

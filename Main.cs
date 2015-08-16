@@ -109,6 +109,7 @@ namespace NLSE
         }
 
         // Editing Windows
+        internal static byte[] SaveData;
         private void clickExhibition(object sender, EventArgs e)
         {
             string dataPath = Path.Combine(root, "exhibition.dat");
@@ -117,14 +118,14 @@ namespace NLSE
             // Load Data
             try
             {
-                byte[] data = File.ReadAllBytes(dataPath);
+                SaveData = File.ReadAllBytes(dataPath);
 
                 // Open Form
-                new Exhibition(data).ShowDialog();
+                new Exhibition().ShowDialog();
 
                 // Form closed, write data.
-                Verification.fixChecksums(ref data);
-                File.WriteAllBytes(dataPath, data);
+                Verification.fixChecksums(ref SaveData);
+                File.WriteAllBytes(dataPath, SaveData);
             }
             catch (Exception ex)
             {
@@ -140,14 +141,14 @@ namespace NLSE
             // Load Data
             try
             {
-                byte[] data = File.ReadAllBytes(dataPath);
+                SaveData = File.ReadAllBytes(dataPath);
 
                 // Open Form
-                new Garden(data).ShowDialog();
+                new Garden().ShowDialog();
 
                 // Form closed, write data.
-                Verification.fixChecksums(ref data);
-                File.WriteAllBytes(dataPath, data);
+                Verification.fixChecksums(ref SaveData);
+                File.WriteAllBytes(dataPath, SaveData);
             }
             catch (Exception ex)
             {
@@ -163,14 +164,14 @@ namespace NLSE
             // Load Data
             try
             {
-                byte[] data = File.ReadAllBytes(dataPath);
+                SaveData = File.ReadAllBytes(dataPath);
 
                 // Open Form
-                new Friend(data).ShowDialog();
+                new Friend().ShowDialog();
 
                 // Form closed, write data.
-                Verification.fixChecksums(ref data);
-                File.WriteAllBytes(dataPath, data);
+                Verification.fixChecksums(ref SaveData);
+                File.WriteAllBytes(dataPath, SaveData);
             }
             catch (Exception ex)
             {

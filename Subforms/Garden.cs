@@ -8,10 +8,10 @@ namespace NLSE
 {
     public partial class Garden : Form
     {
-        public Garden(byte[] data)
+        public Garden()
         {
             InitializeComponent();
-            Save = new GardenData(data);
+            Save = new GardenData(Main.SaveData);
 
             // Load
             loadData();
@@ -29,6 +29,7 @@ namespace NLSE
         {
             var ofd = new OpenFileDialog
             {
+                FileName = "acnlram.bin",
                 Filter = "RAM Dump|*.bin"
             };
             if (ofd.ShowDialog() != DialogResult.OK)
@@ -53,6 +54,7 @@ namespace NLSE
             saveData();
             var sfd = new SaveFileDialog
             {
+                FileName = "acnlram.bin",
                 Filter = "RAM Dump|*.bin"
             };
             if (sfd.ShowDialog() != DialogResult.OK)
@@ -82,6 +84,10 @@ namespace NLSE
             {
                 Data = data;
             }
+            public byte[] Write()
+            {
+                return Data;
+            }
         }
         private void loadData()
         {
@@ -92,23 +98,7 @@ namespace NLSE
         }
         private void saveData()
         {
-
-        }
-        
-        // Unused
-        private int getTownOffset()
-        {
-            return 0x84;
-        }
-
-        private void lt_bank()
-        {
-            int offset = getTownOffset();
-            const int BANK_OFFSET = 0x6B8C;
-
-            offset += BANK_OFFSET;
-            Array.Copy(BitConverter.GetBytes(0x8CF95678), 0, Save.Data, offset, 4);
-            Array.Copy(BitConverter.GetBytes(0x0D118636), 0, Save.Data, offset, 4);
+            Main.SaveData = Save.Write();
         }
     }
 }
