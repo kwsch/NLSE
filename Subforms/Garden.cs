@@ -10,19 +10,20 @@ namespace NLSE
     public partial class Garden : Form
     {
         // Form Variables
-        private PictureBox[] mapAcres;
-        private PictureBox[] islandAcres;
-        private PictureBox[] playerPics;
+        private PictureBox[] TownAcres;
+        private PictureBox[] IslandAcres;
+        private PictureBox[] PlayerPics;
         private Player[] Players;
         private Building[] Buildings;
         private Villager[] Villagers;
+        private uint[] TownItems, IslandItems;
 
         // Form Handling
         public Garden()
         {
             InitializeComponent();
             Save = new GardenData(Main.SaveData);
-            mapAcres = new[]
+            TownAcres = new[]
             {
                 PB_acre00, PB_acre10, PB_acre20, PB_acre30, PB_acre40, PB_acre50, PB_acre60,
                 PB_acre01, PB_acre11, PB_acre21, PB_acre31, PB_acre41, PB_acre51, PB_acre61,
@@ -31,16 +32,16 @@ namespace NLSE
                 PB_acre04, PB_acre14, PB_acre24, PB_acre34, PB_acre44, PB_acre54, PB_acre64,
                 PB_acre05, PB_acre15, PB_acre25, PB_acre35, PB_acre45, PB_acre55, PB_acre65,
             };
-            islandAcres = new[]
+            IslandAcres = new[]
             {
                 PB_island00, PB_island10, PB_island20, PB_island30,
                 PB_island01, PB_island11, PB_island21, PB_island31,
                 PB_island02, PB_island12, PB_island22, PB_island32,
                 PB_island03, PB_island13, PB_island23, PB_island33,
             };
-            playerPics = new[]
+            PlayerPics = new[]
             {
-                PB_JPEG1, PB_JPEG2, PB_JPEG3, PB_JPEG4
+                PB_JPEG0, PB_JPEG1, PB_JPEG2, PB_JPEG3
             };
             // Load
             loadData();
@@ -221,7 +222,7 @@ namespace NLSE
                 Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0x9F10).Take(0x9F10).ToArray());
 
             for (int i = 0; i < Players.Length; i++)
-                playerPics[i].Image = Players[i].JPEG;
+                PlayerPics[i].Image = Players[i].JPEG;
 
             string Town = Save.TownName.getString(Save.Data);
             L_Info.Text = String.Format("{1}{0}{0}Inhabitants:{0}{2}{0}{3}{0}{4}{0}{5}", Environment.NewLine, 
@@ -229,8 +230,10 @@ namespace NLSE
                 Players[0].Name, Players[1].Name, Players[2].Name, Players[3].Name);
 
             // Load Maps
-            fillMap(Save.Data, 0x4DA84, mapAcres);
-            fillMap(Save.Data, 0x6A488, islandAcres);
+            fillMap(Save.Data, 0x4DA84, TownAcres);
+            TownItems = getMapItems(Save.Data.Skip(0x4DAD8).Take(0x5000).ToArray());
+            fillMap(Save.Data, 0x6A488, IslandAcres);
+            IslandItems = getMapItems(Save.Data.Skip(0x6A4A8).Take(0x1000).ToArray());
 
             // Load Buildings
             Buildings = new Building[58];
@@ -255,6 +258,27 @@ namespace NLSE
                 int file = BitConverter.ToUInt16(acreData, offset + i*2);
                 Tiles[i].Image = (Image)Properties.Resources.ResourceManager.GetObject("acre_" + file);
             }
+        }
+
+        private uint[] getMapItems(byte[] itemData)
+        {
+            var items = new uint[itemData.Length/4];
+            for (int i = 0; i < items.Length; i++)
+                items[i] = BitConverter.ToUInt32(itemData, i*4);
+            return items;
+        }
+        private bool getIsWeed(uint item)
+        {
+            return (item >= 0x7c && item <= 0x7f) || (item >= 0xcb && item <= 0xcd) || (item == 0xf8);
+        }
+        private int clearWeeds(ref uint[] items)
+        {
+            int ctr = 0;
+            for (int i = 0; i < items.Length; i++)
+                if (getIsWeed(items[i]))
+                { ctr++; items[i] = 0x7FFE; }
+
+            return ctr;
         }
     }
 }
