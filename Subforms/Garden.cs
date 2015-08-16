@@ -388,6 +388,7 @@ namespace NLSE
                 choiceTownItem = TownItems[index]; // replace this with updating the item view
             else // Write
             {
+                if (choiceTownItem == null) return;
                 TownItems[index] = choiceTownItem;
                 int zX = (X - 16) / 16;
                 int zY = (Y - 16) / 16;
@@ -411,7 +412,8 @@ namespace NLSE
                 choiceIslandItem = IslandItems[index]; // replace this with updating the item view
             else // Write
             {
-                IslandItems[index] = choiceTownItem;
+                if (choiceIslandItem == null) return;
+                IslandItems[index] = choiceIslandItem;
                 int zX = (X - 16) / 16;
                 int zY = (Y - 16) / 16;
                 int zAcre = zX + zY * 2;
@@ -419,8 +421,8 @@ namespace NLSE
             }
         }
 
-        private Item choiceTownItem;
-        private Item choiceIslandItem;
+        private Item choiceTownItem = new Item(new byte[] {0xFE, 0x7F, 0, 0});
+        private Item choiceIslandItem = new Item(new byte[] {0xFE, 0x7F, 0, 0});
         private int getItemIndex(int X, int Y, int width)
         {
             int zX = (X - 16) / 16;
