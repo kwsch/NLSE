@@ -101,6 +101,8 @@
             this.PB_island02 = new System.Windows.Forms.PictureBox();
             this.PB_island01 = new System.Windows.Forms.PictureBox();
             this.PB_island00 = new System.Windows.Forms.PictureBox();
+            this.B_ClearWeeds = new System.Windows.Forms.Button();
+            this.B_WaterFlowers = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -249,6 +251,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.B_WaterFlowers);
+            this.tabPage1.Controls.Add(this.B_ClearWeeds);
             this.tabPage1.Controls.Add(this.PB_acre54);
             this.tabPage1.Controls.Add(this.PB_acre53);
             this.tabPage1.Controls.Add(this.PB_acre52);
@@ -961,6 +965,26 @@
             this.PB_island00.TabStop = false;
             this.PB_island00.Visible = false;
             // 
+            // B_ClearWeeds
+            // 
+            this.B_ClearWeeds.Location = new System.Drawing.Point(569, 4);
+            this.B_ClearWeeds.Name = "B_ClearWeeds";
+            this.B_ClearWeeds.Size = new System.Drawing.Size(75, 34);
+            this.B_ClearWeeds.TabIndex = 10;
+            this.B_ClearWeeds.Text = "Clear Weeds";
+            this.B_ClearWeeds.UseVisualStyleBackColor = true;
+            this.B_ClearWeeds.Click += new System.EventHandler(this.B_RemoveWeeds_Click);
+            // 
+            // B_WaterFlowers
+            // 
+            this.B_WaterFlowers.Location = new System.Drawing.Point(488, 4);
+            this.B_WaterFlowers.Name = "B_WaterFlowers";
+            this.B_WaterFlowers.Size = new System.Drawing.Size(75, 34);
+            this.B_WaterFlowers.TabIndex = 62;
+            this.B_WaterFlowers.Text = "Water Flowers";
+            this.B_WaterFlowers.UseVisualStyleBackColor = true;
+            this.B_WaterFlowers.Click += new System.EventHandler(this.B_WaterFlowers_Click);
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1128,5 +1152,7 @@
         private System.Windows.Forms.PictureBox PB_island02;
         private System.Windows.Forms.PictureBox PB_island01;
         private System.Windows.Forms.PictureBox PB_island00;
+        private System.Windows.Forms.Button B_WaterFlowers;
+        private System.Windows.Forms.Button B_ClearWeeds;
     }
 }

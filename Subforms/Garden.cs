@@ -330,13 +330,44 @@ namespace NLSE
         {
             return (item >= 0xce && item <= 0xfb);
         }
-        private int clearWeeds(ref uint[] items)
+
+        // Quick Cheats
+        private void B_WaterFlowers_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes != Util.Prompt(MessageBoxButtons.YesNo, "Water all flowers?"))
+                return;
+            int ctr = waterFlowers(ref TownItems);
+            fillTownItems(TownItems, TownAcres);
+            Util.Alert(String.Format("{0} flowers were watered!", ctr));
+        }
+        private void B_RemoveWeeds_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes != Util.Prompt(MessageBoxButtons.YesNo, "Clear all weeds?"))
+                return;
+            int ctr = clearWeeds(ref TownItems);
+            fillTownItems(TownItems, TownAcres);
+            Util.Alert(String.Format("{0} weeds were cleared!", ctr));
+        }
+        private int waterFlowers(ref Item[] items)
         {
             int ctr = 0;
-            for (int i = 0; i < items.Length; i++)
-                if (getIsWeed(items[i]))
-                { ctr++; items[i] = 0x7FFE; }
-
+            foreach (Item i in items.Where(t => getIsWilted(t.ID)))
+            {
+                ctr++;
+                i.Flag1 = 0x40;
+            }
+            return ctr;
+        }
+        private int clearWeeds(ref Item[] items)
+        {
+            int ctr = 0;
+            foreach (Item i in items.Where(t => getIsWeed(t.ID)))
+            {
+                ctr++;
+                i.ID = 0x7FFE;
+                i.Flag1 = 0;
+                i.Flag2 = 0;
+            }
             return ctr;
         }
 
