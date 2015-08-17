@@ -433,8 +433,8 @@ namespace NLSE
         }
         private Image getAcreItemPic(int quadrant, Item[] items)
         {
-            const int itemsize = 4;
-            Bitmap b = new Bitmap(64, 64);
+            const int itemsize = 4 * mapScale;
+            Bitmap b = new Bitmap(64 * mapScale, 64 * mapScale);
             for (int i = 0; i < 0x100; i++) // loop over acre data
             {
                 int X = i % 16;
@@ -458,9 +458,9 @@ namespace NLSE
                     b.SetPixel(rX, rY, itemColor);
                 }
             }
-            for (int i = 0; i < 64*64; i++) // slap on a grid
-                if (i%4 == 0 || (i/64)%4 == 0)
-                    b.SetPixel(i%64, i/64, Color.FromArgb(50, 0xFF, 0xFF, 0xFF));
+            for (int i = 0; i < b.Width * b.Height; i++) // slap on a grid
+                if (i % (itemsize) == 0 || (i / (16 * itemsize)) % (itemsize) == 0)
+                    b.SetPixel(i % (16 * itemsize), i / (16 * itemsize), Color.FromArgb(65, 0xFF, 0xFF, 0xFF));
             return b;
         }
 
