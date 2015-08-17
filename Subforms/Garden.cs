@@ -228,12 +228,16 @@ namespace NLSE
         class Item
         {
             public byte Flag1, Flag2;
+            public bool Buried, Watered;
             public ushort ID;
             public Item(byte[] data)
             {
                 ID = BitConverter.ToUInt16(data, 0);
                 Flag1 = data[2];
                 Flag2 = data[3];
+
+                Watered = Flag2 >> 6 == 1;
+                Buried = Flag2 >> 7 == 1;
             }
             public byte[] Write()
             {
@@ -242,6 +246,9 @@ namespace NLSE
                 {
                     bw.Write(ID);
                     bw.Write(Flag1);
+                    Flag2 = (byte)((Flag2 & 0x3F) 
+                        | (Watered ? 1 << 6 : 0) 
+                        | (Buried ? 1 << 7 : 0));
                     bw.Write(Flag2);
                     return ms.ToArray();
                 }
@@ -388,7 +395,7 @@ namespace NLSE
             foreach (Item i in items.Where(t => getIsWilted(t.ID)))
             {
                 ctr++;
-                i.Flag1 = 0x40;
+                i.Watered = true;
             }
             return ctr;
         }
@@ -522,10 +529,20 @@ namespace NLSE
                     int rY = (Y * itemsize + x / itemsize);
                     b.SetPixel(rX, rY, itemColor);
                 }
+                // Buried
+                if (item.Buried)
+                {
+                    for (int z = 2; z < itemsize - 1; z++)
+                    {
+                        b.SetPixel(X * itemsize + z, Y * itemsize + z, Color.Black);
+                        b.SetPixel(X * itemsize + itemsize - z, Y * itemsize + z, Color.Black);
+                    }
+                }
             }
             for (int i = 0; i < b.Width * b.Height; i++) // slap on a grid
                 if (i % (itemsize) == 0 || (i / (16 * itemsize)) % (itemsize) == 0)
                     b.SetPixel(i % (16 * itemsize), i / (16 * itemsize), Color.FromArgb(65, 0xFF, 0xFF, 0xFF));
+
             return b;
         }
 
