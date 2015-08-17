@@ -11,7 +11,9 @@ namespace NLSE
     {
         // Form Variables
         private PictureBox[] TownAcres;
+        private ushort[] TownAcreTiles;
         private PictureBox[] IslandAcres;
+        private ushort[] IslandAcreTiles;
         private PictureBox[] PlayerPics;
         private Player[] Players;
         private Building[] Buildings;
@@ -253,20 +255,22 @@ namespace NLSE
             Players = new Player[4];
             for (int i = 0; i < Players.Length; i++)
                 Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0x9F10).Take(0x9F10).ToArray());
-
             for (int i = 0; i < Players.Length; i++)
                 PlayerPics[i].Image = Players[i].JPEG;
 
-            string Town = Save.TownName.getString(Save.Data);
-            L_Info.Text = String.Format("{1}{0}{0}Inhabitants:{0}{2}{0}{3}{0}{4}{0}{5}", Environment.NewLine, 
-                Town, 
-                Players[0].Name, Players[1].Name, Players[2].Name, Players[3].Name);
-
-            // Load Maps
-            fillMapAcres(Save.Data, 0x4DA84, TownAcres);
+            // Load Town
+            TownAcreTiles = new ushort[TownAcres.Length];
+            for (int i = 0; i < TownAcreTiles.Length; i++)
+                TownAcreTiles[i] = BitConverter.ToUInt16(Save.Data, 0x4DA84 + i * 2);
+            fillMapAcres(TownAcreTiles, TownAcres);
             TownItems = getMapItems(Save.Data.Skip(0x4DAD8).Take(0x5000).ToArray());
             fillTownItems(TownItems, TownAcres);
-            fillMapAcres(Save.Data, 0x6A488, IslandAcres);
+
+            // Load Island
+            IslandAcreTiles = new ushort[IslandAcres.Length];
+            for (int i = 0; i < IslandAcreTiles.Length; i++)
+                IslandAcreTiles[i] = BitConverter.ToUInt16(Save.Data, 0x6A488 + i * 2);
+            fillMapAcres(IslandAcreTiles, IslandAcres);
             IslandItems = getMapItems(Save.Data.Skip(0x6A4A8).Take(0x1000).ToArray());
             fillIslandItems(IslandItems, IslandAcres);
 
@@ -279,20 +283,50 @@ namespace NLSE
             Villagers = new Villager[10];
             for (int i = 0; i < Villagers.Length; i++)
                 Villagers[i] = new Villager(Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
+
+            // Load Overall
+            string Town = Save.TownName.getString(Save.Data);
+            L_Info.Text = String.Format("{1}{0}{0}Inhabitants:{0}{2}{0}{3}{0}{4}{0}{5}", Environment.NewLine,
+                Town,
+                Players[0].Name, Players[1].Name, Players[2].Name, Players[3].Name);
         }
         private void saveData()
         {
+            // Write Players
+            for (int i = 0; i < Players.Length; i++)
+                Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0x9F10, 0x9F10);
+
+            // Write Town
+            for (int i = 0; i < TownAcreTiles.Length; i++) // Town Acres
+                Array.Copy(BitConverter.GetBytes(TownAcreTiles[i]), 0, Save.Data, 0x4DA84 + i * 2, 2);
+            for (int i = 0; i < TownItems.Length; i++) // Town Items
+                Array.Copy(TownItems[i].Write(), 0, Save.Data, 0x4DAD8 + i * 4, 4);
+
+            // Write Island
+            for (int i = 0; i < IslandAcreTiles.Length; i++) // Island Acres
+                Array.Copy(BitConverter.GetBytes(IslandAcreTiles[i]), 0, Save.Data, 0x6A488 + i * 2, 2);
+            for (int i = 0; i < IslandItems.Length; i++) // Island Items
+                Array.Copy(IslandItems[i].Write(), 0, Save.Data, 0x6A4A8 + i * 4, 4);
+
+            // Write Buildings
+            for (int i = 0; i < Buildings.Length; i++)
+                Array.Copy(Buildings[i].Write(), 0, Save.Data, 0x0495A8 + i * 4, 4);
+
+            // Write Villagers
+            for (int i = 0; i < Villagers.Length; i++)
+                Array.Copy(Villagers[i].Write(), 0, Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
+
+            // Write Overall
+
+            // Finish
             Main.SaveData = Save.Write();
         }
 
         // Utility
-        private void fillMapAcres(byte[] acreData, int offset, PictureBox[] Tiles)
+        private void fillMapAcres(ushort[] Acres, PictureBox[] Tiles)
         {
             for (int i = 0; i < Tiles.Length; i++)
-            {
-                int file = BitConverter.ToUInt16(acreData, offset + i*2);
-                Tiles[i].BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("acre_" + file);
-            }
+                Tiles[i].BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("acre_" + Acres[i]);
         }
         private void fillTownItems(Item[] items, PictureBox[] Tiles)
         {
