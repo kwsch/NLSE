@@ -458,6 +458,9 @@ namespace NLSE
                     b.SetPixel(rX, rY, itemColor);
                 }
             }
+            for (int i = 0; i < 64*64; i++) // slap on a grid
+                if (i%4 == 0 || (i/64)%4 == 0)
+                    b.SetPixel(i%64, i/64, Color.FromArgb(50, 0xFF, 0xFF, 0xFF));
             return b;
         }
 
