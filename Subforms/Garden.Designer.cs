@@ -90,12 +90,8 @@
             this.PB_island31 = new System.Windows.Forms.PictureBox();
             this.PB_island30 = new System.Windows.Forms.PictureBox();
             this.PB_island23 = new System.Windows.Forms.PictureBox();
-            this.PB_island22 = new System.Windows.Forms.PictureBox();
-            this.PB_island21 = new System.Windows.Forms.PictureBox();
             this.PB_island20 = new System.Windows.Forms.PictureBox();
             this.PB_island13 = new System.Windows.Forms.PictureBox();
-            this.PB_island12 = new System.Windows.Forms.PictureBox();
-            this.PB_island11 = new System.Windows.Forms.PictureBox();
             this.PB_island10 = new System.Windows.Forms.PictureBox();
             this.PB_island03 = new System.Windows.Forms.PictureBox();
             this.PB_island02 = new System.Windows.Forms.PictureBox();
@@ -103,6 +99,10 @@
             this.PB_island00 = new System.Windows.Forms.PictureBox();
             this.B_ClearWeeds = new System.Windows.Forms.Button();
             this.B_WaterFlowers = new System.Windows.Forms.Button();
+            this.PB_island22 = new System.Windows.Forms.PictureBox();
+            this.PB_island21 = new System.Windows.Forms.PictureBox();
+            this.PB_island12 = new System.Windows.Forms.PictureBox();
+            this.PB_island11 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -157,17 +157,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_island31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island03)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island00)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island11)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -535,17 +535,17 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.PB_island22);
+            this.tabPage2.Controls.Add(this.PB_island21);
+            this.tabPage2.Controls.Add(this.PB_island12);
+            this.tabPage2.Controls.Add(this.PB_island11);
             this.tabPage2.Controls.Add(this.PB_island33);
             this.tabPage2.Controls.Add(this.PB_island32);
             this.tabPage2.Controls.Add(this.PB_island31);
             this.tabPage2.Controls.Add(this.PB_island30);
             this.tabPage2.Controls.Add(this.PB_island23);
-            this.tabPage2.Controls.Add(this.PB_island22);
-            this.tabPage2.Controls.Add(this.PB_island21);
             this.tabPage2.Controls.Add(this.PB_island20);
             this.tabPage2.Controls.Add(this.PB_island13);
-            this.tabPage2.Controls.Add(this.PB_island12);
-            this.tabPage2.Controls.Add(this.PB_island11);
             this.tabPage2.Controls.Add(this.PB_island10);
             this.tabPage2.Controls.Add(this.PB_island03);
             this.tabPage2.Controls.Add(this.PB_island02);
@@ -608,7 +608,7 @@
             // PB_acre54
             // 
             this.PB_acre54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre54.Location = new System.Drawing.Point(516, 425);
+            this.PB_acre54.Location = new System.Drawing.Point(518, 428);
             this.PB_acre54.Name = "PB_acre54";
             this.PB_acre54.Size = new System.Drawing.Size(128, 128);
             this.PB_acre54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -618,7 +618,7 @@
             // PB_acre53
             // 
             this.PB_acre53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre53.Location = new System.Drawing.Point(516, 298);
+            this.PB_acre53.Location = new System.Drawing.Point(518, 300);
             this.PB_acre53.Name = "PB_acre53";
             this.PB_acre53.Size = new System.Drawing.Size(128, 128);
             this.PB_acre53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -628,7 +628,7 @@
             // PB_acre52
             // 
             this.PB_acre52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre52.Location = new System.Drawing.Point(516, 171);
+            this.PB_acre52.Location = new System.Drawing.Point(518, 172);
             this.PB_acre52.Name = "PB_acre52";
             this.PB_acre52.Size = new System.Drawing.Size(128, 128);
             this.PB_acre52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -638,7 +638,7 @@
             // PB_acre51
             // 
             this.PB_acre51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre51.Location = new System.Drawing.Point(516, 44);
+            this.PB_acre51.Location = new System.Drawing.Point(518, 44);
             this.PB_acre51.Name = "PB_acre51";
             this.PB_acre51.Size = new System.Drawing.Size(128, 128);
             this.PB_acre51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -648,7 +648,7 @@
             // PB_acre44
             // 
             this.PB_acre44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre44.Location = new System.Drawing.Point(389, 425);
+            this.PB_acre44.Location = new System.Drawing.Point(390, 428);
             this.PB_acre44.Name = "PB_acre44";
             this.PB_acre44.Size = new System.Drawing.Size(128, 128);
             this.PB_acre44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -658,7 +658,7 @@
             // PB_acre43
             // 
             this.PB_acre43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre43.Location = new System.Drawing.Point(389, 298);
+            this.PB_acre43.Location = new System.Drawing.Point(390, 300);
             this.PB_acre43.Name = "PB_acre43";
             this.PB_acre43.Size = new System.Drawing.Size(128, 128);
             this.PB_acre43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -668,7 +668,7 @@
             // PB_acre42
             // 
             this.PB_acre42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre42.Location = new System.Drawing.Point(389, 171);
+            this.PB_acre42.Location = new System.Drawing.Point(390, 172);
             this.PB_acre42.Name = "PB_acre42";
             this.PB_acre42.Size = new System.Drawing.Size(128, 128);
             this.PB_acre42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -678,7 +678,7 @@
             // PB_acre41
             // 
             this.PB_acre41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre41.Location = new System.Drawing.Point(389, 44);
+            this.PB_acre41.Location = new System.Drawing.Point(390, 44);
             this.PB_acre41.Name = "PB_acre41";
             this.PB_acre41.Size = new System.Drawing.Size(128, 128);
             this.PB_acre41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -688,7 +688,7 @@
             // PB_acre34
             // 
             this.PB_acre34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre34.Location = new System.Drawing.Point(262, 425);
+            this.PB_acre34.Location = new System.Drawing.Point(262, 428);
             this.PB_acre34.Name = "PB_acre34";
             this.PB_acre34.Size = new System.Drawing.Size(128, 128);
             this.PB_acre34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -698,7 +698,7 @@
             // PB_acre33
             // 
             this.PB_acre33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre33.Location = new System.Drawing.Point(262, 298);
+            this.PB_acre33.Location = new System.Drawing.Point(262, 300);
             this.PB_acre33.Name = "PB_acre33";
             this.PB_acre33.Size = new System.Drawing.Size(128, 128);
             this.PB_acre33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -708,7 +708,7 @@
             // PB_acre32
             // 
             this.PB_acre32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre32.Location = new System.Drawing.Point(262, 171);
+            this.PB_acre32.Location = new System.Drawing.Point(262, 172);
             this.PB_acre32.Name = "PB_acre32";
             this.PB_acre32.Size = new System.Drawing.Size(128, 128);
             this.PB_acre32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -728,7 +728,7 @@
             // PB_acre24
             // 
             this.PB_acre24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre24.Location = new System.Drawing.Point(135, 425);
+            this.PB_acre24.Location = new System.Drawing.Point(134, 428);
             this.PB_acre24.Name = "PB_acre24";
             this.PB_acre24.Size = new System.Drawing.Size(128, 128);
             this.PB_acre24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -738,7 +738,7 @@
             // PB_acre23
             // 
             this.PB_acre23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre23.Location = new System.Drawing.Point(135, 298);
+            this.PB_acre23.Location = new System.Drawing.Point(134, 300);
             this.PB_acre23.Name = "PB_acre23";
             this.PB_acre23.Size = new System.Drawing.Size(128, 128);
             this.PB_acre23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -748,7 +748,7 @@
             // PB_acre22
             // 
             this.PB_acre22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre22.Location = new System.Drawing.Point(135, 171);
+            this.PB_acre22.Location = new System.Drawing.Point(134, 172);
             this.PB_acre22.Name = "PB_acre22";
             this.PB_acre22.Size = new System.Drawing.Size(128, 128);
             this.PB_acre22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -758,7 +758,7 @@
             // PB_acre21
             // 
             this.PB_acre21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre21.Location = new System.Drawing.Point(135, 44);
+            this.PB_acre21.Location = new System.Drawing.Point(134, 44);
             this.PB_acre21.Name = "PB_acre21";
             this.PB_acre21.Size = new System.Drawing.Size(128, 128);
             this.PB_acre21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -768,7 +768,7 @@
             // PB_acre14
             // 
             this.PB_acre14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre14.Location = new System.Drawing.Point(8, 425);
+            this.PB_acre14.Location = new System.Drawing.Point(6, 428);
             this.PB_acre14.Name = "PB_acre14";
             this.PB_acre14.Size = new System.Drawing.Size(128, 128);
             this.PB_acre14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -778,7 +778,7 @@
             // PB_acre13
             // 
             this.PB_acre13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre13.Location = new System.Drawing.Point(8, 298);
+            this.PB_acre13.Location = new System.Drawing.Point(6, 300);
             this.PB_acre13.Name = "PB_acre13";
             this.PB_acre13.Size = new System.Drawing.Size(128, 128);
             this.PB_acre13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -788,7 +788,7 @@
             // PB_acre12
             // 
             this.PB_acre12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre12.Location = new System.Drawing.Point(8, 171);
+            this.PB_acre12.Location = new System.Drawing.Point(6, 172);
             this.PB_acre12.Name = "PB_acre12";
             this.PB_acre12.Size = new System.Drawing.Size(128, 128);
             this.PB_acre12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -798,7 +798,7 @@
             // PB_acre11
             // 
             this.PB_acre11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre11.Location = new System.Drawing.Point(8, 44);
+            this.PB_acre11.Location = new System.Drawing.Point(6, 44);
             this.PB_acre11.Name = "PB_acre11";
             this.PB_acre11.Size = new System.Drawing.Size(128, 128);
             this.PB_acre11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -855,26 +855,6 @@
             this.PB_island23.TabStop = false;
             this.PB_island23.Visible = false;
             // 
-            // PB_island22
-            // 
-            this.PB_island22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_island22.Location = new System.Drawing.Point(325, 280);
-            this.PB_island22.Name = "PB_island22";
-            this.PB_island22.Size = new System.Drawing.Size(128, 128);
-            this.PB_island22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_island22.TabIndex = 65;
-            this.PB_island22.TabStop = false;
-            // 
-            // PB_island21
-            // 
-            this.PB_island21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_island21.Location = new System.Drawing.Point(325, 153);
-            this.PB_island21.Name = "PB_island21";
-            this.PB_island21.Size = new System.Drawing.Size(128, 128);
-            this.PB_island21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_island21.TabIndex = 64;
-            this.PB_island21.TabStop = false;
-            // 
             // PB_island20
             // 
             this.PB_island20.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -894,26 +874,6 @@
             this.PB_island13.TabIndex = 62;
             this.PB_island13.TabStop = false;
             this.PB_island13.Visible = false;
-            // 
-            // PB_island12
-            // 
-            this.PB_island12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_island12.Location = new System.Drawing.Point(198, 280);
-            this.PB_island12.Name = "PB_island12";
-            this.PB_island12.Size = new System.Drawing.Size(128, 128);
-            this.PB_island12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_island12.TabIndex = 61;
-            this.PB_island12.TabStop = false;
-            // 
-            // PB_island11
-            // 
-            this.PB_island11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_island11.Location = new System.Drawing.Point(198, 153);
-            this.PB_island11.Name = "PB_island11";
-            this.PB_island11.Size = new System.Drawing.Size(128, 128);
-            this.PB_island11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_island11.TabIndex = 60;
-            this.PB_island11.TabStop = false;
             // 
             // PB_island10
             // 
@@ -984,6 +944,46 @@
             this.B_WaterFlowers.Text = "Water Flowers";
             this.B_WaterFlowers.UseVisualStyleBackColor = true;
             this.B_WaterFlowers.Click += new System.EventHandler(this.B_WaterFlowers_Click);
+            // 
+            // PB_island22
+            // 
+            this.PB_island22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_island22.Location = new System.Drawing.Point(326, 280);
+            this.PB_island22.Name = "PB_island22";
+            this.PB_island22.Size = new System.Drawing.Size(128, 128);
+            this.PB_island22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_island22.TabIndex = 74;
+            this.PB_island22.TabStop = false;
+            // 
+            // PB_island21
+            // 
+            this.PB_island21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_island21.Location = new System.Drawing.Point(326, 152);
+            this.PB_island21.Name = "PB_island21";
+            this.PB_island21.Size = new System.Drawing.Size(128, 128);
+            this.PB_island21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_island21.TabIndex = 73;
+            this.PB_island21.TabStop = false;
+            // 
+            // PB_island12
+            // 
+            this.PB_island12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_island12.Location = new System.Drawing.Point(198, 280);
+            this.PB_island12.Name = "PB_island12";
+            this.PB_island12.Size = new System.Drawing.Size(128, 128);
+            this.PB_island12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_island12.TabIndex = 72;
+            this.PB_island12.TabStop = false;
+            // 
+            // PB_island11
+            // 
+            this.PB_island11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_island11.Location = new System.Drawing.Point(198, 152);
+            this.PB_island11.Name = "PB_island11";
+            this.PB_island11.Size = new System.Drawing.Size(128, 128);
+            this.PB_island11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_island11.TabIndex = 71;
+            this.PB_island11.TabStop = false;
             // 
             // Garden
             // 
@@ -1062,17 +1062,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_island31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island03)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island02)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island00)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1141,12 +1141,8 @@
         private System.Windows.Forms.PictureBox PB_island31;
         private System.Windows.Forms.PictureBox PB_island30;
         private System.Windows.Forms.PictureBox PB_island23;
-        private System.Windows.Forms.PictureBox PB_island22;
-        private System.Windows.Forms.PictureBox PB_island21;
         private System.Windows.Forms.PictureBox PB_island20;
         private System.Windows.Forms.PictureBox PB_island13;
-        private System.Windows.Forms.PictureBox PB_island12;
-        private System.Windows.Forms.PictureBox PB_island11;
         private System.Windows.Forms.PictureBox PB_island10;
         private System.Windows.Forms.PictureBox PB_island03;
         private System.Windows.Forms.PictureBox PB_island02;
@@ -1154,5 +1150,9 @@
         private System.Windows.Forms.PictureBox PB_island00;
         private System.Windows.Forms.Button B_WaterFlowers;
         private System.Windows.Forms.Button B_ClearWeeds;
+        private System.Windows.Forms.PictureBox PB_island22;
+        private System.Windows.Forms.PictureBox PB_island21;
+        private System.Windows.Forms.PictureBox PB_island12;
+        private System.Windows.Forms.PictureBox PB_island11;
     }
 }
