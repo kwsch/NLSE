@@ -37,6 +37,28 @@
             this.B_Export = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.B_WaterFlowers = new System.Windows.Forms.Button();
+            this.B_ClearWeeds = new System.Windows.Forms.Button();
+            this.PB_acre54 = new System.Windows.Forms.PictureBox();
+            this.PB_acre53 = new System.Windows.Forms.PictureBox();
+            this.PB_acre52 = new System.Windows.Forms.PictureBox();
+            this.PB_acre51 = new System.Windows.Forms.PictureBox();
+            this.PB_acre44 = new System.Windows.Forms.PictureBox();
+            this.PB_acre43 = new System.Windows.Forms.PictureBox();
+            this.PB_acre42 = new System.Windows.Forms.PictureBox();
+            this.PB_acre41 = new System.Windows.Forms.PictureBox();
+            this.PB_acre34 = new System.Windows.Forms.PictureBox();
+            this.PB_acre33 = new System.Windows.Forms.PictureBox();
+            this.PB_acre32 = new System.Windows.Forms.PictureBox();
+            this.PB_acre31 = new System.Windows.Forms.PictureBox();
+            this.PB_acre24 = new System.Windows.Forms.PictureBox();
+            this.PB_acre23 = new System.Windows.Forms.PictureBox();
+            this.PB_acre22 = new System.Windows.Forms.PictureBox();
+            this.PB_acre21 = new System.Windows.Forms.PictureBox();
+            this.PB_acre14 = new System.Windows.Forms.PictureBox();
+            this.PB_acre13 = new System.Windows.Forms.PictureBox();
+            this.PB_acre12 = new System.Windows.Forms.PictureBox();
+            this.PB_acre11 = new System.Windows.Forms.PictureBox();
             this.L_TownCoord = new System.Windows.Forms.Label();
             this.PB_acre65 = new System.Windows.Forms.PictureBox();
             this.PB_acre64 = new System.Windows.Forms.PictureBox();
@@ -61,30 +83,10 @@
             this.PB_acre01 = new System.Windows.Forms.PictureBox();
             this.PB_acre00 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.L_IslandCoord = new System.Windows.Forms.Label();
-            this.PB_JPEG1 = new System.Windows.Forms.PictureBox();
-            this.PB_JPEG2 = new System.Windows.Forms.PictureBox();
-            this.PB_JPEG3 = new System.Windows.Forms.PictureBox();
-            this.PB_acre54 = new System.Windows.Forms.PictureBox();
-            this.PB_acre53 = new System.Windows.Forms.PictureBox();
-            this.PB_acre52 = new System.Windows.Forms.PictureBox();
-            this.PB_acre51 = new System.Windows.Forms.PictureBox();
-            this.PB_acre44 = new System.Windows.Forms.PictureBox();
-            this.PB_acre43 = new System.Windows.Forms.PictureBox();
-            this.PB_acre42 = new System.Windows.Forms.PictureBox();
-            this.PB_acre41 = new System.Windows.Forms.PictureBox();
-            this.PB_acre34 = new System.Windows.Forms.PictureBox();
-            this.PB_acre33 = new System.Windows.Forms.PictureBox();
-            this.PB_acre32 = new System.Windows.Forms.PictureBox();
-            this.PB_acre31 = new System.Windows.Forms.PictureBox();
-            this.PB_acre24 = new System.Windows.Forms.PictureBox();
-            this.PB_acre23 = new System.Windows.Forms.PictureBox();
-            this.PB_acre22 = new System.Windows.Forms.PictureBox();
-            this.PB_acre21 = new System.Windows.Forms.PictureBox();
-            this.PB_acre14 = new System.Windows.Forms.PictureBox();
-            this.PB_acre13 = new System.Windows.Forms.PictureBox();
-            this.PB_acre12 = new System.Windows.Forms.PictureBox();
-            this.PB_acre11 = new System.Windows.Forms.PictureBox();
+            this.PB_island22 = new System.Windows.Forms.PictureBox();
+            this.PB_island21 = new System.Windows.Forms.PictureBox();
+            this.PB_island12 = new System.Windows.Forms.PictureBox();
+            this.PB_island11 = new System.Windows.Forms.PictureBox();
             this.PB_island33 = new System.Windows.Forms.PictureBox();
             this.PB_island32 = new System.Windows.Forms.PictureBox();
             this.PB_island31 = new System.Windows.Forms.PictureBox();
@@ -97,24 +99,104 @@
             this.PB_island02 = new System.Windows.Forms.PictureBox();
             this.PB_island01 = new System.Windows.Forms.PictureBox();
             this.PB_island00 = new System.Windows.Forms.PictureBox();
-            this.B_ClearWeeds = new System.Windows.Forms.Button();
-            this.B_WaterFlowers = new System.Windows.Forms.Button();
-            this.PB_island22 = new System.Windows.Forms.PictureBox();
-            this.PB_island21 = new System.Windows.Forms.PictureBox();
-            this.PB_island12 = new System.Windows.Forms.PictureBox();
-            this.PB_island11 = new System.Windows.Forms.PictureBox();
+            this.L_IslandCoord = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.PB_P0Dresser1 = new System.Windows.Forms.PictureBox();
-            this.PB_P0Dresser2 = new System.Windows.Forms.PictureBox();
-            this.PB_P0Pocket = new System.Windows.Forms.PictureBox();
-            this.PB_P0Island = new System.Windows.Forms.PictureBox();
-            this.L_P0Pocket = new System.Windows.Forms.Label();
-            this.L_P0Dresser = new System.Windows.Forms.Label();
-            this.L_P0Island = new System.Windows.Forms.Label();
+            this.CB_P0Gender = new System.Windows.Forms.ComboBox();
+            this.L_P0Gender = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CB_P0Badge23 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CB_P0Badge22 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.CB_P0Badge21 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CB_P0Badge20 = new System.Windows.Forms.ComboBox();
+            this.L_P0HairStyle = new System.Windows.Forms.Label();
+            this.L_P0HairColor = new System.Windows.Forms.Label();
+            this.L_P0FaceShape = new System.Windows.Forms.Label();
+            this.L_P0EyeColor = new System.Windows.Forms.Label();
+            this.CB_P0SkinColor = new System.Windows.Forms.ComboBox();
+            this.CB_P0EyeColor = new System.Windows.Forms.ComboBox();
+            this.CB_P0FaceShape = new System.Windows.Forms.ComboBox();
+            this.CB_P0HairColor = new System.Windows.Forms.ComboBox();
+            this.L_P0SkinColor = new System.Windows.Forms.Label();
+            this.CB_P0HairStyle = new System.Windows.Forms.ComboBox();
+            this.TB_P0Name = new System.Windows.Forms.TextBox();
+            this.L_P0Badge19 = new System.Windows.Forms.Label();
+            this.L_P0Badge18 = new System.Windows.Forms.Label();
+            this.L_P0Badge17 = new System.Windows.Forms.Label();
+            this.L_P0Badge16 = new System.Windows.Forms.Label();
+            this.L_P0Badge15 = new System.Windows.Forms.Label();
+            this.L_P0Badge14 = new System.Windows.Forms.Label();
+            this.L_P0Badge13 = new System.Windows.Forms.Label();
+            this.L_P0Badge12 = new System.Windows.Forms.Label();
+            this.L_P0Badge11 = new System.Windows.Forms.Label();
+            this.L_P0Badge10 = new System.Windows.Forms.Label();
+            this.L_P0Badge09 = new System.Windows.Forms.Label();
+            this.L_P0Badge08 = new System.Windows.Forms.Label();
+            this.L_P0Badge07 = new System.Windows.Forms.Label();
+            this.L_P0Badge06 = new System.Windows.Forms.Label();
+            this.L_P0Badge05 = new System.Windows.Forms.Label();
+            this.L_P0Badge04 = new System.Windows.Forms.Label();
+            this.L_P0Badge03 = new System.Windows.Forms.Label();
+            this.L_P0Badge02 = new System.Windows.Forms.Label();
+            this.L_P0Badge01 = new System.Windows.Forms.Label();
+            this.L_P0Badge00 = new System.Windows.Forms.Label();
+            this.CB_P0Badge19 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge18 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge17 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge16 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge15 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge14 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge13 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge12 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge11 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge10 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge09 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge08 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge07 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge06 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge05 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge04 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge03 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge02 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge01 = new System.Windows.Forms.ComboBox();
+            this.CB_P0Badge00 = new System.Windows.Forms.ComboBox();
             this.PB_LPlayer0 = new System.Windows.Forms.PictureBox();
+            this.L_P0Island = new System.Windows.Forms.Label();
+            this.L_P0Pocket = new System.Windows.Forms.Label();
+            this.PB_P0Island = new System.Windows.Forms.PictureBox();
+            this.PB_P0Pocket = new System.Windows.Forms.PictureBox();
+            this.PB_P0Dresser2 = new System.Windows.Forms.PictureBox();
+            this.PB_P0Dresser1 = new System.Windows.Forms.PictureBox();
+            this.L_P0Dresser = new System.Windows.Forms.Label();
+            this.PB_JPEG1 = new System.Windows.Forms.PictureBox();
+            this.PB_JPEG2 = new System.Windows.Forms.PictureBox();
+            this.PB_JPEG3 = new System.Windows.Forms.PictureBox();
+            this.L_P0Name = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre65)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre64)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre63)).BeginInit();
@@ -138,29 +220,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre00)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre54)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island31)).BeginInit();
@@ -173,16 +236,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_island02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island00)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island11)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Pocket)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Island)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_LPlayer0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Island)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Pocket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -196,6 +258,7 @@
             this.PB_JPEG0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.PB_JPEG0.TabIndex = 0;
             this.PB_JPEG0.TabStop = false;
+            this.PB_JPEG0.Click += new System.EventHandler(this.clickPlayerPic);
             // 
             // L_Info
             // 
@@ -319,6 +382,226 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Map";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // B_WaterFlowers
+            // 
+            this.B_WaterFlowers.Location = new System.Drawing.Point(488, 4);
+            this.B_WaterFlowers.Name = "B_WaterFlowers";
+            this.B_WaterFlowers.Size = new System.Drawing.Size(75, 34);
+            this.B_WaterFlowers.TabIndex = 62;
+            this.B_WaterFlowers.Text = "Water Flowers";
+            this.B_WaterFlowers.UseVisualStyleBackColor = true;
+            this.B_WaterFlowers.Click += new System.EventHandler(this.B_WaterFlowers_Click);
+            // 
+            // B_ClearWeeds
+            // 
+            this.B_ClearWeeds.Location = new System.Drawing.Point(569, 4);
+            this.B_ClearWeeds.Name = "B_ClearWeeds";
+            this.B_ClearWeeds.Size = new System.Drawing.Size(75, 34);
+            this.B_ClearWeeds.TabIndex = 10;
+            this.B_ClearWeeds.Text = "Clear Weeds";
+            this.B_ClearWeeds.UseVisualStyleBackColor = true;
+            this.B_ClearWeeds.Click += new System.EventHandler(this.B_RemoveWeeds_Click);
+            // 
+            // PB_acre54
+            // 
+            this.PB_acre54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre54.Location = new System.Drawing.Point(518, 428);
+            this.PB_acre54.Name = "PB_acre54";
+            this.PB_acre54.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre54.TabIndex = 61;
+            this.PB_acre54.TabStop = false;
+            // 
+            // PB_acre53
+            // 
+            this.PB_acre53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre53.Location = new System.Drawing.Point(518, 300);
+            this.PB_acre53.Name = "PB_acre53";
+            this.PB_acre53.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre53.TabIndex = 60;
+            this.PB_acre53.TabStop = false;
+            // 
+            // PB_acre52
+            // 
+            this.PB_acre52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre52.Location = new System.Drawing.Point(518, 172);
+            this.PB_acre52.Name = "PB_acre52";
+            this.PB_acre52.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre52.TabIndex = 59;
+            this.PB_acre52.TabStop = false;
+            // 
+            // PB_acre51
+            // 
+            this.PB_acre51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre51.Location = new System.Drawing.Point(518, 44);
+            this.PB_acre51.Name = "PB_acre51";
+            this.PB_acre51.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre51.TabIndex = 58;
+            this.PB_acre51.TabStop = false;
+            // 
+            // PB_acre44
+            // 
+            this.PB_acre44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre44.Location = new System.Drawing.Point(390, 428);
+            this.PB_acre44.Name = "PB_acre44";
+            this.PB_acre44.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre44.TabIndex = 57;
+            this.PB_acre44.TabStop = false;
+            // 
+            // PB_acre43
+            // 
+            this.PB_acre43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre43.Location = new System.Drawing.Point(390, 300);
+            this.PB_acre43.Name = "PB_acre43";
+            this.PB_acre43.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre43.TabIndex = 56;
+            this.PB_acre43.TabStop = false;
+            // 
+            // PB_acre42
+            // 
+            this.PB_acre42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre42.Location = new System.Drawing.Point(390, 172);
+            this.PB_acre42.Name = "PB_acre42";
+            this.PB_acre42.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre42.TabIndex = 55;
+            this.PB_acre42.TabStop = false;
+            // 
+            // PB_acre41
+            // 
+            this.PB_acre41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre41.Location = new System.Drawing.Point(390, 44);
+            this.PB_acre41.Name = "PB_acre41";
+            this.PB_acre41.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre41.TabIndex = 54;
+            this.PB_acre41.TabStop = false;
+            // 
+            // PB_acre34
+            // 
+            this.PB_acre34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre34.Location = new System.Drawing.Point(262, 428);
+            this.PB_acre34.Name = "PB_acre34";
+            this.PB_acre34.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre34.TabIndex = 53;
+            this.PB_acre34.TabStop = false;
+            // 
+            // PB_acre33
+            // 
+            this.PB_acre33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre33.Location = new System.Drawing.Point(262, 300);
+            this.PB_acre33.Name = "PB_acre33";
+            this.PB_acre33.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre33.TabIndex = 52;
+            this.PB_acre33.TabStop = false;
+            // 
+            // PB_acre32
+            // 
+            this.PB_acre32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre32.Location = new System.Drawing.Point(262, 172);
+            this.PB_acre32.Name = "PB_acre32";
+            this.PB_acre32.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre32.TabIndex = 51;
+            this.PB_acre32.TabStop = false;
+            // 
+            // PB_acre31
+            // 
+            this.PB_acre31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre31.Location = new System.Drawing.Point(262, 44);
+            this.PB_acre31.Name = "PB_acre31";
+            this.PB_acre31.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre31.TabIndex = 50;
+            this.PB_acre31.TabStop = false;
+            // 
+            // PB_acre24
+            // 
+            this.PB_acre24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre24.Location = new System.Drawing.Point(134, 428);
+            this.PB_acre24.Name = "PB_acre24";
+            this.PB_acre24.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre24.TabIndex = 49;
+            this.PB_acre24.TabStop = false;
+            // 
+            // PB_acre23
+            // 
+            this.PB_acre23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre23.Location = new System.Drawing.Point(134, 300);
+            this.PB_acre23.Name = "PB_acre23";
+            this.PB_acre23.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre23.TabIndex = 48;
+            this.PB_acre23.TabStop = false;
+            // 
+            // PB_acre22
+            // 
+            this.PB_acre22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre22.Location = new System.Drawing.Point(134, 172);
+            this.PB_acre22.Name = "PB_acre22";
+            this.PB_acre22.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre22.TabIndex = 47;
+            this.PB_acre22.TabStop = false;
+            // 
+            // PB_acre21
+            // 
+            this.PB_acre21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre21.Location = new System.Drawing.Point(134, 44);
+            this.PB_acre21.Name = "PB_acre21";
+            this.PB_acre21.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre21.TabIndex = 46;
+            this.PB_acre21.TabStop = false;
+            // 
+            // PB_acre14
+            // 
+            this.PB_acre14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre14.Location = new System.Drawing.Point(6, 428);
+            this.PB_acre14.Name = "PB_acre14";
+            this.PB_acre14.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre14.TabIndex = 45;
+            this.PB_acre14.TabStop = false;
+            // 
+            // PB_acre13
+            // 
+            this.PB_acre13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre13.Location = new System.Drawing.Point(6, 300);
+            this.PB_acre13.Name = "PB_acre13";
+            this.PB_acre13.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre13.TabIndex = 44;
+            this.PB_acre13.TabStop = false;
+            // 
+            // PB_acre12
+            // 
+            this.PB_acre12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre12.Location = new System.Drawing.Point(6, 172);
+            this.PB_acre12.Name = "PB_acre12";
+            this.PB_acre12.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre12.TabIndex = 43;
+            this.PB_acre12.TabStop = false;
+            // 
+            // PB_acre11
+            // 
+            this.PB_acre11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_acre11.Location = new System.Drawing.Point(6, 44);
+            this.PB_acre11.Name = "PB_acre11";
+            this.PB_acre11.Size = new System.Drawing.Size(128, 128);
+            this.PB_acre11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_acre11.TabIndex = 42;
+            this.PB_acre11.TabStop = false;
             // 
             // L_TownCoord
             // 
@@ -576,250 +859,45 @@
             this.tabPage2.Text = "Island";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // L_IslandCoord
+            // PB_island22
             // 
-            this.L_IslandCoord.AutoSize = true;
-            this.L_IslandCoord.Location = new System.Drawing.Point(326, 5);
-            this.L_IslandCoord.Name = "L_IslandCoord";
-            this.L_IslandCoord.Size = new System.Drawing.Size(63, 13);
-            this.L_IslandCoord.TabIndex = 38;
-            this.L_IslandCoord.Text = "Coordinates";
+            this.PB_island22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_island22.Location = new System.Drawing.Point(326, 280);
+            this.PB_island22.Name = "PB_island22";
+            this.PB_island22.Size = new System.Drawing.Size(128, 128);
+            this.PB_island22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_island22.TabIndex = 74;
+            this.PB_island22.TabStop = false;
             // 
-            // PB_JPEG1
+            // PB_island21
             // 
-            this.PB_JPEG1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PB_JPEG1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PB_JPEG1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_JPEG1.Location = new System.Drawing.Point(196, 604);
-            this.PB_JPEG1.Name = "PB_JPEG1";
-            this.PB_JPEG1.Size = new System.Drawing.Size(66, 106);
-            this.PB_JPEG1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.PB_JPEG1.TabIndex = 7;
-            this.PB_JPEG1.TabStop = false;
+            this.PB_island21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_island21.Location = new System.Drawing.Point(326, 152);
+            this.PB_island21.Name = "PB_island21";
+            this.PB_island21.Size = new System.Drawing.Size(128, 128);
+            this.PB_island21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_island21.TabIndex = 73;
+            this.PB_island21.TabStop = false;
             // 
-            // PB_JPEG2
+            // PB_island12
             // 
-            this.PB_JPEG2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PB_JPEG2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PB_JPEG2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_JPEG2.Location = new System.Drawing.Point(261, 604);
-            this.PB_JPEG2.Name = "PB_JPEG2";
-            this.PB_JPEG2.Size = new System.Drawing.Size(66, 106);
-            this.PB_JPEG2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.PB_JPEG2.TabIndex = 8;
-            this.PB_JPEG2.TabStop = false;
+            this.PB_island12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_island12.Location = new System.Drawing.Point(198, 280);
+            this.PB_island12.Name = "PB_island12";
+            this.PB_island12.Size = new System.Drawing.Size(128, 128);
+            this.PB_island12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_island12.TabIndex = 72;
+            this.PB_island12.TabStop = false;
             // 
-            // PB_JPEG3
+            // PB_island11
             // 
-            this.PB_JPEG3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PB_JPEG3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PB_JPEG3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_JPEG3.Location = new System.Drawing.Point(326, 604);
-            this.PB_JPEG3.Name = "PB_JPEG3";
-            this.PB_JPEG3.Size = new System.Drawing.Size(66, 106);
-            this.PB_JPEG3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.PB_JPEG3.TabIndex = 9;
-            this.PB_JPEG3.TabStop = false;
-            // 
-            // PB_acre54
-            // 
-            this.PB_acre54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre54.Location = new System.Drawing.Point(518, 428);
-            this.PB_acre54.Name = "PB_acre54";
-            this.PB_acre54.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre54.TabIndex = 61;
-            this.PB_acre54.TabStop = false;
-            // 
-            // PB_acre53
-            // 
-            this.PB_acre53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre53.Location = new System.Drawing.Point(518, 300);
-            this.PB_acre53.Name = "PB_acre53";
-            this.PB_acre53.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre53.TabIndex = 60;
-            this.PB_acre53.TabStop = false;
-            // 
-            // PB_acre52
-            // 
-            this.PB_acre52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre52.Location = new System.Drawing.Point(518, 172);
-            this.PB_acre52.Name = "PB_acre52";
-            this.PB_acre52.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre52.TabIndex = 59;
-            this.PB_acre52.TabStop = false;
-            // 
-            // PB_acre51
-            // 
-            this.PB_acre51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre51.Location = new System.Drawing.Point(518, 44);
-            this.PB_acre51.Name = "PB_acre51";
-            this.PB_acre51.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre51.TabIndex = 58;
-            this.PB_acre51.TabStop = false;
-            // 
-            // PB_acre44
-            // 
-            this.PB_acre44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre44.Location = new System.Drawing.Point(390, 428);
-            this.PB_acre44.Name = "PB_acre44";
-            this.PB_acre44.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre44.TabIndex = 57;
-            this.PB_acre44.TabStop = false;
-            // 
-            // PB_acre43
-            // 
-            this.PB_acre43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre43.Location = new System.Drawing.Point(390, 300);
-            this.PB_acre43.Name = "PB_acre43";
-            this.PB_acre43.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre43.TabIndex = 56;
-            this.PB_acre43.TabStop = false;
-            // 
-            // PB_acre42
-            // 
-            this.PB_acre42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre42.Location = new System.Drawing.Point(390, 172);
-            this.PB_acre42.Name = "PB_acre42";
-            this.PB_acre42.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre42.TabIndex = 55;
-            this.PB_acre42.TabStop = false;
-            // 
-            // PB_acre41
-            // 
-            this.PB_acre41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre41.Location = new System.Drawing.Point(390, 44);
-            this.PB_acre41.Name = "PB_acre41";
-            this.PB_acre41.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre41.TabIndex = 54;
-            this.PB_acre41.TabStop = false;
-            // 
-            // PB_acre34
-            // 
-            this.PB_acre34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre34.Location = new System.Drawing.Point(262, 428);
-            this.PB_acre34.Name = "PB_acre34";
-            this.PB_acre34.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre34.TabIndex = 53;
-            this.PB_acre34.TabStop = false;
-            // 
-            // PB_acre33
-            // 
-            this.PB_acre33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre33.Location = new System.Drawing.Point(262, 300);
-            this.PB_acre33.Name = "PB_acre33";
-            this.PB_acre33.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre33.TabIndex = 52;
-            this.PB_acre33.TabStop = false;
-            // 
-            // PB_acre32
-            // 
-            this.PB_acre32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre32.Location = new System.Drawing.Point(262, 172);
-            this.PB_acre32.Name = "PB_acre32";
-            this.PB_acre32.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre32.TabIndex = 51;
-            this.PB_acre32.TabStop = false;
-            // 
-            // PB_acre31
-            // 
-            this.PB_acre31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre31.Location = new System.Drawing.Point(262, 44);
-            this.PB_acre31.Name = "PB_acre31";
-            this.PB_acre31.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre31.TabIndex = 50;
-            this.PB_acre31.TabStop = false;
-            // 
-            // PB_acre24
-            // 
-            this.PB_acre24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre24.Location = new System.Drawing.Point(134, 428);
-            this.PB_acre24.Name = "PB_acre24";
-            this.PB_acre24.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre24.TabIndex = 49;
-            this.PB_acre24.TabStop = false;
-            // 
-            // PB_acre23
-            // 
-            this.PB_acre23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre23.Location = new System.Drawing.Point(134, 300);
-            this.PB_acre23.Name = "PB_acre23";
-            this.PB_acre23.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre23.TabIndex = 48;
-            this.PB_acre23.TabStop = false;
-            // 
-            // PB_acre22
-            // 
-            this.PB_acre22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre22.Location = new System.Drawing.Point(134, 172);
-            this.PB_acre22.Name = "PB_acre22";
-            this.PB_acre22.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre22.TabIndex = 47;
-            this.PB_acre22.TabStop = false;
-            // 
-            // PB_acre21
-            // 
-            this.PB_acre21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre21.Location = new System.Drawing.Point(134, 44);
-            this.PB_acre21.Name = "PB_acre21";
-            this.PB_acre21.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre21.TabIndex = 46;
-            this.PB_acre21.TabStop = false;
-            // 
-            // PB_acre14
-            // 
-            this.PB_acre14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre14.Location = new System.Drawing.Point(6, 428);
-            this.PB_acre14.Name = "PB_acre14";
-            this.PB_acre14.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre14.TabIndex = 45;
-            this.PB_acre14.TabStop = false;
-            // 
-            // PB_acre13
-            // 
-            this.PB_acre13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre13.Location = new System.Drawing.Point(6, 300);
-            this.PB_acre13.Name = "PB_acre13";
-            this.PB_acre13.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre13.TabIndex = 44;
-            this.PB_acre13.TabStop = false;
-            // 
-            // PB_acre12
-            // 
-            this.PB_acre12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre12.Location = new System.Drawing.Point(6, 172);
-            this.PB_acre12.Name = "PB_acre12";
-            this.PB_acre12.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre12.TabIndex = 43;
-            this.PB_acre12.TabStop = false;
-            // 
-            // PB_acre11
-            // 
-            this.PB_acre11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_acre11.Location = new System.Drawing.Point(6, 44);
-            this.PB_acre11.Name = "PB_acre11";
-            this.PB_acre11.Size = new System.Drawing.Size(128, 128);
-            this.PB_acre11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_acre11.TabIndex = 42;
-            this.PB_acre11.TabStop = false;
+            this.PB_island11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_island11.Location = new System.Drawing.Point(198, 152);
+            this.PB_island11.Name = "PB_island11";
+            this.PB_island11.Size = new System.Drawing.Size(128, 128);
+            this.PB_island11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_island11.TabIndex = 71;
+            this.PB_island11.TabStop = false;
             // 
             // PB_island33
             // 
@@ -941,68 +1019,79 @@
             this.PB_island00.TabStop = false;
             this.PB_island00.Visible = false;
             // 
-            // B_ClearWeeds
+            // L_IslandCoord
             // 
-            this.B_ClearWeeds.Location = new System.Drawing.Point(569, 4);
-            this.B_ClearWeeds.Name = "B_ClearWeeds";
-            this.B_ClearWeeds.Size = new System.Drawing.Size(75, 34);
-            this.B_ClearWeeds.TabIndex = 10;
-            this.B_ClearWeeds.Text = "Clear Weeds";
-            this.B_ClearWeeds.UseVisualStyleBackColor = true;
-            this.B_ClearWeeds.Click += new System.EventHandler(this.B_RemoveWeeds_Click);
-            // 
-            // B_WaterFlowers
-            // 
-            this.B_WaterFlowers.Location = new System.Drawing.Point(488, 4);
-            this.B_WaterFlowers.Name = "B_WaterFlowers";
-            this.B_WaterFlowers.Size = new System.Drawing.Size(75, 34);
-            this.B_WaterFlowers.TabIndex = 62;
-            this.B_WaterFlowers.Text = "Water Flowers";
-            this.B_WaterFlowers.UseVisualStyleBackColor = true;
-            this.B_WaterFlowers.Click += new System.EventHandler(this.B_WaterFlowers_Click);
-            // 
-            // PB_island22
-            // 
-            this.PB_island22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_island22.Location = new System.Drawing.Point(326, 280);
-            this.PB_island22.Name = "PB_island22";
-            this.PB_island22.Size = new System.Drawing.Size(128, 128);
-            this.PB_island22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_island22.TabIndex = 74;
-            this.PB_island22.TabStop = false;
-            // 
-            // PB_island21
-            // 
-            this.PB_island21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_island21.Location = new System.Drawing.Point(326, 152);
-            this.PB_island21.Name = "PB_island21";
-            this.PB_island21.Size = new System.Drawing.Size(128, 128);
-            this.PB_island21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_island21.TabIndex = 73;
-            this.PB_island21.TabStop = false;
-            // 
-            // PB_island12
-            // 
-            this.PB_island12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_island12.Location = new System.Drawing.Point(198, 280);
-            this.PB_island12.Name = "PB_island12";
-            this.PB_island12.Size = new System.Drawing.Size(128, 128);
-            this.PB_island12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_island12.TabIndex = 72;
-            this.PB_island12.TabStop = false;
-            // 
-            // PB_island11
-            // 
-            this.PB_island11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_island11.Location = new System.Drawing.Point(198, 152);
-            this.PB_island11.Name = "PB_island11";
-            this.PB_island11.Size = new System.Drawing.Size(128, 128);
-            this.PB_island11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_island11.TabIndex = 71;
-            this.PB_island11.TabStop = false;
+            this.L_IslandCoord.AutoSize = true;
+            this.L_IslandCoord.Location = new System.Drawing.Point(326, 5);
+            this.L_IslandCoord.Name = "L_IslandCoord";
+            this.L_IslandCoord.Size = new System.Drawing.Size(63, 13);
+            this.L_IslandCoord.TabIndex = 38;
+            this.L_IslandCoord.Text = "Coordinates";
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.L_P0Name);
+            this.tabPage3.Controls.Add(this.CB_P0Gender);
+            this.tabPage3.Controls.Add(this.L_P0Gender);
+            this.tabPage3.Controls.Add(this.label4);
+            this.tabPage3.Controls.Add(this.CB_P0Badge23);
+            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Controls.Add(this.CB_P0Badge22);
+            this.tabPage3.Controls.Add(this.label2);
+            this.tabPage3.Controls.Add(this.CB_P0Badge21);
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.CB_P0Badge20);
+            this.tabPage3.Controls.Add(this.L_P0HairStyle);
+            this.tabPage3.Controls.Add(this.L_P0HairColor);
+            this.tabPage3.Controls.Add(this.L_P0FaceShape);
+            this.tabPage3.Controls.Add(this.L_P0EyeColor);
+            this.tabPage3.Controls.Add(this.CB_P0SkinColor);
+            this.tabPage3.Controls.Add(this.CB_P0EyeColor);
+            this.tabPage3.Controls.Add(this.CB_P0FaceShape);
+            this.tabPage3.Controls.Add(this.CB_P0HairColor);
+            this.tabPage3.Controls.Add(this.L_P0SkinColor);
+            this.tabPage3.Controls.Add(this.CB_P0HairStyle);
+            this.tabPage3.Controls.Add(this.TB_P0Name);
+            this.tabPage3.Controls.Add(this.L_P0Badge19);
+            this.tabPage3.Controls.Add(this.L_P0Badge18);
+            this.tabPage3.Controls.Add(this.L_P0Badge17);
+            this.tabPage3.Controls.Add(this.L_P0Badge16);
+            this.tabPage3.Controls.Add(this.L_P0Badge15);
+            this.tabPage3.Controls.Add(this.L_P0Badge14);
+            this.tabPage3.Controls.Add(this.L_P0Badge13);
+            this.tabPage3.Controls.Add(this.L_P0Badge12);
+            this.tabPage3.Controls.Add(this.L_P0Badge11);
+            this.tabPage3.Controls.Add(this.L_P0Badge10);
+            this.tabPage3.Controls.Add(this.L_P0Badge09);
+            this.tabPage3.Controls.Add(this.L_P0Badge08);
+            this.tabPage3.Controls.Add(this.L_P0Badge07);
+            this.tabPage3.Controls.Add(this.L_P0Badge06);
+            this.tabPage3.Controls.Add(this.L_P0Badge05);
+            this.tabPage3.Controls.Add(this.L_P0Badge04);
+            this.tabPage3.Controls.Add(this.L_P0Badge03);
+            this.tabPage3.Controls.Add(this.L_P0Badge02);
+            this.tabPage3.Controls.Add(this.L_P0Badge01);
+            this.tabPage3.Controls.Add(this.L_P0Badge00);
+            this.tabPage3.Controls.Add(this.CB_P0Badge19);
+            this.tabPage3.Controls.Add(this.CB_P0Badge18);
+            this.tabPage3.Controls.Add(this.CB_P0Badge17);
+            this.tabPage3.Controls.Add(this.CB_P0Badge16);
+            this.tabPage3.Controls.Add(this.CB_P0Badge15);
+            this.tabPage3.Controls.Add(this.CB_P0Badge14);
+            this.tabPage3.Controls.Add(this.CB_P0Badge13);
+            this.tabPage3.Controls.Add(this.CB_P0Badge12);
+            this.tabPage3.Controls.Add(this.CB_P0Badge11);
+            this.tabPage3.Controls.Add(this.CB_P0Badge10);
+            this.tabPage3.Controls.Add(this.CB_P0Badge09);
+            this.tabPage3.Controls.Add(this.CB_P0Badge08);
+            this.tabPage3.Controls.Add(this.CB_P0Badge07);
+            this.tabPage3.Controls.Add(this.CB_P0Badge06);
+            this.tabPage3.Controls.Add(this.CB_P0Badge05);
+            this.tabPage3.Controls.Add(this.CB_P0Badge04);
+            this.tabPage3.Controls.Add(this.CB_P0Badge03);
+            this.tabPage3.Controls.Add(this.CB_P0Badge02);
+            this.tabPage3.Controls.Add(this.CB_P0Badge01);
+            this.tabPage3.Controls.Add(this.CB_P0Badge00);
             this.tabPage3.Controls.Add(this.PB_LPlayer0);
             this.tabPage3.Controls.Add(this.L_P0Island);
             this.tabPage3.Controls.Add(this.L_P0Pocket);
@@ -1019,72 +1108,717 @@
             this.tabPage3.Text = "Player";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // PB_P0Dresser1
+            // CB_P0Gender
             // 
-            this.PB_P0Dresser1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PB_P0Dresser1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_P0Dresser1.Location = new System.Drawing.Point(6, 257);
-            this.PB_P0Dresser1.Name = "PB_P0Dresser1";
-            this.PB_P0Dresser1.Size = new System.Drawing.Size(83, 291);
-            this.PB_P0Dresser1.TabIndex = 0;
-            this.PB_P0Dresser1.TabStop = false;
+            this.CB_P0Gender.FormattingEnabled = true;
+            this.CB_P0Gender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.CB_P0Gender.Location = new System.Drawing.Point(218, 187);
+            this.CB_P0Gender.Name = "CB_P0Gender";
+            this.CB_P0Gender.Size = new System.Drawing.Size(93, 21);
+            this.CB_P0Gender.TabIndex = 69;
             // 
-            // PB_P0Dresser2
+            // L_P0Gender
             // 
-            this.PB_P0Dresser2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PB_P0Dresser2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_P0Dresser2.Location = new System.Drawing.Point(94, 257);
-            this.PB_P0Dresser2.Name = "PB_P0Dresser2";
-            this.PB_P0Dresser2.Size = new System.Drawing.Size(83, 291);
-            this.PB_P0Dresser2.TabIndex = 1;
-            this.PB_P0Dresser2.TabStop = false;
+            this.L_P0Gender.Location = new System.Drawing.Point(154, 190);
+            this.L_P0Gender.Name = "L_P0Gender";
+            this.L_P0Gender.Size = new System.Drawing.Size(58, 13);
+            this.L_P0Gender.TabIndex = 68;
+            this.L_P0Gender.Text = "Gender:";
+            this.L_P0Gender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // PB_P0Pocket
+            // label4
             // 
-            this.PB_P0Pocket.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PB_P0Pocket.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_P0Pocket.Location = new System.Drawing.Point(6, 232);
-            this.PB_P0Pocket.Name = "PB_P0Pocket";
-            this.PB_P0Pocket.Size = new System.Drawing.Size(259, 19);
-            this.PB_P0Pocket.TabIndex = 2;
-            this.PB_P0Pocket.TabStop = false;
+            this.label4.Location = new System.Drawing.Point(426, 520);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 23);
+            this.label4.TabIndex = 67;
+            this.label4.Text = "Villager:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // PB_P0Island
+            // CB_P0Badge23
             // 
-            this.PB_P0Island.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PB_P0Island.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_P0Island.Location = new System.Drawing.Point(182, 417);
-            this.PB_P0Island.Name = "PB_P0Island";
-            this.PB_P0Island.Size = new System.Drawing.Size(83, 131);
-            this.PB_P0Island.TabIndex = 3;
-            this.PB_P0Island.TabStop = false;
+            this.CB_P0Badge23.FormattingEnabled = true;
+            this.CB_P0Badge23.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge23.Location = new System.Drawing.Point(525, 522);
+            this.CB_P0Badge23.Name = "CB_P0Badge23";
+            this.CB_P0Badge23.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge23.TabIndex = 66;
             // 
-            // L_P0Pocket
+            // label3
             // 
-            this.L_P0Pocket.Location = new System.Drawing.Point(177, 257);
-            this.L_P0Pocket.Name = "L_P0Pocket";
-            this.L_P0Pocket.Size = new System.Drawing.Size(87, 23);
-            this.L_P0Pocket.TabIndex = 4;
-            this.L_P0Pocket.Text = "^ Pocket ^";
-            this.L_P0Pocket.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.Location = new System.Drawing.Point(426, 498);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 23);
+            this.label3.TabIndex = 65;
+            this.label3.Text = "Dream:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Dresser
+            // CB_P0Badge22
             // 
-            this.L_P0Dresser.Location = new System.Drawing.Point(179, 257);
-            this.L_P0Dresser.Name = "L_P0Dresser";
-            this.L_P0Dresser.Size = new System.Drawing.Size(85, 160);
-            this.L_P0Dresser.TabIndex = 5;
-            this.L_P0Dresser.Text = "<-- Dresser";
-            this.L_P0Dresser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_P0Badge22.FormattingEnabled = true;
+            this.CB_P0Badge22.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge22.Location = new System.Drawing.Point(525, 500);
+            this.CB_P0Badge22.Name = "CB_P0Badge22";
+            this.CB_P0Badge22.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge22.TabIndex = 64;
             // 
-            // L_P0Island
+            // label2
             // 
-            this.L_P0Island.Location = new System.Drawing.Point(182, 401);
-            this.L_P0Island.Name = "L_P0Island";
-            this.L_P0Island.Size = new System.Drawing.Size(82, 13);
-            this.L_P0Island.TabIndex = 6;
-            this.L_P0Island.Text = "v Island v";
-            this.L_P0Island.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label2.Location = new System.Drawing.Point(426, 476);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 23);
+            this.label2.TabIndex = 63;
+            this.label2.Text = "Ambassador:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_P0Badge21
+            // 
+            this.CB_P0Badge21.FormattingEnabled = true;
+            this.CB_P0Badge21.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge21.Location = new System.Drawing.Point(525, 478);
+            this.CB_P0Badge21.Name = "CB_P0Badge21";
+            this.CB_P0Badge21.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge21.TabIndex = 62;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(426, 454);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 23);
+            this.label1.TabIndex = 61;
+            this.label1.Text = "Traveler:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_P0Badge20
+            // 
+            this.CB_P0Badge20.FormattingEnabled = true;
+            this.CB_P0Badge20.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge20.Location = new System.Drawing.Point(525, 456);
+            this.CB_P0Badge20.Name = "CB_P0Badge20";
+            this.CB_P0Badge20.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge20.TabIndex = 60;
+            // 
+            // L_P0HairStyle
+            // 
+            this.L_P0HairStyle.Location = new System.Drawing.Point(157, 55);
+            this.L_P0HairStyle.Name = "L_P0HairStyle";
+            this.L_P0HairStyle.Size = new System.Drawing.Size(55, 13);
+            this.L_P0HairStyle.TabIndex = 59;
+            this.L_P0HairStyle.Text = "Hair Style:";
+            this.L_P0HairStyle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0HairColor
+            // 
+            this.L_P0HairColor.Location = new System.Drawing.Point(156, 82);
+            this.L_P0HairColor.Name = "L_P0HairColor";
+            this.L_P0HairColor.Size = new System.Drawing.Size(56, 13);
+            this.L_P0HairColor.TabIndex = 58;
+            this.L_P0HairColor.Text = "Hair Color:";
+            this.L_P0HairColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0FaceShape
+            // 
+            this.L_P0FaceShape.Location = new System.Drawing.Point(144, 109);
+            this.L_P0FaceShape.Name = "L_P0FaceShape";
+            this.L_P0FaceShape.Size = new System.Drawing.Size(68, 13);
+            this.L_P0FaceShape.TabIndex = 57;
+            this.L_P0FaceShape.Text = "Face Shape:";
+            this.L_P0FaceShape.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0EyeColor
+            // 
+            this.L_P0EyeColor.Location = new System.Drawing.Point(157, 136);
+            this.L_P0EyeColor.Name = "L_P0EyeColor";
+            this.L_P0EyeColor.Size = new System.Drawing.Size(55, 13);
+            this.L_P0EyeColor.TabIndex = 56;
+            this.L_P0EyeColor.Text = "Eye Color:";
+            this.L_P0EyeColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_P0SkinColor
+            // 
+            this.CB_P0SkinColor.FormattingEnabled = true;
+            this.CB_P0SkinColor.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.CB_P0SkinColor.Location = new System.Drawing.Point(218, 160);
+            this.CB_P0SkinColor.Name = "CB_P0SkinColor";
+            this.CB_P0SkinColor.Size = new System.Drawing.Size(93, 21);
+            this.CB_P0SkinColor.TabIndex = 55;
+            // 
+            // CB_P0EyeColor
+            // 
+            this.CB_P0EyeColor.FormattingEnabled = true;
+            this.CB_P0EyeColor.Items.AddRange(new object[] {
+            "Black",
+            "Brown",
+            "Green",
+            "Olive",
+            "4",
+            "Blue",
+            "6",
+            "7"});
+            this.CB_P0EyeColor.Location = new System.Drawing.Point(218, 133);
+            this.CB_P0EyeColor.Name = "CB_P0EyeColor";
+            this.CB_P0EyeColor.Size = new System.Drawing.Size(93, 21);
+            this.CB_P0EyeColor.TabIndex = 54;
+            // 
+            // CB_P0FaceShape
+            // 
+            this.CB_P0FaceShape.FormattingEnabled = true;
+            this.CB_P0FaceShape.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"});
+            this.CB_P0FaceShape.Location = new System.Drawing.Point(218, 106);
+            this.CB_P0FaceShape.Name = "CB_P0FaceShape";
+            this.CB_P0FaceShape.Size = new System.Drawing.Size(93, 21);
+            this.CB_P0FaceShape.TabIndex = 53;
+            // 
+            // CB_P0HairColor
+            // 
+            this.CB_P0HairColor.FormattingEnabled = true;
+            this.CB_P0HairColor.Items.AddRange(new object[] {
+            "Brown",
+            "Light Brown",
+            "Orange",
+            "Light Blue",
+            "Light Yellow",
+            "Gray",
+            "Pink",
+            "White",
+            "Dark Green",
+            "Dark Brown",
+            "Red",
+            "Dark Blue",
+            "Yellow",
+            "Green",
+            "Purple",
+            "Light Green"});
+            this.CB_P0HairColor.Location = new System.Drawing.Point(218, 79);
+            this.CB_P0HairColor.Name = "CB_P0HairColor";
+            this.CB_P0HairColor.Size = new System.Drawing.Size(93, 21);
+            this.CB_P0HairColor.TabIndex = 52;
+            // 
+            // L_P0SkinColor
+            // 
+            this.L_P0SkinColor.Location = new System.Drawing.Point(154, 163);
+            this.L_P0SkinColor.Name = "L_P0SkinColor";
+            this.L_P0SkinColor.Size = new System.Drawing.Size(58, 13);
+            this.L_P0SkinColor.TabIndex = 50;
+            this.L_P0SkinColor.Text = "Skin Color:";
+            this.L_P0SkinColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_P0HairStyle
+            // 
+            this.CB_P0HairStyle.FormattingEnabled = true;
+            this.CB_P0HairStyle.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.CB_P0HairStyle.Location = new System.Drawing.Point(218, 52);
+            this.CB_P0HairStyle.Name = "CB_P0HairStyle";
+            this.CB_P0HairStyle.Size = new System.Drawing.Size(93, 21);
+            this.CB_P0HairStyle.TabIndex = 49;
+            // 
+            // TB_P0Name
+            // 
+            this.TB_P0Name.Location = new System.Drawing.Point(218, 26);
+            this.TB_P0Name.MaxLength = 9;
+            this.TB_P0Name.Name = "TB_P0Name";
+            this.TB_P0Name.Size = new System.Drawing.Size(93, 20);
+            this.TB_P0Name.TabIndex = 48;
+            this.TB_P0Name.Text = "WWWWWWWW";
+            // 
+            // L_P0Badge19
+            // 
+            this.L_P0Badge19.Location = new System.Drawing.Point(426, 432);
+            this.L_P0Badge19.Name = "L_P0Badge19";
+            this.L_P0Badge19.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge19.TabIndex = 47;
+            this.L_P0Badge19.Text = "StreetPass:";
+            this.L_P0Badge19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge18
+            // 
+            this.L_P0Badge18.Location = new System.Drawing.Point(426, 410);
+            this.L_P0Badge18.Name = "L_P0Badge18";
+            this.L_P0Badge18.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge18.TabIndex = 46;
+            this.L_P0Badge18.Text = "Postman:";
+            this.L_P0Badge18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge17
+            // 
+            this.L_P0Badge17.Location = new System.Drawing.Point(426, 388);
+            this.L_P0Badge17.Name = "L_P0Badge17";
+            this.L_P0Badge17.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge17.TabIndex = 45;
+            this.L_P0Badge17.Text = "Town Helper:";
+            this.L_P0Badge17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge16
+            // 
+            this.L_P0Badge16.Location = new System.Drawing.Point(426, 366);
+            this.L_P0Badge16.Name = "L_P0Badge16";
+            this.L_P0Badge16.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge16.TabIndex = 44;
+            this.L_P0Badge16.Text = "K.K. Slider:";
+            this.L_P0Badge16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge15
+            // 
+            this.L_P0Badge15.Location = new System.Drawing.Point(426, 344);
+            this.L_P0Badge15.Name = "L_P0Badge15";
+            this.L_P0Badge15.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge15.TabIndex = 43;
+            this.L_P0Badge15.Text = "Happy Homer:";
+            this.L_P0Badge15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge14
+            // 
+            this.L_P0Badge14.Location = new System.Drawing.Point(426, 322);
+            this.L_P0Badge14.Name = "L_P0Badge14";
+            this.L_P0Badge14.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge14.TabIndex = 42;
+            this.L_P0Badge14.Text = "Catalog:";
+            this.L_P0Badge14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge13
+            // 
+            this.L_P0Badge13.Location = new System.Drawing.Point(426, 300);
+            this.L_P0Badge13.Name = "L_P0Badge13";
+            this.L_P0Badge13.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge13.TabIndex = 41;
+            this.L_P0Badge13.Text = "Refurbishing:";
+            this.L_P0Badge13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge12
+            // 
+            this.L_P0Badge12.Location = new System.Drawing.Point(426, 278);
+            this.L_P0Badge12.Name = "L_P0Badge12";
+            this.L_P0Badge12.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge12.TabIndex = 40;
+            this.L_P0Badge12.Text = "Shopper:";
+            this.L_P0Badge12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge11
+            // 
+            this.L_P0Badge11.Location = new System.Drawing.Point(426, 256);
+            this.L_P0Badge11.Name = "L_P0Badge11";
+            this.L_P0Badge11.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge11.TabIndex = 39;
+            this.L_P0Badge11.Text = "Turnip:";
+            this.L_P0Badge11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge10
+            // 
+            this.L_P0Badge10.Location = new System.Drawing.Point(426, 234);
+            this.L_P0Badge10.Name = "L_P0Badge10";
+            this.L_P0Badge10.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge10.TabIndex = 38;
+            this.L_P0Badge10.Text = "Bell Saver:";
+            this.L_P0Badge10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge09
+            // 
+            this.L_P0Badge09.Location = new System.Drawing.Point(426, 212);
+            this.L_P0Badge09.Name = "L_P0Badge09";
+            this.L_P0Badge09.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge09.TabIndex = 37;
+            this.L_P0Badge09.Text = "Weed:";
+            this.L_P0Badge09.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge08
+            // 
+            this.L_P0Badge08.Location = new System.Drawing.Point(426, 190);
+            this.L_P0Badge08.Name = "L_P0Badge08";
+            this.L_P0Badge08.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge08.TabIndex = 36;
+            this.L_P0Badge08.Text = "Gardening:";
+            this.L_P0Badge08.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge07
+            // 
+            this.L_P0Badge07.Location = new System.Drawing.Point(426, 168);
+            this.L_P0Badge07.Name = "L_P0Badge07";
+            this.L_P0Badge07.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge07.TabIndex = 35;
+            this.L_P0Badge07.Text = "Medalist:";
+            this.L_P0Badge07.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge06
+            // 
+            this.L_P0Badge06.Location = new System.Drawing.Point(426, 146);
+            this.L_P0Badge06.Name = "L_P0Badge06";
+            this.L_P0Badge06.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge06.TabIndex = 34;
+            this.L_P0Badge06.Text = "Baloon:";
+            this.L_P0Badge06.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge05
+            // 
+            this.L_P0Badge05.Location = new System.Drawing.Point(426, 124);
+            this.L_P0Badge05.Name = "L_P0Badge05";
+            this.L_P0Badge05.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge05.TabIndex = 33;
+            this.L_P0Badge05.Text = "Seafood:";
+            this.L_P0Badge05.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge04
+            // 
+            this.L_P0Badge04.Location = new System.Drawing.Point(426, 102);
+            this.L_P0Badge04.Name = "L_P0Badge04";
+            this.L_P0Badge04.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge04.TabIndex = 32;
+            this.L_P0Badge04.Text = "Ichtyology:";
+            this.L_P0Badge04.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge03
+            // 
+            this.L_P0Badge03.Location = new System.Drawing.Point(426, 80);
+            this.L_P0Badge03.Name = "L_P0Badge03";
+            this.L_P0Badge03.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge03.TabIndex = 31;
+            this.L_P0Badge03.Text = "Entomology:";
+            this.L_P0Badge03.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge02
+            // 
+            this.L_P0Badge02.Location = new System.Drawing.Point(426, 58);
+            this.L_P0Badge02.Name = "L_P0Badge02";
+            this.L_P0Badge02.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge02.TabIndex = 30;
+            this.L_P0Badge02.Text = "Dive:";
+            this.L_P0Badge02.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge01
+            // 
+            this.L_P0Badge01.Location = new System.Drawing.Point(426, 36);
+            this.L_P0Badge01.Name = "L_P0Badge01";
+            this.L_P0Badge01.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge01.TabIndex = 29;
+            this.L_P0Badge01.Text = "Angler:";
+            this.L_P0Badge01.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_P0Badge00
+            // 
+            this.L_P0Badge00.Location = new System.Drawing.Point(426, 14);
+            this.L_P0Badge00.Name = "L_P0Badge00";
+            this.L_P0Badge00.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge00.TabIndex = 28;
+            this.L_P0Badge00.Text = "Bug Catcher:";
+            this.L_P0Badge00.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_P0Badge19
+            // 
+            this.CB_P0Badge19.FormattingEnabled = true;
+            this.CB_P0Badge19.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge19.Location = new System.Drawing.Point(525, 434);
+            this.CB_P0Badge19.Name = "CB_P0Badge19";
+            this.CB_P0Badge19.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge19.TabIndex = 27;
+            // 
+            // CB_P0Badge18
+            // 
+            this.CB_P0Badge18.FormattingEnabled = true;
+            this.CB_P0Badge18.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge18.Location = new System.Drawing.Point(525, 412);
+            this.CB_P0Badge18.Name = "CB_P0Badge18";
+            this.CB_P0Badge18.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge18.TabIndex = 26;
+            // 
+            // CB_P0Badge17
+            // 
+            this.CB_P0Badge17.FormattingEnabled = true;
+            this.CB_P0Badge17.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge17.Location = new System.Drawing.Point(525, 390);
+            this.CB_P0Badge17.Name = "CB_P0Badge17";
+            this.CB_P0Badge17.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge17.TabIndex = 25;
+            // 
+            // CB_P0Badge16
+            // 
+            this.CB_P0Badge16.FormattingEnabled = true;
+            this.CB_P0Badge16.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge16.Location = new System.Drawing.Point(525, 368);
+            this.CB_P0Badge16.Name = "CB_P0Badge16";
+            this.CB_P0Badge16.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge16.TabIndex = 24;
+            // 
+            // CB_P0Badge15
+            // 
+            this.CB_P0Badge15.FormattingEnabled = true;
+            this.CB_P0Badge15.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge15.Location = new System.Drawing.Point(525, 346);
+            this.CB_P0Badge15.Name = "CB_P0Badge15";
+            this.CB_P0Badge15.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge15.TabIndex = 23;
+            // 
+            // CB_P0Badge14
+            // 
+            this.CB_P0Badge14.FormattingEnabled = true;
+            this.CB_P0Badge14.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge14.Location = new System.Drawing.Point(525, 324);
+            this.CB_P0Badge14.Name = "CB_P0Badge14";
+            this.CB_P0Badge14.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge14.TabIndex = 22;
+            // 
+            // CB_P0Badge13
+            // 
+            this.CB_P0Badge13.FormattingEnabled = true;
+            this.CB_P0Badge13.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge13.Location = new System.Drawing.Point(525, 302);
+            this.CB_P0Badge13.Name = "CB_P0Badge13";
+            this.CB_P0Badge13.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge13.TabIndex = 21;
+            // 
+            // CB_P0Badge12
+            // 
+            this.CB_P0Badge12.FormattingEnabled = true;
+            this.CB_P0Badge12.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge12.Location = new System.Drawing.Point(525, 280);
+            this.CB_P0Badge12.Name = "CB_P0Badge12";
+            this.CB_P0Badge12.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge12.TabIndex = 20;
+            // 
+            // CB_P0Badge11
+            // 
+            this.CB_P0Badge11.FormattingEnabled = true;
+            this.CB_P0Badge11.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge11.Location = new System.Drawing.Point(525, 258);
+            this.CB_P0Badge11.Name = "CB_P0Badge11";
+            this.CB_P0Badge11.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge11.TabIndex = 19;
+            // 
+            // CB_P0Badge10
+            // 
+            this.CB_P0Badge10.FormattingEnabled = true;
+            this.CB_P0Badge10.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge10.Location = new System.Drawing.Point(525, 236);
+            this.CB_P0Badge10.Name = "CB_P0Badge10";
+            this.CB_P0Badge10.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge10.TabIndex = 18;
+            // 
+            // CB_P0Badge09
+            // 
+            this.CB_P0Badge09.FormattingEnabled = true;
+            this.CB_P0Badge09.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge09.Location = new System.Drawing.Point(525, 214);
+            this.CB_P0Badge09.Name = "CB_P0Badge09";
+            this.CB_P0Badge09.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge09.TabIndex = 17;
+            // 
+            // CB_P0Badge08
+            // 
+            this.CB_P0Badge08.FormattingEnabled = true;
+            this.CB_P0Badge08.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge08.Location = new System.Drawing.Point(525, 192);
+            this.CB_P0Badge08.Name = "CB_P0Badge08";
+            this.CB_P0Badge08.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge08.TabIndex = 16;
+            // 
+            // CB_P0Badge07
+            // 
+            this.CB_P0Badge07.FormattingEnabled = true;
+            this.CB_P0Badge07.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge07.Location = new System.Drawing.Point(525, 170);
+            this.CB_P0Badge07.Name = "CB_P0Badge07";
+            this.CB_P0Badge07.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge07.TabIndex = 15;
+            // 
+            // CB_P0Badge06
+            // 
+            this.CB_P0Badge06.FormattingEnabled = true;
+            this.CB_P0Badge06.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge06.Location = new System.Drawing.Point(525, 148);
+            this.CB_P0Badge06.Name = "CB_P0Badge06";
+            this.CB_P0Badge06.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge06.TabIndex = 14;
+            // 
+            // CB_P0Badge05
+            // 
+            this.CB_P0Badge05.FormattingEnabled = true;
+            this.CB_P0Badge05.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge05.Location = new System.Drawing.Point(525, 126);
+            this.CB_P0Badge05.Name = "CB_P0Badge05";
+            this.CB_P0Badge05.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge05.TabIndex = 13;
+            // 
+            // CB_P0Badge04
+            // 
+            this.CB_P0Badge04.FormattingEnabled = true;
+            this.CB_P0Badge04.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge04.Location = new System.Drawing.Point(525, 104);
+            this.CB_P0Badge04.Name = "CB_P0Badge04";
+            this.CB_P0Badge04.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge04.TabIndex = 12;
+            // 
+            // CB_P0Badge03
+            // 
+            this.CB_P0Badge03.FormattingEnabled = true;
+            this.CB_P0Badge03.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge03.Location = new System.Drawing.Point(525, 82);
+            this.CB_P0Badge03.Name = "CB_P0Badge03";
+            this.CB_P0Badge03.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge03.TabIndex = 11;
+            // 
+            // CB_P0Badge02
+            // 
+            this.CB_P0Badge02.FormattingEnabled = true;
+            this.CB_P0Badge02.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge02.Location = new System.Drawing.Point(525, 60);
+            this.CB_P0Badge02.Name = "CB_P0Badge02";
+            this.CB_P0Badge02.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge02.TabIndex = 10;
+            // 
+            // CB_P0Badge01
+            // 
+            this.CB_P0Badge01.FormattingEnabled = true;
+            this.CB_P0Badge01.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge01.Location = new System.Drawing.Point(525, 38);
+            this.CB_P0Badge01.Name = "CB_P0Badge01";
+            this.CB_P0Badge01.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge01.TabIndex = 9;
+            // 
+            // CB_P0Badge00
+            // 
+            this.CB_P0Badge00.FormattingEnabled = true;
+            this.CB_P0Badge00.Items.AddRange(new object[] {
+            "None",
+            "Bronze",
+            "Silver",
+            "Gold"});
+            this.CB_P0Badge00.Location = new System.Drawing.Point(525, 16);
+            this.CB_P0Badge00.Name = "CB_P0Badge00";
+            this.CB_P0Badge00.Size = new System.Drawing.Size(121, 21);
+            this.CB_P0Badge00.TabIndex = 8;
             // 
             // PB_LPlayer0
             // 
@@ -1097,6 +1831,121 @@
             this.PB_LPlayer0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_LPlayer0.TabIndex = 7;
             this.PB_LPlayer0.TabStop = false;
+            // 
+            // L_P0Island
+            // 
+            this.L_P0Island.Location = new System.Drawing.Point(182, 401);
+            this.L_P0Island.Name = "L_P0Island";
+            this.L_P0Island.Size = new System.Drawing.Size(82, 13);
+            this.L_P0Island.TabIndex = 6;
+            this.L_P0Island.Text = "v Island v";
+            this.L_P0Island.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // L_P0Pocket
+            // 
+            this.L_P0Pocket.Location = new System.Drawing.Point(177, 257);
+            this.L_P0Pocket.Name = "L_P0Pocket";
+            this.L_P0Pocket.Size = new System.Drawing.Size(87, 23);
+            this.L_P0Pocket.TabIndex = 4;
+            this.L_P0Pocket.Text = "^ Pocket ^";
+            this.L_P0Pocket.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // PB_P0Island
+            // 
+            this.PB_P0Island.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_P0Island.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_P0Island.Location = new System.Drawing.Point(182, 417);
+            this.PB_P0Island.Name = "PB_P0Island";
+            this.PB_P0Island.Size = new System.Drawing.Size(83, 131);
+            this.PB_P0Island.TabIndex = 3;
+            this.PB_P0Island.TabStop = false;
+            // 
+            // PB_P0Pocket
+            // 
+            this.PB_P0Pocket.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_P0Pocket.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_P0Pocket.Location = new System.Drawing.Point(6, 232);
+            this.PB_P0Pocket.Name = "PB_P0Pocket";
+            this.PB_P0Pocket.Size = new System.Drawing.Size(259, 19);
+            this.PB_P0Pocket.TabIndex = 2;
+            this.PB_P0Pocket.TabStop = false;
+            // 
+            // PB_P0Dresser2
+            // 
+            this.PB_P0Dresser2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_P0Dresser2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_P0Dresser2.Location = new System.Drawing.Point(94, 257);
+            this.PB_P0Dresser2.Name = "PB_P0Dresser2";
+            this.PB_P0Dresser2.Size = new System.Drawing.Size(83, 291);
+            this.PB_P0Dresser2.TabIndex = 1;
+            this.PB_P0Dresser2.TabStop = false;
+            // 
+            // PB_P0Dresser1
+            // 
+            this.PB_P0Dresser1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_P0Dresser1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_P0Dresser1.Location = new System.Drawing.Point(6, 257);
+            this.PB_P0Dresser1.Name = "PB_P0Dresser1";
+            this.PB_P0Dresser1.Size = new System.Drawing.Size(83, 291);
+            this.PB_P0Dresser1.TabIndex = 0;
+            this.PB_P0Dresser1.TabStop = false;
+            // 
+            // L_P0Dresser
+            // 
+            this.L_P0Dresser.Location = new System.Drawing.Point(179, 257);
+            this.L_P0Dresser.Name = "L_P0Dresser";
+            this.L_P0Dresser.Size = new System.Drawing.Size(85, 160);
+            this.L_P0Dresser.TabIndex = 5;
+            this.L_P0Dresser.Text = "<-- Dresser";
+            this.L_P0Dresser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PB_JPEG1
+            // 
+            this.PB_JPEG1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PB_JPEG1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PB_JPEG1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_JPEG1.Location = new System.Drawing.Point(196, 604);
+            this.PB_JPEG1.Name = "PB_JPEG1";
+            this.PB_JPEG1.Size = new System.Drawing.Size(66, 106);
+            this.PB_JPEG1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PB_JPEG1.TabIndex = 7;
+            this.PB_JPEG1.TabStop = false;
+            this.PB_JPEG1.Click += new System.EventHandler(this.clickPlayerPic);
+            // 
+            // PB_JPEG2
+            // 
+            this.PB_JPEG2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PB_JPEG2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PB_JPEG2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_JPEG2.Location = new System.Drawing.Point(261, 604);
+            this.PB_JPEG2.Name = "PB_JPEG2";
+            this.PB_JPEG2.Size = new System.Drawing.Size(66, 106);
+            this.PB_JPEG2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PB_JPEG2.TabIndex = 8;
+            this.PB_JPEG2.TabStop = false;
+            this.PB_JPEG2.Click += new System.EventHandler(this.clickPlayerPic);
+            // 
+            // PB_JPEG3
+            // 
+            this.PB_JPEG3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PB_JPEG3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PB_JPEG3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_JPEG3.Location = new System.Drawing.Point(326, 604);
+            this.PB_JPEG3.Name = "PB_JPEG3";
+            this.PB_JPEG3.Size = new System.Drawing.Size(66, 106);
+            this.PB_JPEG3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PB_JPEG3.TabIndex = 9;
+            this.PB_JPEG3.TabStop = false;
+            this.PB_JPEG3.Click += new System.EventHandler(this.clickPlayerPic);
+            // 
+            // L_P0Name
+            // 
+            this.L_P0Name.Location = new System.Drawing.Point(157, 28);
+            this.L_P0Name.Name = "L_P0Name";
+            this.L_P0Name.Size = new System.Drawing.Size(55, 13);
+            this.L_P0Name.TabIndex = 70;
+            this.L_P0Name.Text = "Player Name:";
+            this.L_P0Name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Garden
             // 
@@ -1123,6 +1972,26 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_acre11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre65)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre64)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre63)).EndInit();
@@ -1147,29 +2016,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre00)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre54)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_acre11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_island11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island31)).EndInit();
@@ -1182,16 +2032,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_island02)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island00)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_island11)).EndInit();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Pocket)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Island)).EndInit();
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_LPlayer0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Island)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Pocket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1282,5 +2132,67 @@
         private System.Windows.Forms.PictureBox PB_P0Dresser1;
         private System.Windows.Forms.Label L_P0Dresser;
         private System.Windows.Forms.PictureBox PB_LPlayer0;
+        private System.Windows.Forms.ComboBox CB_P0Badge19;
+        private System.Windows.Forms.ComboBox CB_P0Badge18;
+        private System.Windows.Forms.ComboBox CB_P0Badge17;
+        private System.Windows.Forms.ComboBox CB_P0Badge16;
+        private System.Windows.Forms.ComboBox CB_P0Badge15;
+        private System.Windows.Forms.ComboBox CB_P0Badge14;
+        private System.Windows.Forms.ComboBox CB_P0Badge13;
+        private System.Windows.Forms.ComboBox CB_P0Badge12;
+        private System.Windows.Forms.ComboBox CB_P0Badge11;
+        private System.Windows.Forms.ComboBox CB_P0Badge10;
+        private System.Windows.Forms.ComboBox CB_P0Badge09;
+        private System.Windows.Forms.ComboBox CB_P0Badge08;
+        private System.Windows.Forms.ComboBox CB_P0Badge07;
+        private System.Windows.Forms.ComboBox CB_P0Badge06;
+        private System.Windows.Forms.ComboBox CB_P0Badge05;
+        private System.Windows.Forms.ComboBox CB_P0Badge04;
+        private System.Windows.Forms.ComboBox CB_P0Badge03;
+        private System.Windows.Forms.ComboBox CB_P0Badge02;
+        private System.Windows.Forms.ComboBox CB_P0Badge01;
+        private System.Windows.Forms.ComboBox CB_P0Badge00;
+        private System.Windows.Forms.Label L_P0Badge19;
+        private System.Windows.Forms.Label L_P0Badge18;
+        private System.Windows.Forms.Label L_P0Badge17;
+        private System.Windows.Forms.Label L_P0Badge16;
+        private System.Windows.Forms.Label L_P0Badge15;
+        private System.Windows.Forms.Label L_P0Badge14;
+        private System.Windows.Forms.Label L_P0Badge13;
+        private System.Windows.Forms.Label L_P0Badge12;
+        private System.Windows.Forms.Label L_P0Badge11;
+        private System.Windows.Forms.Label L_P0Badge10;
+        private System.Windows.Forms.Label L_P0Badge09;
+        private System.Windows.Forms.Label L_P0Badge08;
+        private System.Windows.Forms.Label L_P0Badge07;
+        private System.Windows.Forms.Label L_P0Badge06;
+        private System.Windows.Forms.Label L_P0Badge05;
+        private System.Windows.Forms.Label L_P0Badge04;
+        private System.Windows.Forms.Label L_P0Badge03;
+        private System.Windows.Forms.Label L_P0Badge02;
+        private System.Windows.Forms.Label L_P0Badge01;
+        private System.Windows.Forms.Label L_P0Badge00;
+        private System.Windows.Forms.TextBox TB_P0Name;
+        private System.Windows.Forms.ComboBox CB_P0EyeColor;
+        private System.Windows.Forms.ComboBox CB_P0FaceShape;
+        private System.Windows.Forms.ComboBox CB_P0HairColor;
+        private System.Windows.Forms.Label L_P0SkinColor;
+        private System.Windows.Forms.ComboBox CB_P0HairStyle;
+        private System.Windows.Forms.Label L_P0HairStyle;
+        private System.Windows.Forms.Label L_P0HairColor;
+        private System.Windows.Forms.Label L_P0FaceShape;
+        private System.Windows.Forms.Label L_P0EyeColor;
+        private System.Windows.Forms.ComboBox CB_P0SkinColor;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox CB_P0Badge23;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox CB_P0Badge22;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox CB_P0Badge21;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox CB_P0Badge20;
+        private System.Windows.Forms.ComboBox CB_P0Gender;
+        private System.Windows.Forms.Label L_P0Gender;
+        private System.Windows.Forms.Label L_P0Name;
     }
 }

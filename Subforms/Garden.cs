@@ -10,17 +10,13 @@ namespace NLSE
     public partial class Garden : Form
     {
         // Form Variables
-        private PictureBox[] TownAcres;
-        private ushort[] TownAcreTiles;
-        private PictureBox[] IslandAcres;
-        private ushort[] IslandAcreTiles;
-        private PictureBox[] PlayerPics;
+        private ushort[] TownAcreTiles, IslandAcreTiles;
+        private PictureBox[] TownAcres, IslandAcres, PlayerPics, PlayerPicsLarge, PlayerPockets, PlayerDressers1, PlayerDressers2, PlayerIslandBox;
+        private ComboBox[] PlayerHairStyles, PlayerHairColors, PlayerEyeColors, PlayerFaces, PlayerTans, PlayerGenders;
+        private ComboBox[][] PlayerBadges;
+        private TextBox[] PlayerNames;
+
         private Player[] Players;
-        private PictureBox[] PlayerPicsLarge;
-        private PictureBox[] PlayerPockets;
-        private PictureBox[] PlayerDressers1;
-        private PictureBox[] PlayerDressers2;
-        private PictureBox[] PlayerIslandBox;
         private Building[] Buildings;
         private Villager[] Villagers;
         private Item[] TownItems, IslandItems;
@@ -30,6 +26,7 @@ namespace NLSE
         {
             InitializeComponent();
             Save = new GardenData(Main.SaveData);
+            #region Array Initialization
             TownAcres = new[]
             {
                 PB_acre00, PB_acre10, PB_acre20, PB_acre30, PB_acre40, PB_acre50, PB_acre60,
@@ -80,7 +77,71 @@ namespace NLSE
             {
                 PB_P0Island, /* PB_P1Island, PB_P2Island, PB_P3Island */
             };
+            PlayerBadges = new[]
+            {
+                new []
+                {
+                    CB_P0Badge00, CB_P0Badge01, CB_P0Badge02, CB_P0Badge03, CB_P0Badge04,
+                    CB_P0Badge05, CB_P0Badge06, CB_P0Badge07, CB_P0Badge08, CB_P0Badge09,
+                    CB_P0Badge10, CB_P0Badge11, CB_P0Badge12, CB_P0Badge13, CB_P0Badge14,
+                    CB_P0Badge15, CB_P0Badge16, CB_P0Badge17, CB_P0Badge18, CB_P0Badge19,
+                    CB_P0Badge20, CB_P0Badge21, CB_P0Badge22, CB_P0Badge23,
+                }, /*
+                new []
+                {
+                    CB_P1Badge00, CB_P1Badge01, CB_P1Badge02, CB_P1Badge03, CB_P1Badge04,
+                    CB_P1Badge05, CB_P1Badge06, CB_P1Badge07, CB_P1Badge08, CB_P1Badge09,
+                    CB_P1Badge10, CB_P1Badge11, CB_P1Badge12, CB_P1Badge13, CB_P1Badge14,
+                    CB_P1Badge15, CB_P1Badge16, CB_P1Badge17, CB_P1Badge18, CB_P1Badge19,
+                    CB_P1Badge20, CB_P1Badge21, CB_P1Badge22, CB_P1Badge23,
+                },
+                new []
+                {
+                    CB_P2Badge00, CB_P2Badge01, CB_P2Badge02, CB_P2Badge03, CB_P2Badge04,
+                    CB_P2Badge05, CB_P2Badge06, CB_P2Badge07, CB_P2Badge08, CB_P2Badge09,
+                    CB_P2Badge10, CB_P2Badge11, CB_P2Badge12, CB_P2Badge13, CB_P2Badge14,
+                    CB_P2Badge15, CB_P2Badge16, CB_P2Badge17, CB_P2Badge18, CB_P2Badge19,
+                    CB_P2Badge20, CB_P2Badge21, CB_P2Badge22, CB_P2Badge23,
+                },
+                new []
+                {
+                    CB_P3Badge00, CB_P3Badge01, CB_P3Badge02, CB_P3Badge03, CB_P3Badge04,
+                    CB_P3Badge05, CB_P3Badge06, CB_P3Badge07, CB_P3Badge08, CB_P3Badge09,
+                    CB_P3Badge10, CB_P3Badge11, CB_P3Badge12, CB_P3Badge13, CB_P3Badge14,
+                    CB_P3Badge15, CB_P3Badge16, CB_P3Badge17, CB_P3Badge18, CB_P3Badge19,
+                    CB_P3Badge20, CB_P3Badge21, CB_P3Badge22, CB_P3Badge23,
+                } */
+            };
+            PlayerNames = new[]
+            {
+                TB_P0Name, /* TB_P1Name, TB_P2Name, TB_P3Name */ 
+            };
+            PlayerHairStyles = new[]
+            {
+                CB_P0HairStyle, /* CB_P1HairStyle, CB_P2HairStyle, CB_P3HairStyle */ 
+            };
+            PlayerHairColors = new[]
+            {
+                CB_P0HairColor, /* CB_P1HairColor, CB_P2HairColor, CB_P3HairColor */ 
+            };
+            PlayerEyeColors = new[]
+            {
+                CB_P0EyeColor, /* CB_P1EyeColor, CB_P2EyeColor, CB_P3EyeColor */ 
+            };
+            PlayerFaces = new[]
+            {
+                CB_P0FaceShape, /* CB_P1FaceShape, CB_P2FaceShape, CB_P3FaceShape */ 
+            };
+            PlayerTans = new[]
+            {
+                CB_P0SkinColor, /* CB_P1SkinColor, CB_P2SkinColor, CB_P3SkinColor */ 
+            };
+            PlayerGenders = new[]
+            {
+                CB_P0Gender, /* CB_P1Gender, CB_P2Gender, CB_P3Gender */ 
+            };
 
+            #endregion
             // Load
             loadData();
         }
@@ -170,6 +231,7 @@ namespace NLSE
                 Tan, U9;
 
             public string Name;
+            public int Gender;
             public string HomeTown;
 
             public Image JPEG;
@@ -190,12 +252,13 @@ namespace NLSE
                 U9 = Data[9];
 
                 Name = Encoding.Unicode.GetString(Data.Skip(0x6F3A).Take(0x12).ToArray()).Trim('\0');
+                Gender = Data[0x6F4C];
                 HomeTown = Encoding.Unicode.GetString(Data.Skip(0x6F50).Take(0x12).ToArray()).Trim('\0');
 
                 try { JPEG = Image.FromStream(new MemoryStream(Data.Skip(0x5724).Take(0x1400).ToArray())); }
                 catch { JPEG = null; }
 
-                Badges = Data.Skip(0x569C).Take(20).ToArray();
+                Badges = Data.Skip(0x569C).Take(24).ToArray();
 
                 for (int i = 0; i < Pockets.Length; i++)
                     Pockets[i] = new Item(Data.Skip(0x6BB0 + i*4).Take(4).ToArray());
@@ -208,6 +271,8 @@ namespace NLSE
             }
             public byte[] Write()
             {
+                return Data; // todo: finish writing
+
                 Array.Copy(BitConverter.GetBytes(U32), 0, Data, 0, 4);
                 Data[4] = Hair;
                 Data[5] = HairColor;
@@ -215,8 +280,21 @@ namespace NLSE
                 Data[7] = EyeColor;
                 Data[8] = Tan;
                 Data[9] = U9;
+                Data[0x6F4C] = (byte)Gender;
+
+                Array.Copy(Encoding.Unicode.GetBytes(Name.PadRight(9, '\0')), 0, Data, 0x6F3A, 0x12);
+                Array.Copy(Encoding.Unicode.GetBytes(HomeTown.PadRight(9, '\0')), 0, Data, 0x6F50, 0x12);
 
                 Array.Copy(Badges, 0, Data, 0x569C, Badges.Length);
+
+                for (int i = 0; i < Pockets.Length; i++)
+                    Array.Copy(Pockets[i].Write(), 0, Data, 0x6BB0 + i*4, 4);
+
+                for (int i = 0; i < IslandBox.Length; i++)
+                    Array.Copy(IslandBox[i].Write(), 0, Data, 0x6E60 + i*4, 4);
+
+                for (int i = 0; i < Dressers.Length; i++)
+                    Array.Copy(Dressers[i].Write(), 0, Data, 0x8E18 + i*4, 4);
 
                 return Data;
             }
@@ -309,8 +387,17 @@ namespace NLSE
                 PlayerDressers1[i].Image = getItemPic(16, 5, Players[i].Dressers.Take(Players[i].Dressers.Length / 2).ToArray());
                 PlayerDressers2[i].Image = getItemPic(16, 5, Players[i].Dressers.Skip(Players[i].Dressers.Length / 2).ToArray());
                 PlayerIslandBox[i].Image = getItemPic(16, 5, Players[i].IslandBox);
+                PlayerNames[i].Text = Players[i].Name;
+                for (int j = 0; j < PlayerBadges[i].Length; j++)
+                    PlayerBadges[i][j].SelectedIndex = Players[i].Badges[j];
+
+                PlayerHairStyles[i].SelectedIndex = Players[i].Hair;
+                PlayerHairColors[i].SelectedIndex = Players[i].HairColor;
+                PlayerFaces[i].SelectedIndex = Players[i].Face;
+                PlayerEyeColors[i].SelectedIndex = Players[i].EyeColor;
+                PlayerTans[i].SelectedIndex = Players[i].Tan;
+                PlayerGenders[i].SelectedIndex = Players[i].Gender;
             }
-                
 
             // Load Town
             TownAcreTiles = new ushort[TownAcres.Length];
@@ -679,6 +766,13 @@ namespace NLSE
                     b.SetPixel(i % (itemsize * itemsPerRow), i / (itemsize * itemsPerRow), Color.FromArgb(25, 0x0, 0x0, 0x0));
 
             return b;
+        }
+
+        private void clickPlayerPic(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(PlayerPics, sender as PictureBox);
+            index = 0; // mayor only right now
+            tabControl1.SelectedIndex = 2 + index;
         }
     }
 }
