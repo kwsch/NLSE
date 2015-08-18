@@ -103,6 +103,15 @@
             this.PB_island21 = new System.Windows.Forms.PictureBox();
             this.PB_island12 = new System.Windows.Forms.PictureBox();
             this.PB_island11 = new System.Windows.Forms.PictureBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.PB_P0Dresser1 = new System.Windows.Forms.PictureBox();
+            this.PB_P0Dresser2 = new System.Windows.Forms.PictureBox();
+            this.PB_P0Pocket = new System.Windows.Forms.PictureBox();
+            this.PB_P0Island = new System.Windows.Forms.PictureBox();
+            this.L_P0Pocket = new System.Windows.Forms.Label();
+            this.L_P0Dresser = new System.Windows.Forms.Label();
+            this.L_P0Island = new System.Windows.Forms.Label();
+            this.PB_LPlayer0 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -168,6 +177,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island11)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Pocket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Island)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_LPlayer0)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -243,6 +258,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -985,6 +1001,103 @@
             this.PB_island11.TabIndex = 71;
             this.PB_island11.TabStop = false;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.PB_LPlayer0);
+            this.tabPage3.Controls.Add(this.L_P0Island);
+            this.tabPage3.Controls.Add(this.L_P0Pocket);
+            this.tabPage3.Controls.Add(this.PB_P0Island);
+            this.tabPage3.Controls.Add(this.PB_P0Pocket);
+            this.tabPage3.Controls.Add(this.PB_P0Dresser2);
+            this.tabPage3.Controls.Add(this.PB_P0Dresser1);
+            this.tabPage3.Controls.Add(this.L_P0Dresser);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(652, 560);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Player";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // PB_P0Dresser1
+            // 
+            this.PB_P0Dresser1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_P0Dresser1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_P0Dresser1.Location = new System.Drawing.Point(6, 257);
+            this.PB_P0Dresser1.Name = "PB_P0Dresser1";
+            this.PB_P0Dresser1.Size = new System.Drawing.Size(83, 291);
+            this.PB_P0Dresser1.TabIndex = 0;
+            this.PB_P0Dresser1.TabStop = false;
+            // 
+            // PB_P0Dresser2
+            // 
+            this.PB_P0Dresser2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_P0Dresser2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_P0Dresser2.Location = new System.Drawing.Point(94, 257);
+            this.PB_P0Dresser2.Name = "PB_P0Dresser2";
+            this.PB_P0Dresser2.Size = new System.Drawing.Size(83, 291);
+            this.PB_P0Dresser2.TabIndex = 1;
+            this.PB_P0Dresser2.TabStop = false;
+            // 
+            // PB_P0Pocket
+            // 
+            this.PB_P0Pocket.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_P0Pocket.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_P0Pocket.Location = new System.Drawing.Point(6, 232);
+            this.PB_P0Pocket.Name = "PB_P0Pocket";
+            this.PB_P0Pocket.Size = new System.Drawing.Size(259, 19);
+            this.PB_P0Pocket.TabIndex = 2;
+            this.PB_P0Pocket.TabStop = false;
+            // 
+            // PB_P0Island
+            // 
+            this.PB_P0Island.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_P0Island.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_P0Island.Location = new System.Drawing.Point(182, 417);
+            this.PB_P0Island.Name = "PB_P0Island";
+            this.PB_P0Island.Size = new System.Drawing.Size(83, 131);
+            this.PB_P0Island.TabIndex = 3;
+            this.PB_P0Island.TabStop = false;
+            // 
+            // L_P0Pocket
+            // 
+            this.L_P0Pocket.Location = new System.Drawing.Point(177, 257);
+            this.L_P0Pocket.Name = "L_P0Pocket";
+            this.L_P0Pocket.Size = new System.Drawing.Size(87, 23);
+            this.L_P0Pocket.TabIndex = 4;
+            this.L_P0Pocket.Text = "^ Pocket ^";
+            this.L_P0Pocket.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // L_P0Dresser
+            // 
+            this.L_P0Dresser.Location = new System.Drawing.Point(179, 257);
+            this.L_P0Dresser.Name = "L_P0Dresser";
+            this.L_P0Dresser.Size = new System.Drawing.Size(85, 160);
+            this.L_P0Dresser.TabIndex = 5;
+            this.L_P0Dresser.Text = "<-- Dresser";
+            this.L_P0Dresser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // L_P0Island
+            // 
+            this.L_P0Island.Location = new System.Drawing.Point(182, 401);
+            this.L_P0Island.Name = "L_P0Island";
+            this.L_P0Island.Size = new System.Drawing.Size(82, 13);
+            this.L_P0Island.TabIndex = 6;
+            this.L_P0Island.Text = "v Island v";
+            this.L_P0Island.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // PB_LPlayer0
+            // 
+            this.PB_LPlayer0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PB_LPlayer0.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PB_LPlayer0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_LPlayer0.Location = new System.Drawing.Point(6, 16);
+            this.PB_LPlayer0.Name = "PB_LPlayer0";
+            this.PB_LPlayer0.Size = new System.Drawing.Size(130, 210);
+            this.PB_LPlayer0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_LPlayer0.TabIndex = 7;
+            this.PB_LPlayer0.TabStop = false;
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1073,6 +1186,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island11)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Pocket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Island)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_LPlayer0)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1154,5 +1273,14 @@
         private System.Windows.Forms.PictureBox PB_island21;
         private System.Windows.Forms.PictureBox PB_island12;
         private System.Windows.Forms.PictureBox PB_island11;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label L_P0Island;
+        private System.Windows.Forms.Label L_P0Pocket;
+        private System.Windows.Forms.PictureBox PB_P0Island;
+        private System.Windows.Forms.PictureBox PB_P0Pocket;
+        private System.Windows.Forms.PictureBox PB_P0Dresser2;
+        private System.Windows.Forms.PictureBox PB_P0Dresser1;
+        private System.Windows.Forms.Label L_P0Dresser;
+        private System.Windows.Forms.PictureBox PB_LPlayer0;
     }
 }

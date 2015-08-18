@@ -16,6 +16,11 @@ namespace NLSE
         private ushort[] IslandAcreTiles;
         private PictureBox[] PlayerPics;
         private Player[] Players;
+        private PictureBox[] PlayerPicsLarge;
+        private PictureBox[] PlayerPockets;
+        private PictureBox[] PlayerDressers1;
+        private PictureBox[] PlayerDressers2;
+        private PictureBox[] PlayerIslandBox;
         private Building[] Buildings;
         private Villager[] Villagers;
         private Item[] TownItems, IslandItems;
@@ -54,6 +59,26 @@ namespace NLSE
             PlayerPics = new[]
             {
                 PB_JPEG0, PB_JPEG1, PB_JPEG2, PB_JPEG3
+            };
+            PlayerPicsLarge = new[]
+            {
+                PB_LPlayer0, /* PB_LPlayer1, PB_LPlayer2, PB_LPlayer3 */
+            };
+            PlayerPockets = new[]
+            {
+                PB_P0Pocket, /* PB_P1Pocket, PB_P2Pocket, PB_P3Pocket */
+            };
+            PlayerDressers1 = new[]
+            {
+                PB_P0Dresser1, /* PB_P1Dresser1, PB_P2Dresser1, PB_P3Dresser1 */
+            };
+            PlayerDressers2 = new[]
+            {
+                PB_P0Dresser2, /* PB_P1Dresser2, PB_P2Dresser2, PB_P3Dresser2 */
+            };
+            PlayerIslandBox = new[]
+            {
+                PB_P0Island, /* PB_P1Island, PB_P2Island, PB_P3Island */
             };
 
             // Load
@@ -114,14 +139,25 @@ namespace NLSE
         class GardenData
         {
             public DataRef TownName = new DataRef(0x5C7BA, 0x12);
-
+            public int TownHallColor;
+            public int TrainStationColor;
+            public int GrassType;
+            public int NativeFruit;
             public byte[] Data;
             public GardenData(byte[] data)
             {
                 Data = data;
+                GrassType = Data[0x4DA81];
+                TownHallColor = Data[0x5C7B8] & 3;
+                TrainStationColor = Data[0x5C7B9] & 3;
+                NativeFruit = Data[0x5C836];
             }
             public byte[] Write()
             {
+                Data[0x4DA81] = (byte)GrassType;
+                Data[0x5C7B8] = (byte)((Data[0x5C7B8] & 0xFC) | TownHallColor);
+                Data[0x5C7B9] = (byte)((Data[0x5C7B9] & 0xFC) | TrainStationColor);
+                Data[0x5C836] = (byte)NativeFruit;
                 return Data;
             }
         }
@@ -138,9 +174,9 @@ namespace NLSE
 
             public Image JPEG;
             public byte[] Badges;
-            public int[] Pockets = new int[16];
-            public int[] IslandBox = new int[5 * 8];
-            public int[] Dressers = new int[5 * 36];
+            public Item[] Pockets = new Item[16];
+            public Item[] IslandBox = new Item[5 * 8];
+            public Item[] Dressers = new Item[5 * 36];
             public Player(byte[] data)
             {
                 Data = data;
@@ -162,13 +198,13 @@ namespace NLSE
                 Badges = Data.Skip(0x569C).Take(20).ToArray();
 
                 for (int i = 0; i < Pockets.Length; i++)
-                    Pockets[i] = BitConverter.ToInt32(Data, 0x6BB0 + i*4);
+                    Pockets[i] = new Item(Data.Skip(0x6BB0 + i*4).Take(4).ToArray());
 
                 for (int i = 0; i < IslandBox.Length; i++)
-                    IslandBox[i] = BitConverter.ToInt32(data, 0x6DC0 + i*4);
+                    IslandBox[i] = new Item(Data.Skip(0x6E60 + i*4).Take(4).ToArray());
 
                 for (int i = 0; i < Dressers.Length; i++)
-                    Dressers[i] = BitConverter.ToInt32(Data, 0x8E10 + i*4);
+                    Dressers[i] = new Item(Data.Skip(0x8E18 + i*4).Take(4).ToArray());
             }
             public byte[] Write()
             {
@@ -264,6 +300,17 @@ namespace NLSE
                 Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0x9F10).Take(0x9F10).ToArray());
             for (int i = 0; i < Players.Length; i++)
                 PlayerPics[i].Image = Players[i].JPEG;
+
+            // Temporary
+            for (int i = 0; i < 1 /*Players.Length */; i++)
+            {
+                PlayerPicsLarge[i].Image = Players[i].JPEG;
+                PlayerPockets[i].Image = getItemPic(16, 16, Players[i].Pockets);
+                PlayerDressers1[i].Image = getItemPic(16, 5, Players[i].Dressers.Take(Players[i].Dressers.Length / 2).ToArray());
+                PlayerDressers2[i].Image = getItemPic(16, 5, Players[i].Dressers.Skip(Players[i].Dressers.Length / 2).ToArray());
+                PlayerIslandBox[i].Image = getItemPic(16, 5, Players[i].IslandBox);
+            }
+                
 
             // Load Town
             TownAcreTiles = new ushort[TownAcres.Length];
@@ -512,9 +559,7 @@ namespace NLSE
                 int X = i % 16;
                 int Y = i / 16;
 
-                int index = quadrant*0x100 + X + Y*0x10;
-
-                var item = items[index];
+                var item = items[quadrant*0x100 + i];
                 if (item.ID == 0x7FFE)
                     continue; // skip this one.
                 
@@ -594,6 +639,46 @@ namespace NLSE
                 case "weed": return Color.Green;
             }
             return Color.Red;
+        }
+
+        private Image getItemPic(int itemsize, int itemsPerRow, Item[] items)
+        {
+            Bitmap b = new Bitmap(itemsize * itemsPerRow, itemsize * items.Length / itemsPerRow);
+            for (int i = 0; i < items.Length; i++) // loop over acre data
+            {
+                int X = i % itemsPerRow;
+                int Y = i / itemsPerRow;
+
+                var item = items[i];
+                if (item.ID == 0x7FFE)
+                    continue; // skip this one.
+
+                string itemType = getItemType(item.ID);
+                Color itemColor = getItemColor(itemType);
+                itemColor = Color.FromArgb(200, itemColor.R, itemColor.G, itemColor.B);
+
+                // Plop into image
+                for (int x = 0; x < itemsize * itemsize; x++)
+                {
+                    int rX = (X * itemsize + x / itemsize);
+                    int rY = (Y * itemsize + x % itemsize);
+                    b.SetPixel(rX, rY, itemColor);
+                }
+                // Buried
+                if (item.Buried)
+                {
+                    for (int z = 2; z < itemsize - 1; z++)
+                    {
+                        b.SetPixel(X * itemsize + z, Y * itemsize + z, Color.Black);
+                        b.SetPixel(X * itemsize + itemsize - z, Y * itemsize + z, Color.Black);
+                    }
+                }
+            }
+            for (int i = 0; i < b.Width * b.Height; i++) // slap on a grid
+                if (i % (itemsize) == 0 || (i / (itemsize * itemsPerRow)) % (itemsize) == 0)
+                    b.SetPixel(i % (itemsize * itemsPerRow), i / (itemsize * itemsPerRow), Color.FromArgb(25, 0x0, 0x0, 0x0));
+
+            return b;
         }
     }
 }
