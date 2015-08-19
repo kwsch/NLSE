@@ -742,14 +742,14 @@ namespace NLSE
         private void reloadCurrentItem(Item item)
         {
             currentItem = item;
-            const string itemName = ""; // todo: add item name display
+            string itemName = Main.itemNames[currentItem.ID];
             L_ItemCurrent.Text = String.Format("Current Item: [0x{0}{1}{2}] {3}",
                 currentItem.Flag2.ToString("X2"), currentItem.Flag1.ToString("X2"), currentItem.ID.ToString("X4"),
                 itemName);
         }
         private void hoverItem(Item item, int X, int Y)
         {
-            const string itemName = ""; // todo: add item name display
+            string itemName = Main.itemNames[item.ID];
             L_ItemHover.Text = String.Format("[0x{0}{1}{2}] {3}x{4}: {5}",
                 item.Flag2.ToString("X2"), item.Flag1.ToString("X2"), item.ID.ToString("X4"),
                 X.ToString("00"), Y.ToString("00"),

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -10,7 +11,8 @@ namespace NLSE
     public partial class Main : Form
     {
         internal static string root;
-
+        internal static string[] itemNames = Data.getItemStrings("en");
+        internal static List<cbItem> itemList = Data.getCBItems(itemNames);
         public Main()
         {
             // Set up.

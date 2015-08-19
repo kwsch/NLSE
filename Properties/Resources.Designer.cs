@@ -1889,5 +1889,39 @@ namespace NLSE.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to // Outside Flowers, Trees, Bushes, Fruit	
+        ///009F	Red Tulips
+        ///00A0	White Tulips
+        ///00A1	Yellow Tulips
+        ///00A2	Pink Tulips
+        ///00A3	Purple Tulips
+        ///00A4	Black Tulips
+        ///00A5	Orange Tulips
+        ///00A6	White Pansies
+        ///00A7	Yellow Pansies
+        ///00A8	Red Pansies
+        ///00A9	Purple Pansies
+        ///00AA	Orange Pansies
+        ///00AB	Blue Pansies
+        ///00AC	White Comsos
+        ///00AD	Red Cosmos
+        ///00AE	Sun Cosmos
+        ///00AF	Pink Cosmos
+        ///00B0	Orange Cosmos
+        ///00B1	Black Cosmos
+        ///00B2	Red Roses
+        ///00B3	White Roses
+        ///00B4	Yellow Roses
+        ///00B5	Pink Roses
+        ///00B6	Orange Roses
+        ///00B7	Purple Roses [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string item_en {
+            get {
+                return ResourceManager.GetString("item_en", resourceCulture);
+            }
+        }
     }
 }

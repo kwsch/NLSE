@@ -1,9 +1,57 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace NLSE
 {
+    public class Data
+    {
+        internal static string[] getItemStrings(string l)
+        {
+            string[] storage = new string[0x8000];
+            object txt = Properties.Resources.ResourceManager.GetObject("item_" + l); // Fetch File, \n to list.
+            List<string> rawlist = ((string)txt).Split(new[] { '\n' }).ToList();
+            string[] input = rawlist.ToArray();
+
+            for (int i = 0; i < input.Length; i++)
+            {
+            try {
+                string line = input[i];
+                string[] t = line.Split('\t');
+                if (t.Length < 2 || t[0].Length != 4 || t[0][0] == '\\')
+                    continue;
+
+                int index = Convert.ToInt32(t[0], 16);
+                storage[index] = t[1];
+            }
+            catch { }
+            }
+            return storage;
+        }
+
+        internal static List<cbItem> getCBItems(string[] storage)
+        {
+            List<cbItem> cbList = new List<cbItem>();
+            try
+            {
+            for (int i = 0; i < storage.Length; i++)
+                if (storage[i] != null && storage[i].Length > 0)
+                    cbList.Add(new cbItem
+                    {
+                        Text = storage[i],
+                        Value = i
+                    });
+                }
+            catch { }
+            return cbList;
+        }
+    }
+    public class cbItem
+    {
+        public string Text { get; set; }
+        public object Value { get; set; }
+    }
     public class DataRef
     {
         public int Offset, Length;
