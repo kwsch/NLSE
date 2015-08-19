@@ -21,7 +21,7 @@ namespace NLSE
         private Villager[] Villagers;
         private Item[] TownItems, IslandItems;
 
-        // Form Handling
+        // Form Handlingc
         public Garden()
         {
             InitializeComponent();
@@ -36,11 +36,6 @@ namespace NLSE
                 PB_acre04, PB_acre14, PB_acre24, PB_acre34, PB_acre44, PB_acre54, PB_acre64,
                 PB_acre05, PB_acre15, PB_acre25, PB_acre35, PB_acre45, PB_acre55, PB_acre65,
             };
-            foreach (PictureBox p in TownAcres)
-            {
-                p.MouseMove += mouseTown;
-                p.MouseClick += clickTown;
-            }
             IslandAcres = new[]
             {
                 PB_island00, PB_island10, PB_island20, PB_island30,
@@ -48,11 +43,6 @@ namespace NLSE
                 PB_island02, PB_island12, PB_island22, PB_island32,
                 PB_island03, PB_island13, PB_island23, PB_island33,
             };
-            foreach (PictureBox p in IslandAcres)
-            {
-                p.MouseMove += mouseIsland;
-                p.MouseClick += clickIsland;
-            }
             PlayerPics = new[]
             {
                 PB_JPEG0, PB_JPEG1, PB_JPEG2, PB_JPEG3
@@ -140,10 +130,18 @@ namespace NLSE
             {
                 CB_P0Gender, /* CB_P1Gender, CB_P2Gender, CB_P3Gender */ 
             };
-
+            #endregion
+            #region Load Event Methods to Controls
+            foreach (PictureBox p in TownAcres) { p.MouseMove += mouseTown; p.MouseClick += clickTown; }
+            foreach (PictureBox p in IslandAcres) { p.MouseMove += mouseIsland; p.MouseClick += clickIsland; }
+            foreach (PictureBox p in PlayerPockets) { p.MouseMove += mouseCustom; p.MouseClick += clickCustom; }
+            foreach (PictureBox p in PlayerDressers1) { p.MouseMove += mouseCustom; p.MouseClick += clickCustom; }
+            foreach (PictureBox p in PlayerDressers2) { p.MouseMove += mouseCustom; p.MouseClick += clickCustom; }
+            foreach (PictureBox p in PlayerIslandBox) { p.MouseMove += mouseCustom; p.MouseClick += clickCustom; }
             #endregion
             // Load
             loadData();
+            reloadCurrentItem(currentItem);
         }
         private void B_Save_Click(object sender, EventArgs e)
         {
@@ -562,6 +560,7 @@ namespace NLSE
             return ctr;
         }
 
+        private Item currentItem = new Item(new byte[] {0xFE, 0x7F, 0, 0});
         private const int mapScale = 2;
         private void mouseTown(object sender, MouseEventArgs e)
         {
@@ -577,7 +576,7 @@ namespace NLSE
             int index = getItemIndex(X, Y, 5);
             Item item = TownItems[index];
 
-            L_TownCoord.Text = String.Format("X: {1}{0}Y: {2}{0}Item: {3}", Environment.NewLine, X, Y, item.ID.ToString("X4"));
+            hoverItem(item, X, Y);
         }
         private void mouseIsland(object sender, MouseEventArgs e)
         {
@@ -592,7 +591,7 @@ namespace NLSE
             int index = getItemIndex(X, Y, 2);
             Item item = IslandItems[index];
 
-            L_IslandCoord.Text = String.Format("X: {1}{0}Y: {2}{0}Item: {3}", Environment.NewLine, X, Y, item.ID.ToString("X4"));
+            hoverItem(item, X, Y);
         }
         private void clickTown(object sender, MouseEventArgs e)
         {
@@ -607,11 +606,10 @@ namespace NLSE
             int index = getItemIndex(X, Y, 5);
 
             if (e.Button == MouseButtons.Right) // Read
-                choiceTownItem = TownItems[index]; // replace this with updating the item view
+                reloadCurrentItem(TownItems[index]);
             else // Write
             {
-                if (choiceTownItem == null) return;
-                TownItems[index] = choiceTownItem;
+                TownItems[index] = currentItem;
                 int zX = (X - 16) / 16;
                 int zY = (Y - 16) / 16;
                 int zAcre = zX + zY * 5;
@@ -631,20 +629,133 @@ namespace NLSE
             int index = getItemIndex(X, Y, 2);
 
             if (e.Button == MouseButtons.Right) // Read
-                choiceIslandItem = IslandItems[index]; // replace this with updating the item view
+                reloadCurrentItem(IslandItems[index]);
             else // Write
             {
-                if (choiceIslandItem == null) return;
-                IslandItems[index] = choiceIslandItem;
+                IslandItems[index] = currentItem;
                 int zX = (X - 16) / 16;
                 int zY = (Y - 16) / 16;
                 int zAcre = zX + zY * 2;
                 IslandAcres[acre].Image = getAcreItemPic(zAcre, IslandItems);
             }
         }
+        private void mouseCustom(object sender, MouseEventArgs e)
+        {
+            int width = (sender as PictureBox).Width / 16; // 16pixels per item
+            int X = e.X / (16);
+            int Y = e.Y / (16);
+            if (e.X == (sender as PictureBox).Width - 1 - 2) // tweak because the furthest pixel is unused for transparent effect, and 2 px are used for border
+                X -= 1;
+            if (e.Y == (sender as PictureBox).Height - 1 - 2)
+                Y -= 1;
 
-        private Item choiceTownItem = new Item(new byte[] {0xFE, 0x7F, 0, 0});
-        private Item choiceIslandItem = new Item(new byte[] {0xFE, 0x7F, 0, 0});
+            // Get Base Acre
+            int index = width * Y + X;
+
+            bool pocket = Array.IndexOf(PlayerPockets, sender as PictureBox) > -1;
+            bool dress1 = Array.IndexOf(PlayerDressers1, sender as PictureBox) > -1;
+            bool dress2 = Array.IndexOf(PlayerDressers2, sender as PictureBox) > -1;
+            bool island = Array.IndexOf(PlayerIslandBox, sender as PictureBox) > -1;
+            bool dress = dress1 | dress2;
+
+            int player = -1;
+            if (pocket)
+                player = Array.IndexOf(PlayerPockets, sender as PictureBox);
+            else if (dress1)
+                player = Array.IndexOf(PlayerDressers1, sender as PictureBox);
+            else if (dress2)
+                player = Array.IndexOf(PlayerDressers2, sender as PictureBox);
+            else if (island)
+                player = Array.IndexOf(PlayerIslandBox, sender as PictureBox);
+
+            if (dress2) index += Players[player].Dressers.Length / 2;
+
+            Item item = null;
+            if (pocket)
+                item = Players[player].Pockets[index];
+            else if (dress)
+                item = Players[player].Dressers[index];
+            else if (island)
+                item = Players[player].IslandBox[index];
+
+            hoverItem(item, X, Y);
+        }
+        private void clickCustom(object sender, MouseEventArgs e)
+        {
+            int width = (sender as PictureBox).Width / 16; // 16pixels per item
+
+            int X = e.X / (16);
+            int Y = e.Y / (16);
+
+            // Get Base Acre
+            int index = width * Y + X;
+
+            bool pocket = Array.IndexOf(PlayerPockets, sender as PictureBox) > -1;
+            bool dress1 = Array.IndexOf(PlayerDressers1, sender as PictureBox) > -1;
+            bool dress2 = Array.IndexOf(PlayerDressers2, sender as PictureBox) > -1;
+            bool island = Array.IndexOf(PlayerIslandBox, sender as PictureBox) > -1;
+            bool dress = dress1 | dress2;
+
+            int player = -1;
+            if (pocket)
+                player = Array.IndexOf(PlayerPockets, sender as PictureBox);
+            else if (dress1)
+                player = Array.IndexOf(PlayerDressers1, sender as PictureBox);
+            else if (dress2)
+                player = Array.IndexOf(PlayerDressers2, sender as PictureBox);
+            else if (island)
+                player = Array.IndexOf(PlayerIslandBox, sender as PictureBox);
+
+            if (dress2) index += Players[player].Dressers.Length / 2;
+
+            if (e.Button == MouseButtons.Right) // Read
+            {
+                if (pocket)
+                    reloadCurrentItem(Players[player].Pockets[index]);
+                else if (dress)
+                    reloadCurrentItem(Players[player].Dressers[index]);
+                else if (island)
+                    reloadCurrentItem(Players[player].IslandBox[index]);
+            }
+            else // Write
+            {
+                if (pocket)
+                {
+                    Players[player].Pockets[index] = currentItem;
+                    PlayerPockets[player].Image = getItemPic(16, 16, Players[player].Pockets);
+                }
+                else if (dress)
+                {
+                    Players[player].Dressers[index] = currentItem;
+                    if (dress1)
+                        PlayerDressers1[player].Image = getItemPic(16, 5, Players[player].Dressers.Take(Players[player].Dressers.Length / 2).ToArray());
+                    else
+                        PlayerDressers2[player].Image = getItemPic(16, 5, Players[player].Dressers.Skip(Players[player].Dressers.Length / 2).ToArray());
+                }
+                else if (island)
+                {
+                    Players[player].IslandBox[index] = currentItem;
+                    PlayerIslandBox[player].Image = getItemPic(16, 5, Players[player].IslandBox);
+                }
+            }
+        }
+        private void reloadCurrentItem(Item item)
+        {
+            currentItem = item;
+            const string itemName = ""; // todo: add item name display
+            L_ItemCurrent.Text = String.Format("Current Item: [0x{0}{1}{2}] {3}",
+                currentItem.Flag2.ToString("X2"), currentItem.Flag1.ToString("X2"), currentItem.ID.ToString("X4"),
+                itemName);
+        }
+        private void hoverItem(Item item, int X, int Y)
+        {
+            const string itemName = ""; // todo: add item name display
+            L_ItemHover.Text = String.Format("[0x{0}{1}{2}] {3}x{4}: {5}",
+                item.Flag2.ToString("X2"), item.Flag1.ToString("X2"), item.ID.ToString("X4"),
+                X.ToString("00"), Y.ToString("00"),
+                itemName);
+        }
+
         private int getItemIndex(int X, int Y, int width)
         {
             int zX = (X - 16) / 16;

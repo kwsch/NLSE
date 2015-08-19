@@ -59,7 +59,6 @@
             this.PB_acre13 = new System.Windows.Forms.PictureBox();
             this.PB_acre12 = new System.Windows.Forms.PictureBox();
             this.PB_acre11 = new System.Windows.Forms.PictureBox();
-            this.L_TownCoord = new System.Windows.Forms.Label();
             this.PB_acre65 = new System.Windows.Forms.PictureBox();
             this.PB_acre64 = new System.Windows.Forms.PictureBox();
             this.PB_acre63 = new System.Windows.Forms.PictureBox();
@@ -99,17 +98,17 @@
             this.PB_island02 = new System.Windows.Forms.PictureBox();
             this.PB_island01 = new System.Windows.Forms.PictureBox();
             this.PB_island00 = new System.Windows.Forms.PictureBox();
-            this.L_IslandCoord = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.L_P0Name = new System.Windows.Forms.Label();
             this.CB_P0Gender = new System.Windows.Forms.ComboBox();
             this.L_P0Gender = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.L_P0Badge23 = new System.Windows.Forms.Label();
             this.CB_P0Badge23 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.L_P0Badge22 = new System.Windows.Forms.Label();
             this.CB_P0Badge22 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.L_P0Badge21 = new System.Windows.Forms.Label();
             this.CB_P0Badge21 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.L_P0Badge20 = new System.Windows.Forms.Label();
             this.CB_P0Badge20 = new System.Windows.Forms.ComboBox();
             this.L_P0HairStyle = new System.Windows.Forms.Label();
             this.L_P0HairColor = new System.Windows.Forms.Label();
@@ -170,10 +169,11 @@
             this.PB_P0Dresser2 = new System.Windows.Forms.PictureBox();
             this.PB_P0Dresser1 = new System.Windows.Forms.PictureBox();
             this.L_P0Dresser = new System.Windows.Forms.Label();
+            this.L_ItemHover = new System.Windows.Forms.Label();
             this.PB_JPEG1 = new System.Windows.Forms.PictureBox();
             this.PB_JPEG2 = new System.Windows.Forms.PictureBox();
             this.PB_JPEG3 = new System.Windows.Forms.PictureBox();
-            this.L_P0Name = new System.Windows.Forms.Label();
+            this.L_ItemCurrent = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -352,7 +352,6 @@
             this.tabPage1.Controls.Add(this.PB_acre13);
             this.tabPage1.Controls.Add(this.PB_acre12);
             this.tabPage1.Controls.Add(this.PB_acre11);
-            this.tabPage1.Controls.Add(this.L_TownCoord);
             this.tabPage1.Controls.Add(this.PB_acre65);
             this.tabPage1.Controls.Add(this.PB_acre64);
             this.tabPage1.Controls.Add(this.PB_acre63);
@@ -603,15 +602,6 @@
             this.PB_acre11.TabIndex = 42;
             this.PB_acre11.TabStop = false;
             // 
-            // L_TownCoord
-            // 
-            this.L_TownCoord.AutoSize = true;
-            this.L_TownCoord.Location = new System.Drawing.Point(326, 5);
-            this.L_TownCoord.Name = "L_TownCoord";
-            this.L_TownCoord.Size = new System.Drawing.Size(63, 13);
-            this.L_TownCoord.TabIndex = 10;
-            this.L_TownCoord.Text = "Coordinates";
-            // 
             // PB_acre65
             // 
             this.PB_acre65.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -850,7 +840,6 @@
             this.tabPage2.Controls.Add(this.PB_island02);
             this.tabPage2.Controls.Add(this.PB_island01);
             this.tabPage2.Controls.Add(this.PB_island00);
-            this.tabPage2.Controls.Add(this.L_IslandCoord);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1019,27 +1008,18 @@
             this.PB_island00.TabStop = false;
             this.PB_island00.Visible = false;
             // 
-            // L_IslandCoord
-            // 
-            this.L_IslandCoord.AutoSize = true;
-            this.L_IslandCoord.Location = new System.Drawing.Point(326, 5);
-            this.L_IslandCoord.Name = "L_IslandCoord";
-            this.L_IslandCoord.Size = new System.Drawing.Size(63, 13);
-            this.L_IslandCoord.TabIndex = 38;
-            this.L_IslandCoord.Text = "Coordinates";
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.L_P0Name);
             this.tabPage3.Controls.Add(this.CB_P0Gender);
             this.tabPage3.Controls.Add(this.L_P0Gender);
-            this.tabPage3.Controls.Add(this.label4);
+            this.tabPage3.Controls.Add(this.L_P0Badge23);
             this.tabPage3.Controls.Add(this.CB_P0Badge23);
-            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Controls.Add(this.L_P0Badge22);
             this.tabPage3.Controls.Add(this.CB_P0Badge22);
-            this.tabPage3.Controls.Add(this.label2);
+            this.tabPage3.Controls.Add(this.L_P0Badge21);
             this.tabPage3.Controls.Add(this.CB_P0Badge21);
-            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.L_P0Badge20);
             this.tabPage3.Controls.Add(this.CB_P0Badge20);
             this.tabPage3.Controls.Add(this.L_P0HairStyle);
             this.tabPage3.Controls.Add(this.L_P0HairColor);
@@ -1108,6 +1088,15 @@
             this.tabPage3.Text = "Player";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // L_P0Name
+            // 
+            this.L_P0Name.Location = new System.Drawing.Point(157, 28);
+            this.L_P0Name.Name = "L_P0Name";
+            this.L_P0Name.Size = new System.Drawing.Size(55, 13);
+            this.L_P0Name.TabIndex = 70;
+            this.L_P0Name.Text = "Player Name:";
+            this.L_P0Name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // CB_P0Gender
             // 
             this.CB_P0Gender.FormattingEnabled = true;
@@ -1128,14 +1117,14 @@
             this.L_P0Gender.Text = "Gender:";
             this.L_P0Gender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label4
+            // L_P0Badge23
             // 
-            this.label4.Location = new System.Drawing.Point(426, 520);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 23);
-            this.label4.TabIndex = 67;
-            this.label4.Text = "Villager:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_P0Badge23.Location = new System.Drawing.Point(426, 520);
+            this.L_P0Badge23.Name = "L_P0Badge23";
+            this.L_P0Badge23.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge23.TabIndex = 67;
+            this.L_P0Badge23.Text = "Villager:";
+            this.L_P0Badge23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CB_P0Badge23
             // 
@@ -1150,14 +1139,14 @@
             this.CB_P0Badge23.Size = new System.Drawing.Size(121, 21);
             this.CB_P0Badge23.TabIndex = 66;
             // 
-            // label3
+            // L_P0Badge22
             // 
-            this.label3.Location = new System.Drawing.Point(426, 498);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 23);
-            this.label3.TabIndex = 65;
-            this.label3.Text = "Dream:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_P0Badge22.Location = new System.Drawing.Point(426, 498);
+            this.L_P0Badge22.Name = "L_P0Badge22";
+            this.L_P0Badge22.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge22.TabIndex = 65;
+            this.L_P0Badge22.Text = "Dream:";
+            this.L_P0Badge22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CB_P0Badge22
             // 
@@ -1172,14 +1161,14 @@
             this.CB_P0Badge22.Size = new System.Drawing.Size(121, 21);
             this.CB_P0Badge22.TabIndex = 64;
             // 
-            // label2
+            // L_P0Badge21
             // 
-            this.label2.Location = new System.Drawing.Point(426, 476);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 23);
-            this.label2.TabIndex = 63;
-            this.label2.Text = "Ambassador:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_P0Badge21.Location = new System.Drawing.Point(426, 476);
+            this.L_P0Badge21.Name = "L_P0Badge21";
+            this.L_P0Badge21.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge21.TabIndex = 63;
+            this.L_P0Badge21.Text = "Ambassador:";
+            this.L_P0Badge21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CB_P0Badge21
             // 
@@ -1194,14 +1183,14 @@
             this.CB_P0Badge21.Size = new System.Drawing.Size(121, 21);
             this.CB_P0Badge21.TabIndex = 62;
             // 
-            // label1
+            // L_P0Badge20
             // 
-            this.label1.Location = new System.Drawing.Point(426, 454);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 23);
-            this.label1.TabIndex = 61;
-            this.label1.Text = "Traveler:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_P0Badge20.Location = new System.Drawing.Point(426, 454);
+            this.L_P0Badge20.Name = "L_P0Badge20";
+            this.L_P0Badge20.Size = new System.Drawing.Size(93, 23);
+            this.L_P0Badge20.TabIndex = 61;
+            this.L_P0Badge20.Text = "Traveler:";
+            this.L_P0Badge20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CB_P0Badge20
             // 
@@ -1899,6 +1888,15 @@
             this.L_P0Dresser.Text = "<-- Dresser";
             this.L_P0Dresser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // L_ItemHover
+            // 
+            this.L_ItemHover.AutoSize = true;
+            this.L_ItemHover.Location = new System.Drawing.Point(444, 7);
+            this.L_ItemHover.Name = "L_ItemHover";
+            this.L_ItemHover.Size = new System.Drawing.Size(103, 13);
+            this.L_ItemHover.TabIndex = 10;
+            this.L_ItemHover.Text = "Hovered Item: None";
+            // 
             // PB_JPEG1
             // 
             this.PB_JPEG1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -1938,20 +1936,22 @@
             this.PB_JPEG3.TabStop = false;
             this.PB_JPEG3.Click += new System.EventHandler(this.clickPlayerPic);
             // 
-            // L_P0Name
+            // L_ItemCurrent
             // 
-            this.L_P0Name.Location = new System.Drawing.Point(157, 28);
-            this.L_P0Name.Name = "L_P0Name";
-            this.L_P0Name.Size = new System.Drawing.Size(55, 13);
-            this.L_P0Name.TabIndex = 70;
-            this.L_P0Name.Text = "Player Name:";
-            this.L_P0Name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_ItemCurrent.AutoSize = true;
+            this.L_ItemCurrent.Location = new System.Drawing.Point(234, 7);
+            this.L_ItemCurrent.Name = "L_ItemCurrent";
+            this.L_ItemCurrent.Size = new System.Drawing.Size(96, 13);
+            this.L_ItemCurrent.TabIndex = 11;
+            this.L_ItemCurrent.Text = "Current Item: None";
             // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 717);
+            this.Controls.Add(this.L_ItemCurrent);
+            this.Controls.Add(this.L_ItemHover);
             this.Controls.Add(this.PB_JPEG3);
             this.Controls.Add(this.PB_JPEG2);
             this.Controls.Add(this.PB_JPEG1);
@@ -1971,7 +1971,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre53)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre52)).EndInit();
@@ -2015,7 +2014,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_acre00)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_island12)).EndInit();
@@ -2083,8 +2081,7 @@
         private System.Windows.Forms.PictureBox PB_JPEG1;
         private System.Windows.Forms.PictureBox PB_JPEG2;
         private System.Windows.Forms.PictureBox PB_JPEG3;
-        private System.Windows.Forms.Label L_TownCoord;
-        private System.Windows.Forms.Label L_IslandCoord;
+        private System.Windows.Forms.Label L_ItemHover;
         private System.Windows.Forms.PictureBox PB_acre54;
         private System.Windows.Forms.PictureBox PB_acre53;
         private System.Windows.Forms.PictureBox PB_acre52;
@@ -2183,16 +2180,17 @@
         private System.Windows.Forms.Label L_P0FaceShape;
         private System.Windows.Forms.Label L_P0EyeColor;
         private System.Windows.Forms.ComboBox CB_P0SkinColor;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label L_P0Badge23;
         private System.Windows.Forms.ComboBox CB_P0Badge23;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label L_P0Badge22;
         private System.Windows.Forms.ComboBox CB_P0Badge22;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label L_P0Badge21;
         private System.Windows.Forms.ComboBox CB_P0Badge21;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label L_P0Badge20;
         private System.Windows.Forms.ComboBox CB_P0Badge20;
         private System.Windows.Forms.ComboBox CB_P0Gender;
         private System.Windows.Forms.Label L_P0Gender;
         private System.Windows.Forms.Label L_P0Name;
+        private System.Windows.Forms.Label L_ItemCurrent;
     }
 }
