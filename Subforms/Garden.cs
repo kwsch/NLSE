@@ -271,8 +271,6 @@ namespace NLSE
             }
             public byte[] Write()
             {
-                return Data; // todo: finish writing
-
                 Array.Copy(BitConverter.GetBytes(U32), 0, Data, 0, 4);
                 Data[4] = Hair;
                 Data[5] = HairColor;
@@ -381,23 +379,7 @@ namespace NLSE
 
             // Temporary
             for (int i = 0; i < 1 /*Players.Length */; i++)
-            {
-                PlayerPicsLarge[i].Image = Players[i].JPEG;
-                PlayerPockets[i].Image = getItemPic(16, 16, Players[i].Pockets);
-                PlayerDressers1[i].Image = getItemPic(16, 5, Players[i].Dressers.Take(Players[i].Dressers.Length / 2).ToArray());
-                PlayerDressers2[i].Image = getItemPic(16, 5, Players[i].Dressers.Skip(Players[i].Dressers.Length / 2).ToArray());
-                PlayerIslandBox[i].Image = getItemPic(16, 5, Players[i].IslandBox);
-                PlayerNames[i].Text = Players[i].Name;
-                for (int j = 0; j < PlayerBadges[i].Length; j++)
-                    PlayerBadges[i][j].SelectedIndex = Players[i].Badges[j];
-
-                PlayerHairStyles[i].SelectedIndex = Players[i].Hair;
-                PlayerHairColors[i].SelectedIndex = Players[i].HairColor;
-                PlayerFaces[i].SelectedIndex = Players[i].Face;
-                PlayerEyeColors[i].SelectedIndex = Players[i].EyeColor;
-                PlayerTans[i].SelectedIndex = Players[i].Tan;
-                PlayerGenders[i].SelectedIndex = Players[i].Gender;
-            }
+                loadPlayer(i);
 
             // Load Town
             TownAcreTiles = new ushort[TownAcres.Length];
@@ -433,6 +415,9 @@ namespace NLSE
         }
         private void saveData()
         {
+            // Temporary
+            for (int i = 0; i < 1 /*Players.Length */; i++)
+                savePlayer(i);
             // Write Players
             for (int i = 0; i < Players.Length; i++)
                 Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0x9F10, 0x9F10);
@@ -461,6 +446,37 @@ namespace NLSE
 
             // Finish
             Main.SaveData = Save.Write();
+        }
+        private void loadPlayer(int i)
+        {
+            PlayerPicsLarge[i].Image = Players[i].JPEG;
+            PlayerPockets[i].Image = getItemPic(16, 16, Players[i].Pockets);
+            PlayerDressers1[i].Image = getItemPic(16, 5, Players[i].Dressers.Take(Players[i].Dressers.Length / 2).ToArray());
+            PlayerDressers2[i].Image = getItemPic(16, 5, Players[i].Dressers.Skip(Players[i].Dressers.Length / 2).ToArray());
+            PlayerIslandBox[i].Image = getItemPic(16, 5, Players[i].IslandBox);
+            PlayerNames[i].Text = Players[i].Name;
+            for (int j = 0; j < PlayerBadges[i].Length; j++)
+                PlayerBadges[i][j].SelectedIndex = Players[i].Badges[j];
+
+            PlayerHairStyles[i].SelectedIndex = Players[i].Hair;
+            PlayerHairColors[i].SelectedIndex = Players[i].HairColor;
+            PlayerFaces[i].SelectedIndex = Players[i].Face;
+            PlayerEyeColors[i].SelectedIndex = Players[i].EyeColor;
+            PlayerTans[i].SelectedIndex = Players[i].Tan;
+            PlayerGenders[i].SelectedIndex = Players[i].Gender;
+        }
+        private void savePlayer(int i)
+        {
+            Players[i].Name = PlayerNames[i].Text;
+            for (int j = 0; j < PlayerBadges[i].Length; j++)
+                Players[i].Badges[j] = (byte)PlayerBadges[i][j].SelectedIndex;
+
+            Players[i].Hair = (byte)PlayerHairStyles[i].SelectedIndex;
+            Players[i].HairColor = (byte)PlayerHairColors[i].SelectedIndex;
+            Players[i].Face = (byte)PlayerFaces[i].SelectedIndex;
+            Players[i].EyeColor = (byte)PlayerEyeColors[i].SelectedIndex;
+            Players[i].Tan = (byte)PlayerTans[i].SelectedIndex;
+            Players[i].Gender = (byte)PlayerGenders[i].SelectedIndex;
         }
 
         // Utility
