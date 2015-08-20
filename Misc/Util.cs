@@ -60,5 +60,15 @@ namespace NLSE
             string msg = String.Join(Environment.NewLine + Environment.NewLine, lines);
             return MessageBox.Show(msg, "Prompt", btn, MessageBoxIcon.Asterisk);
         }
+        internal static int getIndex(ComboBox cb)
+        {
+            int val;
+            if (cb.SelectedValue == null) return 0;
+
+            try { val = int.Parse(cb.SelectedValue.ToString()); }
+            catch { val = cb.SelectedIndex; if (val < 0) val = 0; }
+
+            return val;
+        }
     }
 }

@@ -25,6 +25,11 @@ namespace NLSE
         public Garden()
         {
             InitializeComponent();
+            CB_Item.DisplayMember = "Text";
+            CB_Item.ValueMember = "Value";
+            TB_Flag1.KeyPress += EnterKey;
+            TB_Flag2.KeyPress += EnterKey;
+            CB_Item.DataSource = Main.itemList;
             Save = new GardenData(Main.SaveData);
             #region Array Initialization
             TownAcres = new[]
@@ -742,10 +747,9 @@ namespace NLSE
         private void reloadCurrentItem(Item item)
         {
             currentItem = item;
-            string itemName = Main.itemNames[currentItem.ID];
-            L_ItemCurrent.Text = String.Format("Current Item: [0x{0}{1}{2}] {3}",
-                currentItem.Flag2.ToString("X2"), currentItem.Flag1.ToString("X2"), currentItem.ID.ToString("X4"),
-                itemName);
+            CB_Item.SelectedValue = (int)item.ID;
+            TB_Flag1.Text = item.Flag1.ToString("X2");
+            TB_Flag2.Text = item.Flag2.ToString("X2");
         }
         private void hoverItem(Item item, int X, int Y)
         {
@@ -900,6 +904,41 @@ namespace NLSE
             int index = Array.IndexOf(PlayerPics, sender as PictureBox);
             index = 0; // mayor only right now
             tabControl1.SelectedIndex = 2 + index;
+        }
+
+        private void changeItemID(object sender, EventArgs e)
+        {
+            int index = Util.getIndex(CB_Item);
+            currentItem.ID = (ushort)((index == 0) ? 0x7FFE : index);
+
+            if (currentItem.ID == 0x7FFE)
+            {
+                TB_Flag1.Text = 0.ToString("X2");
+                TB_Flag2.Text = 0.ToString("X2");
+            }
+            else
+            L_CurrentItem.Text = String.Format("Current Item: [0x{0}{1}{2}]",
+                currentItem.Flag2.ToString("X2"),
+                currentItem.Flag1.ToString("X2"),
+                currentItem.ID.ToString("X4"));
+        }
+        private void EnterKey(Object sender, KeyPressEventArgs e)
+        {
+            // this will only allow valid hex values [0-9][a-f][A-F] to be entered. See ASCII table
+            char c = e.KeyChar;
+            if (!(c == '\b' || ('0' <= c && c <= '9') || ('A' <= c && c <= 'F'))) // et cetera
+            {
+                e.Handled = true;
+            }
+        }
+        private void changeItemFlag(object sender, EventArgs e)
+        {
+            currentItem.Flag1 = Convert.ToByte(TB_Flag1.Text, 16);
+            currentItem.Flag2 = Convert.ToByte(TB_Flag2.Text, 16);
+            L_CurrentItem.Text = String.Format("Current Item: [0x{0}{1}{2}]", 
+                currentItem.Flag2.ToString("X2"),
+                currentItem.Flag1.ToString("X2"), 
+                currentItem.ID.ToString("X4"));
         }
     }
 }

@@ -173,7 +173,10 @@
             this.PB_JPEG1 = new System.Windows.Forms.PictureBox();
             this.PB_JPEG2 = new System.Windows.Forms.PictureBox();
             this.PB_JPEG3 = new System.Windows.Forms.PictureBox();
-            this.L_ItemCurrent = new System.Windows.Forms.Label();
+            this.CB_Item = new System.Windows.Forms.ComboBox();
+            this.TB_Flag1 = new System.Windows.Forms.TextBox();
+            this.TB_Flag2 = new System.Windows.Forms.TextBox();
+            this.L_CurrentItem = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1891,7 +1894,7 @@
             // L_ItemHover
             // 
             this.L_ItemHover.AutoSize = true;
-            this.L_ItemHover.Location = new System.Drawing.Point(444, 7);
+            this.L_ItemHover.Location = new System.Drawing.Point(397, 641);
             this.L_ItemHover.Name = "L_ItemHover";
             this.L_ItemHover.Size = new System.Drawing.Size(103, 13);
             this.L_ItemHover.TabIndex = 10;
@@ -1936,21 +1939,58 @@
             this.PB_JPEG3.TabStop = false;
             this.PB_JPEG3.Click += new System.EventHandler(this.clickPlayerPic);
             // 
-            // L_ItemCurrent
+            // CB_Item
             // 
-            this.L_ItemCurrent.AutoSize = true;
-            this.L_ItemCurrent.Location = new System.Drawing.Point(234, 7);
-            this.L_ItemCurrent.Name = "L_ItemCurrent";
-            this.L_ItemCurrent.Size = new System.Drawing.Size(96, 13);
-            this.L_ItemCurrent.TabIndex = 11;
-            this.L_ItemCurrent.Text = "Current Item: None";
+            this.CB_Item.DropDownWidth = 166;
+            this.CB_Item.FormattingEnabled = true;
+            this.CB_Item.Location = new System.Drawing.Point(398, 617);
+            this.CB_Item.Name = "CB_Item";
+            this.CB_Item.Size = new System.Drawing.Size(136, 21);
+            this.CB_Item.TabIndex = 12;
+            this.CB_Item.SelectedIndexChanged += new System.EventHandler(this.changeItemID);
+            // 
+            // TB_Flag1
+            // 
+            this.TB_Flag1.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Flag1.Location = new System.Drawing.Point(540, 618);
+            this.TB_Flag1.MaxLength = 2;
+            this.TB_Flag1.Name = "TB_Flag1";
+            this.TB_Flag1.Size = new System.Drawing.Size(23, 20);
+            this.TB_Flag1.TabIndex = 13;
+            this.TB_Flag1.Text = "00";
+            this.TB_Flag1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_Flag1.TextChanged += new System.EventHandler(this.changeItemFlag);
+            // 
+            // TB_Flag2
+            // 
+            this.TB_Flag2.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Flag2.Location = new System.Drawing.Point(566, 618);
+            this.TB_Flag2.MaxLength = 2;
+            this.TB_Flag2.Name = "TB_Flag2";
+            this.TB_Flag2.Size = new System.Drawing.Size(23, 20);
+            this.TB_Flag2.TabIndex = 14;
+            this.TB_Flag2.Text = "00";
+            this.TB_Flag2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_Flag2.TextChanged += new System.EventHandler(this.changeItemFlag);
+            // 
+            // L_CurrentItem
+            // 
+            this.L_CurrentItem.AutoSize = true;
+            this.L_CurrentItem.Location = new System.Drawing.Point(397, 604);
+            this.L_CurrentItem.Name = "L_CurrentItem";
+            this.L_CurrentItem.Size = new System.Drawing.Size(67, 13);
+            this.L_CurrentItem.TabIndex = 15;
+            this.L_CurrentItem.Text = "Current Item:";
             // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 717);
-            this.Controls.Add(this.L_ItemCurrent);
+            this.Controls.Add(this.L_CurrentItem);
+            this.Controls.Add(this.TB_Flag2);
+            this.Controls.Add(this.TB_Flag1);
+            this.Controls.Add(this.CB_Item);
             this.Controls.Add(this.L_ItemHover);
             this.Controls.Add(this.PB_JPEG3);
             this.Controls.Add(this.PB_JPEG2);
@@ -2191,6 +2231,9 @@
         private System.Windows.Forms.ComboBox CB_P0Gender;
         private System.Windows.Forms.Label L_P0Gender;
         private System.Windows.Forms.Label L_P0Name;
-        private System.Windows.Forms.Label L_ItemCurrent;
+        private System.Windows.Forms.ComboBox CB_Item;
+        private System.Windows.Forms.TextBox TB_Flag1;
+        private System.Windows.Forms.TextBox TB_Flag2;
+        private System.Windows.Forms.Label L_CurrentItem;
     }
 }
