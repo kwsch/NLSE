@@ -7,6 +7,17 @@ namespace NLSE
 {
     public class Data
     {
+        internal static ACNLVillager[] GetVillagers()
+        {
+            byte[] types = Properties.Resources.type;
+            string[] names = (Properties.Resources.name_en).Split(new[] { '\n' }).ToArray();
+            string[] catchP = (Properties.Resources.catch_en).Split(new[] { '\n' }).ToArray();
+            var vAr = new ACNLVillager[types.Length];
+            for (int i = 0; i < vAr.Length; i++)
+                vAr[i] = new ACNLVillager(i, names[i], types[i], catchP[i]);
+
+            return vAr;
+        }
         internal static string[] getItemStrings(string l)
         {
             string[] storage = new string[0x8000];
@@ -90,6 +101,21 @@ namespace NLSE
                     Environment.NewLine, Length.ToString("X5"), s.Length.ToString("X5")));
             byte[] newARR = Encoding.Unicode.GetBytes(s.PadRight(Length/2));
             Array.Copy(newARR, 0, Save, 0, Length);
+        }
+    }
+
+    public class ACNLVillager
+    {
+        byte[] DefaultBytes;
+        string CatchPhrase;
+        string Name;
+        byte Type;
+        public ACNLVillager(int index, string name, byte type, string catchphrase)
+        {
+            Name = name;
+            Type = type;
+            CatchPhrase = catchphrase;
+            DefaultBytes = (byte[]) Properties.Resources.ResourceManager.GetObject("acnl_v_" + index.ToString("000"));
         }
     }
 }

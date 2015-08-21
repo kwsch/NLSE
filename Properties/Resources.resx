@@ -118,6 +118,1005 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="acnl_v_000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_000.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_001.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_002.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_003.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_004.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_005.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_006.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_007.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_008.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_009" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_009.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_010.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_011.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_012.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_013" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_013.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_014.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_015" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_015.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_016" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_016.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_017" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_017.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_018" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_018.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_019" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_019.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_020" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_020.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_021.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_022.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_023" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_023.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_024" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_024.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_025" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_025.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_026" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_026.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_027" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_027.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_028" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_028.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_029" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_029.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_030" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_030.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_031" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_031.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_032" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_032.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_033" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_033.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_034" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_034.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_035" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_035.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_036" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_036.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_037" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_037.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_038" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_038.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_039" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_039.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_040" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_040.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_041" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_041.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_042" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_042.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_043" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_043.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_044" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_044.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_045" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_045.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_046" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_046.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_047" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_047.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_048" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_048.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_049" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_049.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_050" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_050.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_051.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_052" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_052.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_053" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_053.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_054" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_054.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_055" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_055.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_056" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_056.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_057" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_057.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_058" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_058.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_059" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_059.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_060" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_060.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_061" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_061.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_062" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_062.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_063" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_063.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_064" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_064.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_065" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_065.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_066" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_066.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_067" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_067.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_068" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_068.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_069" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_069.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_070" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_070.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_071" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_071.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_072" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_072.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_073" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_073.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_074" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_074.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_075" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_075.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_076" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_076.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_077" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_077.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_078" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_078.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_079" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_079.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_080.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_081" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_081.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_082" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_082.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_083" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_083.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_084" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_084.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_085" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_085.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_086" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_086.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_087" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_087.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_088" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_088.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_089" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_089.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_090" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_090.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_091" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_091.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_092" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_092.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_093" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_093.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_094" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_094.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_095" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_095.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_096" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_096.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_097" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_097.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_098" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_098.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_099" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_099.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_100.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_101.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_102.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_103.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_104.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_105.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_106.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_107.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_108.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_109.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_110.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_111.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_112.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_113" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_113.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_114.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_115.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_116.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_117" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_117.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_118" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_118.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_119" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_119.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_120.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_121.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_122.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_123.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_124.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_125.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_126.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_127" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_127.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_128.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_129.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_130.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_131.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_132" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_132.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_133" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_133.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_134" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_134.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_135.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_136" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_136.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_137" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_137.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_138" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_138.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_139" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_139.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_140.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_141" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_141.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_142" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_142.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_143" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_143.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_144" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_144.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_145" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_145.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_146" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_146.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_147" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_147.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_148" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_148.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_149.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_150.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_151.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_152.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_153" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_153.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_154.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_155" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_155.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_156.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_157" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_157.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_158" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_158.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_159" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_159.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_160.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_161.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_162" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_162.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_163.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_164.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_165" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_165.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_166.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_167" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_167.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_168" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_168.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_169.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_170.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_171.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_172" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_172.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_173.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_174" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_174.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_175" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_175.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_176" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_176.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_177" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_177.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_178" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_178.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_179" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_179.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_180.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_181" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_181.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_182" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_182.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_183.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_184" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_184.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_185" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_185.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_186.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_187" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_187.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_188" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_188.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_189" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_189.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_190" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_190.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_191.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_192.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_193.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_194" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_194.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_195" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_195.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_196" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_196.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_197" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_197.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_198" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_198.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_199" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_199.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_200.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_201.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_202" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_202.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_203.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_204" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_204.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_205" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_205.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_206" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_206.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_207" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_207.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_208" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_208.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_209" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_209.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_210" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_210.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_211.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_212.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_213" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_213.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_214" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_214.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_215.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_216" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_216.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_217" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_217.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_218" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_218.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_219" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_219.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_220.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_221.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_222" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_222.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_223" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_223.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_224" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_224.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_225" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_225.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_226.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_227" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_227.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_228" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_228.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_229" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_229.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_230" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_230.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_231" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_231.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_232" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_232.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_233" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_233.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_234" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_234.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_235" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_235.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_236" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_236.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_237" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_237.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_238" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_238.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_239" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_239.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_240" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_240.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_241.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_242" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_242.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_243" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_243.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_244" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_244.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_245" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_245.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_246" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_246.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_247" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_247.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_248" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_248.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_249" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_249.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_250" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_250.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_251.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_252" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_252.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_253" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_253.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_254" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_254.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_255" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_255.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_256.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_257" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_257.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_258" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_258.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_259" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_259.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_260" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_260.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_261.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_262" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_262.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_263" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_263.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_264" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_264.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_265" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_265.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_266" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_266.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_267" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_267.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_268" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_268.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_269" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_269.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_270.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_271" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_271.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_272" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_272.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_273" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_273.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_274" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_274.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_275.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_276" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_276.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_277" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_277.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_278" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_278.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_279" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_279.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_280.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_281" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_281.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_282" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_282.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_283" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_283.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_284" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_284.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_285" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_285.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_286" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_286.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_287" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_287.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_288" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_288.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_289" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_289.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_290" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_290.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_291.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_292" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_292.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_293" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_293.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_294" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_294.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_295" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_295.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_296" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_296.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_297" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_297.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_298" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_298.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_299" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_299.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_300.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_301.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_302" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_302.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_303" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_303.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_304" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_304.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_305" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_305.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_306" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_306.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_307" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_307.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_308" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_308.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_309" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_309.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_310" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_310.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_311" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_311.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_312" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_312.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_313" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_313.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_314" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_314.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_315" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_315.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_316" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_316.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_317" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_317.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_318" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_318.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_319" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_319.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_320" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_320.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_321.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_322.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_323.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_324" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_324.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_325" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_325.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_326" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_326.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_327" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_327.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_328" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_328.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_329" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_329.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_330" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_330.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_331" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_331.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="acnl_v_332" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\VillagerBin\acnl_v_332.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="acre_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img\acre\acre_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -667,7 +1666,16 @@
   <data name="acre_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img\acre\acre_99.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="catch_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\catch_en.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
+  </data>
   <data name="item_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\text\item_en.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="name_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\name_en.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
+  </data>
+  <data name="type" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VillageData\type.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
