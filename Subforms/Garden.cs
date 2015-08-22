@@ -923,7 +923,7 @@ namespace NLSE
                 case "pattern": return ColorTranslator.FromHtml("#877861");
                 case "money": return Color.Yellow;
                 case "rock": return Color.Black;
-                case "song": return ColorTranslator.FromHtml("#a4ecb8)");
+                case "song": return ColorTranslator.FromHtml("#a4ecb8");
                 case "paper": return ColorTranslator.FromHtml("#a4ece8");
                 case "turnip": return ColorTranslator.FromHtml("#bbac9d");
                 case "catchable": return ColorTranslator.FromHtml("#bae33e");

@@ -43,6 +43,7 @@ namespace NLSE
             string path = files[0]; // open first D&D
             if (Directory.Exists(path))
             {
+                findLoop = false;
                 root = path;
                 L_IO.Text = root;
             }
