@@ -31,7 +31,6 @@ namespace NLSE
             CB_Item.DataSource = new BindingSource(Main.itemList, null);
             TB_Flag1.KeyPress += EnterKey;
             TB_Flag2.KeyPress += EnterKey;
-            Save = new GardenData(Main.SaveData);
             #region Array Initialization
             TownAcres = new[]
             {
@@ -89,12 +88,11 @@ namespace NLSE
             #endregion
             // Load
             loadData();
-            populateBuildingList();
             reloadCurrentItem(currentItem);
         }
         private void B_Save_Click(object sender, EventArgs e)
         {
-            saveData();
+            Main.SaveData = saveData();
             Close();
         }
         private void B_Cancel_Click(object sender, EventArgs e)
@@ -124,10 +122,11 @@ namespace NLSE
 
             byte[] data = File.ReadAllBytes(ofd.FileName);
             Array.Copy(data, 0, Save.Data, 0x80, Save.Data.Length - 0x80);
+            loaded = false;
+            loadData();
         }
         private void B_Export_Click(object sender, EventArgs e)
         {
-            saveData();
             var sfd = new SaveFileDialog
             {
                 FileName = "acnlram.bin",
@@ -136,7 +135,7 @@ namespace NLSE
             if (sfd.ShowDialog() != DialogResult.OK)
                 return;
 
-            byte[] RAM = Save.Data.Skip(0x80).ToArray();
+            byte[] RAM = saveData().Skip(0x80).ToArray();
             Array.Resize(ref RAM, 0x80000);
 
             File.WriteAllBytes(sfd.FileName, RAM);
@@ -337,6 +336,8 @@ namespace NLSE
         // Data Usage
         private void loadData()
         {
+            Save = new GardenData(Main.SaveData);
+
             // Load Players
             Players = new Player[4];
             for (int i = 0; i < Players.Length; i++)
@@ -367,6 +368,8 @@ namespace NLSE
             for (int i = 0; i < Buildings.Length; i++)
                 Buildings[i] = new Building(Save.Data.Skip(0x0495A8 + i * 4).Take(4).ToArray());
 
+            populateBuildingList();
+
             // Load Villagers
             Villagers = new Villager[10];
             for (int i = 0; i < Villagers.Length; i++)
@@ -389,7 +392,7 @@ namespace NLSE
             }
             loaded = true;
         }
-        private void saveData()
+        private byte[] saveData()
         {
             // Temporary
             for (int i = 0; i < 1 /*Players.Length */; i++)
@@ -436,7 +439,7 @@ namespace NLSE
                 Save.PlayDays = (ushort)NUD_OverallDays.Value;
             }
             // Finish
-            Main.SaveData = Save.Write();
+            return Save.Write();
         }
 
         private int currentPlayer = -1;
@@ -622,7 +625,7 @@ namespace NLSE
                 reloadCurrentItem(TownItems[index]);
             else // Write
             {
-                TownItems[index] = currentItem;
+                TownItems[index] = copyCurrentItem();
                 int zX = (X - 16) / 16;
                 int zY = (Y - 16) / 16;
                 int zAcre = zX + zY * 5;
@@ -645,7 +648,7 @@ namespace NLSE
                 reloadCurrentItem(IslandItems[index]);
             else // Write
             {
-                IslandItems[index] = currentItem;
+                IslandItems[index] = copyCurrentItem();
                 int zX = (X - 16) / 16;
                 int zY = (Y - 16) / 16;
                 int zAcre = zX + zY * 2;
@@ -716,12 +719,12 @@ namespace NLSE
             {
                 if (pocket)
                 {
-                    Players[currentPlayer].Pockets[index] = currentItem;
+                    Players[currentPlayer].Pockets[index] = copyCurrentItem();
                     PB_Pocket.Image = getItemPic(16, 16, Players[currentPlayer].Pockets);
                 }
                 else if (dress)
                 {
-                    Players[currentPlayer].Dressers[index] = currentItem;
+                    Players[currentPlayer].Dressers[index] = copyCurrentItem();
                     if (dress1)
                         PB_Dresser1.Image = getItemPic(16, 5, Players[currentPlayer].Dressers.Take(Players[currentPlayer].Dressers.Length / 2).ToArray());
                     else
@@ -729,14 +732,14 @@ namespace NLSE
                 }
                 else if (island)
                 {
-                    Players[currentPlayer].IslandBox[index] = currentItem;
+                    Players[currentPlayer].IslandBox[index] = copyCurrentItem();
                     PB_Island.Image = getItemPic(16, 5, Players[currentPlayer].IslandBox);
                 }
             }
         }
         private void reloadCurrentItem(Item item)
         {
-            currentItem = item;
+            currentItem = new Item(item.Write());
             CB_Item.SelectedValue = (int)item.ID;
             TB_Flag1.Text = item.Flag1.ToString("X2");
             TB_Flag2.Text = item.Flag2.ToString("X2");
@@ -748,6 +751,10 @@ namespace NLSE
                 item.Flag2.ToString("X2"), item.Flag1.ToString("X2"), item.ID.ToString("X4"),
                 X.ToString("00"), Y.ToString("00"),
                 itemName);
+        }
+        private Item copyCurrentItem()
+        {
+            return new Item(currentItem.Write());
         }
 
         private int getItemIndex(int X, int Y, int width)
