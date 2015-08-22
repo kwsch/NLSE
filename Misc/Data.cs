@@ -18,10 +18,10 @@ namespace NLSE
 
             return vAr;
         }
-        internal static string[] getItemStrings(string l)
+        internal static string[] getIndexStrings(string f, string l)
         {
             string[] storage = new string[0x8000];
-            object txt = Properties.Resources.ResourceManager.GetObject("item_" + l); // Fetch File, \n to list.
+            object txt = Properties.Resources.ResourceManager.GetObject(f + "_" + l); // Fetch File, \n to list.
             List<string> rawlist = ((string)txt).Split(new[] { '\n' }).ToList();
             string[] input = rawlist.ToArray();
 
@@ -41,6 +41,13 @@ namespace NLSE
             return storage;
         }
 
+        internal static string[] getStrings(string f, string l)
+        {
+            object txt = Properties.Resources.ResourceManager.GetObject(f + "_" + l); // Fetch File, \n to list.
+            List<string> rawlist = ((string) txt).Split(new[] {'\n'}).ToList();
+            return rawlist.ToArray();
+        }
+
         internal static List<cbItem> getCBItems(string[] storage)
         {
             List<cbItem> cbList = new List<cbItem>();
@@ -55,6 +62,32 @@ namespace NLSE
                     });
                 }
             catch { }
+            return cbList;
+        }
+        internal static List<cbItem> getCBList(string[] inStrings, params int[][] allowed)
+        {
+            List<cbItem> cbList = new List<cbItem>();
+            if (allowed == null)
+                allowed = new[] { Enumerable.Range(0, inStrings.Length).ToArray() };
+
+            foreach (int[] list in allowed)
+            {
+                // Sort the Rest based on String Name
+                string[] unsortedChoices = new string[list.Length];
+                for (int i = 0; i < list.Length; i++)
+                    unsortedChoices[i] = inStrings[list[i]];
+
+                string[] sortedChoices = new string[unsortedChoices.Length];
+                Array.Copy(unsortedChoices, sortedChoices, unsortedChoices.Length);
+                Array.Sort(sortedChoices);
+
+                // Add the rest of the items
+                cbList.AddRange(sortedChoices.Select(t => new cbItem
+                {
+                    Text = t,
+                    Value = list[Array.IndexOf(unsortedChoices, t)]
+                }));
+            }
             return cbList;
         }
     }

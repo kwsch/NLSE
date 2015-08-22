@@ -27,9 +27,9 @@ namespace NLSE
             InitializeComponent();
             CB_Item.DisplayMember = "Text";
             CB_Item.ValueMember = "Value";
+            CB_Item.DataSource = new BindingSource(Main.itemList, null);
             TB_Flag1.KeyPress += EnterKey;
             TB_Flag2.KeyPress += EnterKey;
-            CB_Item.DataSource = Main.itemList;
             Save = new GardenData(Main.SaveData);
             #region Array Initialization
             TownAcres = new[]
@@ -141,7 +141,11 @@ namespace NLSE
                 CB_Villager6, CB_Villager7, CB_Villager8, CB_Villager9, CB_Villager10
             };
             foreach (ComboBox id in TownVillagers)
-                id.DataSource = (Properties.Resources.name_en).Split(new[] { '\n' }).ToArray();
+            {
+                id.DisplayMember = "Text";
+                id.ValueMember = "Value";
+                id.DataSource = new BindingSource(Main.vList, null);
+            }
 
             TownVillagersCatch = new[]
             {
@@ -159,6 +163,7 @@ namespace NLSE
             #endregion
             // Load
             loadData();
+            populateBuildingList();
             reloadCurrentItem(currentItem);
         }
         private void B_Save_Click(object sender, EventArgs e)
@@ -465,6 +470,7 @@ namespace NLSE
                 Array.Copy(IslandItems[i].Write(), 0, Save.Data, 0x6A4A8 + i * 4, 4);
 
             // Write Buildings
+            saveBuildingList();
             for (int i = 0; i < Buildings.Length; i++)
                 Array.Copy(Buildings[i].Write(), 0, Save.Data, 0x0495A8 + i * 4, 4);
 
@@ -513,12 +519,12 @@ namespace NLSE
         {
             Villagers[i] = new Villager(Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
             TownVillagers[i].Enabled = TownVillagersCatch[i].Enabled = (Villagers[i].ID != -1);
-            TownVillagers[i].SelectedIndex = Villagers[i].ID;
+            TownVillagers[i].SelectedValue = (int)Villagers[i].ID;
             TownVillagersCatch[i].Text = Villagers[i].CatchPhrase;
         }
         private void saveVillager(int i)
         {
-            Villagers[i].ID = (short)TownVillagers[i].SelectedIndex;
+            Villagers[i].ID = (short)Util.getIndex(TownVillagers[i]);
             Villagers[i].CatchPhrase = TownVillagersCatch[i].Text;
             Array.Copy(Villagers[i].Write(), 0, Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
         }
@@ -987,7 +993,7 @@ namespace NLSE
         {
             if (!loaded) return;
             int index = Array.IndexOf(TownVillagers, sender as ComboBox);
-            int value = (sender as ComboBox).SelectedIndex;
+            int value = Util.getIndex(sender as ComboBox);
             if (index == -1 || value == -1) return;
             Villagers[index].Type = Main.villagerList[value].Type;
 
@@ -996,6 +1002,99 @@ namespace NLSE
 
             Array.Copy(Main.villagerList[value].DefaultBytes, 0, Villagers[index].Data, 0x244E, 88);
             TownVillagersCatch[index].Text = Main.villagerList[value].CatchPhrase;
+        }
+
+        private void saveBuildingList()
+        {
+            int itemcount = dataGridView1.Rows.Count;
+            for (int i = 0; i < itemcount; i++)
+            {
+                int ID = (int)dataGridView1.Rows[i].Cells[0].Value;
+                if (ID > 0xF8 || ID < 0)
+                {
+                    Buildings[i].ID = 0xF8;
+                    Buildings[i].X = 0;
+                    Buildings[i].Y = 0;
+                }
+                else
+                {
+                    Buildings[i].ID = ID;
+                    try
+                    { Buildings[i].X = Convert.ToUInt16(dataGridView1.Rows[i].Cells[1].Value.ToString()); }
+                    catch { }
+                    try
+                    { Buildings[i].Y = Convert.ToUInt16(dataGridView1.Rows[i].Cells[2].Value.ToString()); }
+                    catch { }
+                }
+            }
+        }
+        private void populateBuildingList()
+        {
+            dataGridView1.Rows.Clear();
+            dataGridView1.Columns.Clear();
+
+            DataGridViewComboBoxColumn dgvItemVal = new DataGridViewComboBoxColumn
+            {
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
+                DisplayIndex = 0,
+                DisplayMember = "Text",
+                ValueMember = "Value",
+                DataSource = Main.buildingList,
+                Width = 150,
+                FlatStyle = FlatStyle.Flat
+            };
+            DataGridViewColumn dgvX = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "X",
+                DisplayIndex = 1,
+                Width = 45,
+            };
+            DataGridViewColumn dgvY = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Y",
+                DisplayIndex = 2,
+                Width = 45,
+            };
+            dgvX.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvY.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dataGridView1.Columns.Add(dgvItemVal);
+            dataGridView1.Columns.Add(dgvX);
+            dataGridView1.Columns.Add(dgvY);
+
+            dataGridView1.Rows.Add(Buildings.Length);
+            dataGridView1.CancelEdit();
+
+            string itemname = "";
+            for (int i = 0; i < Buildings.Length; i++)
+            {
+                int itemvalue = Buildings[i].ID;
+                try { itemname = Main.buildingNames[itemvalue]; }
+                catch
+                {
+                    Util.Error("Unknown building detected.", "Building ID: " + itemvalue, "Building is after: " + itemname);
+                    continue;
+                }
+                int itemarrayval = Array.IndexOf(Main.buildingNames, itemname);
+                if (itemarrayval == -1)
+                {
+                    Buildings[i].ID = 0xFE;
+                    Buildings[i].X = 0;
+                    Buildings[i].Y = 0;
+                    Util.Alert(itemname + " removed from Building List.", "If you save changes to Garden, the Building will no longer be in the Town.");
+                }
+
+                dataGridView1.Rows[i].Cells[0].Value = Buildings[i].ID;
+                dataGridView1.Rows[i].Cells[1].Value = Buildings[i].X;
+                dataGridView1.Rows[i].Cells[2].Value = Buildings[i].Y;
+            }
+        }
+        private void dropclick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex != 0) return;
+
+            ComboBox comboBox = (ComboBox)dataGridView1.EditingControl;
+            comboBox.DroppedDown = true;
         }
     }
 }

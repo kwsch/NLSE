@@ -5221,6 +5221,46 @@ namespace NLSE.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 4C	Modern Police Station
+        ///4D	Classic Police Station
+        ///4E	Cafe
+        ///4F	Reset Center
+        ///A6	Yellow Bench
+        ///A7	Blue Bench
+        ///A8	Wood Bench
+        ///A9	Metal Bench
+        ///AA	Log Bench
+        ///AB	Modern Bench
+        ///AC	Fairy-Tale Bench
+        ///AD	Zen Bench
+        ///AE	Flower Bed
+        ///AF	Water Fountain
+        ///B0	Instrument Shelter
+        ///B1	Sandbox
+        ///B2	Garbage Can
+        ///B3	Pile of Pipes
+        ///B4	Water Well
+        ///B5	Fountain
+        ///B6	Tire Toy
+        ///B7	Jungle Gym
+        ///B8	Park Clock
+        ///B9	Modern Clock
+        ///BA	Fairy-Tale Clock
+        ///BB	Zen Clock
+        ///BC	Street Lamp
+        ///BD	Round Streetlight
+        ///BE	Streetlight
+        ///BF	Modern Streetlight
+        ///C0	Fairy-Tale Streetlight
+        ///C1	Ze [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string building_en {
+            get {
+                return ResourceManager.GetString("building_en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ah-CHOO
         ///honk
         ///snooooof
@@ -5282,7 +5322,15 @@ namespace NLSE.Properties {
         ///pudgy
         ///grah grah
         ///stuffin&apos;
-        /// [rest of string was truncated]&quot;;.
+        ///nyet
+        ///tralala
+        ///bud
+        ///rookie
+        ///cubby
+        ///ya heard
+        ///buh-kay
+        ///uh-hoo
+        ///doodle- [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string catch_en {
             get {
@@ -5397,7 +5445,18 @@ namespace NLSE.Properties {
         ///Barold
         ///Tammy
         ///Goose
-        ///Bene [rest of string was truncated]&quot;;.
+        ///Benedict
+        ///Egbert
+        ///Ava
+        ///Becky
+        ///Knox
+        ///Broffina
+        ///Ken
+        ///Patty
+        ///Tipper
+        ///Naomi
+        ///Alfonso
+        ///A [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string name_en {
             get {
