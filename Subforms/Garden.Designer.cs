@@ -316,7 +316,7 @@
             this.PB_JPEG0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.PB_JPEG0.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PB_JPEG0.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_JPEG0.Location = new System.Drawing.Point(131, 604);
+            this.PB_JPEG0.Location = new System.Drawing.Point(106, 601);
             this.PB_JPEG0.Name = "PB_JPEG0";
             this.PB_JPEG0.Size = new System.Drawing.Size(66, 106);
             this.PB_JPEG0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -327,9 +327,9 @@
             // L_Info
             // 
             this.L_Info.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.L_Info.Location = new System.Drawing.Point(12, 604);
+            this.L_Info.Location = new System.Drawing.Point(12, 601);
             this.L_Info.Name = "L_Info";
-            this.L_Info.Size = new System.Drawing.Size(113, 104);
+            this.L_Info.Size = new System.Drawing.Size(88, 104);
             this.L_Info.TabIndex = 1;
             this.L_Info.Text = "Info";
             this.L_Info.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -2306,7 +2306,7 @@
             // 
             // NUD_OverallDays
             // 
-            this.NUD_OverallDays.Location = new System.Drawing.Point(367, 282);
+            this.NUD_OverallDays.Location = new System.Drawing.Point(429, 283);
             this.NUD_OverallDays.Maximum = new decimal(new int[] {
             25000,
             0,
@@ -2323,7 +2323,7 @@
             // 
             // NUD_Days
             // 
-            this.NUD_Days.Location = new System.Drawing.Point(367, 162);
+            this.NUD_Days.Location = new System.Drawing.Point(429, 163);
             this.NUD_Days.Maximum = new decimal(new int[] {
             25000,
             0,
@@ -2340,7 +2340,7 @@
             // 
             // NUD_Hours
             // 
-            this.NUD_Hours.Location = new System.Drawing.Point(367, 188);
+            this.NUD_Hours.Location = new System.Drawing.Point(429, 189);
             this.NUD_Hours.Maximum = new decimal(new int[] {
             24,
             0,
@@ -2357,7 +2357,7 @@
             // 
             // NUD_Minutes
             // 
-            this.NUD_Minutes.Location = new System.Drawing.Point(367, 214);
+            this.NUD_Minutes.Location = new System.Drawing.Point(429, 215);
             this.NUD_Minutes.Maximum = new decimal(new int[] {
             60,
             0,
@@ -2374,7 +2374,7 @@
             // 
             // NUD_Seconds
             // 
-            this.NUD_Seconds.Location = new System.Drawing.Point(367, 240);
+            this.NUD_Seconds.Location = new System.Drawing.Point(429, 241);
             this.NUD_Seconds.Maximum = new decimal(new int[] {
             60,
             0,
@@ -2391,7 +2391,7 @@
             // 
             // L_DaysPlayed
             // 
-            this.L_DaysPlayed.Location = new System.Drawing.Point(261, 159);
+            this.L_DaysPlayed.Location = new System.Drawing.Point(323, 160);
             this.L_DaysPlayed.Name = "L_DaysPlayed";
             this.L_DaysPlayed.Size = new System.Drawing.Size(100, 23);
             this.L_DaysPlayed.TabIndex = 40;
@@ -2400,7 +2400,7 @@
             // 
             // L_OverallDays
             // 
-            this.L_OverallDays.Location = new System.Drawing.Point(261, 279);
+            this.L_OverallDays.Location = new System.Drawing.Point(323, 280);
             this.L_OverallDays.Name = "L_OverallDays";
             this.L_OverallDays.Size = new System.Drawing.Size(100, 23);
             this.L_OverallDays.TabIndex = 38;
@@ -2409,7 +2409,7 @@
             // 
             // L_SecondsPlayed
             // 
-            this.L_SecondsPlayed.Location = new System.Drawing.Point(261, 237);
+            this.L_SecondsPlayed.Location = new System.Drawing.Point(323, 238);
             this.L_SecondsPlayed.Name = "L_SecondsPlayed";
             this.L_SecondsPlayed.Size = new System.Drawing.Size(100, 23);
             this.L_SecondsPlayed.TabIndex = 36;
@@ -2418,7 +2418,7 @@
             // 
             // L_MinutesPlayed
             // 
-            this.L_MinutesPlayed.Location = new System.Drawing.Point(261, 211);
+            this.L_MinutesPlayed.Location = new System.Drawing.Point(323, 212);
             this.L_MinutesPlayed.Name = "L_MinutesPlayed";
             this.L_MinutesPlayed.Size = new System.Drawing.Size(100, 23);
             this.L_MinutesPlayed.TabIndex = 34;
@@ -2427,7 +2427,7 @@
             // 
             // L_HoursPlayed
             // 
-            this.L_HoursPlayed.Location = new System.Drawing.Point(261, 185);
+            this.L_HoursPlayed.Location = new System.Drawing.Point(323, 186);
             this.L_HoursPlayed.Name = "L_HoursPlayed";
             this.L_HoursPlayed.Size = new System.Drawing.Size(100, 23);
             this.L_HoursPlayed.TabIndex = 32;
@@ -2436,7 +2436,7 @@
             // 
             // L_NativeFruit
             // 
-            this.L_NativeFruit.Location = new System.Drawing.Point(261, 36);
+            this.L_NativeFruit.Location = new System.Drawing.Point(323, 37);
             this.L_NativeFruit.Name = "L_NativeFruit";
             this.L_NativeFruit.Size = new System.Drawing.Size(100, 23);
             this.L_NativeFruit.TabIndex = 28;
@@ -2460,14 +2460,14 @@
             "Mango*",
             "Persimmon*",
             "Banana*"});
-            this.CB_NativeFruit.Location = new System.Drawing.Point(367, 38);
+            this.CB_NativeFruit.Location = new System.Drawing.Point(429, 39);
             this.CB_NativeFruit.Name = "CB_NativeFruit";
             this.CB_NativeFruit.Size = new System.Drawing.Size(121, 21);
             this.CB_NativeFruit.TabIndex = 27;
             // 
             // L_TrainStationColor
             // 
-            this.L_TrainStationColor.Location = new System.Drawing.Point(261, 117);
+            this.L_TrainStationColor.Location = new System.Drawing.Point(323, 118);
             this.L_TrainStationColor.Name = "L_TrainStationColor";
             this.L_TrainStationColor.Size = new System.Drawing.Size(100, 23);
             this.L_TrainStationColor.TabIndex = 26;
@@ -2483,14 +2483,14 @@
             "Green",
             "Blue",
             "Brown"});
-            this.CB_TrainStationColor.Location = new System.Drawing.Point(367, 119);
+            this.CB_TrainStationColor.Location = new System.Drawing.Point(429, 120);
             this.CB_TrainStationColor.Name = "CB_TrainStationColor";
             this.CB_TrainStationColor.Size = new System.Drawing.Size(121, 21);
             this.CB_TrainStationColor.TabIndex = 25;
             // 
             // L_TownHallColor
             // 
-            this.L_TownHallColor.Location = new System.Drawing.Point(261, 90);
+            this.L_TownHallColor.Location = new System.Drawing.Point(323, 91);
             this.L_TownHallColor.Name = "L_TownHallColor";
             this.L_TownHallColor.Size = new System.Drawing.Size(100, 23);
             this.L_TownHallColor.TabIndex = 24;
@@ -2506,14 +2506,14 @@
             "Brown",
             "Green",
             "Blue"});
-            this.CB_TownHallColor.Location = new System.Drawing.Point(367, 92);
+            this.CB_TownHallColor.Location = new System.Drawing.Point(429, 93);
             this.CB_TownHallColor.Name = "CB_TownHallColor";
             this.CB_TownHallColor.Size = new System.Drawing.Size(121, 21);
             this.CB_TownHallColor.TabIndex = 23;
             // 
             // L_GrassShape
             // 
-            this.L_GrassShape.Location = new System.Drawing.Point(261, 63);
+            this.L_GrassShape.Location = new System.Drawing.Point(323, 64);
             this.L_GrassShape.Name = "L_GrassShape";
             this.L_GrassShape.Size = new System.Drawing.Size(100, 23);
             this.L_GrassShape.TabIndex = 22;
@@ -2527,14 +2527,14 @@
             "Triangle (Square)",
             "Circle (Star)",
             "Square (Circle)"});
-            this.CB_GrassShape.Location = new System.Drawing.Point(367, 65);
+            this.CB_GrassShape.Location = new System.Drawing.Point(429, 66);
             this.CB_GrassShape.Name = "CB_GrassShape";
             this.CB_GrassShape.Size = new System.Drawing.Size(121, 21);
             this.CB_GrassShape.TabIndex = 21;
             // 
             // L_TownName
             // 
-            this.L_TownName.Location = new System.Drawing.Point(261, 9);
+            this.L_TownName.Location = new System.Drawing.Point(323, 10);
             this.L_TownName.Name = "L_TownName";
             this.L_TownName.Size = new System.Drawing.Size(100, 23);
             this.L_TownName.TabIndex = 18;
@@ -2543,7 +2543,7 @@
             // 
             // TB_TownName
             // 
-            this.TB_TownName.Location = new System.Drawing.Point(367, 12);
+            this.TB_TownName.Location = new System.Drawing.Point(429, 13);
             this.TB_TownName.MaxLength = 9;
             this.TB_TownName.Name = "TB_TownName";
             this.TB_TownName.Size = new System.Drawing.Size(121, 20);
@@ -2562,20 +2562,20 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ColumnHeadersVisible = false;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 7);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(249, 548);
+            this.dataGridView1.Size = new System.Drawing.Size(311, 548);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dropclick);
             // 
             // L_ItemHover
             // 
             this.L_ItemHover.AutoSize = true;
-            this.L_ItemHover.Location = new System.Drawing.Point(397, 641);
+            this.L_ItemHover.Location = new System.Drawing.Point(372, 638);
             this.L_ItemHover.Name = "L_ItemHover";
             this.L_ItemHover.Size = new System.Drawing.Size(103, 13);
             this.L_ItemHover.TabIndex = 10;
@@ -2586,7 +2586,7 @@
             this.PB_JPEG1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.PB_JPEG1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PB_JPEG1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_JPEG1.Location = new System.Drawing.Point(196, 604);
+            this.PB_JPEG1.Location = new System.Drawing.Point(171, 601);
             this.PB_JPEG1.Name = "PB_JPEG1";
             this.PB_JPEG1.Size = new System.Drawing.Size(66, 106);
             this.PB_JPEG1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -2599,7 +2599,7 @@
             this.PB_JPEG2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.PB_JPEG2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PB_JPEG2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_JPEG2.Location = new System.Drawing.Point(261, 604);
+            this.PB_JPEG2.Location = new System.Drawing.Point(236, 601);
             this.PB_JPEG2.Name = "PB_JPEG2";
             this.PB_JPEG2.Size = new System.Drawing.Size(66, 106);
             this.PB_JPEG2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -2612,7 +2612,7 @@
             this.PB_JPEG3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.PB_JPEG3.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PB_JPEG3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_JPEG3.Location = new System.Drawing.Point(326, 604);
+            this.PB_JPEG3.Location = new System.Drawing.Point(301, 601);
             this.PB_JPEG3.Name = "PB_JPEG3";
             this.PB_JPEG3.Size = new System.Drawing.Size(66, 106);
             this.PB_JPEG3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -2624,7 +2624,7 @@
             // 
             this.CB_Item.DropDownWidth = 166;
             this.CB_Item.FormattingEnabled = true;
-            this.CB_Item.Location = new System.Drawing.Point(398, 617);
+            this.CB_Item.Location = new System.Drawing.Point(373, 614);
             this.CB_Item.Name = "CB_Item";
             this.CB_Item.Size = new System.Drawing.Size(136, 21);
             this.CB_Item.TabIndex = 12;
@@ -2633,7 +2633,7 @@
             // TB_Flag1
             // 
             this.TB_Flag1.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Flag1.Location = new System.Drawing.Point(540, 618);
+            this.TB_Flag1.Location = new System.Drawing.Point(515, 615);
             this.TB_Flag1.MaxLength = 2;
             this.TB_Flag1.Name = "TB_Flag1";
             this.TB_Flag1.Size = new System.Drawing.Size(23, 20);
@@ -2645,7 +2645,7 @@
             // TB_Flag2
             // 
             this.TB_Flag2.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Flag2.Location = new System.Drawing.Point(566, 618);
+            this.TB_Flag2.Location = new System.Drawing.Point(541, 615);
             this.TB_Flag2.MaxLength = 2;
             this.TB_Flag2.Name = "TB_Flag2";
             this.TB_Flag2.Size = new System.Drawing.Size(23, 20);
@@ -2657,7 +2657,7 @@
             // L_CurrentItem
             // 
             this.L_CurrentItem.AutoSize = true;
-            this.L_CurrentItem.Location = new System.Drawing.Point(397, 604);
+            this.L_CurrentItem.Location = new System.Drawing.Point(372, 601);
             this.L_CurrentItem.Name = "L_CurrentItem";
             this.L_CurrentItem.Size = new System.Drawing.Size(67, 13);
             this.L_CurrentItem.TabIndex = 15;
