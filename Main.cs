@@ -47,6 +47,16 @@ namespace NLSE
                 root = path;
                 L_IO.Text = root;
             }
+            else if (new FileInfo(files[0]).Length == 0x80000) // RAM
+            {
+                if (Util.Prompt(MessageBoxButtons.YesNo, "Edit RAM Dump?" + Environment.NewLine + files[0]) == DialogResult.Yes)
+                {
+                    byte[] data = File.ReadAllBytes(files[0]);
+                    SaveData = new byte[0x7FA00];
+                    Array.Copy(data, 0, SaveData, 0x80, SaveData.Length - 0x80);
+                    new Garden().ShowDialog();
+                }
+            }
             else // Try fix checksums?
             {
                 foreach (string file in files)
