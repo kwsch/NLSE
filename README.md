@@ -1,7 +1,7 @@
 # NLSE
 Animal Crossing: New Leaf Save Editor
 
-Edits savedata to with the same functions as the [web-js editor](http://usuaris.tinet.cat/mark/acnl_editor/) and more.
+Edits savedata with the same functions as the [web-js editor](http://usuaris.tinet.cat/mark/acnl_editor/) and more.
 
 Can Import/Export RAM dumps, fix Checksums, and edit numerous things within the garden.dat file.
 
