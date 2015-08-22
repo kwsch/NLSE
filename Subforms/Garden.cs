@@ -220,19 +220,24 @@ namespace NLSE
         private GardenData Save;
         class GardenData
         {
-            public DataRef TownName = new DataRef(0x5C7BA, 0x12);
+            public string TownName;
             public int TownHallColor;
             public int TrainStationColor;
             public int GrassType;
             public int NativeFruit;
+            public uint SecondsPlayed;
+            public ushort PlayDays;
             public byte[] Data;
             public GardenData(byte[] data)
             {
                 Data = data;
+                TownName = Encoding.Unicode.GetString(Data.Skip(0x5C7BA).Take(0x12).ToArray()).Trim('\0');
                 GrassType = Data[0x4DA81];
                 TownHallColor = Data[0x5C7B8] & 3;
                 TrainStationColor = Data[0x5C7B9] & 3;
                 NativeFruit = Data[0x5C836];
+                SecondsPlayed = BitConverter.ToUInt32(Data, 0x5C7B0);
+                PlayDays = BitConverter.ToUInt16(Data, 0x5C83A);
             }
             public byte[] Write()
             {
@@ -240,6 +245,9 @@ namespace NLSE
                 Data[0x5C7B8] = (byte)((Data[0x5C7B8] & 0xFC) | TownHallColor);
                 Data[0x5C7B9] = (byte)((Data[0x5C7B9] & 0xFC) | TrainStationColor);
                 Data[0x5C836] = (byte)NativeFruit;
+
+                Array.Copy(BitConverter.GetBytes(SecondsPlayed), 0, Data, 0x5C7B0, 4);
+                Array.Copy(BitConverter.GetBytes(PlayDays), 0, Data, 0x5C83A, 2);
                 return Data;
             }
         }
@@ -441,11 +449,23 @@ namespace NLSE
                 loadVillager(i);
 
             // Load Overall
-            string Town = Save.TownName.getString(Save.Data);
-            L_Info.Text = String.Format("{1}{0}{0}Inhabitants:{0}{2}{0}{3}{0}{4}{0}{5}", Environment.NewLine,
-                Town,
-                Players[0].Name, Players[1].Name, Players[2].Name, Players[3].Name);
+            {
+                TB_TownName.Text = Save.TownName;
+                CB_GrassShape.SelectedIndex = Save.GrassType;
+                CB_NativeFruit.SelectedIndex = Save.NativeFruit;
+                CB_TownHallColor.SelectedIndex = Save.TownHallColor;
+                CB_TrainStationColor.SelectedIndex = Save.TrainStationColor;
 
+                NUD_Seconds.Value = Save.SecondsPlayed % 60;
+                NUD_Minutes.Value = (Save.SecondsPlayed / 60) % 60;
+                NUD_Hours.Value = (Save.SecondsPlayed / 3600) % 24;
+                NUD_Days.Value = (Save.SecondsPlayed / 86400) % 25000;
+
+                NUD_OverallDays.Value = Save.PlayDays;
+            }
+            L_Info.Text = String.Format("{1}{0}{0}Inhabitants:{0}{2}{0}{3}{0}{4}{0}{5}", Environment.NewLine,
+                Save.TownName,
+                Players[0].Name, Players[1].Name, Players[2].Name, Players[3].Name);
             loaded = true;
         }
         private void saveData()
@@ -479,7 +499,21 @@ namespace NLSE
                 saveVillager(i);
 
             // Write Overall
+            {
+                Save.TownName = TB_TownName.Text;
+                Save.GrassType = CB_GrassShape.SelectedIndex;
+                Save.NativeFruit = CB_NativeFruit.SelectedIndex;
+                Save.TownHallColor = CB_TownHallColor.SelectedIndex;
+                Save.TrainStationColor = CB_TrainStationColor.SelectedIndex;
 
+                Save.SecondsPlayed = 0;
+                Save.SecondsPlayed += (uint)NUD_Seconds.Value;
+                Save.SecondsPlayed += (uint)NUD_Minutes.Value * 60;
+                Save.SecondsPlayed += (uint)NUD_Hours.Value * 3600;
+                Save.SecondsPlayed += (uint)NUD_Days.Value * 86400;
+
+                Save.PlayDays = (ushort)NUD_OverallDays.Value;
+            }
             // Finish
             Main.SaveData = Save.Write();
         }
@@ -969,7 +1003,7 @@ namespace NLSE
                 currentItem.Flag1.ToString("X2"),
                 currentItem.ID.ToString("X4"));
         }
-        private void EnterKey(Object sender, KeyPressEventArgs e)
+        private void EnterKey(object sender, KeyPressEventArgs e)
         {
             // this will only allow valid hex values [0-9][a-f][A-F] to be entered. See ASCII table
             char c = e.KeyChar;
