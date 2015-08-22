@@ -854,7 +854,8 @@ namespace NLSE
         private Image getAcreItemPic(int quadrant, Item[] items)
         {
             const int itemsize = 4 * mapScale;
-            Bitmap b = new Bitmap(64 * mapScale, 64 * mapScale);
+            int Width = 64 * mapScale, Height = 64*mapScale;
+            byte[] bmpData = new byte[4 * ((Width) * (Height))];
             for (int i = 0; i < 0x100; i++) // loop over acre data
             {
                 int X = i % 16;
@@ -865,30 +866,33 @@ namespace NLSE
                     continue; // skip this one.
                 
                 string itemType = getItemType(item.ID);
-                Color itemColor = getItemColor(itemType);
-                itemColor = Color.FromArgb(200, itemColor.R, itemColor.G, itemColor.B);
+                uint itemColor = getItemColor(itemType);
 
                 // Plop into image
                 for (int x = 0; x < itemsize*itemsize; x++)
                 {
-                    int rX = (X * itemsize + x % itemsize);
-                    int rY = (Y * itemsize + x / itemsize);
-                    b.SetPixel(rX, rY, itemColor);
+                    Buffer.BlockCopy(BitConverter.GetBytes(itemColor), 0, bmpData, ((Y * itemsize + x / itemsize) * Width * 4) + ((X * itemsize + x % itemsize) * 4), 4);
                 }
                 // Buried
                 if (item.Buried)
                 {
                     for (int z = 2; z < itemsize - 1; z++)
                     {
-                        b.SetPixel(X * itemsize + z, Y * itemsize + z, Color.Black);
-                        b.SetPixel(X * itemsize + itemsize - z, Y * itemsize + z, Color.Black);
+                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData, ((Y * itemsize + z) * Width * 4) + ((X * itemsize + z) * 4), 4);
+                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData, ((Y * itemsize + z) * Width * 4) + ((X * itemsize + itemsize - z) * 4), 4);
                     }
                 }
             }
-            for (int i = 0; i < b.Width * b.Height; i++) // slap on a grid
+            for (int i = 0; i < Width * Height; i++) // slap on a grid
                 if (i % (itemsize) == 0 || (i / (16 * itemsize)) % (itemsize) == 0)
-                    b.SetPixel(i % (16 * itemsize), i / (16 * itemsize), Color.FromArgb(65, 0xFF, 0xFF, 0xFF));
+                {
+                    Buffer.BlockCopy(BitConverter.GetBytes(0x41FFFFFF), 0, bmpData, ((i / (16 * itemsize)) * Width * 4) + ((i % (16 * itemsize)) * 4), 4);
+                }
 
+            Bitmap b = new Bitmap(Width, Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            System.Drawing.Imaging.BitmapData bData = b.LockBits(new Rectangle(0, 0, Width, Height), System.Drawing.Imaging.ImageLockMode.WriteOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            System.Runtime.InteropServices.Marshal.Copy(bmpData, 0, bData.Scan0, bmpData.Length);
+            b.UnlockBits(bData);
             return b;
         }
 
@@ -915,36 +919,37 @@ namespace NLSE
 
             return "unknown";
         }
-        private Color getItemColor(string itemType)
+        private uint getItemColor(string itemType)
         {
             switch (itemType)
             {
-                case "furniture": return ColorTranslator.FromHtml("#3cde30");
-                case "flower": return ColorTranslator.FromHtml("#ec67b8");
-                case "wiltedflower": return ColorTranslator.FromHtml("#ac2778");
-                case "pattern": return ColorTranslator.FromHtml("#877861");
-                case "money": return Color.Yellow;
-                case "rock": return Color.Black;
-                case "song": return ColorTranslator.FromHtml("#a4ecb8");
-                case "paper": return ColorTranslator.FromHtml("#a4ece8");
-                case "turnip": return ColorTranslator.FromHtml("#bbac9d");
-                case "catchable": return ColorTranslator.FromHtml("#bae33e");
-                case "wallfloor": return ColorTranslator.FromHtml("#994040");
-                case "clothes": return ColorTranslator.FromHtml("#2874aa");
-                case "gyroids": return ColorTranslator.FromHtml("#d48324");
-                case "mannequin": return ColorTranslator.FromHtml("#2e5570");
-                case "art": return ColorTranslator.FromHtml("#cf540a");
-                case "fossil": return ColorTranslator.FromHtml("#868686");
-                case "tool": return ColorTranslator.FromHtml("#818181");
-                case "tree": return Color.White;
-                case "weed": return Color.Green;
+                case "furniture": return 0xc83cde30;
+                case "flower": return 0xc8ec67b8;
+                case "wiltedflower": return 0xc8ac2778;
+                case "pattern": return 0xc8877861;
+                case "money": return 0xc8ffff00;
+                case "rock": return 0xc8000000;
+                case "song": return 0xc8a4ecb8;
+                case "paper": return 0xc8a4ece8;
+                case "turnip": return 0xc8bbac9d;
+                case "catchable": return 0xc8bae33e;
+                case "wallfloor": return 0xc8994040;
+                case "clothes": return 0xc82874aa;
+                case "gyroids": return 0xc8d48324;
+                case "mannequin": return 0xc82e5570;
+                case "art": return 0xc8cf540a;
+                case "fossil": return 0xc8868686;
+                case "tool": return 0xc8818181;
+                case "tree": return 0xc8ffffff;
+                case "weed": return 0xc8008000;
             }
-            return Color.Red;
+            return 0xc8ff0000;
         }
 
         private Image getItemPic(int itemsize, int itemsPerRow, Item[] items)
         {
-            Bitmap b = new Bitmap(itemsize * itemsPerRow, itemsize * items.Length / itemsPerRow);
+            int Width = itemsize * itemsPerRow, Height = itemsize * items.Length / itemsPerRow;
+            byte[] bmpData = new byte[4 * ((Width) * (Height))];
             for (int i = 0; i < items.Length; i++) // loop over acre data
             {
                 int X = i % itemsPerRow;
@@ -955,30 +960,31 @@ namespace NLSE
                     continue; // skip this one.
 
                 string itemType = getItemType(item.ID);
-                Color itemColor = getItemColor(itemType);
-                itemColor = Color.FromArgb(200, itemColor.R, itemColor.G, itemColor.B);
+                uint itemColor = getItemColor(itemType);
 
                 // Plop into image
                 for (int x = 0; x < itemsize * itemsize; x++)
                 {
-                    int rX = (X * itemsize + x / itemsize);
-                    int rY = (Y * itemsize + x % itemsize);
-                    b.SetPixel(rX, rY, itemColor);
+                    Buffer.BlockCopy(BitConverter.GetBytes(itemColor), 0, bmpData, ((Y * itemsize + x % itemsize) * Width * 4) + ((X * itemsize + x / itemsize) * 4), 4);
                 }
                 // Buried
                 if (item.Buried)
                 {
                     for (int z = 2; z < itemsize - 1; z++)
                     {
-                        b.SetPixel(X * itemsize + z, Y * itemsize + z, Color.Black);
-                        b.SetPixel(X * itemsize + itemsize - z, Y * itemsize + z, Color.Black);
+                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData, ((Y * itemsize + z) * Width * 4) + ((X * itemsize + z) * 4), 4);
+                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData, ((Y * itemsize + z) * Width * 4) + ((X * itemsize + itemsize - z) * 4), 4);
                     }
                 }
             }
-            for (int i = 0; i < b.Width * b.Height; i++) // slap on a grid
+            for (int i = 0; i < Width * Height; i++) // slap on a grid
                 if (i % (itemsize) == 0 || (i / (itemsize * itemsPerRow)) % (itemsize) == 0)
-                    b.SetPixel(i % (itemsize * itemsPerRow), i / (itemsize * itemsPerRow), Color.FromArgb(25, 0x0, 0x0, 0x0));
+                    Buffer.BlockCopy(BitConverter.GetBytes(0x17000000), 0, bmpData, ((i / (itemsize * itemsPerRow)) * Width * 4) + ((i % (itemsize * itemsPerRow)) * 4), 4);
 
+            Bitmap b = new Bitmap(Width, Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            System.Drawing.Imaging.BitmapData bData = b.LockBits(new Rectangle(0, 0, Width, Height), System.Drawing.Imaging.ImageLockMode.WriteOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            System.Runtime.InteropServices.Marshal.Copy(bmpData, 0, bData.Scan0, bmpData.Length);
+            b.UnlockBits(bData);
             return b;
         }
 
