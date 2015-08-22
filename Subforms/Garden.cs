@@ -394,9 +394,7 @@ namespace NLSE
         }
         private byte[] saveData()
         {
-            // Temporary
-            for (int i = 0; i < 1 /*Players.Length */; i++)
-                savePlayer(i);
+            savePlayer(currentPlayer);
             // Write Players
             for (int i = 0; i < Players.Length; i++)
                 Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0x9F10, 0x9F10);
@@ -413,8 +411,8 @@ namespace NLSE
             for (int i = 0; i < IslandItems.Length; i++) // Island Items
                 Array.Copy(IslandItems[i].Write(), 0, Save.Data, 0x6A4A8 + i * 4, 4);
 
-            // Write Buildings
             saveBuildingList();
+            // Write Buildings
             for (int i = 0; i < Buildings.Length; i++)
                 Array.Copy(Buildings[i].Write(), 0, Save.Data, 0x0495A8 + i * 4, 4);
 
