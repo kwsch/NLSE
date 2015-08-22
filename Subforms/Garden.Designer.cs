@@ -177,6 +177,37 @@
             this.TB_Flag1 = new System.Windows.Forms.TextBox();
             this.TB_Flag2 = new System.Windows.Forms.TextBox();
             this.L_CurrentItem = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.CB_Villager1 = new System.Windows.Forms.ComboBox();
+            this.L_Villager1 = new System.Windows.Forms.Label();
+            this.L_Villager2 = new System.Windows.Forms.Label();
+            this.CB_Villager2 = new System.Windows.Forms.ComboBox();
+            this.L_Villager3 = new System.Windows.Forms.Label();
+            this.CB_Villager3 = new System.Windows.Forms.ComboBox();
+            this.L_Villager4 = new System.Windows.Forms.Label();
+            this.CB_Villager4 = new System.Windows.Forms.ComboBox();
+            this.L_Villager5 = new System.Windows.Forms.Label();
+            this.CB_Villager5 = new System.Windows.Forms.ComboBox();
+            this.L_Villager6 = new System.Windows.Forms.Label();
+            this.CB_Villager6 = new System.Windows.Forms.ComboBox();
+            this.L_Villager7 = new System.Windows.Forms.Label();
+            this.CB_Villager7 = new System.Windows.Forms.ComboBox();
+            this.L_Villager8 = new System.Windows.Forms.Label();
+            this.CB_Villager8 = new System.Windows.Forms.ComboBox();
+            this.L_Villager9 = new System.Windows.Forms.Label();
+            this.CB_Villager9 = new System.Windows.Forms.ComboBox();
+            this.L_Villager10 = new System.Windows.Forms.Label();
+            this.CB_Villager10 = new System.Windows.Forms.ComboBox();
+            this.TB_VillagerCatch1 = new System.Windows.Forms.TextBox();
+            this.TB_VillagerCatch2 = new System.Windows.Forms.TextBox();
+            this.TB_VillagerCatch3 = new System.Windows.Forms.TextBox();
+            this.TB_VillagerCatch4 = new System.Windows.Forms.TextBox();
+            this.TB_VillagerCatch5 = new System.Windows.Forms.TextBox();
+            this.TB_VillagerCatch6 = new System.Windows.Forms.TextBox();
+            this.TB_VillagerCatch7 = new System.Windows.Forms.TextBox();
+            this.TB_VillagerCatch8 = new System.Windows.Forms.TextBox();
+            this.TB_VillagerCatch9 = new System.Windows.Forms.TextBox();
+            this.TB_VillagerCatch10 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -248,6 +279,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -325,6 +357,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1982,6 +2015,306 @@
             this.L_CurrentItem.TabIndex = 15;
             this.L_CurrentItem.Text = "Current Item:";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.TB_VillagerCatch10);
+            this.tabPage4.Controls.Add(this.TB_VillagerCatch9);
+            this.tabPage4.Controls.Add(this.TB_VillagerCatch8);
+            this.tabPage4.Controls.Add(this.TB_VillagerCatch7);
+            this.tabPage4.Controls.Add(this.TB_VillagerCatch6);
+            this.tabPage4.Controls.Add(this.TB_VillagerCatch5);
+            this.tabPage4.Controls.Add(this.TB_VillagerCatch4);
+            this.tabPage4.Controls.Add(this.TB_VillagerCatch3);
+            this.tabPage4.Controls.Add(this.TB_VillagerCatch2);
+            this.tabPage4.Controls.Add(this.TB_VillagerCatch1);
+            this.tabPage4.Controls.Add(this.L_Villager10);
+            this.tabPage4.Controls.Add(this.CB_Villager10);
+            this.tabPage4.Controls.Add(this.L_Villager9);
+            this.tabPage4.Controls.Add(this.CB_Villager9);
+            this.tabPage4.Controls.Add(this.L_Villager8);
+            this.tabPage4.Controls.Add(this.CB_Villager8);
+            this.tabPage4.Controls.Add(this.L_Villager7);
+            this.tabPage4.Controls.Add(this.CB_Villager7);
+            this.tabPage4.Controls.Add(this.L_Villager6);
+            this.tabPage4.Controls.Add(this.CB_Villager6);
+            this.tabPage4.Controls.Add(this.L_Villager5);
+            this.tabPage4.Controls.Add(this.CB_Villager5);
+            this.tabPage4.Controls.Add(this.L_Villager4);
+            this.tabPage4.Controls.Add(this.CB_Villager4);
+            this.tabPage4.Controls.Add(this.L_Villager3);
+            this.tabPage4.Controls.Add(this.CB_Villager3);
+            this.tabPage4.Controls.Add(this.L_Villager2);
+            this.tabPage4.Controls.Add(this.CB_Villager2);
+            this.tabPage4.Controls.Add(this.L_Villager1);
+            this.tabPage4.Controls.Add(this.CB_Villager1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(652, 560);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Villagers";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // CB_Villager1
+            // 
+            this.CB_Villager1.FormattingEnabled = true;
+            this.CB_Villager1.Location = new System.Drawing.Point(112, 5);
+            this.CB_Villager1.Name = "CB_Villager1";
+            this.CB_Villager1.Size = new System.Drawing.Size(121, 21);
+            this.CB_Villager1.TabIndex = 16;
+            this.CB_Villager1.SelectedIndexChanged += new System.EventHandler(this.changeVillager);
+            // 
+            // L_Villager1
+            // 
+            this.L_Villager1.Location = new System.Drawing.Point(6, 3);
+            this.L_Villager1.Name = "L_Villager1";
+            this.L_Villager1.Size = new System.Drawing.Size(100, 23);
+            this.L_Villager1.TabIndex = 17;
+            this.L_Villager1.Text = "Villager 1:";
+            this.L_Villager1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_Villager2
+            // 
+            this.L_Villager2.Location = new System.Drawing.Point(6, 30);
+            this.L_Villager2.Name = "L_Villager2";
+            this.L_Villager2.Size = new System.Drawing.Size(100, 23);
+            this.L_Villager2.TabIndex = 19;
+            this.L_Villager2.Text = "Villager 2:";
+            this.L_Villager2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_Villager2
+            // 
+            this.CB_Villager2.FormattingEnabled = true;
+            this.CB_Villager2.Location = new System.Drawing.Point(112, 32);
+            this.CB_Villager2.Name = "CB_Villager2";
+            this.CB_Villager2.Size = new System.Drawing.Size(121, 21);
+            this.CB_Villager2.TabIndex = 18;
+            this.CB_Villager2.SelectedIndexChanged += new System.EventHandler(this.changeVillager);
+            // 
+            // L_Villager3
+            // 
+            this.L_Villager3.Location = new System.Drawing.Point(6, 57);
+            this.L_Villager3.Name = "L_Villager3";
+            this.L_Villager3.Size = new System.Drawing.Size(100, 23);
+            this.L_Villager3.TabIndex = 21;
+            this.L_Villager3.Text = "Villager 3:";
+            this.L_Villager3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_Villager3
+            // 
+            this.CB_Villager3.FormattingEnabled = true;
+            this.CB_Villager3.Location = new System.Drawing.Point(112, 59);
+            this.CB_Villager3.Name = "CB_Villager3";
+            this.CB_Villager3.Size = new System.Drawing.Size(121, 21);
+            this.CB_Villager3.TabIndex = 20;
+            this.CB_Villager3.SelectedIndexChanged += new System.EventHandler(this.changeVillager);
+            // 
+            // L_Villager4
+            // 
+            this.L_Villager4.Location = new System.Drawing.Point(6, 84);
+            this.L_Villager4.Name = "L_Villager4";
+            this.L_Villager4.Size = new System.Drawing.Size(100, 23);
+            this.L_Villager4.TabIndex = 23;
+            this.L_Villager4.Text = "Villager 4:";
+            this.L_Villager4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_Villager4
+            // 
+            this.CB_Villager4.FormattingEnabled = true;
+            this.CB_Villager4.Location = new System.Drawing.Point(112, 86);
+            this.CB_Villager4.Name = "CB_Villager4";
+            this.CB_Villager4.Size = new System.Drawing.Size(121, 21);
+            this.CB_Villager4.TabIndex = 22;
+            this.CB_Villager4.SelectedIndexChanged += new System.EventHandler(this.changeVillager);
+            // 
+            // L_Villager5
+            // 
+            this.L_Villager5.Location = new System.Drawing.Point(6, 111);
+            this.L_Villager5.Name = "L_Villager5";
+            this.L_Villager5.Size = new System.Drawing.Size(100, 23);
+            this.L_Villager5.TabIndex = 25;
+            this.L_Villager5.Text = "Villager 5:";
+            this.L_Villager5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_Villager5
+            // 
+            this.CB_Villager5.FormattingEnabled = true;
+            this.CB_Villager5.Location = new System.Drawing.Point(112, 113);
+            this.CB_Villager5.Name = "CB_Villager5";
+            this.CB_Villager5.Size = new System.Drawing.Size(121, 21);
+            this.CB_Villager5.TabIndex = 24;
+            this.CB_Villager5.SelectedIndexChanged += new System.EventHandler(this.changeVillager);
+            // 
+            // L_Villager6
+            // 
+            this.L_Villager6.Location = new System.Drawing.Point(6, 138);
+            this.L_Villager6.Name = "L_Villager6";
+            this.L_Villager6.Size = new System.Drawing.Size(100, 23);
+            this.L_Villager6.TabIndex = 27;
+            this.L_Villager6.Text = "Villager 6:";
+            this.L_Villager6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_Villager6
+            // 
+            this.CB_Villager6.FormattingEnabled = true;
+            this.CB_Villager6.Location = new System.Drawing.Point(112, 140);
+            this.CB_Villager6.Name = "CB_Villager6";
+            this.CB_Villager6.Size = new System.Drawing.Size(121, 21);
+            this.CB_Villager6.TabIndex = 26;
+            this.CB_Villager6.SelectedIndexChanged += new System.EventHandler(this.changeVillager);
+            // 
+            // L_Villager7
+            // 
+            this.L_Villager7.Location = new System.Drawing.Point(6, 165);
+            this.L_Villager7.Name = "L_Villager7";
+            this.L_Villager7.Size = new System.Drawing.Size(100, 23);
+            this.L_Villager7.TabIndex = 29;
+            this.L_Villager7.Text = "Villager 7:";
+            this.L_Villager7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_Villager7
+            // 
+            this.CB_Villager7.FormattingEnabled = true;
+            this.CB_Villager7.Location = new System.Drawing.Point(112, 167);
+            this.CB_Villager7.Name = "CB_Villager7";
+            this.CB_Villager7.Size = new System.Drawing.Size(121, 21);
+            this.CB_Villager7.TabIndex = 28;
+            this.CB_Villager7.SelectedIndexChanged += new System.EventHandler(this.changeVillager);
+            // 
+            // L_Villager8
+            // 
+            this.L_Villager8.Location = new System.Drawing.Point(6, 192);
+            this.L_Villager8.Name = "L_Villager8";
+            this.L_Villager8.Size = new System.Drawing.Size(100, 23);
+            this.L_Villager8.TabIndex = 31;
+            this.L_Villager8.Text = "Villager 8:";
+            this.L_Villager8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_Villager8
+            // 
+            this.CB_Villager8.FormattingEnabled = true;
+            this.CB_Villager8.Location = new System.Drawing.Point(112, 194);
+            this.CB_Villager8.Name = "CB_Villager8";
+            this.CB_Villager8.Size = new System.Drawing.Size(121, 21);
+            this.CB_Villager8.TabIndex = 30;
+            this.CB_Villager8.SelectedIndexChanged += new System.EventHandler(this.changeVillager);
+            // 
+            // L_Villager9
+            // 
+            this.L_Villager9.Location = new System.Drawing.Point(6, 219);
+            this.L_Villager9.Name = "L_Villager9";
+            this.L_Villager9.Size = new System.Drawing.Size(100, 23);
+            this.L_Villager9.TabIndex = 33;
+            this.L_Villager9.Text = "Villager 9:";
+            this.L_Villager9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_Villager9
+            // 
+            this.CB_Villager9.FormattingEnabled = true;
+            this.CB_Villager9.Location = new System.Drawing.Point(112, 221);
+            this.CB_Villager9.Name = "CB_Villager9";
+            this.CB_Villager9.Size = new System.Drawing.Size(121, 21);
+            this.CB_Villager9.TabIndex = 32;
+            this.CB_Villager9.SelectedIndexChanged += new System.EventHandler(this.changeVillager);
+            // 
+            // L_Villager10
+            // 
+            this.L_Villager10.Location = new System.Drawing.Point(6, 246);
+            this.L_Villager10.Name = "L_Villager10";
+            this.L_Villager10.Size = new System.Drawing.Size(100, 23);
+            this.L_Villager10.TabIndex = 35;
+            this.L_Villager10.Text = "Villager 10:";
+            this.L_Villager10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_Villager10
+            // 
+            this.CB_Villager10.FormattingEnabled = true;
+            this.CB_Villager10.Location = new System.Drawing.Point(112, 248);
+            this.CB_Villager10.Name = "CB_Villager10";
+            this.CB_Villager10.Size = new System.Drawing.Size(121, 21);
+            this.CB_Villager10.TabIndex = 34;
+            this.CB_Villager10.SelectedIndexChanged += new System.EventHandler(this.changeVillager);
+            // 
+            // TB_VillagerCatch1
+            // 
+            this.TB_VillagerCatch1.Location = new System.Drawing.Point(239, 5);
+            this.TB_VillagerCatch1.MaxLength = 10;
+            this.TB_VillagerCatch1.Name = "TB_VillagerCatch1";
+            this.TB_VillagerCatch1.Size = new System.Drawing.Size(100, 20);
+            this.TB_VillagerCatch1.TabIndex = 36;
+            // 
+            // TB_VillagerCatch2
+            // 
+            this.TB_VillagerCatch2.Location = new System.Drawing.Point(239, 32);
+            this.TB_VillagerCatch2.MaxLength = 10;
+            this.TB_VillagerCatch2.Name = "TB_VillagerCatch2";
+            this.TB_VillagerCatch2.Size = new System.Drawing.Size(100, 20);
+            this.TB_VillagerCatch2.TabIndex = 37;
+            // 
+            // TB_VillagerCatch3
+            // 
+            this.TB_VillagerCatch3.Location = new System.Drawing.Point(239, 59);
+            this.TB_VillagerCatch3.MaxLength = 10;
+            this.TB_VillagerCatch3.Name = "TB_VillagerCatch3";
+            this.TB_VillagerCatch3.Size = new System.Drawing.Size(100, 20);
+            this.TB_VillagerCatch3.TabIndex = 38;
+            // 
+            // TB_VillagerCatch4
+            // 
+            this.TB_VillagerCatch4.Location = new System.Drawing.Point(239, 86);
+            this.TB_VillagerCatch4.MaxLength = 10;
+            this.TB_VillagerCatch4.Name = "TB_VillagerCatch4";
+            this.TB_VillagerCatch4.Size = new System.Drawing.Size(100, 20);
+            this.TB_VillagerCatch4.TabIndex = 39;
+            // 
+            // TB_VillagerCatch5
+            // 
+            this.TB_VillagerCatch5.Location = new System.Drawing.Point(239, 113);
+            this.TB_VillagerCatch5.MaxLength = 10;
+            this.TB_VillagerCatch5.Name = "TB_VillagerCatch5";
+            this.TB_VillagerCatch5.Size = new System.Drawing.Size(100, 20);
+            this.TB_VillagerCatch5.TabIndex = 40;
+            // 
+            // TB_VillagerCatch6
+            // 
+            this.TB_VillagerCatch6.Location = new System.Drawing.Point(239, 140);
+            this.TB_VillagerCatch6.MaxLength = 10;
+            this.TB_VillagerCatch6.Name = "TB_VillagerCatch6";
+            this.TB_VillagerCatch6.Size = new System.Drawing.Size(100, 20);
+            this.TB_VillagerCatch6.TabIndex = 41;
+            // 
+            // TB_VillagerCatch7
+            // 
+            this.TB_VillagerCatch7.Location = new System.Drawing.Point(239, 167);
+            this.TB_VillagerCatch7.MaxLength = 10;
+            this.TB_VillagerCatch7.Name = "TB_VillagerCatch7";
+            this.TB_VillagerCatch7.Size = new System.Drawing.Size(100, 20);
+            this.TB_VillagerCatch7.TabIndex = 42;
+            // 
+            // TB_VillagerCatch8
+            // 
+            this.TB_VillagerCatch8.Location = new System.Drawing.Point(239, 194);
+            this.TB_VillagerCatch8.MaxLength = 10;
+            this.TB_VillagerCatch8.Name = "TB_VillagerCatch8";
+            this.TB_VillagerCatch8.Size = new System.Drawing.Size(100, 20);
+            this.TB_VillagerCatch8.TabIndex = 43;
+            // 
+            // TB_VillagerCatch9
+            // 
+            this.TB_VillagerCatch9.Location = new System.Drawing.Point(239, 221);
+            this.TB_VillagerCatch9.MaxLength = 10;
+            this.TB_VillagerCatch9.Name = "TB_VillagerCatch9";
+            this.TB_VillagerCatch9.Size = new System.Drawing.Size(100, 20);
+            this.TB_VillagerCatch9.TabIndex = 44;
+            // 
+            // TB_VillagerCatch10
+            // 
+            this.TB_VillagerCatch10.Location = new System.Drawing.Point(239, 248);
+            this.TB_VillagerCatch10.MaxLength = 10;
+            this.TB_VillagerCatch10.Name = "TB_VillagerCatch10";
+            this.TB_VillagerCatch10.Size = new System.Drawing.Size(100, 20);
+            this.TB_VillagerCatch10.TabIndex = 45;
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2080,6 +2413,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2235,5 +2570,36 @@
         private System.Windows.Forms.TextBox TB_Flag1;
         private System.Windows.Forms.TextBox TB_Flag2;
         private System.Windows.Forms.Label L_CurrentItem;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label L_Villager10;
+        private System.Windows.Forms.ComboBox CB_Villager10;
+        private System.Windows.Forms.Label L_Villager9;
+        private System.Windows.Forms.ComboBox CB_Villager9;
+        private System.Windows.Forms.Label L_Villager8;
+        private System.Windows.Forms.ComboBox CB_Villager8;
+        private System.Windows.Forms.Label L_Villager7;
+        private System.Windows.Forms.ComboBox CB_Villager7;
+        private System.Windows.Forms.Label L_Villager6;
+        private System.Windows.Forms.ComboBox CB_Villager6;
+        private System.Windows.Forms.Label L_Villager5;
+        private System.Windows.Forms.ComboBox CB_Villager5;
+        private System.Windows.Forms.Label L_Villager4;
+        private System.Windows.Forms.ComboBox CB_Villager4;
+        private System.Windows.Forms.Label L_Villager3;
+        private System.Windows.Forms.ComboBox CB_Villager3;
+        private System.Windows.Forms.Label L_Villager2;
+        private System.Windows.Forms.ComboBox CB_Villager2;
+        private System.Windows.Forms.Label L_Villager1;
+        private System.Windows.Forms.ComboBox CB_Villager1;
+        private System.Windows.Forms.TextBox TB_VillagerCatch10;
+        private System.Windows.Forms.TextBox TB_VillagerCatch9;
+        private System.Windows.Forms.TextBox TB_VillagerCatch8;
+        private System.Windows.Forms.TextBox TB_VillagerCatch7;
+        private System.Windows.Forms.TextBox TB_VillagerCatch6;
+        private System.Windows.Forms.TextBox TB_VillagerCatch5;
+        private System.Windows.Forms.TextBox TB_VillagerCatch4;
+        private System.Windows.Forms.TextBox TB_VillagerCatch3;
+        private System.Windows.Forms.TextBox TB_VillagerCatch2;
+        private System.Windows.Forms.TextBox TB_VillagerCatch1;
     }
 }

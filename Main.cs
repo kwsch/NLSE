@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -183,22 +182,6 @@ namespace NLSE
                 // Error
                 MessageBox.Show("Error:" + Environment.NewLine + ex);
             }
-        }
-
-        private void mine()
-        {
-            const string URL = "http://usuaris.tinet.cat/mark/acnl_editor/acres/";
-
-            WebClient c = new WebClient();
-            Directory.CreateDirectory("acre");
-            for (int i = 0; i < 0x100; i++)
-            try
-            {
-                byte[] data = c.DownloadData(URL + i.ToString("X2").ToLower() + ".png");
-                if (data != null)
-                    File.WriteAllBytes("acre\\acre_" + i + ".png", data);
-            }
-            catch {}
         }
     }
 }

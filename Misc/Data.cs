@@ -106,10 +106,10 @@ namespace NLSE
 
     public class ACNLVillager
     {
-        byte[] DefaultBytes;
-        string CatchPhrase;
-        string Name;
-        byte Type;
+        public byte[] DefaultBytes;
+        public string CatchPhrase;
+        public string Name;
+        public byte Type;
         public ACNLVillager(int index, string name, byte type, string catchphrase)
         {
             Name = name;

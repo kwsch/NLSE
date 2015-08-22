@@ -12,9 +12,9 @@ namespace NLSE
         // Form Variables
         private ushort[] TownAcreTiles, IslandAcreTiles;
         private PictureBox[] TownAcres, IslandAcres, PlayerPics, PlayerPicsLarge, PlayerPockets, PlayerDressers1, PlayerDressers2, PlayerIslandBox;
-        private ComboBox[] PlayerHairStyles, PlayerHairColors, PlayerEyeColors, PlayerFaces, PlayerTans, PlayerGenders;
+        private ComboBox[] PlayerHairStyles, PlayerHairColors, PlayerEyeColors, PlayerFaces, PlayerTans, PlayerGenders, TownVillagers;
         private ComboBox[][] PlayerBadges;
-        private TextBox[] PlayerNames;
+        private TextBox[] PlayerNames, TownVillagersCatch;
 
         private Player[] Players;
         private Building[] Buildings;
@@ -134,6 +134,19 @@ namespace NLSE
             PlayerGenders = new[]
             {
                 CB_P0Gender, /* CB_P1Gender, CB_P2Gender, CB_P3Gender */ 
+            };
+            TownVillagers = new[]
+            {
+                CB_Villager1, CB_Villager2, CB_Villager3, CB_Villager4, CB_Villager5,
+                CB_Villager6, CB_Villager7, CB_Villager8, CB_Villager9, CB_Villager10
+            };
+            foreach (ComboBox id in TownVillagers)
+                id.DataSource = (Properties.Resources.name_en).Split(new[] { '\n' }).ToArray();
+
+            TownVillagersCatch = new[]
+            {
+                TB_VillagerCatch1, TB_VillagerCatch2, TB_VillagerCatch3, TB_VillagerCatch4, TB_VillagerCatch5,
+                TB_VillagerCatch6, TB_VillagerCatch7, TB_VillagerCatch8, TB_VillagerCatch9, TB_VillagerCatch10
             };
             #endregion
             #region Load Event Methods to Controls
@@ -327,16 +340,28 @@ namespace NLSE
         {
             // Fetch from raw data
             public byte[] Data;
-            public int ID;
+            public short ID;
+            public byte Type;
+            public string CatchPhrase;
+            private string HomeTown1;
+            private string HomeTown2;
             public Villager(byte[] data, int offset, int size)
             {
                 Data = data.Skip(offset).Take(size).ToArray();
 
-                ID = BitConverter.ToUInt16(Data, 0);
+                ID = BitConverter.ToInt16(Data, 0);
+                Type = Data[2];
+                CatchPhrase = Encoding.Unicode.GetString(Data.Skip(0x24A6).Take(22).ToArray()).Trim('\0');
+                HomeTown1 = Encoding.Unicode.GetString(Data.Skip(0x24CE).Take(0x12).ToArray()).Trim('\0');
+                HomeTown2 = Encoding.Unicode.GetString(Data.Skip(0x24E4).Take(0x12).ToArray()).Trim('\0');
             }
             public byte[] Write()
             {
-                Array.Copy(BitConverter.GetBytes((ushort)ID), 0, Data, 0, 2);
+                Array.Copy(BitConverter.GetBytes(ID), 0, Data, 0, 2);
+                Data[2] = Type;
+                Array.Copy(Encoding.Unicode.GetBytes(CatchPhrase.PadRight(11, '\0')), 0, Data, 0x24A6, 22);
+                Array.Copy(Encoding.Unicode.GetBytes(HomeTown1.PadRight(9, '\0')), 0, Data, 0x24CE, 0x12);
+                Array.Copy(Encoding.Unicode.GetBytes(HomeTown2.PadRight(9, '\0')), 0, Data, 0x24E4, 0x12);
                 return Data;
             }
         }
@@ -408,13 +433,15 @@ namespace NLSE
             // Load Villagers
             Villagers = new Villager[10];
             for (int i = 0; i < Villagers.Length; i++)
-                Villagers[i] = new Villager(Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
+                loadVillager(i);
 
             // Load Overall
             string Town = Save.TownName.getString(Save.Data);
             L_Info.Text = String.Format("{1}{0}{0}Inhabitants:{0}{2}{0}{3}{0}{4}{0}{5}", Environment.NewLine,
                 Town,
                 Players[0].Name, Players[1].Name, Players[2].Name, Players[3].Name);
+
+            loaded = true;
         }
         private void saveData()
         {
@@ -443,7 +470,7 @@ namespace NLSE
 
             // Write Villagers
             for (int i = 0; i < Villagers.Length; i++)
-                Array.Copy(Villagers[i].Write(), 0, Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
+                saveVillager(i);
 
             // Write Overall
 
@@ -480,6 +507,20 @@ namespace NLSE
             Players[i].EyeColor = (byte)PlayerEyeColors[i].SelectedIndex;
             Players[i].Tan = (byte)PlayerTans[i].SelectedIndex;
             Players[i].Gender = (byte)PlayerGenders[i].SelectedIndex;
+        }
+
+        private void loadVillager(int i)
+        {
+            Villagers[i] = new Villager(Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
+            TownVillagers[i].Enabled = TownVillagersCatch[i].Enabled = (Villagers[i].ID != -1);
+            TownVillagers[i].SelectedIndex = Villagers[i].ID;
+            TownVillagersCatch[i].Text = Villagers[i].CatchPhrase;
+        }
+        private void saveVillager(int i)
+        {
+            Villagers[i].ID = (short)TownVillagers[i].SelectedIndex;
+            Villagers[i].CatchPhrase = TownVillagersCatch[i].Text;
+            Array.Copy(Villagers[i].Write(), 0, Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
         }
 
         // Utility
@@ -939,6 +980,22 @@ namespace NLSE
                 currentItem.Flag2.ToString("X2"),
                 currentItem.Flag1.ToString("X2"), 
                 currentItem.ID.ToString("X4"));
+        }
+
+        private bool loaded;
+        private void changeVillager(object sender, EventArgs e)
+        {
+            if (!loaded) return;
+            int index = Array.IndexOf(TownVillagers, sender as ComboBox);
+            int value = (sender as ComboBox).SelectedIndex;
+            if (index == -1 || value == -1) return;
+            Villagers[index].Type = Main.villagerList[value].Type;
+
+            if (DialogResult.Yes != Util.Prompt(MessageBoxButtons.YesNoCancel, String.Format("Do you want to reset villager {0}'s data? (furniture, clothes...)", index+1)))
+                return;
+
+            Array.Copy(Main.villagerList[value].DefaultBytes, 0, Villagers[index].Data, 0x244E, 88);
+            TownVillagersCatch[index].Text = Main.villagerList[value].CatchPhrase;
         }
     }
 }
