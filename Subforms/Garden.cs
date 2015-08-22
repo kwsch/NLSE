@@ -1064,7 +1064,7 @@ namespace NLSE
 
         private void reloadOverviewLabel()
         {
-            L_Info.Text = String.Format("{1}{0}{0}Inhabitants:{0}{2}{0}{3}{0}{4}{0}{5}", Environment.NewLine,
+            L_Info.Text = String.Format("{1}{0}{0}Players:{0}{2}{0}{3}{0}{4}{0}{5}", Environment.NewLine,
                 Save.TownName,
                 Players[0].Name, Players[1].Name, Players[2].Name, Players[3].Name);
         }
