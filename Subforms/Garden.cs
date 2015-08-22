@@ -280,9 +280,9 @@ namespace NLSE
                 Tan = Data[8];
                 U9 = Data[9];
 
-                Name = Encoding.Unicode.GetString(Data.Skip(0x6F3A).Take(0x12).ToArray()).Trim('\0');
+                Name = Encoding.Unicode.GetString(Data.Skip(0x55A8).Take(0x12).ToArray()).Trim('\0');
                 Gender = Data[0x6F4C];
-                HomeTown = Encoding.Unicode.GetString(Data.Skip(0x6F50).Take(0x12).ToArray()).Trim('\0');
+                HomeTown = Encoding.Unicode.GetString(Data.Skip(0x55BE).Take(0x12).ToArray()).Trim('\0');
 
                 try { JPEG = Image.FromStream(new MemoryStream(Data.Skip(0x5724).Take(0x1400).ToArray())); }
                 catch { JPEG = null; }
@@ -309,8 +309,8 @@ namespace NLSE
                 Data[9] = U9;
                 Data[0x6F4C] = (byte)Gender;
 
-                Array.Copy(Encoding.Unicode.GetBytes(Name.PadRight(9, '\0')), 0, Data, 0x6F3A, 0x12);
-                Array.Copy(Encoding.Unicode.GetBytes(HomeTown.PadRight(9, '\0')), 0, Data, 0x6F50, 0x12);
+                Array.Copy(Encoding.Unicode.GetBytes(Name.PadRight(9, '\0')), 0, Data, 0x55A8, 0x12);
+                Array.Copy(Encoding.Unicode.GetBytes(HomeTown.PadRight(9, '\0')), 0, Data, 0x55BE, 0x12);
 
                 Array.Copy(Badges, 0, Data, 0x569C, Badges.Length);
 
@@ -558,7 +558,9 @@ namespace NLSE
         }
         private void saveVillager(int i)
         {
-            Villagers[i].ID = (short)Util.getIndex(TownVillagers[i]);
+            Villagers[i].ID = (TownVillagers[i].SelectedItem == null) 
+                    ? (short)-1 
+                    : (short)Util.getIndex(TownVillagers[i]);
             Villagers[i].CatchPhrase = TownVillagersCatch[i].Text;
             Array.Copy(Villagers[i].Write(), 0, Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
         }
@@ -1074,20 +1076,20 @@ namespace NLSE
                 DisplayMember = "Text",
                 ValueMember = "Value",
                 DataSource = Main.buildingList,
-                Width = 150,
+                Width = 215,
                 FlatStyle = FlatStyle.Flat
             };
             DataGridViewColumn dgvX = new DataGridViewTextBoxColumn
             {
                 HeaderText = "X",
                 DisplayIndex = 1,
-                Width = 45,
+                Width = 35,
             };
             DataGridViewColumn dgvY = new DataGridViewTextBoxColumn
             {
                 HeaderText = "Y",
                 DisplayIndex = 2,
-                Width = 45,
+                Width = 35,
             };
             dgvX.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvY.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
