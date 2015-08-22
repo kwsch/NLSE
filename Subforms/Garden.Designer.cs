@@ -99,76 +99,76 @@
             this.PB_island01 = new System.Windows.Forms.PictureBox();
             this.PB_island00 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.L_P0Name = new System.Windows.Forms.Label();
-            this.CB_P0Gender = new System.Windows.Forms.ComboBox();
-            this.L_P0Gender = new System.Windows.Forms.Label();
-            this.L_P0Badge23 = new System.Windows.Forms.Label();
-            this.CB_P0Badge23 = new System.Windows.Forms.ComboBox();
-            this.L_P0Badge22 = new System.Windows.Forms.Label();
-            this.CB_P0Badge22 = new System.Windows.Forms.ComboBox();
-            this.L_P0Badge21 = new System.Windows.Forms.Label();
-            this.CB_P0Badge21 = new System.Windows.Forms.ComboBox();
-            this.L_P0Badge20 = new System.Windows.Forms.Label();
-            this.CB_P0Badge20 = new System.Windows.Forms.ComboBox();
-            this.L_P0HairStyle = new System.Windows.Forms.Label();
-            this.L_P0HairColor = new System.Windows.Forms.Label();
-            this.L_P0FaceShape = new System.Windows.Forms.Label();
-            this.L_P0EyeColor = new System.Windows.Forms.Label();
-            this.CB_P0SkinColor = new System.Windows.Forms.ComboBox();
-            this.CB_P0EyeColor = new System.Windows.Forms.ComboBox();
-            this.CB_P0FaceShape = new System.Windows.Forms.ComboBox();
-            this.CB_P0HairColor = new System.Windows.Forms.ComboBox();
-            this.L_P0SkinColor = new System.Windows.Forms.Label();
-            this.CB_P0HairStyle = new System.Windows.Forms.ComboBox();
-            this.TB_P0Name = new System.Windows.Forms.TextBox();
-            this.L_P0Badge19 = new System.Windows.Forms.Label();
-            this.L_P0Badge18 = new System.Windows.Forms.Label();
-            this.L_P0Badge17 = new System.Windows.Forms.Label();
-            this.L_P0Badge16 = new System.Windows.Forms.Label();
-            this.L_P0Badge15 = new System.Windows.Forms.Label();
-            this.L_P0Badge14 = new System.Windows.Forms.Label();
-            this.L_P0Badge13 = new System.Windows.Forms.Label();
-            this.L_P0Badge12 = new System.Windows.Forms.Label();
-            this.L_P0Badge11 = new System.Windows.Forms.Label();
-            this.L_P0Badge10 = new System.Windows.Forms.Label();
-            this.L_P0Badge09 = new System.Windows.Forms.Label();
-            this.L_P0Badge08 = new System.Windows.Forms.Label();
-            this.L_P0Badge07 = new System.Windows.Forms.Label();
-            this.L_P0Badge06 = new System.Windows.Forms.Label();
-            this.L_P0Badge05 = new System.Windows.Forms.Label();
-            this.L_P0Badge04 = new System.Windows.Forms.Label();
-            this.L_P0Badge03 = new System.Windows.Forms.Label();
-            this.L_P0Badge02 = new System.Windows.Forms.Label();
-            this.L_P0Badge01 = new System.Windows.Forms.Label();
-            this.L_P0Badge00 = new System.Windows.Forms.Label();
-            this.CB_P0Badge19 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge18 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge17 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge16 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge15 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge14 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge13 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge12 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge11 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge10 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge09 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge08 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge07 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge06 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge05 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge04 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge03 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge02 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge01 = new System.Windows.Forms.ComboBox();
-            this.CB_P0Badge00 = new System.Windows.Forms.ComboBox();
+            this.L_Name = new System.Windows.Forms.Label();
+            this.CB_Gender = new System.Windows.Forms.ComboBox();
+            this.L_Gender = new System.Windows.Forms.Label();
+            this.L_Badge23 = new System.Windows.Forms.Label();
+            this.CB_Badge23 = new System.Windows.Forms.ComboBox();
+            this.L_Badge22 = new System.Windows.Forms.Label();
+            this.CB_Badge22 = new System.Windows.Forms.ComboBox();
+            this.L_Badge21 = new System.Windows.Forms.Label();
+            this.CB_Badge21 = new System.Windows.Forms.ComboBox();
+            this.L_Badge20 = new System.Windows.Forms.Label();
+            this.CB_Badge20 = new System.Windows.Forms.ComboBox();
+            this.L_HairStyle = new System.Windows.Forms.Label();
+            this.L_HairColor = new System.Windows.Forms.Label();
+            this.L_FaceShape = new System.Windows.Forms.Label();
+            this.L_EyeColor = new System.Windows.Forms.Label();
+            this.CB_SkinColor = new System.Windows.Forms.ComboBox();
+            this.CB_EyeColor = new System.Windows.Forms.ComboBox();
+            this.CB_FaceShape = new System.Windows.Forms.ComboBox();
+            this.CB_HairColor = new System.Windows.Forms.ComboBox();
+            this.L_SkinColor = new System.Windows.Forms.Label();
+            this.CB_HairStyle = new System.Windows.Forms.ComboBox();
+            this.TB_Name = new System.Windows.Forms.TextBox();
+            this.L_Badge19 = new System.Windows.Forms.Label();
+            this.L_Badge18 = new System.Windows.Forms.Label();
+            this.L_Badge17 = new System.Windows.Forms.Label();
+            this.L_Badge16 = new System.Windows.Forms.Label();
+            this.L_Badge15 = new System.Windows.Forms.Label();
+            this.L_Badge14 = new System.Windows.Forms.Label();
+            this.L_Badge13 = new System.Windows.Forms.Label();
+            this.L_Badge12 = new System.Windows.Forms.Label();
+            this.L_Badge11 = new System.Windows.Forms.Label();
+            this.L_Badge10 = new System.Windows.Forms.Label();
+            this.L_Badge09 = new System.Windows.Forms.Label();
+            this.L_Badge08 = new System.Windows.Forms.Label();
+            this.L_Badge07 = new System.Windows.Forms.Label();
+            this.L_Badge06 = new System.Windows.Forms.Label();
+            this.L_Badge05 = new System.Windows.Forms.Label();
+            this.L_Badge04 = new System.Windows.Forms.Label();
+            this.L_Badge03 = new System.Windows.Forms.Label();
+            this.L_Badge02 = new System.Windows.Forms.Label();
+            this.L_Badge01 = new System.Windows.Forms.Label();
+            this.L_Badge00 = new System.Windows.Forms.Label();
+            this.CB_Badge19 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge18 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge17 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge16 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge15 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge14 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge13 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge12 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge11 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge10 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge09 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge08 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge07 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge06 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge05 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge04 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge03 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge02 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge01 = new System.Windows.Forms.ComboBox();
+            this.CB_Badge00 = new System.Windows.Forms.ComboBox();
             this.PB_LPlayer0 = new System.Windows.Forms.PictureBox();
-            this.L_P0Island = new System.Windows.Forms.Label();
-            this.L_P0Pocket = new System.Windows.Forms.Label();
-            this.PB_P0Island = new System.Windows.Forms.PictureBox();
-            this.PB_P0Pocket = new System.Windows.Forms.PictureBox();
-            this.PB_P0Dresser2 = new System.Windows.Forms.PictureBox();
-            this.PB_P0Dresser1 = new System.Windows.Forms.PictureBox();
-            this.L_P0Dresser = new System.Windows.Forms.Label();
+            this.L_Island = new System.Windows.Forms.Label();
+            this.L_Pocket = new System.Windows.Forms.Label();
+            this.PB_Island = new System.Windows.Forms.PictureBox();
+            this.PB_Pocket = new System.Windows.Forms.PictureBox();
+            this.PB_Dresser2 = new System.Windows.Forms.PictureBox();
+            this.PB_Dresser1 = new System.Windows.Forms.PictureBox();
+            this.L_Dresser = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.TB_VillagerCatch10 = new System.Windows.Forms.TextBox();
             this.TB_VillagerCatch9 = new System.Windows.Forms.TextBox();
@@ -294,10 +294,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_island00)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_LPlayer0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Island)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Pocket)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Island)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Pocket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Dresser2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Dresser1)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_OverallDays)).BeginInit();
@@ -1076,76 +1076,76 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.L_P0Name);
-            this.tabPage3.Controls.Add(this.CB_P0Gender);
-            this.tabPage3.Controls.Add(this.L_P0Gender);
-            this.tabPage3.Controls.Add(this.L_P0Badge23);
-            this.tabPage3.Controls.Add(this.CB_P0Badge23);
-            this.tabPage3.Controls.Add(this.L_P0Badge22);
-            this.tabPage3.Controls.Add(this.CB_P0Badge22);
-            this.tabPage3.Controls.Add(this.L_P0Badge21);
-            this.tabPage3.Controls.Add(this.CB_P0Badge21);
-            this.tabPage3.Controls.Add(this.L_P0Badge20);
-            this.tabPage3.Controls.Add(this.CB_P0Badge20);
-            this.tabPage3.Controls.Add(this.L_P0HairStyle);
-            this.tabPage3.Controls.Add(this.L_P0HairColor);
-            this.tabPage3.Controls.Add(this.L_P0FaceShape);
-            this.tabPage3.Controls.Add(this.L_P0EyeColor);
-            this.tabPage3.Controls.Add(this.CB_P0SkinColor);
-            this.tabPage3.Controls.Add(this.CB_P0EyeColor);
-            this.tabPage3.Controls.Add(this.CB_P0FaceShape);
-            this.tabPage3.Controls.Add(this.CB_P0HairColor);
-            this.tabPage3.Controls.Add(this.L_P0SkinColor);
-            this.tabPage3.Controls.Add(this.CB_P0HairStyle);
-            this.tabPage3.Controls.Add(this.TB_P0Name);
-            this.tabPage3.Controls.Add(this.L_P0Badge19);
-            this.tabPage3.Controls.Add(this.L_P0Badge18);
-            this.tabPage3.Controls.Add(this.L_P0Badge17);
-            this.tabPage3.Controls.Add(this.L_P0Badge16);
-            this.tabPage3.Controls.Add(this.L_P0Badge15);
-            this.tabPage3.Controls.Add(this.L_P0Badge14);
-            this.tabPage3.Controls.Add(this.L_P0Badge13);
-            this.tabPage3.Controls.Add(this.L_P0Badge12);
-            this.tabPage3.Controls.Add(this.L_P0Badge11);
-            this.tabPage3.Controls.Add(this.L_P0Badge10);
-            this.tabPage3.Controls.Add(this.L_P0Badge09);
-            this.tabPage3.Controls.Add(this.L_P0Badge08);
-            this.tabPage3.Controls.Add(this.L_P0Badge07);
-            this.tabPage3.Controls.Add(this.L_P0Badge06);
-            this.tabPage3.Controls.Add(this.L_P0Badge05);
-            this.tabPage3.Controls.Add(this.L_P0Badge04);
-            this.tabPage3.Controls.Add(this.L_P0Badge03);
-            this.tabPage3.Controls.Add(this.L_P0Badge02);
-            this.tabPage3.Controls.Add(this.L_P0Badge01);
-            this.tabPage3.Controls.Add(this.L_P0Badge00);
-            this.tabPage3.Controls.Add(this.CB_P0Badge19);
-            this.tabPage3.Controls.Add(this.CB_P0Badge18);
-            this.tabPage3.Controls.Add(this.CB_P0Badge17);
-            this.tabPage3.Controls.Add(this.CB_P0Badge16);
-            this.tabPage3.Controls.Add(this.CB_P0Badge15);
-            this.tabPage3.Controls.Add(this.CB_P0Badge14);
-            this.tabPage3.Controls.Add(this.CB_P0Badge13);
-            this.tabPage3.Controls.Add(this.CB_P0Badge12);
-            this.tabPage3.Controls.Add(this.CB_P0Badge11);
-            this.tabPage3.Controls.Add(this.CB_P0Badge10);
-            this.tabPage3.Controls.Add(this.CB_P0Badge09);
-            this.tabPage3.Controls.Add(this.CB_P0Badge08);
-            this.tabPage3.Controls.Add(this.CB_P0Badge07);
-            this.tabPage3.Controls.Add(this.CB_P0Badge06);
-            this.tabPage3.Controls.Add(this.CB_P0Badge05);
-            this.tabPage3.Controls.Add(this.CB_P0Badge04);
-            this.tabPage3.Controls.Add(this.CB_P0Badge03);
-            this.tabPage3.Controls.Add(this.CB_P0Badge02);
-            this.tabPage3.Controls.Add(this.CB_P0Badge01);
-            this.tabPage3.Controls.Add(this.CB_P0Badge00);
+            this.tabPage3.Controls.Add(this.L_Name);
+            this.tabPage3.Controls.Add(this.CB_Gender);
+            this.tabPage3.Controls.Add(this.L_Gender);
+            this.tabPage3.Controls.Add(this.L_Badge23);
+            this.tabPage3.Controls.Add(this.CB_Badge23);
+            this.tabPage3.Controls.Add(this.L_Badge22);
+            this.tabPage3.Controls.Add(this.CB_Badge22);
+            this.tabPage3.Controls.Add(this.L_Badge21);
+            this.tabPage3.Controls.Add(this.CB_Badge21);
+            this.tabPage3.Controls.Add(this.L_Badge20);
+            this.tabPage3.Controls.Add(this.CB_Badge20);
+            this.tabPage3.Controls.Add(this.L_HairStyle);
+            this.tabPage3.Controls.Add(this.L_HairColor);
+            this.tabPage3.Controls.Add(this.L_FaceShape);
+            this.tabPage3.Controls.Add(this.L_EyeColor);
+            this.tabPage3.Controls.Add(this.CB_SkinColor);
+            this.tabPage3.Controls.Add(this.CB_EyeColor);
+            this.tabPage3.Controls.Add(this.CB_FaceShape);
+            this.tabPage3.Controls.Add(this.CB_HairColor);
+            this.tabPage3.Controls.Add(this.L_SkinColor);
+            this.tabPage3.Controls.Add(this.CB_HairStyle);
+            this.tabPage3.Controls.Add(this.TB_Name);
+            this.tabPage3.Controls.Add(this.L_Badge19);
+            this.tabPage3.Controls.Add(this.L_Badge18);
+            this.tabPage3.Controls.Add(this.L_Badge17);
+            this.tabPage3.Controls.Add(this.L_Badge16);
+            this.tabPage3.Controls.Add(this.L_Badge15);
+            this.tabPage3.Controls.Add(this.L_Badge14);
+            this.tabPage3.Controls.Add(this.L_Badge13);
+            this.tabPage3.Controls.Add(this.L_Badge12);
+            this.tabPage3.Controls.Add(this.L_Badge11);
+            this.tabPage3.Controls.Add(this.L_Badge10);
+            this.tabPage3.Controls.Add(this.L_Badge09);
+            this.tabPage3.Controls.Add(this.L_Badge08);
+            this.tabPage3.Controls.Add(this.L_Badge07);
+            this.tabPage3.Controls.Add(this.L_Badge06);
+            this.tabPage3.Controls.Add(this.L_Badge05);
+            this.tabPage3.Controls.Add(this.L_Badge04);
+            this.tabPage3.Controls.Add(this.L_Badge03);
+            this.tabPage3.Controls.Add(this.L_Badge02);
+            this.tabPage3.Controls.Add(this.L_Badge01);
+            this.tabPage3.Controls.Add(this.L_Badge00);
+            this.tabPage3.Controls.Add(this.CB_Badge19);
+            this.tabPage3.Controls.Add(this.CB_Badge18);
+            this.tabPage3.Controls.Add(this.CB_Badge17);
+            this.tabPage3.Controls.Add(this.CB_Badge16);
+            this.tabPage3.Controls.Add(this.CB_Badge15);
+            this.tabPage3.Controls.Add(this.CB_Badge14);
+            this.tabPage3.Controls.Add(this.CB_Badge13);
+            this.tabPage3.Controls.Add(this.CB_Badge12);
+            this.tabPage3.Controls.Add(this.CB_Badge11);
+            this.tabPage3.Controls.Add(this.CB_Badge10);
+            this.tabPage3.Controls.Add(this.CB_Badge09);
+            this.tabPage3.Controls.Add(this.CB_Badge08);
+            this.tabPage3.Controls.Add(this.CB_Badge07);
+            this.tabPage3.Controls.Add(this.CB_Badge06);
+            this.tabPage3.Controls.Add(this.CB_Badge05);
+            this.tabPage3.Controls.Add(this.CB_Badge04);
+            this.tabPage3.Controls.Add(this.CB_Badge03);
+            this.tabPage3.Controls.Add(this.CB_Badge02);
+            this.tabPage3.Controls.Add(this.CB_Badge01);
+            this.tabPage3.Controls.Add(this.CB_Badge00);
             this.tabPage3.Controls.Add(this.PB_LPlayer0);
-            this.tabPage3.Controls.Add(this.L_P0Island);
-            this.tabPage3.Controls.Add(this.L_P0Pocket);
-            this.tabPage3.Controls.Add(this.PB_P0Island);
-            this.tabPage3.Controls.Add(this.PB_P0Pocket);
-            this.tabPage3.Controls.Add(this.PB_P0Dresser2);
-            this.tabPage3.Controls.Add(this.PB_P0Dresser1);
-            this.tabPage3.Controls.Add(this.L_P0Dresser);
+            this.tabPage3.Controls.Add(this.L_Island);
+            this.tabPage3.Controls.Add(this.L_Pocket);
+            this.tabPage3.Controls.Add(this.PB_Island);
+            this.tabPage3.Controls.Add(this.PB_Pocket);
+            this.tabPage3.Controls.Add(this.PB_Dresser2);
+            this.tabPage3.Controls.Add(this.PB_Dresser1);
+            this.tabPage3.Controls.Add(this.L_Dresser);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -1154,163 +1154,163 @@
             this.tabPage3.Text = "Player";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // L_P0Name
+            // L_Name
             // 
-            this.L_P0Name.Location = new System.Drawing.Point(157, 28);
-            this.L_P0Name.Name = "L_P0Name";
-            this.L_P0Name.Size = new System.Drawing.Size(55, 13);
-            this.L_P0Name.TabIndex = 70;
-            this.L_P0Name.Text = "Player Name:";
-            this.L_P0Name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Name.Location = new System.Drawing.Point(157, 28);
+            this.L_Name.Name = "L_Name";
+            this.L_Name.Size = new System.Drawing.Size(55, 13);
+            this.L_Name.TabIndex = 70;
+            this.L_Name.Text = "Player Name:";
+            this.L_Name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // CB_P0Gender
+            // CB_Gender
             // 
-            this.CB_P0Gender.FormattingEnabled = true;
-            this.CB_P0Gender.Items.AddRange(new object[] {
+            this.CB_Gender.FormattingEnabled = true;
+            this.CB_Gender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.CB_P0Gender.Location = new System.Drawing.Point(218, 187);
-            this.CB_P0Gender.Name = "CB_P0Gender";
-            this.CB_P0Gender.Size = new System.Drawing.Size(93, 21);
-            this.CB_P0Gender.TabIndex = 69;
+            this.CB_Gender.Location = new System.Drawing.Point(218, 187);
+            this.CB_Gender.Name = "CB_Gender";
+            this.CB_Gender.Size = new System.Drawing.Size(93, 21);
+            this.CB_Gender.TabIndex = 69;
             // 
-            // L_P0Gender
+            // L_Gender
             // 
-            this.L_P0Gender.Location = new System.Drawing.Point(154, 190);
-            this.L_P0Gender.Name = "L_P0Gender";
-            this.L_P0Gender.Size = new System.Drawing.Size(58, 13);
-            this.L_P0Gender.TabIndex = 68;
-            this.L_P0Gender.Text = "Gender:";
-            this.L_P0Gender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Gender.Location = new System.Drawing.Point(154, 190);
+            this.L_Gender.Name = "L_Gender";
+            this.L_Gender.Size = new System.Drawing.Size(58, 13);
+            this.L_Gender.TabIndex = 68;
+            this.L_Gender.Text = "Gender:";
+            this.L_Gender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge23
+            // L_Badge23
             // 
-            this.L_P0Badge23.Location = new System.Drawing.Point(426, 520);
-            this.L_P0Badge23.Name = "L_P0Badge23";
-            this.L_P0Badge23.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge23.TabIndex = 67;
-            this.L_P0Badge23.Text = "Villager:";
-            this.L_P0Badge23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge23.Location = new System.Drawing.Point(426, 520);
+            this.L_Badge23.Name = "L_Badge23";
+            this.L_Badge23.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge23.TabIndex = 67;
+            this.L_Badge23.Text = "Villager:";
+            this.L_Badge23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // CB_P0Badge23
+            // CB_Badge23
             // 
-            this.CB_P0Badge23.FormattingEnabled = true;
-            this.CB_P0Badge23.Items.AddRange(new object[] {
+            this.CB_Badge23.FormattingEnabled = true;
+            this.CB_Badge23.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge23.Location = new System.Drawing.Point(525, 522);
-            this.CB_P0Badge23.Name = "CB_P0Badge23";
-            this.CB_P0Badge23.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge23.TabIndex = 66;
+            this.CB_Badge23.Location = new System.Drawing.Point(525, 522);
+            this.CB_Badge23.Name = "CB_Badge23";
+            this.CB_Badge23.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge23.TabIndex = 66;
             // 
-            // L_P0Badge22
+            // L_Badge22
             // 
-            this.L_P0Badge22.Location = new System.Drawing.Point(426, 498);
-            this.L_P0Badge22.Name = "L_P0Badge22";
-            this.L_P0Badge22.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge22.TabIndex = 65;
-            this.L_P0Badge22.Text = "Dream:";
-            this.L_P0Badge22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge22.Location = new System.Drawing.Point(426, 498);
+            this.L_Badge22.Name = "L_Badge22";
+            this.L_Badge22.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge22.TabIndex = 65;
+            this.L_Badge22.Text = "Dream:";
+            this.L_Badge22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // CB_P0Badge22
+            // CB_Badge22
             // 
-            this.CB_P0Badge22.FormattingEnabled = true;
-            this.CB_P0Badge22.Items.AddRange(new object[] {
+            this.CB_Badge22.FormattingEnabled = true;
+            this.CB_Badge22.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge22.Location = new System.Drawing.Point(525, 500);
-            this.CB_P0Badge22.Name = "CB_P0Badge22";
-            this.CB_P0Badge22.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge22.TabIndex = 64;
+            this.CB_Badge22.Location = new System.Drawing.Point(525, 500);
+            this.CB_Badge22.Name = "CB_Badge22";
+            this.CB_Badge22.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge22.TabIndex = 64;
             // 
-            // L_P0Badge21
+            // L_Badge21
             // 
-            this.L_P0Badge21.Location = new System.Drawing.Point(426, 476);
-            this.L_P0Badge21.Name = "L_P0Badge21";
-            this.L_P0Badge21.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge21.TabIndex = 63;
-            this.L_P0Badge21.Text = "Ambassador:";
-            this.L_P0Badge21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge21.Location = new System.Drawing.Point(426, 476);
+            this.L_Badge21.Name = "L_Badge21";
+            this.L_Badge21.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge21.TabIndex = 63;
+            this.L_Badge21.Text = "Ambassador:";
+            this.L_Badge21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // CB_P0Badge21
+            // CB_Badge21
             // 
-            this.CB_P0Badge21.FormattingEnabled = true;
-            this.CB_P0Badge21.Items.AddRange(new object[] {
+            this.CB_Badge21.FormattingEnabled = true;
+            this.CB_Badge21.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge21.Location = new System.Drawing.Point(525, 478);
-            this.CB_P0Badge21.Name = "CB_P0Badge21";
-            this.CB_P0Badge21.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge21.TabIndex = 62;
+            this.CB_Badge21.Location = new System.Drawing.Point(525, 478);
+            this.CB_Badge21.Name = "CB_Badge21";
+            this.CB_Badge21.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge21.TabIndex = 62;
             // 
-            // L_P0Badge20
+            // L_Badge20
             // 
-            this.L_P0Badge20.Location = new System.Drawing.Point(426, 454);
-            this.L_P0Badge20.Name = "L_P0Badge20";
-            this.L_P0Badge20.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge20.TabIndex = 61;
-            this.L_P0Badge20.Text = "Traveler:";
-            this.L_P0Badge20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge20.Location = new System.Drawing.Point(426, 454);
+            this.L_Badge20.Name = "L_Badge20";
+            this.L_Badge20.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge20.TabIndex = 61;
+            this.L_Badge20.Text = "Traveler:";
+            this.L_Badge20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // CB_P0Badge20
+            // CB_Badge20
             // 
-            this.CB_P0Badge20.FormattingEnabled = true;
-            this.CB_P0Badge20.Items.AddRange(new object[] {
+            this.CB_Badge20.FormattingEnabled = true;
+            this.CB_Badge20.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge20.Location = new System.Drawing.Point(525, 456);
-            this.CB_P0Badge20.Name = "CB_P0Badge20";
-            this.CB_P0Badge20.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge20.TabIndex = 60;
+            this.CB_Badge20.Location = new System.Drawing.Point(525, 456);
+            this.CB_Badge20.Name = "CB_Badge20";
+            this.CB_Badge20.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge20.TabIndex = 60;
             // 
-            // L_P0HairStyle
+            // L_HairStyle
             // 
-            this.L_P0HairStyle.Location = new System.Drawing.Point(157, 55);
-            this.L_P0HairStyle.Name = "L_P0HairStyle";
-            this.L_P0HairStyle.Size = new System.Drawing.Size(55, 13);
-            this.L_P0HairStyle.TabIndex = 59;
-            this.L_P0HairStyle.Text = "Hair Style:";
-            this.L_P0HairStyle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_HairStyle.Location = new System.Drawing.Point(157, 55);
+            this.L_HairStyle.Name = "L_HairStyle";
+            this.L_HairStyle.Size = new System.Drawing.Size(55, 13);
+            this.L_HairStyle.TabIndex = 59;
+            this.L_HairStyle.Text = "Hair Style:";
+            this.L_HairStyle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0HairColor
+            // L_HairColor
             // 
-            this.L_P0HairColor.Location = new System.Drawing.Point(156, 82);
-            this.L_P0HairColor.Name = "L_P0HairColor";
-            this.L_P0HairColor.Size = new System.Drawing.Size(56, 13);
-            this.L_P0HairColor.TabIndex = 58;
-            this.L_P0HairColor.Text = "Hair Color:";
-            this.L_P0HairColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_HairColor.Location = new System.Drawing.Point(156, 82);
+            this.L_HairColor.Name = "L_HairColor";
+            this.L_HairColor.Size = new System.Drawing.Size(56, 13);
+            this.L_HairColor.TabIndex = 58;
+            this.L_HairColor.Text = "Hair Color:";
+            this.L_HairColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0FaceShape
+            // L_FaceShape
             // 
-            this.L_P0FaceShape.Location = new System.Drawing.Point(144, 109);
-            this.L_P0FaceShape.Name = "L_P0FaceShape";
-            this.L_P0FaceShape.Size = new System.Drawing.Size(68, 13);
-            this.L_P0FaceShape.TabIndex = 57;
-            this.L_P0FaceShape.Text = "Face Shape:";
-            this.L_P0FaceShape.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_FaceShape.Location = new System.Drawing.Point(144, 109);
+            this.L_FaceShape.Name = "L_FaceShape";
+            this.L_FaceShape.Size = new System.Drawing.Size(68, 13);
+            this.L_FaceShape.TabIndex = 57;
+            this.L_FaceShape.Text = "Face Shape:";
+            this.L_FaceShape.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0EyeColor
+            // L_EyeColor
             // 
-            this.L_P0EyeColor.Location = new System.Drawing.Point(157, 136);
-            this.L_P0EyeColor.Name = "L_P0EyeColor";
-            this.L_P0EyeColor.Size = new System.Drawing.Size(55, 13);
-            this.L_P0EyeColor.TabIndex = 56;
-            this.L_P0EyeColor.Text = "Eye Color:";
-            this.L_P0EyeColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_EyeColor.Location = new System.Drawing.Point(157, 136);
+            this.L_EyeColor.Name = "L_EyeColor";
+            this.L_EyeColor.Size = new System.Drawing.Size(55, 13);
+            this.L_EyeColor.TabIndex = 56;
+            this.L_EyeColor.Text = "Eye Color:";
+            this.L_EyeColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // CB_P0SkinColor
+            // CB_SkinColor
             // 
-            this.CB_P0SkinColor.FormattingEnabled = true;
-            this.CB_P0SkinColor.Items.AddRange(new object[] {
+            this.CB_SkinColor.FormattingEnabled = true;
+            this.CB_SkinColor.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -1327,15 +1327,15 @@
             "13",
             "14",
             "15"});
-            this.CB_P0SkinColor.Location = new System.Drawing.Point(218, 160);
-            this.CB_P0SkinColor.Name = "CB_P0SkinColor";
-            this.CB_P0SkinColor.Size = new System.Drawing.Size(93, 21);
-            this.CB_P0SkinColor.TabIndex = 55;
+            this.CB_SkinColor.Location = new System.Drawing.Point(218, 160);
+            this.CB_SkinColor.Name = "CB_SkinColor";
+            this.CB_SkinColor.Size = new System.Drawing.Size(93, 21);
+            this.CB_SkinColor.TabIndex = 55;
             // 
-            // CB_P0EyeColor
+            // CB_EyeColor
             // 
-            this.CB_P0EyeColor.FormattingEnabled = true;
-            this.CB_P0EyeColor.Items.AddRange(new object[] {
+            this.CB_EyeColor.FormattingEnabled = true;
+            this.CB_EyeColor.Items.AddRange(new object[] {
             "Black",
             "Brown",
             "Green",
@@ -1344,15 +1344,15 @@
             "Blue",
             "6",
             "7"});
-            this.CB_P0EyeColor.Location = new System.Drawing.Point(218, 133);
-            this.CB_P0EyeColor.Name = "CB_P0EyeColor";
-            this.CB_P0EyeColor.Size = new System.Drawing.Size(93, 21);
-            this.CB_P0EyeColor.TabIndex = 54;
+            this.CB_EyeColor.Location = new System.Drawing.Point(218, 133);
+            this.CB_EyeColor.Name = "CB_EyeColor";
+            this.CB_EyeColor.Size = new System.Drawing.Size(93, 21);
+            this.CB_EyeColor.TabIndex = 54;
             // 
-            // CB_P0FaceShape
+            // CB_FaceShape
             // 
-            this.CB_P0FaceShape.FormattingEnabled = true;
-            this.CB_P0FaceShape.Items.AddRange(new object[] {
+            this.CB_FaceShape.FormattingEnabled = true;
+            this.CB_FaceShape.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -1365,15 +1365,15 @@
             "9",
             "10",
             "11"});
-            this.CB_P0FaceShape.Location = new System.Drawing.Point(218, 106);
-            this.CB_P0FaceShape.Name = "CB_P0FaceShape";
-            this.CB_P0FaceShape.Size = new System.Drawing.Size(93, 21);
-            this.CB_P0FaceShape.TabIndex = 53;
+            this.CB_FaceShape.Location = new System.Drawing.Point(218, 106);
+            this.CB_FaceShape.Name = "CB_FaceShape";
+            this.CB_FaceShape.Size = new System.Drawing.Size(93, 21);
+            this.CB_FaceShape.TabIndex = 53;
             // 
-            // CB_P0HairColor
+            // CB_HairColor
             // 
-            this.CB_P0HairColor.FormattingEnabled = true;
-            this.CB_P0HairColor.Items.AddRange(new object[] {
+            this.CB_HairColor.FormattingEnabled = true;
+            this.CB_HairColor.Items.AddRange(new object[] {
             "Brown",
             "Light Brown",
             "Orange",
@@ -1390,24 +1390,24 @@
             "Green",
             "Purple",
             "Light Green"});
-            this.CB_P0HairColor.Location = new System.Drawing.Point(218, 79);
-            this.CB_P0HairColor.Name = "CB_P0HairColor";
-            this.CB_P0HairColor.Size = new System.Drawing.Size(93, 21);
-            this.CB_P0HairColor.TabIndex = 52;
+            this.CB_HairColor.Location = new System.Drawing.Point(218, 79);
+            this.CB_HairColor.Name = "CB_HairColor";
+            this.CB_HairColor.Size = new System.Drawing.Size(93, 21);
+            this.CB_HairColor.TabIndex = 52;
             // 
-            // L_P0SkinColor
+            // L_SkinColor
             // 
-            this.L_P0SkinColor.Location = new System.Drawing.Point(154, 163);
-            this.L_P0SkinColor.Name = "L_P0SkinColor";
-            this.L_P0SkinColor.Size = new System.Drawing.Size(58, 13);
-            this.L_P0SkinColor.TabIndex = 50;
-            this.L_P0SkinColor.Text = "Skin Color:";
-            this.L_P0SkinColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_SkinColor.Location = new System.Drawing.Point(154, 163);
+            this.L_SkinColor.Name = "L_SkinColor";
+            this.L_SkinColor.Size = new System.Drawing.Size(58, 13);
+            this.L_SkinColor.TabIndex = 50;
+            this.L_SkinColor.Text = "Skin Color:";
+            this.L_SkinColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // CB_P0HairStyle
+            // CB_HairStyle
             // 
-            this.CB_P0HairStyle.FormattingEnabled = true;
-            this.CB_P0HairStyle.Items.AddRange(new object[] {
+            this.CB_HairStyle.FormattingEnabled = true;
+            this.CB_HairStyle.Items.AddRange(new object[] {
             "M-00",
             "M-01",
             "M-02",
@@ -1424,475 +1424,480 @@
             "M-0D",
             "M-0E",
             "M-0F",
-            "F-00",
-            "F-01",
-            "F-02",
-            "F-03",
-            "F-04",
-            "F-05",
-            "F-06",
-            "F-07",
-            "F-08",
-            "F-09",
-            "F-0A",
-            "F-0B",
-            "F-0C",
-            "F-0D",
-            "F-0E",
-            "F-0F"});
-            this.CB_P0HairStyle.Location = new System.Drawing.Point(218, 52);
-            this.CB_P0HairStyle.Name = "CB_P0HairStyle";
-            this.CB_P0HairStyle.Size = new System.Drawing.Size(93, 21);
-            this.CB_P0HairStyle.TabIndex = 49;
+            "F-10",
+            "F-11",
+            "F-12",
+            "F-13",
+            "F-14",
+            "F-15",
+            "F-16",
+            "F-17",
+            "F-18",
+            "F-19",
+            "F-1A",
+            "F-1B",
+            "F-1C",
+            "F-1D",
+            "F-1E",
+            "F-1F",
+            "?-20",
+            "?-21",
+            "?-22",
+            "?-23"});
+            this.CB_HairStyle.Location = new System.Drawing.Point(218, 52);
+            this.CB_HairStyle.Name = "CB_HairStyle";
+            this.CB_HairStyle.Size = new System.Drawing.Size(93, 21);
+            this.CB_HairStyle.TabIndex = 49;
             // 
-            // TB_P0Name
+            // TB_Name
             // 
-            this.TB_P0Name.Location = new System.Drawing.Point(218, 26);
-            this.TB_P0Name.MaxLength = 9;
-            this.TB_P0Name.Name = "TB_P0Name";
-            this.TB_P0Name.Size = new System.Drawing.Size(93, 20);
-            this.TB_P0Name.TabIndex = 48;
-            this.TB_P0Name.Text = "WWWWWWWW";
+            this.TB_Name.Location = new System.Drawing.Point(218, 26);
+            this.TB_Name.MaxLength = 9;
+            this.TB_Name.Name = "TB_Name";
+            this.TB_Name.Size = new System.Drawing.Size(93, 20);
+            this.TB_Name.TabIndex = 48;
+            this.TB_Name.Text = "WWWWWWWW";
+            this.TB_Name.TextChanged += new System.EventHandler(this.changePlayerName);
             // 
-            // L_P0Badge19
+            // L_Badge19
             // 
-            this.L_P0Badge19.Location = new System.Drawing.Point(426, 432);
-            this.L_P0Badge19.Name = "L_P0Badge19";
-            this.L_P0Badge19.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge19.TabIndex = 47;
-            this.L_P0Badge19.Text = "StreetPass:";
-            this.L_P0Badge19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge19.Location = new System.Drawing.Point(426, 432);
+            this.L_Badge19.Name = "L_Badge19";
+            this.L_Badge19.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge19.TabIndex = 47;
+            this.L_Badge19.Text = "StreetPass:";
+            this.L_Badge19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge18
+            // L_Badge18
             // 
-            this.L_P0Badge18.Location = new System.Drawing.Point(426, 410);
-            this.L_P0Badge18.Name = "L_P0Badge18";
-            this.L_P0Badge18.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge18.TabIndex = 46;
-            this.L_P0Badge18.Text = "Postman:";
-            this.L_P0Badge18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge18.Location = new System.Drawing.Point(426, 410);
+            this.L_Badge18.Name = "L_Badge18";
+            this.L_Badge18.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge18.TabIndex = 46;
+            this.L_Badge18.Text = "Postman:";
+            this.L_Badge18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge17
+            // L_Badge17
             // 
-            this.L_P0Badge17.Location = new System.Drawing.Point(426, 388);
-            this.L_P0Badge17.Name = "L_P0Badge17";
-            this.L_P0Badge17.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge17.TabIndex = 45;
-            this.L_P0Badge17.Text = "Town Helper:";
-            this.L_P0Badge17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge17.Location = new System.Drawing.Point(426, 388);
+            this.L_Badge17.Name = "L_Badge17";
+            this.L_Badge17.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge17.TabIndex = 45;
+            this.L_Badge17.Text = "Town Helper:";
+            this.L_Badge17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge16
+            // L_Badge16
             // 
-            this.L_P0Badge16.Location = new System.Drawing.Point(426, 366);
-            this.L_P0Badge16.Name = "L_P0Badge16";
-            this.L_P0Badge16.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge16.TabIndex = 44;
-            this.L_P0Badge16.Text = "K.K. Slider:";
-            this.L_P0Badge16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge16.Location = new System.Drawing.Point(426, 366);
+            this.L_Badge16.Name = "L_Badge16";
+            this.L_Badge16.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge16.TabIndex = 44;
+            this.L_Badge16.Text = "K.K. Slider:";
+            this.L_Badge16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge15
+            // L_Badge15
             // 
-            this.L_P0Badge15.Location = new System.Drawing.Point(426, 344);
-            this.L_P0Badge15.Name = "L_P0Badge15";
-            this.L_P0Badge15.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge15.TabIndex = 43;
-            this.L_P0Badge15.Text = "Happy Homer:";
-            this.L_P0Badge15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge15.Location = new System.Drawing.Point(426, 344);
+            this.L_Badge15.Name = "L_Badge15";
+            this.L_Badge15.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge15.TabIndex = 43;
+            this.L_Badge15.Text = "Happy Homer:";
+            this.L_Badge15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge14
+            // L_Badge14
             // 
-            this.L_P0Badge14.Location = new System.Drawing.Point(426, 322);
-            this.L_P0Badge14.Name = "L_P0Badge14";
-            this.L_P0Badge14.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge14.TabIndex = 42;
-            this.L_P0Badge14.Text = "Catalog:";
-            this.L_P0Badge14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge14.Location = new System.Drawing.Point(426, 322);
+            this.L_Badge14.Name = "L_Badge14";
+            this.L_Badge14.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge14.TabIndex = 42;
+            this.L_Badge14.Text = "Catalog:";
+            this.L_Badge14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge13
+            // L_Badge13
             // 
-            this.L_P0Badge13.Location = new System.Drawing.Point(426, 300);
-            this.L_P0Badge13.Name = "L_P0Badge13";
-            this.L_P0Badge13.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge13.TabIndex = 41;
-            this.L_P0Badge13.Text = "Refurbishing:";
-            this.L_P0Badge13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge13.Location = new System.Drawing.Point(426, 300);
+            this.L_Badge13.Name = "L_Badge13";
+            this.L_Badge13.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge13.TabIndex = 41;
+            this.L_Badge13.Text = "Refurbishing:";
+            this.L_Badge13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge12
+            // L_Badge12
             // 
-            this.L_P0Badge12.Location = new System.Drawing.Point(426, 278);
-            this.L_P0Badge12.Name = "L_P0Badge12";
-            this.L_P0Badge12.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge12.TabIndex = 40;
-            this.L_P0Badge12.Text = "Shopper:";
-            this.L_P0Badge12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge12.Location = new System.Drawing.Point(426, 278);
+            this.L_Badge12.Name = "L_Badge12";
+            this.L_Badge12.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge12.TabIndex = 40;
+            this.L_Badge12.Text = "Shopper:";
+            this.L_Badge12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge11
+            // L_Badge11
             // 
-            this.L_P0Badge11.Location = new System.Drawing.Point(426, 256);
-            this.L_P0Badge11.Name = "L_P0Badge11";
-            this.L_P0Badge11.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge11.TabIndex = 39;
-            this.L_P0Badge11.Text = "Turnip:";
-            this.L_P0Badge11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge11.Location = new System.Drawing.Point(426, 256);
+            this.L_Badge11.Name = "L_Badge11";
+            this.L_Badge11.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge11.TabIndex = 39;
+            this.L_Badge11.Text = "Turnip:";
+            this.L_Badge11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge10
+            // L_Badge10
             // 
-            this.L_P0Badge10.Location = new System.Drawing.Point(426, 234);
-            this.L_P0Badge10.Name = "L_P0Badge10";
-            this.L_P0Badge10.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge10.TabIndex = 38;
-            this.L_P0Badge10.Text = "Bell Saver:";
-            this.L_P0Badge10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge10.Location = new System.Drawing.Point(426, 234);
+            this.L_Badge10.Name = "L_Badge10";
+            this.L_Badge10.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge10.TabIndex = 38;
+            this.L_Badge10.Text = "Bell Saver:";
+            this.L_Badge10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge09
+            // L_Badge09
             // 
-            this.L_P0Badge09.Location = new System.Drawing.Point(426, 212);
-            this.L_P0Badge09.Name = "L_P0Badge09";
-            this.L_P0Badge09.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge09.TabIndex = 37;
-            this.L_P0Badge09.Text = "Weed:";
-            this.L_P0Badge09.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge09.Location = new System.Drawing.Point(426, 212);
+            this.L_Badge09.Name = "L_Badge09";
+            this.L_Badge09.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge09.TabIndex = 37;
+            this.L_Badge09.Text = "Weed:";
+            this.L_Badge09.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge08
+            // L_Badge08
             // 
-            this.L_P0Badge08.Location = new System.Drawing.Point(426, 190);
-            this.L_P0Badge08.Name = "L_P0Badge08";
-            this.L_P0Badge08.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge08.TabIndex = 36;
-            this.L_P0Badge08.Text = "Gardening:";
-            this.L_P0Badge08.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge08.Location = new System.Drawing.Point(426, 190);
+            this.L_Badge08.Name = "L_Badge08";
+            this.L_Badge08.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge08.TabIndex = 36;
+            this.L_Badge08.Text = "Gardening:";
+            this.L_Badge08.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge07
+            // L_Badge07
             // 
-            this.L_P0Badge07.Location = new System.Drawing.Point(426, 168);
-            this.L_P0Badge07.Name = "L_P0Badge07";
-            this.L_P0Badge07.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge07.TabIndex = 35;
-            this.L_P0Badge07.Text = "Medalist:";
-            this.L_P0Badge07.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge07.Location = new System.Drawing.Point(426, 168);
+            this.L_Badge07.Name = "L_Badge07";
+            this.L_Badge07.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge07.TabIndex = 35;
+            this.L_Badge07.Text = "Medalist:";
+            this.L_Badge07.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge06
+            // L_Badge06
             // 
-            this.L_P0Badge06.Location = new System.Drawing.Point(426, 146);
-            this.L_P0Badge06.Name = "L_P0Badge06";
-            this.L_P0Badge06.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge06.TabIndex = 34;
-            this.L_P0Badge06.Text = "Baloon:";
-            this.L_P0Badge06.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge06.Location = new System.Drawing.Point(426, 146);
+            this.L_Badge06.Name = "L_Badge06";
+            this.L_Badge06.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge06.TabIndex = 34;
+            this.L_Badge06.Text = "Baloon:";
+            this.L_Badge06.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge05
+            // L_Badge05
             // 
-            this.L_P0Badge05.Location = new System.Drawing.Point(426, 124);
-            this.L_P0Badge05.Name = "L_P0Badge05";
-            this.L_P0Badge05.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge05.TabIndex = 33;
-            this.L_P0Badge05.Text = "Seafood:";
-            this.L_P0Badge05.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge05.Location = new System.Drawing.Point(426, 124);
+            this.L_Badge05.Name = "L_Badge05";
+            this.L_Badge05.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge05.TabIndex = 33;
+            this.L_Badge05.Text = "Seafood:";
+            this.L_Badge05.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge04
+            // L_Badge04
             // 
-            this.L_P0Badge04.Location = new System.Drawing.Point(426, 102);
-            this.L_P0Badge04.Name = "L_P0Badge04";
-            this.L_P0Badge04.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge04.TabIndex = 32;
-            this.L_P0Badge04.Text = "Ichtyology:";
-            this.L_P0Badge04.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge04.Location = new System.Drawing.Point(426, 102);
+            this.L_Badge04.Name = "L_Badge04";
+            this.L_Badge04.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge04.TabIndex = 32;
+            this.L_Badge04.Text = "Ichtyology:";
+            this.L_Badge04.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge03
+            // L_Badge03
             // 
-            this.L_P0Badge03.Location = new System.Drawing.Point(426, 80);
-            this.L_P0Badge03.Name = "L_P0Badge03";
-            this.L_P0Badge03.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge03.TabIndex = 31;
-            this.L_P0Badge03.Text = "Entomology:";
-            this.L_P0Badge03.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge03.Location = new System.Drawing.Point(426, 80);
+            this.L_Badge03.Name = "L_Badge03";
+            this.L_Badge03.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge03.TabIndex = 31;
+            this.L_Badge03.Text = "Entomology:";
+            this.L_Badge03.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge02
+            // L_Badge02
             // 
-            this.L_P0Badge02.Location = new System.Drawing.Point(426, 58);
-            this.L_P0Badge02.Name = "L_P0Badge02";
-            this.L_P0Badge02.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge02.TabIndex = 30;
-            this.L_P0Badge02.Text = "Dive:";
-            this.L_P0Badge02.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge02.Location = new System.Drawing.Point(426, 58);
+            this.L_Badge02.Name = "L_Badge02";
+            this.L_Badge02.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge02.TabIndex = 30;
+            this.L_Badge02.Text = "Dive:";
+            this.L_Badge02.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge01
+            // L_Badge01
             // 
-            this.L_P0Badge01.Location = new System.Drawing.Point(426, 36);
-            this.L_P0Badge01.Name = "L_P0Badge01";
-            this.L_P0Badge01.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge01.TabIndex = 29;
-            this.L_P0Badge01.Text = "Angler:";
-            this.L_P0Badge01.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge01.Location = new System.Drawing.Point(426, 36);
+            this.L_Badge01.Name = "L_Badge01";
+            this.L_Badge01.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge01.TabIndex = 29;
+            this.L_Badge01.Text = "Angler:";
+            this.L_Badge01.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // L_P0Badge00
+            // L_Badge00
             // 
-            this.L_P0Badge00.Location = new System.Drawing.Point(426, 14);
-            this.L_P0Badge00.Name = "L_P0Badge00";
-            this.L_P0Badge00.Size = new System.Drawing.Size(93, 23);
-            this.L_P0Badge00.TabIndex = 28;
-            this.L_P0Badge00.Text = "Bug Catcher:";
-            this.L_P0Badge00.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.L_Badge00.Location = new System.Drawing.Point(426, 14);
+            this.L_Badge00.Name = "L_Badge00";
+            this.L_Badge00.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge00.TabIndex = 28;
+            this.L_Badge00.Text = "Bug Catcher:";
+            this.L_Badge00.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // CB_P0Badge19
+            // CB_Badge19
             // 
-            this.CB_P0Badge19.FormattingEnabled = true;
-            this.CB_P0Badge19.Items.AddRange(new object[] {
+            this.CB_Badge19.FormattingEnabled = true;
+            this.CB_Badge19.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge19.Location = new System.Drawing.Point(525, 434);
-            this.CB_P0Badge19.Name = "CB_P0Badge19";
-            this.CB_P0Badge19.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge19.TabIndex = 27;
+            this.CB_Badge19.Location = new System.Drawing.Point(525, 434);
+            this.CB_Badge19.Name = "CB_Badge19";
+            this.CB_Badge19.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge19.TabIndex = 27;
             // 
-            // CB_P0Badge18
+            // CB_Badge18
             // 
-            this.CB_P0Badge18.FormattingEnabled = true;
-            this.CB_P0Badge18.Items.AddRange(new object[] {
+            this.CB_Badge18.FormattingEnabled = true;
+            this.CB_Badge18.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge18.Location = new System.Drawing.Point(525, 412);
-            this.CB_P0Badge18.Name = "CB_P0Badge18";
-            this.CB_P0Badge18.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge18.TabIndex = 26;
+            this.CB_Badge18.Location = new System.Drawing.Point(525, 412);
+            this.CB_Badge18.Name = "CB_Badge18";
+            this.CB_Badge18.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge18.TabIndex = 26;
             // 
-            // CB_P0Badge17
+            // CB_Badge17
             // 
-            this.CB_P0Badge17.FormattingEnabled = true;
-            this.CB_P0Badge17.Items.AddRange(new object[] {
+            this.CB_Badge17.FormattingEnabled = true;
+            this.CB_Badge17.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge17.Location = new System.Drawing.Point(525, 390);
-            this.CB_P0Badge17.Name = "CB_P0Badge17";
-            this.CB_P0Badge17.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge17.TabIndex = 25;
+            this.CB_Badge17.Location = new System.Drawing.Point(525, 390);
+            this.CB_Badge17.Name = "CB_Badge17";
+            this.CB_Badge17.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge17.TabIndex = 25;
             // 
-            // CB_P0Badge16
+            // CB_Badge16
             // 
-            this.CB_P0Badge16.FormattingEnabled = true;
-            this.CB_P0Badge16.Items.AddRange(new object[] {
+            this.CB_Badge16.FormattingEnabled = true;
+            this.CB_Badge16.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge16.Location = new System.Drawing.Point(525, 368);
-            this.CB_P0Badge16.Name = "CB_P0Badge16";
-            this.CB_P0Badge16.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge16.TabIndex = 24;
+            this.CB_Badge16.Location = new System.Drawing.Point(525, 368);
+            this.CB_Badge16.Name = "CB_Badge16";
+            this.CB_Badge16.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge16.TabIndex = 24;
             // 
-            // CB_P0Badge15
+            // CB_Badge15
             // 
-            this.CB_P0Badge15.FormattingEnabled = true;
-            this.CB_P0Badge15.Items.AddRange(new object[] {
+            this.CB_Badge15.FormattingEnabled = true;
+            this.CB_Badge15.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge15.Location = new System.Drawing.Point(525, 346);
-            this.CB_P0Badge15.Name = "CB_P0Badge15";
-            this.CB_P0Badge15.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge15.TabIndex = 23;
+            this.CB_Badge15.Location = new System.Drawing.Point(525, 346);
+            this.CB_Badge15.Name = "CB_Badge15";
+            this.CB_Badge15.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge15.TabIndex = 23;
             // 
-            // CB_P0Badge14
+            // CB_Badge14
             // 
-            this.CB_P0Badge14.FormattingEnabled = true;
-            this.CB_P0Badge14.Items.AddRange(new object[] {
+            this.CB_Badge14.FormattingEnabled = true;
+            this.CB_Badge14.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge14.Location = new System.Drawing.Point(525, 324);
-            this.CB_P0Badge14.Name = "CB_P0Badge14";
-            this.CB_P0Badge14.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge14.TabIndex = 22;
+            this.CB_Badge14.Location = new System.Drawing.Point(525, 324);
+            this.CB_Badge14.Name = "CB_Badge14";
+            this.CB_Badge14.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge14.TabIndex = 22;
             // 
-            // CB_P0Badge13
+            // CB_Badge13
             // 
-            this.CB_P0Badge13.FormattingEnabled = true;
-            this.CB_P0Badge13.Items.AddRange(new object[] {
+            this.CB_Badge13.FormattingEnabled = true;
+            this.CB_Badge13.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge13.Location = new System.Drawing.Point(525, 302);
-            this.CB_P0Badge13.Name = "CB_P0Badge13";
-            this.CB_P0Badge13.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge13.TabIndex = 21;
+            this.CB_Badge13.Location = new System.Drawing.Point(525, 302);
+            this.CB_Badge13.Name = "CB_Badge13";
+            this.CB_Badge13.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge13.TabIndex = 21;
             // 
-            // CB_P0Badge12
+            // CB_Badge12
             // 
-            this.CB_P0Badge12.FormattingEnabled = true;
-            this.CB_P0Badge12.Items.AddRange(new object[] {
+            this.CB_Badge12.FormattingEnabled = true;
+            this.CB_Badge12.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge12.Location = new System.Drawing.Point(525, 280);
-            this.CB_P0Badge12.Name = "CB_P0Badge12";
-            this.CB_P0Badge12.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge12.TabIndex = 20;
+            this.CB_Badge12.Location = new System.Drawing.Point(525, 280);
+            this.CB_Badge12.Name = "CB_Badge12";
+            this.CB_Badge12.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge12.TabIndex = 20;
             // 
-            // CB_P0Badge11
+            // CB_Badge11
             // 
-            this.CB_P0Badge11.FormattingEnabled = true;
-            this.CB_P0Badge11.Items.AddRange(new object[] {
+            this.CB_Badge11.FormattingEnabled = true;
+            this.CB_Badge11.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge11.Location = new System.Drawing.Point(525, 258);
-            this.CB_P0Badge11.Name = "CB_P0Badge11";
-            this.CB_P0Badge11.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge11.TabIndex = 19;
+            this.CB_Badge11.Location = new System.Drawing.Point(525, 258);
+            this.CB_Badge11.Name = "CB_Badge11";
+            this.CB_Badge11.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge11.TabIndex = 19;
             // 
-            // CB_P0Badge10
+            // CB_Badge10
             // 
-            this.CB_P0Badge10.FormattingEnabled = true;
-            this.CB_P0Badge10.Items.AddRange(new object[] {
+            this.CB_Badge10.FormattingEnabled = true;
+            this.CB_Badge10.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge10.Location = new System.Drawing.Point(525, 236);
-            this.CB_P0Badge10.Name = "CB_P0Badge10";
-            this.CB_P0Badge10.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge10.TabIndex = 18;
+            this.CB_Badge10.Location = new System.Drawing.Point(525, 236);
+            this.CB_Badge10.Name = "CB_Badge10";
+            this.CB_Badge10.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge10.TabIndex = 18;
             // 
-            // CB_P0Badge09
+            // CB_Badge09
             // 
-            this.CB_P0Badge09.FormattingEnabled = true;
-            this.CB_P0Badge09.Items.AddRange(new object[] {
+            this.CB_Badge09.FormattingEnabled = true;
+            this.CB_Badge09.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge09.Location = new System.Drawing.Point(525, 214);
-            this.CB_P0Badge09.Name = "CB_P0Badge09";
-            this.CB_P0Badge09.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge09.TabIndex = 17;
+            this.CB_Badge09.Location = new System.Drawing.Point(525, 214);
+            this.CB_Badge09.Name = "CB_Badge09";
+            this.CB_Badge09.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge09.TabIndex = 17;
             // 
-            // CB_P0Badge08
+            // CB_Badge08
             // 
-            this.CB_P0Badge08.FormattingEnabled = true;
-            this.CB_P0Badge08.Items.AddRange(new object[] {
+            this.CB_Badge08.FormattingEnabled = true;
+            this.CB_Badge08.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge08.Location = new System.Drawing.Point(525, 192);
-            this.CB_P0Badge08.Name = "CB_P0Badge08";
-            this.CB_P0Badge08.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge08.TabIndex = 16;
+            this.CB_Badge08.Location = new System.Drawing.Point(525, 192);
+            this.CB_Badge08.Name = "CB_Badge08";
+            this.CB_Badge08.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge08.TabIndex = 16;
             // 
-            // CB_P0Badge07
+            // CB_Badge07
             // 
-            this.CB_P0Badge07.FormattingEnabled = true;
-            this.CB_P0Badge07.Items.AddRange(new object[] {
+            this.CB_Badge07.FormattingEnabled = true;
+            this.CB_Badge07.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge07.Location = new System.Drawing.Point(525, 170);
-            this.CB_P0Badge07.Name = "CB_P0Badge07";
-            this.CB_P0Badge07.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge07.TabIndex = 15;
+            this.CB_Badge07.Location = new System.Drawing.Point(525, 170);
+            this.CB_Badge07.Name = "CB_Badge07";
+            this.CB_Badge07.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge07.TabIndex = 15;
             // 
-            // CB_P0Badge06
+            // CB_Badge06
             // 
-            this.CB_P0Badge06.FormattingEnabled = true;
-            this.CB_P0Badge06.Items.AddRange(new object[] {
+            this.CB_Badge06.FormattingEnabled = true;
+            this.CB_Badge06.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge06.Location = new System.Drawing.Point(525, 148);
-            this.CB_P0Badge06.Name = "CB_P0Badge06";
-            this.CB_P0Badge06.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge06.TabIndex = 14;
+            this.CB_Badge06.Location = new System.Drawing.Point(525, 148);
+            this.CB_Badge06.Name = "CB_Badge06";
+            this.CB_Badge06.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge06.TabIndex = 14;
             // 
-            // CB_P0Badge05
+            // CB_Badge05
             // 
-            this.CB_P0Badge05.FormattingEnabled = true;
-            this.CB_P0Badge05.Items.AddRange(new object[] {
+            this.CB_Badge05.FormattingEnabled = true;
+            this.CB_Badge05.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge05.Location = new System.Drawing.Point(525, 126);
-            this.CB_P0Badge05.Name = "CB_P0Badge05";
-            this.CB_P0Badge05.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge05.TabIndex = 13;
+            this.CB_Badge05.Location = new System.Drawing.Point(525, 126);
+            this.CB_Badge05.Name = "CB_Badge05";
+            this.CB_Badge05.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge05.TabIndex = 13;
             // 
-            // CB_P0Badge04
+            // CB_Badge04
             // 
-            this.CB_P0Badge04.FormattingEnabled = true;
-            this.CB_P0Badge04.Items.AddRange(new object[] {
+            this.CB_Badge04.FormattingEnabled = true;
+            this.CB_Badge04.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge04.Location = new System.Drawing.Point(525, 104);
-            this.CB_P0Badge04.Name = "CB_P0Badge04";
-            this.CB_P0Badge04.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge04.TabIndex = 12;
+            this.CB_Badge04.Location = new System.Drawing.Point(525, 104);
+            this.CB_Badge04.Name = "CB_Badge04";
+            this.CB_Badge04.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge04.TabIndex = 12;
             // 
-            // CB_P0Badge03
+            // CB_Badge03
             // 
-            this.CB_P0Badge03.FormattingEnabled = true;
-            this.CB_P0Badge03.Items.AddRange(new object[] {
+            this.CB_Badge03.FormattingEnabled = true;
+            this.CB_Badge03.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge03.Location = new System.Drawing.Point(525, 82);
-            this.CB_P0Badge03.Name = "CB_P0Badge03";
-            this.CB_P0Badge03.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge03.TabIndex = 11;
+            this.CB_Badge03.Location = new System.Drawing.Point(525, 82);
+            this.CB_Badge03.Name = "CB_Badge03";
+            this.CB_Badge03.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge03.TabIndex = 11;
             // 
-            // CB_P0Badge02
+            // CB_Badge02
             // 
-            this.CB_P0Badge02.FormattingEnabled = true;
-            this.CB_P0Badge02.Items.AddRange(new object[] {
+            this.CB_Badge02.FormattingEnabled = true;
+            this.CB_Badge02.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge02.Location = new System.Drawing.Point(525, 60);
-            this.CB_P0Badge02.Name = "CB_P0Badge02";
-            this.CB_P0Badge02.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge02.TabIndex = 10;
+            this.CB_Badge02.Location = new System.Drawing.Point(525, 60);
+            this.CB_Badge02.Name = "CB_Badge02";
+            this.CB_Badge02.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge02.TabIndex = 10;
             // 
-            // CB_P0Badge01
+            // CB_Badge01
             // 
-            this.CB_P0Badge01.FormattingEnabled = true;
-            this.CB_P0Badge01.Items.AddRange(new object[] {
+            this.CB_Badge01.FormattingEnabled = true;
+            this.CB_Badge01.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge01.Location = new System.Drawing.Point(525, 38);
-            this.CB_P0Badge01.Name = "CB_P0Badge01";
-            this.CB_P0Badge01.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge01.TabIndex = 9;
+            this.CB_Badge01.Location = new System.Drawing.Point(525, 38);
+            this.CB_Badge01.Name = "CB_Badge01";
+            this.CB_Badge01.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge01.TabIndex = 9;
             // 
-            // CB_P0Badge00
+            // CB_Badge00
             // 
-            this.CB_P0Badge00.FormattingEnabled = true;
-            this.CB_P0Badge00.Items.AddRange(new object[] {
+            this.CB_Badge00.FormattingEnabled = true;
+            this.CB_Badge00.Items.AddRange(new object[] {
             "None",
             "Bronze",
             "Silver",
             "Gold"});
-            this.CB_P0Badge00.Location = new System.Drawing.Point(525, 16);
-            this.CB_P0Badge00.Name = "CB_P0Badge00";
-            this.CB_P0Badge00.Size = new System.Drawing.Size(121, 21);
-            this.CB_P0Badge00.TabIndex = 8;
+            this.CB_Badge00.Location = new System.Drawing.Point(525, 16);
+            this.CB_Badge00.Name = "CB_Badge00";
+            this.CB_Badge00.Size = new System.Drawing.Size(121, 21);
+            this.CB_Badge00.TabIndex = 8;
             // 
             // PB_LPlayer0
             // 
@@ -1906,72 +1911,72 @@
             this.PB_LPlayer0.TabIndex = 7;
             this.PB_LPlayer0.TabStop = false;
             // 
-            // L_P0Island
+            // L_Island
             // 
-            this.L_P0Island.Location = new System.Drawing.Point(182, 401);
-            this.L_P0Island.Name = "L_P0Island";
-            this.L_P0Island.Size = new System.Drawing.Size(82, 13);
-            this.L_P0Island.TabIndex = 6;
-            this.L_P0Island.Text = "v Island v";
-            this.L_P0Island.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.L_Island.Location = new System.Drawing.Point(182, 401);
+            this.L_Island.Name = "L_Island";
+            this.L_Island.Size = new System.Drawing.Size(82, 13);
+            this.L_Island.TabIndex = 6;
+            this.L_Island.Text = "v Island v";
+            this.L_Island.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // L_P0Pocket
+            // L_Pocket
             // 
-            this.L_P0Pocket.Location = new System.Drawing.Point(177, 257);
-            this.L_P0Pocket.Name = "L_P0Pocket";
-            this.L_P0Pocket.Size = new System.Drawing.Size(87, 23);
-            this.L_P0Pocket.TabIndex = 4;
-            this.L_P0Pocket.Text = "^ Pocket ^";
-            this.L_P0Pocket.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.L_Pocket.Location = new System.Drawing.Point(177, 257);
+            this.L_Pocket.Name = "L_Pocket";
+            this.L_Pocket.Size = new System.Drawing.Size(87, 23);
+            this.L_Pocket.TabIndex = 4;
+            this.L_Pocket.Text = "^ Pocket ^";
+            this.L_Pocket.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // PB_P0Island
+            // PB_Island
             // 
-            this.PB_P0Island.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PB_P0Island.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_P0Island.Location = new System.Drawing.Point(182, 417);
-            this.PB_P0Island.Name = "PB_P0Island";
-            this.PB_P0Island.Size = new System.Drawing.Size(83, 131);
-            this.PB_P0Island.TabIndex = 3;
-            this.PB_P0Island.TabStop = false;
+            this.PB_Island.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_Island.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_Island.Location = new System.Drawing.Point(182, 417);
+            this.PB_Island.Name = "PB_Island";
+            this.PB_Island.Size = new System.Drawing.Size(83, 131);
+            this.PB_Island.TabIndex = 3;
+            this.PB_Island.TabStop = false;
             // 
-            // PB_P0Pocket
+            // PB_Pocket
             // 
-            this.PB_P0Pocket.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PB_P0Pocket.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_P0Pocket.Location = new System.Drawing.Point(6, 232);
-            this.PB_P0Pocket.Name = "PB_P0Pocket";
-            this.PB_P0Pocket.Size = new System.Drawing.Size(259, 19);
-            this.PB_P0Pocket.TabIndex = 2;
-            this.PB_P0Pocket.TabStop = false;
+            this.PB_Pocket.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_Pocket.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_Pocket.Location = new System.Drawing.Point(6, 232);
+            this.PB_Pocket.Name = "PB_Pocket";
+            this.PB_Pocket.Size = new System.Drawing.Size(259, 19);
+            this.PB_Pocket.TabIndex = 2;
+            this.PB_Pocket.TabStop = false;
             // 
-            // PB_P0Dresser2
+            // PB_Dresser2
             // 
-            this.PB_P0Dresser2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PB_P0Dresser2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_P0Dresser2.Location = new System.Drawing.Point(94, 257);
-            this.PB_P0Dresser2.Name = "PB_P0Dresser2";
-            this.PB_P0Dresser2.Size = new System.Drawing.Size(83, 291);
-            this.PB_P0Dresser2.TabIndex = 1;
-            this.PB_P0Dresser2.TabStop = false;
+            this.PB_Dresser2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_Dresser2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_Dresser2.Location = new System.Drawing.Point(94, 257);
+            this.PB_Dresser2.Name = "PB_Dresser2";
+            this.PB_Dresser2.Size = new System.Drawing.Size(83, 291);
+            this.PB_Dresser2.TabIndex = 1;
+            this.PB_Dresser2.TabStop = false;
             // 
-            // PB_P0Dresser1
+            // PB_Dresser1
             // 
-            this.PB_P0Dresser1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PB_P0Dresser1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_P0Dresser1.Location = new System.Drawing.Point(6, 257);
-            this.PB_P0Dresser1.Name = "PB_P0Dresser1";
-            this.PB_P0Dresser1.Size = new System.Drawing.Size(83, 291);
-            this.PB_P0Dresser1.TabIndex = 0;
-            this.PB_P0Dresser1.TabStop = false;
+            this.PB_Dresser1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_Dresser1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_Dresser1.Location = new System.Drawing.Point(6, 257);
+            this.PB_Dresser1.Name = "PB_Dresser1";
+            this.PB_Dresser1.Size = new System.Drawing.Size(83, 291);
+            this.PB_Dresser1.TabIndex = 0;
+            this.PB_Dresser1.TabStop = false;
             // 
-            // L_P0Dresser
+            // L_Dresser
             // 
-            this.L_P0Dresser.Location = new System.Drawing.Point(179, 257);
-            this.L_P0Dresser.Name = "L_P0Dresser";
-            this.L_P0Dresser.Size = new System.Drawing.Size(85, 160);
-            this.L_P0Dresser.TabIndex = 5;
-            this.L_P0Dresser.Text = "<-- Dresser";
-            this.L_P0Dresser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.L_Dresser.Location = new System.Drawing.Point(179, 257);
+            this.L_Dresser.Name = "L_Dresser";
+            this.L_Dresser.Size = new System.Drawing.Size(85, 160);
+            this.L_Dresser.TabIndex = 5;
+            this.L_Dresser.Text = "<-- Dresser";
+            this.L_Dresser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPage4
             // 
@@ -2548,6 +2553,7 @@
             this.TB_TownName.Name = "TB_TownName";
             this.TB_TownName.Size = new System.Drawing.Size(121, 20);
             this.TB_TownName.TabIndex = 17;
+            this.TB_TownName.TextChanged += new System.EventHandler(this.changeTownName);
             // 
             // dataGridView1
             // 
@@ -2754,10 +2760,10 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_LPlayer0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Island)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Pocket)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_P0Dresser1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Island)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Pocket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Dresser2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Dresser1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
@@ -2852,76 +2858,76 @@
         private System.Windows.Forms.PictureBox PB_island12;
         private System.Windows.Forms.PictureBox PB_island11;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label L_P0Island;
-        private System.Windows.Forms.Label L_P0Pocket;
-        private System.Windows.Forms.PictureBox PB_P0Island;
-        private System.Windows.Forms.PictureBox PB_P0Pocket;
-        private System.Windows.Forms.PictureBox PB_P0Dresser2;
-        private System.Windows.Forms.PictureBox PB_P0Dresser1;
-        private System.Windows.Forms.Label L_P0Dresser;
+        private System.Windows.Forms.Label L_Island;
+        private System.Windows.Forms.Label L_Pocket;
+        private System.Windows.Forms.PictureBox PB_Island;
+        private System.Windows.Forms.PictureBox PB_Pocket;
+        private System.Windows.Forms.PictureBox PB_Dresser2;
+        private System.Windows.Forms.PictureBox PB_Dresser1;
+        private System.Windows.Forms.Label L_Dresser;
         private System.Windows.Forms.PictureBox PB_LPlayer0;
-        private System.Windows.Forms.ComboBox CB_P0Badge19;
-        private System.Windows.Forms.ComboBox CB_P0Badge18;
-        private System.Windows.Forms.ComboBox CB_P0Badge17;
-        private System.Windows.Forms.ComboBox CB_P0Badge16;
-        private System.Windows.Forms.ComboBox CB_P0Badge15;
-        private System.Windows.Forms.ComboBox CB_P0Badge14;
-        private System.Windows.Forms.ComboBox CB_P0Badge13;
-        private System.Windows.Forms.ComboBox CB_P0Badge12;
-        private System.Windows.Forms.ComboBox CB_P0Badge11;
-        private System.Windows.Forms.ComboBox CB_P0Badge10;
-        private System.Windows.Forms.ComboBox CB_P0Badge09;
-        private System.Windows.Forms.ComboBox CB_P0Badge08;
-        private System.Windows.Forms.ComboBox CB_P0Badge07;
-        private System.Windows.Forms.ComboBox CB_P0Badge06;
-        private System.Windows.Forms.ComboBox CB_P0Badge05;
-        private System.Windows.Forms.ComboBox CB_P0Badge04;
-        private System.Windows.Forms.ComboBox CB_P0Badge03;
-        private System.Windows.Forms.ComboBox CB_P0Badge02;
-        private System.Windows.Forms.ComboBox CB_P0Badge01;
-        private System.Windows.Forms.ComboBox CB_P0Badge00;
-        private System.Windows.Forms.Label L_P0Badge19;
-        private System.Windows.Forms.Label L_P0Badge18;
-        private System.Windows.Forms.Label L_P0Badge17;
-        private System.Windows.Forms.Label L_P0Badge16;
-        private System.Windows.Forms.Label L_P0Badge15;
-        private System.Windows.Forms.Label L_P0Badge14;
-        private System.Windows.Forms.Label L_P0Badge13;
-        private System.Windows.Forms.Label L_P0Badge12;
-        private System.Windows.Forms.Label L_P0Badge11;
-        private System.Windows.Forms.Label L_P0Badge10;
-        private System.Windows.Forms.Label L_P0Badge09;
-        private System.Windows.Forms.Label L_P0Badge08;
-        private System.Windows.Forms.Label L_P0Badge07;
-        private System.Windows.Forms.Label L_P0Badge06;
-        private System.Windows.Forms.Label L_P0Badge05;
-        private System.Windows.Forms.Label L_P0Badge04;
-        private System.Windows.Forms.Label L_P0Badge03;
-        private System.Windows.Forms.Label L_P0Badge02;
-        private System.Windows.Forms.Label L_P0Badge01;
-        private System.Windows.Forms.Label L_P0Badge00;
-        private System.Windows.Forms.TextBox TB_P0Name;
-        private System.Windows.Forms.ComboBox CB_P0EyeColor;
-        private System.Windows.Forms.ComboBox CB_P0FaceShape;
-        private System.Windows.Forms.ComboBox CB_P0HairColor;
-        private System.Windows.Forms.Label L_P0SkinColor;
-        private System.Windows.Forms.ComboBox CB_P0HairStyle;
-        private System.Windows.Forms.Label L_P0HairStyle;
-        private System.Windows.Forms.Label L_P0HairColor;
-        private System.Windows.Forms.Label L_P0FaceShape;
-        private System.Windows.Forms.Label L_P0EyeColor;
-        private System.Windows.Forms.ComboBox CB_P0SkinColor;
-        private System.Windows.Forms.Label L_P0Badge23;
-        private System.Windows.Forms.ComboBox CB_P0Badge23;
-        private System.Windows.Forms.Label L_P0Badge22;
-        private System.Windows.Forms.ComboBox CB_P0Badge22;
-        private System.Windows.Forms.Label L_P0Badge21;
-        private System.Windows.Forms.ComboBox CB_P0Badge21;
-        private System.Windows.Forms.Label L_P0Badge20;
-        private System.Windows.Forms.ComboBox CB_P0Badge20;
-        private System.Windows.Forms.ComboBox CB_P0Gender;
-        private System.Windows.Forms.Label L_P0Gender;
-        private System.Windows.Forms.Label L_P0Name;
+        private System.Windows.Forms.ComboBox CB_Badge19;
+        private System.Windows.Forms.ComboBox CB_Badge18;
+        private System.Windows.Forms.ComboBox CB_Badge17;
+        private System.Windows.Forms.ComboBox CB_Badge16;
+        private System.Windows.Forms.ComboBox CB_Badge15;
+        private System.Windows.Forms.ComboBox CB_Badge14;
+        private System.Windows.Forms.ComboBox CB_Badge13;
+        private System.Windows.Forms.ComboBox CB_Badge12;
+        private System.Windows.Forms.ComboBox CB_Badge11;
+        private System.Windows.Forms.ComboBox CB_Badge10;
+        private System.Windows.Forms.ComboBox CB_Badge09;
+        private System.Windows.Forms.ComboBox CB_Badge08;
+        private System.Windows.Forms.ComboBox CB_Badge07;
+        private System.Windows.Forms.ComboBox CB_Badge06;
+        private System.Windows.Forms.ComboBox CB_Badge05;
+        private System.Windows.Forms.ComboBox CB_Badge04;
+        private System.Windows.Forms.ComboBox CB_Badge03;
+        private System.Windows.Forms.ComboBox CB_Badge02;
+        private System.Windows.Forms.ComboBox CB_Badge01;
+        private System.Windows.Forms.ComboBox CB_Badge00;
+        private System.Windows.Forms.Label L_Badge19;
+        private System.Windows.Forms.Label L_Badge18;
+        private System.Windows.Forms.Label L_Badge17;
+        private System.Windows.Forms.Label L_Badge16;
+        private System.Windows.Forms.Label L_Badge15;
+        private System.Windows.Forms.Label L_Badge14;
+        private System.Windows.Forms.Label L_Badge13;
+        private System.Windows.Forms.Label L_Badge12;
+        private System.Windows.Forms.Label L_Badge11;
+        private System.Windows.Forms.Label L_Badge10;
+        private System.Windows.Forms.Label L_Badge09;
+        private System.Windows.Forms.Label L_Badge08;
+        private System.Windows.Forms.Label L_Badge07;
+        private System.Windows.Forms.Label L_Badge06;
+        private System.Windows.Forms.Label L_Badge05;
+        private System.Windows.Forms.Label L_Badge04;
+        private System.Windows.Forms.Label L_Badge03;
+        private System.Windows.Forms.Label L_Badge02;
+        private System.Windows.Forms.Label L_Badge01;
+        private System.Windows.Forms.Label L_Badge00;
+        private System.Windows.Forms.TextBox TB_Name;
+        private System.Windows.Forms.ComboBox CB_EyeColor;
+        private System.Windows.Forms.ComboBox CB_FaceShape;
+        private System.Windows.Forms.ComboBox CB_HairColor;
+        private System.Windows.Forms.Label L_SkinColor;
+        private System.Windows.Forms.ComboBox CB_HairStyle;
+        private System.Windows.Forms.Label L_HairStyle;
+        private System.Windows.Forms.Label L_HairColor;
+        private System.Windows.Forms.Label L_FaceShape;
+        private System.Windows.Forms.Label L_EyeColor;
+        private System.Windows.Forms.ComboBox CB_SkinColor;
+        private System.Windows.Forms.Label L_Badge23;
+        private System.Windows.Forms.ComboBox CB_Badge23;
+        private System.Windows.Forms.Label L_Badge22;
+        private System.Windows.Forms.ComboBox CB_Badge22;
+        private System.Windows.Forms.Label L_Badge21;
+        private System.Windows.Forms.ComboBox CB_Badge21;
+        private System.Windows.Forms.Label L_Badge20;
+        private System.Windows.Forms.ComboBox CB_Badge20;
+        private System.Windows.Forms.ComboBox CB_Gender;
+        private System.Windows.Forms.Label L_Gender;
+        private System.Windows.Forms.Label L_Name;
         private System.Windows.Forms.ComboBox CB_Item;
         private System.Windows.Forms.TextBox TB_Flag1;
         private System.Windows.Forms.TextBox TB_Flag2;

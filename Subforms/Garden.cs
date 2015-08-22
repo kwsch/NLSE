@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -11,10 +12,10 @@ namespace NLSE
     {
         // Form Variables
         private ushort[] TownAcreTiles, IslandAcreTiles;
-        private PictureBox[] TownAcres, IslandAcres, PlayerPics, PlayerPicsLarge, PlayerPockets, PlayerDressers1, PlayerDressers2, PlayerIslandBox;
-        private ComboBox[] PlayerHairStyles, PlayerHairColors, PlayerEyeColors, PlayerFaces, PlayerTans, PlayerGenders, TownVillagers;
-        private ComboBox[][] PlayerBadges;
-        private TextBox[] PlayerNames, TownVillagersCatch;
+        private PictureBox[] TownAcres, IslandAcres, PlayerPics;
+        private ComboBox[] TownVillagers;
+        private ComboBox[]PlayerBadges;
+        private TextBox[] TownVillagersCatch;
 
         private Player[] Players;
         private Building[] Buildings;
@@ -52,88 +53,13 @@ namespace NLSE
             {
                 PB_JPEG0, PB_JPEG1, PB_JPEG2, PB_JPEG3
             };
-            PlayerPicsLarge = new[]
-            {
-                PB_LPlayer0, /* PB_LPlayer1, PB_LPlayer2, PB_LPlayer3 */
-            };
-            PlayerPockets = new[]
-            {
-                PB_P0Pocket, /* PB_P1Pocket, PB_P2Pocket, PB_P3Pocket */
-            };
-            PlayerDressers1 = new[]
-            {
-                PB_P0Dresser1, /* PB_P1Dresser1, PB_P2Dresser1, PB_P3Dresser1 */
-            };
-            PlayerDressers2 = new[]
-            {
-                PB_P0Dresser2, /* PB_P1Dresser2, PB_P2Dresser2, PB_P3Dresser2 */
-            };
-            PlayerIslandBox = new[]
-            {
-                PB_P0Island, /* PB_P1Island, PB_P2Island, PB_P3Island */
-            };
             PlayerBadges = new[]
             {
-                new []
-                {
-                    CB_P0Badge00, CB_P0Badge01, CB_P0Badge02, CB_P0Badge03, CB_P0Badge04,
-                    CB_P0Badge05, CB_P0Badge06, CB_P0Badge07, CB_P0Badge08, CB_P0Badge09,
-                    CB_P0Badge10, CB_P0Badge11, CB_P0Badge12, CB_P0Badge13, CB_P0Badge14,
-                    CB_P0Badge15, CB_P0Badge16, CB_P0Badge17, CB_P0Badge18, CB_P0Badge19,
-                    CB_P0Badge20, CB_P0Badge21, CB_P0Badge22, CB_P0Badge23,
-                }, /*
-                new []
-                {
-                    CB_P1Badge00, CB_P1Badge01, CB_P1Badge02, CB_P1Badge03, CB_P1Badge04,
-                    CB_P1Badge05, CB_P1Badge06, CB_P1Badge07, CB_P1Badge08, CB_P1Badge09,
-                    CB_P1Badge10, CB_P1Badge11, CB_P1Badge12, CB_P1Badge13, CB_P1Badge14,
-                    CB_P1Badge15, CB_P1Badge16, CB_P1Badge17, CB_P1Badge18, CB_P1Badge19,
-                    CB_P1Badge20, CB_P1Badge21, CB_P1Badge22, CB_P1Badge23,
-                },
-                new []
-                {
-                    CB_P2Badge00, CB_P2Badge01, CB_P2Badge02, CB_P2Badge03, CB_P2Badge04,
-                    CB_P2Badge05, CB_P2Badge06, CB_P2Badge07, CB_P2Badge08, CB_P2Badge09,
-                    CB_P2Badge10, CB_P2Badge11, CB_P2Badge12, CB_P2Badge13, CB_P2Badge14,
-                    CB_P2Badge15, CB_P2Badge16, CB_P2Badge17, CB_P2Badge18, CB_P2Badge19,
-                    CB_P2Badge20, CB_P2Badge21, CB_P2Badge22, CB_P2Badge23,
-                },
-                new []
-                {
-                    CB_P3Badge00, CB_P3Badge01, CB_P3Badge02, CB_P3Badge03, CB_P3Badge04,
-                    CB_P3Badge05, CB_P3Badge06, CB_P3Badge07, CB_P3Badge08, CB_P3Badge09,
-                    CB_P3Badge10, CB_P3Badge11, CB_P3Badge12, CB_P3Badge13, CB_P3Badge14,
-                    CB_P3Badge15, CB_P3Badge16, CB_P3Badge17, CB_P3Badge18, CB_P3Badge19,
-                    CB_P3Badge20, CB_P3Badge21, CB_P3Badge22, CB_P3Badge23,
-                } */
-            };
-            PlayerNames = new[]
-            {
-                TB_P0Name, /* TB_P1Name, TB_P2Name, TB_P3Name */ 
-            };
-            PlayerHairStyles = new[]
-            {
-                CB_P0HairStyle, /* CB_P1HairStyle, CB_P2HairStyle, CB_P3HairStyle */ 
-            };
-            PlayerHairColors = new[]
-            {
-                CB_P0HairColor, /* CB_P1HairColor, CB_P2HairColor, CB_P3HairColor */ 
-            };
-            PlayerEyeColors = new[]
-            {
-                CB_P0EyeColor, /* CB_P1EyeColor, CB_P2EyeColor, CB_P3EyeColor */ 
-            };
-            PlayerFaces = new[]
-            {
-                CB_P0FaceShape, /* CB_P1FaceShape, CB_P2FaceShape, CB_P3FaceShape */ 
-            };
-            PlayerTans = new[]
-            {
-                CB_P0SkinColor, /* CB_P1SkinColor, CB_P2SkinColor, CB_P3SkinColor */ 
-            };
-            PlayerGenders = new[]
-            {
-                CB_P0Gender, /* CB_P1Gender, CB_P2Gender, CB_P3Gender */ 
+                CB_Badge00, CB_Badge01, CB_Badge02, CB_Badge03, CB_Badge04,
+                CB_Badge05, CB_Badge06, CB_Badge07, CB_Badge08, CB_Badge09,
+                CB_Badge10, CB_Badge11, CB_Badge12, CB_Badge13, CB_Badge14,
+                CB_Badge15, CB_Badge16, CB_Badge17, CB_Badge18, CB_Badge19,
+                CB_Badge20, CB_Badge21, CB_Badge22, CB_Badge23,
             };
             TownVillagers = new[]
             {
@@ -156,10 +82,10 @@ namespace NLSE
             #region Load Event Methods to Controls
             foreach (PictureBox p in TownAcres) { p.MouseMove += mouseTown; p.MouseClick += clickTown; }
             foreach (PictureBox p in IslandAcres) { p.MouseMove += mouseIsland; p.MouseClick += clickIsland; }
-            foreach (PictureBox p in PlayerPockets) { p.MouseMove += mouseCustom; p.MouseClick += clickCustom; }
-            foreach (PictureBox p in PlayerDressers1) { p.MouseMove += mouseCustom; p.MouseClick += clickCustom; }
-            foreach (PictureBox p in PlayerDressers2) { p.MouseMove += mouseCustom; p.MouseClick += clickCustom; }
-            foreach (PictureBox p in PlayerIslandBox) { p.MouseMove += mouseCustom; p.MouseClick += clickCustom; }
+            { PB_Pocket.MouseMove += mouseCustom; PB_Pocket.MouseClick += clickCustom; }
+            { PB_Dresser1.MouseMove += mouseCustom; PB_Dresser1.MouseClick += clickCustom; }
+            { PB_Dresser2.MouseMove += mouseCustom; PB_Dresser2.MouseClick += clickCustom; }
+            { PB_Island.MouseMove += mouseCustom; PB_Island.MouseClick += clickCustom; }
             #endregion
             // Load
             loadData();
@@ -418,9 +344,7 @@ namespace NLSE
             for (int i = 0; i < Players.Length; i++)
                 PlayerPics[i].Image = Players[i].JPEG;
 
-            // Temporary
-            for (int i = 0; i < 1 /*Players.Length */; i++)
-                loadPlayer(i);
+            loadPlayer(0);
 
             // Load Town
             TownAcreTiles = new ushort[TownAcres.Length];
@@ -463,9 +387,6 @@ namespace NLSE
 
                 NUD_OverallDays.Value = Save.PlayDays;
             }
-            L_Info.Text = String.Format("{1}{0}{0}Inhabitants:{0}{2}{0}{3}{0}{4}{0}{5}", Environment.NewLine,
-                Save.TownName,
-                Players[0].Name, Players[1].Name, Players[2].Name, Players[3].Name);
             loaded = true;
         }
         private void saveData()
@@ -517,36 +438,40 @@ namespace NLSE
             // Finish
             Main.SaveData = Save.Write();
         }
+
+        private int currentPlayer = -1;
         private void loadPlayer(int i)
         {
-            PlayerPicsLarge[i].Image = Players[i].JPEG;
-            PlayerPockets[i].Image = getItemPic(16, 16, Players[i].Pockets);
-            PlayerDressers1[i].Image = getItemPic(16, 5, Players[i].Dressers.Take(Players[i].Dressers.Length / 2).ToArray());
-            PlayerDressers2[i].Image = getItemPic(16, 5, Players[i].Dressers.Skip(Players[i].Dressers.Length / 2).ToArray());
-            PlayerIslandBox[i].Image = getItemPic(16, 5, Players[i].IslandBox);
-            PlayerNames[i].Text = Players[i].Name;
-            for (int j = 0; j < PlayerBadges[i].Length; j++)
-                PlayerBadges[i][j].SelectedIndex = Players[i].Badges[j];
+            currentPlayer = i;
+            PB_LPlayer0.Image = Players[i].JPEG;
+            PB_Pocket.Image = getItemPic(16, 16, Players[i].Pockets);
+            PB_Dresser1.Image = getItemPic(16, 5, Players[i].Dressers.Take(Players[i].Dressers.Length / 2).ToArray());
+            PB_Dresser2.Image = getItemPic(16, 5, Players[i].Dressers.Skip(Players[i].Dressers.Length / 2).ToArray());
+            PB_Island.Image = getItemPic(16, 5, Players[i].IslandBox);
 
-            PlayerHairStyles[i].SelectedIndex = Players[i].Hair;
-            PlayerHairColors[i].SelectedIndex = Players[i].HairColor;
-            PlayerFaces[i].SelectedIndex = Players[i].Face;
-            PlayerEyeColors[i].SelectedIndex = Players[i].EyeColor;
-            PlayerTans[i].SelectedIndex = Players[i].Tan;
-            PlayerGenders[i].SelectedIndex = Players[i].Gender;
+            TB_Name.Text = Players[i].Name;
+            for (int j = 0; j < PlayerBadges.Length; j++)
+                PlayerBadges[j].SelectedIndex = Players[i].Badges[j];
+
+            CB_HairStyle.SelectedIndex = Players[i].Hair;
+            CB_HairColor.SelectedIndex = Players[i].HairColor;
+            CB_FaceShape.SelectedIndex = Players[i].Face;
+            CB_EyeColor.SelectedIndex = Players[i].EyeColor;
+            CB_SkinColor.SelectedIndex = Players[i].Tan;
+            CB_Gender.SelectedIndex = Players[i].Gender;
         }
         private void savePlayer(int i)
         {
-            Players[i].Name = PlayerNames[i].Text;
-            for (int j = 0; j < PlayerBadges[i].Length; j++)
-                Players[i].Badges[j] = (byte)PlayerBadges[i][j].SelectedIndex;
+            Players[i].Name = TB_Name.Text;
+            for (int j = 0; j < PlayerBadges.Length; j++)
+                Players[i].Badges[j] = (byte)PlayerBadges[j].SelectedIndex;
 
-            Players[i].Hair = (byte)PlayerHairStyles[i].SelectedIndex;
-            Players[i].HairColor = (byte)PlayerHairColors[i].SelectedIndex;
-            Players[i].Face = (byte)PlayerFaces[i].SelectedIndex;
-            Players[i].EyeColor = (byte)PlayerEyeColors[i].SelectedIndex;
-            Players[i].Tan = (byte)PlayerTans[i].SelectedIndex;
-            Players[i].Gender = (byte)PlayerGenders[i].SelectedIndex;
+            Players[i].Hair = (byte)CB_HairStyle.SelectedIndex;
+            Players[i].HairColor = (byte)CB_HairColor.SelectedIndex;
+            Players[i].Face = (byte)CB_FaceShape.SelectedIndex;
+            Players[i].EyeColor = (byte)CB_EyeColor.SelectedIndex;
+            Players[i].Tan = (byte)CB_SkinColor.SelectedIndex;
+            Players[i].Gender = (byte)CB_Gender.SelectedIndex;
         }
 
         private void loadVillager(int i)
@@ -740,31 +665,22 @@ namespace NLSE
             // Get Base Acre
             int index = width * Y + X;
 
-            bool pocket = Array.IndexOf(PlayerPockets, sender as PictureBox) > -1;
-            bool dress1 = Array.IndexOf(PlayerDressers1, sender as PictureBox) > -1;
-            bool dress2 = Array.IndexOf(PlayerDressers2, sender as PictureBox) > -1;
-            bool island = Array.IndexOf(PlayerIslandBox, sender as PictureBox) > -1;
+            var s = (sender as PictureBox);
+            bool pocket = s == PB_Pocket;
+            bool dress1 = s == PB_Dresser1;
+            bool dress2 = s == PB_Dresser2;
+            bool island = s == PB_Island;
             bool dress = dress1 | dress2;
-
-            int player = -1;
-            if (pocket)
-                player = Array.IndexOf(PlayerPockets, sender as PictureBox);
-            else if (dress1)
-                player = Array.IndexOf(PlayerDressers1, sender as PictureBox);
-            else if (dress2)
-                player = Array.IndexOf(PlayerDressers2, sender as PictureBox);
-            else if (island)
-                player = Array.IndexOf(PlayerIslandBox, sender as PictureBox);
-
-            if (dress2) index += Players[player].Dressers.Length / 2;
+            
+            if (dress2) index += Players[currentPlayer].Dressers.Length / 2;
 
             Item item = null;
             if (pocket)
-                item = Players[player].Pockets[index];
+                item = Players[currentPlayer].Pockets[index];
             else if (dress)
-                item = Players[player].Dressers[index];
+                item = Players[currentPlayer].Dressers[index];
             else if (island)
-                item = Players[player].IslandBox[index];
+                item = Players[currentPlayer].IslandBox[index];
 
             hoverItem(item, X, Y);
         }
@@ -778,52 +694,43 @@ namespace NLSE
             // Get Base Acre
             int index = width * Y + X;
 
-            bool pocket = Array.IndexOf(PlayerPockets, sender as PictureBox) > -1;
-            bool dress1 = Array.IndexOf(PlayerDressers1, sender as PictureBox) > -1;
-            bool dress2 = Array.IndexOf(PlayerDressers2, sender as PictureBox) > -1;
-            bool island = Array.IndexOf(PlayerIslandBox, sender as PictureBox) > -1;
+            var s = (sender as PictureBox);
+            bool pocket = s == PB_Pocket;
+            bool dress1 = s == PB_Dresser1;
+            bool dress2 = s == PB_Dresser2;
+            bool island = s == PB_Island;
             bool dress = dress1 | dress2;
-
-            int player = -1;
-            if (pocket)
-                player = Array.IndexOf(PlayerPockets, sender as PictureBox);
-            else if (dress1)
-                player = Array.IndexOf(PlayerDressers1, sender as PictureBox);
-            else if (dress2)
-                player = Array.IndexOf(PlayerDressers2, sender as PictureBox);
-            else if (island)
-                player = Array.IndexOf(PlayerIslandBox, sender as PictureBox);
-
-            if (dress2) index += Players[player].Dressers.Length / 2;
+            
+            if (dress2) index += Players[currentPlayer].Dressers.Length / 2;
 
             if (e.Button == MouseButtons.Right) // Read
             {
                 if (pocket)
-                    reloadCurrentItem(Players[player].Pockets[index]);
+                    reloadCurrentItem(Players[currentPlayer].Pockets[index]);
                 else if (dress)
-                    reloadCurrentItem(Players[player].Dressers[index]);
+                    reloadCurrentItem(Players[currentPlayer].Dressers[index]);
                 else if (island)
-                    reloadCurrentItem(Players[player].IslandBox[index]);
+                    reloadCurrentItem(Players[currentPlayer].IslandBox[index]);
             }
             else // Write
             {
                 if (pocket)
                 {
-                    Players[player].Pockets[index] = currentItem;
-                    PlayerPockets[player].Image = getItemPic(16, 16, Players[player].Pockets);
+                    Players[currentPlayer].Pockets[index] = currentItem;
+                    PB_Pocket.Image = getItemPic(16, 16, Players[currentPlayer].Pockets);
                 }
                 else if (dress)
                 {
-                    Players[player].Dressers[index] = currentItem;
+                    Players[currentPlayer].Dressers[index] = currentItem;
                     if (dress1)
-                        PlayerDressers1[player].Image = getItemPic(16, 5, Players[player].Dressers.Take(Players[player].Dressers.Length / 2).ToArray());
+                        PB_Dresser1.Image = getItemPic(16, 5, Players[currentPlayer].Dressers.Take(Players[currentPlayer].Dressers.Length / 2).ToArray());
                     else
-                        PlayerDressers2[player].Image = getItemPic(16, 5, Players[player].Dressers.Skip(Players[player].Dressers.Length / 2).ToArray());
+                        PB_Dresser2.Image = getItemPic(16, 5, Players[currentPlayer].Dressers.Skip(Players[currentPlayer].Dressers.Length / 2).ToArray());
                 }
                 else if (island)
                 {
-                    Players[player].IslandBox[index] = currentItem;
-                    PlayerIslandBox[player].Image = getItemPic(16, 5, Players[player].IslandBox);
+                    Players[currentPlayer].IslandBox[index] = currentItem;
+                    PB_Island.Image = getItemPic(16, 5, Players[currentPlayer].IslandBox);
                 }
             }
         }
@@ -854,8 +761,8 @@ namespace NLSE
         private Image getAcreItemPic(int quadrant, Item[] items)
         {
             const int itemsize = 4 * mapScale;
-            int Width = 64 * mapScale, Height = 64*mapScale;
-            byte[] bmpData = new byte[4 * ((Width) * (Height))];
+            const int width = 64 * mapScale, height = 64*mapScale;
+            byte[] bmpData = new byte[4 * ((width) * (height))];
             for (int i = 0; i < 0x100; i++) // loop over acre data
             {
                 int X = i % 16;
@@ -871,26 +778,28 @@ namespace NLSE
                 // Plop into image
                 for (int x = 0; x < itemsize*itemsize; x++)
                 {
-                    Buffer.BlockCopy(BitConverter.GetBytes(itemColor), 0, bmpData, ((Y * itemsize + x / itemsize) * Width * 4) + ((X * itemsize + x % itemsize) * 4), 4);
+                    Buffer.BlockCopy(BitConverter.GetBytes(itemColor), 0, bmpData,
+                        ((Y*itemsize + x/itemsize)*width*4) + ((X*itemsize + x%itemsize)*4), 4);
                 }
                 // Buried
                 if (item.Buried)
                 {
                     for (int z = 2; z < itemsize - 1; z++)
                     {
-                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData, ((Y * itemsize + z) * Width * 4) + ((X * itemsize + z) * 4), 4);
-                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData, ((Y * itemsize + z) * Width * 4) + ((X * itemsize + itemsize - z) * 4), 4);
+                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData,
+                            ((Y*itemsize + z)*width*4) + ((X*itemsize + z)*4), 4);
+                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData,
+                            ((Y*itemsize + z)*width*4) + ((X*itemsize + itemsize - z)*4), 4);
                     }
                 }
             }
-            for (int i = 0; i < Width * Height; i++) // slap on a grid
+            for (int i = 0; i < width * height; i++) // slap on a grid
                 if (i % (itemsize) == 0 || (i / (16 * itemsize)) % (itemsize) == 0)
-                {
-                    Buffer.BlockCopy(BitConverter.GetBytes(0x41FFFFFF), 0, bmpData, ((i / (16 * itemsize)) * Width * 4) + ((i % (16 * itemsize)) * 4), 4);
-                }
+                    Buffer.BlockCopy(BitConverter.GetBytes(0x41FFFFFF), 0, bmpData,
+                        ((i/(16*itemsize))*width*4) + ((i%(16*itemsize))*4), 4);
 
-            Bitmap b = new Bitmap(Width, Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
-            System.Drawing.Imaging.BitmapData bData = b.LockBits(new Rectangle(0, 0, Width, Height), System.Drawing.Imaging.ImageLockMode.WriteOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            Bitmap b = new Bitmap(width, height, PixelFormat.Format32bppArgb);
+            BitmapData bData = b.LockBits(new Rectangle(0, 0, width, height), ImageLockMode.WriteOnly, PixelFormat.Format32bppArgb);
             System.Runtime.InteropServices.Marshal.Copy(bmpData, 0, bData.Scan0, bmpData.Length);
             b.UnlockBits(bData);
             return b;
@@ -948,8 +857,8 @@ namespace NLSE
 
         private Image getItemPic(int itemsize, int itemsPerRow, Item[] items)
         {
-            int Width = itemsize * itemsPerRow, Height = itemsize * items.Length / itemsPerRow;
-            byte[] bmpData = new byte[4 * ((Width) * (Height))];
+            int width = itemsize * itemsPerRow, height = itemsize * items.Length / itemsPerRow;
+            byte[] bmpData = new byte[4 * ((width) * (height))];
             for (int i = 0; i < items.Length; i++) // loop over acre data
             {
                 int X = i % itemsPerRow;
@@ -965,24 +874,28 @@ namespace NLSE
                 // Plop into image
                 for (int x = 0; x < itemsize * itemsize; x++)
                 {
-                    Buffer.BlockCopy(BitConverter.GetBytes(itemColor), 0, bmpData, ((Y * itemsize + x % itemsize) * Width * 4) + ((X * itemsize + x / itemsize) * 4), 4);
+                    Buffer.BlockCopy(BitConverter.GetBytes(itemColor), 0, bmpData,
+                        ((Y*itemsize + x%itemsize)*width*4) + ((X*itemsize + x/itemsize)*4), 4);
                 }
                 // Buried
                 if (item.Buried)
                 {
                     for (int z = 2; z < itemsize - 1; z++)
                     {
-                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData, ((Y * itemsize + z) * Width * 4) + ((X * itemsize + z) * 4), 4);
-                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData, ((Y * itemsize + z) * Width * 4) + ((X * itemsize + itemsize - z) * 4), 4);
+                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData,
+                            ((Y*itemsize + z)*width*4) + ((X*itemsize + z)*4), 4);
+                        Buffer.BlockCopy(BitConverter.GetBytes(0xFF000000), 0, bmpData,
+                            ((Y*itemsize + z)*width*4) + ((X*itemsize + itemsize - z)*4), 4);
                     }
                 }
             }
-            for (int i = 0; i < Width * Height; i++) // slap on a grid
-                if (i % (itemsize) == 0 || (i / (itemsize * itemsPerRow)) % (itemsize) == 0)
-                    Buffer.BlockCopy(BitConverter.GetBytes(0x17000000), 0, bmpData, ((i / (itemsize * itemsPerRow)) * Width * 4) + ((i % (itemsize * itemsPerRow)) * 4), 4);
+            for (int i = 0; i < width * height; i++) // slap on a grid
+                if (i%(itemsize) == 0 || (i/(itemsize*itemsPerRow))%(itemsize) == 0)
+                    Buffer.BlockCopy(BitConverter.GetBytes(0x17000000), 0, bmpData,
+                        ((i/(itemsize*itemsPerRow))*width*4) + ((i%(itemsize*itemsPerRow))*4), 4);
 
-            Bitmap b = new Bitmap(Width, Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
-            System.Drawing.Imaging.BitmapData bData = b.LockBits(new Rectangle(0, 0, Width, Height), System.Drawing.Imaging.ImageLockMode.WriteOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            Bitmap b = new Bitmap(width, height, PixelFormat.Format32bppArgb);
+            BitmapData bData = b.LockBits(new Rectangle(0, 0, width, height), ImageLockMode.WriteOnly, PixelFormat.Format32bppArgb);
             System.Runtime.InteropServices.Marshal.Copy(bmpData, 0, bData.Scan0, bmpData.Length);
             b.UnlockBits(bData);
             return b;
@@ -991,8 +904,11 @@ namespace NLSE
         private void clickPlayerPic(object sender, EventArgs e)
         {
             int index = Array.IndexOf(PlayerPics, sender as PictureBox);
-            index = 0; // mayor only right now
-            tabControl1.SelectedIndex = 2 + index;
+            if (currentPlayer > -1)
+                savePlayer(currentPlayer);
+
+            loadPlayer(index);
+            tabControl1.SelectedIndex = 2;
         }
 
         private void changeItemID(object sender, EventArgs e)
@@ -1137,6 +1053,23 @@ namespace NLSE
 
             ComboBox comboBox = (ComboBox)dataGridView1.EditingControl;
             comboBox.DroppedDown = true;
+        }
+
+        private void reloadOverviewLabel()
+        {
+            L_Info.Text = String.Format("{1}{0}{0}Inhabitants:{0}{2}{0}{3}{0}{4}{0}{5}", Environment.NewLine,
+                Save.TownName,
+                Players[0].Name, Players[1].Name, Players[2].Name, Players[3].Name);
+        }
+        private void changePlayerName(object sender, EventArgs e)
+        {
+            Players[currentPlayer].Name = TB_Name.Text;
+            reloadOverviewLabel();
+        }
+        private void changeTownName(object sender, EventArgs e)
+        {
+            Save.TownName = TB_TownName.Text;
+            reloadOverviewLabel();
         }
     }
 }

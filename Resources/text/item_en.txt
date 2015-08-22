@@ -1,6 +1,9 @@
 ﻿// Nothing
 7FFE	(None)
 
+// Pattern
+009D	Pattern
+
 // Outside Flowers, Trees, Bushes, Fruit	
 009F	Red Tulips
 00A0	White Tulips
