@@ -136,7 +136,8 @@ namespace NLSE
                 return;
 
             byte[] RAM = saveData().Skip(0x80).ToArray();
-            Array.Resize(ref RAM, 0x80000);
+            if (RAM.Length < 0x80000)
+                Array.Resize(ref RAM, 0x80000);
 
             File.WriteAllBytes(sfd.FileName, RAM);
         }

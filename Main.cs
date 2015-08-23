@@ -41,18 +41,19 @@ namespace NLSE
         {
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
             string path = files[0]; // open first D&D
+            long len = new FileInfo(files[0]).Length;
             if (Directory.Exists(path))
             {
                 findLoop = false;
                 root = path;
                 L_IO.Text = root;
             }
-            else if (new FileInfo(files[0]).Length == 0x80000) // RAM
+            else if (len == 0x80000 || len == 0xC0000 || len == 0x121000 || len == 0x130000) // RAM
             {
                 if (Util.Prompt(MessageBoxButtons.YesNo, "Edit RAM Dump?" + Environment.NewLine + files[0]) == DialogResult.Yes)
                 {
                     byte[] data = File.ReadAllBytes(files[0]);
-                    SaveData = new byte[0x7FA00];
+                    SaveData = new byte[data.Length + 0x80]; // shift 0x80 bytes
                     Array.Copy(data, 0, SaveData, 0x80, SaveData.Length - 0x80);
                     new Garden().ShowDialog();
                 }
