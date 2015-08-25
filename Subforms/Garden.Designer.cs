@@ -2481,7 +2481,6 @@
             // 
             // CB_TrainStationColor
             // 
-            this.CB_TrainStationColor.Enabled = false;
             this.CB_TrainStationColor.FormattingEnabled = true;
             this.CB_TrainStationColor.Items.AddRange(new object[] {
             "Red",
@@ -2504,7 +2503,6 @@
             // 
             // CB_TownHallColor
             // 
-            this.CB_TownHallColor.Enabled = false;
             this.CB_TownHallColor.FormattingEnabled = true;
             this.CB_TownHallColor.Items.AddRange(new object[] {
             "Gray",
