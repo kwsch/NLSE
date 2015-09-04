@@ -172,6 +172,7 @@ namespace NLSE
                 Data[0x5C7B9] = (byte)((Data[0x5C7B9] & 0xFC) | TrainStationColor);
                 Data[0x5C836] = (byte)NativeFruit;
 
+                Array.Copy(Encoding.Unicode.GetBytes(TownName.PadRight(9, '\0')), 0, Data, 0x55A8, 0x12);
                 Array.Copy(BitConverter.GetBytes(SecondsPlayed), 0, Data, 0x5C7B0, 4);
                 Array.Copy(BitConverter.GetBytes(PlayDays), 0, Data, 0x5C83A, 2);
                 return Data;
