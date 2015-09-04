@@ -230,6 +230,8 @@
             this.TB_Flag1 = new System.Windows.Forms.TextBox();
             this.TB_Flag2 = new System.Windows.Forms.TextBox();
             this.L_CurrentItem = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.B_PWP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -309,6 +311,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
+            this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -388,6 +391,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -2667,6 +2671,27 @@
             this.L_CurrentItem.TabIndex = 15;
             this.L_CurrentItem.Text = "Current Item:";
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.B_PWP);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(652, 560);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Cheats";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // B_PWP
+            // 
+            this.B_PWP.Location = new System.Drawing.Point(6, 6);
+            this.B_PWP.Name = "B_PWP";
+            this.B_PWP.Size = new System.Drawing.Size(119, 47);
+            this.B_PWP.TabIndex = 0;
+            this.B_PWP.Text = "Unlock All Public Works Projects";
+            this.B_PWP.UseVisualStyleBackColor = true;
+            this.B_PWP.Click += new System.EventHandler(this.B_PWP_Click);
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2775,6 +2800,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
+            this.tabPage6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2983,5 +3009,7 @@
         private System.Windows.Forms.NumericUpDown NUD_Hours;
         private System.Windows.Forms.NumericUpDown NUD_Minutes;
         private System.Windows.Forms.NumericUpDown NUD_Seconds;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Button B_PWP;
     }
 }

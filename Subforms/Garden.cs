@@ -1077,5 +1077,20 @@ namespace NLSE
             Save.TownName = TB_TownName.Text;
             reloadOverviewLabel();
         }
+
+        private void B_PWP_Click(object sender, EventArgs e)
+        {
+            byte[] PWPUnlock =
+            {
+                0xFF, 0xFF, 0xFF, 0xFF, // 0
+                0xFF, 0xFF, 0xFF, 0xFF, // 1
+                0xFF, 0xFF, 0xFF, 0xFF, // 2
+                0xFF, 0xFF, 0xFF, 0xFF, // 3
+                0xFF, 0xFF, 0xFF, 0xFF, // 4
+                0x2A, 0xD6, 0xE4, 0x58, // 5
+            };
+            Array.Copy(PWPUnlock, 0, Save.Data, 0x4D9C8 + 0x80, PWPUnlock.Length);
+            Util.Alert("All Public Works Projects unlocked!");
+        }
     }
 }
