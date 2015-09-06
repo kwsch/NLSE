@@ -11,10 +11,9 @@ namespace NLSE
     public partial class Garden : Form
     {
         // Form Variables
-        private ushort[] TownAcreTiles, IslandAcreTiles;
-        private PictureBox[] TownAcres, IslandAcres, PlayerPics;
-        private ComboBox[] TownVillagers;
-        private ComboBox[]PlayerBadges;
+        private ushort[] TownAcreTiles, IslandAcreTiles, aeTownAcreTiles, aeIslandAcreTiles;
+        private PictureBox[] TownAcres, IslandAcres, aeTownAcres, aeIslandAcres, PlayerPics;
+        private ComboBox[] TownVillagers, PlayerBadges;
         private TextBox[] TownVillagersCatch;
 
         private Player[] Players;
@@ -47,6 +46,22 @@ namespace NLSE
                 PB_island01, PB_island11, PB_island21, PB_island31,
                 PB_island02, PB_island12, PB_island22, PB_island32,
                 PB_island03, PB_island13, PB_island23, PB_island33,
+            };
+            aeTownAcres = new[]
+            {
+                PB_aeT00, PB_aeT10, PB_aeT20, PB_aeT30, PB_aeT40, PB_aeT50, PB_aeT60, 
+                PB_aeT01, PB_aeT11, PB_aeT21, PB_aeT31, PB_aeT41, PB_aeT51, PB_aeT61, 
+                PB_aeT02, PB_aeT12, PB_aeT22, PB_aeT32, PB_aeT42, PB_aeT52, PB_aeT62, 
+                PB_aeT03, PB_aeT13, PB_aeT23, PB_aeT33, PB_aeT43, PB_aeT53, PB_aeT63, 
+                PB_aeT04, PB_aeT14, PB_aeT24, PB_aeT34, PB_aeT44, PB_aeT54, PB_aeT64, 
+                PB_aeT05, PB_aeT15, PB_aeT25, PB_aeT35, PB_aeT45, PB_aeT55, PB_aeT65, 
+            };
+            aeIslandAcres = new[]
+            {
+                PB_aeI00, PB_aeI10, PB_aeI20, PB_aeI30, 
+                PB_aeI01, PB_aeI11, PB_aeI21, PB_aeI31, 
+                PB_aeI02, PB_aeI12, PB_aeI22, PB_aeI32, 
+                PB_aeI03, PB_aeI13, PB_aeI23, PB_aeI33, 
             };
             PlayerPics = new[]
             {
@@ -81,6 +96,8 @@ namespace NLSE
             #region Load Event Methods to Controls
             foreach (PictureBox p in TownAcres) { p.MouseMove += mouseTown; p.MouseClick += clickTown; }
             foreach (PictureBox p in IslandAcres) { p.MouseMove += mouseIsland; p.MouseClick += clickIsland; }
+            foreach (PictureBox p in aeTownAcres) { p.MouseMove += mouseTownAcre; p.MouseClick += clickTownAcre; }
+            foreach (PictureBox p in aeIslandAcres) { p.MouseMove += mouseIslandAcre; p.MouseClick += clickIslandAcre; }
             { PB_Pocket.MouseMove += mouseCustom; PB_Pocket.MouseClick += clickCustom; }
             { PB_Dresser1.MouseMove += mouseCustom; PB_Dresser1.MouseClick += clickCustom; }
             { PB_Dresser2.MouseMove += mouseCustom; PB_Dresser2.MouseClick += clickCustom; }
@@ -354,6 +371,8 @@ namespace NLSE
             for (int i = 0; i < TownAcreTiles.Length; i++)
                 TownAcreTiles[i] = BitConverter.ToUInt16(Save.Data, 0x4DA84 + i * 2);
             fillMapAcres(TownAcreTiles, TownAcres);
+            aeTownAcreTiles = (ushort[])TownAcreTiles.Clone();
+            fillMapAcres(aeTownAcreTiles, aeTownAcres);
             TownItems = getMapItems(Save.Data.Skip(0x4DAD8).Take(0x5000).ToArray());
             fillTownItems(TownItems, TownAcres);
 
@@ -362,6 +381,8 @@ namespace NLSE
             for (int i = 0; i < IslandAcreTiles.Length; i++)
                 IslandAcreTiles[i] = BitConverter.ToUInt16(Save.Data, 0x6A488 + i * 2);
             fillMapAcres(IslandAcreTiles, IslandAcres);
+            aeIslandAcreTiles = (ushort[])IslandAcreTiles.Clone();
+            fillMapAcres(aeIslandAcreTiles, aeIslandAcres);
             IslandItems = getMapItems(Save.Data.Skip(0x6A4A8).Take(0x1000).ToArray());
             fillIslandItems(IslandItems, IslandAcres);
 
@@ -861,7 +882,6 @@ namespace NLSE
             }
             return 0xc8ff0000;
         }
-
         private Image getItemPic(int itemsize, int itemsPerRow, Item[] items)
         {
             int width = itemsize * itemsPerRow, height = itemsize * items.Length / itemsPerRow;
@@ -1092,6 +1112,156 @@ namespace NLSE
             };
             Array.Copy(PWPUnlock, 0, Save.Data, 0x4D9C8 + 0x80, PWPUnlock.Length);
             Util.Alert("All Public Works Projects unlocked!");
+        }
+
+        private void mouseTownAcre(object sender, MouseEventArgs e)
+        {
+            int acre = Array.IndexOf(aeTownAcres, sender as PictureBox);
+            if (acre < 0) return;
+
+            L_AcreInfo.Text = String.Format("Acre Info:{0}X: {1}{0}Y: {2}{0}Index: {3}", 
+                Environment.NewLine, acre%7, acre/7, aeTownAcreTiles[acre]);
+        }
+        private void mouseIslandAcre(object sender, MouseEventArgs e)
+        {
+            int acre = Array.IndexOf(aeIslandAcres, sender as PictureBox);
+            if (acre < 0) return;
+
+            L_AcreInfo.Text = String.Format("Acre Info:{0}X: {1}{0}Y: {2}{0}Index: {3}",
+                Environment.NewLine, acre % 4, acre / 4, aeIslandAcreTiles[acre]);
+        }
+        private void clickTownAcre(object sender, MouseEventArgs e)
+        {
+            int acre = Array.IndexOf(aeTownAcres, sender as PictureBox);
+            if (acre < 0) return;
+
+            if (e.Button == MouseButtons.Right) // Decrement (1-153 allowed)
+            {
+                aeTownAcreTiles[acre]--;
+                if (aeTownAcreTiles[acre] < 1) aeTownAcreTiles[acre] = 153;
+            }
+            else // Increment (1-153 allowed)
+            {
+                aeTownAcreTiles[acre]++;
+                if (aeTownAcreTiles[acre] > 153) aeTownAcreTiles[acre] = 1;
+            }
+            aeTownAcres[acre].BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("acre_" + aeTownAcreTiles[acre]);
+
+        }
+        private void clickIslandAcre(object sender, MouseEventArgs e)
+        {
+            int acre = Array.IndexOf(aeIslandAcres, sender as PictureBox);
+            if (acre < 0) return;
+
+            if (e.Button == MouseButtons.Right) // Decrement (180-203 allowed)
+            {
+                aeIslandAcreTiles[acre]--;
+                if (aeIslandAcreTiles[acre] < 180) aeIslandAcreTiles[acre] = 203;
+            }
+            else // Increment (180-203 allowed)
+            {
+                aeIslandAcreTiles[acre]--;
+                if (aeIslandAcreTiles[acre] > 203) aeIslandAcreTiles[acre] = 180;
+            }
+            aeIslandAcres[acre].BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("acre_" + aeIslandAcreTiles[acre]);
+        }
+
+        private void B_ApplyAcres_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes !=
+                Util.Prompt(MessageBoxButtons.YesNo,
+                    String.Format("Applying acres will copy the Acre Editor's {0} map to the Save File's {0} map.", Tab_AcreTown.Text),
+                    "Continue?"))
+                return;
+            if (TC_AcreEditor.SelectedIndex == 0)
+            {
+                Array.Copy(aeTownAcreTiles, TownAcreTiles, TownAcreTiles.Length);
+                fillMapAcres(TownAcreTiles, TownAcres);
+            }
+            else
+            {
+                Array.Copy(aeIslandAcreTiles, IslandAcreTiles, IslandAcreTiles.Length);
+                fillMapAcres(IslandAcreTiles, IslandAcres);
+            }
+        }
+        private void B_ResetAcres_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes !=
+                Util.Prompt(MessageBoxButtons.YesNo,
+                    String.Format("Applying acres will copy the Save File's {0} map to the Acre Editor's {0} map.", Tab_AcreTown.Text),
+                    "Continue?"))
+                return;
+            if (TC_AcreEditor.SelectedIndex == 0)
+            {
+                Array.Copy(TownAcreTiles, aeTownAcreTiles, TownAcreTiles.Length);
+                fillMapAcres(aeTownAcreTiles, aeTownAcres);
+            }
+            else
+            {
+                Array.Copy(IslandAcreTiles, aeIslandAcreTiles, IslandAcreTiles.Length);
+                fillMapAcres(aeIslandAcreTiles, aeIslandAcres);
+            }
+        }
+
+        private void B_ImportAcres_Click(object sender, EventArgs e)
+        {
+
+            var ofd = new OpenFileDialog
+            {
+                FileName = ((TC_AcreEditor.SelectedIndex == 0) ? "Town" : "Island") + "AcreData.acnlmap"
+            };
+            if (DialogResult.OK != ofd.ShowDialog())
+                return;
+
+            byte[] data = File.ReadAllBytes(ofd.FileName);
+            if (data.Length != 2*6*7 || data.Length != 2*4*4)
+            {
+                Util.Error("Input file length is not a valid acre map.",
+                    String.Format("Data Size: {1}{0}Acre Count: {2}", Environment.NewLine, data.Length, data.Length/2));
+                return;
+            }
+
+            ushort[] uA = new ushort[data.Length/2];
+            using (MemoryStream ms = new MemoryStream(data))
+            using (BinaryReader br = new BinaryReader(ms))
+            {
+                for (int i = 0; i < uA.Length; i++)
+                    uA[i] = br.ReadUInt16();
+            }
+
+            if (uA.Length == 6*7) // Town Map
+            {
+                Array.Copy(uA, aeIslandAcreTiles, uA.Length);
+                fillMapAcres(aeTownAcreTiles, aeTownAcres);
+            }
+            else if (uA.Length == 4*4) // Island Map
+            {
+                Array.Copy(uA, aeIslandAcreTiles, uA.Length);
+                fillMapAcres(aeIslandAcreTiles, aeIslandAcres);
+            }
+            //else
+            //    return; // unreachable.
+        }
+        private void B_ExportAcres_Click(object sender, EventArgs e)
+        {
+            // obtain acre data
+            var sfd = new SaveFileDialog
+            {
+                FileName = ((TC_AcreEditor.SelectedIndex == 0) ? "Town" : "Island") + "AcreData.acnlmap"
+            };
+            if (DialogResult.OK != sfd.ShowDialog())
+                return;
+
+            byte[] data;
+            ushort[] usD = (TC_AcreEditor.SelectedIndex == 0) ? aeTownAcreTiles : aeIslandAcreTiles;
+            using (MemoryStream ms = new MemoryStream())
+            using (BinaryWriter bw = new BinaryWriter(ms))
+            {
+                foreach (ushort u in usD)
+                    bw.Write(u);
+                data = ms.ToArray();
+            }
+            File.WriteAllBytes(sfd.FileName, data);
         }
     }
 }

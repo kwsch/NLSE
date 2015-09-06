@@ -222,6 +222,8 @@
             this.L_TownName = new System.Windows.Forms.Label();
             this.TB_TownName = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.B_PWP = new System.Windows.Forms.Button();
             this.L_ItemHover = new System.Windows.Forms.Label();
             this.PB_JPEG1 = new System.Windows.Forms.PictureBox();
             this.PB_JPEG2 = new System.Windows.Forms.PictureBox();
@@ -230,8 +232,75 @@
             this.TB_Flag1 = new System.Windows.Forms.TextBox();
             this.TB_Flag2 = new System.Windows.Forms.TextBox();
             this.L_CurrentItem = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.B_PWP = new System.Windows.Forms.Button();
+            this.L_BuildNote = new System.Windows.Forms.Label();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.TC_AcreEditor = new System.Windows.Forms.TabControl();
+            this.Tab_AcreTown = new System.Windows.Forms.TabPage();
+            this.Tab_AcreIsland = new System.Windows.Forms.TabPage();
+            this.L_AcreInstructions = new System.Windows.Forms.Label();
+            this.B_ResetAcres = new System.Windows.Forms.Button();
+            this.B_ApplyAcres = new System.Windows.Forms.Button();
+            this.L_AcreInfo = new System.Windows.Forms.Label();
+            this.PB_aeT65 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT64 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT04 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT05 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT55 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT15 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT54 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT25 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT45 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT44 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT34 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT35 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT24 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT14 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT00 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT63 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT01 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT62 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT02 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT61 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT03 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT60 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT10 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT53 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT13 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT52 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT20 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT51 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT23 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT50 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT30 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT43 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT31 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT42 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT32 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT41 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT33 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT40 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT11 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT22 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT12 = new System.Windows.Forms.PictureBox();
+            this.PB_aeT21 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI11 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI00 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI01 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI02 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI03 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI10 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI13 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI20 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI23 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI30 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI31 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI32 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI33 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI12 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI21 = new System.Windows.Forms.PictureBox();
+            this.PB_aeI22 = new System.Windows.Forms.PictureBox();
+            this.B_ImportAcres = new System.Windows.Forms.Button();
+            this.B_ExportAcres = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -308,10 +377,72 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Minutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Seconds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
-            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            this.TC_AcreEditor.SuspendLayout();
+            this.Tab_AcreTown.SuspendLayout();
+            this.Tab_AcreIsland.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT65)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT64)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT00)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT63)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT62)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT61)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI00)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI22)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -392,6 +523,7 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -2284,6 +2416,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.L_BuildNote);
             this.tabPage5.Controls.Add(this.NUD_OverallDays);
             this.tabPage5.Controls.Add(this.NUD_Days);
             this.tabPage5.Controls.Add(this.NUD_Hours);
@@ -2580,6 +2713,27 @@
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dropclick);
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.B_PWP);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(652, 560);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Cheats";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // B_PWP
+            // 
+            this.B_PWP.Location = new System.Drawing.Point(6, 6);
+            this.B_PWP.Name = "B_PWP";
+            this.B_PWP.Size = new System.Drawing.Size(119, 47);
+            this.B_PWP.TabIndex = 0;
+            this.B_PWP.Text = "Unlock All Public Works Projects";
+            this.B_PWP.UseVisualStyleBackColor = true;
+            this.B_PWP.Click += new System.EventHandler(this.B_PWP_Click);
+            // 
             // L_ItemHover
             // 
             this.L_ItemHover.AutoSize = true;
@@ -2671,26 +2825,778 @@
             this.L_CurrentItem.TabIndex = 15;
             this.L_CurrentItem.Text = "Current Item:";
             // 
-            // tabPage6
+            // L_BuildNote
             // 
-            this.tabPage6.Controls.Add(this.B_PWP);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(652, 560);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Cheats";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            this.L_BuildNote.AutoSize = true;
+            this.L_BuildNote.ForeColor = System.Drawing.Color.Red;
+            this.L_BuildNote.Location = new System.Drawing.Point(323, 542);
+            this.L_BuildNote.Name = "L_BuildNote";
+            this.L_BuildNote.Size = new System.Drawing.Size(212, 13);
+            this.L_BuildNote.TabIndex = 47;
+            this.L_BuildNote.Text = "Note: Adding buildings/pwps may not work.";
             // 
-            // B_PWP
+            // tabPage7
             // 
-            this.B_PWP.Location = new System.Drawing.Point(6, 6);
-            this.B_PWP.Name = "B_PWP";
-            this.B_PWP.Size = new System.Drawing.Size(119, 47);
-            this.B_PWP.TabIndex = 0;
-            this.B_PWP.Text = "Unlock All Public Works Projects";
-            this.B_PWP.UseVisualStyleBackColor = true;
-            this.B_PWP.Click += new System.EventHandler(this.B_PWP_Click);
+            this.tabPage7.Controls.Add(this.B_ExportAcres);
+            this.tabPage7.Controls.Add(this.B_ImportAcres);
+            this.tabPage7.Controls.Add(this.L_AcreInfo);
+            this.tabPage7.Controls.Add(this.B_ApplyAcres);
+            this.tabPage7.Controls.Add(this.B_ResetAcres);
+            this.tabPage7.Controls.Add(this.L_AcreInstructions);
+            this.tabPage7.Controls.Add(this.TC_AcreEditor);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(652, 560);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Acre Editor";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // TC_AcreEditor
+            // 
+            this.TC_AcreEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TC_AcreEditor.Controls.Add(this.Tab_AcreTown);
+            this.TC_AcreEditor.Controls.Add(this.Tab_AcreIsland);
+            this.TC_AcreEditor.Location = new System.Drawing.Point(6, 92);
+            this.TC_AcreEditor.Name = "TC_AcreEditor";
+            this.TC_AcreEditor.SelectedIndex = 0;
+            this.TC_AcreEditor.Size = new System.Drawing.Size(640, 462);
+            this.TC_AcreEditor.TabIndex = 119;
+            // 
+            // Tab_AcreTown
+            // 
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT65);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT64);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT04);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT05);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT55);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT15);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT54);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT25);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT45);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT44);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT34);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT35);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT24);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT14);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT00);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT63);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT01);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT62);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT02);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT61);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT03);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT60);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT10);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT53);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT13);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT52);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT20);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT51);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT23);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT50);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT30);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT43);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT31);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT42);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT32);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT41);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT33);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT40);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT11);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT22);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT12);
+            this.Tab_AcreTown.Controls.Add(this.PB_aeT21);
+            this.Tab_AcreTown.Location = new System.Drawing.Point(4, 22);
+            this.Tab_AcreTown.Name = "Tab_AcreTown";
+            this.Tab_AcreTown.Padding = new System.Windows.Forms.Padding(3);
+            this.Tab_AcreTown.Size = new System.Drawing.Size(632, 436);
+            this.Tab_AcreTown.TabIndex = 0;
+            this.Tab_AcreTown.Text = "Town";
+            this.Tab_AcreTown.UseVisualStyleBackColor = true;
+            // 
+            // Tab_AcreIsland
+            // 
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI11);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI00);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI01);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI02);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI03);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI10);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI13);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI20);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI23);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI30);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI31);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI32);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI33);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI12);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI21);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI22);
+            this.Tab_AcreIsland.Location = new System.Drawing.Point(4, 22);
+            this.Tab_AcreIsland.Name = "Tab_AcreIsland";
+            this.Tab_AcreIsland.Padding = new System.Windows.Forms.Padding(3);
+            this.Tab_AcreIsland.Size = new System.Drawing.Size(632, 436);
+            this.Tab_AcreIsland.TabIndex = 1;
+            this.Tab_AcreIsland.Text = "Island";
+            this.Tab_AcreIsland.UseVisualStyleBackColor = true;
+            // 
+            // L_AcreInstructions
+            // 
+            this.L_AcreInstructions.AutoSize = true;
+            this.L_AcreInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_AcreInstructions.Location = new System.Drawing.Point(7, 16);
+            this.L_AcreInstructions.Name = "L_AcreInstructions";
+            this.L_AcreInstructions.Size = new System.Drawing.Size(278, 64);
+            this.L_AcreInstructions.TabIndex = 120;
+            this.L_AcreInstructions.Text = "Instructions:\r\nRight Click/Left Click an acre to change acres.\r\nReset Button will" +
+    " reset to original state.\r\nApply Button will apply changes to the save.";
+            // 
+            // B_ResetAcres
+            // 
+            this.B_ResetAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_ResetAcres.Location = new System.Drawing.Point(450, 6);
+            this.B_ResetAcres.Name = "B_ResetAcres";
+            this.B_ResetAcres.Size = new System.Drawing.Size(95, 42);
+            this.B_ResetAcres.TabIndex = 121;
+            this.B_ResetAcres.Text = "Reset Acres";
+            this.B_ResetAcres.UseVisualStyleBackColor = true;
+            this.B_ResetAcres.Click += new System.EventHandler(this.B_ResetAcres_Click);
+            // 
+            // B_ApplyAcres
+            // 
+            this.B_ApplyAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_ApplyAcres.Location = new System.Drawing.Point(551, 6);
+            this.B_ApplyAcres.Name = "B_ApplyAcres";
+            this.B_ApplyAcres.Size = new System.Drawing.Size(95, 42);
+            this.B_ApplyAcres.TabIndex = 122;
+            this.B_ApplyAcres.Text = "Apply Acres";
+            this.B_ApplyAcres.UseVisualStyleBackColor = true;
+            this.B_ApplyAcres.Click += new System.EventHandler(this.B_ApplyAcres_Click);
+            // 
+            // L_AcreInfo
+            // 
+            this.L_AcreInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.L_AcreInfo.AutoSize = true;
+            this.L_AcreInfo.Location = new System.Drawing.Point(451, 54);
+            this.L_AcreInfo.Name = "L_AcreInfo";
+            this.L_AcreInfo.Size = new System.Drawing.Size(53, 13);
+            this.L_AcreInfo.TabIndex = 123;
+            this.L_AcreInfo.Text = "Acre Info:";
+            // 
+            // PB_aeT65
+            // 
+            this.PB_aeT65.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT65.Location = new System.Drawing.Point(478, 348);
+            this.PB_aeT65.Name = "PB_aeT65";
+            this.PB_aeT65.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT65.TabIndex = 258;
+            this.PB_aeT65.TabStop = false;
+            this.PB_aeT65.Visible = false;
+            // 
+            // PB_aeT64
+            // 
+            this.PB_aeT64.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT64.Location = new System.Drawing.Point(478, 283);
+            this.PB_aeT64.Name = "PB_aeT64";
+            this.PB_aeT64.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT64.TabIndex = 257;
+            this.PB_aeT64.TabStop = false;
+            this.PB_aeT64.Visible = false;
+            // 
+            // PB_aeT04
+            // 
+            this.PB_aeT04.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT04.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT04.Location = new System.Drawing.Point(88, 283);
+            this.PB_aeT04.Name = "PB_aeT04";
+            this.PB_aeT04.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT04.TabIndex = 245;
+            this.PB_aeT04.TabStop = false;
+            this.PB_aeT04.Visible = false;
+            // 
+            // PB_aeT05
+            // 
+            this.PB_aeT05.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT05.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT05.Location = new System.Drawing.Point(88, 348);
+            this.PB_aeT05.Name = "PB_aeT05";
+            this.PB_aeT05.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT05.TabIndex = 246;
+            this.PB_aeT05.TabStop = false;
+            this.PB_aeT05.Visible = false;
+            // 
+            // PB_aeT55
+            // 
+            this.PB_aeT55.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT55.Location = new System.Drawing.Point(413, 348);
+            this.PB_aeT55.Name = "PB_aeT55";
+            this.PB_aeT55.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT55.TabIndex = 256;
+            this.PB_aeT55.TabStop = false;
+            this.PB_aeT55.Visible = false;
+            // 
+            // PB_aeT15
+            // 
+            this.PB_aeT15.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT15.Location = new System.Drawing.Point(153, 348);
+            this.PB_aeT15.Name = "PB_aeT15";
+            this.PB_aeT15.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT15.TabIndex = 247;
+            this.PB_aeT15.TabStop = false;
+            this.PB_aeT15.Visible = false;
+            // 
+            // PB_aeT54
+            // 
+            this.PB_aeT54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT54.Location = new System.Drawing.Point(413, 283);
+            this.PB_aeT54.Name = "PB_aeT54";
+            this.PB_aeT54.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT54.TabIndex = 255;
+            this.PB_aeT54.TabStop = false;
+            // 
+            // PB_aeT25
+            // 
+            this.PB_aeT25.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT25.Location = new System.Drawing.Point(218, 348);
+            this.PB_aeT25.Name = "PB_aeT25";
+            this.PB_aeT25.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT25.TabIndex = 248;
+            this.PB_aeT25.TabStop = false;
+            this.PB_aeT25.Visible = false;
+            // 
+            // PB_aeT45
+            // 
+            this.PB_aeT45.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT45.Location = new System.Drawing.Point(348, 348);
+            this.PB_aeT45.Name = "PB_aeT45";
+            this.PB_aeT45.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT45.TabIndex = 254;
+            this.PB_aeT45.TabStop = false;
+            this.PB_aeT45.Visible = false;
+            // 
+            // PB_aeT44
+            // 
+            this.PB_aeT44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT44.Location = new System.Drawing.Point(348, 283);
+            this.PB_aeT44.Name = "PB_aeT44";
+            this.PB_aeT44.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT44.TabIndex = 253;
+            this.PB_aeT44.TabStop = false;
+            // 
+            // PB_aeT34
+            // 
+            this.PB_aeT34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT34.Location = new System.Drawing.Point(283, 283);
+            this.PB_aeT34.Name = "PB_aeT34";
+            this.PB_aeT34.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT34.TabIndex = 249;
+            this.PB_aeT34.TabStop = false;
+            // 
+            // PB_aeT35
+            // 
+            this.PB_aeT35.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT35.Location = new System.Drawing.Point(283, 348);
+            this.PB_aeT35.Name = "PB_aeT35";
+            this.PB_aeT35.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT35.TabIndex = 250;
+            this.PB_aeT35.TabStop = false;
+            this.PB_aeT35.Visible = false;
+            // 
+            // PB_aeT24
+            // 
+            this.PB_aeT24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT24.Location = new System.Drawing.Point(218, 283);
+            this.PB_aeT24.Name = "PB_aeT24";
+            this.PB_aeT24.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT24.TabIndex = 252;
+            this.PB_aeT24.TabStop = false;
+            // 
+            // PB_aeT14
+            // 
+            this.PB_aeT14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT14.Location = new System.Drawing.Point(153, 283);
+            this.PB_aeT14.Name = "PB_aeT14";
+            this.PB_aeT14.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT14.TabIndex = 251;
+            this.PB_aeT14.TabStop = false;
+            // 
+            // PB_aeT00
+            // 
+            this.PB_aeT00.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT00.Location = new System.Drawing.Point(88, 23);
+            this.PB_aeT00.Name = "PB_aeT00";
+            this.PB_aeT00.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT00.TabIndex = 217;
+            this.PB_aeT00.TabStop = false;
+            this.PB_aeT00.Visible = false;
+            // 
+            // PB_aeT63
+            // 
+            this.PB_aeT63.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT63.Location = new System.Drawing.Point(478, 218);
+            this.PB_aeT63.Name = "PB_aeT63";
+            this.PB_aeT63.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT63.TabIndex = 244;
+            this.PB_aeT63.TabStop = false;
+            this.PB_aeT63.Visible = false;
+            // 
+            // PB_aeT01
+            // 
+            this.PB_aeT01.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT01.Location = new System.Drawing.Point(88, 88);
+            this.PB_aeT01.Name = "PB_aeT01";
+            this.PB_aeT01.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT01.TabIndex = 218;
+            this.PB_aeT01.TabStop = false;
+            this.PB_aeT01.Visible = false;
+            // 
+            // PB_aeT62
+            // 
+            this.PB_aeT62.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT62.Location = new System.Drawing.Point(478, 153);
+            this.PB_aeT62.Name = "PB_aeT62";
+            this.PB_aeT62.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT62.TabIndex = 243;
+            this.PB_aeT62.TabStop = false;
+            this.PB_aeT62.Visible = false;
+            // 
+            // PB_aeT02
+            // 
+            this.PB_aeT02.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT02.Location = new System.Drawing.Point(88, 153);
+            this.PB_aeT02.Name = "PB_aeT02";
+            this.PB_aeT02.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT02.TabIndex = 219;
+            this.PB_aeT02.TabStop = false;
+            this.PB_aeT02.Visible = false;
+            // 
+            // PB_aeT61
+            // 
+            this.PB_aeT61.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT61.Location = new System.Drawing.Point(478, 88);
+            this.PB_aeT61.Name = "PB_aeT61";
+            this.PB_aeT61.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT61.TabIndex = 242;
+            this.PB_aeT61.TabStop = false;
+            this.PB_aeT61.Visible = false;
+            // 
+            // PB_aeT03
+            // 
+            this.PB_aeT03.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT03.Location = new System.Drawing.Point(88, 218);
+            this.PB_aeT03.Name = "PB_aeT03";
+            this.PB_aeT03.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT03.TabIndex = 220;
+            this.PB_aeT03.TabStop = false;
+            this.PB_aeT03.Visible = false;
+            // 
+            // PB_aeT60
+            // 
+            this.PB_aeT60.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT60.Location = new System.Drawing.Point(478, 23);
+            this.PB_aeT60.Name = "PB_aeT60";
+            this.PB_aeT60.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT60.TabIndex = 241;
+            this.PB_aeT60.TabStop = false;
+            this.PB_aeT60.Visible = false;
+            // 
+            // PB_aeT10
+            // 
+            this.PB_aeT10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT10.Location = new System.Drawing.Point(153, 23);
+            this.PB_aeT10.Name = "PB_aeT10";
+            this.PB_aeT10.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT10.TabIndex = 221;
+            this.PB_aeT10.TabStop = false;
+            this.PB_aeT10.Visible = false;
+            // 
+            // PB_aeT53
+            // 
+            this.PB_aeT53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT53.Location = new System.Drawing.Point(413, 218);
+            this.PB_aeT53.Name = "PB_aeT53";
+            this.PB_aeT53.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT53.TabIndex = 240;
+            this.PB_aeT53.TabStop = false;
+            // 
+            // PB_aeT13
+            // 
+            this.PB_aeT13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT13.Location = new System.Drawing.Point(153, 218);
+            this.PB_aeT13.Name = "PB_aeT13";
+            this.PB_aeT13.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT13.TabIndex = 222;
+            this.PB_aeT13.TabStop = false;
+            // 
+            // PB_aeT52
+            // 
+            this.PB_aeT52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT52.Location = new System.Drawing.Point(413, 153);
+            this.PB_aeT52.Name = "PB_aeT52";
+            this.PB_aeT52.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT52.TabIndex = 239;
+            this.PB_aeT52.TabStop = false;
+            // 
+            // PB_aeT20
+            // 
+            this.PB_aeT20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT20.Location = new System.Drawing.Point(218, 23);
+            this.PB_aeT20.Name = "PB_aeT20";
+            this.PB_aeT20.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT20.TabIndex = 223;
+            this.PB_aeT20.TabStop = false;
+            this.PB_aeT20.Visible = false;
+            // 
+            // PB_aeT51
+            // 
+            this.PB_aeT51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT51.Location = new System.Drawing.Point(413, 88);
+            this.PB_aeT51.Name = "PB_aeT51";
+            this.PB_aeT51.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT51.TabIndex = 238;
+            this.PB_aeT51.TabStop = false;
+            // 
+            // PB_aeT23
+            // 
+            this.PB_aeT23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT23.Location = new System.Drawing.Point(218, 218);
+            this.PB_aeT23.Name = "PB_aeT23";
+            this.PB_aeT23.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT23.TabIndex = 224;
+            this.PB_aeT23.TabStop = false;
+            // 
+            // PB_aeT50
+            // 
+            this.PB_aeT50.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT50.Location = new System.Drawing.Point(413, 23);
+            this.PB_aeT50.Name = "PB_aeT50";
+            this.PB_aeT50.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT50.TabIndex = 237;
+            this.PB_aeT50.TabStop = false;
+            this.PB_aeT50.Visible = false;
+            // 
+            // PB_aeT30
+            // 
+            this.PB_aeT30.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT30.Location = new System.Drawing.Point(283, 23);
+            this.PB_aeT30.Name = "PB_aeT30";
+            this.PB_aeT30.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT30.TabIndex = 225;
+            this.PB_aeT30.TabStop = false;
+            this.PB_aeT30.Visible = false;
+            // 
+            // PB_aeT43
+            // 
+            this.PB_aeT43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT43.Location = new System.Drawing.Point(348, 218);
+            this.PB_aeT43.Name = "PB_aeT43";
+            this.PB_aeT43.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT43.TabIndex = 236;
+            this.PB_aeT43.TabStop = false;
+            // 
+            // PB_aeT31
+            // 
+            this.PB_aeT31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT31.Location = new System.Drawing.Point(283, 88);
+            this.PB_aeT31.Name = "PB_aeT31";
+            this.PB_aeT31.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT31.TabIndex = 226;
+            this.PB_aeT31.TabStop = false;
+            // 
+            // PB_aeT42
+            // 
+            this.PB_aeT42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT42.Location = new System.Drawing.Point(348, 153);
+            this.PB_aeT42.Name = "PB_aeT42";
+            this.PB_aeT42.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT42.TabIndex = 235;
+            this.PB_aeT42.TabStop = false;
+            // 
+            // PB_aeT32
+            // 
+            this.PB_aeT32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT32.Location = new System.Drawing.Point(283, 153);
+            this.PB_aeT32.Name = "PB_aeT32";
+            this.PB_aeT32.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT32.TabIndex = 227;
+            this.PB_aeT32.TabStop = false;
+            // 
+            // PB_aeT41
+            // 
+            this.PB_aeT41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT41.Location = new System.Drawing.Point(348, 88);
+            this.PB_aeT41.Name = "PB_aeT41";
+            this.PB_aeT41.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT41.TabIndex = 234;
+            this.PB_aeT41.TabStop = false;
+            // 
+            // PB_aeT33
+            // 
+            this.PB_aeT33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT33.Location = new System.Drawing.Point(283, 218);
+            this.PB_aeT33.Name = "PB_aeT33";
+            this.PB_aeT33.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT33.TabIndex = 228;
+            this.PB_aeT33.TabStop = false;
+            // 
+            // PB_aeT40
+            // 
+            this.PB_aeT40.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeT40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT40.Location = new System.Drawing.Point(348, 23);
+            this.PB_aeT40.Name = "PB_aeT40";
+            this.PB_aeT40.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT40.TabIndex = 233;
+            this.PB_aeT40.TabStop = false;
+            this.PB_aeT40.Visible = false;
+            // 
+            // PB_aeT11
+            // 
+            this.PB_aeT11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT11.Location = new System.Drawing.Point(153, 88);
+            this.PB_aeT11.Name = "PB_aeT11";
+            this.PB_aeT11.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT11.TabIndex = 229;
+            this.PB_aeT11.TabStop = false;
+            // 
+            // PB_aeT22
+            // 
+            this.PB_aeT22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT22.Location = new System.Drawing.Point(218, 153);
+            this.PB_aeT22.Name = "PB_aeT22";
+            this.PB_aeT22.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT22.TabIndex = 232;
+            this.PB_aeT22.TabStop = false;
+            // 
+            // PB_aeT12
+            // 
+            this.PB_aeT12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT12.Location = new System.Drawing.Point(153, 153);
+            this.PB_aeT12.Name = "PB_aeT12";
+            this.PB_aeT12.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT12.TabIndex = 230;
+            this.PB_aeT12.TabStop = false;
+            // 
+            // PB_aeT21
+            // 
+            this.PB_aeT21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeT21.Location = new System.Drawing.Point(218, 88);
+            this.PB_aeT21.Name = "PB_aeT21";
+            this.PB_aeT21.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeT21.TabIndex = 231;
+            this.PB_aeT21.TabStop = false;
+            // 
+            // PB_aeI11
+            // 
+            this.PB_aeI11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI11.Location = new System.Drawing.Point(251, 153);
+            this.PB_aeI11.Name = "PB_aeI11";
+            this.PB_aeI11.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI11.TabIndex = 151;
+            this.PB_aeI11.TabStop = false;
+            // 
+            // PB_aeI00
+            // 
+            this.PB_aeI00.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI00.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI00.Location = new System.Drawing.Point(186, 88);
+            this.PB_aeI00.Name = "PB_aeI00";
+            this.PB_aeI00.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI00.TabIndex = 139;
+            this.PB_aeI00.TabStop = false;
+            this.PB_aeI00.Visible = false;
+            // 
+            // PB_aeI01
+            // 
+            this.PB_aeI01.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI01.Location = new System.Drawing.Point(186, 153);
+            this.PB_aeI01.Name = "PB_aeI01";
+            this.PB_aeI01.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI01.TabIndex = 140;
+            this.PB_aeI01.TabStop = false;
+            this.PB_aeI01.Visible = false;
+            // 
+            // PB_aeI02
+            // 
+            this.PB_aeI02.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI02.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI02.Location = new System.Drawing.Point(186, 218);
+            this.PB_aeI02.Name = "PB_aeI02";
+            this.PB_aeI02.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI02.TabIndex = 141;
+            this.PB_aeI02.TabStop = false;
+            this.PB_aeI02.Visible = false;
+            // 
+            // PB_aeI03
+            // 
+            this.PB_aeI03.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI03.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI03.Location = new System.Drawing.Point(186, 283);
+            this.PB_aeI03.Name = "PB_aeI03";
+            this.PB_aeI03.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI03.TabIndex = 142;
+            this.PB_aeI03.TabStop = false;
+            this.PB_aeI03.Visible = false;
+            // 
+            // PB_aeI10
+            // 
+            this.PB_aeI10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI10.Location = new System.Drawing.Point(251, 88);
+            this.PB_aeI10.Name = "PB_aeI10";
+            this.PB_aeI10.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI10.TabIndex = 143;
+            this.PB_aeI10.TabStop = false;
+            this.PB_aeI10.Visible = false;
+            // 
+            // PB_aeI13
+            // 
+            this.PB_aeI13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI13.Location = new System.Drawing.Point(251, 283);
+            this.PB_aeI13.Name = "PB_aeI13";
+            this.PB_aeI13.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI13.TabIndex = 144;
+            this.PB_aeI13.TabStop = false;
+            this.PB_aeI13.Visible = false;
+            // 
+            // PB_aeI20
+            // 
+            this.PB_aeI20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI20.Location = new System.Drawing.Point(316, 88);
+            this.PB_aeI20.Name = "PB_aeI20";
+            this.PB_aeI20.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI20.TabIndex = 145;
+            this.PB_aeI20.TabStop = false;
+            this.PB_aeI20.Visible = false;
+            // 
+            // PB_aeI23
+            // 
+            this.PB_aeI23.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI23.Location = new System.Drawing.Point(316, 283);
+            this.PB_aeI23.Name = "PB_aeI23";
+            this.PB_aeI23.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI23.TabIndex = 146;
+            this.PB_aeI23.TabStop = false;
+            this.PB_aeI23.Visible = false;
+            // 
+            // PB_aeI30
+            // 
+            this.PB_aeI30.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI30.Location = new System.Drawing.Point(381, 88);
+            this.PB_aeI30.Name = "PB_aeI30";
+            this.PB_aeI30.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI30.TabIndex = 147;
+            this.PB_aeI30.TabStop = false;
+            this.PB_aeI30.Visible = false;
+            // 
+            // PB_aeI31
+            // 
+            this.PB_aeI31.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI31.Location = new System.Drawing.Point(381, 153);
+            this.PB_aeI31.Name = "PB_aeI31";
+            this.PB_aeI31.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI31.TabIndex = 148;
+            this.PB_aeI31.TabStop = false;
+            this.PB_aeI31.Visible = false;
+            // 
+            // PB_aeI32
+            // 
+            this.PB_aeI32.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI32.Location = new System.Drawing.Point(381, 218);
+            this.PB_aeI32.Name = "PB_aeI32";
+            this.PB_aeI32.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI32.TabIndex = 149;
+            this.PB_aeI32.TabStop = false;
+            this.PB_aeI32.Visible = false;
+            // 
+            // PB_aeI33
+            // 
+            this.PB_aeI33.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PB_aeI33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI33.Location = new System.Drawing.Point(381, 283);
+            this.PB_aeI33.Name = "PB_aeI33";
+            this.PB_aeI33.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI33.TabIndex = 150;
+            this.PB_aeI33.TabStop = false;
+            this.PB_aeI33.Visible = false;
+            // 
+            // PB_aeI12
+            // 
+            this.PB_aeI12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI12.Location = new System.Drawing.Point(251, 218);
+            this.PB_aeI12.Name = "PB_aeI12";
+            this.PB_aeI12.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI12.TabIndex = 152;
+            this.PB_aeI12.TabStop = false;
+            // 
+            // PB_aeI21
+            // 
+            this.PB_aeI21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI21.Location = new System.Drawing.Point(316, 153);
+            this.PB_aeI21.Name = "PB_aeI21";
+            this.PB_aeI21.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI21.TabIndex = 153;
+            this.PB_aeI21.TabStop = false;
+            // 
+            // PB_aeI22
+            // 
+            this.PB_aeI22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_aeI22.Location = new System.Drawing.Point(316, 218);
+            this.PB_aeI22.Name = "PB_aeI22";
+            this.PB_aeI22.Size = new System.Drawing.Size(66, 66);
+            this.PB_aeI22.TabIndex = 154;
+            this.PB_aeI22.TabStop = false;
+            // 
+            // B_ImportAcres
+            // 
+            this.B_ImportAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_ImportAcres.Location = new System.Drawing.Point(349, 6);
+            this.B_ImportAcres.Name = "B_ImportAcres";
+            this.B_ImportAcres.Size = new System.Drawing.Size(95, 21);
+            this.B_ImportAcres.TabIndex = 124;
+            this.B_ImportAcres.Text = "Import Acres";
+            this.B_ImportAcres.UseVisualStyleBackColor = true;
+            this.B_ImportAcres.Click += new System.EventHandler(this.B_ImportAcres_Click);
+            // 
+            // B_ExportAcres
+            // 
+            this.B_ExportAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_ExportAcres.Location = new System.Drawing.Point(349, 27);
+            this.B_ExportAcres.Name = "B_ExportAcres";
+            this.B_ExportAcres.Size = new System.Drawing.Size(95, 21);
+            this.B_ExportAcres.TabIndex = 125;
+            this.B_ExportAcres.Text = "Export Acres";
+            this.B_ExportAcres.UseVisualStyleBackColor = true;
+            this.B_ExportAcres.Click += new System.EventHandler(this.B_ExportAcres_Click);
             // 
             // Garden
             // 
@@ -2797,10 +3703,73 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Minutes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Seconds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
-            this.tabPage6.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.TC_AcreEditor.ResumeLayout(false);
+            this.Tab_AcreTown.ResumeLayout(false);
+            this.Tab_AcreIsland.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT65)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT64)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT00)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT63)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT62)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT61)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeT21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI00)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_aeI22)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3011,5 +3980,74 @@
         private System.Windows.Forms.NumericUpDown NUD_Seconds;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button B_PWP;
+        private System.Windows.Forms.Label L_BuildNote;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Button B_ApplyAcres;
+        private System.Windows.Forms.Button B_ResetAcres;
+        private System.Windows.Forms.Label L_AcreInstructions;
+        private System.Windows.Forms.TabControl TC_AcreEditor;
+        private System.Windows.Forms.TabPage Tab_AcreTown;
+        private System.Windows.Forms.TabPage Tab_AcreIsland;
+        private System.Windows.Forms.Label L_AcreInfo;
+        private System.Windows.Forms.PictureBox PB_aeT65;
+        private System.Windows.Forms.PictureBox PB_aeT64;
+        private System.Windows.Forms.PictureBox PB_aeT04;
+        private System.Windows.Forms.PictureBox PB_aeT05;
+        private System.Windows.Forms.PictureBox PB_aeT55;
+        private System.Windows.Forms.PictureBox PB_aeT15;
+        private System.Windows.Forms.PictureBox PB_aeT54;
+        private System.Windows.Forms.PictureBox PB_aeT25;
+        private System.Windows.Forms.PictureBox PB_aeT45;
+        private System.Windows.Forms.PictureBox PB_aeT44;
+        private System.Windows.Forms.PictureBox PB_aeT34;
+        private System.Windows.Forms.PictureBox PB_aeT35;
+        private System.Windows.Forms.PictureBox PB_aeT24;
+        private System.Windows.Forms.PictureBox PB_aeT14;
+        private System.Windows.Forms.PictureBox PB_aeT00;
+        private System.Windows.Forms.PictureBox PB_aeT63;
+        private System.Windows.Forms.PictureBox PB_aeT01;
+        private System.Windows.Forms.PictureBox PB_aeT62;
+        private System.Windows.Forms.PictureBox PB_aeT02;
+        private System.Windows.Forms.PictureBox PB_aeT61;
+        private System.Windows.Forms.PictureBox PB_aeT03;
+        private System.Windows.Forms.PictureBox PB_aeT60;
+        private System.Windows.Forms.PictureBox PB_aeT10;
+        private System.Windows.Forms.PictureBox PB_aeT53;
+        private System.Windows.Forms.PictureBox PB_aeT13;
+        private System.Windows.Forms.PictureBox PB_aeT52;
+        private System.Windows.Forms.PictureBox PB_aeT20;
+        private System.Windows.Forms.PictureBox PB_aeT51;
+        private System.Windows.Forms.PictureBox PB_aeT23;
+        private System.Windows.Forms.PictureBox PB_aeT50;
+        private System.Windows.Forms.PictureBox PB_aeT30;
+        private System.Windows.Forms.PictureBox PB_aeT43;
+        private System.Windows.Forms.PictureBox PB_aeT31;
+        private System.Windows.Forms.PictureBox PB_aeT42;
+        private System.Windows.Forms.PictureBox PB_aeT32;
+        private System.Windows.Forms.PictureBox PB_aeT41;
+        private System.Windows.Forms.PictureBox PB_aeT33;
+        private System.Windows.Forms.PictureBox PB_aeT40;
+        private System.Windows.Forms.PictureBox PB_aeT11;
+        private System.Windows.Forms.PictureBox PB_aeT22;
+        private System.Windows.Forms.PictureBox PB_aeT12;
+        private System.Windows.Forms.PictureBox PB_aeT21;
+        private System.Windows.Forms.PictureBox PB_aeI11;
+        private System.Windows.Forms.PictureBox PB_aeI00;
+        private System.Windows.Forms.PictureBox PB_aeI01;
+        private System.Windows.Forms.PictureBox PB_aeI02;
+        private System.Windows.Forms.PictureBox PB_aeI03;
+        private System.Windows.Forms.PictureBox PB_aeI10;
+        private System.Windows.Forms.PictureBox PB_aeI13;
+        private System.Windows.Forms.PictureBox PB_aeI20;
+        private System.Windows.Forms.PictureBox PB_aeI23;
+        private System.Windows.Forms.PictureBox PB_aeI30;
+        private System.Windows.Forms.PictureBox PB_aeI31;
+        private System.Windows.Forms.PictureBox PB_aeI32;
+        private System.Windows.Forms.PictureBox PB_aeI33;
+        private System.Windows.Forms.PictureBox PB_aeI12;
+        private System.Windows.Forms.PictureBox PB_aeI21;
+        private System.Windows.Forms.PictureBox PB_aeI22;
+        private System.Windows.Forms.Button B_ExportAcres;
+        private System.Windows.Forms.Button B_ImportAcres;
     }
 }
