@@ -80,7 +80,7 @@ namespace NLSE
                         }
                         else
                         {
-                            Util.Alert("File checksums were not updated (already valid):" + Environment.NewLine + file);
+                            Util.Alert("File checksums were not updated (already valid):" + Environment.NewLine + file, "If you were trying to load your save file, drop the folder that has garden.dat instead!");
                         }
                     }
                     catch (Exception ex) { Util.Error("File error:" + Environment.NewLine + file, ex.ToString()); }
