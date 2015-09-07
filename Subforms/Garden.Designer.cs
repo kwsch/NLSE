@@ -201,6 +201,7 @@
             this.L_Villager1 = new System.Windows.Forms.Label();
             this.CB_Villager1 = new System.Windows.Forms.ComboBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.L_BuildNote = new System.Windows.Forms.Label();
             this.NUD_OverallDays = new System.Windows.Forms.NumericUpDown();
             this.NUD_Days = new System.Windows.Forms.NumericUpDown();
             this.NUD_Hours = new System.Windows.Forms.NumericUpDown();
@@ -224,23 +225,15 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.B_PWP = new System.Windows.Forms.Button();
-            this.L_ItemHover = new System.Windows.Forms.Label();
-            this.PB_JPEG1 = new System.Windows.Forms.PictureBox();
-            this.PB_JPEG2 = new System.Windows.Forms.PictureBox();
-            this.PB_JPEG3 = new System.Windows.Forms.PictureBox();
-            this.CB_Item = new System.Windows.Forms.ComboBox();
-            this.TB_Flag1 = new System.Windows.Forms.TextBox();
-            this.TB_Flag2 = new System.Windows.Forms.TextBox();
-            this.L_CurrentItem = new System.Windows.Forms.Label();
-            this.L_BuildNote = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.B_ExportAcres = new System.Windows.Forms.Button();
+            this.B_ImportAcres = new System.Windows.Forms.Button();
+            this.L_AcreInfo = new System.Windows.Forms.Label();
+            this.B_ApplyAcres = new System.Windows.Forms.Button();
+            this.B_ResetAcres = new System.Windows.Forms.Button();
+            this.L_AcreInstructions = new System.Windows.Forms.Label();
             this.TC_AcreEditor = new System.Windows.Forms.TabControl();
             this.Tab_AcreTown = new System.Windows.Forms.TabPage();
-            this.Tab_AcreIsland = new System.Windows.Forms.TabPage();
-            this.L_AcreInstructions = new System.Windows.Forms.Label();
-            this.B_ResetAcres = new System.Windows.Forms.Button();
-            this.B_ApplyAcres = new System.Windows.Forms.Button();
-            this.L_AcreInfo = new System.Windows.Forms.Label();
             this.PB_aeT65 = new System.Windows.Forms.PictureBox();
             this.PB_aeT64 = new System.Windows.Forms.PictureBox();
             this.PB_aeT04 = new System.Windows.Forms.PictureBox();
@@ -283,6 +276,7 @@
             this.PB_aeT22 = new System.Windows.Forms.PictureBox();
             this.PB_aeT12 = new System.Windows.Forms.PictureBox();
             this.PB_aeT21 = new System.Windows.Forms.PictureBox();
+            this.Tab_AcreIsland = new System.Windows.Forms.TabPage();
             this.PB_aeI11 = new System.Windows.Forms.PictureBox();
             this.PB_aeI00 = new System.Windows.Forms.PictureBox();
             this.PB_aeI01 = new System.Windows.Forms.PictureBox();
@@ -299,8 +293,20 @@
             this.PB_aeI12 = new System.Windows.Forms.PictureBox();
             this.PB_aeI21 = new System.Windows.Forms.PictureBox();
             this.PB_aeI22 = new System.Windows.Forms.PictureBox();
-            this.B_ImportAcres = new System.Windows.Forms.Button();
-            this.B_ExportAcres = new System.Windows.Forms.Button();
+            this.L_ItemHover = new System.Windows.Forms.Label();
+            this.PB_JPEG1 = new System.Windows.Forms.PictureBox();
+            this.PB_JPEG2 = new System.Windows.Forms.PictureBox();
+            this.PB_JPEG3 = new System.Windows.Forms.PictureBox();
+            this.CB_Item = new System.Windows.Forms.ComboBox();
+            this.TB_Flag1 = new System.Windows.Forms.TextBox();
+            this.TB_Flag2 = new System.Windows.Forms.TextBox();
+            this.L_CurrentItem = new System.Windows.Forms.Label();
+            this.B_Grass = new System.Windows.Forms.Button();
+            this.B_Desert = new System.Windows.Forms.Button();
+            this.B_Bank0 = new System.Windows.Forms.Button();
+            this.B_Bank1 = new System.Windows.Forms.Button();
+            this.B_Bank2 = new System.Windows.Forms.Button();
+            this.B_Bank3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -378,13 +384,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Seconds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.TC_AcreEditor.SuspendLayout();
             this.Tab_AcreTown.SuspendLayout();
-            this.Tab_AcreIsland.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT65)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT64)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT04)).BeginInit();
@@ -427,6 +429,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT21)).BeginInit();
+            this.Tab_AcreIsland.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI00)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI01)).BeginInit();
@@ -443,6 +446,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -2446,6 +2452,16 @@
             this.tabPage5.Text = "Buildings/Town";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // L_BuildNote
+            // 
+            this.L_BuildNote.AutoSize = true;
+            this.L_BuildNote.ForeColor = System.Drawing.Color.Red;
+            this.L_BuildNote.Location = new System.Drawing.Point(323, 542);
+            this.L_BuildNote.Name = "L_BuildNote";
+            this.L_BuildNote.Size = new System.Drawing.Size(212, 13);
+            this.L_BuildNote.TabIndex = 47;
+            this.L_BuildNote.Text = "Note: Adding buildings/pwps may not work.";
+            // 
             // NUD_OverallDays
             // 
             this.NUD_OverallDays.Location = new System.Drawing.Point(429, 283);
@@ -2715,6 +2731,12 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.B_Bank3);
+            this.tabPage6.Controls.Add(this.B_Bank2);
+            this.tabPage6.Controls.Add(this.B_Bank1);
+            this.tabPage6.Controls.Add(this.B_Bank0);
+            this.tabPage6.Controls.Add(this.B_Desert);
+            this.tabPage6.Controls.Add(this.B_Grass);
             this.tabPage6.Controls.Add(this.B_PWP);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
@@ -2734,107 +2756,6 @@
             this.B_PWP.UseVisualStyleBackColor = true;
             this.B_PWP.Click += new System.EventHandler(this.B_PWP_Click);
             // 
-            // L_ItemHover
-            // 
-            this.L_ItemHover.AutoSize = true;
-            this.L_ItemHover.Location = new System.Drawing.Point(372, 638);
-            this.L_ItemHover.Name = "L_ItemHover";
-            this.L_ItemHover.Size = new System.Drawing.Size(103, 13);
-            this.L_ItemHover.TabIndex = 10;
-            this.L_ItemHover.Text = "Hovered Item: None";
-            // 
-            // PB_JPEG1
-            // 
-            this.PB_JPEG1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PB_JPEG1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PB_JPEG1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_JPEG1.Location = new System.Drawing.Point(171, 601);
-            this.PB_JPEG1.Name = "PB_JPEG1";
-            this.PB_JPEG1.Size = new System.Drawing.Size(66, 106);
-            this.PB_JPEG1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.PB_JPEG1.TabIndex = 7;
-            this.PB_JPEG1.TabStop = false;
-            this.PB_JPEG1.Click += new System.EventHandler(this.clickPlayerPic);
-            // 
-            // PB_JPEG2
-            // 
-            this.PB_JPEG2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PB_JPEG2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PB_JPEG2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_JPEG2.Location = new System.Drawing.Point(236, 601);
-            this.PB_JPEG2.Name = "PB_JPEG2";
-            this.PB_JPEG2.Size = new System.Drawing.Size(66, 106);
-            this.PB_JPEG2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.PB_JPEG2.TabIndex = 8;
-            this.PB_JPEG2.TabStop = false;
-            this.PB_JPEG2.Click += new System.EventHandler(this.clickPlayerPic);
-            // 
-            // PB_JPEG3
-            // 
-            this.PB_JPEG3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PB_JPEG3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PB_JPEG3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_JPEG3.Location = new System.Drawing.Point(301, 601);
-            this.PB_JPEG3.Name = "PB_JPEG3";
-            this.PB_JPEG3.Size = new System.Drawing.Size(66, 106);
-            this.PB_JPEG3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.PB_JPEG3.TabIndex = 9;
-            this.PB_JPEG3.TabStop = false;
-            this.PB_JPEG3.Click += new System.EventHandler(this.clickPlayerPic);
-            // 
-            // CB_Item
-            // 
-            this.CB_Item.DropDownWidth = 166;
-            this.CB_Item.FormattingEnabled = true;
-            this.CB_Item.Location = new System.Drawing.Point(373, 614);
-            this.CB_Item.Name = "CB_Item";
-            this.CB_Item.Size = new System.Drawing.Size(136, 21);
-            this.CB_Item.TabIndex = 12;
-            this.CB_Item.SelectedIndexChanged += new System.EventHandler(this.changeItemID);
-            // 
-            // TB_Flag1
-            // 
-            this.TB_Flag1.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Flag1.Location = new System.Drawing.Point(515, 615);
-            this.TB_Flag1.MaxLength = 2;
-            this.TB_Flag1.Name = "TB_Flag1";
-            this.TB_Flag1.Size = new System.Drawing.Size(23, 20);
-            this.TB_Flag1.TabIndex = 13;
-            this.TB_Flag1.Text = "00";
-            this.TB_Flag1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_Flag1.TextChanged += new System.EventHandler(this.changeItemFlag);
-            // 
-            // TB_Flag2
-            // 
-            this.TB_Flag2.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Flag2.Location = new System.Drawing.Point(541, 615);
-            this.TB_Flag2.MaxLength = 2;
-            this.TB_Flag2.Name = "TB_Flag2";
-            this.TB_Flag2.Size = new System.Drawing.Size(23, 20);
-            this.TB_Flag2.TabIndex = 14;
-            this.TB_Flag2.Text = "00";
-            this.TB_Flag2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_Flag2.TextChanged += new System.EventHandler(this.changeItemFlag);
-            // 
-            // L_CurrentItem
-            // 
-            this.L_CurrentItem.AutoSize = true;
-            this.L_CurrentItem.Location = new System.Drawing.Point(372, 601);
-            this.L_CurrentItem.Name = "L_CurrentItem";
-            this.L_CurrentItem.Size = new System.Drawing.Size(67, 13);
-            this.L_CurrentItem.TabIndex = 15;
-            this.L_CurrentItem.Text = "Current Item:";
-            // 
-            // L_BuildNote
-            // 
-            this.L_BuildNote.AutoSize = true;
-            this.L_BuildNote.ForeColor = System.Drawing.Color.Red;
-            this.L_BuildNote.Location = new System.Drawing.Point(323, 542);
-            this.L_BuildNote.Name = "L_BuildNote";
-            this.L_BuildNote.Size = new System.Drawing.Size(212, 13);
-            this.L_BuildNote.TabIndex = 47;
-            this.L_BuildNote.Text = "Note: Adding buildings/pwps may not work.";
-            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.B_ExportAcres);
@@ -2851,6 +2772,71 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Acre Editor";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // B_ExportAcres
+            // 
+            this.B_ExportAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_ExportAcres.Location = new System.Drawing.Point(349, 27);
+            this.B_ExportAcres.Name = "B_ExportAcres";
+            this.B_ExportAcres.Size = new System.Drawing.Size(95, 21);
+            this.B_ExportAcres.TabIndex = 125;
+            this.B_ExportAcres.Text = "Export Acres";
+            this.B_ExportAcres.UseVisualStyleBackColor = true;
+            this.B_ExportAcres.Click += new System.EventHandler(this.B_ExportAcres_Click);
+            // 
+            // B_ImportAcres
+            // 
+            this.B_ImportAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_ImportAcres.Location = new System.Drawing.Point(349, 6);
+            this.B_ImportAcres.Name = "B_ImportAcres";
+            this.B_ImportAcres.Size = new System.Drawing.Size(95, 21);
+            this.B_ImportAcres.TabIndex = 124;
+            this.B_ImportAcres.Text = "Import Acres";
+            this.B_ImportAcres.UseVisualStyleBackColor = true;
+            this.B_ImportAcres.Click += new System.EventHandler(this.B_ImportAcres_Click);
+            // 
+            // L_AcreInfo
+            // 
+            this.L_AcreInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.L_AcreInfo.AutoSize = true;
+            this.L_AcreInfo.Location = new System.Drawing.Point(451, 54);
+            this.L_AcreInfo.Name = "L_AcreInfo";
+            this.L_AcreInfo.Size = new System.Drawing.Size(53, 13);
+            this.L_AcreInfo.TabIndex = 123;
+            this.L_AcreInfo.Text = "Acre Info:";
+            // 
+            // B_ApplyAcres
+            // 
+            this.B_ApplyAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_ApplyAcres.Location = new System.Drawing.Point(551, 6);
+            this.B_ApplyAcres.Name = "B_ApplyAcres";
+            this.B_ApplyAcres.Size = new System.Drawing.Size(95, 42);
+            this.B_ApplyAcres.TabIndex = 122;
+            this.B_ApplyAcres.Text = "Apply Acres";
+            this.B_ApplyAcres.UseVisualStyleBackColor = true;
+            this.B_ApplyAcres.Click += new System.EventHandler(this.B_ApplyAcres_Click);
+            // 
+            // B_ResetAcres
+            // 
+            this.B_ResetAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.B_ResetAcres.Location = new System.Drawing.Point(450, 6);
+            this.B_ResetAcres.Name = "B_ResetAcres";
+            this.B_ResetAcres.Size = new System.Drawing.Size(95, 42);
+            this.B_ResetAcres.TabIndex = 121;
+            this.B_ResetAcres.Text = "Reset Acres";
+            this.B_ResetAcres.UseVisualStyleBackColor = true;
+            this.B_ResetAcres.Click += new System.EventHandler(this.B_ResetAcres_Click);
+            // 
+            // L_AcreInstructions
+            // 
+            this.L_AcreInstructions.AutoSize = true;
+            this.L_AcreInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_AcreInstructions.Location = new System.Drawing.Point(7, 16);
+            this.L_AcreInstructions.Name = "L_AcreInstructions";
+            this.L_AcreInstructions.Size = new System.Drawing.Size(278, 64);
+            this.L_AcreInstructions.TabIndex = 120;
+            this.L_AcreInstructions.Text = "Instructions:\r\nRight Click/Left Click an acre to change acres.\r\nReset Button will" +
+    " reset to original state.\r\nApply Button will apply changes to the save.";
             // 
             // TC_AcreEditor
             // 
@@ -2916,75 +2902,6 @@
             this.Tab_AcreTown.TabIndex = 0;
             this.Tab_AcreTown.Text = "Town";
             this.Tab_AcreTown.UseVisualStyleBackColor = true;
-            // 
-            // Tab_AcreIsland
-            // 
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI11);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI00);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI01);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI02);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI03);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI10);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI13);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI20);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI23);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI30);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI31);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI32);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI33);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI12);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI21);
-            this.Tab_AcreIsland.Controls.Add(this.PB_aeI22);
-            this.Tab_AcreIsland.Location = new System.Drawing.Point(4, 22);
-            this.Tab_AcreIsland.Name = "Tab_AcreIsland";
-            this.Tab_AcreIsland.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_AcreIsland.Size = new System.Drawing.Size(632, 436);
-            this.Tab_AcreIsland.TabIndex = 1;
-            this.Tab_AcreIsland.Text = "Island";
-            this.Tab_AcreIsland.UseVisualStyleBackColor = true;
-            // 
-            // L_AcreInstructions
-            // 
-            this.L_AcreInstructions.AutoSize = true;
-            this.L_AcreInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_AcreInstructions.Location = new System.Drawing.Point(7, 16);
-            this.L_AcreInstructions.Name = "L_AcreInstructions";
-            this.L_AcreInstructions.Size = new System.Drawing.Size(278, 64);
-            this.L_AcreInstructions.TabIndex = 120;
-            this.L_AcreInstructions.Text = "Instructions:\r\nRight Click/Left Click an acre to change acres.\r\nReset Button will" +
-    " reset to original state.\r\nApply Button will apply changes to the save.";
-            // 
-            // B_ResetAcres
-            // 
-            this.B_ResetAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.B_ResetAcres.Location = new System.Drawing.Point(450, 6);
-            this.B_ResetAcres.Name = "B_ResetAcres";
-            this.B_ResetAcres.Size = new System.Drawing.Size(95, 42);
-            this.B_ResetAcres.TabIndex = 121;
-            this.B_ResetAcres.Text = "Reset Acres";
-            this.B_ResetAcres.UseVisualStyleBackColor = true;
-            this.B_ResetAcres.Click += new System.EventHandler(this.B_ResetAcres_Click);
-            // 
-            // B_ApplyAcres
-            // 
-            this.B_ApplyAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.B_ApplyAcres.Location = new System.Drawing.Point(551, 6);
-            this.B_ApplyAcres.Name = "B_ApplyAcres";
-            this.B_ApplyAcres.Size = new System.Drawing.Size(95, 42);
-            this.B_ApplyAcres.TabIndex = 122;
-            this.B_ApplyAcres.Text = "Apply Acres";
-            this.B_ApplyAcres.UseVisualStyleBackColor = true;
-            this.B_ApplyAcres.Click += new System.EventHandler(this.B_ApplyAcres_Click);
-            // 
-            // L_AcreInfo
-            // 
-            this.L_AcreInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.L_AcreInfo.AutoSize = true;
-            this.L_AcreInfo.Location = new System.Drawing.Point(451, 54);
-            this.L_AcreInfo.Name = "L_AcreInfo";
-            this.L_AcreInfo.Size = new System.Drawing.Size(53, 13);
-            this.L_AcreInfo.TabIndex = 123;
-            this.L_AcreInfo.Text = "Acre Info:";
             // 
             // PB_aeT65
             // 
@@ -3408,6 +3325,32 @@
             this.PB_aeT21.TabIndex = 231;
             this.PB_aeT21.TabStop = false;
             // 
+            // Tab_AcreIsland
+            // 
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI11);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI00);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI01);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI02);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI03);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI10);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI13);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI20);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI23);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI30);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI31);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI32);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI33);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI12);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI21);
+            this.Tab_AcreIsland.Controls.Add(this.PB_aeI22);
+            this.Tab_AcreIsland.Location = new System.Drawing.Point(4, 22);
+            this.Tab_AcreIsland.Name = "Tab_AcreIsland";
+            this.Tab_AcreIsland.Padding = new System.Windows.Forms.Padding(3);
+            this.Tab_AcreIsland.Size = new System.Drawing.Size(632, 436);
+            this.Tab_AcreIsland.TabIndex = 1;
+            this.Tab_AcreIsland.Text = "Island";
+            this.Tab_AcreIsland.UseVisualStyleBackColor = true;
+            // 
             // PB_aeI11
             // 
             this.PB_aeI11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -3576,27 +3519,156 @@
             this.PB_aeI22.TabIndex = 154;
             this.PB_aeI22.TabStop = false;
             // 
-            // B_ImportAcres
+            // L_ItemHover
             // 
-            this.B_ImportAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.B_ImportAcres.Location = new System.Drawing.Point(349, 6);
-            this.B_ImportAcres.Name = "B_ImportAcres";
-            this.B_ImportAcres.Size = new System.Drawing.Size(95, 21);
-            this.B_ImportAcres.TabIndex = 124;
-            this.B_ImportAcres.Text = "Import Acres";
-            this.B_ImportAcres.UseVisualStyleBackColor = true;
-            this.B_ImportAcres.Click += new System.EventHandler(this.B_ImportAcres_Click);
+            this.L_ItemHover.AutoSize = true;
+            this.L_ItemHover.Location = new System.Drawing.Point(372, 638);
+            this.L_ItemHover.Name = "L_ItemHover";
+            this.L_ItemHover.Size = new System.Drawing.Size(103, 13);
+            this.L_ItemHover.TabIndex = 10;
+            this.L_ItemHover.Text = "Hovered Item: None";
             // 
-            // B_ExportAcres
+            // PB_JPEG1
             // 
-            this.B_ExportAcres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.B_ExportAcres.Location = new System.Drawing.Point(349, 27);
-            this.B_ExportAcres.Name = "B_ExportAcres";
-            this.B_ExportAcres.Size = new System.Drawing.Size(95, 21);
-            this.B_ExportAcres.TabIndex = 125;
-            this.B_ExportAcres.Text = "Export Acres";
-            this.B_ExportAcres.UseVisualStyleBackColor = true;
-            this.B_ExportAcres.Click += new System.EventHandler(this.B_ExportAcres_Click);
+            this.PB_JPEG1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PB_JPEG1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PB_JPEG1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_JPEG1.Location = new System.Drawing.Point(171, 601);
+            this.PB_JPEG1.Name = "PB_JPEG1";
+            this.PB_JPEG1.Size = new System.Drawing.Size(66, 106);
+            this.PB_JPEG1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PB_JPEG1.TabIndex = 7;
+            this.PB_JPEG1.TabStop = false;
+            this.PB_JPEG1.Click += new System.EventHandler(this.clickPlayerPic);
+            // 
+            // PB_JPEG2
+            // 
+            this.PB_JPEG2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PB_JPEG2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PB_JPEG2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_JPEG2.Location = new System.Drawing.Point(236, 601);
+            this.PB_JPEG2.Name = "PB_JPEG2";
+            this.PB_JPEG2.Size = new System.Drawing.Size(66, 106);
+            this.PB_JPEG2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PB_JPEG2.TabIndex = 8;
+            this.PB_JPEG2.TabStop = false;
+            this.PB_JPEG2.Click += new System.EventHandler(this.clickPlayerPic);
+            // 
+            // PB_JPEG3
+            // 
+            this.PB_JPEG3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PB_JPEG3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PB_JPEG3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PB_JPEG3.Location = new System.Drawing.Point(301, 601);
+            this.PB_JPEG3.Name = "PB_JPEG3";
+            this.PB_JPEG3.Size = new System.Drawing.Size(66, 106);
+            this.PB_JPEG3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PB_JPEG3.TabIndex = 9;
+            this.PB_JPEG3.TabStop = false;
+            this.PB_JPEG3.Click += new System.EventHandler(this.clickPlayerPic);
+            // 
+            // CB_Item
+            // 
+            this.CB_Item.DropDownWidth = 166;
+            this.CB_Item.FormattingEnabled = true;
+            this.CB_Item.Location = new System.Drawing.Point(373, 614);
+            this.CB_Item.Name = "CB_Item";
+            this.CB_Item.Size = new System.Drawing.Size(136, 21);
+            this.CB_Item.TabIndex = 12;
+            this.CB_Item.SelectedIndexChanged += new System.EventHandler(this.changeItemID);
+            // 
+            // TB_Flag1
+            // 
+            this.TB_Flag1.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Flag1.Location = new System.Drawing.Point(515, 615);
+            this.TB_Flag1.MaxLength = 2;
+            this.TB_Flag1.Name = "TB_Flag1";
+            this.TB_Flag1.Size = new System.Drawing.Size(23, 20);
+            this.TB_Flag1.TabIndex = 13;
+            this.TB_Flag1.Text = "00";
+            this.TB_Flag1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_Flag1.TextChanged += new System.EventHandler(this.changeItemFlag);
+            // 
+            // TB_Flag2
+            // 
+            this.TB_Flag2.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Flag2.Location = new System.Drawing.Point(541, 615);
+            this.TB_Flag2.MaxLength = 2;
+            this.TB_Flag2.Name = "TB_Flag2";
+            this.TB_Flag2.Size = new System.Drawing.Size(23, 20);
+            this.TB_Flag2.TabIndex = 14;
+            this.TB_Flag2.Text = "00";
+            this.TB_Flag2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_Flag2.TextChanged += new System.EventHandler(this.changeItemFlag);
+            // 
+            // L_CurrentItem
+            // 
+            this.L_CurrentItem.AutoSize = true;
+            this.L_CurrentItem.Location = new System.Drawing.Point(372, 601);
+            this.L_CurrentItem.Name = "L_CurrentItem";
+            this.L_CurrentItem.Size = new System.Drawing.Size(67, 13);
+            this.L_CurrentItem.TabIndex = 15;
+            this.L_CurrentItem.Text = "Current Item:";
+            // 
+            // B_Grass
+            // 
+            this.B_Grass.Location = new System.Drawing.Point(131, 6);
+            this.B_Grass.Name = "B_Grass";
+            this.B_Grass.Size = new System.Drawing.Size(119, 47);
+            this.B_Grass.TabIndex = 1;
+            this.B_Grass.Text = "Re-seed all Grass\r\n(Grassifier)";
+            this.B_Grass.UseVisualStyleBackColor = true;
+            this.B_Grass.Click += new System.EventHandler(this.B_Grass_Click);
+            // 
+            // B_Desert
+            // 
+            this.B_Desert.Location = new System.Drawing.Point(131, 59);
+            this.B_Desert.Name = "B_Desert";
+            this.B_Desert.Size = new System.Drawing.Size(119, 47);
+            this.B_Desert.TabIndex = 2;
+            this.B_Desert.Text = "Remove all Grass\r\n(Desertifier)";
+            this.B_Desert.UseVisualStyleBackColor = true;
+            this.B_Desert.Click += new System.EventHandler(this.B_Desert_Click);
+            // 
+            // B_Bank0
+            // 
+            this.B_Bank0.Location = new System.Drawing.Point(256, 6);
+            this.B_Bank0.Name = "B_Bank0";
+            this.B_Bank0.Size = new System.Drawing.Size(119, 47);
+            this.B_Bank0.TabIndex = 3;
+            this.B_Bank0.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!";
+            this.B_Bank0.UseVisualStyleBackColor = true;
+            this.B_Bank0.Click += new System.EventHandler(this.B_Bank_Click);
+            // 
+            // B_Bank1
+            // 
+            this.B_Bank1.Location = new System.Drawing.Point(256, 59);
+            this.B_Bank1.Name = "B_Bank1";
+            this.B_Bank1.Size = new System.Drawing.Size(119, 47);
+            this.B_Bank1.TabIndex = 4;
+            this.B_Bank1.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!";
+            this.B_Bank1.UseVisualStyleBackColor = true;
+            this.B_Bank1.Click += new System.EventHandler(this.B_Bank_Click);
+            // 
+            // B_Bank2
+            // 
+            this.B_Bank2.Location = new System.Drawing.Point(256, 112);
+            this.B_Bank2.Name = "B_Bank2";
+            this.B_Bank2.Size = new System.Drawing.Size(119, 47);
+            this.B_Bank2.TabIndex = 5;
+            this.B_Bank2.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!";
+            this.B_Bank2.UseVisualStyleBackColor = true;
+            this.B_Bank2.Click += new System.EventHandler(this.B_Bank_Click);
+            // 
+            // B_Bank3
+            // 
+            this.B_Bank3.Location = new System.Drawing.Point(256, 165);
+            this.B_Bank3.Name = "B_Bank3";
+            this.B_Bank3.Size = new System.Drawing.Size(119, 47);
+            this.B_Bank3.TabIndex = 6;
+            this.B_Bank3.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!\r\n";
+            this.B_Bank3.UseVisualStyleBackColor = true;
+            this.B_Bank3.Click += new System.EventHandler(this.B_Bank_Click);
             // 
             // Garden
             // 
@@ -3704,14 +3776,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Seconds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             this.TC_AcreEditor.ResumeLayout(false);
             this.Tab_AcreTown.ResumeLayout(false);
-            this.Tab_AcreIsland.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT65)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT64)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT04)).EndInit();
@@ -3754,6 +3822,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeT21)).EndInit();
+            this.Tab_AcreIsland.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI00)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI01)).EndInit();
@@ -3770,6 +3839,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_aeI22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4049,5 +4121,11 @@
         private System.Windows.Forms.PictureBox PB_aeI22;
         private System.Windows.Forms.Button B_ExportAcres;
         private System.Windows.Forms.Button B_ImportAcres;
+        private System.Windows.Forms.Button B_Desert;
+        private System.Windows.Forms.Button B_Grass;
+        private System.Windows.Forms.Button B_Bank0;
+        private System.Windows.Forms.Button B_Bank3;
+        private System.Windows.Forms.Button B_Bank2;
+        private System.Windows.Forms.Button B_Bank1;
     }
 }

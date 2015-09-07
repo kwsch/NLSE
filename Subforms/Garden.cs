@@ -20,8 +20,12 @@ namespace NLSE
         private Building[] Buildings;
         private Villager[] Villagers;
         private Item[] TownItems, IslandItems;
+        private Button[] PlayerBankCheat;
 
-        // Form Handlingc
+        // Dynamic Text
+        private string DefaultBankText;
+
+        // Form Handling
         public Garden()
         {
             InitializeComponent();
@@ -86,12 +90,16 @@ namespace NLSE
                 id.ValueMember = "Value";
                 id.DataSource = new BindingSource(Main.vList, null);
             }
-
             TownVillagersCatch = new[]
             {
                 TB_VillagerCatch1, TB_VillagerCatch2, TB_VillagerCatch3, TB_VillagerCatch4, TB_VillagerCatch5,
                 TB_VillagerCatch6, TB_VillagerCatch7, TB_VillagerCatch8, TB_VillagerCatch9, TB_VillagerCatch10
             };
+            PlayerBankCheat = new[]
+            {
+                B_Bank0, B_Bank1, B_Bank2, B_Bank3
+            };
+            DefaultBankText = B_Bank0.Text;
             #endregion
             #region Load Event Methods to Controls
             foreach (PictureBox p in TownAcres) { p.MouseMove += mouseTown; p.MouseClick += clickTown; }
@@ -365,6 +373,11 @@ namespace NLSE
                 PlayerPics[i].Image = Players[i].JPEG;
 
             loadPlayer(0);
+            for (int i = 0; i < Players.Length; i++)
+            {
+                PlayerBankCheat[i].Text = String.Format(DefaultBankText, Players[i].Name);
+                PlayerBankCheat[i].Visible = Players[i].Name != "";
+            }
 
             // Load Town
             TownAcreTiles = new ushort[TownAcres.Length];
@@ -1090,6 +1103,8 @@ namespace NLSE
         }
         private void changePlayerName(object sender, EventArgs e)
         {
+            PlayerBankCheat[currentPlayer].Text = String.Format(DefaultBankText, TB_Name.Text);
+
             Players[currentPlayer].Name = TB_Name.Text;
             reloadOverviewLabel();
         }
@@ -1099,8 +1114,11 @@ namespace NLSE
             reloadOverviewLabel();
         }
 
+        // Leaftools ported cheats, thanks to NeoKamek for hosting the source code for his tools.
+        // https://bitbucket.org/neokamek/leaftools/src
         private void B_PWP_Click(object sender, EventArgs e)
         {
+            const int offset = 0x4D9C8 + 0x80;
             byte[] PWPUnlock =
             {
                 0xFF, 0xFF, 0xFF, 0xFF, // 0
@@ -1110,8 +1128,43 @@ namespace NLSE
                 0xFF, 0xFF, 0xFF, 0xFF, // 4
                 0x2A, 0xD6, 0xE4, 0x58, // 5
             };
-            Array.Copy(PWPUnlock, 0, Save.Data, 0x4D9C8 + 0x80, PWPUnlock.Length);
+
+            Array.Copy(PWPUnlock, 0, Save.Data, offset, PWPUnlock.Length);
+
             Util.Alert("All Public Works Projects unlocked!");
+        }
+        private void B_Bank_Click(object sender, EventArgs e)
+        {
+            int player = Array.IndexOf(PlayerBankCheat, sender as Button);
+            if (player < 0) return;
+            const int offset = 0x6B8C + 0x80 - 0xA0; // within player data
+            if (BitConverter.ToUInt64(Players[player].Data, offset) == 0x0D1186368CF95678)
+            { Util.Alert(String.Format("(Player {0}) {1}'s account is already maxed!", player, Players[player].Name)); return; }
+
+            Array.Copy(BitConverter.GetBytes((ulong)0x0D1186368CF95678), 0, Players[player].Data, offset, 8);
+
+            Util.Alert(String.Format("(Player {0}) {1}'s account has been maxed at 999,999,999 Bells!", player, Players[player].Name));
+        }
+        private void B_Grass_Click(object sender, EventArgs e)
+        {
+            // 
+            const byte tileValue = 0xFF;
+            const int offset = 0x53E80 + 0x80;
+
+            for (int i = 0; i < 0x2800; i++)
+                Save.Data[offset + i] = tileValue;
+
+            Util.Alert("All Map Tiles have had their grass refreshed!!");
+        }
+        private void B_Desert_Click(object sender, EventArgs e)
+        {
+            const byte tileValue = 0x00;
+            const int offset = 0x53E80 + 0x80;
+
+            for (int i = 0; i < 0x2800; i++)
+                Save.Data[offset + i] = tileValue;
+
+            Util.Alert("All Map Tiles have had their grass removed (desertified)!");
         }
 
         private void mouseTownAcre(object sender, MouseEventArgs e)
