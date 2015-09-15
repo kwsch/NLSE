@@ -1188,18 +1188,8 @@ namespace NLSE
             int acre = Array.IndexOf(aeTownAcres, sender as PictureBox);
             if (acre < 0) return;
 
-            if (e.Button == MouseButtons.Right) // Decrement (1-153 allowed)
-            {
-                aeTownAcreTiles[acre]--;
-                if (aeTownAcreTiles[acre] < 1) aeTownAcreTiles[acre] = 153;
-            }
-            else // Increment (1-153 allowed)
-            {
-                aeTownAcreTiles[acre]++;
-                if (aeTownAcreTiles[acre] > 153) aeTownAcreTiles[acre] = 1;
-            }
+            aeTownAcreTiles[acre] = (ushort)((aeTownAcreTiles[acre] + ((e.Button == MouseButtons.Right) ? 153 : 1)) % 154);
             aeTownAcres[acre].BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("acre_" + aeTownAcreTiles[acre]);
-
         }
         private void clickIslandAcre(object sender, MouseEventArgs e)
         {

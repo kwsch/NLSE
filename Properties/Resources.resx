@@ -1117,6 +1117,9 @@
   <data name="acnl_v_332" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VillageData\VillagerBin\acnl_v_332.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="acre_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img\acre\acre_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="acre_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img\acre\acre_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
