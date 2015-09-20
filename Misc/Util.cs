@@ -89,7 +89,7 @@ namespace NLSE
         }
         internal static void ReplaceAllBytes(byte[] array, byte[] oldPattern, byte[] newPattern)
         {
-            if (oldPattern.SequenceEqual(newPattern))
+            if (oldPattern.Length != newPattern.Length || oldPattern.SequenceEqual(newPattern))
                 return;
             int offset; // Loop until no instances of oldPattern are found
             while ((offset = IndexOfBytes(array, oldPattern, 0, 0)) != -1)
