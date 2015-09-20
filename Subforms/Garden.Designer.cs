@@ -1531,7 +1531,7 @@
             "Orange",
             "Light Blue",
             "Light Yellow",
-            "Gray",
+            "Gray (Light Green?)",
             "Pink",
             "White",
             "Black",
@@ -1541,7 +1541,7 @@
             "Yellow",
             "Green",
             "Purple",
-            "Light Green"});
+            "Light Green (Gray?)"});
             this.CB_HairColor.Location = new System.Drawing.Point(218, 79);
             this.CB_HairColor.Name = "CB_HairColor";
             this.CB_HairColor.Size = new System.Drawing.Size(93, 21);
