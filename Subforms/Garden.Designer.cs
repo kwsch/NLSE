@@ -224,6 +224,12 @@
             this.TB_TownName = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.B_Bank3 = new System.Windows.Forms.Button();
+            this.B_Bank2 = new System.Windows.Forms.Button();
+            this.B_Bank1 = new System.Windows.Forms.Button();
+            this.B_Bank0 = new System.Windows.Forms.Button();
+            this.B_Desert = new System.Windows.Forms.Button();
+            this.B_Grass = new System.Windows.Forms.Button();
             this.B_PWP = new System.Windows.Forms.Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.B_ExportAcres = new System.Windows.Forms.Button();
@@ -301,12 +307,6 @@
             this.TB_Flag1 = new System.Windows.Forms.TextBox();
             this.TB_Flag2 = new System.Windows.Forms.TextBox();
             this.L_CurrentItem = new System.Windows.Forms.Label();
-            this.B_Grass = new System.Windows.Forms.Button();
-            this.B_Desert = new System.Windows.Forms.Button();
-            this.B_Bank0 = new System.Windows.Forms.Button();
-            this.B_Bank1 = new System.Windows.Forms.Button();
-            this.B_Bank2 = new System.Windows.Forms.Button();
-            this.B_Bank3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1524,7 +1524,7 @@
             "Gray",
             "Pink",
             "White",
-            "Dark Green",
+            "Black",
             "Dark Brown",
             "Red",
             "Dark Blue",
@@ -2746,6 +2746,66 @@
             this.tabPage6.Text = "Cheats";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // B_Bank3
+            // 
+            this.B_Bank3.Location = new System.Drawing.Point(256, 165);
+            this.B_Bank3.Name = "B_Bank3";
+            this.B_Bank3.Size = new System.Drawing.Size(119, 47);
+            this.B_Bank3.TabIndex = 6;
+            this.B_Bank3.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!\r\n";
+            this.B_Bank3.UseVisualStyleBackColor = true;
+            this.B_Bank3.Click += new System.EventHandler(this.B_Bank_Click);
+            // 
+            // B_Bank2
+            // 
+            this.B_Bank2.Location = new System.Drawing.Point(256, 112);
+            this.B_Bank2.Name = "B_Bank2";
+            this.B_Bank2.Size = new System.Drawing.Size(119, 47);
+            this.B_Bank2.TabIndex = 5;
+            this.B_Bank2.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!";
+            this.B_Bank2.UseVisualStyleBackColor = true;
+            this.B_Bank2.Click += new System.EventHandler(this.B_Bank_Click);
+            // 
+            // B_Bank1
+            // 
+            this.B_Bank1.Location = new System.Drawing.Point(256, 59);
+            this.B_Bank1.Name = "B_Bank1";
+            this.B_Bank1.Size = new System.Drawing.Size(119, 47);
+            this.B_Bank1.TabIndex = 4;
+            this.B_Bank1.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!";
+            this.B_Bank1.UseVisualStyleBackColor = true;
+            this.B_Bank1.Click += new System.EventHandler(this.B_Bank_Click);
+            // 
+            // B_Bank0
+            // 
+            this.B_Bank0.Location = new System.Drawing.Point(256, 6);
+            this.B_Bank0.Name = "B_Bank0";
+            this.B_Bank0.Size = new System.Drawing.Size(119, 47);
+            this.B_Bank0.TabIndex = 3;
+            this.B_Bank0.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!";
+            this.B_Bank0.UseVisualStyleBackColor = true;
+            this.B_Bank0.Click += new System.EventHandler(this.B_Bank_Click);
+            // 
+            // B_Desert
+            // 
+            this.B_Desert.Location = new System.Drawing.Point(131, 59);
+            this.B_Desert.Name = "B_Desert";
+            this.B_Desert.Size = new System.Drawing.Size(119, 47);
+            this.B_Desert.TabIndex = 2;
+            this.B_Desert.Text = "Remove all Grass\r\n(Desertifier)";
+            this.B_Desert.UseVisualStyleBackColor = true;
+            this.B_Desert.Click += new System.EventHandler(this.B_Desert_Click);
+            // 
+            // B_Grass
+            // 
+            this.B_Grass.Location = new System.Drawing.Point(131, 6);
+            this.B_Grass.Name = "B_Grass";
+            this.B_Grass.Size = new System.Drawing.Size(119, 47);
+            this.B_Grass.TabIndex = 1;
+            this.B_Grass.Text = "Re-seed all Grass\r\n(Grassifier)";
+            this.B_Grass.UseVisualStyleBackColor = true;
+            this.B_Grass.Click += new System.EventHandler(this.B_Grass_Click);
+            // 
             // B_PWP
             // 
             this.B_PWP.Location = new System.Drawing.Point(6, 6);
@@ -3609,66 +3669,6 @@
             this.L_CurrentItem.Size = new System.Drawing.Size(67, 13);
             this.L_CurrentItem.TabIndex = 15;
             this.L_CurrentItem.Text = "Current Item:";
-            // 
-            // B_Grass
-            // 
-            this.B_Grass.Location = new System.Drawing.Point(131, 6);
-            this.B_Grass.Name = "B_Grass";
-            this.B_Grass.Size = new System.Drawing.Size(119, 47);
-            this.B_Grass.TabIndex = 1;
-            this.B_Grass.Text = "Re-seed all Grass\r\n(Grassifier)";
-            this.B_Grass.UseVisualStyleBackColor = true;
-            this.B_Grass.Click += new System.EventHandler(this.B_Grass_Click);
-            // 
-            // B_Desert
-            // 
-            this.B_Desert.Location = new System.Drawing.Point(131, 59);
-            this.B_Desert.Name = "B_Desert";
-            this.B_Desert.Size = new System.Drawing.Size(119, 47);
-            this.B_Desert.TabIndex = 2;
-            this.B_Desert.Text = "Remove all Grass\r\n(Desertifier)";
-            this.B_Desert.UseVisualStyleBackColor = true;
-            this.B_Desert.Click += new System.EventHandler(this.B_Desert_Click);
-            // 
-            // B_Bank0
-            // 
-            this.B_Bank0.Location = new System.Drawing.Point(256, 6);
-            this.B_Bank0.Name = "B_Bank0";
-            this.B_Bank0.Size = new System.Drawing.Size(119, 47);
-            this.B_Bank0.TabIndex = 3;
-            this.B_Bank0.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!";
-            this.B_Bank0.UseVisualStyleBackColor = true;
-            this.B_Bank0.Click += new System.EventHandler(this.B_Bank_Click);
-            // 
-            // B_Bank1
-            // 
-            this.B_Bank1.Location = new System.Drawing.Point(256, 59);
-            this.B_Bank1.Name = "B_Bank1";
-            this.B_Bank1.Size = new System.Drawing.Size(119, 47);
-            this.B_Bank1.TabIndex = 4;
-            this.B_Bank1.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!";
-            this.B_Bank1.UseVisualStyleBackColor = true;
-            this.B_Bank1.Click += new System.EventHandler(this.B_Bank_Click);
-            // 
-            // B_Bank2
-            // 
-            this.B_Bank2.Location = new System.Drawing.Point(256, 112);
-            this.B_Bank2.Name = "B_Bank2";
-            this.B_Bank2.Size = new System.Drawing.Size(119, 47);
-            this.B_Bank2.TabIndex = 5;
-            this.B_Bank2.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!";
-            this.B_Bank2.UseVisualStyleBackColor = true;
-            this.B_Bank2.Click += new System.EventHandler(this.B_Bank_Click);
-            // 
-            // B_Bank3
-            // 
-            this.B_Bank3.Location = new System.Drawing.Point(256, 165);
-            this.B_Bank3.Name = "B_Bank3";
-            this.B_Bank3.Size = new System.Drawing.Size(119, 47);
-            this.B_Bank3.TabIndex = 6;
-            this.B_Bank3.Text = "Max {0}\'s Bank\r\n999,999,999 Bells!\r\n";
-            this.B_Bank3.UseVisualStyleBackColor = true;
-            this.B_Bank3.Click += new System.EventHandler(this.B_Bank_Click);
             // 
             // Garden
             // 
