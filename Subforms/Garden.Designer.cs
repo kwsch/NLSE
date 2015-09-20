@@ -307,6 +307,16 @@
             this.TB_Flag1 = new System.Windows.Forms.TextBox();
             this.TB_Flag2 = new System.Windows.Forms.TextBox();
             this.L_CurrentItem = new System.Windows.Forms.Label();
+            this.CHK_V01 = new System.Windows.Forms.CheckBox();
+            this.CHK_V02 = new System.Windows.Forms.CheckBox();
+            this.CHK_V03 = new System.Windows.Forms.CheckBox();
+            this.CHK_V04 = new System.Windows.Forms.CheckBox();
+            this.CHK_V05 = new System.Windows.Forms.CheckBox();
+            this.CHK_V06 = new System.Windows.Forms.CheckBox();
+            this.CHK_V07 = new System.Windows.Forms.CheckBox();
+            this.CHK_V08 = new System.Windows.Forms.CheckBox();
+            this.CHK_V09 = new System.Windows.Forms.CheckBox();
+            this.CHK_V10 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -2122,6 +2132,16 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.CHK_V10);
+            this.tabPage4.Controls.Add(this.CHK_V09);
+            this.tabPage4.Controls.Add(this.CHK_V08);
+            this.tabPage4.Controls.Add(this.CHK_V07);
+            this.tabPage4.Controls.Add(this.CHK_V06);
+            this.tabPage4.Controls.Add(this.CHK_V05);
+            this.tabPage4.Controls.Add(this.CHK_V04);
+            this.tabPage4.Controls.Add(this.CHK_V03);
+            this.tabPage4.Controls.Add(this.CHK_V02);
+            this.tabPage4.Controls.Add(this.CHK_V01);
             this.tabPage4.Controls.Add(this.TB_VillagerCatch10);
             this.tabPage4.Controls.Add(this.TB_VillagerCatch9);
             this.tabPage4.Controls.Add(this.TB_VillagerCatch8);
@@ -3670,6 +3690,106 @@
             this.L_CurrentItem.TabIndex = 15;
             this.L_CurrentItem.Text = "Current Item:";
             // 
+            // CHK_V01
+            // 
+            this.CHK_V01.AutoSize = true;
+            this.CHK_V01.Location = new System.Drawing.Point(345, 7);
+            this.CHK_V01.Name = "CHK_V01";
+            this.CHK_V01.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V01.TabIndex = 46;
+            this.CHK_V01.Text = "Moving";
+            this.CHK_V01.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V02
+            // 
+            this.CHK_V02.AutoSize = true;
+            this.CHK_V02.Location = new System.Drawing.Point(345, 34);
+            this.CHK_V02.Name = "CHK_V02";
+            this.CHK_V02.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V02.TabIndex = 47;
+            this.CHK_V02.Text = "Moving";
+            this.CHK_V02.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V03
+            // 
+            this.CHK_V03.AutoSize = true;
+            this.CHK_V03.Location = new System.Drawing.Point(345, 61);
+            this.CHK_V03.Name = "CHK_V03";
+            this.CHK_V03.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V03.TabIndex = 48;
+            this.CHK_V03.Text = "Moving";
+            this.CHK_V03.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V04
+            // 
+            this.CHK_V04.AutoSize = true;
+            this.CHK_V04.Location = new System.Drawing.Point(345, 88);
+            this.CHK_V04.Name = "CHK_V04";
+            this.CHK_V04.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V04.TabIndex = 49;
+            this.CHK_V04.Text = "Moving";
+            this.CHK_V04.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V05
+            // 
+            this.CHK_V05.AutoSize = true;
+            this.CHK_V05.Location = new System.Drawing.Point(345, 115);
+            this.CHK_V05.Name = "CHK_V05";
+            this.CHK_V05.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V05.TabIndex = 50;
+            this.CHK_V05.Text = "Moving";
+            this.CHK_V05.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V06
+            // 
+            this.CHK_V06.AutoSize = true;
+            this.CHK_V06.Location = new System.Drawing.Point(345, 142);
+            this.CHK_V06.Name = "CHK_V06";
+            this.CHK_V06.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V06.TabIndex = 51;
+            this.CHK_V06.Text = "Moving";
+            this.CHK_V06.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V07
+            // 
+            this.CHK_V07.AutoSize = true;
+            this.CHK_V07.Location = new System.Drawing.Point(345, 169);
+            this.CHK_V07.Name = "CHK_V07";
+            this.CHK_V07.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V07.TabIndex = 52;
+            this.CHK_V07.Text = "Moving";
+            this.CHK_V07.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V08
+            // 
+            this.CHK_V08.AutoSize = true;
+            this.CHK_V08.Location = new System.Drawing.Point(345, 196);
+            this.CHK_V08.Name = "CHK_V08";
+            this.CHK_V08.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V08.TabIndex = 53;
+            this.CHK_V08.Text = "Moving";
+            this.CHK_V08.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V09
+            // 
+            this.CHK_V09.AutoSize = true;
+            this.CHK_V09.Location = new System.Drawing.Point(345, 223);
+            this.CHK_V09.Name = "CHK_V09";
+            this.CHK_V09.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V09.TabIndex = 54;
+            this.CHK_V09.Text = "Moving";
+            this.CHK_V09.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V10
+            // 
+            this.CHK_V10.AutoSize = true;
+            this.CHK_V10.Location = new System.Drawing.Point(345, 250);
+            this.CHK_V10.Name = "CHK_V10";
+            this.CHK_V10.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V10.TabIndex = 55;
+            this.CHK_V10.Text = "Moving";
+            this.CHK_V10.UseVisualStyleBackColor = true;
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4127,5 +4247,15 @@
         private System.Windows.Forms.Button B_Bank3;
         private System.Windows.Forms.Button B_Bank2;
         private System.Windows.Forms.Button B_Bank1;
+        private System.Windows.Forms.CheckBox CHK_V01;
+        private System.Windows.Forms.CheckBox CHK_V10;
+        private System.Windows.Forms.CheckBox CHK_V09;
+        private System.Windows.Forms.CheckBox CHK_V08;
+        private System.Windows.Forms.CheckBox CHK_V07;
+        private System.Windows.Forms.CheckBox CHK_V06;
+        private System.Windows.Forms.CheckBox CHK_V05;
+        private System.Windows.Forms.CheckBox CHK_V04;
+        private System.Windows.Forms.CheckBox CHK_V03;
+        private System.Windows.Forms.CheckBox CHK_V02;
     }
 }

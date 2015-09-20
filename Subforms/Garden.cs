@@ -15,6 +15,7 @@ namespace NLSE
         private PictureBox[] TownAcres, IslandAcres, aeTownAcres, aeIslandAcres, PlayerPics;
         private ComboBox[] TownVillagers, PlayerBadges;
         private TextBox[] TownVillagersCatch;
+        private CheckBox[] TownVillagersBoxed;
 
         private Player[] Players;
         private Building[] Buildings;
@@ -94,6 +95,10 @@ namespace NLSE
             {
                 TB_VillagerCatch1, TB_VillagerCatch2, TB_VillagerCatch3, TB_VillagerCatch4, TB_VillagerCatch5,
                 TB_VillagerCatch6, TB_VillagerCatch7, TB_VillagerCatch8, TB_VillagerCatch9, TB_VillagerCatch10
+            };
+            TownVillagersBoxed = new[]
+            {
+                CHK_V01, CHK_V02, CHK_V03, CHK_V04, CHK_V05, CHK_V06, CHK_V07, CHK_V08, CHK_V09, CHK_V10
             };
             PlayerBankCheat = new[]
             {
@@ -316,12 +321,14 @@ namespace NLSE
             public string CatchPhrase;
             private string HomeTown1;
             private string HomeTown2;
+            public bool Boxed;
             public Villager(byte[] data, int offset, int size)
             {
                 Data = data.Skip(offset).Take(size).ToArray();
 
                 ID = BitConverter.ToInt16(Data, 0);
                 Type = Data[2];
+                Boxed = (Data[0x24C4] & 1) == 1;
                 CatchPhrase = Encoding.Unicode.GetString(Data.Skip(0x24A6).Take(22).ToArray()).Trim('\0');
                 HomeTown1 = Encoding.Unicode.GetString(Data.Skip(0x24CE).Take(0x12).ToArray()).Trim('\0');
                 HomeTown2 = Encoding.Unicode.GetString(Data.Skip(0x24E4).Take(0x12).ToArray()).Trim('\0');
@@ -330,6 +337,7 @@ namespace NLSE
             {
                 Array.Copy(BitConverter.GetBytes(ID), 0, Data, 0, 2);
                 Data[2] = Type;
+                Data[0x24C4] = (byte)((Data[0x24C4] & ~1) | (Boxed ? 1 : 0));
                 Array.Copy(Encoding.Unicode.GetBytes(CatchPhrase.PadRight(11, '\0')), 0, Data, 0x24A6, 22);
                 Array.Copy(Encoding.Unicode.GetBytes(HomeTown1.PadRight(9, '\0')), 0, Data, 0x24CE, 0x12);
                 Array.Copy(Encoding.Unicode.GetBytes(HomeTown2.PadRight(9, '\0')), 0, Data, 0x24E4, 0x12);
@@ -520,9 +528,10 @@ namespace NLSE
         private void loadVillager(int i)
         {
             Villagers[i] = new Villager(Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
-            TownVillagers[i].Enabled = TownVillagersCatch[i].Enabled = (Villagers[i].ID != -1);
+            TownVillagers[i].Enabled = TownVillagersCatch[i].Enabled = TownVillagersBoxed[i].Enabled = (Villagers[i].ID != -1);
             TownVillagers[i].SelectedValue = (int)Villagers[i].ID;
             TownVillagersCatch[i].Text = Villagers[i].CatchPhrase;
+            TownVillagersBoxed[i].Checked = Villagers[i].Boxed;
         }
         private void saveVillager(int i)
         {
@@ -530,6 +539,7 @@ namespace NLSE
                     ? (short)-1 
                     : (short)Util.getIndex(TownVillagers[i]);
             Villagers[i].CatchPhrase = TownVillagersCatch[i].Text;
+            Villagers[i].Boxed = TownVillagersBoxed[i].Checked;
             Array.Copy(Villagers[i].Write(), 0, Save.Data, 0x027D10 + 0x24F8 * i, 0x24F8);
         }
 
