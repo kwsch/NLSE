@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Threading;
@@ -48,7 +49,6 @@ namespace NLSE
                 return;
             }
 
-            string path = files[0]; // open first D&D
             long len = new FileInfo(files[0]).Length;
             if (len == 0x80000 || len == 0xC0000 || len == 0x121000 || len == 0x130000) // RAM
             {
@@ -152,7 +152,7 @@ namespace NLSE
             catch (Exception ex)
             {
                 // Error
-                MessageBox.Show("Error:" + Environment.NewLine + ex);
+                Util.Error("Error:" + Environment.NewLine + ex);
             }
         }
         private void clickGarden(object sender, EventArgs e)
@@ -175,7 +175,7 @@ namespace NLSE
             catch (Exception ex)
             {
                 // Error
-                MessageBox.Show("Error:" + Environment.NewLine + ex);
+                Util.Error("Error:" + Environment.NewLine + ex);
             }
         }
         private void clickFriend(object sender, EventArgs e)
@@ -198,8 +198,20 @@ namespace NLSE
             catch (Exception ex)
             {
                 // Error
-                MessageBox.Show("Error:" + Environment.NewLine + ex);
+                Util.Error("Error:" + Environment.NewLine + ex);
             }
+        }
+
+        private void clickHelp(object sender, CancelEventArgs e)
+        {
+            Util.Alert(String.Format("NLSE - By Kaphotics{0}" +
+                                     "{0}" +
+                                     "To begin, drag the folder that contains your exported save file (garden.dat) onto the program window.{0}" +
+                                     "{0}" +
+                                     "Credits:{0}" +
+                                     "Big thanks to marc_max (ACNL Save Editor), NeoKamek (LeafTools), and the many other contributors to the scene!",
+                Environment.NewLine));
+            e.Cancel = true; // remove ? cursor
         }
     }
 }

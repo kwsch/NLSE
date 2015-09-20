@@ -97,12 +97,14 @@
             this.Controls.Add(this.CB_Friend);
             this.Controls.Add(this.B_Friend);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AC:NL Save Editor";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.clickHelp);
             this.ResumeLayout(false);
 
         }
