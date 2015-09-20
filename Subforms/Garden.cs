@@ -192,12 +192,18 @@ namespace NLSE
             }
             public byte[] Write()
             {
+                // Replace all instances of Town Data with Updated Data
+                byte[] oldTownIDData = Data.Skip(0x5C7B8).Take(0x14).ToArray();
+                byte[] newTownIDData = new[]
+                {
+                    (byte) ((Data[0x5C7B8] & 0xFC) | TownHallColor),
+                    (byte) ((Data[0x5C7B9] & 0xFC) | TrainStationColor)
+                }.Concat(Encoding.Unicode.GetBytes(TownName.PadRight(9, '\0'))).ToArray();
+                Util.ReplaceAllBytes(Data, oldTownIDData, newTownIDData);
+
                 Data[0x4DA81] = (byte)GrassType;
-                Data[0x5C7B8] = (byte)((Data[0x5C7B8] & 0xFC) | TownHallColor);
-                Data[0x5C7B9] = (byte)((Data[0x5C7B9] & 0xFC) | TrainStationColor);
                 Data[0x5C836] = (byte)NativeFruit;
 
-                Array.Copy(Encoding.Unicode.GetBytes(TownName.PadRight(9, '\0')), 0, Data, 0x5C7BA, 0x12);
                 Array.Copy(BitConverter.GetBytes(SecondsPlayed), 0, Data, 0x5C7B0, 4);
                 Array.Copy(BitConverter.GetBytes(PlayDays), 0, Data, 0x5C83A, 2);
                 return Data;

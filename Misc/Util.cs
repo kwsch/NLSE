@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace NLSE
@@ -69,6 +70,30 @@ namespace NLSE
             catch { val = cb.SelectedIndex; if (val < 0) val = 0; }
 
             return val;
+        }
+        // Find Code off of Reference
+        internal static int IndexOfBytes(byte[] array, byte[] pattern, int startIndex, int count)
+        {
+            int i = startIndex;
+            int endIndex = count > 0 ? startIndex + count : array.Length;
+            int fidx = 0;
+
+            while (i++ != endIndex - 1)
+            {
+                if (array[i] != pattern[fidx]) i -= fidx;
+                fidx = (array[i] == pattern[fidx]) ? ++fidx : 0;
+                if (fidx == pattern.Length)
+                    return i - fidx + 1;
+            }
+            return -1;
+        }
+        internal static void ReplaceAllBytes(byte[] array, byte[] oldPattern, byte[] newPattern)
+        {
+            if (oldPattern.SequenceEqual(newPattern))
+                return;
+            int offset; // Loop until no instances of oldPattern are found
+            while ((offset = IndexOfBytes(array, oldPattern, 0, 0)) != -1)
+                Array.Copy(newPattern, 0, array, offset, newPattern.Length);
         }
     }
 }
