@@ -170,6 +170,16 @@
             this.PB_Dresser1 = new System.Windows.Forms.PictureBox();
             this.L_Dresser = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.CHK_V10 = new System.Windows.Forms.CheckBox();
+            this.CHK_V09 = new System.Windows.Forms.CheckBox();
+            this.CHK_V08 = new System.Windows.Forms.CheckBox();
+            this.CHK_V07 = new System.Windows.Forms.CheckBox();
+            this.CHK_V06 = new System.Windows.Forms.CheckBox();
+            this.CHK_V05 = new System.Windows.Forms.CheckBox();
+            this.CHK_V04 = new System.Windows.Forms.CheckBox();
+            this.CHK_V03 = new System.Windows.Forms.CheckBox();
+            this.CHK_V02 = new System.Windows.Forms.CheckBox();
+            this.CHK_V01 = new System.Windows.Forms.CheckBox();
             this.TB_VillagerCatch10 = new System.Windows.Forms.TextBox();
             this.TB_VillagerCatch9 = new System.Windows.Forms.TextBox();
             this.TB_VillagerCatch8 = new System.Windows.Forms.TextBox();
@@ -307,16 +317,6 @@
             this.TB_Flag1 = new System.Windows.Forms.TextBox();
             this.TB_Flag2 = new System.Windows.Forms.TextBox();
             this.L_CurrentItem = new System.Windows.Forms.Label();
-            this.CHK_V01 = new System.Windows.Forms.CheckBox();
-            this.CHK_V02 = new System.Windows.Forms.CheckBox();
-            this.CHK_V03 = new System.Windows.Forms.CheckBox();
-            this.CHK_V04 = new System.Windows.Forms.CheckBox();
-            this.CHK_V05 = new System.Windows.Forms.CheckBox();
-            this.CHK_V06 = new System.Windows.Forms.CheckBox();
-            this.CHK_V07 = new System.Windows.Forms.CheckBox();
-            this.CHK_V08 = new System.Windows.Forms.CheckBox();
-            this.CHK_V09 = new System.Windows.Forms.CheckBox();
-            this.CHK_V10 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1341,7 +1341,7 @@
             this.L_Badge23.Name = "L_Badge23";
             this.L_Badge23.Size = new System.Drawing.Size(93, 23);
             this.L_Badge23.TabIndex = 67;
-            this.L_Badge23.Text = "Villager:";
+            this.L_Badge23.Text = "Dream Suite:";
             this.L_Badge23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CB_Badge23
@@ -1359,11 +1359,11 @@
             // 
             // L_Badge22
             // 
-            this.L_Badge22.Location = new System.Drawing.Point(426, 498);
+            this.L_Badge22.Location = new System.Drawing.Point(401, 498);
             this.L_Badge22.Name = "L_Badge22";
-            this.L_Badge22.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge22.Size = new System.Drawing.Size(118, 23);
             this.L_Badge22.TabIndex = 65;
-            this.L_Badge22.Text = "Dream:";
+            this.L_Badge22.Text = "Helping Neighbors:";
             this.L_Badge22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CB_Badge22
@@ -1385,7 +1385,7 @@
             this.L_Badge21.Name = "L_Badge21";
             this.L_Badge21.Size = new System.Drawing.Size(93, 23);
             this.L_Badge21.TabIndex = 63;
-            this.L_Badge21.Text = "Ambassador:";
+            this.L_Badge21.Text = "Time Played:";
             this.L_Badge21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CB_Badge21
@@ -1407,7 +1407,7 @@
             this.L_Badge20.Name = "L_Badge20";
             this.L_Badge20.Size = new System.Drawing.Size(93, 23);
             this.L_Badge20.TabIndex = 61;
-            this.L_Badge20.Text = "Traveler:";
+            this.L_Badge20.Text = "Home Points:";
             this.L_Badge20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CB_Badge20
@@ -1617,7 +1617,7 @@
             this.L_Badge19.Name = "L_Badge19";
             this.L_Badge19.Size = new System.Drawing.Size(93, 23);
             this.L_Badge19.TabIndex = 47;
-            this.L_Badge19.Text = "StreetPass:";
+            this.L_Badge19.Text = "K.K. Slider:";
             this.L_Badge19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge18
@@ -1626,7 +1626,7 @@
             this.L_Badge18.Name = "L_Badge18";
             this.L_Badge18.Size = new System.Drawing.Size(93, 23);
             this.L_Badge18.TabIndex = 46;
-            this.L_Badge18.Text = "Postman:";
+            this.L_Badge18.Text = "Catalog:";
             this.L_Badge18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge17
@@ -1635,7 +1635,7 @@
             this.L_Badge17.Name = "L_Badge17";
             this.L_Badge17.Size = new System.Drawing.Size(93, 23);
             this.L_Badge17.TabIndex = 45;
-            this.L_Badge17.Text = "Town Helper:";
+            this.L_Badge17.Text = "Refurbishing:";
             this.L_Badge17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge16
@@ -1644,7 +1644,7 @@
             this.L_Badge16.Name = "L_Badge16";
             this.L_Badge16.Size = new System.Drawing.Size(93, 23);
             this.L_Badge16.TabIndex = 44;
-            this.L_Badge16.Text = "K.K. Slider:";
+            this.L_Badge16.Text = "Letters:";
             this.L_Badge16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge15
@@ -1653,7 +1653,7 @@
             this.L_Badge15.Name = "L_Badge15";
             this.L_Badge15.Size = new System.Drawing.Size(93, 23);
             this.L_Badge15.TabIndex = 43;
-            this.L_Badge15.Text = "Happy Homer:";
+            this.L_Badge15.Text = "Shopping:";
             this.L_Badge15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge14
@@ -1662,7 +1662,7 @@
             this.L_Badge14.Name = "L_Badge14";
             this.L_Badge14.Size = new System.Drawing.Size(93, 23);
             this.L_Badge14.TabIndex = 42;
-            this.L_Badge14.Text = "Catalog:";
+            this.L_Badge14.Text = "Weeds:";
             this.L_Badge14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge13
@@ -1671,7 +1671,7 @@
             this.L_Badge13.Name = "L_Badge13";
             this.L_Badge13.Size = new System.Drawing.Size(93, 23);
             this.L_Badge13.TabIndex = 41;
-            this.L_Badge13.Text = "Refurbishing:";
+            this.L_Badge13.Text = "StreetPass:";
             this.L_Badge13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge12
@@ -1680,7 +1680,7 @@
             this.L_Badge12.Name = "L_Badge12";
             this.L_Badge12.Size = new System.Drawing.Size(93, 23);
             this.L_Badge12.TabIndex = 40;
-            this.L_Badge12.Text = "Shopper:";
+            this.L_Badge12.Text = "Medals:";
             this.L_Badge12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge11
@@ -1707,7 +1707,7 @@
             this.L_Badge09.Name = "L_Badge09";
             this.L_Badge09.Size = new System.Drawing.Size(93, 23);
             this.L_Badge09.TabIndex = 37;
-            this.L_Badge09.Text = "Weed:";
+            this.L_Badge09.Text = "Watering Flowers:";
             this.L_Badge09.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge08
@@ -1716,16 +1716,16 @@
             this.L_Badge08.Name = "L_Badge08";
             this.L_Badge08.Size = new System.Drawing.Size(93, 23);
             this.L_Badge08.TabIndex = 36;
-            this.L_Badge08.Text = "Gardening:";
+            this.L_Badge08.Text = "Been Visited:";
             this.L_Badge08.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge07
             // 
-            this.L_Badge07.Location = new System.Drawing.Point(426, 168);
+            this.L_Badge07.Location = new System.Drawing.Point(398, 168);
             this.L_Badge07.Name = "L_Badge07";
-            this.L_Badge07.Size = new System.Drawing.Size(93, 23);
+            this.L_Badge07.Size = new System.Drawing.Size(121, 23);
             this.L_Badge07.TabIndex = 35;
-            this.L_Badge07.Text = "Medalist:";
+            this.L_Badge07.Text = "Visited Other Towns:";
             this.L_Badge07.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge06
@@ -1752,7 +1752,7 @@
             this.L_Badge04.Name = "L_Badge04";
             this.L_Badge04.Size = new System.Drawing.Size(93, 23);
             this.L_Badge04.TabIndex = 32;
-            this.L_Badge04.Text = "Ichtyology:";
+            this.L_Badge04.Text = "Entomology:";
             this.L_Badge04.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge03
@@ -1761,7 +1761,7 @@
             this.L_Badge03.Name = "L_Badge03";
             this.L_Badge03.Size = new System.Drawing.Size(93, 23);
             this.L_Badge03.TabIndex = 31;
-            this.L_Badge03.Text = "Entomology:";
+            this.L_Badge03.Text = "Ichtyology:";
             this.L_Badge03.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge02
@@ -1779,7 +1779,7 @@
             this.L_Badge01.Name = "L_Badge01";
             this.L_Badge01.Size = new System.Drawing.Size(93, 23);
             this.L_Badge01.TabIndex = 29;
-            this.L_Badge01.Text = "Angler:";
+            this.L_Badge01.Text = "Bug Catcher:";
             this.L_Badge01.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // L_Badge00
@@ -1788,7 +1788,7 @@
             this.L_Badge00.Name = "L_Badge00";
             this.L_Badge00.Size = new System.Drawing.Size(93, 23);
             this.L_Badge00.TabIndex = 28;
-            this.L_Badge00.Text = "Bug Catcher:";
+            this.L_Badge00.Text = "Angler:";
             this.L_Badge00.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CB_Badge19
@@ -2179,6 +2179,106 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Villagers";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V10
+            // 
+            this.CHK_V10.AutoSize = true;
+            this.CHK_V10.Location = new System.Drawing.Point(345, 250);
+            this.CHK_V10.Name = "CHK_V10";
+            this.CHK_V10.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V10.TabIndex = 55;
+            this.CHK_V10.Text = "Moving";
+            this.CHK_V10.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V09
+            // 
+            this.CHK_V09.AutoSize = true;
+            this.CHK_V09.Location = new System.Drawing.Point(345, 223);
+            this.CHK_V09.Name = "CHK_V09";
+            this.CHK_V09.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V09.TabIndex = 54;
+            this.CHK_V09.Text = "Moving";
+            this.CHK_V09.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V08
+            // 
+            this.CHK_V08.AutoSize = true;
+            this.CHK_V08.Location = new System.Drawing.Point(345, 196);
+            this.CHK_V08.Name = "CHK_V08";
+            this.CHK_V08.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V08.TabIndex = 53;
+            this.CHK_V08.Text = "Moving";
+            this.CHK_V08.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V07
+            // 
+            this.CHK_V07.AutoSize = true;
+            this.CHK_V07.Location = new System.Drawing.Point(345, 169);
+            this.CHK_V07.Name = "CHK_V07";
+            this.CHK_V07.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V07.TabIndex = 52;
+            this.CHK_V07.Text = "Moving";
+            this.CHK_V07.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V06
+            // 
+            this.CHK_V06.AutoSize = true;
+            this.CHK_V06.Location = new System.Drawing.Point(345, 142);
+            this.CHK_V06.Name = "CHK_V06";
+            this.CHK_V06.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V06.TabIndex = 51;
+            this.CHK_V06.Text = "Moving";
+            this.CHK_V06.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V05
+            // 
+            this.CHK_V05.AutoSize = true;
+            this.CHK_V05.Location = new System.Drawing.Point(345, 115);
+            this.CHK_V05.Name = "CHK_V05";
+            this.CHK_V05.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V05.TabIndex = 50;
+            this.CHK_V05.Text = "Moving";
+            this.CHK_V05.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V04
+            // 
+            this.CHK_V04.AutoSize = true;
+            this.CHK_V04.Location = new System.Drawing.Point(345, 88);
+            this.CHK_V04.Name = "CHK_V04";
+            this.CHK_V04.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V04.TabIndex = 49;
+            this.CHK_V04.Text = "Moving";
+            this.CHK_V04.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V03
+            // 
+            this.CHK_V03.AutoSize = true;
+            this.CHK_V03.Location = new System.Drawing.Point(345, 61);
+            this.CHK_V03.Name = "CHK_V03";
+            this.CHK_V03.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V03.TabIndex = 48;
+            this.CHK_V03.Text = "Moving";
+            this.CHK_V03.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V02
+            // 
+            this.CHK_V02.AutoSize = true;
+            this.CHK_V02.Location = new System.Drawing.Point(345, 34);
+            this.CHK_V02.Name = "CHK_V02";
+            this.CHK_V02.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V02.TabIndex = 47;
+            this.CHK_V02.Text = "Moving";
+            this.CHK_V02.UseVisualStyleBackColor = true;
+            // 
+            // CHK_V01
+            // 
+            this.CHK_V01.AutoSize = true;
+            this.CHK_V01.Location = new System.Drawing.Point(345, 7);
+            this.CHK_V01.Name = "CHK_V01";
+            this.CHK_V01.Size = new System.Drawing.Size(61, 17);
+            this.CHK_V01.TabIndex = 46;
+            this.CHK_V01.Text = "Moving";
+            this.CHK_V01.UseVisualStyleBackColor = true;
             // 
             // TB_VillagerCatch10
             // 
@@ -3689,106 +3789,6 @@
             this.L_CurrentItem.Size = new System.Drawing.Size(67, 13);
             this.L_CurrentItem.TabIndex = 15;
             this.L_CurrentItem.Text = "Current Item:";
-            // 
-            // CHK_V01
-            // 
-            this.CHK_V01.AutoSize = true;
-            this.CHK_V01.Location = new System.Drawing.Point(345, 7);
-            this.CHK_V01.Name = "CHK_V01";
-            this.CHK_V01.Size = new System.Drawing.Size(61, 17);
-            this.CHK_V01.TabIndex = 46;
-            this.CHK_V01.Text = "Moving";
-            this.CHK_V01.UseVisualStyleBackColor = true;
-            // 
-            // CHK_V02
-            // 
-            this.CHK_V02.AutoSize = true;
-            this.CHK_V02.Location = new System.Drawing.Point(345, 34);
-            this.CHK_V02.Name = "CHK_V02";
-            this.CHK_V02.Size = new System.Drawing.Size(61, 17);
-            this.CHK_V02.TabIndex = 47;
-            this.CHK_V02.Text = "Moving";
-            this.CHK_V02.UseVisualStyleBackColor = true;
-            // 
-            // CHK_V03
-            // 
-            this.CHK_V03.AutoSize = true;
-            this.CHK_V03.Location = new System.Drawing.Point(345, 61);
-            this.CHK_V03.Name = "CHK_V03";
-            this.CHK_V03.Size = new System.Drawing.Size(61, 17);
-            this.CHK_V03.TabIndex = 48;
-            this.CHK_V03.Text = "Moving";
-            this.CHK_V03.UseVisualStyleBackColor = true;
-            // 
-            // CHK_V04
-            // 
-            this.CHK_V04.AutoSize = true;
-            this.CHK_V04.Location = new System.Drawing.Point(345, 88);
-            this.CHK_V04.Name = "CHK_V04";
-            this.CHK_V04.Size = new System.Drawing.Size(61, 17);
-            this.CHK_V04.TabIndex = 49;
-            this.CHK_V04.Text = "Moving";
-            this.CHK_V04.UseVisualStyleBackColor = true;
-            // 
-            // CHK_V05
-            // 
-            this.CHK_V05.AutoSize = true;
-            this.CHK_V05.Location = new System.Drawing.Point(345, 115);
-            this.CHK_V05.Name = "CHK_V05";
-            this.CHK_V05.Size = new System.Drawing.Size(61, 17);
-            this.CHK_V05.TabIndex = 50;
-            this.CHK_V05.Text = "Moving";
-            this.CHK_V05.UseVisualStyleBackColor = true;
-            // 
-            // CHK_V06
-            // 
-            this.CHK_V06.AutoSize = true;
-            this.CHK_V06.Location = new System.Drawing.Point(345, 142);
-            this.CHK_V06.Name = "CHK_V06";
-            this.CHK_V06.Size = new System.Drawing.Size(61, 17);
-            this.CHK_V06.TabIndex = 51;
-            this.CHK_V06.Text = "Moving";
-            this.CHK_V06.UseVisualStyleBackColor = true;
-            // 
-            // CHK_V07
-            // 
-            this.CHK_V07.AutoSize = true;
-            this.CHK_V07.Location = new System.Drawing.Point(345, 169);
-            this.CHK_V07.Name = "CHK_V07";
-            this.CHK_V07.Size = new System.Drawing.Size(61, 17);
-            this.CHK_V07.TabIndex = 52;
-            this.CHK_V07.Text = "Moving";
-            this.CHK_V07.UseVisualStyleBackColor = true;
-            // 
-            // CHK_V08
-            // 
-            this.CHK_V08.AutoSize = true;
-            this.CHK_V08.Location = new System.Drawing.Point(345, 196);
-            this.CHK_V08.Name = "CHK_V08";
-            this.CHK_V08.Size = new System.Drawing.Size(61, 17);
-            this.CHK_V08.TabIndex = 53;
-            this.CHK_V08.Text = "Moving";
-            this.CHK_V08.UseVisualStyleBackColor = true;
-            // 
-            // CHK_V09
-            // 
-            this.CHK_V09.AutoSize = true;
-            this.CHK_V09.Location = new System.Drawing.Point(345, 223);
-            this.CHK_V09.Name = "CHK_V09";
-            this.CHK_V09.Size = new System.Drawing.Size(61, 17);
-            this.CHK_V09.TabIndex = 54;
-            this.CHK_V09.Text = "Moving";
-            this.CHK_V09.UseVisualStyleBackColor = true;
-            // 
-            // CHK_V10
-            // 
-            this.CHK_V10.AutoSize = true;
-            this.CHK_V10.Location = new System.Drawing.Point(345, 250);
-            this.CHK_V10.Name = "CHK_V10";
-            this.CHK_V10.Size = new System.Drawing.Size(61, 17);
-            this.CHK_V10.TabIndex = 55;
-            this.CHK_V10.Text = "Moving";
-            this.CHK_V10.UseVisualStyleBackColor = true;
             // 
             // Garden
             // 
