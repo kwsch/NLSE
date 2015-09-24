@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Friend));
             this.B_Cancel = new System.Windows.Forms.Button();
             this.B_Save = new System.Windows.Forms.Button();
+            this.L_Disclaimer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // B_Cancel
@@ -55,11 +56,22 @@
             this.B_Save.UseVisualStyleBackColor = true;
             this.B_Save.Click += new System.EventHandler(this.B_Save_Click);
             // 
+            // L_Disclaimer
+            // 
+            this.L_Disclaimer.AutoSize = true;
+            this.L_Disclaimer.ForeColor = System.Drawing.Color.Red;
+            this.L_Disclaimer.Location = new System.Drawing.Point(61, 125);
+            this.L_Disclaimer.Name = "L_Disclaimer";
+            this.L_Disclaimer.Size = new System.Drawing.Size(162, 13);
+            this.L_Disclaimer.TabIndex = 7;
+            this.L_Disclaimer.Text = "This Editor does not do anything.";
+            // 
             // Friend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.L_Disclaimer);
             this.Controls.Add(this.B_Cancel);
             this.Controls.Add(this.B_Save);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -69,6 +81,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Friend Editor";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -76,5 +89,6 @@
 
         private System.Windows.Forms.Button B_Cancel;
         private System.Windows.Forms.Button B_Save;
+        private System.Windows.Forms.Label L_Disclaimer;
     }
 }
