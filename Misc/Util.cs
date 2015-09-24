@@ -91,8 +91,8 @@ namespace NLSE
         {
             if (oldPattern.Length != newPattern.Length || oldPattern.SequenceEqual(newPattern))
                 return;
-            int offset; // Loop until no instances of oldPattern are found
-            while ((offset = IndexOfBytes(array, oldPattern, 0, 0)) != -1)
+            int offset = 0; // Loop until no instances of oldPattern are found
+            while ((offset = IndexOfBytes(array, oldPattern, offset, 0)) != -1)
                 Array.Copy(newPattern, 0, array, offset, newPattern.Length);
         }
     }
