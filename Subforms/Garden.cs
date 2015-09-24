@@ -176,6 +176,9 @@ namespace NLSE
         private GardenData Save;
         class GardenData
         {
+            public byte[] Data;
+            public byte[] TownBytes;
+
             public string TownName;
             public int TownHallColor;
             public int TrainStationColor;
@@ -183,10 +186,10 @@ namespace NLSE
             public int NativeFruit;
             public uint SecondsPlayed;
             public ushort PlayDays;
-            public byte[] Data;
             public GardenData(byte[] data)
             {
                 Data = data;
+                TownBytes = getTownBytes();
                 TownName = Encoding.Unicode.GetString(Data.Skip(0x5C7BA).Take(0x12).ToArray()).Trim('\0');
                 GrassType = Data[0x4DA81];
                 TownHallColor = Data[0x5C7B8] & 3;
@@ -197,26 +200,26 @@ namespace NLSE
             }
             public byte[] Write()
             {
-                // Replace all instances of Town Data with Updated Data
-                byte[] oldTownIDData = Data.Skip(0x5C7B8).Take(0x14).ToArray();
-                byte[] newTownIDData = new[]
-                {
-                    (byte) ((Data[0x5C7B8] & 0xFC) | TownHallColor),
-                    (byte) ((Data[0x5C7B9] & 0xFC) | TrainStationColor)
-                }.Concat(Encoding.Unicode.GetBytes(TownName.PadRight(9, '\0'))).ToArray();
-                Util.ReplaceAllBytes(Data, oldTownIDData, newTownIDData);
+                Data[0x5C7B8] = (byte)(Data[0x5C7B8] & 0xFC | TownHallColor);
+                Data[0x5C7B9] = (byte)(Data[0x5C7B9] & 0xFC | TrainStationColor);
+                Array.Copy(Encoding.Unicode.GetBytes(TownName.PadRight(9, '\0')), 0, Data, 0x5C7BA, 0x12);
 
                 Data[0x4DA81] = (byte)GrassType;
                 Data[0x5C836] = (byte)NativeFruit;
-
                 Array.Copy(BitConverter.GetBytes(SecondsPlayed), 0, Data, 0x5C7B0, 4);
                 Array.Copy(BitConverter.GetBytes(PlayDays), 0, Data, 0x5C83A, 2);
                 return Data;
+            }
+            public byte[] getTownBytes()
+            {
+                return Data.Skip(0x5C7B8).Take(0x14).ToArray();
             }
         }
         class Player
         {
             public byte[] Data;
+            public byte[] PlayerBytes;
+
             private uint U32;
             public byte Hair, HairColor, 
                 Face, EyeColor, 
@@ -234,6 +237,7 @@ namespace NLSE
             public Player(byte[] data)
             {
                 Data = data;
+                PlayerBytes = getPlayerBytes();
 
                 U32 = BitConverter.ToUInt32(data, 0);
                 Hair = Data[4];
@@ -242,9 +246,8 @@ namespace NLSE
                 EyeColor = Data[7];
                 Tan = Data[8];
                 U9 = Data[9];
-
                 Name = Encoding.Unicode.GetString(Data.Skip(0x55A8).Take(0x12).ToArray()).Trim('\0');
-                Gender = Data[0x6F4C];
+                Gender = Data[0x55BA];
                 HomeTown = Encoding.Unicode.GetString(Data.Skip(0x55BE).Take(0x12).ToArray()).Trim('\0');
 
                 try { JPEG = Image.FromStream(new MemoryStream(Data.Skip(0x5724).Take(0x1400).ToArray())); }
@@ -270,11 +273,10 @@ namespace NLSE
                 Data[7] = EyeColor;
                 Data[8] = Tan;
                 Data[9] = U9;
-                Data[0x6F4C] = (byte)Gender;
 
                 Array.Copy(Encoding.Unicode.GetBytes(Name.PadRight(9, '\0')), 0, Data, 0x55A8, 0x12);
+                Data[0x55BA] = (byte)Gender;
                 Array.Copy(Encoding.Unicode.GetBytes(HomeTown.PadRight(9, '\0')), 0, Data, 0x55BE, 0x12);
-
                 Array.Copy(Badges, 0, Data, 0x569C, Badges.Length);
 
                 for (int i = 0; i < Pockets.Length; i++)
@@ -287,6 +289,10 @@ namespace NLSE
                     Array.Copy(Dressers[i].Write(), 0, Data, 0x8E18 + i*4, 4);
 
                 return Data;
+            }
+            public byte[] getPlayerBytes()
+            {
+                return Data.Skip(0x55A6).Take(0x2E).ToArray();
             }
         }
         class Building
@@ -486,8 +492,17 @@ namespace NLSE
 
                 Save.PlayDays = (ushort)NUD_OverallDays.Value;
             }
-            // Finish
-            return Save.Write();
+
+            byte[] finalData = (byte[])Save.Write().Clone();
+            {
+                
+                // Update ID references with their current values
+                for (int i = 0; i < 4; i++)
+                    Util.ReplaceAllBytes(finalData, Players[i].PlayerBytes, Players[i].getPlayerBytes());
+
+                Util.ReplaceAllBytes(finalData, Save.TownBytes, Save.getTownBytes());
+            }
+            return finalData;
         }
 
         private int currentPlayer = -1;
