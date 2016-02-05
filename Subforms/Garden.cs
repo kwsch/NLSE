@@ -1219,7 +1219,13 @@ namespace NLSE
             int acre = Array.IndexOf(aeTownAcres, sender as PictureBox);
             if (acre < 0) return;
 
-            aeTownAcreTiles[acre] = (ushort)((aeTownAcreTiles[acre] + ((e.Button == MouseButtons.Right) ? 153 : 1)) % 154);
+            int newAcre = aeTownAcreTiles[acre] + (e.Button == MouseButtons.Right ? -1 : 1);
+            if (newAcre < 0)
+                newAcre = CHK_IslandAcresOnTown.Checked ? 203 : 153;
+            else if (newAcre > 203 || (newAcre > 153 && !CHK_IslandAcresOnTown.Checked))
+                newAcre = 1;
+
+            aeTownAcreTiles[acre] = (ushort)newAcre;
             aeTownAcres[acre].BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("acre_" + aeTownAcreTiles[acre]);
         }
         private void clickIslandAcre(object sender, MouseEventArgs e)

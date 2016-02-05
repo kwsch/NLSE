@@ -317,6 +317,7 @@
             this.TB_Flag1 = new System.Windows.Forms.TextBox();
             this.TB_Flag2 = new System.Windows.Forms.TextBox();
             this.L_CurrentItem = new System.Windows.Forms.Label();
+            this.CHK_IslandAcresOnTown = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -2938,6 +2939,7 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.CHK_IslandAcresOnTown);
             this.tabPage7.Controls.Add(this.B_ExportAcres);
             this.tabPage7.Controls.Add(this.B_ImportAcres);
             this.tabPage7.Controls.Add(this.L_AcreInfo);
@@ -3790,6 +3792,16 @@
             this.L_CurrentItem.TabIndex = 15;
             this.L_CurrentItem.Text = "Current Item:";
             // 
+            // CHK_IslandAcresOnTown
+            // 
+            this.CHK_IslandAcresOnTown.AutoSize = true;
+            this.CHK_IslandAcresOnTown.Location = new System.Drawing.Point(332, 54);
+            this.CHK_IslandAcresOnTown.Name = "CHK_IslandAcresOnTown";
+            this.CHK_IslandAcresOnTown.Size = new System.Drawing.Size(112, 30);
+            this.CHK_IslandAcresOnTown.TabIndex = 259;
+            this.CHK_IslandAcresOnTown.Text = "Allow Island Acres\r\non Town Map";
+            this.CHK_IslandAcresOnTown.UseVisualStyleBackColor = true;
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4257,5 +4269,6 @@
         private System.Windows.Forms.CheckBox CHK_V04;
         private System.Windows.Forms.CheckBox CHK_V03;
         private System.Windows.Forms.CheckBox CHK_V02;
+        private System.Windows.Forms.CheckBox CHK_IslandAcresOnTown;
     }
 }
