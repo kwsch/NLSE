@@ -1294,7 +1294,7 @@ namespace NLSE
                 return;
 
             byte[] data = File.ReadAllBytes(ofd.FileName);
-            if (data.Length != 2*6*7 || data.Length != 2*4*4)
+            if (data.Length != 2*6*7 && data.Length != 2*4*4)
             {
                 Util.Error("Input file length is not a valid acre map.",
                     String.Format("Data Size: {1}{0}Acre Count: {2}", Environment.NewLine, data.Length, data.Length/2));
