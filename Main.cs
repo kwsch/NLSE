@@ -18,6 +18,7 @@ namespace NLSE
         internal static List<cbItem> vList = Data.getCBList(villagerNames, null);
         internal static List<cbItem> buildingList = Data.getCBItems(buildingNames);
         internal static ACNLVillager[] villagerList = Data.GetVillagers();
+
         public Main()
         {
             // Set up.
@@ -132,6 +133,7 @@ namespace NLSE
 
         // Editing Windows
         internal static byte[] SaveData;
+
         private void clickExhibition(object sender, EventArgs e)
         {
             string dataPath = Path.Combine(root, "exhibition.dat");
@@ -157,7 +159,7 @@ namespace NLSE
         }
         private void clickGarden(object sender, EventArgs e)
         {
-            string dataPath = Path.Combine(root, "garden.dat");
+            string dataPath = Path.Combine(root, "garden_plus.dat");
             if (!File.Exists(dataPath)) return;
 
             // Load Data
