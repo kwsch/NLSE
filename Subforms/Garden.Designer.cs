@@ -1794,6 +1794,7 @@
             this.CB_HousePavement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_HousePavement.FormattingEnabled = true;
             this.CB_HousePavement.Items.AddRange(new object[] {
+            "Colorful Gravel",
             "Stone Pavement",
             "Brick Pavement",
             "Pebble Pavement",
