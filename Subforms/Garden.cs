@@ -166,6 +166,7 @@ namespace NLSE
             public int Shampoodle;
             public int SewingMachine;
             public int MuseumShop;
+            public uint TreeSize;
 
             public GardenData(byte[] data)
             {
@@ -176,6 +177,7 @@ namespace NLSE
                 TownHallColor = Data[0x621B8] & 3;
                 TrainStationColor = Data[0x621B9] & 3;
                 NativeFruit = Data[0x6223A];
+                TreeSize = Data[0x4BE86];
 
                 Nookling = Data[0x62264];
                 Leif = Data[0x666F4];
@@ -208,6 +210,8 @@ namespace NLSE
                 Data[0x621B8] = (byte)(Data[0x621B8] & 0xFC | TownHallColor);
                 Data[0x621B9] = (byte)(Data[0x621B9] & 0xFC | TrainStationColor);
                 Array.Copy(Encoding.Unicode.GetBytes(TownName.PadRight(9, '\0')), 0, Data, 0x621BA, 0x12);
+
+                Data[0x4BE86] = (byte)TreeSize;
 
                 Data[0x53481] = (byte)GrassType;
                 Data[0x6223A] = (byte)NativeFruit;
@@ -588,6 +592,7 @@ namespace NLSE
                 CB_NativeFruit.SelectedIndex = Save.NativeFruit;
                 CB_TownHallColor.SelectedIndex = Save.TownHallColor;
                 CB_TrainStationColor.SelectedIndex = Save.TrainStationColor;
+                NUD_TreeSize.Value = Save.TreeSize;
 
                 CB_Nookling.SelectedIndex = Save.Nookling;
 
@@ -723,6 +728,8 @@ namespace NLSE
                 Save.SecondsPlayed += (uint)NUD_Minutes.Value * 60;
                 Save.SecondsPlayed += (uint)NUD_Hours.Value * 3600;
                 Save.SecondsPlayed += (uint)NUD_Days.Value * 86400;
+
+                Save.TreeSize = (uint)NUD_TreeSize.Value;
 
                 Save.PlayDays = (ushort)NUD_OverallDays.Value;
 
@@ -3341,6 +3348,74 @@ namespace NLSE
             for (int i = 0; i < Buildings.Length; i++)
                 Buildings[i] = new Building(Save.Data.Skip(0x4BE88 + i * 4).Take(4).ToArray());
             populateBuildingList();
+        }
+
+        private void NUD_TreeSize_ValueChanged(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Do you want to fix your town play time to match with your tree size ?", "", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                if (NUD_TreeSize.Value == 0)
+                {
+                    NUD_Days.Value = 0;
+                    NUD_Hours.Value = 1;
+                    NUD_Minutes.Value = 0;
+                    NUD_Seconds.Value = 0;
+                }
+                else if (NUD_TreeSize.Value == 1)
+                {
+                    NUD_Days.Value = 0;
+                    NUD_Hours.Value = 5;
+                    NUD_Minutes.Value = 0;
+                    NUD_Seconds.Value = 0;
+                }
+                else if (NUD_TreeSize.Value == 2)
+                {
+                    NUD_Days.Value = 0;
+                    NUD_Hours.Value = 20;
+                    NUD_Minutes.Value = 0;
+                    NUD_Seconds.Value = 0;
+                }
+                else if (NUD_TreeSize.Value == 3)
+                {
+                    NUD_Days.Value = 2;
+                    NUD_Hours.Value = 2;
+                    NUD_Minutes.Value = 0;
+                    NUD_Seconds.Value = 0;
+                }
+                else if (NUD_TreeSize.Value == 4)
+                {
+                    NUD_Days.Value = 4;
+                    NUD_Hours.Value = 4;
+                    NUD_Minutes.Value = 0;
+                    NUD_Seconds.Value = 0;
+                }
+                else if (NUD_TreeSize.Value == 5)
+                {
+                    NUD_Days.Value = 7;
+                    NUD_Hours.Value = 12;
+                    NUD_Minutes.Value = 0;
+                    NUD_Seconds.Value = 0;
+                }
+                else if (NUD_TreeSize.Value == 6)
+                {
+                    NUD_Days.Value = 12;
+                    NUD_Hours.Value = 12;
+                    NUD_Minutes.Value = 0;
+                    NUD_Seconds.Value = 0;
+                }
+                else if (NUD_TreeSize.Value == 7)
+                {
+                    NUD_Days.Value = 20;
+                    NUD_Hours.Value = 20;
+                    NUD_Minutes.Value = 0;
+                    NUD_Seconds.Value = 0;
+                }
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
         }
 
         private void BTN_DMPattern_Click(object sender, EventArgs e)

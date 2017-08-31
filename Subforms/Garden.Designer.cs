@@ -493,6 +493,8 @@
             this.CB_Flag = new System.Windows.Forms.ComboBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.Info = new System.Windows.Forms.ToolStripStatusLabel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.NUD_TreeSize = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -748,6 +750,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_TreeSize)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -4489,6 +4492,8 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.NUD_TreeSize);
+            this.tabPage8.Controls.Add(this.label40);
             this.tabPage8.Controls.Add(this.BTN_ImportBuildings);
             this.tabPage8.Controls.Add(this.BTN_ExportBuildings);
             this.tabPage8.Controls.Add(this.groupBox21);
@@ -4566,7 +4571,7 @@
             this.groupBox21.Controls.Add(this.label20);
             this.groupBox21.Controls.Add(this.label18);
             this.groupBox21.Controls.Add(this.label19);
-            this.groupBox21.Location = new System.Drawing.Point(366, 313);
+            this.groupBox21.Location = new System.Drawing.Point(366, 323);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Size = new System.Drawing.Size(227, 193);
             this.groupBox21.TabIndex = 47;
@@ -4830,7 +4835,7 @@
             // 
             // B_Grass
             // 
-            this.B_Grass.Location = new System.Drawing.Point(489, 157);
+            this.B_Grass.Location = new System.Drawing.Point(531, 149);
             this.B_Grass.Name = "B_Grass";
             this.B_Grass.Size = new System.Drawing.Size(98, 38);
             this.B_Grass.TabIndex = 1;
@@ -4857,7 +4862,7 @@
             // 
             // B_Desert
             // 
-            this.B_Desert.Location = new System.Drawing.Point(489, 194);
+            this.B_Desert.Location = new System.Drawing.Point(531, 186);
             this.B_Desert.Name = "B_Desert";
             this.B_Desert.Size = new System.Drawing.Size(98, 38);
             this.B_Desert.TabIndex = 2;
@@ -4884,7 +4889,7 @@
             // 
             // B_PWP
             // 
-            this.B_PWP.Location = new System.Drawing.Point(489, 231);
+            this.B_PWP.Location = new System.Drawing.Point(531, 223);
             this.B_PWP.Name = "B_PWP";
             this.B_PWP.Size = new System.Drawing.Size(98, 38);
             this.B_PWP.TabIndex = 0;
@@ -6266,6 +6271,28 @@
             this.Info.Name = "Info";
             this.Info.Size = new System.Drawing.Size(0, 17);
             // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(341, 295);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(55, 13);
+            this.label40.TabIndex = 50;
+            this.label40.Text = "Tree Size:";
+            // 
+            // NUD_TreeSize
+            // 
+            this.NUD_TreeSize.Location = new System.Drawing.Point(402, 292);
+            this.NUD_TreeSize.Maximum = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
+            this.NUD_TreeSize.Name = "NUD_TreeSize";
+            this.NUD_TreeSize.Size = new System.Drawing.Size(37, 20);
+            this.NUD_TreeSize.TabIndex = 51;
+            this.NUD_TreeSize.ValueChanged += new System.EventHandler(this.NUD_TreeSize_ValueChanged);
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6571,6 +6598,7 @@
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_TreeSize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7041,5 +7069,7 @@
         private System.Windows.Forms.Button BTN_ExportBuildings;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.ComboBox CB_HouseStyle;
+        private System.Windows.Forms.NumericUpDown NUD_TreeSize;
+        private System.Windows.Forms.Label label40;
     }
 }
