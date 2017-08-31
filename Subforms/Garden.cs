@@ -2279,7 +2279,15 @@ namespace NLSE
                 for (int i = 0; i < Players.Length; i++)
                     Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
 
+                if (!Directory.Exists("Players"))
+                    Directory.CreateDirectory("Players");
+
+                if (!Directory.Exists("Players/Inventory Data"))
+                    Directory.CreateDirectory("Players/Inventory Data");
+
                 SaveFileDialog sfd = new SaveFileDialog();
+                sfd.FileName = TB_Name.Text + " Inventory Data";
+                sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + Path.Combine("Players", "Inventory Data");
                 sfd.Filter = "Inventory Data (Player " + (currentPlayer + 1) + ")|*.bin";
                 if (sfd.ShowDialog() != DialogResult.OK)
                     return; // not saved
@@ -2335,7 +2343,17 @@ namespace NLSE
             {
                 SaveExterior();
 
+                if (!Directory.Exists("Players"))
+                    Directory.CreateDirectory("Players");
+
+                if (!Directory.Exists("Players/House Data"))
+                    Directory.CreateDirectory("Players/House Data");
+
                 SaveFileDialog sfd = new SaveFileDialog();
+
+                sfd.FileName = TB_Name.Text + " House Data";
+                sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + Path.Combine("Players", "House Data");
+
                 sfd.Filter = "Save ACNL House Data (Player " + (currentPlayer + 1) + ")|*.bin";
                 if (sfd.ShowDialog() != DialogResult.OK)
                     return; // not saved
@@ -2379,8 +2397,17 @@ namespace NLSE
                 for (int i = 0; i < Players.Length; i++)
                     Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
 
+                if (!Directory.Exists("Players"))
+                    Directory.CreateDirectory("Players");
+
+                if (!Directory.Exists("Players/Badge Data"))
+                    Directory.CreateDirectory("Players/Badge Data");
+
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "Badges Data (Player " + (currentPlayer + 1) + ")|*.bin";
+                sfd.FileName = TB_Name.Text + " Badge Data";
+                sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + Path.Combine("Players", "Badge Data");
+
                 if (sfd.ShowDialog() != DialogResult.OK)
                     return; // not saved
 
@@ -2427,8 +2454,18 @@ namespace NLSE
                 for (int i = 0; i < Players.Length; i++)
                     Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
 
+                if (!Directory.Exists("Players"))
+                    Directory.CreateDirectory("Players");
+
+                if (!Directory.Exists("Players/Encyclopedia Data"))
+                    Directory.CreateDirectory("Players/Encyclopedia Data");
+
+
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "Encyclopedia Data (Player " + (currentPlayer + 1) + ")|*.bin";
+                sfd.FileName = TB_Name.Text + " Encyclopedia Data";
+                sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + Path.Combine("Players", "Encyclopedia Data");
+
                 if (sfd.ShowDialog() != DialogResult.OK)
                     return; // not saved
 
@@ -2472,11 +2509,19 @@ namespace NLSE
         {
             if (CB_Choice.SelectedIndex == 0)
             {
+                if (!Directory.Exists("Players"))
+                    Directory.CreateDirectory("Players");
+
+                if (!Directory.Exists("Players/Catalog Data"))
+                    Directory.CreateDirectory("Players/Catalog Data");
+
                 for (int i = 0; i < Players.Length; i++)
                     Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
 
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "Catalog Data (Player " + (currentPlayer + 1) + ")|*.bin";
+                sfd.FileName = TB_Name.Text + " Catalog Data";
+                sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + Path.Combine("Players", "Catalog Data");
                 if (sfd.ShowDialog() != DialogResult.OK)
                     return; // not saved
 
@@ -2516,11 +2561,20 @@ namespace NLSE
         {
             if (CB_Choice.SelectedIndex == 0)
             {
+                if (!Directory.Exists("Players"))
+                    Directory.CreateDirectory("Players");
+
+                if (!Directory.Exists("Players/K.K. Data"))
+                    Directory.CreateDirectory("Players/K.K. Data");
+
                 for (int i = 0; i < Players.Length; i++)
                     Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
 
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "KK Music (Player " + (currentPlayer + 1) + ")|*.bin";
+                sfd.FileName = TB_Name.Text + " K.K. Data";
+                sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + Path.Combine("Players", "K.K. Data");
+
                 if (sfd.ShowDialog() != DialogResult.OK)
                     return; // not saved
 
@@ -2558,9 +2612,14 @@ namespace NLSE
 
         private void BTN_DMPMus_Click(object sender, EventArgs e)
         {
-              SaveFileDialog sfd = new SaveFileDialog();
-              sfd.Filter = "Museum Data|*.bin";
-              if (sfd.ShowDialog() != DialogResult.OK)
+            if (!Directory.Exists("Museum Contribution"))
+                Directory.CreateDirectory("Museum Contribution");
+
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Museum Contribution|*.bin";
+            sfd.FileName = TB_TownName.Text + " Museum Contribution";
+            sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + @"Museum Contribution";
+            if (sfd.ShowDialog() != DialogResult.OK)
                   return; // not saved
 
               byte[] Museum = (Save.Data.Skip(0x6AEB8).Take(0x55A).ToArray());
@@ -2597,12 +2656,20 @@ namespace NLSE
         {
             if (CB_Choice.SelectedIndex == 0)
             {
+                if (!Directory.Exists("Players"))
+                    Directory.CreateDirectory("Players");
+
+                if (!Directory.Exists("Players/Full Data"))
+                    Directory.CreateDirectory("Players/Full Data");
+
                 for (int i = 0; i < Players.Length; i++)
                     Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
                 SaveExterior();
 
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "Player Data (Player " + (currentPlayer + 1) + ")|*.bin";
+                sfd.FileName = TB_Name.Text + " Full Data";
+                sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + Path.Combine("Players", "Full Data");
                 if (sfd.ShowDialog() != DialogResult.OK)
                     return; // not saved
 
@@ -3200,7 +3267,12 @@ namespace NLSE
 
         private void BTN_ExportMapItem_Click(object sender, EventArgs e)
         {
+            if (!Directory.Exists("Map Items"))
+                Directory.CreateDirectory("Map Items");
+
             SaveFileDialog sfd = new SaveFileDialog();
+            sfd.FileName = TB_TownName.Text + " Map Items";
+            sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + @"Map Items";
             sfd.Filter = "Map Item Data|*.bin";
             if (sfd.ShowDialog() != DialogResult.OK)
                 return; // not saved
@@ -3237,7 +3309,12 @@ namespace NLSE
 
         private void B_ExportIslandItem_Click(object sender, EventArgs e)
         {
+            if (!Directory.Exists("Island Items"))
+                Directory.CreateDirectory("Island Items");
+
             SaveFileDialog sfd = new SaveFileDialog();
+            sfd.FileName = TB_TownName.Text + " Island Items";
+            sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + @"Island Items";
             sfd.Filter = "Island Item Data|*.bin";
             if (sfd.ShowDialog() != DialogResult.OK)
                 return; // not saved
@@ -3274,8 +3351,14 @@ namespace NLSE
 
         private void BTN_ExportVillager_Click(object sender, EventArgs e)
         {
+            if (!Directory.Exists("Villagers"))
+                Directory.CreateDirectory("Villagers");
+
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Filter = "Villager Data|*.bin";
+            sfd.FileName = TB_TownName.Text + " Villagers";
+            sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + @"Villagers";
+
             if (sfd.ShowDialog() != DialogResult.OK)
                 return; // not saved
 
@@ -3312,8 +3395,13 @@ namespace NLSE
 
         private void BTN_ExportBuildings_Click(object sender, EventArgs e)
         {
+            if (!Directory.Exists("Map Buildings"))
+                Directory.CreateDirectory("Map Buildings");
+
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Filter = "Buildings Data|*.bin";
+            sfd.FileName = TB_TownName.Text + " Map Buildings";
+            sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + @"Map Buildings";
             if (sfd.ShowDialog() != DialogResult.OK)
                 return; // not saved
 
@@ -3352,6 +3440,7 @@ namespace NLSE
 
         private void NUD_TreeSize_ValueChanged(object sender, EventArgs e)
         {
+            if (!loaded) return;
             DialogResult dialogResult = MessageBox.Show("Do you want to fix your town play time to match with your tree size ?", "", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -3422,7 +3511,15 @@ namespace NLSE
         {
             if (CB_Choice.SelectedIndex == 0)
             {
+                if (!Directory.Exists("Players"))
+                    Directory.CreateDirectory("Players");
+
+                if (!Directory.Exists("Players/Pattern Data"))
+                    Directory.CreateDirectory("Players/Pattern Data");
+
                 SaveFileDialog sfd = new SaveFileDialog();
+                sfd.FileName = TB_Name.Text + " Pattern Data";
+                sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + Path.Combine("Players", "Pattern Data");
                 sfd.Filter = "Save ACNL Pattern Data (Player "+ (currentPlayer + 1) +")|*.bin";
                 if (sfd.ShowDialog() != DialogResult.OK)
                 return; // not saved
@@ -3590,11 +3687,14 @@ namespace NLSE
 
         private void B_ExportAcres_Click(object sender, EventArgs e)
         {
-            // obtain acre data
+            if (!Directory.Exists("Map Acres"))
+                Directory.CreateDirectory("Map Acres");
+
             var sfd = new SaveFileDialog
             {
-                FileName = ((TC_AcreEditor.SelectedIndex == 0) ? "Town" : "Island") + "AcreData.acnlmap"
+                FileName = ((TC_AcreEditor.SelectedIndex == 0) ? TB_TownName.Text + " Town" : TB_TownName.Text + " Island") + "AcreData.acnlmap"
             };
+            sfd.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + @"Map Acres";
             if (DialogResult.OK != sfd.ShowDialog())
                 return;
 
