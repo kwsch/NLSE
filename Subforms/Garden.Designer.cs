@@ -493,8 +493,6 @@
             this.CB_Item = new System.Windows.Forms.ComboBox();
             this.Tool_Info = new System.Windows.Forms.ToolTip(this.components);
             this.CB_Flag = new System.Windows.Forms.ComboBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.Info = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -750,7 +748,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -6278,27 +6275,11 @@
             this.CB_Flag.TabIndex = 17;
             this.CB_Flag.SelectedIndexChanged += new System.EventHandler(this.CB_Flag_SelectedIndexChanged);
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Info});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 728);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(687, 22);
-            this.statusStrip1.TabIndex = 18;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // Info
-            // 
-            this.Info.Name = "Info";
-            this.Info.Size = new System.Drawing.Size(0, 17);
-            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(687, 750);
-            this.Controls.Add(this.statusStrip1);
+            this.ClientSize = new System.Drawing.Size(687, 730);
             this.Controls.Add(this.CB_Flag);
             this.Controls.Add(this.L_CurrentItem);
             this.Controls.Add(this.TB_Flag2);
@@ -6597,8 +6578,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7063,8 +7042,6 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Button BTN_ImportVillager;
         private System.Windows.Forms.Button BTN_ExportVillager;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel Info;
         private System.Windows.Forms.Button BTN_ImportBuildings;
         private System.Windows.Forms.Button BTN_ExportBuildings;
         private System.Windows.Forms.Label label39;

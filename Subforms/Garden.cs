@@ -683,8 +683,6 @@ namespace NLSE
                     CB_StreetSewing.Checked = true;
                 }
                 checkPlayer();
-
-                Show("Savegame succesfully loaded.");
             }
         }
         private byte[] saveData()
@@ -2011,7 +2009,7 @@ namespace NLSE
 
             Array.Copy(PWPUnlock, 0, Save.Data, offset, PWPUnlock.Length);
 
-            Show("All Public Works Projects unlocked!");
+            Util.Alert("All Public Works Projects unlocked!");
         }
         private void B_Grass_Click(object sender, EventArgs e)
         {
@@ -2021,7 +2019,7 @@ namespace NLSE
             for (int i = 0; i < 0x2800; i++)
                 Save.Data[offset + i] = tileValue;
 
-            Show("All Map Tiles have had their grass refreshed!!");
+            Util.Alert("All Map Tiles have had their grass refreshed!!");
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2273,7 +2271,7 @@ namespace NLSE
             Array.Copy(CorrectFile, 0, Players[currentPlayer].Data, 0x57D8 - 0xA0 + (currentPlayer * 0xA480), length);
             PlayerPics[currentPlayer].Image = img;
             PB_LPlayer0.Image = img;
-            Show("Succesfully injected the new picture.");
+            Util.Alert("Succesfully injected the new picture.");
         }
 
         private void BTN_DMPInvo_Click(object sender, EventArgs e)
@@ -2754,7 +2752,7 @@ namespace NLSE
 
             for (int i = 0; i < Players.Length; i++) // load
                 Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0xA480).Take(0xA480).ToArray());
-            Show("Added all emoticons for " + TB_Name.Text + ".");
+            Util.Alert("Added all emoticons for " + TB_Name.Text + ".");
         }
 
         private void BTN_GetKKSong_Click(object sender, EventArgs e)
@@ -2767,7 +2765,7 @@ namespace NLSE
 
             for (int i = 0; i < Players.Length; i++) // load
                 Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0xA480).Take(0xA480).ToArray());
-            Show("All K.K. song has been added to " + TB_Name.Text + " music player list.");
+            Util.Alert("All K.K. song has been added to " + TB_Name.Text + " music player list.");
         }
 
         private void BTN_FillCatalog_Click(object sender, EventArgs e)
@@ -2780,7 +2778,7 @@ namespace NLSE
 
             for (int i = 0; i < Players.Length; i++) // load
                 Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0xA480).Take(0xA480).ToArray());
-            Show(TB_Name.Text + " catalog has been filled.");
+            Util.Alert(TB_Name.Text + " catalog has been filled.");
         }
 
         private void BTN_FillEncyclo_Click(object sender, EventArgs e)
@@ -2806,7 +2804,7 @@ namespace NLSE
 
             for (int i = 0; i < Players.Length; i++) // load
                 Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0xA480).Take(0xA480).ToArray());
-            Show(TB_Name.Text + " encyclopedia has been filled.");
+            Util.Alert(TB_Name.Text + " encyclopedia has been filled.");
         }
 
         private void BTN_Badges_Click(object sender, EventArgs e)
