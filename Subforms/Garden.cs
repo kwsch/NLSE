@@ -129,6 +129,11 @@ namespace NLSE
             CB_Flag.SelectedIndex = 0;
         }
 
+        uint GetDecryptedValue(uint player, int offset)
+        {
+            return (Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[player].Data, offset)));
+        }
+
         // Garden Save Editing
         private GardenData Save;
         class GardenData
@@ -620,68 +625,14 @@ namespace NLSE
                 NUD_SatAM.Value = Save.TRN_SaturdayAM;
                 NUD_SatPM.Value = Save.TRN_SaturdayPM;
 
-                if (Save.Kicks == 0)
-                {
-                    CB_StreetKicks.Checked = false;
-                }
-                else if (Save.Kicks == 2)
-                {
-                    CB_StreetKicks.Checked = true;
-                }
+                CB_StreetKicks.Checked = Save.Kicks == 2;
+                CB_StreetClubLOL.Checked = Save.ClubLOL == 2;
+                CB_StreetDream.Checked = Save.DreamSuite == 1;
+                CB_StreetFortune.Checked = Save.Fortune == 1;
+                CB_StreetShampoodle.Checked = Save.Shampoodle == 2;
+                CB_StreetMuseum.Checked = Save.MuseumShop == 1;
+                CB_StreetSewing.Checked = Save.SewingMachine == 0x80;
 
-                if (Save.ClubLOL == 0)
-                {
-                    CB_StreetClubLOL.Checked = false;
-                }
-                else if (Save.ClubLOL == 2)
-                {
-                    CB_StreetClubLOL.Checked = true;
-                }
-
-                if (Save.DreamSuite == 0)
-                {
-                    CB_StreetDream.Checked = false;
-                }
-                else if (Save.DreamSuite == 1)
-                {
-                    CB_StreetDream.Checked = true;
-                }
-
-                if (Save.Fortune == 0)
-                {
-                    CB_StreetFortune.Checked = false;
-                }
-                else if (Save.Fortune == 1)
-                {
-                    CB_StreetFortune.Checked = true;
-                }
-
-                if (Save.Shampoodle == 0)
-                {
-                    CB_StreetShampoodle.Checked = false;
-                }
-                else if (Save.Shampoodle == 2)
-                {
-                    CB_StreetShampoodle.Checked = true;
-                }
-
-                if (Save.MuseumShop == 0)
-                {
-                    CB_StreetMuseum.Checked = false;
-                }
-                else if (Save.MuseumShop == 1)
-                {
-                    CB_StreetMuseum.Checked = true;
-                }
-
-                if (Save.SewingMachine == 0)
-                {
-                    CB_StreetSewing.Checked = false;
-                }
-                else if (Save.SewingMachine == 0x80)
-                {
-                    CB_StreetSewing.Checked = true;
-                }
                 checkPlayer();
             }
         }
@@ -753,85 +704,16 @@ namespace NLSE
                 Save.TRN_SaturdayAM = (uint)NUD_SatAM.Value;
                 Save.TRN_SaturdayPM = (uint)NUD_SatPM.Value;
 
-                if (CB_Nookling.SelectedIndex == 0)
-                {
-                    Save.Leif = 0;
-                }
-                else if (CB_Nookling.SelectedIndex == 1 && CB_Nookling.SelectedIndex == 2)
-                {
-                    Save.Leif = 2;
-                }
-                else if (CB_Nookling.SelectedIndex == 3)
-                {
-                    Save.Leif = 3;
-                }
-                else if (CB_Nookling.SelectedIndex == 4)
-                {
-                    Save.Leif = 4;
-                }
+                Save.Leif = CB_Nookling.SelectedIndex;
+                if (Save.Leif == 1) Save.Leif += 1;
 
-                if (CB_StreetKicks.Checked == false)
-                {
-                    Save.Kicks = 0;
-                }
-                else if (CB_StreetKicks.Checked == true)
-                {
-                    Save.Kicks = 2;
-                }
-
-                if (CB_StreetClubLOL.Checked == false)
-                {
-                    Save.ClubLOL = 0;
-                }
-                else if (CB_StreetClubLOL.Checked == true)
-                {
-                    Save.ClubLOL = 2;
-                }
-
-                if (CB_StreetDream.Checked == false)
-                {
-                    Save.DreamSuite = 0;
-                }
-                else if (CB_StreetDream.Checked == true)
-                {
-                    Save.DreamSuite = 1;
-                }
-
-                if (CB_StreetFortune.Checked == false)
-                {
-                    Save.Fortune = 0;
-                }
-                else if (CB_StreetFortune.Checked == true)
-                {
-                    Save.Fortune = 1;
-                }
-
-                if (CB_StreetShampoodle.Checked == false)
-                {
-                    Save.Shampoodle = 0;
-                }
-                else if (CB_StreetShampoodle.Checked == true)
-                {
-                    Save.Shampoodle = 2;
-                }
-
-                if (CB_StreetMuseum.Checked == false)
-                {
-                    Save.MuseumShop = 0;
-                }
-                else if (CB_StreetMuseum.Checked == true)
-                {
-                    Save.MuseumShop = 1;
-                }
-
-                if (CB_StreetSewing.Checked == false)
-                {
-                    Save.SewingMachine = 0;
-                }
-                else if (CB_StreetSewing.Checked == true)
-                {
-                    Save.SewingMachine = 0x80;
-                }
+                Save.Kicks = CB_StreetKicks.Checked == true ? 2 : 0;
+                Save.ClubLOL = CB_StreetClubLOL.Checked == true ? 2 : 0;
+                Save.DreamSuite = CB_StreetDream.Checked == true ? 1 : 0;
+                Save.Fortune = CB_StreetFortune.Checked == true ? 1 : 0;
+                Save.Shampoodle = CB_StreetShampoodle.Checked == true ? 2 : 0;
+                Save.MuseumShop = CB_StreetMuseum.Checked == true ? 1 : 0;
+                Save.SewingMachine = CB_StreetSewing.Checked == true ? 80 : 0;
             }
 
             byte[] finalData = (byte[])Save.Write().Clone();
@@ -896,90 +778,36 @@ namespace NLSE
             CB_BackRoomSize.SelectedIndex = PlayersExterior[i].BackRoomSize - 1;
 
             // Load encrypted $ value
-            uint DecryptBank = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x6B8C));
-            NUD_Money.Value = DecryptBank;
-
-            uint DecryptBells = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x6FA8 - 0xA0));
-            NUD_PocketMoney.Value = DecryptBells;
-
-            uint DecryptIsland = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x6B9C));
-            NUD_IslandMedals.Value = DecryptIsland;
-
-            uint DecryptMEOW = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x8DBC - 0xA0));
-            NUD_MEOW.Value = DecryptMEOW;
+            NUD_Money.Value = GetDecryptedValue((uint)i, 0x6B8C);
+            NUD_PocketMoney.Value = GetDecryptedValue((uint)i, 0x6FA8 - 0xA0);
+            NUD_IslandMedals.Value = GetDecryptedValue((uint)i, 0x6B9C);
+            NUD_MEOW.Value = GetDecryptedValue((uint)i, 0x8DBC - 0xA0);
 
             // Load encrypted achievement value (can be improved)
-            uint DecryptPCH = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x567C - 0xA0));
-            NUD_Badge00.Value = DecryptPCH;
-
-            uint DecryptFLT = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x5684 - 0xA0));
-            NUD_Badge01.Value = DecryptFLT;
-
-            uint DecryptPLG = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x568C - 0xA0));
-            NUD_Badge02.Value = DecryptPLG;
-
-            uint DecryptPSO = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x5694 - 0xA0));
-            NUD_Badge03.Value = DecryptPSO;
-
-            uint DecryptINS = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x569C - 0xA0));
-            NUD_Badge04.Value = DecryptINS;
-
-            uint DecryptPLP = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56A4 - 0xA0));
-            NUD_Badge05.Value = DecryptPLP;
-
-            uint DecryptBLO = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56AC - 0xA0));
-            NUD_Badge06.Value = DecryptBLO;
-
-            uint DecryptTRN = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56B4 - 0xA0));
-            NUD_Badge07.Value = DecryptTRN;
-
-            uint DecryptVST = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56BC - 0xA0));
-            NUD_Badge08.Value = DecryptVST;
-
-            uint DecryptARB = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56C4 - 0xA0));
-            NUD_Badge09.Value = DecryptARB;
-
-            uint DecryptCLO = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56CC - 0xA0));
-            NUD_Badge10.Value = DecryptCLO;
-
-            uint DecryptNVT = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x6C44 - 0xA0));
-            NUD_Badge11.Value = DecryptNVT;
-
-            uint DecryptISL = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56DC - 0xA0));
-            NUD_Badge12.Value = DecryptISL;
-
-            uint DecryptSTP = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56E4 - 0xA0));
-            NUD_Badge13.Value = DecryptSTP;
-
-            uint DecryptMVH = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56EC - 0xA0));
-            NUD_Badge14.Value = DecryptMVH;
-
-            uint DecryptCDY = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56F4 - 0xA0));
-            NUD_Badge15.Value = DecryptCDY;
-
-            uint DecryptLTR = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x56FC - 0xA0));
-            NUD_Badge16.Value = DecryptLTR;
-
-            uint DecryptRNV = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x5704 - 0xA0));
-            NUD_Badge17.Value = DecryptRNV;
-
-            uint DecryptCTL = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x570C - 0xA0));
-            NUD_Badge18.Value = DecryptCTL;
-
-            uint DecryptKKG = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x5714 - 0xA0));
-            NUD_Badge19.Value = DecryptKKG;
-
-            uint DecryptMSN = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x571C - 0xA0));
-            NUD_Badge20.Value = DecryptMSN;
-
-            uint DecryptCRN = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x5724 - 0xA0));
-            NUD_Badge21.Value = DecryptCRN;
-
-            uint DecryptHRT = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x572C - 0xA0));
-            NUD_Badge22.Value = DecryptHRT;
-
-            uint DecryptFLR = Util.DecryptACNLMoney(BitConverter.ToUInt64(Players[i].Data, 0x5734 - 0xA0));
-            NUD_Badge23.Value = DecryptFLR;
+            NUD_Badge00.Value = GetDecryptedValue((uint)i, 0x567C - 0xA0);
+            NUD_Badge01.Value = GetDecryptedValue((uint)i, 0x5684 - 0xA0);
+            NUD_Badge02.Value = GetDecryptedValue((uint)i, 0x568C - 0xA0);
+            NUD_Badge03.Value = GetDecryptedValue((uint)i, 0x5694 - 0xA0);
+            NUD_Badge04.Value = GetDecryptedValue((uint)i, 0x569C - 0xA0);
+            NUD_Badge05.Value = GetDecryptedValue((uint)i, 0x56A4 - 0xA0);
+            NUD_Badge06.Value = GetDecryptedValue((uint)i, 0x56AC - 0xA0);
+            NUD_Badge07.Value = GetDecryptedValue((uint)i, 0x56B4 - 0xA0);
+            NUD_Badge08.Value = GetDecryptedValue((uint)i, 0x56BC - 0xA0);
+            NUD_Badge09.Value = GetDecryptedValue((uint)i, 0x56C4 - 0xA0);
+            NUD_Badge10.Value = GetDecryptedValue((uint)i, 0x56CC - 0xA0);
+            NUD_Badge11.Value = GetDecryptedValue((uint)i, 0x6C44 - 0xA0);
+            NUD_Badge12.Value = GetDecryptedValue((uint)i, 0x56DC - 0xA0);
+            NUD_Badge13.Value = GetDecryptedValue((uint)i, 0x56E4 - 0xA0);
+            NUD_Badge14.Value = GetDecryptedValue((uint)i, 0x56EC - 0xA0);
+            NUD_Badge15.Value = GetDecryptedValue((uint)i, 0x56F4 - 0xA0);
+            NUD_Badge16.Value = GetDecryptedValue((uint)i, 0x56FC - 0xA0);
+            NUD_Badge17.Value = GetDecryptedValue((uint)i, 0x5704 - 0xA0);
+            NUD_Badge18.Value = GetDecryptedValue((uint)i, 0x570C - 0xA0);
+            NUD_Badge19.Value = GetDecryptedValue((uint)i, 0x5714 - 0xA0);
+            NUD_Badge20.Value = GetDecryptedValue((uint)i, 0x571C - 0xA0);
+            NUD_Badge21.Value = GetDecryptedValue((uint)i, 0x5724 - 0xA0);
+            NUD_Badge22.Value = GetDecryptedValue((uint)i, 0x572C - 0xA0);
+            NUD_Badge23.Value = GetDecryptedValue((uint)i, 0x5734 - 0xA0);
         }
         private void savePlayer(int i)
         {
@@ -1023,60 +851,34 @@ namespace NLSE
 
             // save encrypted $ value
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Money.Value)), 0, Players[i].Data, 0x6B8C, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_PocketMoney.Value)), 0, Players[i].Data, 0x6FA8 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_IslandMedals.Value)), 0, Players[i].Data, 0x6B9C, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_MEOW.Value)), 0, Players[i].Data, 0x8DBC - 0xA0, 8);
 
             // save encrypted achievement value
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge00.Value)), 0, Players[i].Data, 0x567C - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge01.Value)), 0, Players[i].Data, 0x5684 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge02.Value)), 0, Players[i].Data, 0x568C - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge03.Value)), 0, Players[i].Data, 0x5694 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge04.Value)), 0, Players[i].Data, 0x569C - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge05.Value)), 0, Players[i].Data, 0x56A4 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge06.Value)), 0, Players[i].Data, 0x56AC - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge07.Value)), 0, Players[i].Data, 0x56B4 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge08.Value)), 0, Players[i].Data, 0x56BC - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge09.Value)), 0, Players[i].Data, 0x56C4 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge10.Value)), 0, Players[i].Data, 0x56CC - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge11.Value)), 0, Players[i].Data, 0x6C44 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge12.Value)), 0, Players[i].Data, 0x56DC - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge13.Value)), 0, Players[i].Data, 0x56E4 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge14.Value)), 0, Players[i].Data, 0x56EC - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge15.Value)), 0, Players[i].Data, 0x56F4 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge16.Value)), 0, Players[i].Data, 0x56FC - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge17.Value)), 0, Players[i].Data, 0x5704 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge18.Value)), 0, Players[i].Data, 0x570C - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge19.Value)), 0, Players[i].Data, 0x5714 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge20.Value)), 0, Players[i].Data, 0x571C - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge21.Value)), 0, Players[i].Data, 0x5724 - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge22.Value)), 0, Players[i].Data, 0x572C - 0xA0, 8);
-
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge23.Value)), 0, Players[i].Data, 0x5734 - 0xA0, 8);
         }
 
@@ -1962,7 +1764,18 @@ namespace NLSE
                 return; // no file loaded
 
             string path = ofd.FileName;
-
+            if (loaded == true)
+            {
+                DialogResult dialogResult = MessageBox.Show("A savegame is already opened, would you like to reload an other savegame and lost your change ?", "", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    loaded = false;
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    return;
+                }
+            }
             long length = new FileInfo(path).Length;
             if (length == 0x7FA00) 
             {
@@ -2074,7 +1887,6 @@ namespace NLSE
             #endregion
             loadData();
             EnableControl();
-            openToolStripMenuItem.Enabled = false;
             reloadCurrentItem(currentItem);
             loaded = true;
         }

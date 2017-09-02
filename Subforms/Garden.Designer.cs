@@ -1634,7 +1634,7 @@
             // 
             // BTN_DMPlayer
             // 
-            this.BTN_DMPlayer.Location = new System.Drawing.Point(130, 91);
+            this.BTN_DMPlayer.Location = new System.Drawing.Point(130, 115);
             this.BTN_DMPlayer.Name = "BTN_DMPlayer";
             this.BTN_DMPlayer.Size = new System.Drawing.Size(66, 23);
             this.BTN_DMPlayer.TabIndex = 9;
@@ -1644,7 +1644,7 @@
             // 
             // BTN_DMPKK
             // 
-            this.BTN_DMPKK.Location = new System.Drawing.Point(65, 91);
+            this.BTN_DMPKK.Location = new System.Drawing.Point(65, 115);
             this.BTN_DMPKK.Name = "BTN_DMPKK";
             this.BTN_DMPKK.Size = new System.Drawing.Size(63, 23);
             this.BTN_DMPKK.TabIndex = 8;
@@ -1654,7 +1654,7 @@
             // 
             // BTN_DMPCatalog
             // 
-            this.BTN_DMPCatalog.Location = new System.Drawing.Point(6, 91);
+            this.BTN_DMPCatalog.Location = new System.Drawing.Point(6, 115);
             this.BTN_DMPCatalog.Name = "BTN_DMPCatalog";
             this.BTN_DMPCatalog.Size = new System.Drawing.Size(58, 23);
             this.BTN_DMPCatalog.TabIndex = 7;
@@ -1664,7 +1664,7 @@
             // 
             // BTN_DMPEncyclo
             // 
-            this.BTN_DMPEncyclo.Location = new System.Drawing.Point(108, 67);
+            this.BTN_DMPEncyclo.Location = new System.Drawing.Point(108, 78);
             this.BTN_DMPEncyclo.Name = "BTN_DMPEncyclo";
             this.BTN_DMPEncyclo.Size = new System.Drawing.Size(88, 23);
             this.BTN_DMPEncyclo.TabIndex = 6;
@@ -1684,7 +1684,7 @@
             // 
             // BTN_DMPBadge
             // 
-            this.BTN_DMPBadge.Location = new System.Drawing.Point(6, 67);
+            this.BTN_DMPBadge.Location = new System.Drawing.Point(6, 78);
             this.BTN_DMPBadge.Name = "BTN_DMPBadge";
             this.BTN_DMPBadge.Size = new System.Drawing.Size(79, 23);
             this.BTN_DMPBadge.TabIndex = 4;
@@ -4837,7 +4837,7 @@
             // 
             // NUD_OverallDays
             // 
-            this.NUD_OverallDays.Location = new System.Drawing.Point(402, 269);
+            this.NUD_OverallDays.Location = new System.Drawing.Point(402, 259);
             this.NUD_OverallDays.Maximum = new decimal(new int[] {
             25000,
             0,
@@ -4854,7 +4854,7 @@
             // 
             // B_Grass
             // 
-            this.B_Grass.Location = new System.Drawing.Point(531, 149);
+            this.B_Grass.Location = new System.Drawing.Point(483, 143);
             this.B_Grass.Name = "B_Grass";
             this.B_Grass.Size = new System.Drawing.Size(98, 38);
             this.B_Grass.TabIndex = 1;
@@ -4881,7 +4881,7 @@
             // 
             // B_Desert
             // 
-            this.B_Desert.Location = new System.Drawing.Point(531, 186);
+            this.B_Desert.Location = new System.Drawing.Point(483, 187);
             this.B_Desert.Name = "B_Desert";
             this.B_Desert.Size = new System.Drawing.Size(98, 38);
             this.B_Desert.TabIndex = 2;
@@ -4908,7 +4908,7 @@
             // 
             // B_PWP
             // 
-            this.B_PWP.Location = new System.Drawing.Point(531, 223);
+            this.B_PWP.Location = new System.Drawing.Point(483, 231);
             this.B_PWP.Name = "B_PWP";
             this.B_PWP.Size = new System.Drawing.Size(98, 38);
             this.B_PWP.TabIndex = 0;
@@ -4935,7 +4935,7 @@
             // 
             // TB_TownName
             // 
-            this.TB_TownName.Location = new System.Drawing.Point(452, 9);
+            this.TB_TownName.Location = new System.Drawing.Point(466, 9);
             this.TB_TownName.MaxLength = 9;
             this.TB_TownName.Name = "TB_TownName";
             this.TB_TownName.Size = new System.Drawing.Size(121, 20);
@@ -4961,7 +4961,7 @@
             // 
             // L_TownName
             // 
-            this.L_TownName.Location = new System.Drawing.Point(346, 6);
+            this.L_TownName.Location = new System.Drawing.Point(360, 6);
             this.L_TownName.Name = "L_TownName";
             this.L_TownName.Size = new System.Drawing.Size(100, 23);
             this.L_TownName.TabIndex = 18;
@@ -4984,14 +4984,14 @@
             "Triangle (Square)",
             "Circle (Star)",
             "Square (Circle)"});
-            this.CB_GrassShape.Location = new System.Drawing.Point(452, 62);
+            this.CB_GrassShape.Location = new System.Drawing.Point(466, 62);
             this.CB_GrassShape.Name = "CB_GrassShape";
             this.CB_GrassShape.Size = new System.Drawing.Size(121, 21);
             this.CB_GrassShape.TabIndex = 21;
             // 
             // L_OverallDays
             // 
-            this.L_OverallDays.Location = new System.Drawing.Point(320, 266);
+            this.L_OverallDays.Location = new System.Drawing.Point(320, 256);
             this.L_OverallDays.Name = "L_OverallDays";
             this.L_OverallDays.Size = new System.Drawing.Size(76, 23);
             this.L_OverallDays.TabIndex = 38;
@@ -5000,7 +5000,7 @@
             // 
             // L_GrassShape
             // 
-            this.L_GrassShape.Location = new System.Drawing.Point(346, 60);
+            this.L_GrassShape.Location = new System.Drawing.Point(360, 60);
             this.L_GrassShape.Name = "L_GrassShape";
             this.L_GrassShape.Size = new System.Drawing.Size(100, 23);
             this.L_GrassShape.TabIndex = 22;
@@ -5024,7 +5024,7 @@
             "Brown",
             "Green",
             "Blue"});
-            this.CB_TownHallColor.Location = new System.Drawing.Point(452, 89);
+            this.CB_TownHallColor.Location = new System.Drawing.Point(466, 89);
             this.CB_TownHallColor.Name = "CB_TownHallColor";
             this.CB_TownHallColor.Size = new System.Drawing.Size(121, 21);
             this.CB_TownHallColor.TabIndex = 23;
@@ -5040,7 +5040,7 @@
             // 
             // L_TownHallColor
             // 
-            this.L_TownHallColor.Location = new System.Drawing.Point(346, 87);
+            this.L_TownHallColor.Location = new System.Drawing.Point(360, 87);
             this.L_TownHallColor.Name = "L_TownHallColor";
             this.L_TownHallColor.Size = new System.Drawing.Size(100, 23);
             this.L_TownHallColor.TabIndex = 24;
@@ -5064,14 +5064,14 @@
             "Green",
             "Blue",
             "Brown"});
-            this.CB_TrainStationColor.Location = new System.Drawing.Point(452, 116);
+            this.CB_TrainStationColor.Location = new System.Drawing.Point(466, 116);
             this.CB_TrainStationColor.Name = "CB_TrainStationColor";
             this.CB_TrainStationColor.Size = new System.Drawing.Size(121, 21);
             this.CB_TrainStationColor.TabIndex = 25;
             // 
             // L_NativeFruit
             // 
-            this.L_NativeFruit.Location = new System.Drawing.Point(346, 33);
+            this.L_NativeFruit.Location = new System.Drawing.Point(360, 33);
             this.L_NativeFruit.Name = "L_NativeFruit";
             this.L_NativeFruit.Size = new System.Drawing.Size(100, 23);
             this.L_NativeFruit.TabIndex = 28;
@@ -5080,7 +5080,7 @@
             // 
             // L_TrainStationColor
             // 
-            this.L_TrainStationColor.Location = new System.Drawing.Point(346, 114);
+            this.L_TrainStationColor.Location = new System.Drawing.Point(360, 114);
             this.L_TrainStationColor.Name = "L_TrainStationColor";
             this.L_TrainStationColor.Size = new System.Drawing.Size(100, 23);
             this.L_TrainStationColor.TabIndex = 26;
@@ -5104,7 +5104,7 @@
             "Mango*",
             "Persimmon*",
             "Banana*"});
-            this.CB_NativeFruit.Location = new System.Drawing.Point(452, 35);
+            this.CB_NativeFruit.Location = new System.Drawing.Point(466, 35);
             this.CB_NativeFruit.Name = "CB_NativeFruit";
             this.CB_NativeFruit.Size = new System.Drawing.Size(121, 21);
             this.CB_NativeFruit.TabIndex = 27;
@@ -6201,21 +6201,21 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
