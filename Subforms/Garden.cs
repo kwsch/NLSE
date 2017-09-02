@@ -5,8 +5,6 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.Timers;
 using System.Windows.Forms;
 
 namespace NLSE
@@ -275,6 +273,7 @@ namespace NLSE
 
             public Image JPEG;
             public byte[] Badges;
+            public byte[] Letters;
             public Item[] Pockets = new Item[16];
             public Item[] IslandBox = new Item[5 * 8];
             public Item[] Dressers = new Item[5 * 36];
@@ -310,6 +309,8 @@ namespace NLSE
 
                 Badges = Data.Skip(0x573C - 0xA0).Take(24).ToArray();
 
+                Letters = Data.Skip(0x70A8 - 0xA0).Take(0x1900).ToArray();
+
                 for (int i = 0; i < Pockets.Length; i++)
                     Pockets[i] = new Item(Data.Skip(0x6BD0 + i * 4).Take(4).ToArray());
 
@@ -342,7 +343,10 @@ namespace NLSE
                 Data[0x55D6] = (byte)RegYear;
 
                 Array.Copy(Encoding.Unicode.GetBytes(HomeTown.PadRight(9, '\0')), 0, Data, 0x55BE, 0x12);
+
                 Array.Copy(Badges, 0, Data, 0x569C, Badges.Length);
+
+                Array.Copy(Letters, 0, Data, 0x70A8 - 0xA0, Letters.Length);
 
                 for (int i = 0; i < Pockets.Length; i++)
                     Array.Copy(Pockets[i].Write(), 0, Data, 0x6BD0 + i * 4, 4);
@@ -824,11 +828,11 @@ namespace NLSE
 
                 if (CB_StreetSewing.Checked == false)
                 {
-                    Save.MuseumShop = 0;
+                    Save.SewingMachine = 0;
                 }
                 else if (CB_StreetSewing.Checked == true)
                 {
-                    Save.MuseumShop = 0x80;
+                    Save.SewingMachine = 0x80;
                 }
             }
 

@@ -332,6 +332,8 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.NUD_TreeSize = new System.Windows.Forms.NumericUpDown();
+            this.label40 = new System.Windows.Forms.Label();
             this.BTN_ImportBuildings = new System.Windows.Forms.Button();
             this.BTN_ExportBuildings = new System.Windows.Forms.Button();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
@@ -493,8 +495,6 @@
             this.CB_Flag = new System.Windows.Forms.ComboBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.Info = new System.Windows.Forms.ToolStripStatusLabel();
-            this.label40 = new System.Windows.Forms.Label();
-            this.NUD_TreeSize = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -660,6 +660,7 @@
             this.tabPage5.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_TreeSize)).BeginInit();
             this.groupBox21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_SatPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_SatAM)).BeginInit();
@@ -750,7 +751,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_TreeSize)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -4529,6 +4529,28 @@
             this.tabPage8.Text = "Buildings/Town";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // NUD_TreeSize
+            // 
+            this.NUD_TreeSize.Location = new System.Drawing.Point(402, 292);
+            this.NUD_TreeSize.Maximum = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
+            this.NUD_TreeSize.Name = "NUD_TreeSize";
+            this.NUD_TreeSize.Size = new System.Drawing.Size(37, 20);
+            this.NUD_TreeSize.TabIndex = 51;
+            this.NUD_TreeSize.ValueChanged += new System.EventHandler(this.NUD_TreeSize_ValueChanged);
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(341, 295);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(55, 13);
+            this.label40.TabIndex = 50;
+            this.label40.Text = "Tree Size:";
+            // 
             // BTN_ImportBuildings
             // 
             this.BTN_ImportBuildings.Location = new System.Drawing.Point(104, 493);
@@ -6271,28 +6293,6 @@
             this.Info.Name = "Info";
             this.Info.Size = new System.Drawing.Size(0, 17);
             // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(341, 295);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(55, 13);
-            this.label40.TabIndex = 50;
-            this.label40.Text = "Tree Size:";
-            // 
-            // NUD_TreeSize
-            // 
-            this.NUD_TreeSize.Location = new System.Drawing.Point(402, 292);
-            this.NUD_TreeSize.Maximum = new decimal(new int[] {
-            7,
-            0,
-            0,
-            0});
-            this.NUD_TreeSize.Name = "NUD_TreeSize";
-            this.NUD_TreeSize.Size = new System.Drawing.Size(37, 20);
-            this.NUD_TreeSize.TabIndex = 51;
-            this.NUD_TreeSize.ValueChanged += new System.EventHandler(this.NUD_TreeSize_ValueChanged);
-            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6503,6 +6503,7 @@
             this.tabControl3.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_TreeSize)).EndInit();
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_SatPM)).EndInit();
@@ -6598,7 +6599,6 @@
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_TreeSize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
