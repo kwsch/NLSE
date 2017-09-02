@@ -845,10 +845,6 @@ namespace NLSE
             }
             return finalData;
         }
-        private void Show(string t)
-        {
-            Info.Text = t;
-        }
 
         private int currentPlayer = -1;
         private void loadPlayer(int i)
@@ -1240,71 +1236,6 @@ namespace NLSE
                 NUD_Badge23.BackColor = NUD_Badge23.Value < 0 ? Color.Firebrick : Color.White;
             if (!loaded) return;
             loadBadge();
-        }
-        private void SaveExterior()
-        {
-            PlayersExterior[currentPlayer].HouseStyle = (byte)CB_HouseStyle.SelectedIndex;
-            PlayersExterior[currentPlayer].HouseRoof = (byte)CB_HouseRoof.SelectedIndex;
-            PlayersExterior[currentPlayer].HouseBrick = (byte)CB_HouseBrick.SelectedIndex;
-            PlayersExterior[currentPlayer].HouseFence = (byte)CB_HouseFence.SelectedIndex;
-            PlayersExterior[currentPlayer].HouseDoorForm = (byte)CB_HouseDoorForm.SelectedIndex;
-            PlayersExterior[currentPlayer].HouseDoor = (byte)CB_HouseDoor.SelectedIndex;
-            PlayersExterior[currentPlayer].HouseMailBox = (byte)CB_HouseMailBox.SelectedIndex;
-            PlayersExterior[currentPlayer].HousePavement = (byte)CB_HousePavement.SelectedIndex;
-
-            PlayersExterior[currentPlayer].HouseSize = (byte)CB_HouseSize.SelectedIndex;
-            PlayersExterior[currentPlayer].BackRoomSize = (byte)CB_BackRoomSize.SelectedIndex;
-            PlayersExterior[currentPlayer].LeftRoomSize = (byte)CB_LeftRoomSize.SelectedIndex;
-            PlayersExterior[currentPlayer].RightRoomSize = (byte)CB_RightRoomSize.SelectedIndex;
-            PlayersExterior[currentPlayer].MainRoomSize = (byte)CB_MainRoomSize.SelectedIndex;
-            PlayersExterior[currentPlayer].UpstairsSize = (byte)CB_UpstairsSize.SelectedIndex;
-            PlayersExterior[currentPlayer].BasementSize = (byte)CB_BasementSize.SelectedIndex;
-
-
-            byte[] HouseStyle = BitConverter.GetBytes(CB_HouseStyle.SelectedIndex);
-            byte[] HouseRoof = BitConverter.GetBytes(CB_HouseRoof.SelectedIndex);
-            byte[] HouseBrick = BitConverter.GetBytes(CB_HouseBrick.SelectedIndex);
-            byte[] HouseFence = BitConverter.GetBytes(CB_HouseFence.SelectedIndex);
-            byte[] HouseDoorForm = BitConverter.GetBytes(CB_HouseDoorForm.SelectedIndex);
-            byte[] HouseDoor = BitConverter.GetBytes(CB_HouseDoor.SelectedIndex);
-            byte[] HouseMailBox = BitConverter.GetBytes(CB_HouseMailBox.SelectedIndex);
-            byte[] HousePavement = BitConverter.GetBytes(CB_HousePavement.SelectedIndex);
-
-            byte[] HouseSize = BitConverter.GetBytes(CB_HouseSize.SelectedIndex);
-            byte[] BackRoomSize = BitConverter.GetBytes(CB_BackRoomSize.SelectedIndex);
-            byte[] LeftRoomSize = BitConverter.GetBytes(CB_LeftRoomSize.SelectedIndex);
-            byte[] RightRoomSize = BitConverter.GetBytes(CB_RightRoomSize.SelectedIndex);
-            byte[] MainRoomSize = BitConverter.GetBytes(CB_MainRoomSize.SelectedIndex);
-            byte[] UpstairsSize = BitConverter.GetBytes(CB_UpstairsSize.SelectedIndex);
-            byte[] BasementSize = BitConverter.GetBytes(CB_BasementSize.SelectedIndex);
-
-
-            Array.Copy(HouseStyle, 0, Save.Data, 0x5D905 + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseRoof, 0, Save.Data, 0x5D908 + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseBrick, 0, Save.Data, 0x5D907 + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseFence, 0, Save.Data, 0x5D90A + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseDoorForm, 0, Save.Data, 0x5D906 + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseDoor, 0, Save.Data, 0x5D909 + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseMailBox, 0, Save.Data, 0x5D90C + currentPlayer * 0x1228, 1);
-            Array.Copy(HousePavement, 0, Save.Data, 0x5D90B + currentPlayer * 0x1228, 1);
-
-            Array.Copy(HouseStyle, 0, Save.Data, 0x5D90E + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseRoof, 0, Save.Data, 0x5D911 + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseBrick, 0, Save.Data, 0x5D910 + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseFence, 0, Save.Data, 0x5D913 + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseDoorForm, 0, Save.Data, 0x5D90F + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseDoor, 0, Save.Data, 0x5D912 + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseMailBox, 0, Save.Data, 0x5D915 + currentPlayer * 0x1228, 1);
-            Array.Copy(HousePavement, 0, Save.Data, 0x5D914 + currentPlayer * 0x1228, 1);
-
-            Array.Copy(HouseSize, 0, Save.Data, 0x5D904 + currentPlayer * 0x1228, 1);
-            Array.Copy(HouseSize, 0, Save.Data, 0x5D90D + currentPlayer * 0x1228, 1);
-            Array.Copy(MainRoomSize, 0, Save.Data, 0x5D936 + currentPlayer * 0x1228, 1);
-            Array.Copy(UpstairsSize, 0, Save.Data, 0x5DC38 + currentPlayer * 0x1228, 1);
-            Array.Copy(BasementSize, 0, Save.Data, 0x5DF3A + currentPlayer * 0x1228, 1);
-            Array.Copy(LeftRoomSize, 0, Save.Data, 0x5E23C + currentPlayer * 0x1228, 1);
-            Array.Copy(BackRoomSize, 0, Save.Data, 0x5E840 + currentPlayer * 0x1228, 1);
-
         }
 
         private void checkPlayer()
@@ -2343,7 +2274,10 @@ namespace NLSE
         {
             if (CB_Choice.SelectedIndex == 0)
             {
-                SaveExterior();
+                savePlayer(currentPlayer);
+
+                for (int i = 0; i < Players.Length; i++)
+                    Array.Copy(PlayersExterior[i].Write(), 0, Save.Data, 0x5D904 + i * 0x1228, 0x1228);
 
                 if (!Directory.Exists("Players"))
                     Directory.CreateDirectory("Players");
@@ -2666,7 +2600,11 @@ namespace NLSE
 
                 for (int i = 0; i < Players.Length; i++)
                     Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
-                SaveExterior();
+
+                savePlayer(currentPlayer);
+
+                for (int i = 0; i < Players.Length; i++)
+                    Array.Copy(PlayersExterior[i].Write(), 0, Save.Data, 0x5D904 + i * 0x1228, 0x1228);
 
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "Player Data (Player " + (currentPlayer + 1) + ")|*.bin";
