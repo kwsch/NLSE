@@ -499,7 +499,7 @@ namespace NLSE
                 Type = Data[2];
                 Boxed = (Data[0x24E4] & 1) == 1;
                 CatchPhrase = Encoding.Unicode.GetString(Data.Skip(0x24C6).Take(22).ToArray()).Trim('\0');
-                HomeTown1 = Encoding.Unicode.GetString(Data.Skip(0x24EE).Take(0x12).ToArray()).Trim('\0');
+                HomeTown1 = Encoding.Unicode.GetString(Data.Skip(0x24F0).Take(0x12).ToArray()).Trim('\0');
                 HomeTown2 = Encoding.Unicode.GetString(Data.Skip(0x2504).Take(0x12).ToArray()).Trim('\0');
             }
             public byte[] Write()
@@ -508,7 +508,7 @@ namespace NLSE
                 Data[2] = Type;
                 Data[0x24E4] = (byte)((Data[0x24E4] & ~1) | (Boxed ? 1 : 0));
                 Array.Copy(Encoding.Unicode.GetBytes(CatchPhrase.PadRight(11, '\0')), 0, Data, 0x24C6, 22);
-                Array.Copy(Encoding.Unicode.GetBytes(HomeTown1.PadRight(9, '\0')), 0, Data, 0x24EE, 0x12);
+                Array.Copy(Encoding.Unicode.GetBytes(HomeTown1.PadRight(9, '\0')), 0, Data, 0x24F0, 0x12);
                 Array.Copy(Encoding.Unicode.GetBytes(HomeTown2.PadRight(9, '\0')), 0, Data, 0x2504, 0x12);
                 return Data;
             }
@@ -713,7 +713,7 @@ namespace NLSE
                 Save.Fortune = CB_StreetFortune.Checked == true ? 1 : 0;
                 Save.Shampoodle = CB_StreetShampoodle.Checked == true ? 2 : 0;
                 Save.MuseumShop = CB_StreetMuseum.Checked == true ? 1 : 0;
-                Save.SewingMachine = CB_StreetSewing.Checked == true ? 80 : 0;
+                Save.SewingMachine = CB_StreetSewing.Checked == true ? 0x80 : 0;
             }
 
             byte[] finalData = (byte[])Save.Write().Clone();
@@ -812,8 +812,8 @@ namespace NLSE
         private void savePlayer(int i)
         {
             Players[i].Name = TB_Name.Text;
-
             Players[i].Comment = TB_Comment.Text;
+
             for (int j = 0; j < PlayerBadges.Length; j++)
                 Players[i].Badges[j] = (byte)PlayerBadges[j].SelectedIndex;
 
@@ -2641,7 +2641,7 @@ namespace NLSE
                 }
             }
 
-            if (CB_Badge06.SelectedIndex == 1) // ballons
+            if (CB_Badge06.SelectedIndex == 1) // balloon
             {
                 if (NUD_Badge06.Value < 50)
                 {
@@ -2792,6 +2792,28 @@ namespace NLSE
                 if (NUD_Badge13.Value < 1000)
                 {
                     NUD_Badge13.Value = 1000;
+                }
+            }
+
+            if (CB_Badge14.SelectedIndex == 1) // weed
+            {
+                if (NUD_Badge13.Value < 500)
+                {
+                    NUD_Badge13.Value = 500;
+                }
+            }
+            else if (CB_Badge14.SelectedIndex == 2)
+            {
+                if (NUD_Badge13.Value < 2000)
+                {
+                    NUD_Badge13.Value = 2000;
+                }
+            }
+            else if (CB_Badge14.SelectedIndex == 3)
+            {
+                if (NUD_Badge13.Value < 5000)
+                {
+                    NUD_Badge13.Value = 5000;
                 }
             }
 
