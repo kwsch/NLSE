@@ -1689,7 +1689,7 @@ namespace NLSE
                 int itemarrayval = Array.IndexOf(Main.buildingNames, itemname);
                 if (itemarrayval == -1)
                 {
-                    Buildings[i].ID = 0xFE;
+                    Buildings[i].ID = 0xFC;
                     Buildings[i].X = 0;
                     Buildings[i].Y = 0;
                     Util.Alert(itemname + " removed from Building List.", "If you save changes to Garden, the Building will no longer be in the Town.");
