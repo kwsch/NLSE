@@ -23,6 +23,7 @@ namespace NLSE
 
         private Player[] Players;
         private PlayerExterior[] PlayersExterior;
+        private PlayerLetter[] PlayersLetter;
         private Building[] Buildings;
         private MuseumContribution[] MuseumContributionsFossil;
         private MuseumContribution[] MuseumContributionsArt;
@@ -363,8 +364,6 @@ namespace NLSE
 
                 Array.Copy(Badges, 0, Data, 0x569C, Badges.Length);
 
-                Array.Copy(Letters, 0, Data, 0x70A8 - 0xA0, Letters.Length);
-
                 for (int i = 0; i < Pockets.Length; i++)
                     Array.Copy(Pockets[i].Write(), 0, Data, 0x6BD0 + i * 4, 4);
 
@@ -380,6 +379,53 @@ namespace NLSE
             public byte[] getPlayerBytes()
             {
                 return Data.Skip(0x55A6).Take(0x2E).ToArray();
+            }
+        }
+        class PlayerLetter
+        {
+            public byte[] Data;
+
+            private uint U32;
+            public int PlayerSID;
+            public string PlayerName;
+            public int TownSID;
+            public string TownName;
+            public int PlayerID;
+            public string FirstWords;
+            public string LetterContent;
+            public string LetterEnd;
+            public int NamePosition;
+            public int PaperID;
+            public int Flag;
+            public int LetterType;
+            public uint Item;
+
+            public PlayerLetter(byte[] data)
+            {
+                Data = data;
+
+                U32 = BitConverter.ToUInt32(data, 0);
+
+                PlayerSID = BitConverter.ToUInt16(data, 0);
+                PlayerName = Encoding.Unicode.GetString(Data.Skip(0x2).Take(0x12).ToArray()).Trim('\0');
+                PlayerSID = BitConverter.ToUInt16(data, 0x16);
+                TownName = Encoding.Unicode.GetString(Data.Skip(0x18).Take(0x12).ToArray()).Trim('\0');
+                PlayerID = Data[0x30];
+                FirstWords = Encoding.Unicode.GetString(Data.Skip(0x68).Take(0x32).ToArray()).Trim('\0');
+                LetterContent = Encoding.Unicode.GetString(Data.Skip(0xAA).Take(0x140).ToArray()).Trim('\0');
+                LetterEnd = Encoding.Unicode.GetString(Data.Skip(0x22C).Take(0x40).ToArray()).Trim('\0');
+                NamePosition = Data[0x26E];
+                PaperID = Data[0x26F];
+                Flag = Data[0x270];
+                Item = BitConverter.ToUInt32(data, 0x272);
+            }
+            public byte[] Write()
+            {
+                Array.Copy(BitConverter.GetBytes(U32), 0, Data, 0, 4);
+
+                Array.Copy(Encoding.Unicode.GetBytes(PlayerName.PadRight(9, '\0')), 0, Data, 0x2, 0x12);
+
+                return Data;
             }
         }
 
@@ -733,19 +779,19 @@ namespace NLSE
                 Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6AEB8 + i * 4, 4);
 
             for (int i = 0; i < 101; i++)
-                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B343 + i * 1, 1);
+                Array.Copy(MuseumContributorsFish[i].Write(), 0, Save.Data, 0x6B343 + i * 1, 1);
             for (int i = 0; i < 101; i++)
-                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6AFC4 + i * 4, 4);
+                Array.Copy(MuseumContributionsFish[i].Write(), 0, Save.Data, 0x6AFC4 + i * 4, 4);
 
             for (int i = 0; i < 72; i++)
-                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B3A9 + i * 1, 1);
+                Array.Copy(MuseumContributorsInsect[i].Write(), 0, Save.Data, 0x6B3A9 + i * 1, 1);
             for (int i = 0; i < 72; i++)
-                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6B15C + i * 4, 4);
+                Array.Copy(MuseumContributionsInsect[i].Write(), 0, Save.Data, 0x6B15C + i * 4, 4);
 
             for (int i = 0; i < 33; i++)
-                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B3F1 + i * 1, 1);
+                Array.Copy(MuseumContributorsArt[i].Write(), 0, Save.Data, 0x6B3F1 + i * 1, 1);
             for (int i = 0; i < 33; i++)
-                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6B27C + i * 4, 4);
+                Array.Copy(MuseumContributionsArt[i].Write(), 0, Save.Data, 0x6B27C + i * 4, 4);
 
             // Write Villagers
             for (int i = 0; i < Villagers.Length; i++)
