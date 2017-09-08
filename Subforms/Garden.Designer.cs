@@ -382,6 +382,13 @@
             this.L_TrainStationColor = new System.Windows.Forms.Label();
             this.CB_NativeFruit = new System.Windows.Forms.ComboBox();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.BTN_CompleteMus = new System.Windows.Forms.Button();
             this.BTN_INJMus = new System.Windows.Forms.Button();
@@ -679,6 +686,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Minutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Seconds)).BeginInit();
             this.tabPage11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage12.SuspendLayout();
             this.groupBox22.SuspendLayout();
@@ -4590,161 +4600,161 @@
             this.groupBox21.Controls.Add(this.label20);
             this.groupBox21.Controls.Add(this.label18);
             this.groupBox21.Controls.Add(this.label19);
-            this.groupBox21.Location = new System.Drawing.Point(366, 323);
+            this.groupBox21.Location = new System.Drawing.Point(323, 323);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(227, 193);
+            this.groupBox21.Size = new System.Drawing.Size(306, 193);
             this.groupBox21.TabIndex = 47;
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "Turnip Prices";
             // 
             // NUD_SatPM
             // 
-            this.NUD_SatPM.Location = new System.Drawing.Point(174, 161);
+            this.NUD_SatPM.Location = new System.Drawing.Point(236, 161);
             this.NUD_SatPM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_SatPM.Name = "NUD_SatPM";
-            this.NUD_SatPM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_SatPM.Size = new System.Drawing.Size(56, 20);
             this.NUD_SatPM.TabIndex = 19;
             // 
             // NUD_SatAM
             // 
-            this.NUD_SatAM.Location = new System.Drawing.Point(101, 161);
+            this.NUD_SatAM.Location = new System.Drawing.Point(122, 161);
             this.NUD_SatAM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_SatAM.Name = "NUD_SatAM";
-            this.NUD_SatAM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_SatAM.Size = new System.Drawing.Size(56, 20);
             this.NUD_SatAM.TabIndex = 18;
             // 
             // NUD_FriPM
             // 
-            this.NUD_FriPM.Location = new System.Drawing.Point(174, 135);
+            this.NUD_FriPM.Location = new System.Drawing.Point(236, 135);
             this.NUD_FriPM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_FriPM.Name = "NUD_FriPM";
-            this.NUD_FriPM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_FriPM.Size = new System.Drawing.Size(56, 20);
             this.NUD_FriPM.TabIndex = 17;
             // 
             // NUD_FriAM
             // 
-            this.NUD_FriAM.Location = new System.Drawing.Point(101, 135);
+            this.NUD_FriAM.Location = new System.Drawing.Point(122, 135);
             this.NUD_FriAM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_FriAM.Name = "NUD_FriAM";
-            this.NUD_FriAM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_FriAM.Size = new System.Drawing.Size(56, 20);
             this.NUD_FriAM.TabIndex = 16;
             // 
             // NUD_ThursPM
             // 
-            this.NUD_ThursPM.Location = new System.Drawing.Point(174, 109);
+            this.NUD_ThursPM.Location = new System.Drawing.Point(236, 109);
             this.NUD_ThursPM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_ThursPM.Name = "NUD_ThursPM";
-            this.NUD_ThursPM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_ThursPM.Size = new System.Drawing.Size(56, 20);
             this.NUD_ThursPM.TabIndex = 15;
             // 
             // NUD_ThursAM
             // 
-            this.NUD_ThursAM.Location = new System.Drawing.Point(101, 109);
+            this.NUD_ThursAM.Location = new System.Drawing.Point(122, 109);
             this.NUD_ThursAM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_ThursAM.Name = "NUD_ThursAM";
-            this.NUD_ThursAM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_ThursAM.Size = new System.Drawing.Size(56, 20);
             this.NUD_ThursAM.TabIndex = 14;
             // 
             // NUD_WedPM
             // 
-            this.NUD_WedPM.Location = new System.Drawing.Point(174, 83);
+            this.NUD_WedPM.Location = new System.Drawing.Point(236, 83);
             this.NUD_WedPM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_WedPM.Name = "NUD_WedPM";
-            this.NUD_WedPM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_WedPM.Size = new System.Drawing.Size(56, 20);
             this.NUD_WedPM.TabIndex = 13;
             // 
             // NUD_WedAM
             // 
-            this.NUD_WedAM.Location = new System.Drawing.Point(101, 83);
+            this.NUD_WedAM.Location = new System.Drawing.Point(122, 83);
             this.NUD_WedAM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_WedAM.Name = "NUD_WedAM";
-            this.NUD_WedAM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_WedAM.Size = new System.Drawing.Size(56, 20);
             this.NUD_WedAM.TabIndex = 12;
             // 
             // NUD_TuePM
             // 
-            this.NUD_TuePM.Location = new System.Drawing.Point(174, 57);
+            this.NUD_TuePM.Location = new System.Drawing.Point(236, 57);
             this.NUD_TuePM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_TuePM.Name = "NUD_TuePM";
-            this.NUD_TuePM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_TuePM.Size = new System.Drawing.Size(56, 20);
             this.NUD_TuePM.TabIndex = 11;
             // 
             // NUD_TueAM
             // 
-            this.NUD_TueAM.Location = new System.Drawing.Point(101, 57);
+            this.NUD_TueAM.Location = new System.Drawing.Point(122, 57);
             this.NUD_TueAM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_TueAM.Name = "NUD_TueAM";
-            this.NUD_TueAM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_TueAM.Size = new System.Drawing.Size(56, 20);
             this.NUD_TueAM.TabIndex = 10;
             // 
             // NUD_MonPM
             // 
-            this.NUD_MonPM.Location = new System.Drawing.Point(174, 31);
+            this.NUD_MonPM.Location = new System.Drawing.Point(236, 31);
             this.NUD_MonPM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_MonPM.Name = "NUD_MonPM";
-            this.NUD_MonPM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_MonPM.Size = new System.Drawing.Size(56, 20);
             this.NUD_MonPM.TabIndex = 9;
             // 
             // NUD_MonAM
             // 
-            this.NUD_MonAM.Location = new System.Drawing.Point(101, 31);
+            this.NUD_MonAM.Location = new System.Drawing.Point(122, 31);
             this.NUD_MonAM.Maximum = new decimal(new int[] {
-            990,
+            999999,
             0,
             0,
             0});
             this.NUD_MonAM.Name = "NUD_MonAM";
-            this.NUD_MonAM.Size = new System.Drawing.Size(41, 20);
+            this.NUD_MonAM.Size = new System.Drawing.Size(56, 20);
             this.NUD_MonAM.TabIndex = 8;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(180, 16);
+            this.label23.Location = new System.Drawing.Point(242, 16);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(23, 13);
             this.label23.TabIndex = 7;
@@ -4753,7 +4763,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(108, 16);
+            this.label22.Location = new System.Drawing.Point(129, 16);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(23, 13);
             this.label22.TabIndex = 6;
@@ -4823,7 +4833,6 @@
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ColumnHeadersVisible = false;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridView1.Location = new System.Drawing.Point(6, 6);
             this.dataGridView1.MultiSelect = false;
@@ -4854,7 +4863,7 @@
             // 
             // B_Grass
             // 
-            this.B_Grass.Location = new System.Drawing.Point(483, 143);
+            this.B_Grass.Location = new System.Drawing.Point(483, 173);
             this.B_Grass.Name = "B_Grass";
             this.B_Grass.Size = new System.Drawing.Size(98, 38);
             this.B_Grass.TabIndex = 1;
@@ -4881,7 +4890,7 @@
             // 
             // B_Desert
             // 
-            this.B_Desert.Location = new System.Drawing.Point(483, 187);
+            this.B_Desert.Location = new System.Drawing.Point(483, 217);
             this.B_Desert.Name = "B_Desert";
             this.B_Desert.Size = new System.Drawing.Size(98, 38);
             this.B_Desert.TabIndex = 2;
@@ -4908,7 +4917,7 @@
             // 
             // B_PWP
             // 
-            this.B_PWP.Location = new System.Drawing.Point(483, 231);
+            this.B_PWP.Location = new System.Drawing.Point(483, 282);
             this.B_PWP.Name = "B_PWP";
             this.B_PWP.Size = new System.Drawing.Size(98, 38);
             this.B_PWP.TabIndex = 0;
@@ -5111,6 +5120,13 @@
             // 
             // tabPage11
             // 
+            this.tabPage11.Controls.Add(this.label43);
+            this.tabPage11.Controls.Add(this.label44);
+            this.tabPage11.Controls.Add(this.label42);
+            this.tabPage11.Controls.Add(this.label41);
+            this.tabPage11.Controls.Add(this.dataGridView4);
+            this.tabPage11.Controls.Add(this.dataGridView5);
+            this.tabPage11.Controls.Add(this.dataGridView3);
             this.tabPage11.Controls.Add(this.dataGridView2);
             this.tabPage11.Controls.Add(this.BTN_CompleteMus);
             this.tabPage11.Controls.Add(this.BTN_INJMus);
@@ -5123,6 +5139,102 @@
             this.tabPage11.Text = "Museum";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(456, 255);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(36, 13);
+            this.label43.TabIndex = 24;
+            this.label43.Text = "Insect";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(122, 255);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(26, 13);
+            this.label44.TabIndex = 23;
+            this.label44.Text = "Fish";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(458, 4);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(20, 13);
+            this.label42.TabIndex = 22;
+            this.label42.Text = "Art";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(122, 4);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(38, 13);
+            this.label41.TabIndex = 21;
+            this.label41.Text = "Fossils";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.AllowUserToResizeColumns = false;
+            this.dataGridView4.AllowUserToResizeRows = false;
+            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView4.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dataGridView4.Location = new System.Drawing.Point(325, 271);
+            this.dataGridView4.MultiSelect = false;
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowHeadersVisible = false;
+            this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridView4.ShowEditingIcon = false;
+            this.dataGridView4.Size = new System.Drawing.Size(304, 216);
+            this.dataGridView4.TabIndex = 20;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.AllowUserToAddRows = false;
+            this.dataGridView5.AllowUserToDeleteRows = false;
+            this.dataGridView5.AllowUserToResizeColumns = false;
+            this.dataGridView5.AllowUserToResizeRows = false;
+            this.dataGridView5.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView5.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView5.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dataGridView5.Location = new System.Drawing.Point(6, 271);
+            this.dataGridView5.MultiSelect = false;
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.RowHeadersVisible = false;
+            this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridView5.ShowEditingIcon = false;
+            this.dataGridView5.Size = new System.Drawing.Size(304, 216);
+            this.dataGridView5.TabIndex = 19;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AllowUserToResizeColumns = false;
+            this.dataGridView3.AllowUserToResizeRows = false;
+            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dataGridView3.Location = new System.Drawing.Point(325, 20);
+            this.dataGridView3.MultiSelect = false;
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersVisible = false;
+            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridView3.ShowEditingIcon = false;
+            this.dataGridView3.Size = new System.Drawing.Size(304, 216);
+            this.dataGridView3.TabIndex = 18;
+            // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
@@ -5133,20 +5245,19 @@
             this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.ColumnHeadersVisible = false;
             this.dataGridView2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 35);
+            this.dataGridView2.Location = new System.Drawing.Point(6, 20);
             this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView2.ShowEditingIcon = false;
-            this.dataGridView2.Size = new System.Drawing.Size(311, 481);
+            this.dataGridView2.Size = new System.Drawing.Size(304, 216);
             this.dataGridView2.TabIndex = 17;
             // 
             // BTN_CompleteMus
             // 
-            this.BTN_CompleteMus.Location = new System.Drawing.Point(6, 6);
+            this.BTN_CompleteMus.Location = new System.Drawing.Point(6, 493);
             this.BTN_CompleteMus.Name = "BTN_CompleteMus";
             this.BTN_CompleteMus.Size = new System.Drawing.Size(103, 23);
             this.BTN_CompleteMus.TabIndex = 2;
@@ -5156,7 +5267,7 @@
             // 
             // BTN_INJMus
             // 
-            this.BTN_INJMus.Location = new System.Drawing.Point(481, 35);
+            this.BTN_INJMus.Location = new System.Drawing.Point(327, 493);
             this.BTN_INJMus.Name = "BTN_INJMus";
             this.BTN_INJMus.Size = new System.Drawing.Size(148, 23);
             this.BTN_INJMus.TabIndex = 1;
@@ -5166,7 +5277,7 @@
             // 
             // BTN_DMPMus
             // 
-            this.BTN_DMPMus.Location = new System.Drawing.Point(481, 6);
+            this.BTN_DMPMus.Location = new System.Drawing.Point(481, 493);
             this.BTN_DMPMus.Name = "BTN_DMPMus";
             this.BTN_DMPMus.Size = new System.Drawing.Size(148, 23);
             this.BTN_DMPMus.TabIndex = 0;
@@ -6201,21 +6312,21 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -6505,6 +6616,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Minutes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Seconds)).EndInit();
             this.tabPage11.ResumeLayout(false);
+            this.tabPage11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage12.ResumeLayout(false);
             this.groupBox22.ResumeLayout(false);
@@ -7047,5 +7162,12 @@
         private System.Windows.Forms.ComboBox CB_HouseStyle;
         private System.Windows.Forms.NumericUpDown NUD_TreeSize;
         private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dataGridView3;
     }
 }

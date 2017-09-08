@@ -1,9 +1,12 @@
 ﻿// I have to say that most of the code from the functions I added have a bad code, I know it's not good if we want to maintain the project, or if you want to learn how some stuff are working, but at least stuff work as it should. I'll propably fix those bad codes when i'll have more experience.
 using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 
@@ -21,6 +24,15 @@ namespace NLSE
         private Player[] Players;
         private PlayerExterior[] PlayersExterior;
         private Building[] Buildings;
+        private MuseumContribution[] MuseumContributionsFossil;
+        private MuseumContribution[] MuseumContributionsArt;
+        private MuseumContribution[] MuseumContributionsFish;
+        private MuseumContribution[] MuseumContributionsInsect;
+
+        private MuseumContributor[] MuseumContributorsFossil;
+        private MuseumContributor[] MuseumContributorsArt;
+        private MuseumContributor[] MuseumContributorsFish;
+        private MuseumContributor[] MuseumContributorsInsect;
         private Villager[] Villagers;
         private Item[] TownItems, IslandItems;
 
@@ -481,6 +493,51 @@ namespace NLSE
                 }
             }
         }
+        class MuseumContribution
+        {
+            public int Yrs, Mth, Day;
+
+            public MuseumContribution(byte[] data)
+            {
+                if (data.Length != 4) return;
+                Yrs = BitConverter.ToUInt16(data, 0);
+                Mth = data[2];
+                Day = data[3];
+            }
+            public byte[] Write()
+            {
+                using (var ms = new MemoryStream())
+                using (var bw = new BinaryWriter(ms))
+                {
+                    bw.Write((ushort)Yrs);
+                    bw.Write((byte)Mth);
+                    bw.Write((byte)Day);
+                    return ms.ToArray();
+                }
+            }
+        }
+
+        class MuseumContributor
+        {
+            public int Plyr;
+
+            public MuseumContributor(byte[] data)
+            {
+                if (data.Length != 1) return;
+
+                Plyr = data[0];
+            }
+            public byte[] Write()
+            {
+                using (var ms = new MemoryStream())
+                using (var bw = new BinaryWriter(ms))
+                {
+                    bw.Write((ushort)Plyr);
+                    return ms.ToArray();
+                }
+            }
+        }
+
         class Villager
         {
             // Fetch from raw data
@@ -588,11 +645,15 @@ namespace NLSE
 
             populateBuildingList();
 
+            populateMuseumFossilList();
+            populateMuseumFishList();
+            populateMuseumInsectList();
+            populateMuseumArtList();
+
             // Load Villagers
             Villagers = new Villager[10];
             for (int i = 0; i < Villagers.Length; i++)
                 loadVillager(i);
-
 
             // Load Overall
             {
@@ -663,6 +724,28 @@ namespace NLSE
             // Write Buildings
             for (int i = 0; i < Buildings.Length; i++)
                 Array.Copy(Buildings[i].Write(), 0, Save.Data, 0x4BE88 + i * 4, 4);
+
+            saveMuseumList();
+            // Write Museum
+            for (int i = 0; i < 67; i++)
+                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B300 + i * 1, 1);
+            for (int i = 0; i < 67; i++)
+                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6AEB8 + i * 4, 4);
+
+            for (int i = 0; i < 101; i++)
+                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B343 + i * 1, 1);
+            for (int i = 0; i < 101; i++)
+                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6AFC4 + i * 4, 4);
+
+            for (int i = 0; i < 72; i++)
+                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B3A9 + i * 1, 1);
+            for (int i = 0; i < 72; i++)
+                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6B15C + i * 4, 4);
+
+            for (int i = 0; i < 33; i++)
+                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B3F1 + i * 1, 1);
+            for (int i = 0; i < 33; i++)
+                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6B27C + i * 4, 4);
 
             // Write Villagers
             for (int i = 0; i < Villagers.Length; i++)
@@ -1613,8 +1696,6 @@ namespace NLSE
 
         private void saveBuildingList()
         {
-            const int offset = 0x4BE84;
-
             int itemcount = dataGridView1.Rows.Count;
             for (int i = 0; i < itemcount; i++)
             {
@@ -1635,10 +1716,53 @@ namespace NLSE
                     { Buildings[i].Y = Convert.ToUInt16(dataGridView1.Rows[i].Cells[2].Value.ToString()); }
                     catch { }
                 }
-                byte[] data = {0x3A};
-                Array.Copy(data, 0, Save.Data, offset, data.Length); // change 0x4BE84 to 0x3A so adding buildings will always work.
             }
         }
+        int ConvertVal(string val)
+        {
+            try
+            {
+                return Convert.ToUInt16(val);
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
+        private void saveMuseumList()
+        {
+            int itemcount1 = dataGridView2.Rows.Count;
+            int itemcount2 = dataGridView3.Rows.Count;
+            int itemcount3 = dataGridView4.Rows.Count;
+            int itemcount4 = dataGridView5.Rows.Count;
+
+            for (int i = 0; i < itemcount1; i++)
+            {
+                int ID = ConvertVal(dataGridView2.Rows[i].Cells[1].Value.ToString());
+                int IDDay = ConvertVal(dataGridView2.Rows[i].Cells[2].Value.ToString());
+                int IDMth = ConvertVal(dataGridView2.Rows[i].Cells[3].Value.ToString());
+                int IDYrs = ConvertVal(dataGridView2.Rows[i].Cells[4].Value.ToString());
+
+                if (ID > 0x4 || ID == 0 || IDDay > 31 || IDMth > 12 || IDYrs > 65535)
+                {
+                    MuseumContributorsFossil[i].Plyr = 0;
+                    MuseumContributionsFossil[i].Day = 0;
+                    MuseumContributionsFossil[i].Mth = 0;
+                    MuseumContributionsFossil[i].Yrs = 0;
+                }
+                else
+                {
+                    MuseumContributorsFossil[i].Plyr = ID;
+                    MuseumContributionsFossil[i].Day = IDDay;
+                    MuseumContributionsFossil[i].Mth = IDMth;
+                    try
+                    { MuseumContributionsFossil[i].Yrs = Convert.ToUInt16(dataGridView2.Rows[i].Cells[4].Value.ToString()); }
+                    catch { }
+                }
+            }
+        }
+
         private void populateBuildingList()
         {
             dataGridView1.Rows.Clear();
@@ -1648,10 +1772,11 @@ namespace NLSE
             {
                 DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
                 DisplayIndex = 0,
+                HeaderText = "Building Name",
                 DisplayMember = "Text",
                 ValueMember = "Value",
                 DataSource = Main.buildingList,
-                Width = 215,
+                Width = 222,
                 FlatStyle = FlatStyle.Flat
             };
             DataGridViewColumn dgvX = new DataGridViewTextBoxColumn
@@ -1659,12 +1784,14 @@ namespace NLSE
                 HeaderText = "X",
                 DisplayIndex = 1,
                 Width = 35,
+                MaxInputLength = 3,
             };
             DataGridViewColumn dgvY = new DataGridViewTextBoxColumn
             {
                 HeaderText = "Y",
                 DisplayIndex = 2,
                 Width = 35,
+                MaxInputLength = 3,
             };
             dgvX.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvY.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -1700,6 +1827,466 @@ namespace NLSE
                 dataGridView1.Rows[i].Cells[2].Value = Buildings[i].Y;
             }
         }
+
+        private void populateMuseumFossilList()
+        {
+            dataGridView2.Rows.Clear();
+            dataGridView2.Columns.Clear();
+
+            MuseumContributorsFossil = new MuseumContributor[67]; // Fossil
+            for (int i = 0; i < MuseumContributorsFossil.Length; i++)
+                MuseumContributorsFossil[i] = new MuseumContributor(Save.Data.Skip(0x6B300 + i * 1).Take(1).ToArray());
+
+            MuseumContributionsFossil = new MuseumContribution[67];
+            for (int i = 0; i < MuseumContributionsFossil.Length; i++)
+                MuseumContributionsFossil[i] = new MuseumContribution(Save.Data.Skip(0x6AEB8 + i * 4).Take(4).ToArray());
+
+            DataGridViewColumn ID = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Name",
+                DisplayIndex = 0,
+                Width = 100,
+                ReadOnly = true,
+            };
+
+            IList<MyValue> values = new List<MyValue> { new MyValue { id = 0, name = "None" }, new MyValue { id = 1, name = "Player 1" }, new MyValue { id = 2, name = "Player 2" }, new MyValue { id = 3, name = "Player 3" }, new MyValue { id = 4, name = "Player 4" } };
+
+            DataGridViewComboBoxColumn dgvContributor = new DataGridViewComboBoxColumn
+            {
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
+                DisplayIndex = 1,
+                HeaderText = "Contributor",
+                DisplayMember = "name",
+                ValueMember = "id",
+                DataSource = values,
+                Width = 65,
+                FlatStyle = FlatStyle.Flat
+            };
+
+            DataGridViewColumn dgvDay = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Day",
+                DisplayIndex = 2,
+                Width = 40,
+                MaxInputLength = 2,
+            };
+            DataGridViewColumn dgvMonth = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Month",
+                DisplayIndex = 3,
+                Width = 40,
+                MaxInputLength = 2,
+            };
+            DataGridViewColumn dgvYear = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Year",
+                DisplayIndex = 4,
+                Width = 40,
+                MaxInputLength = 5,
+            };
+
+            ID.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvDay.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvMonth.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvYear.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dataGridView2.Columns.Add(ID);
+            dataGridView2.Columns.Add(dgvContributor);
+            dataGridView2.Columns.Add(dgvDay);
+            dataGridView2.Columns.Add(dgvMonth);
+            dataGridView2.Columns.Add(dgvYear);
+
+            dataGridView2.Rows.Add(67);
+            dataGridView2.CancelEdit();
+
+            try
+            {
+                string[] lines = File.ReadAllLines("MuseumDinoNames.txt");
+
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    dataGridView2.Rows[i].Cells[0].Value = lines[i].ToString();
+                }
+
+                for (int i = 0; i < 67; i++)
+                {
+                    dataGridView2.Rows[i].Cells[1].Value = MuseumContributorsFossil[i].Plyr;
+                    dataGridView2.Rows[i].Cells[2].Value = MuseumContributionsFossil[i].Day;
+                    dataGridView2.Rows[i].Cells[3].Value = MuseumContributionsFossil[i].Mth;
+                    dataGridView2.Rows[i].Cells[4].Value = MuseumContributionsFossil[i].Yrs;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Unable to find MuseumDinoNames.txt");
+                Close();
+            }
+        }
+
+        private void populateMuseumFishList()
+        {
+            dataGridView5.Rows.Clear();
+            dataGridView5.Columns.Clear();
+
+            MuseumContributorsFish = new MuseumContributor[101]; // Fish
+            for (int i = 0; i < MuseumContributorsFish.Length; i++)
+                MuseumContributorsFish[i] = new MuseumContributor(Save.Data.Skip(0x6B343 + i * 1).Take(1).ToArray());
+
+            MuseumContributionsFish = new MuseumContribution[101];
+            for (int i = 0; i < MuseumContributionsFish.Length; i++)
+                MuseumContributionsFish[i] = new MuseumContribution(Save.Data.Skip(0x6AFC4 + i * 4).Take(4).ToArray());
+
+            DataGridViewColumn ID = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Name",
+                DisplayIndex = 0,
+                Width = 100,
+                ReadOnly = true,
+            };
+
+            IList<MyValue> values = new List<MyValue> { new MyValue { id = 0, name = "None" }, new MyValue { id = 1, name = "Player 1" }, new MyValue { id = 2, name = "Player 2" }, new MyValue { id = 3, name = "Player 3" }, new MyValue { id = 4, name = "Player 4" } };
+
+            DataGridViewComboBoxColumn dgvContributor = new DataGridViewComboBoxColumn
+            {
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
+                DisplayIndex = 1,
+                HeaderText = "Contributor",
+                DisplayMember = "name",
+                ValueMember = "id",
+                DataSource = values,
+                Width = 65,
+                FlatStyle = FlatStyle.Flat
+            };
+
+            DataGridViewColumn dgvDay = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Day",
+                DisplayIndex = 2,
+                Width = 40,
+                MaxInputLength = 2,
+            };
+            DataGridViewColumn dgvMonth = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Month",
+                DisplayIndex = 3,
+                Width = 40,
+                MaxInputLength = 2,
+            };
+            DataGridViewColumn dgvYear = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Year",
+                DisplayIndex = 4,
+                Width = 40,
+                MaxInputLength = 5,
+            };
+
+            ID.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvDay.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvMonth.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvYear.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
+            dataGridView5.Columns.Add(ID); 
+            dataGridView5.Columns.Add(dgvContributor);
+            dataGridView5.Columns.Add(dgvDay);
+            dataGridView5.Columns.Add(dgvMonth);
+            dataGridView5.Columns.Add(dgvYear);
+
+            dataGridView5.Rows.Add(101);
+            dataGridView5.CancelEdit();
+
+            try
+            {
+                string[] lines = File.ReadAllLines("MuseumFishNames.txt");
+
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    dataGridView5.Rows[i].Cells[0].Value = lines[i].ToString();
+                }
+
+                for (int i = 0; i < 101; i++)
+                {
+                    dataGridView5.Rows[i].Cells[1].Value = MuseumContributorsFish[i].Plyr;
+                    dataGridView5.Rows[i].Cells[2].Value = MuseumContributionsFish[i].Day;
+                    dataGridView5.Rows[i].Cells[3].Value = MuseumContributionsFish[i].Mth;
+                    dataGridView5.Rows[i].Cells[4].Value = MuseumContributionsFish[i].Yrs;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Unable to find MuseumFishNames.txt");
+                Close();
+            }
+        }
+
+        private void populateMuseumInsectList()
+        {
+            dataGridView4.Rows.Clear();
+            dataGridView4.Columns.Clear();
+
+            MuseumContributorsInsect = new MuseumContributor[72]; // Insect
+            for (int i = 0; i < MuseumContributorsInsect.Length; i++)
+                MuseumContributorsInsect[i] = new MuseumContributor(Save.Data.Skip(0x6B3A9 + i * 1).Take(1).ToArray());
+
+            MuseumContributionsInsect = new MuseumContribution[72];
+            for (int i = 0; i < MuseumContributionsInsect.Length; i++)
+                MuseumContributionsInsect[i] = new MuseumContribution(Save.Data.Skip(0x6B15C + i * 4).Take(4).ToArray());
+
+            DataGridViewColumn ID = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Name",
+                DisplayIndex = 0,
+                Width = 100,
+                ReadOnly = true,
+            };
+
+            IList<MyValue> values = new List<MyValue> { new MyValue { id = 0, name = "None" }, new MyValue { id = 1, name = "Player 1" }, new MyValue { id = 2, name = "Player 2" }, new MyValue { id = 3, name = "Player 3" }, new MyValue { id = 4, name = "Player 4" } };
+
+            DataGridViewComboBoxColumn dgvContributor = new DataGridViewComboBoxColumn
+            {
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
+                DisplayIndex = 1,
+                HeaderText = "Contributor",
+                DisplayMember = "name",
+                ValueMember = "id",
+                DataSource = values,
+                Width = 65,
+                FlatStyle = FlatStyle.Flat
+            };
+
+            DataGridViewColumn dgvDay = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Day",
+                DisplayIndex = 2,
+                Width = 40,
+                MaxInputLength = 2,
+            };
+            DataGridViewColumn dgvMonth = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Month",
+                DisplayIndex = 3,
+                Width = 40,
+                MaxInputLength = 2,
+            };
+            DataGridViewColumn dgvYear = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Year",
+                DisplayIndex = 4,
+                Width = 40,
+                MaxInputLength = 5,
+            };
+
+            ID.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvDay.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvMonth.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvYear.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
+            dataGridView4.Columns.Add(ID);
+            dataGridView4.Columns.Add(dgvContributor);
+            dataGridView4.Columns.Add(dgvDay);
+            dataGridView4.Columns.Add(dgvMonth);
+            dataGridView4.Columns.Add(dgvYear);
+
+            dataGridView4.Rows.Add(72);
+            dataGridView4.CancelEdit();
+
+            try
+            {
+                string[] lines = File.ReadAllLines("MuseumInsectNames.txt");
+
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    dataGridView4.Rows[i].Cells[0].Value = lines[i].ToString();
+                }
+
+                for (int i = 0; i < 72; i++)
+                {
+                    dataGridView4.Rows[i].Cells[1].Value = MuseumContributorsInsect[i].Plyr;
+                    dataGridView4.Rows[i].Cells[2].Value = MuseumContributionsInsect[i].Day;
+                    dataGridView4.Rows[i].Cells[3].Value = MuseumContributionsInsect[i].Mth;
+                    dataGridView4.Rows[i].Cells[4].Value = MuseumContributionsInsect[i].Yrs;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Unable to find MuseumInsectNames.txt");
+                Close();
+            }
+        }
+
+        private void populateMuseumArtList()
+        {
+            dataGridView3.Rows.Clear();
+            dataGridView3.Columns.Clear();
+
+            MuseumContributorsArt = new MuseumContributor[33]; // Art
+            for (int i = 0; i < MuseumContributorsArt.Length; i++)
+                MuseumContributorsArt[i] = new MuseumContributor(Save.Data.Skip(0x6B3F1 + i * 1).Take(1).ToArray());
+
+            MuseumContributionsArt = new MuseumContribution[33];
+            for (int i = 0; i < MuseumContributionsArt.Length; i++)
+                MuseumContributionsArt[i] = new MuseumContribution(Save.Data.Skip(0x6B27C + i * 4).Take(4).ToArray());
+
+            DataGridViewColumn ID = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Name",
+                DisplayIndex = 0,
+                Width = 100,
+                ReadOnly = true,
+            };
+
+            IList<MyValue> values = new List<MyValue> { new MyValue { id = 0, name = "None" }, new MyValue { id = 1, name = "Player 1" }, new MyValue { id = 2, name = "Player 2" }, new MyValue { id = 3, name = "Player 3" }, new MyValue { id = 4, name = "Player 4" } };
+
+            DataGridViewComboBoxColumn dgvContributor = new DataGridViewComboBoxColumn
+            {
+                DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
+                DisplayIndex = 1,
+                HeaderText = "Contributor",
+                DisplayMember = "name",
+                ValueMember = "id",
+                DataSource = values,
+                Width = 65,
+                FlatStyle = FlatStyle.Flat
+            };
+
+            DataGridViewColumn dgvDay = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Day",
+                DisplayIndex = 2,
+                Width = 40,
+                MaxInputLength = 2,
+            };
+            DataGridViewColumn dgvMonth = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Month",
+                DisplayIndex = 3,
+                Width = 40,
+                MaxInputLength = 2,
+            };
+            DataGridViewColumn dgvYear = new DataGridViewTextBoxColumn
+            {
+                HeaderText = "Year",
+                DisplayIndex = 4,
+                Width = 40,
+                MaxInputLength = 5,
+            };
+
+            ID.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvDay.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvMonth.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvYear.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
+            dataGridView3.Columns.Add(ID);
+            dataGridView3.Columns.Add(dgvContributor);
+            dataGridView3.Columns.Add(dgvDay);
+            dataGridView3.Columns.Add(dgvMonth);
+            dataGridView3.Columns.Add(dgvYear);
+
+            dataGridView3.Rows.Add(33);
+            dataGridView3.CancelEdit();
+
+            try
+            {
+                string[] lines = File.ReadAllLines("MuseumArtNames.txt");
+
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    dataGridView3.Rows[i].Cells[0].Value = lines[i].ToString();
+                }
+
+                for (int i = 0; i < 33; i++)
+                {
+                    dataGridView3.Rows[i].Cells[1].Value = MuseumContributorsArt[i].Plyr;
+                    dataGridView3.Rows[i].Cells[2].Value = MuseumContributionsArt[i].Day;
+                    dataGridView3.Rows[i].Cells[3].Value = MuseumContributionsArt[i].Mth;
+                    dataGridView3.Rows[i].Cells[4].Value = MuseumContributionsArt[i].Yrs;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Unable to find MuseumArtNames.txt");
+                Close();
+            }
+        }
+
+        public class MyValue
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+        }
+
+        public class User
+        {
+            public string Id { get; set; }
+
+            public static List<User> LoadUserListFromFile(string path)
+            {
+                var users = new List<User>();
+
+                foreach (var line in File.ReadAllLines(path))
+                {
+                    var columns = line.Split('\t');
+                    users.Add(new User
+                    {
+                        Id = columns[0],
+                    });
+                }
+                return users;
+            }
+        }
+
+        public class Helper
+        {
+            public static DataTable DataTableFromTextFile(string location, char delimiter = ',')
+            {
+                DataTable result;
+
+                string[] LineArray = File.ReadAllLines(location);
+
+                result = FormDataTable(LineArray, delimiter);
+
+                return result;
+            }
+
+            private static DataTable FormDataTable(string[] LineArray, char delimiter)
+            {
+                DataTable dt = new DataTable();
+
+                AddColumnToTable(LineArray, delimiter, ref dt);
+
+                AddRowToTable(LineArray, delimiter, ref dt);
+
+                return dt;
+            }
+
+            private static void AddRowToTable(string[] valueCollection, char delimiter, ref DataTable dt)
+            {
+
+                for (int i = 1; i < valueCollection.Length; i++)
+                {
+                    string[] values = valueCollection[i].Split(delimiter);
+                    DataRow dr = dt.NewRow();
+                    for (int j = 0; j < values.Length; j++)
+                    {
+                        dr[j] = values[j];
+                    }
+                    dt.Rows.Add(dr);
+                }
+            }
+
+            private static void AddColumnToTable(string[] columnCollection, char delimiter, ref DataTable dt)
+            {
+                string[] columns = columnCollection[0].Split(delimiter);
+                foreach (string columnName in columns)
+                {
+                    DataColumn dc = new DataColumn(columnName, typeof(string));
+                    dt.Columns.Add(dc);
+                }
+            }
+        }
+
         private void dropclick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex != 0) return;
@@ -1874,6 +2461,7 @@ namespace NLSE
             {
                 CHK_V01, CHK_V02, CHK_V03, CHK_V04, CHK_V05, CHK_V06, CHK_V07, CHK_V08, CHK_V09, CHK_V10
             };
+
             #endregion
             #region Load Event Methods to Controls
             foreach (PictureBox p in TownAcres) { p.MouseMove += mouseTown; p.MouseClick += clickTown; }
@@ -2360,6 +2948,7 @@ namespace NLSE
 
         private void BTN_DMPMus_Click(object sender, EventArgs e)
         {
+
             if (!Directory.Exists("Museum Contribution"))
                 Directory.CreateDirectory("Museum Contribution");
 
@@ -2370,7 +2959,28 @@ namespace NLSE
             if (sfd.ShowDialog() != DialogResult.OK)
                   return; // not saved
 
-              byte[] Museum = (Save.Data.Skip(0x6AEB8).Take(0x55A).ToArray());
+            saveMuseumList();
+            for (int i = 0; i < 67; i++)
+                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B300 + i * 1, 1);
+            for (int i = 0; i < 67; i++)
+                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6AEB8 + i * 4, 4);
+
+            for (int i = 0; i < 101; i++)
+                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B343 + i * 1, 1);
+            for (int i = 0; i < 101; i++)
+                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6AFC4 + i * 4, 4);
+
+            for (int i = 0; i < 72; i++)
+                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B3A9 + i * 1, 1);
+            for (int i = 0; i < 72; i++)
+                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6B15C + i * 4, 4);
+
+            for (int i = 0; i < 33; i++)
+                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B3F1 + i * 1, 1);
+            for (int i = 0; i < 33; i++)
+                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6B27C + i * 4, 4);
+
+            byte[] Museum = (Save.Data.Skip(0x6AEB8).Take(0x55A).ToArray());
 
               File.WriteAllBytes(sfd.FileName, Museum);
         }
@@ -2392,12 +3002,22 @@ namespace NLSE
             }
             byte[] Museum = File.ReadAllBytes(path);
             Array.Copy(Museum, 0, Save.Data, 0x6AEB8, length);
+
+            populateMuseumFossilList();
+            populateMuseumFishList();
+            populateMuseumInsectList();
+            populateMuseumArtList();
         }
 
         private void BTN_CompleteMus_Click(object sender, EventArgs e)
         {
             byte[] Museum = Properties.Resources.Museum;
             Array.Copy(Museum, 0, Save.Data, 0x6AEB8, 0x55A);
+
+            populateMuseumFossilList();
+            populateMuseumFishList();
+            populateMuseumInsectList();
+            populateMuseumArtList();
         }
 
         private void BTN_DMPlayer_Click(object sender, EventArgs e)

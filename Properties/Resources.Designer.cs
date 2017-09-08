@@ -22,7 +22,7 @@ namespace NLSE.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace NLSE.Properties {
         ///   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NLSE.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace NLSE.Properties {
         ///   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_000 {
+        public static byte[] acnl_v_000 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_000", resourceCulture);
                 return ((byte[])(obj));
@@ -73,7 +73,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_001 {
+        public static byte[] acnl_v_001 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_001", resourceCulture);
                 return ((byte[])(obj));
@@ -83,7 +83,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_002 {
+        public static byte[] acnl_v_002 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_002", resourceCulture);
                 return ((byte[])(obj));
@@ -93,7 +93,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_003 {
+        public static byte[] acnl_v_003 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_003", resourceCulture);
                 return ((byte[])(obj));
@@ -103,7 +103,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_004 {
+        public static byte[] acnl_v_004 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_004", resourceCulture);
                 return ((byte[])(obj));
@@ -113,7 +113,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_005 {
+        public static byte[] acnl_v_005 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_005", resourceCulture);
                 return ((byte[])(obj));
@@ -123,7 +123,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_006 {
+        public static byte[] acnl_v_006 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_006", resourceCulture);
                 return ((byte[])(obj));
@@ -133,7 +133,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_007 {
+        public static byte[] acnl_v_007 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_007", resourceCulture);
                 return ((byte[])(obj));
@@ -143,7 +143,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_008 {
+        public static byte[] acnl_v_008 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_008", resourceCulture);
                 return ((byte[])(obj));
@@ -153,7 +153,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_009 {
+        public static byte[] acnl_v_009 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_009", resourceCulture);
                 return ((byte[])(obj));
@@ -163,7 +163,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_010 {
+        public static byte[] acnl_v_010 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_010", resourceCulture);
                 return ((byte[])(obj));
@@ -173,7 +173,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_011 {
+        public static byte[] acnl_v_011 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_011", resourceCulture);
                 return ((byte[])(obj));
@@ -183,7 +183,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_012 {
+        public static byte[] acnl_v_012 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_012", resourceCulture);
                 return ((byte[])(obj));
@@ -193,7 +193,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_013 {
+        public static byte[] acnl_v_013 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_013", resourceCulture);
                 return ((byte[])(obj));
@@ -203,7 +203,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_014 {
+        public static byte[] acnl_v_014 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_014", resourceCulture);
                 return ((byte[])(obj));
@@ -213,7 +213,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_015 {
+        public static byte[] acnl_v_015 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_015", resourceCulture);
                 return ((byte[])(obj));
@@ -223,7 +223,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_016 {
+        public static byte[] acnl_v_016 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_016", resourceCulture);
                 return ((byte[])(obj));
@@ -233,7 +233,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_017 {
+        public static byte[] acnl_v_017 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_017", resourceCulture);
                 return ((byte[])(obj));
@@ -243,7 +243,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_018 {
+        public static byte[] acnl_v_018 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_018", resourceCulture);
                 return ((byte[])(obj));
@@ -253,7 +253,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_019 {
+        public static byte[] acnl_v_019 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_019", resourceCulture);
                 return ((byte[])(obj));
@@ -263,7 +263,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_020 {
+        public static byte[] acnl_v_020 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_020", resourceCulture);
                 return ((byte[])(obj));
@@ -273,7 +273,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_021 {
+        public static byte[] acnl_v_021 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_021", resourceCulture);
                 return ((byte[])(obj));
@@ -283,7 +283,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_022 {
+        public static byte[] acnl_v_022 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_022", resourceCulture);
                 return ((byte[])(obj));
@@ -293,7 +293,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_023 {
+        public static byte[] acnl_v_023 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_023", resourceCulture);
                 return ((byte[])(obj));
@@ -303,7 +303,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_024 {
+        public static byte[] acnl_v_024 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_024", resourceCulture);
                 return ((byte[])(obj));
@@ -313,7 +313,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_025 {
+        public static byte[] acnl_v_025 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_025", resourceCulture);
                 return ((byte[])(obj));
@@ -323,7 +323,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_026 {
+        public static byte[] acnl_v_026 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_026", resourceCulture);
                 return ((byte[])(obj));
@@ -333,7 +333,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_027 {
+        public static byte[] acnl_v_027 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_027", resourceCulture);
                 return ((byte[])(obj));
@@ -343,7 +343,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_028 {
+        public static byte[] acnl_v_028 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_028", resourceCulture);
                 return ((byte[])(obj));
@@ -353,7 +353,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_029 {
+        public static byte[] acnl_v_029 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_029", resourceCulture);
                 return ((byte[])(obj));
@@ -363,7 +363,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_030 {
+        public static byte[] acnl_v_030 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_030", resourceCulture);
                 return ((byte[])(obj));
@@ -373,7 +373,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_031 {
+        public static byte[] acnl_v_031 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_031", resourceCulture);
                 return ((byte[])(obj));
@@ -383,7 +383,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_032 {
+        public static byte[] acnl_v_032 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_032", resourceCulture);
                 return ((byte[])(obj));
@@ -393,7 +393,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_033 {
+        public static byte[] acnl_v_033 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_033", resourceCulture);
                 return ((byte[])(obj));
@@ -403,7 +403,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_034 {
+        public static byte[] acnl_v_034 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_034", resourceCulture);
                 return ((byte[])(obj));
@@ -413,7 +413,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_035 {
+        public static byte[] acnl_v_035 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_035", resourceCulture);
                 return ((byte[])(obj));
@@ -423,7 +423,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_036 {
+        public static byte[] acnl_v_036 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_036", resourceCulture);
                 return ((byte[])(obj));
@@ -433,7 +433,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_037 {
+        public static byte[] acnl_v_037 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_037", resourceCulture);
                 return ((byte[])(obj));
@@ -443,7 +443,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_038 {
+        public static byte[] acnl_v_038 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_038", resourceCulture);
                 return ((byte[])(obj));
@@ -453,7 +453,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_039 {
+        public static byte[] acnl_v_039 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_039", resourceCulture);
                 return ((byte[])(obj));
@@ -463,7 +463,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_040 {
+        public static byte[] acnl_v_040 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_040", resourceCulture);
                 return ((byte[])(obj));
@@ -473,7 +473,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_041 {
+        public static byte[] acnl_v_041 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_041", resourceCulture);
                 return ((byte[])(obj));
@@ -483,7 +483,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_042 {
+        public static byte[] acnl_v_042 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_042", resourceCulture);
                 return ((byte[])(obj));
@@ -493,7 +493,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_043 {
+        public static byte[] acnl_v_043 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_043", resourceCulture);
                 return ((byte[])(obj));
@@ -503,7 +503,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_044 {
+        public static byte[] acnl_v_044 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_044", resourceCulture);
                 return ((byte[])(obj));
@@ -513,7 +513,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_045 {
+        public static byte[] acnl_v_045 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_045", resourceCulture);
                 return ((byte[])(obj));
@@ -523,7 +523,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_046 {
+        public static byte[] acnl_v_046 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_046", resourceCulture);
                 return ((byte[])(obj));
@@ -533,7 +533,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_047 {
+        public static byte[] acnl_v_047 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_047", resourceCulture);
                 return ((byte[])(obj));
@@ -543,7 +543,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_048 {
+        public static byte[] acnl_v_048 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_048", resourceCulture);
                 return ((byte[])(obj));
@@ -553,7 +553,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_049 {
+        public static byte[] acnl_v_049 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_049", resourceCulture);
                 return ((byte[])(obj));
@@ -563,7 +563,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_050 {
+        public static byte[] acnl_v_050 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_050", resourceCulture);
                 return ((byte[])(obj));
@@ -573,7 +573,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_051 {
+        public static byte[] acnl_v_051 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_051", resourceCulture);
                 return ((byte[])(obj));
@@ -583,7 +583,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_052 {
+        public static byte[] acnl_v_052 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_052", resourceCulture);
                 return ((byte[])(obj));
@@ -593,7 +593,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_053 {
+        public static byte[] acnl_v_053 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_053", resourceCulture);
                 return ((byte[])(obj));
@@ -603,7 +603,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_054 {
+        public static byte[] acnl_v_054 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_054", resourceCulture);
                 return ((byte[])(obj));
@@ -613,7 +613,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_055 {
+        public static byte[] acnl_v_055 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_055", resourceCulture);
                 return ((byte[])(obj));
@@ -623,7 +623,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_056 {
+        public static byte[] acnl_v_056 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_056", resourceCulture);
                 return ((byte[])(obj));
@@ -633,7 +633,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_057 {
+        public static byte[] acnl_v_057 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_057", resourceCulture);
                 return ((byte[])(obj));
@@ -643,7 +643,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_058 {
+        public static byte[] acnl_v_058 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_058", resourceCulture);
                 return ((byte[])(obj));
@@ -653,7 +653,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_059 {
+        public static byte[] acnl_v_059 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_059", resourceCulture);
                 return ((byte[])(obj));
@@ -663,7 +663,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_060 {
+        public static byte[] acnl_v_060 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_060", resourceCulture);
                 return ((byte[])(obj));
@@ -673,7 +673,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_061 {
+        public static byte[] acnl_v_061 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_061", resourceCulture);
                 return ((byte[])(obj));
@@ -683,7 +683,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_062 {
+        public static byte[] acnl_v_062 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_062", resourceCulture);
                 return ((byte[])(obj));
@@ -693,7 +693,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_063 {
+        public static byte[] acnl_v_063 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_063", resourceCulture);
                 return ((byte[])(obj));
@@ -703,7 +703,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_064 {
+        public static byte[] acnl_v_064 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_064", resourceCulture);
                 return ((byte[])(obj));
@@ -713,7 +713,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_065 {
+        public static byte[] acnl_v_065 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_065", resourceCulture);
                 return ((byte[])(obj));
@@ -723,7 +723,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_066 {
+        public static byte[] acnl_v_066 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_066", resourceCulture);
                 return ((byte[])(obj));
@@ -733,7 +733,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_067 {
+        public static byte[] acnl_v_067 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_067", resourceCulture);
                 return ((byte[])(obj));
@@ -743,7 +743,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_068 {
+        public static byte[] acnl_v_068 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_068", resourceCulture);
                 return ((byte[])(obj));
@@ -753,7 +753,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_069 {
+        public static byte[] acnl_v_069 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_069", resourceCulture);
                 return ((byte[])(obj));
@@ -763,7 +763,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_070 {
+        public static byte[] acnl_v_070 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_070", resourceCulture);
                 return ((byte[])(obj));
@@ -773,7 +773,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_071 {
+        public static byte[] acnl_v_071 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_071", resourceCulture);
                 return ((byte[])(obj));
@@ -783,7 +783,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_072 {
+        public static byte[] acnl_v_072 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_072", resourceCulture);
                 return ((byte[])(obj));
@@ -793,7 +793,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_073 {
+        public static byte[] acnl_v_073 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_073", resourceCulture);
                 return ((byte[])(obj));
@@ -803,7 +803,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_074 {
+        public static byte[] acnl_v_074 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_074", resourceCulture);
                 return ((byte[])(obj));
@@ -813,7 +813,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_075 {
+        public static byte[] acnl_v_075 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_075", resourceCulture);
                 return ((byte[])(obj));
@@ -823,7 +823,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_076 {
+        public static byte[] acnl_v_076 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_076", resourceCulture);
                 return ((byte[])(obj));
@@ -833,7 +833,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_077 {
+        public static byte[] acnl_v_077 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_077", resourceCulture);
                 return ((byte[])(obj));
@@ -843,7 +843,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_078 {
+        public static byte[] acnl_v_078 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_078", resourceCulture);
                 return ((byte[])(obj));
@@ -853,7 +853,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_079 {
+        public static byte[] acnl_v_079 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_079", resourceCulture);
                 return ((byte[])(obj));
@@ -863,7 +863,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_080 {
+        public static byte[] acnl_v_080 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_080", resourceCulture);
                 return ((byte[])(obj));
@@ -873,7 +873,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_081 {
+        public static byte[] acnl_v_081 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_081", resourceCulture);
                 return ((byte[])(obj));
@@ -883,7 +883,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_082 {
+        public static byte[] acnl_v_082 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_082", resourceCulture);
                 return ((byte[])(obj));
@@ -893,7 +893,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_083 {
+        public static byte[] acnl_v_083 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_083", resourceCulture);
                 return ((byte[])(obj));
@@ -903,7 +903,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_084 {
+        public static byte[] acnl_v_084 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_084", resourceCulture);
                 return ((byte[])(obj));
@@ -913,7 +913,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_085 {
+        public static byte[] acnl_v_085 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_085", resourceCulture);
                 return ((byte[])(obj));
@@ -923,7 +923,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_086 {
+        public static byte[] acnl_v_086 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_086", resourceCulture);
                 return ((byte[])(obj));
@@ -933,7 +933,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_087 {
+        public static byte[] acnl_v_087 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_087", resourceCulture);
                 return ((byte[])(obj));
@@ -943,7 +943,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_088 {
+        public static byte[] acnl_v_088 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_088", resourceCulture);
                 return ((byte[])(obj));
@@ -953,7 +953,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_089 {
+        public static byte[] acnl_v_089 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_089", resourceCulture);
                 return ((byte[])(obj));
@@ -963,7 +963,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_090 {
+        public static byte[] acnl_v_090 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_090", resourceCulture);
                 return ((byte[])(obj));
@@ -973,7 +973,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_091 {
+        public static byte[] acnl_v_091 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_091", resourceCulture);
                 return ((byte[])(obj));
@@ -983,7 +983,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_092 {
+        public static byte[] acnl_v_092 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_092", resourceCulture);
                 return ((byte[])(obj));
@@ -993,7 +993,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_093 {
+        public static byte[] acnl_v_093 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_093", resourceCulture);
                 return ((byte[])(obj));
@@ -1003,7 +1003,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_094 {
+        public static byte[] acnl_v_094 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_094", resourceCulture);
                 return ((byte[])(obj));
@@ -1013,7 +1013,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_095 {
+        public static byte[] acnl_v_095 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_095", resourceCulture);
                 return ((byte[])(obj));
@@ -1023,7 +1023,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_096 {
+        public static byte[] acnl_v_096 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_096", resourceCulture);
                 return ((byte[])(obj));
@@ -1033,7 +1033,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_097 {
+        public static byte[] acnl_v_097 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_097", resourceCulture);
                 return ((byte[])(obj));
@@ -1043,7 +1043,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_098 {
+        public static byte[] acnl_v_098 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_098", resourceCulture);
                 return ((byte[])(obj));
@@ -1053,7 +1053,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_099 {
+        public static byte[] acnl_v_099 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_099", resourceCulture);
                 return ((byte[])(obj));
@@ -1063,7 +1063,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_100 {
+        public static byte[] acnl_v_100 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_100", resourceCulture);
                 return ((byte[])(obj));
@@ -1073,7 +1073,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_101 {
+        public static byte[] acnl_v_101 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_101", resourceCulture);
                 return ((byte[])(obj));
@@ -1083,7 +1083,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_102 {
+        public static byte[] acnl_v_102 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_102", resourceCulture);
                 return ((byte[])(obj));
@@ -1093,7 +1093,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_103 {
+        public static byte[] acnl_v_103 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_103", resourceCulture);
                 return ((byte[])(obj));
@@ -1103,7 +1103,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_104 {
+        public static byte[] acnl_v_104 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_104", resourceCulture);
                 return ((byte[])(obj));
@@ -1113,7 +1113,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_105 {
+        public static byte[] acnl_v_105 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_105", resourceCulture);
                 return ((byte[])(obj));
@@ -1123,7 +1123,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_106 {
+        public static byte[] acnl_v_106 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_106", resourceCulture);
                 return ((byte[])(obj));
@@ -1133,7 +1133,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_107 {
+        public static byte[] acnl_v_107 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_107", resourceCulture);
                 return ((byte[])(obj));
@@ -1143,7 +1143,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_108 {
+        public static byte[] acnl_v_108 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_108", resourceCulture);
                 return ((byte[])(obj));
@@ -1153,7 +1153,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_109 {
+        public static byte[] acnl_v_109 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_109", resourceCulture);
                 return ((byte[])(obj));
@@ -1163,7 +1163,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_110 {
+        public static byte[] acnl_v_110 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_110", resourceCulture);
                 return ((byte[])(obj));
@@ -1173,7 +1173,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_111 {
+        public static byte[] acnl_v_111 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_111", resourceCulture);
                 return ((byte[])(obj));
@@ -1183,7 +1183,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_112 {
+        public static byte[] acnl_v_112 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_112", resourceCulture);
                 return ((byte[])(obj));
@@ -1193,7 +1193,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_113 {
+        public static byte[] acnl_v_113 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_113", resourceCulture);
                 return ((byte[])(obj));
@@ -1203,7 +1203,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_114 {
+        public static byte[] acnl_v_114 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_114", resourceCulture);
                 return ((byte[])(obj));
@@ -1213,7 +1213,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_115 {
+        public static byte[] acnl_v_115 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_115", resourceCulture);
                 return ((byte[])(obj));
@@ -1223,7 +1223,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_116 {
+        public static byte[] acnl_v_116 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_116", resourceCulture);
                 return ((byte[])(obj));
@@ -1233,7 +1233,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_117 {
+        public static byte[] acnl_v_117 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_117", resourceCulture);
                 return ((byte[])(obj));
@@ -1243,7 +1243,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_118 {
+        public static byte[] acnl_v_118 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_118", resourceCulture);
                 return ((byte[])(obj));
@@ -1253,7 +1253,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_119 {
+        public static byte[] acnl_v_119 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_119", resourceCulture);
                 return ((byte[])(obj));
@@ -1263,7 +1263,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_120 {
+        public static byte[] acnl_v_120 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_120", resourceCulture);
                 return ((byte[])(obj));
@@ -1273,7 +1273,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_121 {
+        public static byte[] acnl_v_121 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_121", resourceCulture);
                 return ((byte[])(obj));
@@ -1283,7 +1283,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_122 {
+        public static byte[] acnl_v_122 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_122", resourceCulture);
                 return ((byte[])(obj));
@@ -1293,7 +1293,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_123 {
+        public static byte[] acnl_v_123 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_123", resourceCulture);
                 return ((byte[])(obj));
@@ -1303,7 +1303,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_124 {
+        public static byte[] acnl_v_124 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_124", resourceCulture);
                 return ((byte[])(obj));
@@ -1313,7 +1313,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_125 {
+        public static byte[] acnl_v_125 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_125", resourceCulture);
                 return ((byte[])(obj));
@@ -1323,7 +1323,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_126 {
+        public static byte[] acnl_v_126 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_126", resourceCulture);
                 return ((byte[])(obj));
@@ -1333,7 +1333,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_127 {
+        public static byte[] acnl_v_127 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_127", resourceCulture);
                 return ((byte[])(obj));
@@ -1343,7 +1343,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_128 {
+        public static byte[] acnl_v_128 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_128", resourceCulture);
                 return ((byte[])(obj));
@@ -1353,7 +1353,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_129 {
+        public static byte[] acnl_v_129 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_129", resourceCulture);
                 return ((byte[])(obj));
@@ -1363,7 +1363,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_130 {
+        public static byte[] acnl_v_130 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_130", resourceCulture);
                 return ((byte[])(obj));
@@ -1373,7 +1373,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_131 {
+        public static byte[] acnl_v_131 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_131", resourceCulture);
                 return ((byte[])(obj));
@@ -1383,7 +1383,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_132 {
+        public static byte[] acnl_v_132 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_132", resourceCulture);
                 return ((byte[])(obj));
@@ -1393,7 +1393,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_133 {
+        public static byte[] acnl_v_133 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_133", resourceCulture);
                 return ((byte[])(obj));
@@ -1403,7 +1403,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_134 {
+        public static byte[] acnl_v_134 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_134", resourceCulture);
                 return ((byte[])(obj));
@@ -1413,7 +1413,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_135 {
+        public static byte[] acnl_v_135 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_135", resourceCulture);
                 return ((byte[])(obj));
@@ -1423,7 +1423,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_136 {
+        public static byte[] acnl_v_136 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_136", resourceCulture);
                 return ((byte[])(obj));
@@ -1433,7 +1433,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_137 {
+        public static byte[] acnl_v_137 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_137", resourceCulture);
                 return ((byte[])(obj));
@@ -1443,7 +1443,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_138 {
+        public static byte[] acnl_v_138 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_138", resourceCulture);
                 return ((byte[])(obj));
@@ -1453,7 +1453,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_139 {
+        public static byte[] acnl_v_139 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_139", resourceCulture);
                 return ((byte[])(obj));
@@ -1463,7 +1463,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_140 {
+        public static byte[] acnl_v_140 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_140", resourceCulture);
                 return ((byte[])(obj));
@@ -1473,7 +1473,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_141 {
+        public static byte[] acnl_v_141 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_141", resourceCulture);
                 return ((byte[])(obj));
@@ -1483,7 +1483,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_142 {
+        public static byte[] acnl_v_142 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_142", resourceCulture);
                 return ((byte[])(obj));
@@ -1493,7 +1493,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_143 {
+        public static byte[] acnl_v_143 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_143", resourceCulture);
                 return ((byte[])(obj));
@@ -1503,7 +1503,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_144 {
+        public static byte[] acnl_v_144 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_144", resourceCulture);
                 return ((byte[])(obj));
@@ -1513,7 +1513,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_145 {
+        public static byte[] acnl_v_145 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_145", resourceCulture);
                 return ((byte[])(obj));
@@ -1523,7 +1523,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_146 {
+        public static byte[] acnl_v_146 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_146", resourceCulture);
                 return ((byte[])(obj));
@@ -1533,7 +1533,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_147 {
+        public static byte[] acnl_v_147 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_147", resourceCulture);
                 return ((byte[])(obj));
@@ -1543,7 +1543,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_148 {
+        public static byte[] acnl_v_148 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_148", resourceCulture);
                 return ((byte[])(obj));
@@ -1553,7 +1553,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_149 {
+        public static byte[] acnl_v_149 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_149", resourceCulture);
                 return ((byte[])(obj));
@@ -1563,7 +1563,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_150 {
+        public static byte[] acnl_v_150 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_150", resourceCulture);
                 return ((byte[])(obj));
@@ -1573,7 +1573,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_151 {
+        public static byte[] acnl_v_151 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_151", resourceCulture);
                 return ((byte[])(obj));
@@ -1583,7 +1583,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_152 {
+        public static byte[] acnl_v_152 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_152", resourceCulture);
                 return ((byte[])(obj));
@@ -1593,7 +1593,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_153 {
+        public static byte[] acnl_v_153 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_153", resourceCulture);
                 return ((byte[])(obj));
@@ -1603,7 +1603,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_154 {
+        public static byte[] acnl_v_154 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_154", resourceCulture);
                 return ((byte[])(obj));
@@ -1613,7 +1613,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_155 {
+        public static byte[] acnl_v_155 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_155", resourceCulture);
                 return ((byte[])(obj));
@@ -1623,7 +1623,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_156 {
+        public static byte[] acnl_v_156 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_156", resourceCulture);
                 return ((byte[])(obj));
@@ -1633,7 +1633,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_157 {
+        public static byte[] acnl_v_157 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_157", resourceCulture);
                 return ((byte[])(obj));
@@ -1643,7 +1643,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_158 {
+        public static byte[] acnl_v_158 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_158", resourceCulture);
                 return ((byte[])(obj));
@@ -1653,7 +1653,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_159 {
+        public static byte[] acnl_v_159 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_159", resourceCulture);
                 return ((byte[])(obj));
@@ -1663,7 +1663,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_160 {
+        public static byte[] acnl_v_160 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_160", resourceCulture);
                 return ((byte[])(obj));
@@ -1673,7 +1673,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_161 {
+        public static byte[] acnl_v_161 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_161", resourceCulture);
                 return ((byte[])(obj));
@@ -1683,7 +1683,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_162 {
+        public static byte[] acnl_v_162 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_162", resourceCulture);
                 return ((byte[])(obj));
@@ -1693,7 +1693,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_163 {
+        public static byte[] acnl_v_163 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_163", resourceCulture);
                 return ((byte[])(obj));
@@ -1703,7 +1703,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_164 {
+        public static byte[] acnl_v_164 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_164", resourceCulture);
                 return ((byte[])(obj));
@@ -1713,7 +1713,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_165 {
+        public static byte[] acnl_v_165 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_165", resourceCulture);
                 return ((byte[])(obj));
@@ -1723,7 +1723,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_166 {
+        public static byte[] acnl_v_166 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_166", resourceCulture);
                 return ((byte[])(obj));
@@ -1733,7 +1733,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_167 {
+        public static byte[] acnl_v_167 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_167", resourceCulture);
                 return ((byte[])(obj));
@@ -1743,7 +1743,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_168 {
+        public static byte[] acnl_v_168 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_168", resourceCulture);
                 return ((byte[])(obj));
@@ -1753,7 +1753,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_169 {
+        public static byte[] acnl_v_169 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_169", resourceCulture);
                 return ((byte[])(obj));
@@ -1763,7 +1763,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_170 {
+        public static byte[] acnl_v_170 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_170", resourceCulture);
                 return ((byte[])(obj));
@@ -1773,7 +1773,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_171 {
+        public static byte[] acnl_v_171 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_171", resourceCulture);
                 return ((byte[])(obj));
@@ -1783,7 +1783,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_172 {
+        public static byte[] acnl_v_172 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_172", resourceCulture);
                 return ((byte[])(obj));
@@ -1793,7 +1793,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_173 {
+        public static byte[] acnl_v_173 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_173", resourceCulture);
                 return ((byte[])(obj));
@@ -1803,7 +1803,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_174 {
+        public static byte[] acnl_v_174 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_174", resourceCulture);
                 return ((byte[])(obj));
@@ -1813,7 +1813,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_175 {
+        public static byte[] acnl_v_175 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_175", resourceCulture);
                 return ((byte[])(obj));
@@ -1823,7 +1823,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_176 {
+        public static byte[] acnl_v_176 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_176", resourceCulture);
                 return ((byte[])(obj));
@@ -1833,7 +1833,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_177 {
+        public static byte[] acnl_v_177 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_177", resourceCulture);
                 return ((byte[])(obj));
@@ -1843,7 +1843,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_178 {
+        public static byte[] acnl_v_178 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_178", resourceCulture);
                 return ((byte[])(obj));
@@ -1853,7 +1853,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_179 {
+        public static byte[] acnl_v_179 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_179", resourceCulture);
                 return ((byte[])(obj));
@@ -1863,7 +1863,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_180 {
+        public static byte[] acnl_v_180 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_180", resourceCulture);
                 return ((byte[])(obj));
@@ -1873,7 +1873,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_181 {
+        public static byte[] acnl_v_181 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_181", resourceCulture);
                 return ((byte[])(obj));
@@ -1883,7 +1883,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_182 {
+        public static byte[] acnl_v_182 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_182", resourceCulture);
                 return ((byte[])(obj));
@@ -1893,7 +1893,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_183 {
+        public static byte[] acnl_v_183 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_183", resourceCulture);
                 return ((byte[])(obj));
@@ -1903,7 +1903,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_184 {
+        public static byte[] acnl_v_184 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_184", resourceCulture);
                 return ((byte[])(obj));
@@ -1913,7 +1913,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_185 {
+        public static byte[] acnl_v_185 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_185", resourceCulture);
                 return ((byte[])(obj));
@@ -1923,7 +1923,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_186 {
+        public static byte[] acnl_v_186 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_186", resourceCulture);
                 return ((byte[])(obj));
@@ -1933,7 +1933,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_187 {
+        public static byte[] acnl_v_187 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_187", resourceCulture);
                 return ((byte[])(obj));
@@ -1943,7 +1943,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_188 {
+        public static byte[] acnl_v_188 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_188", resourceCulture);
                 return ((byte[])(obj));
@@ -1953,7 +1953,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_189 {
+        public static byte[] acnl_v_189 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_189", resourceCulture);
                 return ((byte[])(obj));
@@ -1963,7 +1963,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_190 {
+        public static byte[] acnl_v_190 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_190", resourceCulture);
                 return ((byte[])(obj));
@@ -1973,7 +1973,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_191 {
+        public static byte[] acnl_v_191 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_191", resourceCulture);
                 return ((byte[])(obj));
@@ -1983,7 +1983,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_192 {
+        public static byte[] acnl_v_192 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_192", resourceCulture);
                 return ((byte[])(obj));
@@ -1993,7 +1993,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_193 {
+        public static byte[] acnl_v_193 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_193", resourceCulture);
                 return ((byte[])(obj));
@@ -2003,7 +2003,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_194 {
+        public static byte[] acnl_v_194 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_194", resourceCulture);
                 return ((byte[])(obj));
@@ -2013,7 +2013,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_195 {
+        public static byte[] acnl_v_195 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_195", resourceCulture);
                 return ((byte[])(obj));
@@ -2023,7 +2023,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_196 {
+        public static byte[] acnl_v_196 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_196", resourceCulture);
                 return ((byte[])(obj));
@@ -2033,7 +2033,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_197 {
+        public static byte[] acnl_v_197 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_197", resourceCulture);
                 return ((byte[])(obj));
@@ -2043,7 +2043,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_198 {
+        public static byte[] acnl_v_198 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_198", resourceCulture);
                 return ((byte[])(obj));
@@ -2053,7 +2053,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_199 {
+        public static byte[] acnl_v_199 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_199", resourceCulture);
                 return ((byte[])(obj));
@@ -2063,7 +2063,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_200 {
+        public static byte[] acnl_v_200 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_200", resourceCulture);
                 return ((byte[])(obj));
@@ -2073,7 +2073,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_201 {
+        public static byte[] acnl_v_201 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_201", resourceCulture);
                 return ((byte[])(obj));
@@ -2083,7 +2083,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_202 {
+        public static byte[] acnl_v_202 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_202", resourceCulture);
                 return ((byte[])(obj));
@@ -2093,7 +2093,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_203 {
+        public static byte[] acnl_v_203 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_203", resourceCulture);
                 return ((byte[])(obj));
@@ -2103,7 +2103,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_204 {
+        public static byte[] acnl_v_204 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_204", resourceCulture);
                 return ((byte[])(obj));
@@ -2113,7 +2113,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_205 {
+        public static byte[] acnl_v_205 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_205", resourceCulture);
                 return ((byte[])(obj));
@@ -2123,7 +2123,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_206 {
+        public static byte[] acnl_v_206 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_206", resourceCulture);
                 return ((byte[])(obj));
@@ -2133,7 +2133,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_207 {
+        public static byte[] acnl_v_207 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_207", resourceCulture);
                 return ((byte[])(obj));
@@ -2143,7 +2143,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_208 {
+        public static byte[] acnl_v_208 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_208", resourceCulture);
                 return ((byte[])(obj));
@@ -2153,7 +2153,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_209 {
+        public static byte[] acnl_v_209 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_209", resourceCulture);
                 return ((byte[])(obj));
@@ -2163,7 +2163,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_210 {
+        public static byte[] acnl_v_210 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_210", resourceCulture);
                 return ((byte[])(obj));
@@ -2173,7 +2173,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_211 {
+        public static byte[] acnl_v_211 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_211", resourceCulture);
                 return ((byte[])(obj));
@@ -2183,7 +2183,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_212 {
+        public static byte[] acnl_v_212 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_212", resourceCulture);
                 return ((byte[])(obj));
@@ -2193,7 +2193,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_213 {
+        public static byte[] acnl_v_213 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_213", resourceCulture);
                 return ((byte[])(obj));
@@ -2203,7 +2203,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_214 {
+        public static byte[] acnl_v_214 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_214", resourceCulture);
                 return ((byte[])(obj));
@@ -2213,7 +2213,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_215 {
+        public static byte[] acnl_v_215 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_215", resourceCulture);
                 return ((byte[])(obj));
@@ -2223,7 +2223,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_216 {
+        public static byte[] acnl_v_216 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_216", resourceCulture);
                 return ((byte[])(obj));
@@ -2233,7 +2233,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_217 {
+        public static byte[] acnl_v_217 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_217", resourceCulture);
                 return ((byte[])(obj));
@@ -2243,7 +2243,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_218 {
+        public static byte[] acnl_v_218 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_218", resourceCulture);
                 return ((byte[])(obj));
@@ -2253,7 +2253,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_219 {
+        public static byte[] acnl_v_219 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_219", resourceCulture);
                 return ((byte[])(obj));
@@ -2263,7 +2263,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_220 {
+        public static byte[] acnl_v_220 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_220", resourceCulture);
                 return ((byte[])(obj));
@@ -2273,7 +2273,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_221 {
+        public static byte[] acnl_v_221 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_221", resourceCulture);
                 return ((byte[])(obj));
@@ -2283,7 +2283,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_222 {
+        public static byte[] acnl_v_222 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_222", resourceCulture);
                 return ((byte[])(obj));
@@ -2293,7 +2293,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_223 {
+        public static byte[] acnl_v_223 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_223", resourceCulture);
                 return ((byte[])(obj));
@@ -2303,7 +2303,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_224 {
+        public static byte[] acnl_v_224 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_224", resourceCulture);
                 return ((byte[])(obj));
@@ -2313,7 +2313,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_225 {
+        public static byte[] acnl_v_225 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_225", resourceCulture);
                 return ((byte[])(obj));
@@ -2323,7 +2323,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_226 {
+        public static byte[] acnl_v_226 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_226", resourceCulture);
                 return ((byte[])(obj));
@@ -2333,7 +2333,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_227 {
+        public static byte[] acnl_v_227 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_227", resourceCulture);
                 return ((byte[])(obj));
@@ -2343,7 +2343,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_228 {
+        public static byte[] acnl_v_228 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_228", resourceCulture);
                 return ((byte[])(obj));
@@ -2353,7 +2353,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_229 {
+        public static byte[] acnl_v_229 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_229", resourceCulture);
                 return ((byte[])(obj));
@@ -2363,7 +2363,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_230 {
+        public static byte[] acnl_v_230 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_230", resourceCulture);
                 return ((byte[])(obj));
@@ -2373,7 +2373,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_231 {
+        public static byte[] acnl_v_231 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_231", resourceCulture);
                 return ((byte[])(obj));
@@ -2383,7 +2383,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_232 {
+        public static byte[] acnl_v_232 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_232", resourceCulture);
                 return ((byte[])(obj));
@@ -2393,7 +2393,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_233 {
+        public static byte[] acnl_v_233 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_233", resourceCulture);
                 return ((byte[])(obj));
@@ -2403,7 +2403,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_234 {
+        public static byte[] acnl_v_234 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_234", resourceCulture);
                 return ((byte[])(obj));
@@ -2413,7 +2413,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_235 {
+        public static byte[] acnl_v_235 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_235", resourceCulture);
                 return ((byte[])(obj));
@@ -2423,7 +2423,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_236 {
+        public static byte[] acnl_v_236 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_236", resourceCulture);
                 return ((byte[])(obj));
@@ -2433,7 +2433,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_237 {
+        public static byte[] acnl_v_237 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_237", resourceCulture);
                 return ((byte[])(obj));
@@ -2443,7 +2443,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_238 {
+        public static byte[] acnl_v_238 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_238", resourceCulture);
                 return ((byte[])(obj));
@@ -2453,7 +2453,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_239 {
+        public static byte[] acnl_v_239 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_239", resourceCulture);
                 return ((byte[])(obj));
@@ -2463,7 +2463,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_240 {
+        public static byte[] acnl_v_240 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_240", resourceCulture);
                 return ((byte[])(obj));
@@ -2473,7 +2473,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_241 {
+        public static byte[] acnl_v_241 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_241", resourceCulture);
                 return ((byte[])(obj));
@@ -2483,7 +2483,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_242 {
+        public static byte[] acnl_v_242 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_242", resourceCulture);
                 return ((byte[])(obj));
@@ -2493,7 +2493,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_243 {
+        public static byte[] acnl_v_243 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_243", resourceCulture);
                 return ((byte[])(obj));
@@ -2503,7 +2503,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_244 {
+        public static byte[] acnl_v_244 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_244", resourceCulture);
                 return ((byte[])(obj));
@@ -2513,7 +2513,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_245 {
+        public static byte[] acnl_v_245 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_245", resourceCulture);
                 return ((byte[])(obj));
@@ -2523,7 +2523,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_246 {
+        public static byte[] acnl_v_246 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_246", resourceCulture);
                 return ((byte[])(obj));
@@ -2533,7 +2533,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_247 {
+        public static byte[] acnl_v_247 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_247", resourceCulture);
                 return ((byte[])(obj));
@@ -2543,7 +2543,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_248 {
+        public static byte[] acnl_v_248 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_248", resourceCulture);
                 return ((byte[])(obj));
@@ -2553,7 +2553,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_249 {
+        public static byte[] acnl_v_249 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_249", resourceCulture);
                 return ((byte[])(obj));
@@ -2563,7 +2563,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_250 {
+        public static byte[] acnl_v_250 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_250", resourceCulture);
                 return ((byte[])(obj));
@@ -2573,7 +2573,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_251 {
+        public static byte[] acnl_v_251 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_251", resourceCulture);
                 return ((byte[])(obj));
@@ -2583,7 +2583,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_252 {
+        public static byte[] acnl_v_252 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_252", resourceCulture);
                 return ((byte[])(obj));
@@ -2593,7 +2593,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_253 {
+        public static byte[] acnl_v_253 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_253", resourceCulture);
                 return ((byte[])(obj));
@@ -2603,7 +2603,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_254 {
+        public static byte[] acnl_v_254 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_254", resourceCulture);
                 return ((byte[])(obj));
@@ -2613,7 +2613,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_255 {
+        public static byte[] acnl_v_255 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_255", resourceCulture);
                 return ((byte[])(obj));
@@ -2623,7 +2623,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_256 {
+        public static byte[] acnl_v_256 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_256", resourceCulture);
                 return ((byte[])(obj));
@@ -2633,7 +2633,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_257 {
+        public static byte[] acnl_v_257 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_257", resourceCulture);
                 return ((byte[])(obj));
@@ -2643,7 +2643,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_258 {
+        public static byte[] acnl_v_258 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_258", resourceCulture);
                 return ((byte[])(obj));
@@ -2653,7 +2653,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_259 {
+        public static byte[] acnl_v_259 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_259", resourceCulture);
                 return ((byte[])(obj));
@@ -2663,7 +2663,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_260 {
+        public static byte[] acnl_v_260 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_260", resourceCulture);
                 return ((byte[])(obj));
@@ -2673,7 +2673,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_261 {
+        public static byte[] acnl_v_261 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_261", resourceCulture);
                 return ((byte[])(obj));
@@ -2683,7 +2683,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_262 {
+        public static byte[] acnl_v_262 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_262", resourceCulture);
                 return ((byte[])(obj));
@@ -2693,7 +2693,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_263 {
+        public static byte[] acnl_v_263 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_263", resourceCulture);
                 return ((byte[])(obj));
@@ -2703,7 +2703,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_264 {
+        public static byte[] acnl_v_264 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_264", resourceCulture);
                 return ((byte[])(obj));
@@ -2713,7 +2713,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_265 {
+        public static byte[] acnl_v_265 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_265", resourceCulture);
                 return ((byte[])(obj));
@@ -2723,7 +2723,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_266 {
+        public static byte[] acnl_v_266 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_266", resourceCulture);
                 return ((byte[])(obj));
@@ -2733,7 +2733,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_267 {
+        public static byte[] acnl_v_267 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_267", resourceCulture);
                 return ((byte[])(obj));
@@ -2743,7 +2743,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_268 {
+        public static byte[] acnl_v_268 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_268", resourceCulture);
                 return ((byte[])(obj));
@@ -2753,7 +2753,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_269 {
+        public static byte[] acnl_v_269 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_269", resourceCulture);
                 return ((byte[])(obj));
@@ -2763,7 +2763,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_270 {
+        public static byte[] acnl_v_270 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_270", resourceCulture);
                 return ((byte[])(obj));
@@ -2773,7 +2773,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_271 {
+        public static byte[] acnl_v_271 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_271", resourceCulture);
                 return ((byte[])(obj));
@@ -2783,7 +2783,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_272 {
+        public static byte[] acnl_v_272 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_272", resourceCulture);
                 return ((byte[])(obj));
@@ -2793,7 +2793,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_273 {
+        public static byte[] acnl_v_273 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_273", resourceCulture);
                 return ((byte[])(obj));
@@ -2803,7 +2803,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_274 {
+        public static byte[] acnl_v_274 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_274", resourceCulture);
                 return ((byte[])(obj));
@@ -2813,7 +2813,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_275 {
+        public static byte[] acnl_v_275 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_275", resourceCulture);
                 return ((byte[])(obj));
@@ -2823,7 +2823,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_276 {
+        public static byte[] acnl_v_276 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_276", resourceCulture);
                 return ((byte[])(obj));
@@ -2833,7 +2833,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_277 {
+        public static byte[] acnl_v_277 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_277", resourceCulture);
                 return ((byte[])(obj));
@@ -2843,7 +2843,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_278 {
+        public static byte[] acnl_v_278 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_278", resourceCulture);
                 return ((byte[])(obj));
@@ -2853,7 +2853,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_279 {
+        public static byte[] acnl_v_279 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_279", resourceCulture);
                 return ((byte[])(obj));
@@ -2863,7 +2863,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_280 {
+        public static byte[] acnl_v_280 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_280", resourceCulture);
                 return ((byte[])(obj));
@@ -2873,7 +2873,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_281 {
+        public static byte[] acnl_v_281 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_281", resourceCulture);
                 return ((byte[])(obj));
@@ -2883,7 +2883,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_282 {
+        public static byte[] acnl_v_282 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_282", resourceCulture);
                 return ((byte[])(obj));
@@ -2893,7 +2893,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_283 {
+        public static byte[] acnl_v_283 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_283", resourceCulture);
                 return ((byte[])(obj));
@@ -2903,7 +2903,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_284 {
+        public static byte[] acnl_v_284 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_284", resourceCulture);
                 return ((byte[])(obj));
@@ -2913,7 +2913,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_285 {
+        public static byte[] acnl_v_285 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_285", resourceCulture);
                 return ((byte[])(obj));
@@ -2923,7 +2923,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_286 {
+        public static byte[] acnl_v_286 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_286", resourceCulture);
                 return ((byte[])(obj));
@@ -2933,7 +2933,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_287 {
+        public static byte[] acnl_v_287 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_287", resourceCulture);
                 return ((byte[])(obj));
@@ -2943,7 +2943,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_288 {
+        public static byte[] acnl_v_288 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_288", resourceCulture);
                 return ((byte[])(obj));
@@ -2953,7 +2953,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_289 {
+        public static byte[] acnl_v_289 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_289", resourceCulture);
                 return ((byte[])(obj));
@@ -2963,7 +2963,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_290 {
+        public static byte[] acnl_v_290 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_290", resourceCulture);
                 return ((byte[])(obj));
@@ -2973,7 +2973,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_291 {
+        public static byte[] acnl_v_291 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_291", resourceCulture);
                 return ((byte[])(obj));
@@ -2983,7 +2983,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_292 {
+        public static byte[] acnl_v_292 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_292", resourceCulture);
                 return ((byte[])(obj));
@@ -2993,7 +2993,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_293 {
+        public static byte[] acnl_v_293 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_293", resourceCulture);
                 return ((byte[])(obj));
@@ -3003,7 +3003,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_294 {
+        public static byte[] acnl_v_294 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_294", resourceCulture);
                 return ((byte[])(obj));
@@ -3013,7 +3013,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_295 {
+        public static byte[] acnl_v_295 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_295", resourceCulture);
                 return ((byte[])(obj));
@@ -3023,7 +3023,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_296 {
+        public static byte[] acnl_v_296 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_296", resourceCulture);
                 return ((byte[])(obj));
@@ -3033,7 +3033,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_297 {
+        public static byte[] acnl_v_297 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_297", resourceCulture);
                 return ((byte[])(obj));
@@ -3043,7 +3043,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_298 {
+        public static byte[] acnl_v_298 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_298", resourceCulture);
                 return ((byte[])(obj));
@@ -3053,7 +3053,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_299 {
+        public static byte[] acnl_v_299 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_299", resourceCulture);
                 return ((byte[])(obj));
@@ -3063,7 +3063,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_300 {
+        public static byte[] acnl_v_300 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_300", resourceCulture);
                 return ((byte[])(obj));
@@ -3073,7 +3073,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_301 {
+        public static byte[] acnl_v_301 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_301", resourceCulture);
                 return ((byte[])(obj));
@@ -3083,7 +3083,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_302 {
+        public static byte[] acnl_v_302 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_302", resourceCulture);
                 return ((byte[])(obj));
@@ -3093,7 +3093,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_303 {
+        public static byte[] acnl_v_303 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_303", resourceCulture);
                 return ((byte[])(obj));
@@ -3103,7 +3103,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_304 {
+        public static byte[] acnl_v_304 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_304", resourceCulture);
                 return ((byte[])(obj));
@@ -3113,7 +3113,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_305 {
+        public static byte[] acnl_v_305 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_305", resourceCulture);
                 return ((byte[])(obj));
@@ -3123,7 +3123,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_306 {
+        public static byte[] acnl_v_306 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_306", resourceCulture);
                 return ((byte[])(obj));
@@ -3133,7 +3133,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_307 {
+        public static byte[] acnl_v_307 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_307", resourceCulture);
                 return ((byte[])(obj));
@@ -3143,7 +3143,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_308 {
+        public static byte[] acnl_v_308 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_308", resourceCulture);
                 return ((byte[])(obj));
@@ -3153,7 +3153,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_309 {
+        public static byte[] acnl_v_309 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_309", resourceCulture);
                 return ((byte[])(obj));
@@ -3163,7 +3163,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_310 {
+        public static byte[] acnl_v_310 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_310", resourceCulture);
                 return ((byte[])(obj));
@@ -3173,7 +3173,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_311 {
+        public static byte[] acnl_v_311 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_311", resourceCulture);
                 return ((byte[])(obj));
@@ -3183,7 +3183,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_312 {
+        public static byte[] acnl_v_312 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_312", resourceCulture);
                 return ((byte[])(obj));
@@ -3193,7 +3193,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_313 {
+        public static byte[] acnl_v_313 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_313", resourceCulture);
                 return ((byte[])(obj));
@@ -3203,7 +3203,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_314 {
+        public static byte[] acnl_v_314 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_314", resourceCulture);
                 return ((byte[])(obj));
@@ -3213,7 +3213,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_315 {
+        public static byte[] acnl_v_315 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_315", resourceCulture);
                 return ((byte[])(obj));
@@ -3223,7 +3223,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_316 {
+        public static byte[] acnl_v_316 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_316", resourceCulture);
                 return ((byte[])(obj));
@@ -3233,7 +3233,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_317 {
+        public static byte[] acnl_v_317 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_317", resourceCulture);
                 return ((byte[])(obj));
@@ -3243,7 +3243,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_318 {
+        public static byte[] acnl_v_318 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_318", resourceCulture);
                 return ((byte[])(obj));
@@ -3253,7 +3253,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_319 {
+        public static byte[] acnl_v_319 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_319", resourceCulture);
                 return ((byte[])(obj));
@@ -3263,7 +3263,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_320 {
+        public static byte[] acnl_v_320 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_320", resourceCulture);
                 return ((byte[])(obj));
@@ -3273,7 +3273,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_321 {
+        public static byte[] acnl_v_321 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_321", resourceCulture);
                 return ((byte[])(obj));
@@ -3283,7 +3283,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_322 {
+        public static byte[] acnl_v_322 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_322", resourceCulture);
                 return ((byte[])(obj));
@@ -3293,7 +3293,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_323 {
+        public static byte[] acnl_v_323 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_323", resourceCulture);
                 return ((byte[])(obj));
@@ -3303,7 +3303,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_324 {
+        public static byte[] acnl_v_324 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_324", resourceCulture);
                 return ((byte[])(obj));
@@ -3313,7 +3313,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_325 {
+        public static byte[] acnl_v_325 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_325", resourceCulture);
                 return ((byte[])(obj));
@@ -3323,7 +3323,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_326 {
+        public static byte[] acnl_v_326 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_326", resourceCulture);
                 return ((byte[])(obj));
@@ -3333,7 +3333,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_327 {
+        public static byte[] acnl_v_327 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_327", resourceCulture);
                 return ((byte[])(obj));
@@ -3343,7 +3343,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_328 {
+        public static byte[] acnl_v_328 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_328", resourceCulture);
                 return ((byte[])(obj));
@@ -3353,7 +3353,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_329 {
+        public static byte[] acnl_v_329 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_329", resourceCulture);
                 return ((byte[])(obj));
@@ -3363,7 +3363,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_330 {
+        public static byte[] acnl_v_330 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_330", resourceCulture);
                 return ((byte[])(obj));
@@ -3373,7 +3373,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_331 {
+        public static byte[] acnl_v_331 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_331", resourceCulture);
                 return ((byte[])(obj));
@@ -3383,7 +3383,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_332 {
+        public static byte[] acnl_v_332 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_332", resourceCulture);
                 return ((byte[])(obj));
@@ -3393,7 +3393,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_333 {
+        public static byte[] acnl_v_333 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_333", resourceCulture);
                 return ((byte[])(obj));
@@ -3403,7 +3403,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_334 {
+        public static byte[] acnl_v_334 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_334", resourceCulture);
                 return ((byte[])(obj));
@@ -3413,7 +3413,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_335 {
+        public static byte[] acnl_v_335 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_335", resourceCulture);
                 return ((byte[])(obj));
@@ -3423,7 +3423,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_336 {
+        public static byte[] acnl_v_336 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_336", resourceCulture);
                 return ((byte[])(obj));
@@ -3433,7 +3433,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_337 {
+        public static byte[] acnl_v_337 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_337", resourceCulture);
                 return ((byte[])(obj));
@@ -3443,7 +3443,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_338 {
+        public static byte[] acnl_v_338 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_338", resourceCulture);
                 return ((byte[])(obj));
@@ -3453,7 +3453,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_339 {
+        public static byte[] acnl_v_339 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_339", resourceCulture);
                 return ((byte[])(obj));
@@ -3463,7 +3463,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_340 {
+        public static byte[] acnl_v_340 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_340", resourceCulture);
                 return ((byte[])(obj));
@@ -3473,7 +3473,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_341 {
+        public static byte[] acnl_v_341 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_341", resourceCulture);
                 return ((byte[])(obj));
@@ -3483,7 +3483,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_342 {
+        public static byte[] acnl_v_342 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_342", resourceCulture);
                 return ((byte[])(obj));
@@ -3493,7 +3493,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_343 {
+        public static byte[] acnl_v_343 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_343", resourceCulture);
                 return ((byte[])(obj));
@@ -3503,7 +3503,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_344 {
+        public static byte[] acnl_v_344 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_344", resourceCulture);
                 return ((byte[])(obj));
@@ -3513,7 +3513,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_345 {
+        public static byte[] acnl_v_345 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_345", resourceCulture);
                 return ((byte[])(obj));
@@ -3523,7 +3523,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_346 {
+        public static byte[] acnl_v_346 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_346", resourceCulture);
                 return ((byte[])(obj));
@@ -3533,7 +3533,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_347 {
+        public static byte[] acnl_v_347 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_347", resourceCulture);
                 return ((byte[])(obj));
@@ -3543,7 +3543,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_348 {
+        public static byte[] acnl_v_348 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_348", resourceCulture);
                 return ((byte[])(obj));
@@ -3553,7 +3553,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_349 {
+        public static byte[] acnl_v_349 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_349", resourceCulture);
                 return ((byte[])(obj));
@@ -3563,7 +3563,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_350 {
+        public static byte[] acnl_v_350 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_350", resourceCulture);
                 return ((byte[])(obj));
@@ -3573,7 +3573,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_351 {
+        public static byte[] acnl_v_351 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_351", resourceCulture);
                 return ((byte[])(obj));
@@ -3583,7 +3583,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_352 {
+        public static byte[] acnl_v_352 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_352", resourceCulture);
                 return ((byte[])(obj));
@@ -3593,7 +3593,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_353 {
+        public static byte[] acnl_v_353 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_353", resourceCulture);
                 return ((byte[])(obj));
@@ -3603,7 +3603,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_354 {
+        public static byte[] acnl_v_354 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_354", resourceCulture);
                 return ((byte[])(obj));
@@ -3613,7 +3613,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_355 {
+        public static byte[] acnl_v_355 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_355", resourceCulture);
                 return ((byte[])(obj));
@@ -3623,7 +3623,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_356 {
+        public static byte[] acnl_v_356 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_356", resourceCulture);
                 return ((byte[])(obj));
@@ -3633,7 +3633,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_357 {
+        public static byte[] acnl_v_357 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_357", resourceCulture);
                 return ((byte[])(obj));
@@ -3643,7 +3643,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_358 {
+        public static byte[] acnl_v_358 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_358", resourceCulture);
                 return ((byte[])(obj));
@@ -3653,7 +3653,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_359 {
+        public static byte[] acnl_v_359 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_359", resourceCulture);
                 return ((byte[])(obj));
@@ -3663,7 +3663,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_360 {
+        public static byte[] acnl_v_360 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_360", resourceCulture);
                 return ((byte[])(obj));
@@ -3673,7 +3673,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_361 {
+        public static byte[] acnl_v_361 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_361", resourceCulture);
                 return ((byte[])(obj));
@@ -3683,7 +3683,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_362 {
+        public static byte[] acnl_v_362 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_362", resourceCulture);
                 return ((byte[])(obj));
@@ -3693,7 +3693,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_363 {
+        public static byte[] acnl_v_363 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_363", resourceCulture);
                 return ((byte[])(obj));
@@ -3703,7 +3703,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_364 {
+        public static byte[] acnl_v_364 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_364", resourceCulture);
                 return ((byte[])(obj));
@@ -3713,7 +3713,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_365 {
+        public static byte[] acnl_v_365 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_365", resourceCulture);
                 return ((byte[])(obj));
@@ -3723,7 +3723,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_366 {
+        public static byte[] acnl_v_366 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_366", resourceCulture);
                 return ((byte[])(obj));
@@ -3733,7 +3733,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_367 {
+        public static byte[] acnl_v_367 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_367", resourceCulture);
                 return ((byte[])(obj));
@@ -3743,7 +3743,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_368 {
+        public static byte[] acnl_v_368 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_368", resourceCulture);
                 return ((byte[])(obj));
@@ -3753,7 +3753,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_369 {
+        public static byte[] acnl_v_369 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_369", resourceCulture);
                 return ((byte[])(obj));
@@ -3763,7 +3763,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_370 {
+        public static byte[] acnl_v_370 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_370", resourceCulture);
                 return ((byte[])(obj));
@@ -3773,7 +3773,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_371 {
+        public static byte[] acnl_v_371 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_371", resourceCulture);
                 return ((byte[])(obj));
@@ -3783,7 +3783,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_372 {
+        public static byte[] acnl_v_372 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_372", resourceCulture);
                 return ((byte[])(obj));
@@ -3793,7 +3793,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_373 {
+        public static byte[] acnl_v_373 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_373", resourceCulture);
                 return ((byte[])(obj));
@@ -3803,7 +3803,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_374 {
+        public static byte[] acnl_v_374 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_374", resourceCulture);
                 return ((byte[])(obj));
@@ -3813,7 +3813,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_375 {
+        public static byte[] acnl_v_375 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_375", resourceCulture);
                 return ((byte[])(obj));
@@ -3823,7 +3823,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_376 {
+        public static byte[] acnl_v_376 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_376", resourceCulture);
                 return ((byte[])(obj));
@@ -3833,7 +3833,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_377 {
+        public static byte[] acnl_v_377 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_377", resourceCulture);
                 return ((byte[])(obj));
@@ -3843,7 +3843,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_378 {
+        public static byte[] acnl_v_378 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_378", resourceCulture);
                 return ((byte[])(obj));
@@ -3853,7 +3853,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_379 {
+        public static byte[] acnl_v_379 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_379", resourceCulture);
                 return ((byte[])(obj));
@@ -3863,7 +3863,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_380 {
+        public static byte[] acnl_v_380 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_380", resourceCulture);
                 return ((byte[])(obj));
@@ -3873,7 +3873,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_381 {
+        public static byte[] acnl_v_381 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_381", resourceCulture);
                 return ((byte[])(obj));
@@ -3883,7 +3883,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_382 {
+        public static byte[] acnl_v_382 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_382", resourceCulture);
                 return ((byte[])(obj));
@@ -3893,7 +3893,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_383 {
+        public static byte[] acnl_v_383 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_383", resourceCulture);
                 return ((byte[])(obj));
@@ -3903,7 +3903,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_384 {
+        public static byte[] acnl_v_384 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_384", resourceCulture);
                 return ((byte[])(obj));
@@ -3913,7 +3913,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_385 {
+        public static byte[] acnl_v_385 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_385", resourceCulture);
                 return ((byte[])(obj));
@@ -3923,7 +3923,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_386 {
+        public static byte[] acnl_v_386 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_386", resourceCulture);
                 return ((byte[])(obj));
@@ -3933,7 +3933,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_387 {
+        public static byte[] acnl_v_387 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_387", resourceCulture);
                 return ((byte[])(obj));
@@ -3943,7 +3943,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_388 {
+        public static byte[] acnl_v_388 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_388", resourceCulture);
                 return ((byte[])(obj));
@@ -3953,7 +3953,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_389 {
+        public static byte[] acnl_v_389 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_389", resourceCulture);
                 return ((byte[])(obj));
@@ -3963,7 +3963,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_390 {
+        public static byte[] acnl_v_390 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_390", resourceCulture);
                 return ((byte[])(obj));
@@ -3973,7 +3973,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_391 {
+        public static byte[] acnl_v_391 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_391", resourceCulture);
                 return ((byte[])(obj));
@@ -3983,7 +3983,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_392 {
+        public static byte[] acnl_v_392 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_392", resourceCulture);
                 return ((byte[])(obj));
@@ -3993,7 +3993,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_393 {
+        public static byte[] acnl_v_393 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_393", resourceCulture);
                 return ((byte[])(obj));
@@ -4003,7 +4003,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_394 {
+        public static byte[] acnl_v_394 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_394", resourceCulture);
                 return ((byte[])(obj));
@@ -4013,7 +4013,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_395 {
+        public static byte[] acnl_v_395 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_395", resourceCulture);
                 return ((byte[])(obj));
@@ -4023,7 +4023,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_396 {
+        public static byte[] acnl_v_396 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_396", resourceCulture);
                 return ((byte[])(obj));
@@ -4033,7 +4033,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_397 {
+        public static byte[] acnl_v_397 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_397", resourceCulture);
                 return ((byte[])(obj));
@@ -4043,7 +4043,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] acnl_v_398 {
+        public static byte[] acnl_v_398 {
             get {
                 object obj = ResourceManager.GetObject("acnl_v_398", resourceCulture);
                 return ((byte[])(obj));
@@ -4053,7 +4053,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_0 {
+        public static System.Drawing.Bitmap acre_0 {
             get {
                 object obj = ResourceManager.GetObject("acre_0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4063,7 +4063,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1 {
+        public static System.Drawing.Bitmap acre_1 {
             get {
                 object obj = ResourceManager.GetObject("acre_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4073,7 +4073,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_10 {
+        public static System.Drawing.Bitmap acre_10 {
             get {
                 object obj = ResourceManager.GetObject("acre_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4083,7 +4083,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_100 {
+        public static System.Drawing.Bitmap acre_100 {
             get {
                 object obj = ResourceManager.GetObject("acre_100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4093,7 +4093,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_101 {
+        public static System.Drawing.Bitmap acre_101 {
             get {
                 object obj = ResourceManager.GetObject("acre_101", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4103,7 +4103,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_102 {
+        public static System.Drawing.Bitmap acre_102 {
             get {
                 object obj = ResourceManager.GetObject("acre_102", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4113,7 +4113,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_103 {
+        public static System.Drawing.Bitmap acre_103 {
             get {
                 object obj = ResourceManager.GetObject("acre_103", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4123,7 +4123,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_104 {
+        public static System.Drawing.Bitmap acre_104 {
             get {
                 object obj = ResourceManager.GetObject("acre_104", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4133,7 +4133,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_105 {
+        public static System.Drawing.Bitmap acre_105 {
             get {
                 object obj = ResourceManager.GetObject("acre_105", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4143,7 +4143,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_106 {
+        public static System.Drawing.Bitmap acre_106 {
             get {
                 object obj = ResourceManager.GetObject("acre_106", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4153,7 +4153,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_107 {
+        public static System.Drawing.Bitmap acre_107 {
             get {
                 object obj = ResourceManager.GetObject("acre_107", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4163,7 +4163,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_108 {
+        public static System.Drawing.Bitmap acre_108 {
             get {
                 object obj = ResourceManager.GetObject("acre_108", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4173,7 +4173,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_109 {
+        public static System.Drawing.Bitmap acre_109 {
             get {
                 object obj = ResourceManager.GetObject("acre_109", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4183,7 +4183,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_11 {
+        public static System.Drawing.Bitmap acre_11 {
             get {
                 object obj = ResourceManager.GetObject("acre_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4193,7 +4193,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_110 {
+        public static System.Drawing.Bitmap acre_110 {
             get {
                 object obj = ResourceManager.GetObject("acre_110", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4203,7 +4203,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_111 {
+        public static System.Drawing.Bitmap acre_111 {
             get {
                 object obj = ResourceManager.GetObject("acre_111", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4213,7 +4213,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_112 {
+        public static System.Drawing.Bitmap acre_112 {
             get {
                 object obj = ResourceManager.GetObject("acre_112", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4223,7 +4223,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_113 {
+        public static System.Drawing.Bitmap acre_113 {
             get {
                 object obj = ResourceManager.GetObject("acre_113", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4233,7 +4233,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_114 {
+        public static System.Drawing.Bitmap acre_114 {
             get {
                 object obj = ResourceManager.GetObject("acre_114", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4243,7 +4243,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_115 {
+        public static System.Drawing.Bitmap acre_115 {
             get {
                 object obj = ResourceManager.GetObject("acre_115", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4253,7 +4253,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_116 {
+        public static System.Drawing.Bitmap acre_116 {
             get {
                 object obj = ResourceManager.GetObject("acre_116", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4263,7 +4263,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_117 {
+        public static System.Drawing.Bitmap acre_117 {
             get {
                 object obj = ResourceManager.GetObject("acre_117", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4273,7 +4273,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_118 {
+        public static System.Drawing.Bitmap acre_118 {
             get {
                 object obj = ResourceManager.GetObject("acre_118", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4283,7 +4283,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_119 {
+        public static System.Drawing.Bitmap acre_119 {
             get {
                 object obj = ResourceManager.GetObject("acre_119", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4293,7 +4293,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_12 {
+        public static System.Drawing.Bitmap acre_12 {
             get {
                 object obj = ResourceManager.GetObject("acre_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4303,7 +4303,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_120 {
+        public static System.Drawing.Bitmap acre_120 {
             get {
                 object obj = ResourceManager.GetObject("acre_120", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4313,7 +4313,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_121 {
+        public static System.Drawing.Bitmap acre_121 {
             get {
                 object obj = ResourceManager.GetObject("acre_121", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4323,7 +4323,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_122 {
+        public static System.Drawing.Bitmap acre_122 {
             get {
                 object obj = ResourceManager.GetObject("acre_122", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4333,7 +4333,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_123 {
+        public static System.Drawing.Bitmap acre_123 {
             get {
                 object obj = ResourceManager.GetObject("acre_123", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4343,7 +4343,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_124 {
+        public static System.Drawing.Bitmap acre_124 {
             get {
                 object obj = ResourceManager.GetObject("acre_124", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4353,7 +4353,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_125 {
+        public static System.Drawing.Bitmap acre_125 {
             get {
                 object obj = ResourceManager.GetObject("acre_125", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4363,7 +4363,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_126 {
+        public static System.Drawing.Bitmap acre_126 {
             get {
                 object obj = ResourceManager.GetObject("acre_126", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4373,7 +4373,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_127 {
+        public static System.Drawing.Bitmap acre_127 {
             get {
                 object obj = ResourceManager.GetObject("acre_127", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4383,7 +4383,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_128 {
+        public static System.Drawing.Bitmap acre_128 {
             get {
                 object obj = ResourceManager.GetObject("acre_128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4393,7 +4393,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_129 {
+        public static System.Drawing.Bitmap acre_129 {
             get {
                 object obj = ResourceManager.GetObject("acre_129", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4403,7 +4403,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_13 {
+        public static System.Drawing.Bitmap acre_13 {
             get {
                 object obj = ResourceManager.GetObject("acre_13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4413,7 +4413,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_130 {
+        public static System.Drawing.Bitmap acre_130 {
             get {
                 object obj = ResourceManager.GetObject("acre_130", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4423,7 +4423,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_131 {
+        public static System.Drawing.Bitmap acre_131 {
             get {
                 object obj = ResourceManager.GetObject("acre_131", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4433,7 +4433,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_132 {
+        public static System.Drawing.Bitmap acre_132 {
             get {
                 object obj = ResourceManager.GetObject("acre_132", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4443,7 +4443,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_133 {
+        public static System.Drawing.Bitmap acre_133 {
             get {
                 object obj = ResourceManager.GetObject("acre_133", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4453,7 +4453,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_134 {
+        public static System.Drawing.Bitmap acre_134 {
             get {
                 object obj = ResourceManager.GetObject("acre_134", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4463,7 +4463,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_135 {
+        public static System.Drawing.Bitmap acre_135 {
             get {
                 object obj = ResourceManager.GetObject("acre_135", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4473,7 +4473,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_136 {
+        public static System.Drawing.Bitmap acre_136 {
             get {
                 object obj = ResourceManager.GetObject("acre_136", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4483,7 +4483,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_137 {
+        public static System.Drawing.Bitmap acre_137 {
             get {
                 object obj = ResourceManager.GetObject("acre_137", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4493,7 +4493,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_138 {
+        public static System.Drawing.Bitmap acre_138 {
             get {
                 object obj = ResourceManager.GetObject("acre_138", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4503,7 +4503,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_139 {
+        public static System.Drawing.Bitmap acre_139 {
             get {
                 object obj = ResourceManager.GetObject("acre_139", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4513,7 +4513,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_14 {
+        public static System.Drawing.Bitmap acre_14 {
             get {
                 object obj = ResourceManager.GetObject("acre_14", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4523,7 +4523,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_140 {
+        public static System.Drawing.Bitmap acre_140 {
             get {
                 object obj = ResourceManager.GetObject("acre_140", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4533,7 +4533,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_141 {
+        public static System.Drawing.Bitmap acre_141 {
             get {
                 object obj = ResourceManager.GetObject("acre_141", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4543,7 +4543,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_142 {
+        public static System.Drawing.Bitmap acre_142 {
             get {
                 object obj = ResourceManager.GetObject("acre_142", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4553,7 +4553,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_143 {
+        public static System.Drawing.Bitmap acre_143 {
             get {
                 object obj = ResourceManager.GetObject("acre_143", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4563,7 +4563,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_144 {
+        public static System.Drawing.Bitmap acre_144 {
             get {
                 object obj = ResourceManager.GetObject("acre_144", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4573,7 +4573,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_145 {
+        public static System.Drawing.Bitmap acre_145 {
             get {
                 object obj = ResourceManager.GetObject("acre_145", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4583,7 +4583,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_146 {
+        public static System.Drawing.Bitmap acre_146 {
             get {
                 object obj = ResourceManager.GetObject("acre_146", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4593,7 +4593,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_147 {
+        public static System.Drawing.Bitmap acre_147 {
             get {
                 object obj = ResourceManager.GetObject("acre_147", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4603,7 +4603,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_148 {
+        public static System.Drawing.Bitmap acre_148 {
             get {
                 object obj = ResourceManager.GetObject("acre_148", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4613,7 +4613,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_149 {
+        public static System.Drawing.Bitmap acre_149 {
             get {
                 object obj = ResourceManager.GetObject("acre_149", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4623,7 +4623,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_15 {
+        public static System.Drawing.Bitmap acre_15 {
             get {
                 object obj = ResourceManager.GetObject("acre_15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4633,7 +4633,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_150 {
+        public static System.Drawing.Bitmap acre_150 {
             get {
                 object obj = ResourceManager.GetObject("acre_150", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4643,7 +4643,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_151 {
+        public static System.Drawing.Bitmap acre_151 {
             get {
                 object obj = ResourceManager.GetObject("acre_151", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4653,7 +4653,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_152 {
+        public static System.Drawing.Bitmap acre_152 {
             get {
                 object obj = ResourceManager.GetObject("acre_152", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4663,7 +4663,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_153 {
+        public static System.Drawing.Bitmap acre_153 {
             get {
                 object obj = ResourceManager.GetObject("acre_153", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4673,7 +4673,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_154 {
+        public static System.Drawing.Bitmap acre_154 {
             get {
                 object obj = ResourceManager.GetObject("acre_154", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4683,7 +4683,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_155 {
+        public static System.Drawing.Bitmap acre_155 {
             get {
                 object obj = ResourceManager.GetObject("acre_155", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4693,7 +4693,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_156 {
+        public static System.Drawing.Bitmap acre_156 {
             get {
                 object obj = ResourceManager.GetObject("acre_156", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4703,7 +4703,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_157 {
+        public static System.Drawing.Bitmap acre_157 {
             get {
                 object obj = ResourceManager.GetObject("acre_157", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4713,7 +4713,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1571 {
+        public static System.Drawing.Bitmap acre_1571 {
             get {
                 object obj = ResourceManager.GetObject("acre_1571", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4723,7 +4723,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_158 {
+        public static System.Drawing.Bitmap acre_158 {
             get {
                 object obj = ResourceManager.GetObject("acre_158", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4733,7 +4733,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1581 {
+        public static System.Drawing.Bitmap acre_1581 {
             get {
                 object obj = ResourceManager.GetObject("acre_1581", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4743,7 +4743,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_159 {
+        public static System.Drawing.Bitmap acre_159 {
             get {
                 object obj = ResourceManager.GetObject("acre_159", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4753,7 +4753,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1591 {
+        public static System.Drawing.Bitmap acre_1591 {
             get {
                 object obj = ResourceManager.GetObject("acre_1591", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4763,7 +4763,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_16 {
+        public static System.Drawing.Bitmap acre_16 {
             get {
                 object obj = ResourceManager.GetObject("acre_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4773,7 +4773,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_160 {
+        public static System.Drawing.Bitmap acre_160 {
             get {
                 object obj = ResourceManager.GetObject("acre_160", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4783,7 +4783,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_161 {
+        public static System.Drawing.Bitmap acre_161 {
             get {
                 object obj = ResourceManager.GetObject("acre_161", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4793,7 +4793,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_162 {
+        public static System.Drawing.Bitmap acre_162 {
             get {
                 object obj = ResourceManager.GetObject("acre_162", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4803,7 +4803,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1621 {
+        public static System.Drawing.Bitmap acre_1621 {
             get {
                 object obj = ResourceManager.GetObject("acre_1621", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4813,7 +4813,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_163 {
+        public static System.Drawing.Bitmap acre_163 {
             get {
                 object obj = ResourceManager.GetObject("acre_163", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4823,7 +4823,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_164 {
+        public static System.Drawing.Bitmap acre_164 {
             get {
                 object obj = ResourceManager.GetObject("acre_164", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4833,7 +4833,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_165 {
+        public static System.Drawing.Bitmap acre_165 {
             get {
                 object obj = ResourceManager.GetObject("acre_165", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4843,7 +4843,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_166 {
+        public static System.Drawing.Bitmap acre_166 {
             get {
                 object obj = ResourceManager.GetObject("acre_166", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4853,7 +4853,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1661 {
+        public static System.Drawing.Bitmap acre_1661 {
             get {
                 object obj = ResourceManager.GetObject("acre_1661", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4863,7 +4863,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_167 {
+        public static System.Drawing.Bitmap acre_167 {
             get {
                 object obj = ResourceManager.GetObject("acre_167", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4873,7 +4873,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1671 {
+        public static System.Drawing.Bitmap acre_1671 {
             get {
                 object obj = ResourceManager.GetObject("acre_1671", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4883,7 +4883,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_168 {
+        public static System.Drawing.Bitmap acre_168 {
             get {
                 object obj = ResourceManager.GetObject("acre_168", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4893,7 +4893,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_169 {
+        public static System.Drawing.Bitmap acre_169 {
             get {
                 object obj = ResourceManager.GetObject("acre_169", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4903,7 +4903,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_17 {
+        public static System.Drawing.Bitmap acre_17 {
             get {
                 object obj = ResourceManager.GetObject("acre_17", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4913,7 +4913,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_170 {
+        public static System.Drawing.Bitmap acre_170 {
             get {
                 object obj = ResourceManager.GetObject("acre_170", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4923,7 +4923,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_171 {
+        public static System.Drawing.Bitmap acre_171 {
             get {
                 object obj = ResourceManager.GetObject("acre_171", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4933,7 +4933,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_172 {
+        public static System.Drawing.Bitmap acre_172 {
             get {
                 object obj = ResourceManager.GetObject("acre_172", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4943,7 +4943,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_173 {
+        public static System.Drawing.Bitmap acre_173 {
             get {
                 object obj = ResourceManager.GetObject("acre_173", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4953,7 +4953,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_174 {
+        public static System.Drawing.Bitmap acre_174 {
             get {
                 object obj = ResourceManager.GetObject("acre_174", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4963,7 +4963,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_175 {
+        public static System.Drawing.Bitmap acre_175 {
             get {
                 object obj = ResourceManager.GetObject("acre_175", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4973,7 +4973,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_176 {
+        public static System.Drawing.Bitmap acre_176 {
             get {
                 object obj = ResourceManager.GetObject("acre_176", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4983,7 +4983,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_177 {
+        public static System.Drawing.Bitmap acre_177 {
             get {
                 object obj = ResourceManager.GetObject("acre_177", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -4993,7 +4993,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_178 {
+        public static System.Drawing.Bitmap acre_178 {
             get {
                 object obj = ResourceManager.GetObject("acre_178", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5003,7 +5003,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_179 {
+        public static System.Drawing.Bitmap acre_179 {
             get {
                 object obj = ResourceManager.GetObject("acre_179", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5013,7 +5013,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_18 {
+        public static System.Drawing.Bitmap acre_18 {
             get {
                 object obj = ResourceManager.GetObject("acre_18", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5023,7 +5023,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_180 {
+        public static System.Drawing.Bitmap acre_180 {
             get {
                 object obj = ResourceManager.GetObject("acre_180", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5033,7 +5033,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1801 {
+        public static System.Drawing.Bitmap acre_1801 {
             get {
                 object obj = ResourceManager.GetObject("acre_1801", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5043,7 +5043,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_181 {
+        public static System.Drawing.Bitmap acre_181 {
             get {
                 object obj = ResourceManager.GetObject("acre_181", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5053,7 +5053,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1811 {
+        public static System.Drawing.Bitmap acre_1811 {
             get {
                 object obj = ResourceManager.GetObject("acre_1811", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5063,7 +5063,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_182 {
+        public static System.Drawing.Bitmap acre_182 {
             get {
                 object obj = ResourceManager.GetObject("acre_182", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5073,7 +5073,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1821 {
+        public static System.Drawing.Bitmap acre_1821 {
             get {
                 object obj = ResourceManager.GetObject("acre_1821", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5083,7 +5083,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_183 {
+        public static System.Drawing.Bitmap acre_183 {
             get {
                 object obj = ResourceManager.GetObject("acre_183", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5093,7 +5093,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1831 {
+        public static System.Drawing.Bitmap acre_1831 {
             get {
                 object obj = ResourceManager.GetObject("acre_1831", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5103,7 +5103,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_184 {
+        public static System.Drawing.Bitmap acre_184 {
             get {
                 object obj = ResourceManager.GetObject("acre_184", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5113,7 +5113,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1841 {
+        public static System.Drawing.Bitmap acre_1841 {
             get {
                 object obj = ResourceManager.GetObject("acre_1841", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5123,7 +5123,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_185 {
+        public static System.Drawing.Bitmap acre_185 {
             get {
                 object obj = ResourceManager.GetObject("acre_185", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5133,7 +5133,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1851 {
+        public static System.Drawing.Bitmap acre_1851 {
             get {
                 object obj = ResourceManager.GetObject("acre_1851", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5143,7 +5143,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_186 {
+        public static System.Drawing.Bitmap acre_186 {
             get {
                 object obj = ResourceManager.GetObject("acre_186", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5153,7 +5153,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1861 {
+        public static System.Drawing.Bitmap acre_1861 {
             get {
                 object obj = ResourceManager.GetObject("acre_1861", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5163,7 +5163,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_187 {
+        public static System.Drawing.Bitmap acre_187 {
             get {
                 object obj = ResourceManager.GetObject("acre_187", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5173,7 +5173,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1871 {
+        public static System.Drawing.Bitmap acre_1871 {
             get {
                 object obj = ResourceManager.GetObject("acre_1871", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5183,7 +5183,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_188 {
+        public static System.Drawing.Bitmap acre_188 {
             get {
                 object obj = ResourceManager.GetObject("acre_188", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5193,7 +5193,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1881 {
+        public static System.Drawing.Bitmap acre_1881 {
             get {
                 object obj = ResourceManager.GetObject("acre_1881", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5203,7 +5203,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_189 {
+        public static System.Drawing.Bitmap acre_189 {
             get {
                 object obj = ResourceManager.GetObject("acre_189", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5213,7 +5213,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1891 {
+        public static System.Drawing.Bitmap acre_1891 {
             get {
                 object obj = ResourceManager.GetObject("acre_1891", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5223,7 +5223,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_19 {
+        public static System.Drawing.Bitmap acre_19 {
             get {
                 object obj = ResourceManager.GetObject("acre_19", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5233,7 +5233,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_190 {
+        public static System.Drawing.Bitmap acre_190 {
             get {
                 object obj = ResourceManager.GetObject("acre_190", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5243,7 +5243,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1901 {
+        public static System.Drawing.Bitmap acre_1901 {
             get {
                 object obj = ResourceManager.GetObject("acre_1901", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5253,7 +5253,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_191 {
+        public static System.Drawing.Bitmap acre_191 {
             get {
                 object obj = ResourceManager.GetObject("acre_191", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5263,7 +5263,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1911 {
+        public static System.Drawing.Bitmap acre_1911 {
             get {
                 object obj = ResourceManager.GetObject("acre_1911", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5273,7 +5273,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_192 {
+        public static System.Drawing.Bitmap acre_192 {
             get {
                 object obj = ResourceManager.GetObject("acre_192", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5283,7 +5283,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1921 {
+        public static System.Drawing.Bitmap acre_1921 {
             get {
                 object obj = ResourceManager.GetObject("acre_1921", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5293,7 +5293,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_193 {
+        public static System.Drawing.Bitmap acre_193 {
             get {
                 object obj = ResourceManager.GetObject("acre_193", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5303,7 +5303,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1931 {
+        public static System.Drawing.Bitmap acre_1931 {
             get {
                 object obj = ResourceManager.GetObject("acre_1931", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5313,7 +5313,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_194 {
+        public static System.Drawing.Bitmap acre_194 {
             get {
                 object obj = ResourceManager.GetObject("acre_194", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5323,7 +5323,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1941 {
+        public static System.Drawing.Bitmap acre_1941 {
             get {
                 object obj = ResourceManager.GetObject("acre_1941", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5333,7 +5333,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_195 {
+        public static System.Drawing.Bitmap acre_195 {
             get {
                 object obj = ResourceManager.GetObject("acre_195", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5343,7 +5343,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1951 {
+        public static System.Drawing.Bitmap acre_1951 {
             get {
                 object obj = ResourceManager.GetObject("acre_1951", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5353,7 +5353,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_196 {
+        public static System.Drawing.Bitmap acre_196 {
             get {
                 object obj = ResourceManager.GetObject("acre_196", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5363,7 +5363,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1961 {
+        public static System.Drawing.Bitmap acre_1961 {
             get {
                 object obj = ResourceManager.GetObject("acre_1961", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5373,7 +5373,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_197 {
+        public static System.Drawing.Bitmap acre_197 {
             get {
                 object obj = ResourceManager.GetObject("acre_197", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5383,7 +5383,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1971 {
+        public static System.Drawing.Bitmap acre_1971 {
             get {
                 object obj = ResourceManager.GetObject("acre_1971", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5393,7 +5393,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_198 {
+        public static System.Drawing.Bitmap acre_198 {
             get {
                 object obj = ResourceManager.GetObject("acre_198", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5403,7 +5403,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1981 {
+        public static System.Drawing.Bitmap acre_1981 {
             get {
                 object obj = ResourceManager.GetObject("acre_1981", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5413,7 +5413,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_199 {
+        public static System.Drawing.Bitmap acre_199 {
             get {
                 object obj = ResourceManager.GetObject("acre_199", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5423,7 +5423,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_1991 {
+        public static System.Drawing.Bitmap acre_1991 {
             get {
                 object obj = ResourceManager.GetObject("acre_1991", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5433,7 +5433,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_2 {
+        public static System.Drawing.Bitmap acre_2 {
             get {
                 object obj = ResourceManager.GetObject("acre_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5443,7 +5443,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_20 {
+        public static System.Drawing.Bitmap acre_20 {
             get {
                 object obj = ResourceManager.GetObject("acre_20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5453,7 +5453,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_200 {
+        public static System.Drawing.Bitmap acre_200 {
             get {
                 object obj = ResourceManager.GetObject("acre_200", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5463,7 +5463,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_2001 {
+        public static System.Drawing.Bitmap acre_2001 {
             get {
                 object obj = ResourceManager.GetObject("acre_2001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5473,7 +5473,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_201 {
+        public static System.Drawing.Bitmap acre_201 {
             get {
                 object obj = ResourceManager.GetObject("acre_201", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5483,7 +5483,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_2011 {
+        public static System.Drawing.Bitmap acre_2011 {
             get {
                 object obj = ResourceManager.GetObject("acre_2011", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5493,7 +5493,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_202 {
+        public static System.Drawing.Bitmap acre_202 {
             get {
                 object obj = ResourceManager.GetObject("acre_202", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5503,7 +5503,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_2021 {
+        public static System.Drawing.Bitmap acre_2021 {
             get {
                 object obj = ResourceManager.GetObject("acre_2021", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5513,7 +5513,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_203 {
+        public static System.Drawing.Bitmap acre_203 {
             get {
                 object obj = ResourceManager.GetObject("acre_203", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5523,7 +5523,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_2031 {
+        public static System.Drawing.Bitmap acre_2031 {
             get {
                 object obj = ResourceManager.GetObject("acre_2031", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5533,7 +5533,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_204 {
+        public static System.Drawing.Bitmap acre_204 {
             get {
                 object obj = ResourceManager.GetObject("acre_204", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5543,7 +5543,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_205 {
+        public static System.Drawing.Bitmap acre_205 {
             get {
                 object obj = ResourceManager.GetObject("acre_205", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5553,7 +5553,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_206 {
+        public static System.Drawing.Bitmap acre_206 {
             get {
                 object obj = ResourceManager.GetObject("acre_206", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5563,7 +5563,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_207 {
+        public static System.Drawing.Bitmap acre_207 {
             get {
                 object obj = ResourceManager.GetObject("acre_207", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5573,7 +5573,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_208 {
+        public static System.Drawing.Bitmap acre_208 {
             get {
                 object obj = ResourceManager.GetObject("acre_208", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5583,7 +5583,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_209 {
+        public static System.Drawing.Bitmap acre_209 {
             get {
                 object obj = ResourceManager.GetObject("acre_209", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5593,7 +5593,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_21 {
+        public static System.Drawing.Bitmap acre_21 {
             get {
                 object obj = ResourceManager.GetObject("acre_21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5603,7 +5603,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_210 {
+        public static System.Drawing.Bitmap acre_210 {
             get {
                 object obj = ResourceManager.GetObject("acre_210", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5613,7 +5613,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_211 {
+        public static System.Drawing.Bitmap acre_211 {
             get {
                 object obj = ResourceManager.GetObject("acre_211", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5623,7 +5623,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_212 {
+        public static System.Drawing.Bitmap acre_212 {
             get {
                 object obj = ResourceManager.GetObject("acre_212", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5633,7 +5633,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_213 {
+        public static System.Drawing.Bitmap acre_213 {
             get {
                 object obj = ResourceManager.GetObject("acre_213", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5643,7 +5643,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_214 {
+        public static System.Drawing.Bitmap acre_214 {
             get {
                 object obj = ResourceManager.GetObject("acre_214", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5653,7 +5653,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_22 {
+        public static System.Drawing.Bitmap acre_22 {
             get {
                 object obj = ResourceManager.GetObject("acre_22", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5663,7 +5663,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_23 {
+        public static System.Drawing.Bitmap acre_23 {
             get {
                 object obj = ResourceManager.GetObject("acre_23", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5673,7 +5673,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_24 {
+        public static System.Drawing.Bitmap acre_24 {
             get {
                 object obj = ResourceManager.GetObject("acre_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5683,7 +5683,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_25 {
+        public static System.Drawing.Bitmap acre_25 {
             get {
                 object obj = ResourceManager.GetObject("acre_25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5693,7 +5693,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_26 {
+        public static System.Drawing.Bitmap acre_26 {
             get {
                 object obj = ResourceManager.GetObject("acre_26", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5703,7 +5703,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_27 {
+        public static System.Drawing.Bitmap acre_27 {
             get {
                 object obj = ResourceManager.GetObject("acre_27", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5713,7 +5713,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_28 {
+        public static System.Drawing.Bitmap acre_28 {
             get {
                 object obj = ResourceManager.GetObject("acre_28", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5723,7 +5723,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_29 {
+        public static System.Drawing.Bitmap acre_29 {
             get {
                 object obj = ResourceManager.GetObject("acre_29", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5733,7 +5733,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_3 {
+        public static System.Drawing.Bitmap acre_3 {
             get {
                 object obj = ResourceManager.GetObject("acre_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5743,7 +5743,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_30 {
+        public static System.Drawing.Bitmap acre_30 {
             get {
                 object obj = ResourceManager.GetObject("acre_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5753,7 +5753,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_31 {
+        public static System.Drawing.Bitmap acre_31 {
             get {
                 object obj = ResourceManager.GetObject("acre_31", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5763,7 +5763,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_32 {
+        public static System.Drawing.Bitmap acre_32 {
             get {
                 object obj = ResourceManager.GetObject("acre_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5773,7 +5773,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_33 {
+        public static System.Drawing.Bitmap acre_33 {
             get {
                 object obj = ResourceManager.GetObject("acre_33", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5783,7 +5783,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_34 {
+        public static System.Drawing.Bitmap acre_34 {
             get {
                 object obj = ResourceManager.GetObject("acre_34", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5793,7 +5793,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_35 {
+        public static System.Drawing.Bitmap acre_35 {
             get {
                 object obj = ResourceManager.GetObject("acre_35", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5803,7 +5803,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_36 {
+        public static System.Drawing.Bitmap acre_36 {
             get {
                 object obj = ResourceManager.GetObject("acre_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5813,7 +5813,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_37 {
+        public static System.Drawing.Bitmap acre_37 {
             get {
                 object obj = ResourceManager.GetObject("acre_37", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5823,7 +5823,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_38 {
+        public static System.Drawing.Bitmap acre_38 {
             get {
                 object obj = ResourceManager.GetObject("acre_38", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5833,7 +5833,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_39 {
+        public static System.Drawing.Bitmap acre_39 {
             get {
                 object obj = ResourceManager.GetObject("acre_39", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5843,7 +5843,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_4 {
+        public static System.Drawing.Bitmap acre_4 {
             get {
                 object obj = ResourceManager.GetObject("acre_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5853,7 +5853,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_40 {
+        public static System.Drawing.Bitmap acre_40 {
             get {
                 object obj = ResourceManager.GetObject("acre_40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5863,7 +5863,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_41 {
+        public static System.Drawing.Bitmap acre_41 {
             get {
                 object obj = ResourceManager.GetObject("acre_41", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5873,7 +5873,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_42 {
+        public static System.Drawing.Bitmap acre_42 {
             get {
                 object obj = ResourceManager.GetObject("acre_42", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5883,7 +5883,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_43 {
+        public static System.Drawing.Bitmap acre_43 {
             get {
                 object obj = ResourceManager.GetObject("acre_43", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5893,7 +5893,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_44 {
+        public static System.Drawing.Bitmap acre_44 {
             get {
                 object obj = ResourceManager.GetObject("acre_44", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5903,7 +5903,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_45 {
+        public static System.Drawing.Bitmap acre_45 {
             get {
                 object obj = ResourceManager.GetObject("acre_45", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5913,7 +5913,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_46 {
+        public static System.Drawing.Bitmap acre_46 {
             get {
                 object obj = ResourceManager.GetObject("acre_46", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5923,7 +5923,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_47 {
+        public static System.Drawing.Bitmap acre_47 {
             get {
                 object obj = ResourceManager.GetObject("acre_47", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5933,7 +5933,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_48 {
+        public static System.Drawing.Bitmap acre_48 {
             get {
                 object obj = ResourceManager.GetObject("acre_48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5943,7 +5943,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_49 {
+        public static System.Drawing.Bitmap acre_49 {
             get {
                 object obj = ResourceManager.GetObject("acre_49", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5953,7 +5953,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_5 {
+        public static System.Drawing.Bitmap acre_5 {
             get {
                 object obj = ResourceManager.GetObject("acre_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5963,7 +5963,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_50 {
+        public static System.Drawing.Bitmap acre_50 {
             get {
                 object obj = ResourceManager.GetObject("acre_50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5973,7 +5973,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_51 {
+        public static System.Drawing.Bitmap acre_51 {
             get {
                 object obj = ResourceManager.GetObject("acre_51", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5983,7 +5983,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_52 {
+        public static System.Drawing.Bitmap acre_52 {
             get {
                 object obj = ResourceManager.GetObject("acre_52", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -5993,7 +5993,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_53 {
+        public static System.Drawing.Bitmap acre_53 {
             get {
                 object obj = ResourceManager.GetObject("acre_53", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6003,7 +6003,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_54 {
+        public static System.Drawing.Bitmap acre_54 {
             get {
                 object obj = ResourceManager.GetObject("acre_54", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6013,7 +6013,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_55 {
+        public static System.Drawing.Bitmap acre_55 {
             get {
                 object obj = ResourceManager.GetObject("acre_55", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6023,7 +6023,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_56 {
+        public static System.Drawing.Bitmap acre_56 {
             get {
                 object obj = ResourceManager.GetObject("acre_56", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6033,7 +6033,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_57 {
+        public static System.Drawing.Bitmap acre_57 {
             get {
                 object obj = ResourceManager.GetObject("acre_57", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6043,7 +6043,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_58 {
+        public static System.Drawing.Bitmap acre_58 {
             get {
                 object obj = ResourceManager.GetObject("acre_58", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6053,7 +6053,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_59 {
+        public static System.Drawing.Bitmap acre_59 {
             get {
                 object obj = ResourceManager.GetObject("acre_59", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6063,7 +6063,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_6 {
+        public static System.Drawing.Bitmap acre_6 {
             get {
                 object obj = ResourceManager.GetObject("acre_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6073,7 +6073,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_60 {
+        public static System.Drawing.Bitmap acre_60 {
             get {
                 object obj = ResourceManager.GetObject("acre_60", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6083,7 +6083,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_61 {
+        public static System.Drawing.Bitmap acre_61 {
             get {
                 object obj = ResourceManager.GetObject("acre_61", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6093,7 +6093,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_62 {
+        public static System.Drawing.Bitmap acre_62 {
             get {
                 object obj = ResourceManager.GetObject("acre_62", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6103,7 +6103,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_63 {
+        public static System.Drawing.Bitmap acre_63 {
             get {
                 object obj = ResourceManager.GetObject("acre_63", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6113,7 +6113,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_64 {
+        public static System.Drawing.Bitmap acre_64 {
             get {
                 object obj = ResourceManager.GetObject("acre_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6123,7 +6123,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_65 {
+        public static System.Drawing.Bitmap acre_65 {
             get {
                 object obj = ResourceManager.GetObject("acre_65", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6133,7 +6133,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_66 {
+        public static System.Drawing.Bitmap acre_66 {
             get {
                 object obj = ResourceManager.GetObject("acre_66", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6143,7 +6143,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_67 {
+        public static System.Drawing.Bitmap acre_67 {
             get {
                 object obj = ResourceManager.GetObject("acre_67", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6153,7 +6153,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_68 {
+        public static System.Drawing.Bitmap acre_68 {
             get {
                 object obj = ResourceManager.GetObject("acre_68", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6163,7 +6163,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_69 {
+        public static System.Drawing.Bitmap acre_69 {
             get {
                 object obj = ResourceManager.GetObject("acre_69", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6173,7 +6173,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_7 {
+        public static System.Drawing.Bitmap acre_7 {
             get {
                 object obj = ResourceManager.GetObject("acre_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6183,7 +6183,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_70 {
+        public static System.Drawing.Bitmap acre_70 {
             get {
                 object obj = ResourceManager.GetObject("acre_70", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6193,7 +6193,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_71 {
+        public static System.Drawing.Bitmap acre_71 {
             get {
                 object obj = ResourceManager.GetObject("acre_71", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6203,7 +6203,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_72 {
+        public static System.Drawing.Bitmap acre_72 {
             get {
                 object obj = ResourceManager.GetObject("acre_72", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6213,7 +6213,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_73 {
+        public static System.Drawing.Bitmap acre_73 {
             get {
                 object obj = ResourceManager.GetObject("acre_73", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6223,7 +6223,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_74 {
+        public static System.Drawing.Bitmap acre_74 {
             get {
                 object obj = ResourceManager.GetObject("acre_74", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6233,7 +6233,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_75 {
+        public static System.Drawing.Bitmap acre_75 {
             get {
                 object obj = ResourceManager.GetObject("acre_75", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6243,7 +6243,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_76 {
+        public static System.Drawing.Bitmap acre_76 {
             get {
                 object obj = ResourceManager.GetObject("acre_76", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6253,7 +6253,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_77 {
+        public static System.Drawing.Bitmap acre_77 {
             get {
                 object obj = ResourceManager.GetObject("acre_77", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6263,7 +6263,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_78 {
+        public static System.Drawing.Bitmap acre_78 {
             get {
                 object obj = ResourceManager.GetObject("acre_78", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6273,7 +6273,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_79 {
+        public static System.Drawing.Bitmap acre_79 {
             get {
                 object obj = ResourceManager.GetObject("acre_79", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6283,7 +6283,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_8 {
+        public static System.Drawing.Bitmap acre_8 {
             get {
                 object obj = ResourceManager.GetObject("acre_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6293,7 +6293,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_80 {
+        public static System.Drawing.Bitmap acre_80 {
             get {
                 object obj = ResourceManager.GetObject("acre_80", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6303,7 +6303,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_81 {
+        public static System.Drawing.Bitmap acre_81 {
             get {
                 object obj = ResourceManager.GetObject("acre_81", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6313,7 +6313,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_82 {
+        public static System.Drawing.Bitmap acre_82 {
             get {
                 object obj = ResourceManager.GetObject("acre_82", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6323,7 +6323,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_83 {
+        public static System.Drawing.Bitmap acre_83 {
             get {
                 object obj = ResourceManager.GetObject("acre_83", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6333,7 +6333,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_84 {
+        public static System.Drawing.Bitmap acre_84 {
             get {
                 object obj = ResourceManager.GetObject("acre_84", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6343,7 +6343,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_85 {
+        public static System.Drawing.Bitmap acre_85 {
             get {
                 object obj = ResourceManager.GetObject("acre_85", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6353,7 +6353,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_86 {
+        public static System.Drawing.Bitmap acre_86 {
             get {
                 object obj = ResourceManager.GetObject("acre_86", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6363,7 +6363,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_87 {
+        public static System.Drawing.Bitmap acre_87 {
             get {
                 object obj = ResourceManager.GetObject("acre_87", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6373,7 +6373,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_88 {
+        public static System.Drawing.Bitmap acre_88 {
             get {
                 object obj = ResourceManager.GetObject("acre_88", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6383,7 +6383,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_89 {
+        public static System.Drawing.Bitmap acre_89 {
             get {
                 object obj = ResourceManager.GetObject("acre_89", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6393,7 +6393,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_9 {
+        public static System.Drawing.Bitmap acre_9 {
             get {
                 object obj = ResourceManager.GetObject("acre_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6403,7 +6403,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_90 {
+        public static System.Drawing.Bitmap acre_90 {
             get {
                 object obj = ResourceManager.GetObject("acre_90", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6413,7 +6413,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_91 {
+        public static System.Drawing.Bitmap acre_91 {
             get {
                 object obj = ResourceManager.GetObject("acre_91", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6423,7 +6423,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_92 {
+        public static System.Drawing.Bitmap acre_92 {
             get {
                 object obj = ResourceManager.GetObject("acre_92", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6433,7 +6433,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_93 {
+        public static System.Drawing.Bitmap acre_93 {
             get {
                 object obj = ResourceManager.GetObject("acre_93", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6443,7 +6443,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_94 {
+        public static System.Drawing.Bitmap acre_94 {
             get {
                 object obj = ResourceManager.GetObject("acre_94", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6453,7 +6453,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_95 {
+        public static System.Drawing.Bitmap acre_95 {
             get {
                 object obj = ResourceManager.GetObject("acre_95", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6463,7 +6463,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_96 {
+        public static System.Drawing.Bitmap acre_96 {
             get {
                 object obj = ResourceManager.GetObject("acre_96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6473,7 +6473,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_97 {
+        public static System.Drawing.Bitmap acre_97 {
             get {
                 object obj = ResourceManager.GetObject("acre_97", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6483,7 +6483,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_98 {
+        public static System.Drawing.Bitmap acre_98 {
             get {
                 object obj = ResourceManager.GetObject("acre_98", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6493,7 +6493,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acre_99 {
+        public static System.Drawing.Bitmap acre_99 {
             get {
                 object obj = ResourceManager.GetObject("acre_99", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6503,7 +6503,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ARB_1 {
+        public static System.Drawing.Bitmap ARB_1 {
             get {
                 object obj = ResourceManager.GetObject("ARB_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6513,7 +6513,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ARB_2 {
+        public static System.Drawing.Bitmap ARB_2 {
             get {
                 object obj = ResourceManager.GetObject("ARB_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6523,7 +6523,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ARB_3 {
+        public static System.Drawing.Bitmap ARB_3 {
             get {
                 object obj = ResourceManager.GetObject("ARB_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6533,7 +6533,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BLO_1 {
+        public static System.Drawing.Bitmap BLO_1 {
             get {
                 object obj = ResourceManager.GetObject("BLO_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6543,7 +6543,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BLO_2 {
+        public static System.Drawing.Bitmap BLO_2 {
             get {
                 object obj = ResourceManager.GetObject("BLO_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6553,7 +6553,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BLO_3 {
+        public static System.Drawing.Bitmap BLO_3 {
             get {
                 object obj = ResourceManager.GetObject("BLO_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6591,7 +6591,7 @@ namespace NLSE.Properties {
         ///00BF	Round Streetlight
         ///00C0	Streetl [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
-        internal static string building_en {
+        public static string building_en {
             get {
                 return ResourceManager.GetString("building_en", resourceCulture);
             }
@@ -6669,7 +6669,7 @@ namespace NLSE.Properties {
         ///grah grah
         ///s [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
-        internal static string catch_en {
+        public static string catch_en {
             get {
                 return ResourceManager.GetString("catch_en", resourceCulture);
             }
@@ -6678,7 +6678,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CDY_1 {
+        public static System.Drawing.Bitmap CDY_1 {
             get {
                 object obj = ResourceManager.GetObject("CDY_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6688,7 +6688,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CDY_2 {
+        public static System.Drawing.Bitmap CDY_2 {
             get {
                 object obj = ResourceManager.GetObject("CDY_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6698,7 +6698,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CDY_3 {
+        public static System.Drawing.Bitmap CDY_3 {
             get {
                 object obj = ResourceManager.GetObject("CDY_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6708,7 +6708,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CLO_1 {
+        public static System.Drawing.Bitmap CLO_1 {
             get {
                 object obj = ResourceManager.GetObject("CLO_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6718,7 +6718,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CLO_2 {
+        public static System.Drawing.Bitmap CLO_2 {
             get {
                 object obj = ResourceManager.GetObject("CLO_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6728,7 +6728,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CLO_3 {
+        public static System.Drawing.Bitmap CLO_3 {
             get {
                 object obj = ResourceManager.GetObject("CLO_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6738,7 +6738,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CRN_1 {
+        public static System.Drawing.Bitmap CRN_1 {
             get {
                 object obj = ResourceManager.GetObject("CRN_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6748,7 +6748,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CRN_2 {
+        public static System.Drawing.Bitmap CRN_2 {
             get {
                 object obj = ResourceManager.GetObject("CRN_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6758,7 +6758,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CRN_3 {
+        public static System.Drawing.Bitmap CRN_3 {
             get {
                 object obj = ResourceManager.GetObject("CRN_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6768,7 +6768,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CTL_1 {
+        public static System.Drawing.Bitmap CTL_1 {
             get {
                 object obj = ResourceManager.GetObject("CTL_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6778,7 +6778,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CTL_2 {
+        public static System.Drawing.Bitmap CTL_2 {
             get {
                 object obj = ResourceManager.GetObject("CTL_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6788,7 +6788,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CTL_3 {
+        public static System.Drawing.Bitmap CTL_3 {
             get {
                 object obj = ResourceManager.GetObject("CTL_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6798,7 +6798,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap empty {
+        public static System.Drawing.Bitmap empty {
             get {
                 object obj = ResourceManager.GetObject("empty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6808,7 +6808,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] encyclo {
+        public static byte[] encyclo {
             get {
                 object obj = ResourceManager.GetObject("encyclo", resourceCulture);
                 return ((byte[])(obj));
@@ -6818,7 +6818,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_1 {
+        public static System.Drawing.Bitmap face_F_1 {
             get {
                 object obj = ResourceManager.GetObject("face_F_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6828,7 +6828,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_10 {
+        public static System.Drawing.Bitmap face_F_10 {
             get {
                 object obj = ResourceManager.GetObject("face_F_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6838,7 +6838,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_11 {
+        public static System.Drawing.Bitmap face_F_11 {
             get {
                 object obj = ResourceManager.GetObject("face_F_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6848,7 +6848,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_12 {
+        public static System.Drawing.Bitmap face_F_12 {
             get {
                 object obj = ResourceManager.GetObject("face_F_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6858,7 +6858,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_2 {
+        public static System.Drawing.Bitmap face_F_2 {
             get {
                 object obj = ResourceManager.GetObject("face_F_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6868,7 +6868,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_3 {
+        public static System.Drawing.Bitmap face_F_3 {
             get {
                 object obj = ResourceManager.GetObject("face_F_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6878,7 +6878,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_4 {
+        public static System.Drawing.Bitmap face_F_4 {
             get {
                 object obj = ResourceManager.GetObject("face_F_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6888,7 +6888,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_5 {
+        public static System.Drawing.Bitmap face_F_5 {
             get {
                 object obj = ResourceManager.GetObject("face_F_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6898,7 +6898,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_6 {
+        public static System.Drawing.Bitmap face_F_6 {
             get {
                 object obj = ResourceManager.GetObject("face_F_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6908,7 +6908,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_7 {
+        public static System.Drawing.Bitmap face_F_7 {
             get {
                 object obj = ResourceManager.GetObject("face_F_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6918,7 +6918,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_8 {
+        public static System.Drawing.Bitmap face_F_8 {
             get {
                 object obj = ResourceManager.GetObject("face_F_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6928,7 +6928,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_F_9 {
+        public static System.Drawing.Bitmap face_F_9 {
             get {
                 object obj = ResourceManager.GetObject("face_F_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6938,7 +6938,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_1 {
+        public static System.Drawing.Bitmap face_M_1 {
             get {
                 object obj = ResourceManager.GetObject("face_M_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6948,7 +6948,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_10 {
+        public static System.Drawing.Bitmap face_M_10 {
             get {
                 object obj = ResourceManager.GetObject("face_M_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6958,7 +6958,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_11 {
+        public static System.Drawing.Bitmap face_M_11 {
             get {
                 object obj = ResourceManager.GetObject("face_M_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6968,7 +6968,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_12 {
+        public static System.Drawing.Bitmap face_M_12 {
             get {
                 object obj = ResourceManager.GetObject("face_M_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6978,7 +6978,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_2 {
+        public static System.Drawing.Bitmap face_M_2 {
             get {
                 object obj = ResourceManager.GetObject("face_M_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6988,7 +6988,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_3 {
+        public static System.Drawing.Bitmap face_M_3 {
             get {
                 object obj = ResourceManager.GetObject("face_M_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -6998,7 +6998,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_4 {
+        public static System.Drawing.Bitmap face_M_4 {
             get {
                 object obj = ResourceManager.GetObject("face_M_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7008,7 +7008,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_5 {
+        public static System.Drawing.Bitmap face_M_5 {
             get {
                 object obj = ResourceManager.GetObject("face_M_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7018,7 +7018,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_6 {
+        public static System.Drawing.Bitmap face_M_6 {
             get {
                 object obj = ResourceManager.GetObject("face_M_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7028,7 +7028,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_7 {
+        public static System.Drawing.Bitmap face_M_7 {
             get {
                 object obj = ResourceManager.GetObject("face_M_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7038,7 +7038,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_8 {
+        public static System.Drawing.Bitmap face_M_8 {
             get {
                 object obj = ResourceManager.GetObject("face_M_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7048,7 +7048,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap face_M_9 {
+        public static System.Drawing.Bitmap face_M_9 {
             get {
                 object obj = ResourceManager.GetObject("face_M_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7058,7 +7058,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FLR_1 {
+        public static System.Drawing.Bitmap FLR_1 {
             get {
                 object obj = ResourceManager.GetObject("FLR_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7068,7 +7068,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FLR_2 {
+        public static System.Drawing.Bitmap FLR_2 {
             get {
                 object obj = ResourceManager.GetObject("FLR_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7078,7 +7078,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FLR_3 {
+        public static System.Drawing.Bitmap FLR_3 {
             get {
                 object obj = ResourceManager.GetObject("FLR_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7088,7 +7088,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FLT_1 {
+        public static System.Drawing.Bitmap FLT_1 {
             get {
                 object obj = ResourceManager.GetObject("FLT_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7098,7 +7098,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FLT_2 {
+        public static System.Drawing.Bitmap FLT_2 {
             get {
                 object obj = ResourceManager.GetObject("FLT_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7108,7 +7108,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FLT_3 {
+        public static System.Drawing.Bitmap FLT_3 {
             get {
                 object obj = ResourceManager.GetObject("FLT_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7118,7 +7118,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_1 {
+        public static System.Drawing.Bitmap hair_F_1 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7128,7 +7128,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_10 {
+        public static System.Drawing.Bitmap hair_F_10 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7138,7 +7138,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_11 {
+        public static System.Drawing.Bitmap hair_F_11 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7148,7 +7148,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_12 {
+        public static System.Drawing.Bitmap hair_F_12 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7158,7 +7158,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_13 {
+        public static System.Drawing.Bitmap hair_F_13 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7168,7 +7168,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_14 {
+        public static System.Drawing.Bitmap hair_F_14 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_14", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7178,7 +7178,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_15 {
+        public static System.Drawing.Bitmap hair_F_15 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7188,7 +7188,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_16 {
+        public static System.Drawing.Bitmap hair_F_16 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7198,7 +7198,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_2 {
+        public static System.Drawing.Bitmap hair_F_2 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7208,7 +7208,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_3 {
+        public static System.Drawing.Bitmap hair_F_3 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7218,7 +7218,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_4 {
+        public static System.Drawing.Bitmap hair_F_4 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7228,7 +7228,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_5 {
+        public static System.Drawing.Bitmap hair_F_5 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7238,7 +7238,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_6 {
+        public static System.Drawing.Bitmap hair_F_6 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7248,7 +7248,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_7 {
+        public static System.Drawing.Bitmap hair_F_7 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7258,7 +7258,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_8 {
+        public static System.Drawing.Bitmap hair_F_8 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7268,7 +7268,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_F_9 {
+        public static System.Drawing.Bitmap hair_F_9 {
             get {
                 object obj = ResourceManager.GetObject("hair_F_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7278,7 +7278,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_1 {
+        public static System.Drawing.Bitmap hair_M_1 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7288,7 +7288,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_10 {
+        public static System.Drawing.Bitmap hair_M_10 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7298,7 +7298,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_11 {
+        public static System.Drawing.Bitmap hair_M_11 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7308,7 +7308,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_12 {
+        public static System.Drawing.Bitmap hair_M_12 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7318,7 +7318,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_13 {
+        public static System.Drawing.Bitmap hair_M_13 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7328,7 +7328,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_14 {
+        public static System.Drawing.Bitmap hair_M_14 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_14", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7338,7 +7338,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_15 {
+        public static System.Drawing.Bitmap hair_M_15 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7348,7 +7348,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_16 {
+        public static System.Drawing.Bitmap hair_M_16 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7358,7 +7358,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_2 {
+        public static System.Drawing.Bitmap hair_M_2 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7368,7 +7368,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_3 {
+        public static System.Drawing.Bitmap hair_M_3 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7378,7 +7378,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_4 {
+        public static System.Drawing.Bitmap hair_M_4 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7388,7 +7388,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_5 {
+        public static System.Drawing.Bitmap hair_M_5 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7398,7 +7398,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_6 {
+        public static System.Drawing.Bitmap hair_M_6 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7408,7 +7408,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_7 {
+        public static System.Drawing.Bitmap hair_M_7 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7418,7 +7418,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_8 {
+        public static System.Drawing.Bitmap hair_M_8 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7428,7 +7428,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hair_M_9 {
+        public static System.Drawing.Bitmap hair_M_9 {
             get {
                 object obj = ResourceManager.GetObject("hair_M_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7438,7 +7438,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HRT_1 {
+        public static System.Drawing.Bitmap HRT_1 {
             get {
                 object obj = ResourceManager.GetObject("HRT_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7448,7 +7448,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HRT_2 {
+        public static System.Drawing.Bitmap HRT_2 {
             get {
                 object obj = ResourceManager.GetObject("HRT_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7458,7 +7458,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HRT_3 {
+        public static System.Drawing.Bitmap HRT_3 {
             get {
                 object obj = ResourceManager.GetObject("HRT_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7468,7 +7468,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap INS_1 {
+        public static System.Drawing.Bitmap INS_1 {
             get {
                 object obj = ResourceManager.GetObject("INS_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7478,7 +7478,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap INS_2 {
+        public static System.Drawing.Bitmap INS_2 {
             get {
                 object obj = ResourceManager.GetObject("INS_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7488,7 +7488,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap INS_3 {
+        public static System.Drawing.Bitmap INS_3 {
             get {
                 object obj = ResourceManager.GetObject("INS_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7498,7 +7498,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ISL_1 {
+        public static System.Drawing.Bitmap ISL_1 {
             get {
                 object obj = ResourceManager.GetObject("ISL_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7508,7 +7508,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ISL_2 {
+        public static System.Drawing.Bitmap ISL_2 {
             get {
                 object obj = ResourceManager.GetObject("ISL_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7518,7 +7518,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ISL_3 {
+        public static System.Drawing.Bitmap ISL_3 {
             get {
                 object obj = ResourceManager.GetObject("ISL_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7558,7 +7558,7 @@ namespace NLSE.Properties {
         ///00b9	Blue Roses
         ///00ba	Gold Ros [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
-        internal static string item_en {
+        public static string item_en {
             get {
                 return ResourceManager.GetString("item_en", resourceCulture);
             }
@@ -7567,7 +7567,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap KKG_1 {
+        public static System.Drawing.Bitmap KKG_1 {
             get {
                 object obj = ResourceManager.GetObject("KKG_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7577,7 +7577,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap KKG_2 {
+        public static System.Drawing.Bitmap KKG_2 {
             get {
                 object obj = ResourceManager.GetObject("KKG_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7587,7 +7587,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap KKG_3 {
+        public static System.Drawing.Bitmap KKG_3 {
             get {
                 object obj = ResourceManager.GetObject("KKG_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7597,7 +7597,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LTR_1 {
+        public static System.Drawing.Bitmap LTR_1 {
             get {
                 object obj = ResourceManager.GetObject("LTR_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7607,7 +7607,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LTR_2 {
+        public static System.Drawing.Bitmap LTR_2 {
             get {
                 object obj = ResourceManager.GetObject("LTR_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7617,7 +7617,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LTR_3 {
+        public static System.Drawing.Bitmap LTR_3 {
             get {
                 object obj = ResourceManager.GetObject("LTR_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7627,7 +7627,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MSN_1 {
+        public static System.Drawing.Bitmap MSN_1 {
             get {
                 object obj = ResourceManager.GetObject("MSN_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7637,7 +7637,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MSN_2 {
+        public static System.Drawing.Bitmap MSN_2 {
             get {
                 object obj = ResourceManager.GetObject("MSN_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7647,7 +7647,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MSN_3 {
+        public static System.Drawing.Bitmap MSN_3 {
             get {
                 object obj = ResourceManager.GetObject("MSN_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7657,7 +7657,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] Museum {
+        public static byte[] Museum {
             get {
                 object obj = ResourceManager.GetObject("Museum", resourceCulture);
                 return ((byte[])(obj));
@@ -7667,7 +7667,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MVH_1 {
+        public static System.Drawing.Bitmap MVH_1 {
             get {
                 object obj = ResourceManager.GetObject("MVH_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7677,7 +7677,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MVH_2 {
+        public static System.Drawing.Bitmap MVH_2 {
             get {
                 object obj = ResourceManager.GetObject("MVH_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7687,7 +7687,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MVH_3 {
+        public static System.Drawing.Bitmap MVH_3 {
             get {
                 object obj = ResourceManager.GetObject("MVH_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7765,7 +7765,7 @@ namespace NLSE.Properties {
         ///Pudge
         ///Kody [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
-        internal static string name_en {
+        public static string name_en {
             get {
                 return ResourceManager.GetString("name_en", resourceCulture);
             }
@@ -7774,7 +7774,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap no_tpc {
+        public static System.Drawing.Bitmap no_tpc {
             get {
                 object obj = ResourceManager.GetObject("no_tpc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7784,7 +7784,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap nothing {
+        public static System.Drawing.Bitmap nothing {
             get {
                 object obj = ResourceManager.GetObject("nothing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7794,7 +7794,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NVT_1 {
+        public static System.Drawing.Bitmap NVT_1 {
             get {
                 object obj = ResourceManager.GetObject("NVT_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7804,7 +7804,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NVT_2 {
+        public static System.Drawing.Bitmap NVT_2 {
             get {
                 object obj = ResourceManager.GetObject("NVT_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7814,7 +7814,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NVT_3 {
+        public static System.Drawing.Bitmap NVT_3 {
             get {
                 object obj = ResourceManager.GetObject("NVT_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7824,7 +7824,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PCH_1 {
+        public static System.Drawing.Bitmap PCH_1 {
             get {
                 object obj = ResourceManager.GetObject("PCH_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7834,7 +7834,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PCH_2 {
+        public static System.Drawing.Bitmap PCH_2 {
             get {
                 object obj = ResourceManager.GetObject("PCH_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7844,7 +7844,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PCH_3 {
+        public static System.Drawing.Bitmap PCH_3 {
             get {
                 object obj = ResourceManager.GetObject("PCH_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7854,7 +7854,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PLG_1 {
+        public static System.Drawing.Bitmap PLG_1 {
             get {
                 object obj = ResourceManager.GetObject("PLG_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7864,7 +7864,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PLG_2 {
+        public static System.Drawing.Bitmap PLG_2 {
             get {
                 object obj = ResourceManager.GetObject("PLG_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7874,7 +7874,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PLG_3 {
+        public static System.Drawing.Bitmap PLG_3 {
             get {
                 object obj = ResourceManager.GetObject("PLG_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7884,7 +7884,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PLP_1 {
+        public static System.Drawing.Bitmap PLP_1 {
             get {
                 object obj = ResourceManager.GetObject("PLP_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7894,7 +7894,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PLP_2 {
+        public static System.Drawing.Bitmap PLP_2 {
             get {
                 object obj = ResourceManager.GetObject("PLP_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7904,7 +7904,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PLP_3 {
+        public static System.Drawing.Bitmap PLP_3 {
             get {
                 object obj = ResourceManager.GetObject("PLP_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7914,7 +7914,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PSO_1 {
+        public static System.Drawing.Bitmap PSO_1 {
             get {
                 object obj = ResourceManager.GetObject("PSO_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7924,7 +7924,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PSO_2 {
+        public static System.Drawing.Bitmap PSO_2 {
             get {
                 object obj = ResourceManager.GetObject("PSO_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7934,7 +7934,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PSO_3 {
+        public static System.Drawing.Bitmap PSO_3 {
             get {
                 object obj = ResourceManager.GetObject("PSO_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7944,7 +7944,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RNV_1 {
+        public static System.Drawing.Bitmap RNV_1 {
             get {
                 object obj = ResourceManager.GetObject("RNV_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7954,7 +7954,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RNV_2 {
+        public static System.Drawing.Bitmap RNV_2 {
             get {
                 object obj = ResourceManager.GetObject("RNV_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7964,7 +7964,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RNV_3 {
+        public static System.Drawing.Bitmap RNV_3 {
             get {
                 object obj = ResourceManager.GetObject("RNV_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7974,7 +7974,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap STP_1 {
+        public static System.Drawing.Bitmap STP_1 {
             get {
                 object obj = ResourceManager.GetObject("STP_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7984,7 +7984,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap STP_2 {
+        public static System.Drawing.Bitmap STP_2 {
             get {
                 object obj = ResourceManager.GetObject("STP_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -7994,7 +7994,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap STP_3 {
+        public static System.Drawing.Bitmap STP_3 {
             get {
                 object obj = ResourceManager.GetObject("STP_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8004,7 +8004,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TRN_1 {
+        public static System.Drawing.Bitmap TRN_1 {
             get {
                 object obj = ResourceManager.GetObject("TRN_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8014,7 +8014,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TRN_2 {
+        public static System.Drawing.Bitmap TRN_2 {
             get {
                 object obj = ResourceManager.GetObject("TRN_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8024,7 +8024,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TRN_3 {
+        public static System.Drawing.Bitmap TRN_3 {
             get {
                 object obj = ResourceManager.GetObject("TRN_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8034,7 +8034,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Byte[].
         /// </summary>
-        internal static byte[] type {
+        public static byte[] type {
             get {
                 object obj = ResourceManager.GetObject("type", resourceCulture);
                 return ((byte[])(obj));
@@ -8044,7 +8044,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_0 {
+        public static System.Drawing.Bitmap villager_0 {
             get {
                 object obj = ResourceManager.GetObject("villager_0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8054,7 +8054,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_1 {
+        public static System.Drawing.Bitmap villager_1 {
             get {
                 object obj = ResourceManager.GetObject("villager_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8064,7 +8064,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_10 {
+        public static System.Drawing.Bitmap villager_10 {
             get {
                 object obj = ResourceManager.GetObject("villager_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8074,7 +8074,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_100 {
+        public static System.Drawing.Bitmap villager_100 {
             get {
                 object obj = ResourceManager.GetObject("villager_100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8084,7 +8084,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_101 {
+        public static System.Drawing.Bitmap villager_101 {
             get {
                 object obj = ResourceManager.GetObject("villager_101", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8094,7 +8094,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_102 {
+        public static System.Drawing.Bitmap villager_102 {
             get {
                 object obj = ResourceManager.GetObject("villager_102", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8104,7 +8104,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_103 {
+        public static System.Drawing.Bitmap villager_103 {
             get {
                 object obj = ResourceManager.GetObject("villager_103", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8114,7 +8114,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_104 {
+        public static System.Drawing.Bitmap villager_104 {
             get {
                 object obj = ResourceManager.GetObject("villager_104", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8124,7 +8124,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_105 {
+        public static System.Drawing.Bitmap villager_105 {
             get {
                 object obj = ResourceManager.GetObject("villager_105", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8134,7 +8134,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_106 {
+        public static System.Drawing.Bitmap villager_106 {
             get {
                 object obj = ResourceManager.GetObject("villager_106", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8144,7 +8144,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_107 {
+        public static System.Drawing.Bitmap villager_107 {
             get {
                 object obj = ResourceManager.GetObject("villager_107", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8154,7 +8154,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_108 {
+        public static System.Drawing.Bitmap villager_108 {
             get {
                 object obj = ResourceManager.GetObject("villager_108", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8164,7 +8164,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_109 {
+        public static System.Drawing.Bitmap villager_109 {
             get {
                 object obj = ResourceManager.GetObject("villager_109", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8174,7 +8174,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_11 {
+        public static System.Drawing.Bitmap villager_11 {
             get {
                 object obj = ResourceManager.GetObject("villager_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8184,7 +8184,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_110 {
+        public static System.Drawing.Bitmap villager_110 {
             get {
                 object obj = ResourceManager.GetObject("villager_110", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8194,7 +8194,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_111 {
+        public static System.Drawing.Bitmap villager_111 {
             get {
                 object obj = ResourceManager.GetObject("villager_111", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8204,7 +8204,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_112 {
+        public static System.Drawing.Bitmap villager_112 {
             get {
                 object obj = ResourceManager.GetObject("villager_112", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8214,7 +8214,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_113 {
+        public static System.Drawing.Bitmap villager_113 {
             get {
                 object obj = ResourceManager.GetObject("villager_113", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8224,7 +8224,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_114 {
+        public static System.Drawing.Bitmap villager_114 {
             get {
                 object obj = ResourceManager.GetObject("villager_114", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8234,7 +8234,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_115 {
+        public static System.Drawing.Bitmap villager_115 {
             get {
                 object obj = ResourceManager.GetObject("villager_115", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8244,7 +8244,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_116 {
+        public static System.Drawing.Bitmap villager_116 {
             get {
                 object obj = ResourceManager.GetObject("villager_116", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8254,7 +8254,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_117 {
+        public static System.Drawing.Bitmap villager_117 {
             get {
                 object obj = ResourceManager.GetObject("villager_117", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8264,7 +8264,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_118 {
+        public static System.Drawing.Bitmap villager_118 {
             get {
                 object obj = ResourceManager.GetObject("villager_118", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8274,7 +8274,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_119 {
+        public static System.Drawing.Bitmap villager_119 {
             get {
                 object obj = ResourceManager.GetObject("villager_119", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8284,7 +8284,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_12 {
+        public static System.Drawing.Bitmap villager_12 {
             get {
                 object obj = ResourceManager.GetObject("villager_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8294,7 +8294,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_120 {
+        public static System.Drawing.Bitmap villager_120 {
             get {
                 object obj = ResourceManager.GetObject("villager_120", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8304,7 +8304,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_121 {
+        public static System.Drawing.Bitmap villager_121 {
             get {
                 object obj = ResourceManager.GetObject("villager_121", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8314,7 +8314,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_122 {
+        public static System.Drawing.Bitmap villager_122 {
             get {
                 object obj = ResourceManager.GetObject("villager_122", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8324,7 +8324,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_123 {
+        public static System.Drawing.Bitmap villager_123 {
             get {
                 object obj = ResourceManager.GetObject("villager_123", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8334,7 +8334,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_124 {
+        public static System.Drawing.Bitmap villager_124 {
             get {
                 object obj = ResourceManager.GetObject("villager_124", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8344,7 +8344,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_125 {
+        public static System.Drawing.Bitmap villager_125 {
             get {
                 object obj = ResourceManager.GetObject("villager_125", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8354,7 +8354,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_126 {
+        public static System.Drawing.Bitmap villager_126 {
             get {
                 object obj = ResourceManager.GetObject("villager_126", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8364,7 +8364,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_127 {
+        public static System.Drawing.Bitmap villager_127 {
             get {
                 object obj = ResourceManager.GetObject("villager_127", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8374,7 +8374,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_128 {
+        public static System.Drawing.Bitmap villager_128 {
             get {
                 object obj = ResourceManager.GetObject("villager_128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8384,7 +8384,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_129 {
+        public static System.Drawing.Bitmap villager_129 {
             get {
                 object obj = ResourceManager.GetObject("villager_129", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8394,7 +8394,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_13 {
+        public static System.Drawing.Bitmap villager_13 {
             get {
                 object obj = ResourceManager.GetObject("villager_13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8404,7 +8404,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_130 {
+        public static System.Drawing.Bitmap villager_130 {
             get {
                 object obj = ResourceManager.GetObject("villager_130", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8414,7 +8414,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_131 {
+        public static System.Drawing.Bitmap villager_131 {
             get {
                 object obj = ResourceManager.GetObject("villager_131", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8424,7 +8424,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_132 {
+        public static System.Drawing.Bitmap villager_132 {
             get {
                 object obj = ResourceManager.GetObject("villager_132", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8434,7 +8434,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_133 {
+        public static System.Drawing.Bitmap villager_133 {
             get {
                 object obj = ResourceManager.GetObject("villager_133", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8444,7 +8444,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_134 {
+        public static System.Drawing.Bitmap villager_134 {
             get {
                 object obj = ResourceManager.GetObject("villager_134", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8454,7 +8454,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_135 {
+        public static System.Drawing.Bitmap villager_135 {
             get {
                 object obj = ResourceManager.GetObject("villager_135", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8464,7 +8464,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_136 {
+        public static System.Drawing.Bitmap villager_136 {
             get {
                 object obj = ResourceManager.GetObject("villager_136", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8474,7 +8474,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_137 {
+        public static System.Drawing.Bitmap villager_137 {
             get {
                 object obj = ResourceManager.GetObject("villager_137", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8484,7 +8484,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_138 {
+        public static System.Drawing.Bitmap villager_138 {
             get {
                 object obj = ResourceManager.GetObject("villager_138", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8494,7 +8494,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_139 {
+        public static System.Drawing.Bitmap villager_139 {
             get {
                 object obj = ResourceManager.GetObject("villager_139", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8504,7 +8504,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_14 {
+        public static System.Drawing.Bitmap villager_14 {
             get {
                 object obj = ResourceManager.GetObject("villager_14", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8514,7 +8514,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_140 {
+        public static System.Drawing.Bitmap villager_140 {
             get {
                 object obj = ResourceManager.GetObject("villager_140", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8524,7 +8524,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_141 {
+        public static System.Drawing.Bitmap villager_141 {
             get {
                 object obj = ResourceManager.GetObject("villager_141", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8534,7 +8534,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_142 {
+        public static System.Drawing.Bitmap villager_142 {
             get {
                 object obj = ResourceManager.GetObject("villager_142", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8544,7 +8544,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_143 {
+        public static System.Drawing.Bitmap villager_143 {
             get {
                 object obj = ResourceManager.GetObject("villager_143", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8554,7 +8554,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_144 {
+        public static System.Drawing.Bitmap villager_144 {
             get {
                 object obj = ResourceManager.GetObject("villager_144", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8564,7 +8564,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_145 {
+        public static System.Drawing.Bitmap villager_145 {
             get {
                 object obj = ResourceManager.GetObject("villager_145", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8574,7 +8574,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_146 {
+        public static System.Drawing.Bitmap villager_146 {
             get {
                 object obj = ResourceManager.GetObject("villager_146", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8584,7 +8584,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_147 {
+        public static System.Drawing.Bitmap villager_147 {
             get {
                 object obj = ResourceManager.GetObject("villager_147", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8594,7 +8594,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_148 {
+        public static System.Drawing.Bitmap villager_148 {
             get {
                 object obj = ResourceManager.GetObject("villager_148", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8604,7 +8604,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_149 {
+        public static System.Drawing.Bitmap villager_149 {
             get {
                 object obj = ResourceManager.GetObject("villager_149", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8614,7 +8614,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_15 {
+        public static System.Drawing.Bitmap villager_15 {
             get {
                 object obj = ResourceManager.GetObject("villager_15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8624,7 +8624,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_150 {
+        public static System.Drawing.Bitmap villager_150 {
             get {
                 object obj = ResourceManager.GetObject("villager_150", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8634,7 +8634,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_151 {
+        public static System.Drawing.Bitmap villager_151 {
             get {
                 object obj = ResourceManager.GetObject("villager_151", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8644,7 +8644,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_152 {
+        public static System.Drawing.Bitmap villager_152 {
             get {
                 object obj = ResourceManager.GetObject("villager_152", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8654,7 +8654,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_153 {
+        public static System.Drawing.Bitmap villager_153 {
             get {
                 object obj = ResourceManager.GetObject("villager_153", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8664,7 +8664,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_154 {
+        public static System.Drawing.Bitmap villager_154 {
             get {
                 object obj = ResourceManager.GetObject("villager_154", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8674,7 +8674,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_155 {
+        public static System.Drawing.Bitmap villager_155 {
             get {
                 object obj = ResourceManager.GetObject("villager_155", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8684,7 +8684,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_156 {
+        public static System.Drawing.Bitmap villager_156 {
             get {
                 object obj = ResourceManager.GetObject("villager_156", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8694,7 +8694,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_157 {
+        public static System.Drawing.Bitmap villager_157 {
             get {
                 object obj = ResourceManager.GetObject("villager_157", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8704,7 +8704,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_158 {
+        public static System.Drawing.Bitmap villager_158 {
             get {
                 object obj = ResourceManager.GetObject("villager_158", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8714,7 +8714,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_159 {
+        public static System.Drawing.Bitmap villager_159 {
             get {
                 object obj = ResourceManager.GetObject("villager_159", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8724,7 +8724,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_16 {
+        public static System.Drawing.Bitmap villager_16 {
             get {
                 object obj = ResourceManager.GetObject("villager_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8734,7 +8734,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_160 {
+        public static System.Drawing.Bitmap villager_160 {
             get {
                 object obj = ResourceManager.GetObject("villager_160", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8744,7 +8744,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_161 {
+        public static System.Drawing.Bitmap villager_161 {
             get {
                 object obj = ResourceManager.GetObject("villager_161", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8754,7 +8754,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_162 {
+        public static System.Drawing.Bitmap villager_162 {
             get {
                 object obj = ResourceManager.GetObject("villager_162", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8764,7 +8764,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_163 {
+        public static System.Drawing.Bitmap villager_163 {
             get {
                 object obj = ResourceManager.GetObject("villager_163", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8774,7 +8774,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_164 {
+        public static System.Drawing.Bitmap villager_164 {
             get {
                 object obj = ResourceManager.GetObject("villager_164", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8784,7 +8784,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_165 {
+        public static System.Drawing.Bitmap villager_165 {
             get {
                 object obj = ResourceManager.GetObject("villager_165", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8794,7 +8794,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_166 {
+        public static System.Drawing.Bitmap villager_166 {
             get {
                 object obj = ResourceManager.GetObject("villager_166", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8804,7 +8804,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_167 {
+        public static System.Drawing.Bitmap villager_167 {
             get {
                 object obj = ResourceManager.GetObject("villager_167", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8814,7 +8814,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_168 {
+        public static System.Drawing.Bitmap villager_168 {
             get {
                 object obj = ResourceManager.GetObject("villager_168", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8824,7 +8824,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_169 {
+        public static System.Drawing.Bitmap villager_169 {
             get {
                 object obj = ResourceManager.GetObject("villager_169", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8834,7 +8834,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_17 {
+        public static System.Drawing.Bitmap villager_17 {
             get {
                 object obj = ResourceManager.GetObject("villager_17", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8844,7 +8844,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_170 {
+        public static System.Drawing.Bitmap villager_170 {
             get {
                 object obj = ResourceManager.GetObject("villager_170", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8854,7 +8854,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_171 {
+        public static System.Drawing.Bitmap villager_171 {
             get {
                 object obj = ResourceManager.GetObject("villager_171", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8864,7 +8864,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_172 {
+        public static System.Drawing.Bitmap villager_172 {
             get {
                 object obj = ResourceManager.GetObject("villager_172", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8874,7 +8874,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_173 {
+        public static System.Drawing.Bitmap villager_173 {
             get {
                 object obj = ResourceManager.GetObject("villager_173", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8884,7 +8884,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_174 {
+        public static System.Drawing.Bitmap villager_174 {
             get {
                 object obj = ResourceManager.GetObject("villager_174", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8894,7 +8894,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_175 {
+        public static System.Drawing.Bitmap villager_175 {
             get {
                 object obj = ResourceManager.GetObject("villager_175", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8904,7 +8904,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_176 {
+        public static System.Drawing.Bitmap villager_176 {
             get {
                 object obj = ResourceManager.GetObject("villager_176", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8914,7 +8914,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_177 {
+        public static System.Drawing.Bitmap villager_177 {
             get {
                 object obj = ResourceManager.GetObject("villager_177", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8924,7 +8924,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_178 {
+        public static System.Drawing.Bitmap villager_178 {
             get {
                 object obj = ResourceManager.GetObject("villager_178", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8934,7 +8934,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_179 {
+        public static System.Drawing.Bitmap villager_179 {
             get {
                 object obj = ResourceManager.GetObject("villager_179", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8944,7 +8944,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_18 {
+        public static System.Drawing.Bitmap villager_18 {
             get {
                 object obj = ResourceManager.GetObject("villager_18", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8954,7 +8954,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_180 {
+        public static System.Drawing.Bitmap villager_180 {
             get {
                 object obj = ResourceManager.GetObject("villager_180", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8964,7 +8964,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_181 {
+        public static System.Drawing.Bitmap villager_181 {
             get {
                 object obj = ResourceManager.GetObject("villager_181", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8974,7 +8974,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_182 {
+        public static System.Drawing.Bitmap villager_182 {
             get {
                 object obj = ResourceManager.GetObject("villager_182", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8984,7 +8984,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_183 {
+        public static System.Drawing.Bitmap villager_183 {
             get {
                 object obj = ResourceManager.GetObject("villager_183", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -8994,7 +8994,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_184 {
+        public static System.Drawing.Bitmap villager_184 {
             get {
                 object obj = ResourceManager.GetObject("villager_184", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9004,7 +9004,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_185 {
+        public static System.Drawing.Bitmap villager_185 {
             get {
                 object obj = ResourceManager.GetObject("villager_185", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9014,7 +9014,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_186 {
+        public static System.Drawing.Bitmap villager_186 {
             get {
                 object obj = ResourceManager.GetObject("villager_186", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9024,7 +9024,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_187 {
+        public static System.Drawing.Bitmap villager_187 {
             get {
                 object obj = ResourceManager.GetObject("villager_187", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9034,7 +9034,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_188 {
+        public static System.Drawing.Bitmap villager_188 {
             get {
                 object obj = ResourceManager.GetObject("villager_188", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9044,7 +9044,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_189 {
+        public static System.Drawing.Bitmap villager_189 {
             get {
                 object obj = ResourceManager.GetObject("villager_189", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9054,7 +9054,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_19 {
+        public static System.Drawing.Bitmap villager_19 {
             get {
                 object obj = ResourceManager.GetObject("villager_19", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9064,7 +9064,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_190 {
+        public static System.Drawing.Bitmap villager_190 {
             get {
                 object obj = ResourceManager.GetObject("villager_190", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9074,7 +9074,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_191 {
+        public static System.Drawing.Bitmap villager_191 {
             get {
                 object obj = ResourceManager.GetObject("villager_191", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9084,7 +9084,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_192 {
+        public static System.Drawing.Bitmap villager_192 {
             get {
                 object obj = ResourceManager.GetObject("villager_192", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9094,7 +9094,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_193 {
+        public static System.Drawing.Bitmap villager_193 {
             get {
                 object obj = ResourceManager.GetObject("villager_193", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9104,7 +9104,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_194 {
+        public static System.Drawing.Bitmap villager_194 {
             get {
                 object obj = ResourceManager.GetObject("villager_194", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9114,7 +9114,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_195 {
+        public static System.Drawing.Bitmap villager_195 {
             get {
                 object obj = ResourceManager.GetObject("villager_195", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9124,7 +9124,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_196 {
+        public static System.Drawing.Bitmap villager_196 {
             get {
                 object obj = ResourceManager.GetObject("villager_196", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9134,7 +9134,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_197 {
+        public static System.Drawing.Bitmap villager_197 {
             get {
                 object obj = ResourceManager.GetObject("villager_197", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9144,7 +9144,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_198 {
+        public static System.Drawing.Bitmap villager_198 {
             get {
                 object obj = ResourceManager.GetObject("villager_198", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9154,7 +9154,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_199 {
+        public static System.Drawing.Bitmap villager_199 {
             get {
                 object obj = ResourceManager.GetObject("villager_199", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9164,7 +9164,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_2 {
+        public static System.Drawing.Bitmap villager_2 {
             get {
                 object obj = ResourceManager.GetObject("villager_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9174,7 +9174,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_20 {
+        public static System.Drawing.Bitmap villager_20 {
             get {
                 object obj = ResourceManager.GetObject("villager_20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9184,7 +9184,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_200 {
+        public static System.Drawing.Bitmap villager_200 {
             get {
                 object obj = ResourceManager.GetObject("villager_200", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9194,7 +9194,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_201 {
+        public static System.Drawing.Bitmap villager_201 {
             get {
                 object obj = ResourceManager.GetObject("villager_201", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9204,7 +9204,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_202 {
+        public static System.Drawing.Bitmap villager_202 {
             get {
                 object obj = ResourceManager.GetObject("villager_202", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9214,7 +9214,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_203 {
+        public static System.Drawing.Bitmap villager_203 {
             get {
                 object obj = ResourceManager.GetObject("villager_203", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9224,7 +9224,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_204 {
+        public static System.Drawing.Bitmap villager_204 {
             get {
                 object obj = ResourceManager.GetObject("villager_204", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9234,7 +9234,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_205 {
+        public static System.Drawing.Bitmap villager_205 {
             get {
                 object obj = ResourceManager.GetObject("villager_205", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9244,7 +9244,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_206 {
+        public static System.Drawing.Bitmap villager_206 {
             get {
                 object obj = ResourceManager.GetObject("villager_206", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9254,7 +9254,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_207 {
+        public static System.Drawing.Bitmap villager_207 {
             get {
                 object obj = ResourceManager.GetObject("villager_207", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9264,7 +9264,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_208 {
+        public static System.Drawing.Bitmap villager_208 {
             get {
                 object obj = ResourceManager.GetObject("villager_208", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9274,7 +9274,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_209 {
+        public static System.Drawing.Bitmap villager_209 {
             get {
                 object obj = ResourceManager.GetObject("villager_209", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9284,7 +9284,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_21 {
+        public static System.Drawing.Bitmap villager_21 {
             get {
                 object obj = ResourceManager.GetObject("villager_21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9294,7 +9294,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_210 {
+        public static System.Drawing.Bitmap villager_210 {
             get {
                 object obj = ResourceManager.GetObject("villager_210", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9304,7 +9304,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_211 {
+        public static System.Drawing.Bitmap villager_211 {
             get {
                 object obj = ResourceManager.GetObject("villager_211", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9314,7 +9314,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_212 {
+        public static System.Drawing.Bitmap villager_212 {
             get {
                 object obj = ResourceManager.GetObject("villager_212", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9324,7 +9324,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_213 {
+        public static System.Drawing.Bitmap villager_213 {
             get {
                 object obj = ResourceManager.GetObject("villager_213", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9334,7 +9334,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_214 {
+        public static System.Drawing.Bitmap villager_214 {
             get {
                 object obj = ResourceManager.GetObject("villager_214", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9344,7 +9344,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_215 {
+        public static System.Drawing.Bitmap villager_215 {
             get {
                 object obj = ResourceManager.GetObject("villager_215", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9354,7 +9354,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_216 {
+        public static System.Drawing.Bitmap villager_216 {
             get {
                 object obj = ResourceManager.GetObject("villager_216", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9364,7 +9364,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_217 {
+        public static System.Drawing.Bitmap villager_217 {
             get {
                 object obj = ResourceManager.GetObject("villager_217", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9374,7 +9374,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_218 {
+        public static System.Drawing.Bitmap villager_218 {
             get {
                 object obj = ResourceManager.GetObject("villager_218", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9384,7 +9384,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_219 {
+        public static System.Drawing.Bitmap villager_219 {
             get {
                 object obj = ResourceManager.GetObject("villager_219", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9394,7 +9394,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_22 {
+        public static System.Drawing.Bitmap villager_22 {
             get {
                 object obj = ResourceManager.GetObject("villager_22", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9404,7 +9404,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_220 {
+        public static System.Drawing.Bitmap villager_220 {
             get {
                 object obj = ResourceManager.GetObject("villager_220", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9414,7 +9414,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_221 {
+        public static System.Drawing.Bitmap villager_221 {
             get {
                 object obj = ResourceManager.GetObject("villager_221", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9424,7 +9424,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_222 {
+        public static System.Drawing.Bitmap villager_222 {
             get {
                 object obj = ResourceManager.GetObject("villager_222", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9434,7 +9434,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_223 {
+        public static System.Drawing.Bitmap villager_223 {
             get {
                 object obj = ResourceManager.GetObject("villager_223", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9444,7 +9444,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_224 {
+        public static System.Drawing.Bitmap villager_224 {
             get {
                 object obj = ResourceManager.GetObject("villager_224", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9454,7 +9454,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_225 {
+        public static System.Drawing.Bitmap villager_225 {
             get {
                 object obj = ResourceManager.GetObject("villager_225", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9464,7 +9464,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_226 {
+        public static System.Drawing.Bitmap villager_226 {
             get {
                 object obj = ResourceManager.GetObject("villager_226", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9474,7 +9474,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_227 {
+        public static System.Drawing.Bitmap villager_227 {
             get {
                 object obj = ResourceManager.GetObject("villager_227", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9484,7 +9484,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_228 {
+        public static System.Drawing.Bitmap villager_228 {
             get {
                 object obj = ResourceManager.GetObject("villager_228", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9494,7 +9494,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_229 {
+        public static System.Drawing.Bitmap villager_229 {
             get {
                 object obj = ResourceManager.GetObject("villager_229", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9504,7 +9504,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_23 {
+        public static System.Drawing.Bitmap villager_23 {
             get {
                 object obj = ResourceManager.GetObject("villager_23", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9514,7 +9514,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_230 {
+        public static System.Drawing.Bitmap villager_230 {
             get {
                 object obj = ResourceManager.GetObject("villager_230", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9524,7 +9524,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_231 {
+        public static System.Drawing.Bitmap villager_231 {
             get {
                 object obj = ResourceManager.GetObject("villager_231", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9534,7 +9534,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_232 {
+        public static System.Drawing.Bitmap villager_232 {
             get {
                 object obj = ResourceManager.GetObject("villager_232", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9544,7 +9544,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_233 {
+        public static System.Drawing.Bitmap villager_233 {
             get {
                 object obj = ResourceManager.GetObject("villager_233", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9554,7 +9554,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_234 {
+        public static System.Drawing.Bitmap villager_234 {
             get {
                 object obj = ResourceManager.GetObject("villager_234", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9564,7 +9564,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_235 {
+        public static System.Drawing.Bitmap villager_235 {
             get {
                 object obj = ResourceManager.GetObject("villager_235", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9574,7 +9574,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_236 {
+        public static System.Drawing.Bitmap villager_236 {
             get {
                 object obj = ResourceManager.GetObject("villager_236", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9584,7 +9584,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_237 {
+        public static System.Drawing.Bitmap villager_237 {
             get {
                 object obj = ResourceManager.GetObject("villager_237", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9594,7 +9594,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_238 {
+        public static System.Drawing.Bitmap villager_238 {
             get {
                 object obj = ResourceManager.GetObject("villager_238", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9604,7 +9604,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_239 {
+        public static System.Drawing.Bitmap villager_239 {
             get {
                 object obj = ResourceManager.GetObject("villager_239", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9614,7 +9614,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_24 {
+        public static System.Drawing.Bitmap villager_24 {
             get {
                 object obj = ResourceManager.GetObject("villager_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9624,7 +9624,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_240 {
+        public static System.Drawing.Bitmap villager_240 {
             get {
                 object obj = ResourceManager.GetObject("villager_240", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9634,7 +9634,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_241 {
+        public static System.Drawing.Bitmap villager_241 {
             get {
                 object obj = ResourceManager.GetObject("villager_241", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9644,7 +9644,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_242 {
+        public static System.Drawing.Bitmap villager_242 {
             get {
                 object obj = ResourceManager.GetObject("villager_242", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9654,7 +9654,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_243 {
+        public static System.Drawing.Bitmap villager_243 {
             get {
                 object obj = ResourceManager.GetObject("villager_243", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9664,7 +9664,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_244 {
+        public static System.Drawing.Bitmap villager_244 {
             get {
                 object obj = ResourceManager.GetObject("villager_244", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9674,7 +9674,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_245 {
+        public static System.Drawing.Bitmap villager_245 {
             get {
                 object obj = ResourceManager.GetObject("villager_245", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9684,7 +9684,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_246 {
+        public static System.Drawing.Bitmap villager_246 {
             get {
                 object obj = ResourceManager.GetObject("villager_246", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9694,7 +9694,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_247 {
+        public static System.Drawing.Bitmap villager_247 {
             get {
                 object obj = ResourceManager.GetObject("villager_247", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9704,7 +9704,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_248 {
+        public static System.Drawing.Bitmap villager_248 {
             get {
                 object obj = ResourceManager.GetObject("villager_248", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9714,7 +9714,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_249 {
+        public static System.Drawing.Bitmap villager_249 {
             get {
                 object obj = ResourceManager.GetObject("villager_249", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9724,7 +9724,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_25 {
+        public static System.Drawing.Bitmap villager_25 {
             get {
                 object obj = ResourceManager.GetObject("villager_25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9734,7 +9734,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_250 {
+        public static System.Drawing.Bitmap villager_250 {
             get {
                 object obj = ResourceManager.GetObject("villager_250", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9744,7 +9744,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_251 {
+        public static System.Drawing.Bitmap villager_251 {
             get {
                 object obj = ResourceManager.GetObject("villager_251", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9754,7 +9754,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_252 {
+        public static System.Drawing.Bitmap villager_252 {
             get {
                 object obj = ResourceManager.GetObject("villager_252", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9764,7 +9764,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_253 {
+        public static System.Drawing.Bitmap villager_253 {
             get {
                 object obj = ResourceManager.GetObject("villager_253", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9774,7 +9774,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_254 {
+        public static System.Drawing.Bitmap villager_254 {
             get {
                 object obj = ResourceManager.GetObject("villager_254", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9784,7 +9784,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_255 {
+        public static System.Drawing.Bitmap villager_255 {
             get {
                 object obj = ResourceManager.GetObject("villager_255", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9794,7 +9794,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_256 {
+        public static System.Drawing.Bitmap villager_256 {
             get {
                 object obj = ResourceManager.GetObject("villager_256", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9804,7 +9804,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_257 {
+        public static System.Drawing.Bitmap villager_257 {
             get {
                 object obj = ResourceManager.GetObject("villager_257", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9814,7 +9814,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_258 {
+        public static System.Drawing.Bitmap villager_258 {
             get {
                 object obj = ResourceManager.GetObject("villager_258", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9824,7 +9824,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_259 {
+        public static System.Drawing.Bitmap villager_259 {
             get {
                 object obj = ResourceManager.GetObject("villager_259", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9834,7 +9834,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_26 {
+        public static System.Drawing.Bitmap villager_26 {
             get {
                 object obj = ResourceManager.GetObject("villager_26", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9844,7 +9844,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_260 {
+        public static System.Drawing.Bitmap villager_260 {
             get {
                 object obj = ResourceManager.GetObject("villager_260", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9854,7 +9854,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_261 {
+        public static System.Drawing.Bitmap villager_261 {
             get {
                 object obj = ResourceManager.GetObject("villager_261", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9864,7 +9864,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_262 {
+        public static System.Drawing.Bitmap villager_262 {
             get {
                 object obj = ResourceManager.GetObject("villager_262", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9874,7 +9874,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_263 {
+        public static System.Drawing.Bitmap villager_263 {
             get {
                 object obj = ResourceManager.GetObject("villager_263", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9884,7 +9884,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_264 {
+        public static System.Drawing.Bitmap villager_264 {
             get {
                 object obj = ResourceManager.GetObject("villager_264", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9894,7 +9894,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_265 {
+        public static System.Drawing.Bitmap villager_265 {
             get {
                 object obj = ResourceManager.GetObject("villager_265", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9904,7 +9904,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_266 {
+        public static System.Drawing.Bitmap villager_266 {
             get {
                 object obj = ResourceManager.GetObject("villager_266", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9914,7 +9914,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_267 {
+        public static System.Drawing.Bitmap villager_267 {
             get {
                 object obj = ResourceManager.GetObject("villager_267", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9924,7 +9924,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_268 {
+        public static System.Drawing.Bitmap villager_268 {
             get {
                 object obj = ResourceManager.GetObject("villager_268", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9934,7 +9934,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_269 {
+        public static System.Drawing.Bitmap villager_269 {
             get {
                 object obj = ResourceManager.GetObject("villager_269", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9944,7 +9944,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_27 {
+        public static System.Drawing.Bitmap villager_27 {
             get {
                 object obj = ResourceManager.GetObject("villager_27", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9954,7 +9954,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_270 {
+        public static System.Drawing.Bitmap villager_270 {
             get {
                 object obj = ResourceManager.GetObject("villager_270", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9964,7 +9964,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_271 {
+        public static System.Drawing.Bitmap villager_271 {
             get {
                 object obj = ResourceManager.GetObject("villager_271", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9974,7 +9974,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_272 {
+        public static System.Drawing.Bitmap villager_272 {
             get {
                 object obj = ResourceManager.GetObject("villager_272", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9984,7 +9984,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_273 {
+        public static System.Drawing.Bitmap villager_273 {
             get {
                 object obj = ResourceManager.GetObject("villager_273", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -9994,7 +9994,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_274 {
+        public static System.Drawing.Bitmap villager_274 {
             get {
                 object obj = ResourceManager.GetObject("villager_274", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10004,7 +10004,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_275 {
+        public static System.Drawing.Bitmap villager_275 {
             get {
                 object obj = ResourceManager.GetObject("villager_275", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10014,7 +10014,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_276 {
+        public static System.Drawing.Bitmap villager_276 {
             get {
                 object obj = ResourceManager.GetObject("villager_276", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10024,7 +10024,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_277 {
+        public static System.Drawing.Bitmap villager_277 {
             get {
                 object obj = ResourceManager.GetObject("villager_277", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10034,7 +10034,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_278 {
+        public static System.Drawing.Bitmap villager_278 {
             get {
                 object obj = ResourceManager.GetObject("villager_278", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10044,7 +10044,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_279 {
+        public static System.Drawing.Bitmap villager_279 {
             get {
                 object obj = ResourceManager.GetObject("villager_279", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10054,7 +10054,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_28 {
+        public static System.Drawing.Bitmap villager_28 {
             get {
                 object obj = ResourceManager.GetObject("villager_28", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10064,7 +10064,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_280 {
+        public static System.Drawing.Bitmap villager_280 {
             get {
                 object obj = ResourceManager.GetObject("villager_280", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10074,7 +10074,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_281 {
+        public static System.Drawing.Bitmap villager_281 {
             get {
                 object obj = ResourceManager.GetObject("villager_281", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10084,7 +10084,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_282 {
+        public static System.Drawing.Bitmap villager_282 {
             get {
                 object obj = ResourceManager.GetObject("villager_282", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10094,7 +10094,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_283 {
+        public static System.Drawing.Bitmap villager_283 {
             get {
                 object obj = ResourceManager.GetObject("villager_283", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10104,7 +10104,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_284 {
+        public static System.Drawing.Bitmap villager_284 {
             get {
                 object obj = ResourceManager.GetObject("villager_284", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10114,7 +10114,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_285 {
+        public static System.Drawing.Bitmap villager_285 {
             get {
                 object obj = ResourceManager.GetObject("villager_285", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10124,7 +10124,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_286 {
+        public static System.Drawing.Bitmap villager_286 {
             get {
                 object obj = ResourceManager.GetObject("villager_286", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10134,7 +10134,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_287 {
+        public static System.Drawing.Bitmap villager_287 {
             get {
                 object obj = ResourceManager.GetObject("villager_287", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10144,7 +10144,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_288 {
+        public static System.Drawing.Bitmap villager_288 {
             get {
                 object obj = ResourceManager.GetObject("villager_288", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10154,7 +10154,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_289 {
+        public static System.Drawing.Bitmap villager_289 {
             get {
                 object obj = ResourceManager.GetObject("villager_289", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10164,7 +10164,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_29 {
+        public static System.Drawing.Bitmap villager_29 {
             get {
                 object obj = ResourceManager.GetObject("villager_29", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10174,7 +10174,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_290 {
+        public static System.Drawing.Bitmap villager_290 {
             get {
                 object obj = ResourceManager.GetObject("villager_290", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10184,7 +10184,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_291 {
+        public static System.Drawing.Bitmap villager_291 {
             get {
                 object obj = ResourceManager.GetObject("villager_291", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10194,7 +10194,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_292 {
+        public static System.Drawing.Bitmap villager_292 {
             get {
                 object obj = ResourceManager.GetObject("villager_292", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10204,7 +10204,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_293 {
+        public static System.Drawing.Bitmap villager_293 {
             get {
                 object obj = ResourceManager.GetObject("villager_293", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10214,7 +10214,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_294 {
+        public static System.Drawing.Bitmap villager_294 {
             get {
                 object obj = ResourceManager.GetObject("villager_294", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10224,7 +10224,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_295 {
+        public static System.Drawing.Bitmap villager_295 {
             get {
                 object obj = ResourceManager.GetObject("villager_295", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10234,7 +10234,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_296 {
+        public static System.Drawing.Bitmap villager_296 {
             get {
                 object obj = ResourceManager.GetObject("villager_296", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10244,7 +10244,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_297 {
+        public static System.Drawing.Bitmap villager_297 {
             get {
                 object obj = ResourceManager.GetObject("villager_297", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10254,7 +10254,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_298 {
+        public static System.Drawing.Bitmap villager_298 {
             get {
                 object obj = ResourceManager.GetObject("villager_298", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10264,7 +10264,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_299 {
+        public static System.Drawing.Bitmap villager_299 {
             get {
                 object obj = ResourceManager.GetObject("villager_299", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10274,7 +10274,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_3 {
+        public static System.Drawing.Bitmap villager_3 {
             get {
                 object obj = ResourceManager.GetObject("villager_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10284,7 +10284,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_30 {
+        public static System.Drawing.Bitmap villager_30 {
             get {
                 object obj = ResourceManager.GetObject("villager_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10294,7 +10294,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_300 {
+        public static System.Drawing.Bitmap villager_300 {
             get {
                 object obj = ResourceManager.GetObject("villager_300", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10304,7 +10304,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_301 {
+        public static System.Drawing.Bitmap villager_301 {
             get {
                 object obj = ResourceManager.GetObject("villager_301", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10314,7 +10314,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_302 {
+        public static System.Drawing.Bitmap villager_302 {
             get {
                 object obj = ResourceManager.GetObject("villager_302", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10324,7 +10324,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_303 {
+        public static System.Drawing.Bitmap villager_303 {
             get {
                 object obj = ResourceManager.GetObject("villager_303", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10334,7 +10334,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_304 {
+        public static System.Drawing.Bitmap villager_304 {
             get {
                 object obj = ResourceManager.GetObject("villager_304", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10344,7 +10344,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_305 {
+        public static System.Drawing.Bitmap villager_305 {
             get {
                 object obj = ResourceManager.GetObject("villager_305", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10354,7 +10354,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_306 {
+        public static System.Drawing.Bitmap villager_306 {
             get {
                 object obj = ResourceManager.GetObject("villager_306", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10364,7 +10364,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_307 {
+        public static System.Drawing.Bitmap villager_307 {
             get {
                 object obj = ResourceManager.GetObject("villager_307", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10374,7 +10374,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_308 {
+        public static System.Drawing.Bitmap villager_308 {
             get {
                 object obj = ResourceManager.GetObject("villager_308", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10384,7 +10384,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_309 {
+        public static System.Drawing.Bitmap villager_309 {
             get {
                 object obj = ResourceManager.GetObject("villager_309", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10394,7 +10394,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_31 {
+        public static System.Drawing.Bitmap villager_31 {
             get {
                 object obj = ResourceManager.GetObject("villager_31", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10404,7 +10404,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_310 {
+        public static System.Drawing.Bitmap villager_310 {
             get {
                 object obj = ResourceManager.GetObject("villager_310", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10414,7 +10414,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_311 {
+        public static System.Drawing.Bitmap villager_311 {
             get {
                 object obj = ResourceManager.GetObject("villager_311", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10424,7 +10424,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_312 {
+        public static System.Drawing.Bitmap villager_312 {
             get {
                 object obj = ResourceManager.GetObject("villager_312", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10434,7 +10434,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_313 {
+        public static System.Drawing.Bitmap villager_313 {
             get {
                 object obj = ResourceManager.GetObject("villager_313", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10444,7 +10444,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_314 {
+        public static System.Drawing.Bitmap villager_314 {
             get {
                 object obj = ResourceManager.GetObject("villager_314", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10454,7 +10454,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_315 {
+        public static System.Drawing.Bitmap villager_315 {
             get {
                 object obj = ResourceManager.GetObject("villager_315", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10464,7 +10464,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_316 {
+        public static System.Drawing.Bitmap villager_316 {
             get {
                 object obj = ResourceManager.GetObject("villager_316", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10474,7 +10474,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_317 {
+        public static System.Drawing.Bitmap villager_317 {
             get {
                 object obj = ResourceManager.GetObject("villager_317", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10484,7 +10484,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_318 {
+        public static System.Drawing.Bitmap villager_318 {
             get {
                 object obj = ResourceManager.GetObject("villager_318", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10494,7 +10494,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_319 {
+        public static System.Drawing.Bitmap villager_319 {
             get {
                 object obj = ResourceManager.GetObject("villager_319", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10504,7 +10504,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_32 {
+        public static System.Drawing.Bitmap villager_32 {
             get {
                 object obj = ResourceManager.GetObject("villager_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10514,7 +10514,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_320 {
+        public static System.Drawing.Bitmap villager_320 {
             get {
                 object obj = ResourceManager.GetObject("villager_320", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10524,7 +10524,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_321 {
+        public static System.Drawing.Bitmap villager_321 {
             get {
                 object obj = ResourceManager.GetObject("villager_321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10534,7 +10534,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_322 {
+        public static System.Drawing.Bitmap villager_322 {
             get {
                 object obj = ResourceManager.GetObject("villager_322", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10544,7 +10544,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_323 {
+        public static System.Drawing.Bitmap villager_323 {
             get {
                 object obj = ResourceManager.GetObject("villager_323", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10554,7 +10554,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_324 {
+        public static System.Drawing.Bitmap villager_324 {
             get {
                 object obj = ResourceManager.GetObject("villager_324", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10564,7 +10564,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_325 {
+        public static System.Drawing.Bitmap villager_325 {
             get {
                 object obj = ResourceManager.GetObject("villager_325", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10574,7 +10574,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_326 {
+        public static System.Drawing.Bitmap villager_326 {
             get {
                 object obj = ResourceManager.GetObject("villager_326", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10584,7 +10584,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_327 {
+        public static System.Drawing.Bitmap villager_327 {
             get {
                 object obj = ResourceManager.GetObject("villager_327", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10594,7 +10594,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_328 {
+        public static System.Drawing.Bitmap villager_328 {
             get {
                 object obj = ResourceManager.GetObject("villager_328", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10604,7 +10604,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_329 {
+        public static System.Drawing.Bitmap villager_329 {
             get {
                 object obj = ResourceManager.GetObject("villager_329", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10614,7 +10614,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_33 {
+        public static System.Drawing.Bitmap villager_33 {
             get {
                 object obj = ResourceManager.GetObject("villager_33", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10624,7 +10624,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_330 {
+        public static System.Drawing.Bitmap villager_330 {
             get {
                 object obj = ResourceManager.GetObject("villager_330", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10634,7 +10634,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_331 {
+        public static System.Drawing.Bitmap villager_331 {
             get {
                 object obj = ResourceManager.GetObject("villager_331", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10644,7 +10644,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_332 {
+        public static System.Drawing.Bitmap villager_332 {
             get {
                 object obj = ResourceManager.GetObject("villager_332", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10654,7 +10654,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_333 {
+        public static System.Drawing.Bitmap villager_333 {
             get {
                 object obj = ResourceManager.GetObject("villager_333", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10664,7 +10664,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_334 {
+        public static System.Drawing.Bitmap villager_334 {
             get {
                 object obj = ResourceManager.GetObject("villager_334", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10674,7 +10674,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_335 {
+        public static System.Drawing.Bitmap villager_335 {
             get {
                 object obj = ResourceManager.GetObject("villager_335", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10684,7 +10684,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_336 {
+        public static System.Drawing.Bitmap villager_336 {
             get {
                 object obj = ResourceManager.GetObject("villager_336", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10694,7 +10694,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_337 {
+        public static System.Drawing.Bitmap villager_337 {
             get {
                 object obj = ResourceManager.GetObject("villager_337", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10704,7 +10704,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_338 {
+        public static System.Drawing.Bitmap villager_338 {
             get {
                 object obj = ResourceManager.GetObject("villager_338", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10714,7 +10714,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_339 {
+        public static System.Drawing.Bitmap villager_339 {
             get {
                 object obj = ResourceManager.GetObject("villager_339", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10724,7 +10724,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_34 {
+        public static System.Drawing.Bitmap villager_34 {
             get {
                 object obj = ResourceManager.GetObject("villager_34", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10734,7 +10734,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_340 {
+        public static System.Drawing.Bitmap villager_340 {
             get {
                 object obj = ResourceManager.GetObject("villager_340", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10744,7 +10744,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_341 {
+        public static System.Drawing.Bitmap villager_341 {
             get {
                 object obj = ResourceManager.GetObject("villager_341", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10754,7 +10754,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_342 {
+        public static System.Drawing.Bitmap villager_342 {
             get {
                 object obj = ResourceManager.GetObject("villager_342", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10764,7 +10764,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_343 {
+        public static System.Drawing.Bitmap villager_343 {
             get {
                 object obj = ResourceManager.GetObject("villager_343", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10774,7 +10774,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_344 {
+        public static System.Drawing.Bitmap villager_344 {
             get {
                 object obj = ResourceManager.GetObject("villager_344", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10784,7 +10784,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_345 {
+        public static System.Drawing.Bitmap villager_345 {
             get {
                 object obj = ResourceManager.GetObject("villager_345", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10794,7 +10794,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_346 {
+        public static System.Drawing.Bitmap villager_346 {
             get {
                 object obj = ResourceManager.GetObject("villager_346", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10804,7 +10804,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_347 {
+        public static System.Drawing.Bitmap villager_347 {
             get {
                 object obj = ResourceManager.GetObject("villager_347", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10814,7 +10814,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_348 {
+        public static System.Drawing.Bitmap villager_348 {
             get {
                 object obj = ResourceManager.GetObject("villager_348", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10824,7 +10824,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_349 {
+        public static System.Drawing.Bitmap villager_349 {
             get {
                 object obj = ResourceManager.GetObject("villager_349", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10834,7 +10834,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_35 {
+        public static System.Drawing.Bitmap villager_35 {
             get {
                 object obj = ResourceManager.GetObject("villager_35", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10844,7 +10844,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_350 {
+        public static System.Drawing.Bitmap villager_350 {
             get {
                 object obj = ResourceManager.GetObject("villager_350", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10854,7 +10854,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_351 {
+        public static System.Drawing.Bitmap villager_351 {
             get {
                 object obj = ResourceManager.GetObject("villager_351", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10864,7 +10864,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_352 {
+        public static System.Drawing.Bitmap villager_352 {
             get {
                 object obj = ResourceManager.GetObject("villager_352", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10874,7 +10874,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_353 {
+        public static System.Drawing.Bitmap villager_353 {
             get {
                 object obj = ResourceManager.GetObject("villager_353", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10884,7 +10884,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_354 {
+        public static System.Drawing.Bitmap villager_354 {
             get {
                 object obj = ResourceManager.GetObject("villager_354", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10894,7 +10894,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_355 {
+        public static System.Drawing.Bitmap villager_355 {
             get {
                 object obj = ResourceManager.GetObject("villager_355", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10904,7 +10904,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_356 {
+        public static System.Drawing.Bitmap villager_356 {
             get {
                 object obj = ResourceManager.GetObject("villager_356", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10914,7 +10914,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_357 {
+        public static System.Drawing.Bitmap villager_357 {
             get {
                 object obj = ResourceManager.GetObject("villager_357", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10924,7 +10924,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_358 {
+        public static System.Drawing.Bitmap villager_358 {
             get {
                 object obj = ResourceManager.GetObject("villager_358", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10934,7 +10934,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_359 {
+        public static System.Drawing.Bitmap villager_359 {
             get {
                 object obj = ResourceManager.GetObject("villager_359", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10944,7 +10944,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_36 {
+        public static System.Drawing.Bitmap villager_36 {
             get {
                 object obj = ResourceManager.GetObject("villager_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10954,7 +10954,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_360 {
+        public static System.Drawing.Bitmap villager_360 {
             get {
                 object obj = ResourceManager.GetObject("villager_360", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10964,7 +10964,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_361 {
+        public static System.Drawing.Bitmap villager_361 {
             get {
                 object obj = ResourceManager.GetObject("villager_361", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10974,7 +10974,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_362 {
+        public static System.Drawing.Bitmap villager_362 {
             get {
                 object obj = ResourceManager.GetObject("villager_362", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10984,7 +10984,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_363 {
+        public static System.Drawing.Bitmap villager_363 {
             get {
                 object obj = ResourceManager.GetObject("villager_363", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -10994,7 +10994,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_364 {
+        public static System.Drawing.Bitmap villager_364 {
             get {
                 object obj = ResourceManager.GetObject("villager_364", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11004,7 +11004,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_365 {
+        public static System.Drawing.Bitmap villager_365 {
             get {
                 object obj = ResourceManager.GetObject("villager_365", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11014,7 +11014,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_366 {
+        public static System.Drawing.Bitmap villager_366 {
             get {
                 object obj = ResourceManager.GetObject("villager_366", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11024,7 +11024,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_367 {
+        public static System.Drawing.Bitmap villager_367 {
             get {
                 object obj = ResourceManager.GetObject("villager_367", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11034,7 +11034,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_368 {
+        public static System.Drawing.Bitmap villager_368 {
             get {
                 object obj = ResourceManager.GetObject("villager_368", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11044,7 +11044,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_369 {
+        public static System.Drawing.Bitmap villager_369 {
             get {
                 object obj = ResourceManager.GetObject("villager_369", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11054,7 +11054,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_37 {
+        public static System.Drawing.Bitmap villager_37 {
             get {
                 object obj = ResourceManager.GetObject("villager_37", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11064,7 +11064,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_370 {
+        public static System.Drawing.Bitmap villager_370 {
             get {
                 object obj = ResourceManager.GetObject("villager_370", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11074,7 +11074,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_371 {
+        public static System.Drawing.Bitmap villager_371 {
             get {
                 object obj = ResourceManager.GetObject("villager_371", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11084,7 +11084,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_372 {
+        public static System.Drawing.Bitmap villager_372 {
             get {
                 object obj = ResourceManager.GetObject("villager_372", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11094,7 +11094,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_373 {
+        public static System.Drawing.Bitmap villager_373 {
             get {
                 object obj = ResourceManager.GetObject("villager_373", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11104,7 +11104,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_374 {
+        public static System.Drawing.Bitmap villager_374 {
             get {
                 object obj = ResourceManager.GetObject("villager_374", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11114,7 +11114,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_375 {
+        public static System.Drawing.Bitmap villager_375 {
             get {
                 object obj = ResourceManager.GetObject("villager_375", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11124,7 +11124,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_376 {
+        public static System.Drawing.Bitmap villager_376 {
             get {
                 object obj = ResourceManager.GetObject("villager_376", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11134,7 +11134,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_377 {
+        public static System.Drawing.Bitmap villager_377 {
             get {
                 object obj = ResourceManager.GetObject("villager_377", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11144,7 +11144,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_378 {
+        public static System.Drawing.Bitmap villager_378 {
             get {
                 object obj = ResourceManager.GetObject("villager_378", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11154,7 +11154,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_379 {
+        public static System.Drawing.Bitmap villager_379 {
             get {
                 object obj = ResourceManager.GetObject("villager_379", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11164,7 +11164,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_38 {
+        public static System.Drawing.Bitmap villager_38 {
             get {
                 object obj = ResourceManager.GetObject("villager_38", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11174,7 +11174,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_380 {
+        public static System.Drawing.Bitmap villager_380 {
             get {
                 object obj = ResourceManager.GetObject("villager_380", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11184,7 +11184,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_381 {
+        public static System.Drawing.Bitmap villager_381 {
             get {
                 object obj = ResourceManager.GetObject("villager_381", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11194,7 +11194,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_382 {
+        public static System.Drawing.Bitmap villager_382 {
             get {
                 object obj = ResourceManager.GetObject("villager_382", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11204,7 +11204,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_383 {
+        public static System.Drawing.Bitmap villager_383 {
             get {
                 object obj = ResourceManager.GetObject("villager_383", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11214,7 +11214,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_384 {
+        public static System.Drawing.Bitmap villager_384 {
             get {
                 object obj = ResourceManager.GetObject("villager_384", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11224,7 +11224,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_385 {
+        public static System.Drawing.Bitmap villager_385 {
             get {
                 object obj = ResourceManager.GetObject("villager_385", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11234,7 +11234,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_386 {
+        public static System.Drawing.Bitmap villager_386 {
             get {
                 object obj = ResourceManager.GetObject("villager_386", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11244,7 +11244,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_387 {
+        public static System.Drawing.Bitmap villager_387 {
             get {
                 object obj = ResourceManager.GetObject("villager_387", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11254,7 +11254,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_388 {
+        public static System.Drawing.Bitmap villager_388 {
             get {
                 object obj = ResourceManager.GetObject("villager_388", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11264,7 +11264,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_389 {
+        public static System.Drawing.Bitmap villager_389 {
             get {
                 object obj = ResourceManager.GetObject("villager_389", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11274,7 +11274,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_39 {
+        public static System.Drawing.Bitmap villager_39 {
             get {
                 object obj = ResourceManager.GetObject("villager_39", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11284,7 +11284,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_390 {
+        public static System.Drawing.Bitmap villager_390 {
             get {
                 object obj = ResourceManager.GetObject("villager_390", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11294,7 +11294,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_391 {
+        public static System.Drawing.Bitmap villager_391 {
             get {
                 object obj = ResourceManager.GetObject("villager_391", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11304,7 +11304,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_392 {
+        public static System.Drawing.Bitmap villager_392 {
             get {
                 object obj = ResourceManager.GetObject("villager_392", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11314,7 +11314,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_393 {
+        public static System.Drawing.Bitmap villager_393 {
             get {
                 object obj = ResourceManager.GetObject("villager_393", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11324,7 +11324,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_394 {
+        public static System.Drawing.Bitmap villager_394 {
             get {
                 object obj = ResourceManager.GetObject("villager_394", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11334,7 +11334,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_395 {
+        public static System.Drawing.Bitmap villager_395 {
             get {
                 object obj = ResourceManager.GetObject("villager_395", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11344,7 +11344,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_396 {
+        public static System.Drawing.Bitmap villager_396 {
             get {
                 object obj = ResourceManager.GetObject("villager_396", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11354,7 +11354,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_397 {
+        public static System.Drawing.Bitmap villager_397 {
             get {
                 object obj = ResourceManager.GetObject("villager_397", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11364,7 +11364,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_398 {
+        public static System.Drawing.Bitmap villager_398 {
             get {
                 object obj = ResourceManager.GetObject("villager_398", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11374,7 +11374,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_4 {
+        public static System.Drawing.Bitmap villager_4 {
             get {
                 object obj = ResourceManager.GetObject("villager_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11384,7 +11384,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_40 {
+        public static System.Drawing.Bitmap villager_40 {
             get {
                 object obj = ResourceManager.GetObject("villager_40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11394,7 +11394,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_41 {
+        public static System.Drawing.Bitmap villager_41 {
             get {
                 object obj = ResourceManager.GetObject("villager_41", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11404,7 +11404,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_42 {
+        public static System.Drawing.Bitmap villager_42 {
             get {
                 object obj = ResourceManager.GetObject("villager_42", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11414,7 +11414,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_43 {
+        public static System.Drawing.Bitmap villager_43 {
             get {
                 object obj = ResourceManager.GetObject("villager_43", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11424,7 +11424,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_44 {
+        public static System.Drawing.Bitmap villager_44 {
             get {
                 object obj = ResourceManager.GetObject("villager_44", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11434,7 +11434,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_45 {
+        public static System.Drawing.Bitmap villager_45 {
             get {
                 object obj = ResourceManager.GetObject("villager_45", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11444,7 +11444,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_46 {
+        public static System.Drawing.Bitmap villager_46 {
             get {
                 object obj = ResourceManager.GetObject("villager_46", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11454,7 +11454,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_47 {
+        public static System.Drawing.Bitmap villager_47 {
             get {
                 object obj = ResourceManager.GetObject("villager_47", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11464,7 +11464,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_48 {
+        public static System.Drawing.Bitmap villager_48 {
             get {
                 object obj = ResourceManager.GetObject("villager_48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11474,7 +11474,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_49 {
+        public static System.Drawing.Bitmap villager_49 {
             get {
                 object obj = ResourceManager.GetObject("villager_49", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11484,7 +11484,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_5 {
+        public static System.Drawing.Bitmap villager_5 {
             get {
                 object obj = ResourceManager.GetObject("villager_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11494,7 +11494,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_50 {
+        public static System.Drawing.Bitmap villager_50 {
             get {
                 object obj = ResourceManager.GetObject("villager_50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11504,7 +11504,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_51 {
+        public static System.Drawing.Bitmap villager_51 {
             get {
                 object obj = ResourceManager.GetObject("villager_51", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11514,7 +11514,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_52 {
+        public static System.Drawing.Bitmap villager_52 {
             get {
                 object obj = ResourceManager.GetObject("villager_52", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11524,7 +11524,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_53 {
+        public static System.Drawing.Bitmap villager_53 {
             get {
                 object obj = ResourceManager.GetObject("villager_53", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11534,7 +11534,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_54 {
+        public static System.Drawing.Bitmap villager_54 {
             get {
                 object obj = ResourceManager.GetObject("villager_54", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11544,7 +11544,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_55 {
+        public static System.Drawing.Bitmap villager_55 {
             get {
                 object obj = ResourceManager.GetObject("villager_55", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11554,7 +11554,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_56 {
+        public static System.Drawing.Bitmap villager_56 {
             get {
                 object obj = ResourceManager.GetObject("villager_56", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11564,7 +11564,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_57 {
+        public static System.Drawing.Bitmap villager_57 {
             get {
                 object obj = ResourceManager.GetObject("villager_57", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11574,7 +11574,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_58 {
+        public static System.Drawing.Bitmap villager_58 {
             get {
                 object obj = ResourceManager.GetObject("villager_58", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11584,7 +11584,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_59 {
+        public static System.Drawing.Bitmap villager_59 {
             get {
                 object obj = ResourceManager.GetObject("villager_59", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11594,7 +11594,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_6 {
+        public static System.Drawing.Bitmap villager_6 {
             get {
                 object obj = ResourceManager.GetObject("villager_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11604,7 +11604,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_60 {
+        public static System.Drawing.Bitmap villager_60 {
             get {
                 object obj = ResourceManager.GetObject("villager_60", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11614,7 +11614,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_61 {
+        public static System.Drawing.Bitmap villager_61 {
             get {
                 object obj = ResourceManager.GetObject("villager_61", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11624,7 +11624,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_62 {
+        public static System.Drawing.Bitmap villager_62 {
             get {
                 object obj = ResourceManager.GetObject("villager_62", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11634,7 +11634,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_63 {
+        public static System.Drawing.Bitmap villager_63 {
             get {
                 object obj = ResourceManager.GetObject("villager_63", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11644,7 +11644,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_64 {
+        public static System.Drawing.Bitmap villager_64 {
             get {
                 object obj = ResourceManager.GetObject("villager_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11654,7 +11654,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_65 {
+        public static System.Drawing.Bitmap villager_65 {
             get {
                 object obj = ResourceManager.GetObject("villager_65", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11664,7 +11664,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_66 {
+        public static System.Drawing.Bitmap villager_66 {
             get {
                 object obj = ResourceManager.GetObject("villager_66", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11674,7 +11674,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_67 {
+        public static System.Drawing.Bitmap villager_67 {
             get {
                 object obj = ResourceManager.GetObject("villager_67", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11684,7 +11684,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_68 {
+        public static System.Drawing.Bitmap villager_68 {
             get {
                 object obj = ResourceManager.GetObject("villager_68", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11694,7 +11694,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_69 {
+        public static System.Drawing.Bitmap villager_69 {
             get {
                 object obj = ResourceManager.GetObject("villager_69", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11704,7 +11704,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_7 {
+        public static System.Drawing.Bitmap villager_7 {
             get {
                 object obj = ResourceManager.GetObject("villager_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11714,7 +11714,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_70 {
+        public static System.Drawing.Bitmap villager_70 {
             get {
                 object obj = ResourceManager.GetObject("villager_70", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11724,7 +11724,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_71 {
+        public static System.Drawing.Bitmap villager_71 {
             get {
                 object obj = ResourceManager.GetObject("villager_71", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11734,7 +11734,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_72 {
+        public static System.Drawing.Bitmap villager_72 {
             get {
                 object obj = ResourceManager.GetObject("villager_72", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11744,7 +11744,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_73 {
+        public static System.Drawing.Bitmap villager_73 {
             get {
                 object obj = ResourceManager.GetObject("villager_73", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11754,7 +11754,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_74 {
+        public static System.Drawing.Bitmap villager_74 {
             get {
                 object obj = ResourceManager.GetObject("villager_74", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11764,7 +11764,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_75 {
+        public static System.Drawing.Bitmap villager_75 {
             get {
                 object obj = ResourceManager.GetObject("villager_75", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11774,7 +11774,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_76 {
+        public static System.Drawing.Bitmap villager_76 {
             get {
                 object obj = ResourceManager.GetObject("villager_76", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11784,7 +11784,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_77 {
+        public static System.Drawing.Bitmap villager_77 {
             get {
                 object obj = ResourceManager.GetObject("villager_77", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11794,7 +11794,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_78 {
+        public static System.Drawing.Bitmap villager_78 {
             get {
                 object obj = ResourceManager.GetObject("villager_78", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11804,7 +11804,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_79 {
+        public static System.Drawing.Bitmap villager_79 {
             get {
                 object obj = ResourceManager.GetObject("villager_79", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11814,7 +11814,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_8 {
+        public static System.Drawing.Bitmap villager_8 {
             get {
                 object obj = ResourceManager.GetObject("villager_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11824,7 +11824,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_80 {
+        public static System.Drawing.Bitmap villager_80 {
             get {
                 object obj = ResourceManager.GetObject("villager_80", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11834,7 +11834,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_81 {
+        public static System.Drawing.Bitmap villager_81 {
             get {
                 object obj = ResourceManager.GetObject("villager_81", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11844,7 +11844,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_82 {
+        public static System.Drawing.Bitmap villager_82 {
             get {
                 object obj = ResourceManager.GetObject("villager_82", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11854,7 +11854,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_83 {
+        public static System.Drawing.Bitmap villager_83 {
             get {
                 object obj = ResourceManager.GetObject("villager_83", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11864,7 +11864,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_84 {
+        public static System.Drawing.Bitmap villager_84 {
             get {
                 object obj = ResourceManager.GetObject("villager_84", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11874,7 +11874,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_85 {
+        public static System.Drawing.Bitmap villager_85 {
             get {
                 object obj = ResourceManager.GetObject("villager_85", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11884,7 +11884,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_86 {
+        public static System.Drawing.Bitmap villager_86 {
             get {
                 object obj = ResourceManager.GetObject("villager_86", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11894,7 +11894,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_87 {
+        public static System.Drawing.Bitmap villager_87 {
             get {
                 object obj = ResourceManager.GetObject("villager_87", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11904,7 +11904,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_88 {
+        public static System.Drawing.Bitmap villager_88 {
             get {
                 object obj = ResourceManager.GetObject("villager_88", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11914,7 +11914,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_89 {
+        public static System.Drawing.Bitmap villager_89 {
             get {
                 object obj = ResourceManager.GetObject("villager_89", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11924,7 +11924,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_9 {
+        public static System.Drawing.Bitmap villager_9 {
             get {
                 object obj = ResourceManager.GetObject("villager_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11934,7 +11934,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_90 {
+        public static System.Drawing.Bitmap villager_90 {
             get {
                 object obj = ResourceManager.GetObject("villager_90", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11944,7 +11944,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_91 {
+        public static System.Drawing.Bitmap villager_91 {
             get {
                 object obj = ResourceManager.GetObject("villager_91", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11954,7 +11954,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_92 {
+        public static System.Drawing.Bitmap villager_92 {
             get {
                 object obj = ResourceManager.GetObject("villager_92", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11964,7 +11964,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_93 {
+        public static System.Drawing.Bitmap villager_93 {
             get {
                 object obj = ResourceManager.GetObject("villager_93", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11974,7 +11974,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_94 {
+        public static System.Drawing.Bitmap villager_94 {
             get {
                 object obj = ResourceManager.GetObject("villager_94", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11984,7 +11984,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_95 {
+        public static System.Drawing.Bitmap villager_95 {
             get {
                 object obj = ResourceManager.GetObject("villager_95", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -11994,7 +11994,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_96 {
+        public static System.Drawing.Bitmap villager_96 {
             get {
                 object obj = ResourceManager.GetObject("villager_96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -12004,7 +12004,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_97 {
+        public static System.Drawing.Bitmap villager_97 {
             get {
                 object obj = ResourceManager.GetObject("villager_97", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -12014,7 +12014,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_98 {
+        public static System.Drawing.Bitmap villager_98 {
             get {
                 object obj = ResourceManager.GetObject("villager_98", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -12024,7 +12024,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap villager_99 {
+        public static System.Drawing.Bitmap villager_99 {
             get {
                 object obj = ResourceManager.GetObject("villager_99", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -12034,7 +12034,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap VST_1 {
+        public static System.Drawing.Bitmap VST_1 {
             get {
                 object obj = ResourceManager.GetObject("VST_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -12044,7 +12044,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap VST_2 {
+        public static System.Drawing.Bitmap VST_2 {
             get {
                 object obj = ResourceManager.GetObject("VST_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -12054,7 +12054,7 @@ namespace NLSE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap VST_3 {
+        public static System.Drawing.Bitmap VST_3 {
             get {
                 object obj = ResourceManager.GetObject("VST_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

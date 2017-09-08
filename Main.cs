@@ -13,10 +13,12 @@ namespace NLSE
         internal static string root;
         internal static string[] itemNames = Data.getIndexStrings("item", "en");
         internal static string[] buildingNames = Data.getIndexStrings("building", "en");
+
         internal static string[] villagerNames = Data.getStrings("name", "en");
         internal static List<cbItem> itemList = Data.getCBItems(itemNames);
         internal static List<cbItem> vList = Data.getCBList(villagerNames, null);
         internal static List<cbItem> buildingList = Data.getCBItems(buildingNames);
+
         internal static ACNLVillager[] villagerList = Data.GetVillagers();
 
         public Main()

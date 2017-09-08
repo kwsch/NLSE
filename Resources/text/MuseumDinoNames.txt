@@ -1,0 +1,67 @@
+amber
+ammonite
+coprolite
+dinosaur egg
+fern fossil
+dinosaur track
+archaeopteryx
+Peking man
+shark tooth
+trilobite
+T. rex skull
+T. rex torso
+T. rex tail
+tricera skull
+tricera torso
+tricera tail
+mammoth skull
+mammoth torso
+ankylo skull
+ankylo torso
+ankylo tail
+apato skull
+apato torso
+apato tail
+dimetrodon skull
+dimetrodon torso
+dimetrodon tail
+iguanodon skull
+iguanodon torso
+iguanodon tail
+sabertooth skull
+sabertooth torso
+pachysaurus skull
+pachysaurus torso
+pachysaurus tail
+parasaur skull
+parasaur torso
+parasaur tail
+diplo skull
+diplo neck
+diplo chest
+diplo hip
+diplo tail
+plesio skull
+plesio neck
+plesio torso
+stego skull
+stego torso
+stego tail
+ptera skull
+ptera left wing
+ptera right wing
+ichthyo skull
+ichthyo torso
+raptor skull
+raptor torso
+styraco skull
+styraco torso
+styraco tail
+spino skull
+spino skull
+spino tail
+megacero skull
+megacero torso
+megacero tail
+archelon skull
+archelon torso
