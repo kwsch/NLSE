@@ -2966,19 +2966,19 @@ namespace NLSE
                 Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6AEB8 + i * 4, 4);
 
             for (int i = 0; i < 101; i++)
-                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B343 + i * 1, 1);
+                Array.Copy(MuseumContributorsFish[i].Write(), 0, Save.Data, 0x6B343 + i * 1, 1);
             for (int i = 0; i < 101; i++)
-                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6AFC4 + i * 4, 4);
+                Array.Copy(MuseumContributionsFish[i].Write(), 0, Save.Data, 0x6AFC4 + i * 4, 4);
 
             for (int i = 0; i < 72; i++)
-                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B3A9 + i * 1, 1);
+                Array.Copy(MuseumContributorsInsect[i].Write(), 0, Save.Data, 0x6B3A9 + i * 1, 1);
             for (int i = 0; i < 72; i++)
-                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6B15C + i * 4, 4);
+                Array.Copy(MuseumContributionsInsect[i].Write(), 0, Save.Data, 0x6B15C + i * 4, 4);
 
             for (int i = 0; i < 33; i++)
-                Array.Copy(MuseumContributorsFossil[i].Write(), 0, Save.Data, 0x6B3F1 + i * 1, 1);
+                Array.Copy(MuseumContributorsArt[i].Write(), 0, Save.Data, 0x6B3F1 + i * 1, 1);
             for (int i = 0; i < 33; i++)
-                Array.Copy(MuseumContributionsFossil[i].Write(), 0, Save.Data, 0x6B27C + i * 4, 4);
+                Array.Copy(MuseumContributionsArt[i].Write(), 0, Save.Data, 0x6B27C + i * 4, 4);
 
             byte[] Museum = (Save.Data.Skip(0x6AEB8).Take(0x55A).ToArray());
 
