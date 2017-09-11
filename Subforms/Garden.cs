@@ -1,4 +1,5 @@
 ﻿// I have to say that most of the code from the functions I added have a bad code, I know it's not good if we want to maintain the project, or if you want to learn how some stuff are working, but at least stuff work as it should. I'll propably fix those bad codes when i'll have more experience.
+using NLSE.Subforms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace NLSE
@@ -1348,25 +1350,37 @@ namespace NLSE
             if (BitConverter.ToUInt32(Save.Data, 0x10C) == 0x00000000)
             {
                 PB_JPEG0.Visible = false;
-                PB_JPEG0.Image = Properties.Resources.no_tpc;
+            }
+            else
+            {
+                PB_JPEG0.Visible = true;
             }
 
             if (BitConverter.ToUInt32(Save.Data, 0xA58C) == 0x00000000)
             {
                 PB_JPEG1.Visible = false;
-                PB_JPEG1.Image = Properties.Resources.no_tpc;
+            }
+            else
+            {
+                PB_JPEG1.Visible = true;
             }
 
             if (BitConverter.ToUInt32(Save.Data, 0x14A0C) == 0x00000000)
             {
                 PB_JPEG2.Visible = false;
-                PB_JPEG2.Image = Properties.Resources.no_tpc;
+            }
+            else
+            {
+                PB_JPEG2.Visible = true;
             }
 
             if (BitConverter.ToUInt32(Save.Data, 0x1EE8C) == 0x00000000)
             {
                 PB_JPEG3.Visible = false;
-                PB_JPEG3.Image = Properties.Resources.no_tpc;
+            }
+            else
+            {
+                PB_JPEG3.Visible = true;
             }
 
             if (BitConverter.ToUInt32(Save.Data, 0x57D8) == 0x00000000)
@@ -2719,6 +2733,11 @@ namespace NLSE
         private void frienddatEditorToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dreamFixerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Thread(() => new DreamPatcher().ShowDialog()).Start();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -4119,6 +4138,7 @@ namespace NLSE
         private void NUD_LetterValue_ValueChanged(object sender, EventArgs e)
         {
             savePlayer(currentPlayer);
+
             for (int i = 0; i < Players.Length; i++)
                 Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
 
