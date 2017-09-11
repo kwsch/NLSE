@@ -23,7 +23,6 @@ namespace NLSE
 
         private Player[] Players;
         private PlayerExterior[] PlayersExterior;
-        private PlayerLetter[] PlayersLetter;
         private Building[] Buildings;
         private MuseumContribution[] MuseumContributionsFossil;
         private MuseumContribution[] MuseumContributionsArt;
@@ -36,6 +35,7 @@ namespace NLSE
         private MuseumContributor[] MuseumContributorsInsect;
         private Villager[] Villagers;
         private Item[] TownItems, IslandItems;
+        public static Garden Instance;
 
         #region badgepict
         Image[] BadgePCH = { Properties.Resources.empty, Properties.Resources.PCH_1, Properties.Resources.PCH_2, Properties.Resources.PCH_3 };
@@ -105,6 +105,7 @@ namespace NLSE
             CB_WantedBadge.SelectedIndex = 0;
             DisableControl();
             loaded = false;
+            Instance = this;
         }
 
         private void DisableControl()
@@ -140,6 +141,52 @@ namespace NLSE
             saveToolStripMenuItem.Enabled = true;
             saveAsToolStripMenuItem.Enabled = true;
             CB_Flag.SelectedIndex = 0;
+        }
+
+        private void CleanLetter()
+        {
+            NUD_LetterNamePos.Value = 0;
+            CB_LetterFlag.SelectedIndex = -1;
+            CB_LetterDestination.SelectedIndex = -1;
+            CB_LetterType.SelectedIndex = -1;
+            CB_LetterPaper.SelectedIndex = -1;
+            CB_LetterItem.SelectedIndex = -1;
+            CB_LetterSender.SelectedIndex = -1;
+            TB_LetterHeader.Text = "";
+            TB_LetterContent.Text = "";
+            TB_LetterEnd.Text = "";
+            label48.Text = "Receiver:";
+            label49.Text = "Receiver SID:";
+            label50.Text = "Town:";
+            label51.Text = "Town SID:";
+        }
+
+        private void LockLetterContent()
+        {
+            NUD_LetterNamePos.Enabled = false;
+            CB_LetterFlag.Enabled = false;
+            CB_LetterDestination.Enabled = false;
+            CB_LetterType.Enabled = false;
+            CB_LetterPaper.Enabled = false;
+            CB_LetterItem.Enabled = false;
+            CB_LetterSender.Enabled = false;
+            groupBox24.Enabled = false;
+            groupBox25.Enabled = false;
+            label57.Text = "No letter at slot " + (NUD_LetterNamePos.Value + 1);
+        }
+
+        private void UnlockLetterContent()
+        {
+            NUD_LetterNamePos.Enabled = true;
+            CB_LetterFlag.Enabled = true;
+            CB_LetterDestination.Enabled = true;
+            CB_LetterType.Enabled = true;
+            CB_LetterPaper.Enabled = true;
+            CB_LetterItem.Enabled = true;
+            CB_LetterSender.Enabled = true;
+            groupBox24.Enabled = true;
+            groupBox25.Enabled = true;
+            label57.Text = "";
         }
 
         uint GetDecryptedValue(uint player, int offset)
@@ -288,13 +335,15 @@ namespace NLSE
             public int RegMonth;
             public uint RegYear;
             public string HomeTown;
+            int LetterValue = (int)Instance.NUD_LetterValue.Value - 1;
 
             public Image JPEG;
             public byte[] Badges;
-            public byte[] Letters;
             public Item[] Pockets = new Item[16];
             public Item[] IslandBox = new Item[5 * 8];
             public Item[] Dressers = new Item[5 * 36];
+            public PlayerLetter[] PlayersLetter = new PlayerLetter[1];
+
 
             public Player(byte[] data)
             {
@@ -309,7 +358,7 @@ namespace NLSE
                 Tan = Data[8];
                 U9 = Data[9];
                 Name = Encoding.Unicode.GetString(Data.Skip(0x55A8).Take(0x12).ToArray()).Trim('\0');
-                Comment = Encoding.Unicode.GetString(Data.Skip(0x6B38).Take(0x50).ToArray()).Trim('\0');
+                Comment = Encoding.Unicode.GetString(Data.Skip(0x6B38).Take(0x50).ToArray());
 
                 Gender = Data[0x55BA];
 
@@ -327,8 +376,6 @@ namespace NLSE
 
                 Badges = Data.Skip(0x573C - 0xA0).Take(24).ToArray();
 
-                Letters = Data.Skip(0x70A8 - 0xA0).Take(0x1900).ToArray();
-
                 for (int i = 0; i < Pockets.Length; i++)
                     Pockets[i] = new Item(Data.Skip(0x6BD0 + i * 4).Take(4).ToArray());
 
@@ -337,6 +384,9 @@ namespace NLSE
 
                 for (int i = 0; i < Dressers.Length; i++)
                     Dressers[i] = new Item(Data.Skip(0x92F0 + i * 4).Take(4).ToArray());
+
+                for (int i = 0; i < PlayersLetter.Length; i++)
+                    PlayersLetter[i] = new PlayerLetter(Data.Skip(0x7008 + 0x280 * LetterValue).Take(0x280).ToArray());
             }
             public byte[] Write()
             {
@@ -358,7 +408,7 @@ namespace NLSE
 
                 Data[0x55D9] = (byte)RegDay;
                 Data[0x55D8] = (byte)RegMonth;
-                Data[0x55D6] = (byte)RegYear;
+                Array.Copy(BitConverter.GetBytes(RegYear), 0, Data, 0x55D6, 2);
 
                 Array.Copy(Encoding.Unicode.GetBytes(HomeTown.PadRight(9, '\0')), 0, Data, 0x55BE, 0x12);
 
@@ -373,6 +423,9 @@ namespace NLSE
                 for (int i = 0; i < Dressers.Length; i++)
                     Array.Copy(Dressers[i].Write(), 0, Data, 0x92F0 + i * 4, 4);
 
+                for (int i = 0; i < PlayersLetter.Length; i++)
+                    Array.Copy(PlayersLetter[i].Write(), 0, Data, 0x7008 + (0x280 * LetterValue), 0x280);
+
                 return Data;
             }
 
@@ -384,8 +437,6 @@ namespace NLSE
         class PlayerLetter
         {
             public byte[] Data;
-
-            private uint U32;
             public int PlayerSID;
             public string PlayerName;
             public int TownSID;
@@ -397,6 +448,7 @@ namespace NLSE
             public int NamePosition;
             public int PaperID;
             public int Flag;
+            public int SenderID;
             public int LetterType;
             public uint Item;
 
@@ -404,26 +456,36 @@ namespace NLSE
             {
                 Data = data;
 
-                U32 = BitConverter.ToUInt32(data, 0);
-
                 PlayerSID = BitConverter.ToUInt16(data, 0);
                 PlayerName = Encoding.Unicode.GetString(Data.Skip(0x2).Take(0x12).ToArray()).Trim('\0');
-                PlayerSID = BitConverter.ToUInt16(data, 0x16);
+                TownSID = BitConverter.ToUInt16(data, 0x16);
                 TownName = Encoding.Unicode.GetString(Data.Skip(0x18).Take(0x12).ToArray()).Trim('\0');
                 PlayerID = Data[0x30];
-                FirstWords = Encoding.Unicode.GetString(Data.Skip(0x68).Take(0x32).ToArray()).Trim('\0');
-                LetterContent = Encoding.Unicode.GetString(Data.Skip(0xAA).Take(0x140).ToArray()).Trim('\0');
-                LetterEnd = Encoding.Unicode.GetString(Data.Skip(0x22C).Take(0x40).ToArray()).Trim('\0');
+                FirstWords = Encoding.Unicode.GetString(Data.Skip(0x68).Take(0x32).ToArray());
+                LetterContent = Encoding.Unicode.GetString(Data.Skip(0xAA).Take(0x192).ToArray());
+                LetterEnd = Encoding.Unicode.GetString(Data.Skip(0x22C).Take(0x40).ToArray());
                 NamePosition = Data[0x26E];
                 PaperID = Data[0x26F];
                 Flag = Data[0x270];
-                Item = BitConverter.ToUInt32(data, 0x272);
+                SenderID = Data[0x271];
+                LetterType = Data[0x272];
+                Item = BitConverter.ToUInt16(data, 0x274);
             }
             public byte[] Write()
             {
-                Array.Copy(BitConverter.GetBytes(U32), 0, Data, 0, 4);
+                Array.Copy(BitConverter.GetBytes(PlayerSID), 0, Data, 0x0, 2);
 
-                Array.Copy(Encoding.Unicode.GetBytes(PlayerName.PadRight(9, '\0')), 0, Data, 0x2, 0x12);
+                Data[0x30] = (byte)PlayerID;
+
+                Array.Copy(Encoding.Unicode.GetBytes(FirstWords.PadRight(25, '\0')), 0, Data, 0x68, 0x32);
+                Array.Copy(Encoding.Unicode.GetBytes(LetterContent.PadRight(192, '\0')), 0, Data, 0xAA, 0x180);
+                Array.Copy(Encoding.Unicode.GetBytes(LetterEnd.PadRight(32, '\0')), 0, Data, 0x22C, 0x40);
+
+                Data[0x26E] = (byte)NamePosition;
+                Data[0x26F] = (byte)PaperID;
+                Data[0x270] = (byte)Flag;
+                Data[0x272] = (byte)LetterType;
+                Array.Copy(BitConverter.GetBytes(Item), 0, Data, 0x274, 4);
 
                 return Data;
             }
@@ -601,9 +663,9 @@ namespace NLSE
                 ID = BitConverter.ToInt16(Data, 0);
                 Type = Data[2];
                 Boxed = (Data[0x24E4] & 1) == 1;
-                CatchPhrase = Encoding.Unicode.GetString(Data.Skip(0x24C6).Take(22).ToArray()).Trim('\0');
-                HomeTown1 = Encoding.Unicode.GetString(Data.Skip(0x24F0).Take(0x12).ToArray()).Trim('\0');
-                HomeTown2 = Encoding.Unicode.GetString(Data.Skip(0x2504).Take(0x12).ToArray()).Trim('\0');
+                CatchPhrase = Encoding.Unicode.GetString(Data.Skip(0x24C6).Take(22).ToArray());
+                HomeTown1 = Encoding.Unicode.GetString(Data.Skip(0x24F0).Take(0x12).ToArray());
+                HomeTown2 = Encoding.Unicode.GetString(Data.Skip(0x2504).Take(0x12).ToArray());
             }
             public byte[] Write()
             {
@@ -867,9 +929,9 @@ namespace NLSE
             PB_Dresser2.Image = getItemPic(16, 5, Players[i].Dressers.Skip(Players[i].Dressers.Length / 2).ToArray());
             PB_Island.Image = getItemPic(16, 5, Players[i].IslandBox);
 
-
             TB_Name.Text = Players[i].Name;
             TB_Comment.Text = Players[i].Comment;
+            loadLetter(i);
 
             for (int j = 0; j < PlayerBadges.Length; j++)
                 PlayerBadges[j].SelectedIndex = Players[i].Badges[j];
@@ -938,8 +1000,120 @@ namespace NLSE
             NUD_Badge22.Value = GetDecryptedValue((uint)i, 0x572C - 0xA0);
             NUD_Badge23.Value = GetDecryptedValue((uint)i, 0x5734 - 0xA0);
         }
+
+        private void loadLetter(int i)
+        {
+            if (Players[i].PlayersLetter[0].PlayerSID == 0 && Players[i].PlayersLetter[0].TownSID == 0)
+            {
+                CleanLetter();
+                LockLetterContent();
+                return;
+            }
+            UnlockLetterContent();
+
+            int flag = Players[i].PlayersLetter[0].Flag;
+            int type = Players[i].PlayersLetter[0].LetterType;
+
+            TB_LetterContent.Text = Players[i].PlayersLetter[0].LetterContent.Replace("\n", Environment.NewLine);
+            TB_LetterHeader.Text = Players[i].PlayersLetter[0].FirstWords;
+            TB_LetterEnd.Text = Players[i].PlayersLetter[0].LetterEnd;
+            NUD_LetterNamePos.Value = Players[i].PlayersLetter[0].NamePosition;
+
+            label48.Text = "Receiver: " + Players[i].PlayersLetter[0].PlayerName;
+            label49.Text = "Receiver SID: 0x" + Players[i].PlayersLetter[0].PlayerSID.ToString("X");
+            label50.Text = "Town: " + Players[i].PlayersLetter[0].TownName;
+            label51.Text = "Town: 0x" + Players[i].PlayersLetter[0].TownSID.ToString("X");
+            CB_LetterDestination.SelectedIndex = Players[i].PlayersLetter[0].PlayerID;
+            CB_LetterItem.SelectedValue = (int)Players[i].PlayersLetter[0].Item;
+            CB_LetterPaper.SelectedIndex = Players[i].PlayersLetter[0].PaperID;
+            CB_LetterSender.SelectedIndex = Players[i].PlayersLetter[0].SenderID;
+
+            if (flag >= 0x4 && flag <= 0x7 || flag == 0x00) 
+            {
+                CB_LetterFlag.SelectedIndex = 2;
+            }
+            else if (flag == 0x1 || flag == 0x9)
+            {
+                CB_LetterFlag.SelectedIndex = 0;
+            }
+            else if (flag == 0xA || flag == 0x2)
+            {
+                CB_LetterFlag.SelectedIndex = 1;
+            }
+            else if (flag == 0x3)
+            {
+                CB_LetterFlag.SelectedIndex = 3;
+            }
+            else if (flag == 0xB)
+            {
+                CB_LetterFlag.SelectedIndex = 4;
+            }
+            else if (flag <= 0xC)
+            {
+                CB_LetterFlag.SelectedIndex = 5;
+            }
+
+            if (type >= 0x00 && type <= 0x7F)
+            {
+                CB_LetterType.SelectedIndex = 0;
+            }
+            else if (type >= 0x80 && type <= 0xFF)
+            {
+                CB_LetterType.SelectedIndex = 1;
+            }
+        }
+        private void saveLetter(int i)
+        {
+            if (groupBox24.Enabled == false)
+                return;
+            int a = Int32.Parse(CB_LetterItem.SelectedValue.ToString());
+
+            Players[i].PlayersLetter[0].FirstWords = TB_LetterHeader.Text;
+            TB_LetterContent.Text = TB_LetterContent.Text.Replace("\r\n", "\n");
+            Players[i].PlayersLetter[0].LetterContent = TB_LetterContent.Text;
+            Players[i].PlayersLetter[0].LetterEnd = TB_LetterEnd.Text;
+
+            Players[i].PlayersLetter[0].NamePosition = (byte)NUD_LetterNamePos.Value;
+            Players[i].PlayersLetter[0].PlayerID = (byte)CB_LetterDestination.SelectedIndex;
+
+            Players[i].PlayersLetter[0].Item = (uint)a;
+            Players[i].PlayersLetter[0].PaperID = (byte)CB_LetterPaper.SelectedIndex;
+            Players[i].PlayersLetter[0].SenderID = (byte)CB_LetterSender.SelectedIndex;
+
+            if (CB_LetterFlag.SelectedIndex == 0)
+            {
+                Players[i].PlayersLetter[0].Flag = 9;
+            }
+            else if (CB_LetterFlag.SelectedIndex == 1)
+            {
+                Players[i].PlayersLetter[0].Flag = 0xA;
+            }
+            else if (CB_LetterFlag.SelectedIndex == 2)
+            {
+                Players[i].PlayersLetter[0].Flag = 0x4;
+            }
+            else if (CB_LetterFlag.SelectedIndex == 3)
+            {
+                Players[i].PlayersLetter[0].Flag = 3;
+            }
+            else if (CB_LetterFlag.SelectedIndex == 4)
+            {
+                Players[i].PlayersLetter[0].Flag = 0xB;
+            }
+
+            if (CB_LetterType.SelectedIndex == 0)
+            {
+                Players[i].PlayersLetter[0].LetterType = 0;
+            }
+            else if (CB_LetterType.SelectedIndex == 1)
+            {
+                Players[i].PlayersLetter[0].LetterType = 0x80;
+            }
+        }
+
         private void savePlayer(int i)
         {
+            saveLetter(i);
             Players[i].Name = TB_Name.Text;
             Players[i].Comment = TB_Comment.Text;
 
@@ -1215,6 +1389,7 @@ namespace NLSE
                 PB_JPEG3.Image = Properties.Resources.no_tpc;
             }
         }
+
 
         private void loadVillager(int i)
         {
@@ -1945,27 +2120,21 @@ namespace NLSE
             dataGridView2.Rows.Add(67);
             dataGridView2.CancelEdit();
 
-            try
+ 
+            string file = Properties.Resources.MuseumDinoNames;
+            string[] lines = ReadAllResourceLines(file);
+
+            for (int i = 0; i < lines.Length; i++)
             {
-                string[] lines = File.ReadAllLines("MuseumDinoNames.txt");
-
-                for (int i = 0; i < lines.Length; i++)
-                {
-                    dataGridView2.Rows[i].Cells[0].Value = lines[i].ToString();
-                }
-
-                for (int i = 0; i < 67; i++)
-                {
-                    dataGridView2.Rows[i].Cells[1].Value = MuseumContributorsFossil[i].Plyr;
-                    dataGridView2.Rows[i].Cells[2].Value = MuseumContributionsFossil[i].Day;
-                    dataGridView2.Rows[i].Cells[3].Value = MuseumContributionsFossil[i].Mth;
-                    dataGridView2.Rows[i].Cells[4].Value = MuseumContributionsFossil[i].Yrs;
-                }
+                dataGridView2.Rows[i].Cells[0].Value = lines[i].ToString();
             }
-            catch
+
+            for (int i = 0; i < 67; i++)
             {
-                MessageBox.Show("Unable to find MuseumDinoNames.txt");
-                Close();
+                dataGridView2.Rows[i].Cells[1].Value = MuseumContributorsFossil[i].Plyr;
+                dataGridView2.Rows[i].Cells[2].Value = MuseumContributionsFossil[i].Day;
+                dataGridView2.Rows[i].Cells[3].Value = MuseumContributionsFossil[i].Mth;
+                dataGridView2.Rows[i].Cells[4].Value = MuseumContributionsFossil[i].Yrs;
             }
         }
 
@@ -2041,28 +2210,22 @@ namespace NLSE
             dataGridView5.Rows.Add(101);
             dataGridView5.CancelEdit();
 
-            try
-            {
-                string[] lines = File.ReadAllLines("MuseumFishNames.txt");
+            string file = Properties.Resources.MuseumFishNames;
+            string[] lines = ReadAllResourceLines(file);
 
-                for (int i = 0; i < lines.Length; i++)
-                {
-                    dataGridView5.Rows[i].Cells[0].Value = lines[i].ToString();
-                }
-
-                for (int i = 0; i < 101; i++)
-                {
-                    dataGridView5.Rows[i].Cells[1].Value = MuseumContributorsFish[i].Plyr;
-                    dataGridView5.Rows[i].Cells[2].Value = MuseumContributionsFish[i].Day;
-                    dataGridView5.Rows[i].Cells[3].Value = MuseumContributionsFish[i].Mth;
-                    dataGridView5.Rows[i].Cells[4].Value = MuseumContributionsFish[i].Yrs;
-                }
-            }
-            catch
+            for (int i = 0; i < lines.Length; i++)
             {
-                MessageBox.Show("Unable to find MuseumFishNames.txt");
-                Close();
+                dataGridView5.Rows[i].Cells[0].Value = lines[i].ToString();
             }
+
+            for (int i = 0; i < 101; i++)
+            {
+                dataGridView5.Rows[i].Cells[1].Value = MuseumContributorsFish[i].Plyr;
+                dataGridView5.Rows[i].Cells[2].Value = MuseumContributionsFish[i].Day;
+                dataGridView5.Rows[i].Cells[3].Value = MuseumContributionsFish[i].Mth;
+                dataGridView5.Rows[i].Cells[4].Value = MuseumContributionsFish[i].Yrs;
+            }
+
         }
 
         private void populateMuseumInsectList()
@@ -2137,27 +2300,21 @@ namespace NLSE
             dataGridView4.Rows.Add(72);
             dataGridView4.CancelEdit();
 
-            try
+
+            string file = Properties.Resources.MuseumInsectNames;
+            string[] lines = ReadAllResourceLines(file);
+
+            for (int i = 0; i < lines.Length; i++)
             {
-                string[] lines = File.ReadAllLines("MuseumInsectNames.txt");
-
-                for (int i = 0; i < lines.Length; i++)
-                {
-                    dataGridView4.Rows[i].Cells[0].Value = lines[i].ToString();
-                }
-
-                for (int i = 0; i < 72; i++)
-                {
-                    dataGridView4.Rows[i].Cells[1].Value = MuseumContributorsInsect[i].Plyr;
-                    dataGridView4.Rows[i].Cells[2].Value = MuseumContributionsInsect[i].Day;
-                    dataGridView4.Rows[i].Cells[3].Value = MuseumContributionsInsect[i].Mth;
-                    dataGridView4.Rows[i].Cells[4].Value = MuseumContributionsInsect[i].Yrs;
-                }
+                dataGridView4.Rows[i].Cells[0].Value = lines[i].ToString();
             }
-            catch
+
+            for (int i = 0; i < 72; i++)
             {
-                MessageBox.Show("Unable to find MuseumInsectNames.txt");
-                Close();
+                dataGridView4.Rows[i].Cells[1].Value = MuseumContributorsInsect[i].Plyr;
+                dataGridView4.Rows[i].Cells[2].Value = MuseumContributionsInsect[i].Day;
+                dataGridView4.Rows[i].Cells[3].Value = MuseumContributionsInsect[i].Mth;
+                dataGridView4.Rows[i].Cells[4].Value = MuseumContributionsInsect[i].Yrs;
             }
         }
 
@@ -2233,27 +2390,37 @@ namespace NLSE
             dataGridView3.Rows.Add(33);
             dataGridView3.CancelEdit();
 
-            try
+            string file = Properties.Resources.MuseumArtNames;
+            string[] lines = ReadAllResourceLines(file);
+
+            for (int i = 0; i < lines.Length; i++)
             {
-                string[] lines = File.ReadAllLines("MuseumArtNames.txt");
-
-                for (int i = 0; i < lines.Length; i++)
-                {
-                    dataGridView3.Rows[i].Cells[0].Value = lines[i].ToString();
-                }
-
-                for (int i = 0; i < 33; i++)
-                {
-                    dataGridView3.Rows[i].Cells[1].Value = MuseumContributorsArt[i].Plyr;
-                    dataGridView3.Rows[i].Cells[2].Value = MuseumContributionsArt[i].Day;
-                    dataGridView3.Rows[i].Cells[3].Value = MuseumContributionsArt[i].Mth;
-                    dataGridView3.Rows[i].Cells[4].Value = MuseumContributionsArt[i].Yrs;
-                }
+                dataGridView3.Rows[i].Cells[0].Value = lines[i].ToString();
             }
-            catch
+
+            for (int i = 0; i < 33; i++)
             {
-                MessageBox.Show("Unable to find MuseumArtNames.txt");
-                Close();
+                dataGridView3.Rows[i].Cells[1].Value = MuseumContributorsArt[i].Plyr;
+                dataGridView3.Rows[i].Cells[2].Value = MuseumContributionsArt[i].Day;
+                dataGridView3.Rows[i].Cells[3].Value = MuseumContributionsArt[i].Mth;
+                dataGridView3.Rows[i].Cells[4].Value = MuseumContributionsArt[i].Yrs;
+            }
+        }
+
+        string[] ReadAllResourceLines(string resourceText)
+        {
+            using (StringReader reader = new StringReader(resourceText))
+            {
+                return EnumerateLines(reader).ToArray();
+            }
+        }
+        IEnumerable<string> EnumerateLines(TextReader reader)
+        {
+            string line;
+
+            while ((line = reader.ReadLine()) != null)
+            {
+                yield return line;
             }
         }
 
@@ -2433,6 +2600,9 @@ namespace NLSE
             CB_Item.DisplayMember = "Text";
             CB_Item.ValueMember = "Value";
             CB_Item.DataSource = new BindingSource(Main.itemList, null);
+            CB_LetterItem.DisplayMember = "Text";
+            CB_LetterItem.ValueMember = "Value";
+            CB_LetterItem.DataSource = new BindingSource(Main.itemList, null);
             TB_Flag1.KeyPress += EnterKey;
             TB_Flag2.KeyPress += EnterKey;
 
@@ -2534,7 +2704,6 @@ namespace NLSE
             {
                 File.Delete(Invisible.Text + ".bak");
             }
-
             File.Copy(Invisible.Text, Invisible.Text + ".bak");
 
             Main.SaveData = saveData();
@@ -3944,6 +4113,27 @@ namespace NLSE
             else if (dialogResult == DialogResult.No)
             {
                 return;
+            }
+        }
+
+        private void NUD_LetterValue_ValueChanged(object sender, EventArgs e)
+        {
+            savePlayer(currentPlayer);
+            for (int i = 0; i < Players.Length; i++)
+                Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
+
+            for (int i = 0; i < Players.Length; i++) // load
+                Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0xA480).Take(0xA480).ToArray());
+            loadPlayer(currentPlayer);
+        }
+
+        private void TB_LetterContent_TextChanged(object sender, EventArgs e)
+        {
+            if (TB_LetterContent.Lines.Length > 6)
+            {
+                TB_LetterContent.Undo();
+                TB_LetterContent.ClearUndo();
+                MessageBox.Show("Only 6 lines allowed."); 
             }
         }
 

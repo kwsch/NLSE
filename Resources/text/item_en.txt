@@ -5652,3 +5652,5 @@ New	Furniture (update)
 ----------------------
 3726	Magic Lamp 
 372a	Ikada Trophy 
+
+7ffe	Nothing

@@ -1194,6 +1194,10 @@
     <None Include="Resources\img\acre\acre_214.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\text\MuseumInsectNames.txt" />
+    <None Include="Resources\text\MuseumFishNames.txt" />
+    <None Include="Resources\text\MuseumDinoNames.txt" />
+    <None Include="Resources\text\MuseumArtNames.txt" />
     <None Include="Resources\img\player_head\nothing.png" />
     <None Include="Resources\img\player_head\hair_M-16.png" />
     <None Include="Resources\img\player_head\hair_M-15.png" />

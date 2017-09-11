@@ -276,6 +276,32 @@
             this.label33 = new System.Windows.Forms.Label();
             this.CB_MainRoomSize = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.label56 = new System.Windows.Forms.Label();
+            this.NUD_LetterNamePos = new System.Windows.Forms.NumericUpDown();
+            this.CB_LetterSender = new System.Windows.Forms.ComboBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.CB_LetterType = new System.Windows.Forms.ComboBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.CB_LetterItem = new System.Windows.Forms.ComboBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.CB_LetterFlag = new System.Windows.Forms.ComboBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.CB_LetterPaper = new System.Windows.Forms.ComboBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.CB_LetterDestination = new System.Windows.Forms.ComboBox();
+            this.groupBox25 = new System.Windows.Forms.GroupBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.groupBox24 = new System.Windows.Forms.GroupBox();
+            this.TB_LetterContent = new System.Windows.Forms.TextBox();
+            this.TB_LetterHeader = new System.Windows.Forms.TextBox();
+            this.TB_LetterEnd = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.NUD_LetterValue = new System.Windows.Forms.NumericUpDown();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.BTN_ImportVillager = new System.Windows.Forms.Button();
             this.BTN_ExportVillager = new System.Windows.Forms.Button();
@@ -500,6 +526,7 @@
             this.CB_Item = new System.Windows.Forms.ComboBox();
             this.Tool_Info = new System.Windows.Forms.ToolTip(this.components);
             this.CB_Flag = new System.Windows.Forms.ComboBox();
+            this.label57 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -641,6 +668,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_Island)).BeginInit();
             this.tabPage13.SuspendLayout();
             this.groupBox23.SuspendLayout();
+            this.tabPage14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_LetterNamePos)).BeginInit();
+            this.groupBox25.SuspendLayout();
+            this.groupBox24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_LetterValue)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Villager10)).BeginInit();
@@ -1548,6 +1580,7 @@
             this.tabControl2.Controls.Add(this.tabPage10);
             this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Controls.Add(this.tabPage13);
+            this.tabControl2.Controls.Add(this.tabPage14);
             this.tabControl2.Location = new System.Drawing.Point(6, 6);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -3932,6 +3965,393 @@
             this.label32.TabIndex = 1;
             this.label32.Text = "Main Room";
             // 
+            // tabPage14
+            // 
+            this.tabPage14.Controls.Add(this.label57);
+            this.tabPage14.Controls.Add(this.label56);
+            this.tabPage14.Controls.Add(this.NUD_LetterNamePos);
+            this.tabPage14.Controls.Add(this.CB_LetterSender);
+            this.tabPage14.Controls.Add(this.label55);
+            this.tabPage14.Controls.Add(this.CB_LetterType);
+            this.tabPage14.Controls.Add(this.label54);
+            this.tabPage14.Controls.Add(this.CB_LetterItem);
+            this.tabPage14.Controls.Add(this.label53);
+            this.tabPage14.Controls.Add(this.label52);
+            this.tabPage14.Controls.Add(this.CB_LetterFlag);
+            this.tabPage14.Controls.Add(this.label47);
+            this.tabPage14.Controls.Add(this.CB_LetterPaper);
+            this.tabPage14.Controls.Add(this.label46);
+            this.tabPage14.Controls.Add(this.CB_LetterDestination);
+            this.tabPage14.Controls.Add(this.groupBox25);
+            this.tabPage14.Controls.Add(this.groupBox24);
+            this.tabPage14.Controls.Add(this.label45);
+            this.tabPage14.Controls.Add(this.NUD_LetterValue);
+            this.tabPage14.Location = new System.Drawing.Point(4, 22);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(632, 525);
+            this.tabPage14.TabIndex = 3;
+            this.tabPage14.Text = "Letters";
+            this.tabPage14.UseVisualStyleBackColor = true;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(159, 34);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(290, 13);
+            this.label56.TabIndex = 22;
+            this.label56.Text = "Line of the position of the receiver name in the letter header:";
+            // 
+            // NUD_LetterNamePos
+            // 
+            this.NUD_LetterNamePos.Location = new System.Drawing.Point(455, 32);
+            this.NUD_LetterNamePos.Name = "NUD_LetterNamePos";
+            this.NUD_LetterNamePos.Size = new System.Drawing.Size(41, 20);
+            this.NUD_LetterNamePos.TabIndex = 21;
+            // 
+            // CB_LetterSender
+            // 
+            this.CB_LetterSender.FormattingEnabled = true;
+            this.CB_LetterSender.Items.AddRange(new object[] {
+            "Villager(?)",
+            "From your mom",
+            "From your dad",
+            "From Mom and Dad",
+            "From Isabelle",
+            "From Isabelle",
+            "HH Showcase",
+            "From unknow sender",
+            "From Nintendo Staff",
+            "From HHA",
+            "From the museum",
+            "From the post office",
+            "From Jack",
+            "From Redd\'s Gallery",
+            "From Gulliver",
+            "From Snowboy",
+            "Certificate",
+            "Certificate",
+            "From Katie",
+            "From K.K. Slider",
+            "From Wishy The Star",
+            "From Timmy Nook",
+            "From Tommy Nook",
+            "From the Nooklings",
+            "From Timothy Nook",
+            "From Blanca",
+            "From Jingle",
+            "(No one)",
+            "From Snowtyke",
+            "From Isabelle",
+            "From Nintendo",
+            "From Lottie",
+            "Campground",
+            "From Nook\'s Homes",
+            "From Leif"});
+            this.CB_LetterSender.Location = new System.Drawing.Point(404, 425);
+            this.CB_LetterSender.Name = "CB_LetterSender";
+            this.CB_LetterSender.Size = new System.Drawing.Size(121, 21);
+            this.CB_LetterSender.TabIndex = 20;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(401, 409);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(44, 13);
+            this.label55.TabIndex = 19;
+            this.label55.Text = "Sender:";
+            // 
+            // CB_LetterType
+            // 
+            this.CB_LetterType.FormattingEnabled = true;
+            this.CB_LetterType.Items.AddRange(new object[] {
+            "Letter",
+            "Box"});
+            this.CB_LetterType.Location = new System.Drawing.Point(99, 425);
+            this.CB_LetterType.Name = "CB_LetterType";
+            this.CB_LetterType.Size = new System.Drawing.Size(121, 21);
+            this.CB_LetterType.TabIndex = 18;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(96, 409);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(64, 13);
+            this.label54.TabIndex = 17;
+            this.label54.Text = "Letter Type:";
+            // 
+            // CB_LetterItem
+            // 
+            this.CB_LetterItem.FormattingEnabled = true;
+            this.CB_LetterItem.Location = new System.Drawing.Point(404, 249);
+            this.CB_LetterItem.Name = "CB_LetterItem";
+            this.CB_LetterItem.Size = new System.Drawing.Size(121, 21);
+            this.CB_LetterItem.TabIndex = 16;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(408, 233);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(30, 13);
+            this.label53.TabIndex = 15;
+            this.label53.Text = "Item:";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(96, 104);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(30, 13);
+            this.label52.TabIndex = 14;
+            this.label52.Text = "Flag:";
+            // 
+            // CB_LetterFlag
+            // 
+            this.CB_LetterFlag.FormattingEnabled = true;
+            this.CB_LetterFlag.Items.AddRange(new object[] {
+            "Not open",
+            "Has been read",
+            "Throw Away only",
+            "Rewrite possible",
+            "Rewrite possible (blue)",
+            "?"});
+            this.CB_LetterFlag.Location = new System.Drawing.Point(99, 120);
+            this.CB_LetterFlag.Name = "CB_LetterFlag";
+            this.CB_LetterFlag.Size = new System.Drawing.Size(121, 21);
+            this.CB_LetterFlag.TabIndex = 13;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(401, 104);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(64, 13);
+            this.label47.TabIndex = 12;
+            this.label47.Text = "Paper used:";
+            // 
+            // CB_LetterPaper
+            // 
+            this.CB_LetterPaper.FormattingEnabled = true;
+            this.CB_LetterPaper.Items.AddRange(new object[] {
+            "Butterfly Paper",
+            "Airmail Paper",
+            "New Year\'s Cards",
+            "Lacy Paper",
+            "Cloudy Paper",
+            "Petal Paper",
+            "Snowy Paper",
+            "Maple-leaf Paper",
+            "Lined Paper",
+            "Notebook Paper",
+            "Flowery Paper",
+            "Polka-dot Paper",
+            "Weathered Paper",
+            "Ribbon Paper",
+            "Sparkly Paper",
+            "Vine Paper",
+            "Formal Paper",
+            "Snowman Paper",
+            "Card Paper",
+            "Leopard Paper",
+            "Cow Paper",
+            "Camouflage Paper",
+            "Hamburger Paper",
+            "Piano Paper",
+            "Nook Paper",
+            "Birthday Card",
+            "Four-leaf Paper",
+            "Academy Paper",
+            "Lovely Paper",
+            "Rainbow Paper",
+            "Hieroglyph Paper",
+            "Lotus Paper",
+            "Tile Paper",
+            "Mosaic Paper",
+            "Elegant Paper",
+            "Town-view Paper",
+            "Imperial Paper",
+            "Ocean Paper",
+            "Industrial Paper",
+            "Fireworks Paper",
+            "Floral Paper",
+            "Mushroom Paper",
+            "Star Paper",
+            "Composer Paper",
+            "Bathtub Paper",
+            "SMB3 Paper",
+            "Cool Paper",
+            "Forest Paper",
+            "Bubble Paper",
+            "Buttercup Paper",
+            "Tartan Paper",
+            "Plaid Paper",
+            "Lemon-lime Paper",
+            "Crater Paper",
+            "Bejeweled Paper",
+            "Geometric Paper",
+            "Southwest Paper",
+            "Night-sky Paper",
+            "Chic Paper",
+            "Goldfish Paper",
+            "Halloween Paper",
+            "Gallery Paper",
+            "Museum Paper",
+            "Post-office Paper",
+            "Campground Paper ",
+            "Nook\'s Homes Paper ",
+            "Nintendo Paper ",
+            "Melody Paper"});
+            this.CB_LetterPaper.Location = new System.Drawing.Point(404, 120);
+            this.CB_LetterPaper.Name = "CB_LetterPaper";
+            this.CB_LetterPaper.Size = new System.Drawing.Size(121, 21);
+            this.CB_LetterPaper.TabIndex = 11;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(96, 233);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(23, 13);
+            this.label46.TabIndex = 10;
+            this.label46.Text = "To:";
+            // 
+            // CB_LetterDestination
+            // 
+            this.CB_LetterDestination.FormattingEnabled = true;
+            this.CB_LetterDestination.Items.AddRange(new object[] {
+            "No one",
+            "Player 1",
+            "Player 2",
+            "Player 3",
+            "Player 4"});
+            this.CB_LetterDestination.Location = new System.Drawing.Point(99, 249);
+            this.CB_LetterDestination.Name = "CB_LetterDestination";
+            this.CB_LetterDestination.Size = new System.Drawing.Size(121, 21);
+            this.CB_LetterDestination.TabIndex = 9;
+            // 
+            // groupBox25
+            // 
+            this.groupBox25.Controls.Add(this.label51);
+            this.groupBox25.Controls.Add(this.label50);
+            this.groupBox25.Controls.Add(this.label49);
+            this.groupBox25.Controls.Add(this.label48);
+            this.groupBox25.Location = new System.Drawing.Point(226, 294);
+            this.groupBox25.Name = "groupBox25";
+            this.groupBox25.Size = new System.Drawing.Size(172, 100);
+            this.groupBox25.TabIndex = 8;
+            this.groupBox25.TabStop = false;
+            this.groupBox25.Text = "Letter Data";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(6, 76);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(58, 13);
+            this.label51.TabIndex = 3;
+            this.label51.Text = "Town SID:";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(6, 63);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(37, 13);
+            this.label50.TabIndex = 2;
+            this.label50.Text = "Town:";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(6, 34);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(74, 13);
+            this.label49.TabIndex = 1;
+            this.label49.Text = "Receiver SID:";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(6, 20);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(53, 13);
+            this.label48.TabIndex = 0;
+            this.label48.Text = "Receiver:";
+            // 
+            // groupBox24
+            // 
+            this.groupBox24.Controls.Add(this.TB_LetterContent);
+            this.groupBox24.Controls.Add(this.TB_LetterHeader);
+            this.groupBox24.Controls.Add(this.TB_LetterEnd);
+            this.groupBox24.Location = new System.Drawing.Point(226, 104);
+            this.groupBox24.Name = "groupBox24";
+            this.groupBox24.Size = new System.Drawing.Size(172, 166);
+            this.groupBox24.TabIndex = 7;
+            this.groupBox24.TabStop = false;
+            this.groupBox24.Text = "Letter Content";
+            // 
+            // TB_LetterContent
+            // 
+            this.TB_LetterContent.Location = new System.Drawing.Point(9, 43);
+            this.TB_LetterContent.MaxLength = 192;
+            this.TB_LetterContent.Multiline = true;
+            this.TB_LetterContent.Name = "TB_LetterContent";
+            this.TB_LetterContent.Size = new System.Drawing.Size(150, 84);
+            this.TB_LetterContent.TabIndex = 0;
+            this.TB_LetterContent.TextChanged += new System.EventHandler(this.TB_LetterContent_TextChanged);
+            // 
+            // TB_LetterHeader
+            // 
+            this.TB_LetterHeader.Location = new System.Drawing.Point(9, 17);
+            this.TB_LetterHeader.MaxLength = 25;
+            this.TB_LetterHeader.Name = "TB_LetterHeader";
+            this.TB_LetterHeader.Size = new System.Drawing.Size(150, 20);
+            this.TB_LetterHeader.TabIndex = 2;
+            // 
+            // TB_LetterEnd
+            // 
+            this.TB_LetterEnd.Location = new System.Drawing.Point(9, 133);
+            this.TB_LetterEnd.MaxLength = 32;
+            this.TB_LetterEnd.Name = "TB_LetterEnd";
+            this.TB_LetterEnd.Size = new System.Drawing.Size(150, 20);
+            this.TB_LetterEnd.TabIndex = 3;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(550, 10);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(38, 13);
+            this.label45.TabIndex = 4;
+            this.label45.Text = "Letter°";
+            // 
+            // NUD_LetterValue
+            // 
+            this.NUD_LetterValue.Location = new System.Drawing.Point(590, 6);
+            this.NUD_LetterValue.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.NUD_LetterValue.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUD_LetterValue.Name = "NUD_LetterValue";
+            this.NUD_LetterValue.Size = new System.Drawing.Size(36, 20);
+            this.NUD_LetterValue.TabIndex = 1;
+            this.NUD_LetterValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NUD_LetterValue.ValueChanged += new System.EventHandler(this.NUD_LetterValue_ValueChanged);
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.BTN_ImportVillager);
@@ -6312,21 +6732,21 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -6385,6 +6805,14 @@
             this.CB_Flag.Size = new System.Drawing.Size(94, 21);
             this.CB_Flag.TabIndex = 17;
             this.CB_Flag.SelectedIndexChanged += new System.EventHandler(this.CB_Flag_SelectedIndexChanged);
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(265, 69);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(0, 13);
+            this.label57.TabIndex = 23;
             // 
             // Garden
             // 
@@ -6559,6 +6987,14 @@
             this.tabPage13.PerformLayout();
             this.groupBox23.ResumeLayout(false);
             this.groupBox23.PerformLayout();
+            this.tabPage14.ResumeLayout(false);
+            this.tabPage14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_LetterNamePos)).EndInit();
+            this.groupBox25.ResumeLayout(false);
+            this.groupBox25.PerformLayout();
+            this.groupBox24.ResumeLayout(false);
+            this.groupBox24.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_LetterValue)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
@@ -7169,5 +7605,32 @@
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.TabPage tabPage14;
+        private System.Windows.Forms.TextBox TB_LetterContent;
+        private System.Windows.Forms.NumericUpDown NUD_LetterValue;
+        private System.Windows.Forms.TextBox TB_LetterEnd;
+        private System.Windows.Forms.TextBox TB_LetterHeader;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.GroupBox groupBox25;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.GroupBox groupBox24;
+        private System.Windows.Forms.ComboBox CB_LetterDestination;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.ComboBox CB_LetterPaper;
+        private System.Windows.Forms.ComboBox CB_LetterItem;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.ComboBox CB_LetterFlag;
+        private System.Windows.Forms.ComboBox CB_LetterType;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.ComboBox CB_LetterSender;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.NumericUpDown NUD_LetterNamePos;
+        private System.Windows.Forms.Label label57;
     }
 }

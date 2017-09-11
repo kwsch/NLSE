@@ -7665,6 +7665,188 @@ namespace NLSE.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à dynamic painting
+        ///solemn painting
+        ///quaint painting
+        ///basic painting
+        ///basic painting
+        ///perfect painting
+        ///amazing painting
+        ///nice painting
+        ///moving painting
+        ///common painting
+        ///flowery painting
+        ///warm painting
+        ///jolly painting
+        ///fine painting
+        ///scary painting
+        ///proper painting
+        ///neutral painting
+        ///worthy painting
+        ///calm painting
+        ///moody painting
+        ///wistful painting
+        ///wistful painting
+        ///scenic painting
+        ///wild painting
+        ///graceful painting
+        ///beautiful statue
+        ///valiant statue
+        ///gallant statue
+        ///robust statue
+        ///great statue
+        ///mystic statue        /// [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        public static string MuseumArtNames {
+            get {
+                return ResourceManager.GetString("MuseumArtNames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à amber
+        ///ammonite
+        ///coprolite
+        ///dinosaur egg
+        ///fern fossil
+        ///dinosaur track
+        ///archaeopteryx
+        ///Peking man
+        ///shark tooth
+        ///trilobite
+        ///T. rex skull
+        ///T. rex torso
+        ///T. rex tail
+        ///tricera skull
+        ///tricera torso
+        ///tricera tail
+        ///mammoth skull
+        ///mammoth torso
+        ///ankylo skull
+        ///ankylo torso
+        ///ankylo tail
+        ///apato skull
+        ///apato torso
+        ///apato tail
+        ///dimetrodon skull
+        ///dimetrodon torso
+        ///dimetrodon tail
+        ///iguanodon skull
+        ///iguanodon torso
+        ///iguanodon tail
+        ///sabertooth skull
+        ///sabertooth torso
+        ///pachysaurus skull
+        ///pachysaurus torso
+        ///pachysaurus tail
+        ///p [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        public static string MuseumDinoNames {
+            get {
+                return ResourceManager.GetString("MuseumDinoNames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à bitterling
+        ///pale chub
+        ///crucian carp
+        ///dace
+        ///barbel steed
+        ///carp
+        ///koi
+        ///goldfish
+        ///pop-eyed goldfish
+        ///killifish
+        ///crawfish
+        ///soft-shelled turtle
+        ///tadpole
+        ///frog
+        ///freshwater goby
+        ///loach
+        ///catfish
+        ///eel
+        ///giant snakehead
+        ///bluegill
+        ///yellow perch
+        ///black bass
+        ///pike
+        ///pond smelt
+        ///sweetfish
+        ///cherry salmon
+        ///char
+        ///rainbow trout
+        ///stringfish
+        ///salmon
+        ///king salmon
+        ///mitten crab
+        ///guppy
+        ///nibble fish
+        ///angelfish
+        ///neon tetra
+        ///piranha
+        ///arowana
+        ///dorado
+        ///gar
+        ///arapaima
+        ///saddled bichir
+        ///sea butterfly
+        ///sea horse
+        ///clown fish
+        ///surgeonfish
+        ///butte [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        public static string MuseumFishNames {
+            get {
+                return ResourceManager.GetString("MuseumFishNames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à common butterfly
+        ///yellow butterfly
+        ///tiger butterfly
+        ///peacock butterfly
+        ///monarch butterfly
+        ///emperor butterfly
+        ///agrias butterfly
+        ///Raja B. butterfly
+        ///birdwing butterfly
+        ///moth
+        ///oak silk moth
+        ///honeybee
+        ///bee
+        ///long locust
+        ///migratory locust
+        ///rice grasshopper
+        ///mantis
+        ///orchid mantis
+        ///brown cicada
+        ///robust cicada
+        ///giant cicada
+        ///walker cicada
+        ///evening cicada
+        ///evening cicada
+        ///lantern fly
+        ///red dragonfly
+        ///darner dragonfly
+        ///banded dragonfly
+        ///petaltail dragonfly
+        ///ant
+        ///pondskater
+        ///diving beetle
+        ///stinkbug
+        ///snail
+        ///cricket
+        ///bell [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        public static string MuseumInsectNames {
+            get {
+                return ResourceManager.GetString("MuseumInsectNames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap MVH_1 {
