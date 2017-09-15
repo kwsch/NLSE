@@ -277,6 +277,7 @@
             this.CB_MainRoomSize = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
             this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.label57 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.NUD_LetterNamePos = new System.Windows.Forms.NumericUpDown();
             this.CB_LetterSender = new System.Windows.Forms.ComboBox();
@@ -526,7 +527,7 @@
             this.CB_Item = new System.Windows.Forms.ComboBox();
             this.Tool_Info = new System.Windows.Forms.ToolTip(this.components);
             this.CB_Flag = new System.Windows.Forms.ComboBox();
-            this.label57 = new System.Windows.Forms.Label();
+            this.dreamFixerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -3994,6 +3995,14 @@
             this.tabPage14.Text = "Letters";
             this.tabPage14.UseVisualStyleBackColor = true;
             // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(265, 69);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(0, 13);
+            this.label57.TabIndex = 23;
+            // 
             // label56
             // 
             this.label56.AutoSize = true;
@@ -6732,21 +6741,21 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -6754,7 +6763,8 @@
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exhibitiondatEditorToolStripMenuItem,
-            this.frienddatEditorToolStripMenuItem});
+            this.frienddatEditorToolStripMenuItem,
+            this.dreamFixerToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
@@ -6806,13 +6816,12 @@
             this.CB_Flag.TabIndex = 17;
             this.CB_Flag.SelectedIndexChanged += new System.EventHandler(this.CB_Flag_SelectedIndexChanged);
             // 
-            // label57
+            // dreamFixerToolStripMenuItem
             // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(265, 69);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(0, 13);
-            this.label57.TabIndex = 23;
+            this.dreamFixerToolStripMenuItem.Name = "dreamFixerToolStripMenuItem";
+            this.dreamFixerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dreamFixerToolStripMenuItem.Text = "Dream fixer";
+            this.dreamFixerToolStripMenuItem.Click += new System.EventHandler(this.dreamFixerToolStripMenuItem_Click);
             // 
             // Garden
             // 
@@ -7632,5 +7641,6 @@
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.NumericUpDown NUD_LetterNamePos;
         private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.ToolStripMenuItem dreamFixerToolStripMenuItem;
     }
 }

@@ -58,6 +58,9 @@
     <ApplicationIcon>Favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PackageIO">
+      <HintPath>..\..\..\..\Desktop\PackageIO.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,6 +74,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Misc\Data.cs" />
+    <Compile Include="Subforms\DreamPatcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subforms\DreamPatcher.Designer.cs">
+      <DependentUpon>DreamPatcher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Subforms\Exhibition.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +121,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Subforms\DreamPatcher.resx">
+      <DependentUpon>DreamPatcher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Subforms\Exhibition.resx">
       <DependentUpon>Exhibition.cs</DependentUpon>
     </EmbeddedResource>

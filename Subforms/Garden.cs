@@ -2737,7 +2737,7 @@ namespace NLSE
 
         private void dreamFixerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Thread(() => new DreamPatcher().ShowDialog()).Start();
+            new DreamPatcher().ShowDialog();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
