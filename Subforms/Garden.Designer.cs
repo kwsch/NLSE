@@ -523,11 +523,14 @@
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exhibitiondatEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frienddatEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dreamFixerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CB_Item = new System.Windows.Forms.ComboBox();
             this.Tool_Info = new System.Windows.Forms.ToolTip(this.components);
             this.CB_Flag = new System.Windows.Forms.ComboBox();
-            this.dreamFixerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.LB_DC = new System.Windows.Forms.Label();
+            this.CB_PrivateDC = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -791,6 +794,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.groupBox26.SuspendLayout();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -2087,6 +2091,7 @@
             // 
             // groupBox14
             // 
+            this.groupBox14.Controls.Add(this.groupBox26);
             this.groupBox14.Controls.Add(this.groupBox16);
             this.groupBox14.Controls.Add(this.groupBox15);
             this.groupBox14.Controls.Add(this.TB_Comment);
@@ -2214,7 +2219,7 @@
             this.TB_Comment.MaxLength = 40;
             this.TB_Comment.Multiline = true;
             this.TB_Comment.Name = "TB_Comment";
-            this.TB_Comment.Size = new System.Drawing.Size(202, 106);
+            this.TB_Comment.Size = new System.Drawing.Size(202, 47);
             this.TB_Comment.TabIndex = 79;
             // 
             // label1
@@ -6741,21 +6746,21 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -6782,6 +6787,13 @@
             this.frienddatEditorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.frienddatEditorToolStripMenuItem.Text = "friend.dat Editor";
             this.frienddatEditorToolStripMenuItem.Click += new System.EventHandler(this.frienddatEditorToolStripMenuItem_Click);
+            // 
+            // dreamFixerToolStripMenuItem
+            // 
+            this.dreamFixerToolStripMenuItem.Name = "dreamFixerToolStripMenuItem";
+            this.dreamFixerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dreamFixerToolStripMenuItem.Text = "Dream fixer";
+            this.dreamFixerToolStripMenuItem.Click += new System.EventHandler(this.dreamFixerToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -6816,12 +6828,35 @@
             this.CB_Flag.TabIndex = 17;
             this.CB_Flag.SelectedIndexChanged += new System.EventHandler(this.CB_Flag_SelectedIndexChanged);
             // 
-            // dreamFixerToolStripMenuItem
+            // groupBox26
             // 
-            this.dreamFixerToolStripMenuItem.Name = "dreamFixerToolStripMenuItem";
-            this.dreamFixerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dreamFixerToolStripMenuItem.Text = "Dream fixer";
-            this.dreamFixerToolStripMenuItem.Click += new System.EventHandler(this.dreamFixerToolStripMenuItem_Click);
+            this.groupBox26.Controls.Add(this.CB_PrivateDC);
+            this.groupBox26.Controls.Add(this.LB_DC);
+            this.groupBox26.Location = new System.Drawing.Point(9, 85);
+            this.groupBox26.Name = "groupBox26";
+            this.groupBox26.Size = new System.Drawing.Size(200, 53);
+            this.groupBox26.TabIndex = 83;
+            this.groupBox26.TabStop = false;
+            this.groupBox26.Text = "Dream Data";
+            // 
+            // LB_DC
+            // 
+            this.LB_DC.AutoSize = true;
+            this.LB_DC.Location = new System.Drawing.Point(6, 16);
+            this.LB_DC.Name = "LB_DC";
+            this.LB_DC.Size = new System.Drawing.Size(69, 13);
+            this.LB_DC.TabIndex = 0;
+            this.LB_DC.Text = "Dream Code:";
+            // 
+            // CB_PrivateDC
+            // 
+            this.CB_PrivateDC.AutoSize = true;
+            this.CB_PrivateDC.Location = new System.Drawing.Point(9, 32);
+            this.CB_PrivateDC.Name = "CB_PrivateDC";
+            this.CB_PrivateDC.Size = new System.Drawing.Size(77, 17);
+            this.CB_PrivateDC.TabIndex = 1;
+            this.CB_PrivateDC.Text = "Private DC";
+            this.CB_PrivateDC.UseVisualStyleBackColor = true;
             // 
             // Garden
             // 
@@ -7137,6 +7172,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox26.ResumeLayout(false);
+            this.groupBox26.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7642,5 +7679,8 @@
         private System.Windows.Forms.NumericUpDown NUD_LetterNamePos;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.ToolStripMenuItem dreamFixerToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox26;
+        private System.Windows.Forms.CheckBox CB_PrivateDC;
+        private System.Windows.Forms.Label LB_DC;
     }
 }

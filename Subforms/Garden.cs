@@ -331,6 +331,11 @@ namespace NLSE
             public string Name;
             public string Comment;
             public int Gender;
+            public int PrivateDC;
+            public int DCPart1;
+            public int DCPart2;
+            public int DCPart3;
+            public int DCPart4;
             public int BirthdayDay;
             public int BirthdayMonth;
             public int RegDay;
@@ -370,6 +375,12 @@ namespace NLSE
                 RegDay = Data[0x55D9];
                 RegMonth = Data[0x55D8];
                 RegYear = BitConverter.ToUInt16(data, 0x55D6);
+
+                DCPart1 = BitConverter.ToUInt16(data, 0x56F0);
+                DCPart2 = BitConverter.ToUInt16(data, 0x56F2);
+                DCPart3 = Data[0x56F4];
+                DCPart4 = Data[0x56F9];
+                PrivateDC = Data[0x5712];
 
                 HomeTown = Encoding.Unicode.GetString(Data.Skip(0x55BE).Take(0x12).ToArray()).Trim('\0');
 
@@ -411,6 +422,8 @@ namespace NLSE
                 Data[0x55D9] = (byte)RegDay;
                 Data[0x55D8] = (byte)RegMonth;
                 Array.Copy(BitConverter.GetBytes(RegYear), 0, Data, 0x55D6, 2);
+
+                Data[0x5712] = (byte)PrivateDC;
 
                 Array.Copy(Encoding.Unicode.GetBytes(HomeTown.PadRight(9, '\0')), 0, Data, 0x55BE, 0x12);
 
@@ -939,6 +952,7 @@ namespace NLSE
                 PlayerBadges[j].SelectedIndex = Players[i].Badges[j];
             loadBadge();
 
+            CB_PrivateDC.Checked = Players[i].PrivateDC == 0xE7;
             CB_HairStyle.SelectedIndex = Players[i].Hair;
             CB_HairColor.SelectedIndex = Players[i].HairColor;
             CB_FaceShape.SelectedIndex = Players[i].Face;
@@ -946,6 +960,10 @@ namespace NLSE
             CB_SkinColor.SelectedIndex = Players[i].Tan;
             CB_Gender.SelectedIndex = Players[i].Gender;
 
+            if (Players[i].DCPart1 != 0)
+            {
+                LB_DC.Text = $"Dream Code: {Players[i].DCPart4:X02}{Players[i].DCPart3:X02}-{Players[i].DCPart2:X04}-{Players[i].DCPart1:X04}";
+            }
             NUD_BirthdayDay.Value = Players[i].BirthdayDay;
             CB_BirthdayMonth.SelectedIndex = Players[i].BirthdayMonth;
 
@@ -1135,6 +1153,8 @@ namespace NLSE
             Players[i].RegDay = (byte)NUD_RegDay.Value;
             Players[i].RegMonth = (byte)CB_RegMonth.SelectedIndex;
             Players[i].RegYear = (uint)NUD_RegYear.Value;
+
+            Players[i].PrivateDC = CB_PrivateDC.Checked == true ? 0xE7 : 0xEF;
 
             PlayersExterior[currentPlayer].HouseStyle = (byte)CB_HouseStyle.SelectedIndex;
             PlayersExterior[currentPlayer].HouseRoof = (byte)CB_HouseRoof.SelectedIndex;
