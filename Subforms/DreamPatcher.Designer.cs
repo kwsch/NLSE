@@ -66,9 +66,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(112, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Input:";
+            this.label1.Text = "garden_plus.dat input:";
             // 
             // DreamPatcher
             // 

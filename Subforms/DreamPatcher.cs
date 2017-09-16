@@ -50,19 +50,20 @@ namespace NLSE.Subforms
         {
             Reader read = new Reader(filepath, Endian.Big);
             long length = new FileInfo(filepath).Length;
-            if (length != 0x89B00)
+            read.Close();
+            if (length == 0x89A80)
             {
-                MessageBox.Show("Not a valid ACNL savegame !");
-                return;
+                byte[] array = new Byte[0x80];
+                Array.Clear(array, 0, array.Length);
+
+                using (BinaryWriter file = new BinaryWriter(File.Open(filepath, FileMode.Open)))
+                {
+                    file.Seek(0, SeekOrigin.End);
+                    file.Write(array);
+                    file.Close();
+                }
             }
-            else if (length == 0x89A80)
-            {
-                MessageBox.Show("Not a valid ACNL savegame dump !\nPlease use the beta 3 (or higher) of the NTR Plugin !");
-                return;
-            }
-            read.Seek(0x80);
-            int check = read.ReadInt32();
-            if (check != 859492422)
+            else if (length != 0x89B00)
             {
                 MessageBox.Show("Not a valid ACNL savegame !");
                 return;
