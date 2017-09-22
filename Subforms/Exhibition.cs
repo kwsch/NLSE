@@ -433,6 +433,55 @@ namespace NLSE
             loadPlayer(i);
         }
 
+        private void B_ReplaceTCP_Click(object sender, EventArgs e)
+        {
+            int i = PeopleList.SelectedIndex;
+
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "JPEG Picture|*.jpg;*.jpeg";
+            if (ofd.ShowDialog() != DialogResult.OK)
+                return; // no file loaded
+
+            string path = ofd.FileName;
+
+            long length = new FileInfo(path).Length;
+            if (length > 0x1400) 
+            {
+                MessageBox.Show("Your TCP Picture is too big !\nMax: 4kb (0x1400)");
+                return;
+            }
+            byte[] CheckHeader = File.ReadAllBytes(path).Skip(0).Take(2).ToArray();
+
+            if (BitConverter.ToUInt16(CheckHeader, 0x0) != 0xD8FF) 
+            {
+                MessageBox.Show("The picture must be a JPEG !");
+                return;
+            }
+            Image img = Image.FromFile(path);
+
+            if (img.Height > 104 && img.Width > 64) 
+            {
+                MessageBox.Show("The dimensions of the picture must be 64x104.");
+                return;
+            }
+
+            if (img.Height != 104 && img.Width != 64)
+            {
+                MessageBox.Show("The dimensions of the picture are ok, but the maximum here is 64x104.\nThe dimensions of your picture are: " + img.Width + "x" + img.Height + "");
+            }
+            byte[] CorrectFile = File.ReadAllBytes(path); 
+            Array.Copy(CorrectFile, 0, Save.Data, 0x8EF8 + (i * 0x7DD8), length);
+            PlayersData = new PlayerData[48];
+            for (int j = 0; j < PlayersData.Length; j++)
+                PlayersData[j] = new PlayerData(Save.Data.Skip(0x2590 + j * 0x7DD8).Take(0x7DD8).ToArray());
+            PopulateList();
+
+            PeopleList.SelectedIndex = i;
+
+            PB_PlayerPict.Image = img;
+            Util.Alert("Succesfully injected the new picture.");
+        }
+
         private void B_SavePlayer_Click(object sender, EventArgs e)
         {
             int i = PeopleList.SelectedIndex;

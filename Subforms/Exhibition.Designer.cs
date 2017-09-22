@@ -39,7 +39,7 @@
             this.B_Export = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
+            this.B_ReplaceTCP = new System.Windows.Forms.Button();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.CB_FavoriteLocked = new System.Windows.Forms.CheckBox();
             this.CB_Item = new System.Windows.Forms.CheckBox();
@@ -271,7 +271,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button7);
+            this.tabPage1.Controls.Add(this.B_ReplaceTCP);
             this.tabPage1.Controls.Add(this.groupBox12);
             this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.label1);
@@ -301,14 +301,15 @@
             this.tabPage1.Text = "Data";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // B_ReplaceTCP
             // 
-            this.button7.Location = new System.Drawing.Point(6, 185);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(109, 19);
-            this.button7.TabIndex = 112;
-            this.button7.Text = "New TPC";
-            this.button7.UseVisualStyleBackColor = true;
+            this.B_ReplaceTCP.Location = new System.Drawing.Point(6, 185);
+            this.B_ReplaceTCP.Name = "B_ReplaceTCP";
+            this.B_ReplaceTCP.Size = new System.Drawing.Size(109, 19);
+            this.B_ReplaceTCP.TabIndex = 112;
+            this.B_ReplaceTCP.Text = "New TPC";
+            this.B_ReplaceTCP.UseVisualStyleBackColor = true;
+            this.B_ReplaceTCP.Click += new System.EventHandler(this.B_ReplaceTCP_Click);
             // 
             // groupBox12
             // 
@@ -1492,7 +1493,7 @@
         private System.Windows.Forms.PictureBox PB_Badge02;
         private System.Windows.Forms.PictureBox PB_Badge01;
         private System.Windows.Forms.CheckBox CB_Item;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button B_ReplaceTCP;
         private System.Windows.Forms.CheckBox CB_FavoriteLocked;
         private System.Windows.Forms.Button B_Del;
     }
