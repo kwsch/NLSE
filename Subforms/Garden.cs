@@ -1006,7 +1006,7 @@ namespace NLSE
             NUD_Badge08.Value = GetDecryptedValue((uint)i, 0x56BC - 0xA0);
             NUD_Badge09.Value = GetDecryptedValue((uint)i, 0x56C4 - 0xA0);
             NUD_Badge10.Value = GetDecryptedValue((uint)i, 0x56CC - 0xA0);
-            NUD_Badge11.Value = GetDecryptedValue((uint)i, 0x6C44 - 0xA0);
+            NUD_Badge11.Value = GetDecryptedValue((uint)i, 0x56D4 - 0xA0);
             NUD_Badge12.Value = GetDecryptedValue((uint)i, 0x56DC - 0xA0);
             NUD_Badge13.Value = GetDecryptedValue((uint)i, 0x56E4 - 0xA0);
             NUD_Badge14.Value = GetDecryptedValue((uint)i, 0x56EC - 0xA0);
@@ -1192,7 +1192,7 @@ namespace NLSE
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge08.Value)), 0, Players[i].Data, 0x56BC - 0xA0, 8);
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge09.Value)), 0, Players[i].Data, 0x56C4 - 0xA0, 8);
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge10.Value)), 0, Players[i].Data, 0x56CC - 0xA0, 8);
-            Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge11.Value)), 0, Players[i].Data, 0x6C44 - 0xA0, 8);
+            Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge11.Value)), 0, Players[i].Data, 0x56D4 - 0xA0, 8);
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge12.Value)), 0, Players[i].Data, 0x56DC - 0xA0, 8);
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge13.Value)), 0, Players[i].Data, 0x56E4 - 0xA0, 8);
             Array.Copy(BitConverter.GetBytes(Util.EncryptACNLMoney((uint)NUD_Badge14.Value)), 0, Players[i].Data, 0x56EC - 0xA0, 8);
@@ -1271,15 +1271,6 @@ namespace NLSE
                 NUD_Badge09.BackColor = NUD_Badge09.Value < 500 ? Color.Firebrick : Color.White;
             else if (CB_Badge09.SelectedIndex == 0)
                 NUD_Badge09.BackColor = NUD_Badge09.Value < 0 ? Color.Firebrick : Color.White;
-
-            if (CB_Badge11.SelectedIndex == 1) // turnip
-                NUD_Badge11.BackColor = NUD_Badge11.Value < 500000 ? Color.Firebrick : Color.White;
-            else if (CB_Badge11.SelectedIndex == 2)
-                NUD_Badge11.BackColor = NUD_Badge11.Value < 3000000 ? Color.Firebrick : Color.White;
-            else if (CB_Badge11.SelectedIndex == 3)
-                NUD_Badge11.BackColor = NUD_Badge11.Value < 10000000 ? Color.Firebrick : Color.White;
-            else if (CB_Badge11.SelectedIndex == 0)
-                NUD_Badge11.BackColor = NUD_Badge11.Value < 0 ? Color.Firebrick : Color.White;
 
             if (CB_Badge12.SelectedIndex == 1) // island medals
                 NUD_Badge12.BackColor = NUD_Badge12.Value < 300 ? Color.Firebrick : Color.White;
@@ -2747,12 +2738,19 @@ namespace NLSE
 
         private void exhibitiondatEditorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            try
+            {
+                new Exhibition().ShowDialog();
+            }
+            catch
+            {
 
+            }
         }
 
         private void frienddatEditorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Friend().ShowDialog();
         }
 
         private void dreamFixerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3002,10 +3000,8 @@ namespace NLSE
                     return; // not saved
 
                 byte[] BadgesData = (Save.Data.Skip(0x567C + currentPlayer * 0xA480).Take(0xD8).ToArray());
-                byte[] Turnip = (Save.Data.Skip(0x6C44 + currentPlayer * 0xA480).Take(0x8).ToArray());
-                byte[] Final = BadgesData.Concat(Turnip).ToArray();
 
-                File.WriteAllBytes(sfd.FileName, Final);
+                File.WriteAllBytes(sfd.FileName, BadgesData);
             }
             else if (CB_Choice.SelectedIndex == 1)
             {
@@ -3017,7 +3013,7 @@ namespace NLSE
                 string path = ofd.FileName;
 
                 long length = new FileInfo(path).Length;
-                if (length != 0xE0) // Check file size
+                if (length != 0xD8) // Check file size
                 {
                     MessageBox.Show("Invalid file.");
                     return;
@@ -3026,10 +3022,8 @@ namespace NLSE
                     Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
 
                 byte[] BadgeData = File.ReadAllBytes(path).Skip(0x0).Take(0xD8).ToArray();
-                byte[] Turnip = File.ReadAllBytes(path).Skip(0xD8).Take(0x8).ToArray();
 
                 Array.Copy(BadgeData, 0, Save.Data, (0x567C + currentPlayer * 0xA480), 0xD8);
-                Array.Copy(Turnip, 0, Save.Data, (0x6C44 + currentPlayer * 0xA480), 0x8);
 
                 for (int i = 0; i < Players.Length; i++) // load
                     Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0xA480).Take(0xA480).ToArray());
@@ -3600,28 +3594,6 @@ namespace NLSE
                 if (NUD_Badge09.Value < 500)
                 {
                     NUD_Badge09.Value = 500;
-                }
-            }
-
-            if (CB_Badge11.SelectedIndex == 1) // turnip
-            {
-                if (NUD_Badge11.Value < 500000)
-                {
-                    NUD_Badge11.Value = 500000;
-                }
-            }
-            else if (CB_Badge11.SelectedIndex == 2)
-            {
-                if (NUD_Badge11.Value < 3000000)
-                {
-                    NUD_Badge11.Value = 3000000;
-                }
-            }
-            else if (CB_Badge11.SelectedIndex == 3)
-            {
-                if (NUD_Badge11.Value < 10000000)
-                {
-                    NUD_Badge11.Value = 10000000;
                 }
             }
 

@@ -143,6 +143,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Resources\VillageData\encyclo.bin" />
+    <None Include="Resources\VillageData\exi_empty_data.bin" />
     <None Include="Resources\VillageData\Museum.bin" />
     <None Include="Resources\VillageData\type.bin" />
     <None Include="Resources\VillageData\VillagerBin\acnl_v_000.bin" />

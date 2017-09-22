@@ -6816,6 +6816,16 @@ namespace NLSE.Properties {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.Byte[].
+        /// </summary>
+        public static byte[] exi_empty_data {
+            get {
+                object obj = ResourceManager.GetObject("exi_empty_data", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap face_F_1 {
