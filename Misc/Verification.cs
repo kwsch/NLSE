@@ -25,8 +25,8 @@ namespace NLSE
                     applyCHK(ref d, 0x71924, 0xBE4);
                     applyCHK(ref d, 0x73954, 0x16188);
                     break;
-                case 0x17B80C: // exhibition
-                    applyCHK(ref d, 0x0, 0x17BE08);
+                case 0x17BE10: // exhibition
+                    applyCHK(ref d, 0x0, 0x17BE0C);
                     break;
                 case 0x29600: // friend#
                     applyCHK(ref d, 0x0, 0x295FC);
