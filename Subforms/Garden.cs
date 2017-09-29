@@ -778,6 +778,7 @@ namespace NLSE
             populateMuseumFishList();
             populateMuseumInsectList();
             populateMuseumArtList();
+            CountMuseum();
 
             // Load Villagers
             Villagers = new Villager[10];
@@ -1136,6 +1137,48 @@ namespace NLSE
             {
                 Players[i].PlayersLetter[0].LetterType = 0x80;
             }
+        }
+        private void CountMuseum()
+        {
+            int fossile = 0;
+            for (int i = 0; i < 67; i++)
+            {
+                if (Save.Data[0x6B300 + i] > 0)
+                {
+                    fossile++;
+                }
+            }
+            label58.Text = fossile.ToString() + "/67";
+
+            int fish = 0;
+            for (int i = 0; i < 101; i++)
+            {
+                if (Save.Data[0x6B343 + i] > 0)
+                {
+                    fish++;
+                }
+            }
+            label59.Text = fish.ToString() + "/101";
+
+            int insect = 0;
+            for (int i = 0; i < 72; i++)
+            {
+                if (Save.Data[0x6B3A9 + i] > 0)
+                {
+                    insect++;
+                }
+            }
+            label60.Text = insect.ToString() + "/72";
+
+            int art = 0;
+            for (int i = 0; i < 33; i++)
+            {
+                if (Save.Data[0x6B3F1 + i] > 0)
+                {
+                    art++;
+                }
+            }
+            label61.Text = art.ToString() + "/33";
         }
 
         private void savePlayer(int i)
@@ -3262,6 +3305,7 @@ namespace NLSE
             populateMuseumFishList();
             populateMuseumInsectList();
             populateMuseumArtList();
+            CountMuseum();
         }
 
         private void BTN_CompleteMus_Click(object sender, EventArgs e)
@@ -3273,6 +3317,7 @@ namespace NLSE
             populateMuseumFishList();
             populateMuseumInsectList();
             populateMuseumArtList();
+            CountMuseum();
         }
 
         private void BTN_DMPlayer_Click(object sender, EventArgs e)

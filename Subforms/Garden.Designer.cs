@@ -362,6 +362,33 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.groupBox29 = new System.Windows.Forms.GroupBox();
+            this.B_Grass = new System.Windows.Forms.Button();
+            this.B_PWP = new System.Windows.Forms.Button();
+            this.B_Desert = new System.Windows.Forms.Button();
+            this.B_HHD = new System.Windows.Forms.Button();
+            this.groupBox28 = new System.Windows.Forms.GroupBox();
+            this.TB_TownName = new System.Windows.Forms.TextBox();
+            this.CB_NativeFruit = new System.Windows.Forms.ComboBox();
+            this.L_TrainStationColor = new System.Windows.Forms.Label();
+            this.L_NativeFruit = new System.Windows.Forms.Label();
+            this.CB_TrainStationColor = new System.Windows.Forms.ComboBox();
+            this.L_TownHallColor = new System.Windows.Forms.Label();
+            this.CB_TownHallColor = new System.Windows.Forms.ComboBox();
+            this.L_GrassShape = new System.Windows.Forms.Label();
+            this.CB_GrassShape = new System.Windows.Forms.ComboBox();
+            this.L_TownName = new System.Windows.Forms.Label();
+            this.groupBox27 = new System.Windows.Forms.GroupBox();
+            this.NUD_Days = new System.Windows.Forms.NumericUpDown();
+            this.L_HoursPlayed = new System.Windows.Forms.Label();
+            this.L_MinutesPlayed = new System.Windows.Forms.Label();
+            this.L_SecondsPlayed = new System.Windows.Forms.Label();
+            this.L_OverallDays = new System.Windows.Forms.Label();
+            this.L_DaysPlayed = new System.Windows.Forms.Label();
+            this.NUD_Seconds = new System.Windows.Forms.NumericUpDown();
+            this.NUD_Minutes = new System.Windows.Forms.NumericUpDown();
+            this.NUD_OverallDays = new System.Windows.Forms.NumericUpDown();
+            this.NUD_Hours = new System.Windows.Forms.NumericUpDown();
             this.NUD_TreeSize = new System.Windows.Forms.NumericUpDown();
             this.label40 = new System.Windows.Forms.Label();
             this.BTN_ImportBuildings = new System.Windows.Forms.Button();
@@ -388,29 +415,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.NUD_OverallDays = new System.Windows.Forms.NumericUpDown();
-            this.B_Grass = new System.Windows.Forms.Button();
-            this.NUD_Days = new System.Windows.Forms.NumericUpDown();
-            this.B_Desert = new System.Windows.Forms.Button();
-            this.NUD_Hours = new System.Windows.Forms.NumericUpDown();
-            this.B_PWP = new System.Windows.Forms.Button();
-            this.NUD_Minutes = new System.Windows.Forms.NumericUpDown();
-            this.TB_TownName = new System.Windows.Forms.TextBox();
-            this.NUD_Seconds = new System.Windows.Forms.NumericUpDown();
-            this.L_TownName = new System.Windows.Forms.Label();
-            this.L_DaysPlayed = new System.Windows.Forms.Label();
-            this.CB_GrassShape = new System.Windows.Forms.ComboBox();
-            this.L_OverallDays = new System.Windows.Forms.Label();
-            this.L_GrassShape = new System.Windows.Forms.Label();
-            this.L_SecondsPlayed = new System.Windows.Forms.Label();
-            this.CB_TownHallColor = new System.Windows.Forms.ComboBox();
-            this.L_MinutesPlayed = new System.Windows.Forms.Label();
-            this.L_TownHallColor = new System.Windows.Forms.Label();
-            this.L_HoursPlayed = new System.Windows.Forms.Label();
-            this.CB_TrainStationColor = new System.Windows.Forms.ComboBox();
-            this.L_NativeFruit = new System.Windows.Forms.Label();
-            this.L_TrainStationColor = new System.Windows.Forms.Label();
-            this.CB_NativeFruit = new System.Windows.Forms.ComboBox();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
@@ -531,10 +535,10 @@
             this.CB_Item = new System.Windows.Forms.ComboBox();
             this.Tool_Info = new System.Windows.Forms.ToolTip(this.components);
             this.CB_Flag = new System.Windows.Forms.ComboBox();
-            this.B_HHD = new System.Windows.Forms.Button();
-            this.groupBox27 = new System.Windows.Forms.GroupBox();
-            this.groupBox28 = new System.Windows.Forms.GroupBox();
-            this.groupBox29 = new System.Windows.Forms.GroupBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -706,6 +710,14 @@
             this.tabPage5.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage8.SuspendLayout();
+            this.groupBox29.SuspendLayout();
+            this.groupBox28.SuspendLayout();
+            this.groupBox27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Days)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Seconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Minutes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_OverallDays)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Hours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_TreeSize)).BeginInit();
             this.groupBox21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_SatPM)).BeginInit();
@@ -721,11 +733,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_MonPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_MonAM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_OverallDays)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_Days)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_Hours)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_Minutes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_Seconds)).BeginInit();
             this.tabPage11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
@@ -799,9 +806,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.groupBox27.SuspendLayout();
-            this.groupBox28.SuspendLayout();
-            this.groupBox29.SuspendLayout();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -4987,6 +4991,341 @@
             this.tabPage8.Text = "Buildings/Town";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // groupBox29
+            // 
+            this.groupBox29.Controls.Add(this.B_Grass);
+            this.groupBox29.Controls.Add(this.B_PWP);
+            this.groupBox29.Controls.Add(this.B_Desert);
+            this.groupBox29.Controls.Add(this.B_HHD);
+            this.groupBox29.Location = new System.Drawing.Point(489, 151);
+            this.groupBox29.Name = "groupBox29";
+            this.groupBox29.Size = new System.Drawing.Size(113, 185);
+            this.groupBox29.TabIndex = 55;
+            this.groupBox29.TabStop = false;
+            this.groupBox29.Text = "Town Maintenance";
+            // 
+            // B_Grass
+            // 
+            this.B_Grass.Location = new System.Drawing.Point(6, 18);
+            this.B_Grass.Name = "B_Grass";
+            this.B_Grass.Size = new System.Drawing.Size(98, 38);
+            this.B_Grass.TabIndex = 1;
+            this.B_Grass.Text = "Re-seed all Grass\r\n(Grassifier)";
+            this.B_Grass.UseVisualStyleBackColor = true;
+            this.B_Grass.Click += new System.EventHandler(this.B_Grass_Click);
+            // 
+            // B_PWP
+            // 
+            this.B_PWP.Location = new System.Drawing.Point(6, 101);
+            this.B_PWP.Name = "B_PWP";
+            this.B_PWP.Size = new System.Drawing.Size(98, 38);
+            this.B_PWP.TabIndex = 0;
+            this.B_PWP.Text = "Unlock All Public Works Projects";
+            this.B_PWP.UseVisualStyleBackColor = true;
+            this.B_PWP.Click += new System.EventHandler(this.B_PWP_Click);
+            // 
+            // B_Desert
+            // 
+            this.B_Desert.Location = new System.Drawing.Point(6, 59);
+            this.B_Desert.Name = "B_Desert";
+            this.B_Desert.Size = new System.Drawing.Size(98, 38);
+            this.B_Desert.TabIndex = 2;
+            this.B_Desert.Text = "Remove all Grass\r\n(Desertifier)";
+            this.B_Desert.UseVisualStyleBackColor = true;
+            this.B_Desert.Click += new System.EventHandler(this.B_Desert_Click);
+            // 
+            // B_HHD
+            // 
+            this.B_HHD.Location = new System.Drawing.Point(6, 142);
+            this.B_HHD.Name = "B_HHD";
+            this.B_HHD.Size = new System.Drawing.Size(98, 38);
+            this.B_HHD.TabIndex = 52;
+            this.B_HHD.Text = "Unlock HHD Content";
+            this.B_HHD.UseVisualStyleBackColor = true;
+            this.B_HHD.Click += new System.EventHandler(this.B_HHD_Click);
+            // 
+            // groupBox28
+            // 
+            this.groupBox28.Controls.Add(this.TB_TownName);
+            this.groupBox28.Controls.Add(this.CB_NativeFruit);
+            this.groupBox28.Controls.Add(this.L_TrainStationColor);
+            this.groupBox28.Controls.Add(this.L_NativeFruit);
+            this.groupBox28.Controls.Add(this.CB_TrainStationColor);
+            this.groupBox28.Controls.Add(this.L_TownHallColor);
+            this.groupBox28.Controls.Add(this.CB_TownHallColor);
+            this.groupBox28.Controls.Add(this.L_GrassShape);
+            this.groupBox28.Controls.Add(this.CB_GrassShape);
+            this.groupBox28.Controls.Add(this.L_TownName);
+            this.groupBox28.Location = new System.Drawing.Point(353, 0);
+            this.groupBox28.Name = "groupBox28";
+            this.groupBox28.Size = new System.Drawing.Size(247, 145);
+            this.groupBox28.TabIndex = 54;
+            this.groupBox28.TabStop = false;
+            this.groupBox28.Text = "Town Info";
+            // 
+            // TB_TownName
+            // 
+            this.TB_TownName.Location = new System.Drawing.Point(120, 14);
+            this.TB_TownName.MaxLength = 9;
+            this.TB_TownName.Name = "TB_TownName";
+            this.TB_TownName.Size = new System.Drawing.Size(121, 20);
+            this.TB_TownName.TabIndex = 17;
+            this.TB_TownName.TextChanged += new System.EventHandler(this.changeTownName);
+            // 
+            // CB_NativeFruit
+            // 
+            this.CB_NativeFruit.FormattingEnabled = true;
+            this.CB_NativeFruit.Items.AddRange(new object[] {
+            "(None)",
+            "Apple",
+            "Orange",
+            "Pear",
+            "Peach",
+            "Cherry",
+            "Coconut*",
+            "Durian*",
+            "Lemon*",
+            "Lychee*",
+            "Mango*",
+            "Persimmon*",
+            "Banana*"});
+            this.CB_NativeFruit.Location = new System.Drawing.Point(120, 40);
+            this.CB_NativeFruit.Name = "CB_NativeFruit";
+            this.CB_NativeFruit.Size = new System.Drawing.Size(121, 21);
+            this.CB_NativeFruit.TabIndex = 27;
+            // 
+            // L_TrainStationColor
+            // 
+            this.L_TrainStationColor.Location = new System.Drawing.Point(14, 119);
+            this.L_TrainStationColor.Name = "L_TrainStationColor";
+            this.L_TrainStationColor.Size = new System.Drawing.Size(100, 23);
+            this.L_TrainStationColor.TabIndex = 26;
+            this.L_TrainStationColor.Text = "Train Station Color:";
+            this.L_TrainStationColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_NativeFruit
+            // 
+            this.L_NativeFruit.Location = new System.Drawing.Point(14, 38);
+            this.L_NativeFruit.Name = "L_NativeFruit";
+            this.L_NativeFruit.Size = new System.Drawing.Size(100, 23);
+            this.L_NativeFruit.TabIndex = 28;
+            this.L_NativeFruit.Text = "Native Fruit:";
+            this.L_NativeFruit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_TrainStationColor
+            // 
+            this.CB_TrainStationColor.FormattingEnabled = true;
+            this.CB_TrainStationColor.Items.AddRange(new object[] {
+            "Red",
+            "Green",
+            "Blue",
+            "Brown"});
+            this.CB_TrainStationColor.Location = new System.Drawing.Point(120, 121);
+            this.CB_TrainStationColor.Name = "CB_TrainStationColor";
+            this.CB_TrainStationColor.Size = new System.Drawing.Size(121, 21);
+            this.CB_TrainStationColor.TabIndex = 25;
+            // 
+            // L_TownHallColor
+            // 
+            this.L_TownHallColor.Location = new System.Drawing.Point(14, 92);
+            this.L_TownHallColor.Name = "L_TownHallColor";
+            this.L_TownHallColor.Size = new System.Drawing.Size(100, 23);
+            this.L_TownHallColor.TabIndex = 24;
+            this.L_TownHallColor.Text = "Town Hall Color:";
+            this.L_TownHallColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_TownHallColor
+            // 
+            this.CB_TownHallColor.FormattingEnabled = true;
+            this.CB_TownHallColor.Items.AddRange(new object[] {
+            "Gray",
+            "Brown",
+            "Green",
+            "Blue"});
+            this.CB_TownHallColor.Location = new System.Drawing.Point(120, 94);
+            this.CB_TownHallColor.Name = "CB_TownHallColor";
+            this.CB_TownHallColor.Size = new System.Drawing.Size(121, 21);
+            this.CB_TownHallColor.TabIndex = 23;
+            // 
+            // L_GrassShape
+            // 
+            this.L_GrassShape.Location = new System.Drawing.Point(14, 65);
+            this.L_GrassShape.Name = "L_GrassShape";
+            this.L_GrassShape.Size = new System.Drawing.Size(100, 23);
+            this.L_GrassShape.TabIndex = 22;
+            this.L_GrassShape.Text = "Grass Shape:";
+            this.L_GrassShape.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CB_GrassShape
+            // 
+            this.CB_GrassShape.FormattingEnabled = true;
+            this.CB_GrassShape.Items.AddRange(new object[] {
+            "Triangle (Square)",
+            "Circle (Star)",
+            "Square (Circle)"});
+            this.CB_GrassShape.Location = new System.Drawing.Point(120, 67);
+            this.CB_GrassShape.Name = "CB_GrassShape";
+            this.CB_GrassShape.Size = new System.Drawing.Size(121, 21);
+            this.CB_GrassShape.TabIndex = 21;
+            // 
+            // L_TownName
+            // 
+            this.L_TownName.Location = new System.Drawing.Point(14, 11);
+            this.L_TownName.Name = "L_TownName";
+            this.L_TownName.Size = new System.Drawing.Size(100, 23);
+            this.L_TownName.TabIndex = 18;
+            this.L_TownName.Text = "Town Name:";
+            this.L_TownName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // groupBox27
+            // 
+            this.groupBox27.Controls.Add(this.NUD_Days);
+            this.groupBox27.Controls.Add(this.L_HoursPlayed);
+            this.groupBox27.Controls.Add(this.L_MinutesPlayed);
+            this.groupBox27.Controls.Add(this.L_SecondsPlayed);
+            this.groupBox27.Controls.Add(this.L_OverallDays);
+            this.groupBox27.Controls.Add(this.L_DaysPlayed);
+            this.groupBox27.Controls.Add(this.NUD_Seconds);
+            this.groupBox27.Controls.Add(this.NUD_Minutes);
+            this.groupBox27.Controls.Add(this.NUD_OverallDays);
+            this.groupBox27.Controls.Add(this.NUD_Hours);
+            this.groupBox27.Location = new System.Drawing.Point(323, 147);
+            this.groupBox27.Name = "groupBox27";
+            this.groupBox27.Size = new System.Drawing.Size(143, 156);
+            this.groupBox27.TabIndex = 53;
+            this.groupBox27.TabStop = false;
+            this.groupBox27.Text = "Play Time";
+            // 
+            // NUD_Days
+            // 
+            this.NUD_Days.Location = new System.Drawing.Point(81, 19);
+            this.NUD_Days.Maximum = new decimal(new int[] {
+            25000,
+            0,
+            0,
+            0});
+            this.NUD_Days.Name = "NUD_Days";
+            this.NUD_Days.Size = new System.Drawing.Size(52, 20);
+            this.NUD_Days.TabIndex = 45;
+            this.NUD_Days.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
+            // L_HoursPlayed
+            // 
+            this.L_HoursPlayed.Location = new System.Drawing.Point(2, 42);
+            this.L_HoursPlayed.Name = "L_HoursPlayed";
+            this.L_HoursPlayed.Size = new System.Drawing.Size(73, 23);
+            this.L_HoursPlayed.TabIndex = 32;
+            this.L_HoursPlayed.Text = "Hours:";
+            this.L_HoursPlayed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_MinutesPlayed
+            // 
+            this.L_MinutesPlayed.Location = new System.Drawing.Point(5, 68);
+            this.L_MinutesPlayed.Name = "L_MinutesPlayed";
+            this.L_MinutesPlayed.Size = new System.Drawing.Size(70, 23);
+            this.L_MinutesPlayed.TabIndex = 34;
+            this.L_MinutesPlayed.Text = "Minutes:";
+            this.L_MinutesPlayed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_SecondsPlayed
+            // 
+            this.L_SecondsPlayed.Location = new System.Drawing.Point(2, 94);
+            this.L_SecondsPlayed.Name = "L_SecondsPlayed";
+            this.L_SecondsPlayed.Size = new System.Drawing.Size(73, 23);
+            this.L_SecondsPlayed.TabIndex = 36;
+            this.L_SecondsPlayed.Text = "Seconds:";
+            this.L_SecondsPlayed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_OverallDays
+            // 
+            this.L_OverallDays.Location = new System.Drawing.Point(-1, 126);
+            this.L_OverallDays.Name = "L_OverallDays";
+            this.L_OverallDays.Size = new System.Drawing.Size(76, 23);
+            this.L_OverallDays.TabIndex = 38;
+            this.L_OverallDays.Text = "Overall Days:";
+            this.L_OverallDays.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // L_DaysPlayed
+            // 
+            this.L_DaysPlayed.Location = new System.Drawing.Point(2, 16);
+            this.L_DaysPlayed.Name = "L_DaysPlayed";
+            this.L_DaysPlayed.Size = new System.Drawing.Size(73, 23);
+            this.L_DaysPlayed.TabIndex = 40;
+            this.L_DaysPlayed.Text = "Days:";
+            this.L_DaysPlayed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // NUD_Seconds
+            // 
+            this.NUD_Seconds.Location = new System.Drawing.Point(81, 97);
+            this.NUD_Seconds.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.NUD_Seconds.Name = "NUD_Seconds";
+            this.NUD_Seconds.Size = new System.Drawing.Size(35, 20);
+            this.NUD_Seconds.TabIndex = 42;
+            this.NUD_Seconds.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // NUD_Minutes
+            // 
+            this.NUD_Minutes.Location = new System.Drawing.Point(81, 71);
+            this.NUD_Minutes.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.NUD_Minutes.Name = "NUD_Minutes";
+            this.NUD_Minutes.Size = new System.Drawing.Size(35, 20);
+            this.NUD_Minutes.TabIndex = 43;
+            this.NUD_Minutes.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // NUD_OverallDays
+            // 
+            this.NUD_OverallDays.Location = new System.Drawing.Point(81, 129);
+            this.NUD_OverallDays.Maximum = new decimal(new int[] {
+            25000,
+            0,
+            0,
+            0});
+            this.NUD_OverallDays.Name = "NUD_OverallDays";
+            this.NUD_OverallDays.Size = new System.Drawing.Size(52, 20);
+            this.NUD_OverallDays.TabIndex = 46;
+            this.NUD_OverallDays.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
+            // NUD_Hours
+            // 
+            this.NUD_Hours.Location = new System.Drawing.Point(81, 45);
+            this.NUD_Hours.Maximum = new decimal(new int[] {
+            24,
+            0,
+            0,
+            0});
+            this.NUD_Hours.Name = "NUD_Hours";
+            this.NUD_Hours.Size = new System.Drawing.Size(35, 20);
+            this.NUD_Hours.TabIndex = 44;
+            this.NUD_Hours.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
             // NUD_TreeSize
             // 
             this.NUD_TreeSize.Location = new System.Drawing.Point(387, 311);
@@ -5295,282 +5634,12 @@
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dropclick);
             // 
-            // NUD_OverallDays
-            // 
-            this.NUD_OverallDays.Location = new System.Drawing.Point(81, 129);
-            this.NUD_OverallDays.Maximum = new decimal(new int[] {
-            25000,
-            0,
-            0,
-            0});
-            this.NUD_OverallDays.Name = "NUD_OverallDays";
-            this.NUD_OverallDays.Size = new System.Drawing.Size(52, 20);
-            this.NUD_OverallDays.TabIndex = 46;
-            this.NUD_OverallDays.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            // 
-            // B_Grass
-            // 
-            this.B_Grass.Location = new System.Drawing.Point(6, 18);
-            this.B_Grass.Name = "B_Grass";
-            this.B_Grass.Size = new System.Drawing.Size(98, 38);
-            this.B_Grass.TabIndex = 1;
-            this.B_Grass.Text = "Re-seed all Grass\r\n(Grassifier)";
-            this.B_Grass.UseVisualStyleBackColor = true;
-            this.B_Grass.Click += new System.EventHandler(this.B_Grass_Click);
-            // 
-            // NUD_Days
-            // 
-            this.NUD_Days.Location = new System.Drawing.Point(81, 19);
-            this.NUD_Days.Maximum = new decimal(new int[] {
-            25000,
-            0,
-            0,
-            0});
-            this.NUD_Days.Name = "NUD_Days";
-            this.NUD_Days.Size = new System.Drawing.Size(52, 20);
-            this.NUD_Days.TabIndex = 45;
-            this.NUD_Days.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            // 
-            // B_Desert
-            // 
-            this.B_Desert.Location = new System.Drawing.Point(6, 59);
-            this.B_Desert.Name = "B_Desert";
-            this.B_Desert.Size = new System.Drawing.Size(98, 38);
-            this.B_Desert.TabIndex = 2;
-            this.B_Desert.Text = "Remove all Grass\r\n(Desertifier)";
-            this.B_Desert.UseVisualStyleBackColor = true;
-            this.B_Desert.Click += new System.EventHandler(this.B_Desert_Click);
-            // 
-            // NUD_Hours
-            // 
-            this.NUD_Hours.Location = new System.Drawing.Point(81, 45);
-            this.NUD_Hours.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.NUD_Hours.Name = "NUD_Hours";
-            this.NUD_Hours.Size = new System.Drawing.Size(35, 20);
-            this.NUD_Hours.TabIndex = 44;
-            this.NUD_Hours.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // B_PWP
-            // 
-            this.B_PWP.Location = new System.Drawing.Point(6, 101);
-            this.B_PWP.Name = "B_PWP";
-            this.B_PWP.Size = new System.Drawing.Size(98, 38);
-            this.B_PWP.TabIndex = 0;
-            this.B_PWP.Text = "Unlock All Public Works Projects";
-            this.B_PWP.UseVisualStyleBackColor = true;
-            this.B_PWP.Click += new System.EventHandler(this.B_PWP_Click);
-            // 
-            // NUD_Minutes
-            // 
-            this.NUD_Minutes.Location = new System.Drawing.Point(81, 71);
-            this.NUD_Minutes.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.NUD_Minutes.Name = "NUD_Minutes";
-            this.NUD_Minutes.Size = new System.Drawing.Size(35, 20);
-            this.NUD_Minutes.TabIndex = 43;
-            this.NUD_Minutes.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // TB_TownName
-            // 
-            this.TB_TownName.Location = new System.Drawing.Point(120, 14);
-            this.TB_TownName.MaxLength = 9;
-            this.TB_TownName.Name = "TB_TownName";
-            this.TB_TownName.Size = new System.Drawing.Size(121, 20);
-            this.TB_TownName.TabIndex = 17;
-            this.TB_TownName.TextChanged += new System.EventHandler(this.changeTownName);
-            // 
-            // NUD_Seconds
-            // 
-            this.NUD_Seconds.Location = new System.Drawing.Point(81, 97);
-            this.NUD_Seconds.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.NUD_Seconds.Name = "NUD_Seconds";
-            this.NUD_Seconds.Size = new System.Drawing.Size(35, 20);
-            this.NUD_Seconds.TabIndex = 42;
-            this.NUD_Seconds.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // L_TownName
-            // 
-            this.L_TownName.Location = new System.Drawing.Point(14, 11);
-            this.L_TownName.Name = "L_TownName";
-            this.L_TownName.Size = new System.Drawing.Size(100, 23);
-            this.L_TownName.TabIndex = 18;
-            this.L_TownName.Text = "Town Name:";
-            this.L_TownName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // L_DaysPlayed
-            // 
-            this.L_DaysPlayed.Location = new System.Drawing.Point(2, 16);
-            this.L_DaysPlayed.Name = "L_DaysPlayed";
-            this.L_DaysPlayed.Size = new System.Drawing.Size(73, 23);
-            this.L_DaysPlayed.TabIndex = 40;
-            this.L_DaysPlayed.Text = "Days:";
-            this.L_DaysPlayed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CB_GrassShape
-            // 
-            this.CB_GrassShape.FormattingEnabled = true;
-            this.CB_GrassShape.Items.AddRange(new object[] {
-            "Triangle (Square)",
-            "Circle (Star)",
-            "Square (Circle)"});
-            this.CB_GrassShape.Location = new System.Drawing.Point(120, 67);
-            this.CB_GrassShape.Name = "CB_GrassShape";
-            this.CB_GrassShape.Size = new System.Drawing.Size(121, 21);
-            this.CB_GrassShape.TabIndex = 21;
-            // 
-            // L_OverallDays
-            // 
-            this.L_OverallDays.Location = new System.Drawing.Point(-1, 126);
-            this.L_OverallDays.Name = "L_OverallDays";
-            this.L_OverallDays.Size = new System.Drawing.Size(76, 23);
-            this.L_OverallDays.TabIndex = 38;
-            this.L_OverallDays.Text = "Overall Days:";
-            this.L_OverallDays.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // L_GrassShape
-            // 
-            this.L_GrassShape.Location = new System.Drawing.Point(14, 65);
-            this.L_GrassShape.Name = "L_GrassShape";
-            this.L_GrassShape.Size = new System.Drawing.Size(100, 23);
-            this.L_GrassShape.TabIndex = 22;
-            this.L_GrassShape.Text = "Grass Shape:";
-            this.L_GrassShape.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // L_SecondsPlayed
-            // 
-            this.L_SecondsPlayed.Location = new System.Drawing.Point(2, 94);
-            this.L_SecondsPlayed.Name = "L_SecondsPlayed";
-            this.L_SecondsPlayed.Size = new System.Drawing.Size(73, 23);
-            this.L_SecondsPlayed.TabIndex = 36;
-            this.L_SecondsPlayed.Text = "Seconds:";
-            this.L_SecondsPlayed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CB_TownHallColor
-            // 
-            this.CB_TownHallColor.FormattingEnabled = true;
-            this.CB_TownHallColor.Items.AddRange(new object[] {
-            "Gray",
-            "Brown",
-            "Green",
-            "Blue"});
-            this.CB_TownHallColor.Location = new System.Drawing.Point(120, 94);
-            this.CB_TownHallColor.Name = "CB_TownHallColor";
-            this.CB_TownHallColor.Size = new System.Drawing.Size(121, 21);
-            this.CB_TownHallColor.TabIndex = 23;
-            // 
-            // L_MinutesPlayed
-            // 
-            this.L_MinutesPlayed.Location = new System.Drawing.Point(5, 68);
-            this.L_MinutesPlayed.Name = "L_MinutesPlayed";
-            this.L_MinutesPlayed.Size = new System.Drawing.Size(70, 23);
-            this.L_MinutesPlayed.TabIndex = 34;
-            this.L_MinutesPlayed.Text = "Minutes:";
-            this.L_MinutesPlayed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // L_TownHallColor
-            // 
-            this.L_TownHallColor.Location = new System.Drawing.Point(14, 92);
-            this.L_TownHallColor.Name = "L_TownHallColor";
-            this.L_TownHallColor.Size = new System.Drawing.Size(100, 23);
-            this.L_TownHallColor.TabIndex = 24;
-            this.L_TownHallColor.Text = "Town Hall Color:";
-            this.L_TownHallColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // L_HoursPlayed
-            // 
-            this.L_HoursPlayed.Location = new System.Drawing.Point(2, 42);
-            this.L_HoursPlayed.Name = "L_HoursPlayed";
-            this.L_HoursPlayed.Size = new System.Drawing.Size(73, 23);
-            this.L_HoursPlayed.TabIndex = 32;
-            this.L_HoursPlayed.Text = "Hours:";
-            this.L_HoursPlayed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CB_TrainStationColor
-            // 
-            this.CB_TrainStationColor.FormattingEnabled = true;
-            this.CB_TrainStationColor.Items.AddRange(new object[] {
-            "Red",
-            "Green",
-            "Blue",
-            "Brown"});
-            this.CB_TrainStationColor.Location = new System.Drawing.Point(120, 121);
-            this.CB_TrainStationColor.Name = "CB_TrainStationColor";
-            this.CB_TrainStationColor.Size = new System.Drawing.Size(121, 21);
-            this.CB_TrainStationColor.TabIndex = 25;
-            // 
-            // L_NativeFruit
-            // 
-            this.L_NativeFruit.Location = new System.Drawing.Point(14, 38);
-            this.L_NativeFruit.Name = "L_NativeFruit";
-            this.L_NativeFruit.Size = new System.Drawing.Size(100, 23);
-            this.L_NativeFruit.TabIndex = 28;
-            this.L_NativeFruit.Text = "Native Fruit:";
-            this.L_NativeFruit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // L_TrainStationColor
-            // 
-            this.L_TrainStationColor.Location = new System.Drawing.Point(14, 119);
-            this.L_TrainStationColor.Name = "L_TrainStationColor";
-            this.L_TrainStationColor.Size = new System.Drawing.Size(100, 23);
-            this.L_TrainStationColor.TabIndex = 26;
-            this.L_TrainStationColor.Text = "Train Station Color:";
-            this.L_TrainStationColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // CB_NativeFruit
-            // 
-            this.CB_NativeFruit.FormattingEnabled = true;
-            this.CB_NativeFruit.Items.AddRange(new object[] {
-            "(None)",
-            "Apple",
-            "Orange",
-            "Pear",
-            "Peach",
-            "Cherry",
-            "Coconut*",
-            "Durian*",
-            "Lemon*",
-            "Lychee*",
-            "Mango*",
-            "Persimmon*",
-            "Banana*"});
-            this.CB_NativeFruit.Location = new System.Drawing.Point(120, 40);
-            this.CB_NativeFruit.Name = "CB_NativeFruit";
-            this.CB_NativeFruit.Size = new System.Drawing.Size(121, 21);
-            this.CB_NativeFruit.TabIndex = 27;
-            // 
             // tabPage11
             // 
+            this.tabPage11.Controls.Add(this.label61);
+            this.tabPage11.Controls.Add(this.label60);
+            this.tabPage11.Controls.Add(this.label59);
+            this.tabPage11.Controls.Add(this.label58);
             this.tabPage11.Controls.Add(this.label43);
             this.tabPage11.Controls.Add(this.label44);
             this.tabPage11.Controls.Add(this.label42);
@@ -5593,7 +5662,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(456, 255);
+            this.label43.Location = new System.Drawing.Point(322, 255);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(36, 13);
             this.label43.TabIndex = 24;
@@ -5602,7 +5671,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(122, 255);
+            this.label44.Location = new System.Drawing.Point(3, 255);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(26, 13);
             this.label44.TabIndex = 23;
@@ -5611,7 +5680,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(458, 4);
+            this.label42.Location = new System.Drawing.Point(324, 4);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(20, 13);
             this.label42.TabIndex = 22;
@@ -5620,7 +5689,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(122, 4);
+            this.label41.Location = new System.Drawing.Point(3, 4);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(38, 13);
             this.label41.TabIndex = 21;
@@ -6763,21 +6832,21 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -6853,66 +6922,41 @@
             this.CB_Flag.TabIndex = 17;
             this.CB_Flag.SelectedIndexChanged += new System.EventHandler(this.CB_Flag_SelectedIndexChanged);
             // 
-            // B_HHD
+            // label58
             // 
-            this.B_HHD.Location = new System.Drawing.Point(6, 142);
-            this.B_HHD.Name = "B_HHD";
-            this.B_HHD.Size = new System.Drawing.Size(98, 38);
-            this.B_HHD.TabIndex = 52;
-            this.B_HHD.Text = "Unlock HHD Content";
-            this.B_HHD.UseVisualStyleBackColor = true;
-            this.B_HHD.Click += new System.EventHandler(this.B_HHD_Click);
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(270, 4);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(40, 13);
+            this.label58.TabIndex = 25;
+            this.label58.Text = "Counts";
             // 
-            // groupBox27
+            // label59
             // 
-            this.groupBox27.Controls.Add(this.NUD_Days);
-            this.groupBox27.Controls.Add(this.L_HoursPlayed);
-            this.groupBox27.Controls.Add(this.L_MinutesPlayed);
-            this.groupBox27.Controls.Add(this.L_SecondsPlayed);
-            this.groupBox27.Controls.Add(this.L_OverallDays);
-            this.groupBox27.Controls.Add(this.L_DaysPlayed);
-            this.groupBox27.Controls.Add(this.NUD_Seconds);
-            this.groupBox27.Controls.Add(this.NUD_Minutes);
-            this.groupBox27.Controls.Add(this.NUD_OverallDays);
-            this.groupBox27.Controls.Add(this.NUD_Hours);
-            this.groupBox27.Location = new System.Drawing.Point(323, 147);
-            this.groupBox27.Name = "groupBox27";
-            this.groupBox27.Size = new System.Drawing.Size(143, 156);
-            this.groupBox27.TabIndex = 53;
-            this.groupBox27.TabStop = false;
-            this.groupBox27.Text = "Play Time";
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(589, 4);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(40, 13);
+            this.label59.TabIndex = 26;
+            this.label59.Text = "Counts";
             // 
-            // groupBox28
+            // label60
             // 
-            this.groupBox28.Controls.Add(this.TB_TownName);
-            this.groupBox28.Controls.Add(this.CB_NativeFruit);
-            this.groupBox28.Controls.Add(this.L_TrainStationColor);
-            this.groupBox28.Controls.Add(this.L_NativeFruit);
-            this.groupBox28.Controls.Add(this.CB_TrainStationColor);
-            this.groupBox28.Controls.Add(this.L_TownHallColor);
-            this.groupBox28.Controls.Add(this.CB_TownHallColor);
-            this.groupBox28.Controls.Add(this.L_GrassShape);
-            this.groupBox28.Controls.Add(this.CB_GrassShape);
-            this.groupBox28.Controls.Add(this.L_TownName);
-            this.groupBox28.Location = new System.Drawing.Point(353, 0);
-            this.groupBox28.Name = "groupBox28";
-            this.groupBox28.Size = new System.Drawing.Size(247, 145);
-            this.groupBox28.TabIndex = 54;
-            this.groupBox28.TabStop = false;
-            this.groupBox28.Text = "Town Info";
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(270, 255);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(40, 13);
+            this.label60.TabIndex = 27;
+            this.label60.Text = "Counts";
             // 
-            // groupBox29
+            // label61
             // 
-            this.groupBox29.Controls.Add(this.B_Grass);
-            this.groupBox29.Controls.Add(this.B_PWP);
-            this.groupBox29.Controls.Add(this.B_Desert);
-            this.groupBox29.Controls.Add(this.B_HHD);
-            this.groupBox29.Location = new System.Drawing.Point(489, 151);
-            this.groupBox29.Name = "groupBox29";
-            this.groupBox29.Size = new System.Drawing.Size(113, 185);
-            this.groupBox29.TabIndex = 55;
-            this.groupBox29.TabStop = false;
-            this.groupBox29.Text = "Town Maintenance";
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(589, 255);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(40, 13);
+            this.label61.TabIndex = 28;
+            this.label61.Text = "Counts";
             // 
             // Garden
             // 
@@ -7132,6 +7176,15 @@
             this.tabControl3.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
+            this.groupBox29.ResumeLayout(false);
+            this.groupBox28.ResumeLayout(false);
+            this.groupBox28.PerformLayout();
+            this.groupBox27.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Days)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Seconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Minutes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_OverallDays)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Hours)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_TreeSize)).EndInit();
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
@@ -7148,11 +7201,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_MonPM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_MonAM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_OverallDays)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_Days)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_Hours)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_Minutes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUD_Seconds)).EndInit();
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
@@ -7230,10 +7278,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox27.ResumeLayout(false);
-            this.groupBox28.ResumeLayout(false);
-            this.groupBox28.PerformLayout();
-            this.groupBox29.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7746,5 +7790,9 @@
         private System.Windows.Forms.GroupBox groupBox29;
         private System.Windows.Forms.GroupBox groupBox28;
         private System.Windows.Forms.GroupBox groupBox27;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
     }
 }
