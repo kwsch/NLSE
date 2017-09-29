@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>*This utility will fix for you dream town savegame dumped with rydog's ACNL NTR Plugin.
+What does it do exactly ?
+
+- Fix invalid savegame checksum
+- Remove all useless info (dream code,  bulletin board, mail from the old savegame, ect...)
+
+Once patched you'll be able to use the savegame with savegame manager tool such as JKSM.</value>
+  </data>
 </root>
