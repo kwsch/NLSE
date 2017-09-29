@@ -531,6 +531,10 @@
             this.CB_Item = new System.Windows.Forms.ComboBox();
             this.Tool_Info = new System.Windows.Forms.ToolTip(this.components);
             this.CB_Flag = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox27 = new System.Windows.Forms.GroupBox();
+            this.groupBox28 = new System.Windows.Forms.GroupBox();
+            this.groupBox29 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -795,6 +799,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.groupBox27.SuspendLayout();
+            this.groupBox28.SuspendLayout();
+            this.groupBox29.SuspendLayout();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -4963,35 +4970,15 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.groupBox29);
+            this.tabPage8.Controls.Add(this.groupBox28);
+            this.tabPage8.Controls.Add(this.groupBox27);
             this.tabPage8.Controls.Add(this.NUD_TreeSize);
             this.tabPage8.Controls.Add(this.label40);
             this.tabPage8.Controls.Add(this.BTN_ImportBuildings);
             this.tabPage8.Controls.Add(this.BTN_ExportBuildings);
             this.tabPage8.Controls.Add(this.groupBox21);
             this.tabPage8.Controls.Add(this.dataGridView1);
-            this.tabPage8.Controls.Add(this.NUD_OverallDays);
-            this.tabPage8.Controls.Add(this.B_Grass);
-            this.tabPage8.Controls.Add(this.NUD_Days);
-            this.tabPage8.Controls.Add(this.B_Desert);
-            this.tabPage8.Controls.Add(this.NUD_Hours);
-            this.tabPage8.Controls.Add(this.B_PWP);
-            this.tabPage8.Controls.Add(this.NUD_Minutes);
-            this.tabPage8.Controls.Add(this.TB_TownName);
-            this.tabPage8.Controls.Add(this.NUD_Seconds);
-            this.tabPage8.Controls.Add(this.L_TownName);
-            this.tabPage8.Controls.Add(this.L_DaysPlayed);
-            this.tabPage8.Controls.Add(this.CB_GrassShape);
-            this.tabPage8.Controls.Add(this.L_OverallDays);
-            this.tabPage8.Controls.Add(this.L_GrassShape);
-            this.tabPage8.Controls.Add(this.L_SecondsPlayed);
-            this.tabPage8.Controls.Add(this.CB_TownHallColor);
-            this.tabPage8.Controls.Add(this.L_MinutesPlayed);
-            this.tabPage8.Controls.Add(this.L_TownHallColor);
-            this.tabPage8.Controls.Add(this.L_HoursPlayed);
-            this.tabPage8.Controls.Add(this.CB_TrainStationColor);
-            this.tabPage8.Controls.Add(this.L_NativeFruit);
-            this.tabPage8.Controls.Add(this.L_TrainStationColor);
-            this.tabPage8.Controls.Add(this.CB_NativeFruit);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
@@ -5002,7 +4989,7 @@
             // 
             // NUD_TreeSize
             // 
-            this.NUD_TreeSize.Location = new System.Drawing.Point(402, 292);
+            this.NUD_TreeSize.Location = new System.Drawing.Point(387, 311);
             this.NUD_TreeSize.Maximum = new decimal(new int[] {
             7,
             0,
@@ -5016,7 +5003,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(341, 295);
+            this.label40.Location = new System.Drawing.Point(326, 314);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(55, 13);
             this.label40.TabIndex = 50;
@@ -5064,16 +5051,16 @@
             this.groupBox21.Controls.Add(this.label20);
             this.groupBox21.Controls.Add(this.label18);
             this.groupBox21.Controls.Add(this.label19);
-            this.groupBox21.Location = new System.Drawing.Point(323, 323);
+            this.groupBox21.Location = new System.Drawing.Point(323, 338);
             this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(306, 193);
+            this.groupBox21.Size = new System.Drawing.Size(306, 178);
             this.groupBox21.TabIndex = 47;
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "Turnip Prices";
             // 
             // NUD_SatPM
             // 
-            this.NUD_SatPM.Location = new System.Drawing.Point(236, 161);
+            this.NUD_SatPM.Location = new System.Drawing.Point(236, 155);
             this.NUD_SatPM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5085,7 +5072,7 @@
             // 
             // NUD_SatAM
             // 
-            this.NUD_SatAM.Location = new System.Drawing.Point(122, 161);
+            this.NUD_SatAM.Location = new System.Drawing.Point(122, 155);
             this.NUD_SatAM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5097,7 +5084,7 @@
             // 
             // NUD_FriPM
             // 
-            this.NUD_FriPM.Location = new System.Drawing.Point(236, 135);
+            this.NUD_FriPM.Location = new System.Drawing.Point(236, 129);
             this.NUD_FriPM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5109,7 +5096,7 @@
             // 
             // NUD_FriAM
             // 
-            this.NUD_FriAM.Location = new System.Drawing.Point(122, 135);
+            this.NUD_FriAM.Location = new System.Drawing.Point(122, 129);
             this.NUD_FriAM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5121,7 +5108,7 @@
             // 
             // NUD_ThursPM
             // 
-            this.NUD_ThursPM.Location = new System.Drawing.Point(236, 109);
+            this.NUD_ThursPM.Location = new System.Drawing.Point(236, 103);
             this.NUD_ThursPM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5133,7 +5120,7 @@
             // 
             // NUD_ThursAM
             // 
-            this.NUD_ThursAM.Location = new System.Drawing.Point(122, 109);
+            this.NUD_ThursAM.Location = new System.Drawing.Point(122, 103);
             this.NUD_ThursAM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5145,7 +5132,7 @@
             // 
             // NUD_WedPM
             // 
-            this.NUD_WedPM.Location = new System.Drawing.Point(236, 83);
+            this.NUD_WedPM.Location = new System.Drawing.Point(236, 77);
             this.NUD_WedPM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5157,7 +5144,7 @@
             // 
             // NUD_WedAM
             // 
-            this.NUD_WedAM.Location = new System.Drawing.Point(122, 83);
+            this.NUD_WedAM.Location = new System.Drawing.Point(122, 77);
             this.NUD_WedAM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5169,7 +5156,7 @@
             // 
             // NUD_TuePM
             // 
-            this.NUD_TuePM.Location = new System.Drawing.Point(236, 57);
+            this.NUD_TuePM.Location = new System.Drawing.Point(236, 51);
             this.NUD_TuePM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5181,7 +5168,7 @@
             // 
             // NUD_TueAM
             // 
-            this.NUD_TueAM.Location = new System.Drawing.Point(122, 57);
+            this.NUD_TueAM.Location = new System.Drawing.Point(122, 51);
             this.NUD_TueAM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5193,7 +5180,7 @@
             // 
             // NUD_MonPM
             // 
-            this.NUD_MonPM.Location = new System.Drawing.Point(236, 31);
+            this.NUD_MonPM.Location = new System.Drawing.Point(236, 25);
             this.NUD_MonPM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5205,7 +5192,7 @@
             // 
             // NUD_MonAM
             // 
-            this.NUD_MonAM.Location = new System.Drawing.Point(122, 31);
+            this.NUD_MonAM.Location = new System.Drawing.Point(122, 25);
             this.NUD_MonAM.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -5218,7 +5205,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(242, 16);
+            this.label23.Location = new System.Drawing.Point(242, 10);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(23, 13);
             this.label23.TabIndex = 7;
@@ -5227,7 +5214,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(129, 16);
+            this.label22.Location = new System.Drawing.Point(129, 10);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(23, 13);
             this.label22.TabIndex = 6;
@@ -5236,7 +5223,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(9, 163);
+            this.label21.Location = new System.Drawing.Point(9, 157);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(49, 13);
             this.label21.TabIndex = 5;
@@ -5245,7 +5232,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(9, 33);
+            this.label16.Location = new System.Drawing.Point(9, 27);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(45, 13);
             this.label16.TabIndex = 0;
@@ -5254,7 +5241,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(9, 59);
+            this.label17.Location = new System.Drawing.Point(9, 53);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(48, 13);
             this.label17.TabIndex = 1;
@@ -5263,7 +5250,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(9, 137);
+            this.label20.Location = new System.Drawing.Point(9, 131);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(35, 13);
             this.label20.TabIndex = 4;
@@ -5272,7 +5259,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(9, 85);
+            this.label18.Location = new System.Drawing.Point(9, 79);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(64, 13);
             this.label18.TabIndex = 2;
@@ -5281,7 +5268,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(9, 111);
+            this.label19.Location = new System.Drawing.Point(9, 105);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(51, 13);
             this.label19.TabIndex = 3;
@@ -5310,7 +5297,7 @@
             // 
             // NUD_OverallDays
             // 
-            this.NUD_OverallDays.Location = new System.Drawing.Point(402, 259);
+            this.NUD_OverallDays.Location = new System.Drawing.Point(81, 129);
             this.NUD_OverallDays.Maximum = new decimal(new int[] {
             25000,
             0,
@@ -5327,7 +5314,7 @@
             // 
             // B_Grass
             // 
-            this.B_Grass.Location = new System.Drawing.Point(483, 173);
+            this.B_Grass.Location = new System.Drawing.Point(6, 18);
             this.B_Grass.Name = "B_Grass";
             this.B_Grass.Size = new System.Drawing.Size(98, 38);
             this.B_Grass.TabIndex = 1;
@@ -5337,7 +5324,7 @@
             // 
             // NUD_Days
             // 
-            this.NUD_Days.Location = new System.Drawing.Point(402, 149);
+            this.NUD_Days.Location = new System.Drawing.Point(81, 19);
             this.NUD_Days.Maximum = new decimal(new int[] {
             25000,
             0,
@@ -5354,7 +5341,7 @@
             // 
             // B_Desert
             // 
-            this.B_Desert.Location = new System.Drawing.Point(483, 217);
+            this.B_Desert.Location = new System.Drawing.Point(6, 59);
             this.B_Desert.Name = "B_Desert";
             this.B_Desert.Size = new System.Drawing.Size(98, 38);
             this.B_Desert.TabIndex = 2;
@@ -5364,7 +5351,7 @@
             // 
             // NUD_Hours
             // 
-            this.NUD_Hours.Location = new System.Drawing.Point(402, 175);
+            this.NUD_Hours.Location = new System.Drawing.Point(81, 45);
             this.NUD_Hours.Maximum = new decimal(new int[] {
             24,
             0,
@@ -5381,7 +5368,7 @@
             // 
             // B_PWP
             // 
-            this.B_PWP.Location = new System.Drawing.Point(483, 282);
+            this.B_PWP.Location = new System.Drawing.Point(6, 101);
             this.B_PWP.Name = "B_PWP";
             this.B_PWP.Size = new System.Drawing.Size(98, 38);
             this.B_PWP.TabIndex = 0;
@@ -5391,7 +5378,7 @@
             // 
             // NUD_Minutes
             // 
-            this.NUD_Minutes.Location = new System.Drawing.Point(402, 201);
+            this.NUD_Minutes.Location = new System.Drawing.Point(81, 71);
             this.NUD_Minutes.Maximum = new decimal(new int[] {
             60,
             0,
@@ -5408,7 +5395,7 @@
             // 
             // TB_TownName
             // 
-            this.TB_TownName.Location = new System.Drawing.Point(455, 15);
+            this.TB_TownName.Location = new System.Drawing.Point(120, 14);
             this.TB_TownName.MaxLength = 9;
             this.TB_TownName.Name = "TB_TownName";
             this.TB_TownName.Size = new System.Drawing.Size(121, 20);
@@ -5417,7 +5404,7 @@
             // 
             // NUD_Seconds
             // 
-            this.NUD_Seconds.Location = new System.Drawing.Point(402, 227);
+            this.NUD_Seconds.Location = new System.Drawing.Point(81, 97);
             this.NUD_Seconds.Maximum = new decimal(new int[] {
             60,
             0,
@@ -5434,7 +5421,7 @@
             // 
             // L_TownName
             // 
-            this.L_TownName.Location = new System.Drawing.Point(349, 12);
+            this.L_TownName.Location = new System.Drawing.Point(14, 11);
             this.L_TownName.Name = "L_TownName";
             this.L_TownName.Size = new System.Drawing.Size(100, 23);
             this.L_TownName.TabIndex = 18;
@@ -5443,7 +5430,7 @@
             // 
             // L_DaysPlayed
             // 
-            this.L_DaysPlayed.Location = new System.Drawing.Point(323, 146);
+            this.L_DaysPlayed.Location = new System.Drawing.Point(2, 16);
             this.L_DaysPlayed.Name = "L_DaysPlayed";
             this.L_DaysPlayed.Size = new System.Drawing.Size(73, 23);
             this.L_DaysPlayed.TabIndex = 40;
@@ -5457,14 +5444,14 @@
             "Triangle (Square)",
             "Circle (Star)",
             "Square (Circle)"});
-            this.CB_GrassShape.Location = new System.Drawing.Point(455, 68);
+            this.CB_GrassShape.Location = new System.Drawing.Point(120, 67);
             this.CB_GrassShape.Name = "CB_GrassShape";
             this.CB_GrassShape.Size = new System.Drawing.Size(121, 21);
             this.CB_GrassShape.TabIndex = 21;
             // 
             // L_OverallDays
             // 
-            this.L_OverallDays.Location = new System.Drawing.Point(320, 256);
+            this.L_OverallDays.Location = new System.Drawing.Point(-1, 126);
             this.L_OverallDays.Name = "L_OverallDays";
             this.L_OverallDays.Size = new System.Drawing.Size(76, 23);
             this.L_OverallDays.TabIndex = 38;
@@ -5473,7 +5460,7 @@
             // 
             // L_GrassShape
             // 
-            this.L_GrassShape.Location = new System.Drawing.Point(349, 66);
+            this.L_GrassShape.Location = new System.Drawing.Point(14, 65);
             this.L_GrassShape.Name = "L_GrassShape";
             this.L_GrassShape.Size = new System.Drawing.Size(100, 23);
             this.L_GrassShape.TabIndex = 22;
@@ -5482,7 +5469,7 @@
             // 
             // L_SecondsPlayed
             // 
-            this.L_SecondsPlayed.Location = new System.Drawing.Point(323, 224);
+            this.L_SecondsPlayed.Location = new System.Drawing.Point(2, 94);
             this.L_SecondsPlayed.Name = "L_SecondsPlayed";
             this.L_SecondsPlayed.Size = new System.Drawing.Size(73, 23);
             this.L_SecondsPlayed.TabIndex = 36;
@@ -5497,14 +5484,14 @@
             "Brown",
             "Green",
             "Blue"});
-            this.CB_TownHallColor.Location = new System.Drawing.Point(455, 95);
+            this.CB_TownHallColor.Location = new System.Drawing.Point(120, 94);
             this.CB_TownHallColor.Name = "CB_TownHallColor";
             this.CB_TownHallColor.Size = new System.Drawing.Size(121, 21);
             this.CB_TownHallColor.TabIndex = 23;
             // 
             // L_MinutesPlayed
             // 
-            this.L_MinutesPlayed.Location = new System.Drawing.Point(326, 198);
+            this.L_MinutesPlayed.Location = new System.Drawing.Point(5, 68);
             this.L_MinutesPlayed.Name = "L_MinutesPlayed";
             this.L_MinutesPlayed.Size = new System.Drawing.Size(70, 23);
             this.L_MinutesPlayed.TabIndex = 34;
@@ -5513,7 +5500,7 @@
             // 
             // L_TownHallColor
             // 
-            this.L_TownHallColor.Location = new System.Drawing.Point(349, 93);
+            this.L_TownHallColor.Location = new System.Drawing.Point(14, 92);
             this.L_TownHallColor.Name = "L_TownHallColor";
             this.L_TownHallColor.Size = new System.Drawing.Size(100, 23);
             this.L_TownHallColor.TabIndex = 24;
@@ -5522,7 +5509,7 @@
             // 
             // L_HoursPlayed
             // 
-            this.L_HoursPlayed.Location = new System.Drawing.Point(323, 172);
+            this.L_HoursPlayed.Location = new System.Drawing.Point(2, 42);
             this.L_HoursPlayed.Name = "L_HoursPlayed";
             this.L_HoursPlayed.Size = new System.Drawing.Size(73, 23);
             this.L_HoursPlayed.TabIndex = 32;
@@ -5537,14 +5524,14 @@
             "Green",
             "Blue",
             "Brown"});
-            this.CB_TrainStationColor.Location = new System.Drawing.Point(455, 122);
+            this.CB_TrainStationColor.Location = new System.Drawing.Point(120, 121);
             this.CB_TrainStationColor.Name = "CB_TrainStationColor";
             this.CB_TrainStationColor.Size = new System.Drawing.Size(121, 21);
             this.CB_TrainStationColor.TabIndex = 25;
             // 
             // L_NativeFruit
             // 
-            this.L_NativeFruit.Location = new System.Drawing.Point(349, 39);
+            this.L_NativeFruit.Location = new System.Drawing.Point(14, 38);
             this.L_NativeFruit.Name = "L_NativeFruit";
             this.L_NativeFruit.Size = new System.Drawing.Size(100, 23);
             this.L_NativeFruit.TabIndex = 28;
@@ -5553,7 +5540,7 @@
             // 
             // L_TrainStationColor
             // 
-            this.L_TrainStationColor.Location = new System.Drawing.Point(349, 120);
+            this.L_TrainStationColor.Location = new System.Drawing.Point(14, 119);
             this.L_TrainStationColor.Name = "L_TrainStationColor";
             this.L_TrainStationColor.Size = new System.Drawing.Size(100, 23);
             this.L_TrainStationColor.TabIndex = 26;
@@ -5577,7 +5564,7 @@
             "Mango*",
             "Persimmon*",
             "Banana*"});
-            this.CB_NativeFruit.Location = new System.Drawing.Point(455, 41);
+            this.CB_NativeFruit.Location = new System.Drawing.Point(120, 40);
             this.CB_NativeFruit.Name = "CB_NativeFruit";
             this.CB_NativeFruit.Size = new System.Drawing.Size(121, 21);
             this.CB_NativeFruit.TabIndex = 27;
@@ -6866,6 +6853,66 @@
             this.CB_Flag.TabIndex = 17;
             this.CB_Flag.SelectedIndexChanged += new System.EventHandler(this.CB_Flag_SelectedIndexChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 142);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 38);
+            this.button1.TabIndex = 52;
+            this.button1.Text = "Unlock HHD Content";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox27
+            // 
+            this.groupBox27.Controls.Add(this.NUD_Days);
+            this.groupBox27.Controls.Add(this.L_HoursPlayed);
+            this.groupBox27.Controls.Add(this.L_MinutesPlayed);
+            this.groupBox27.Controls.Add(this.L_SecondsPlayed);
+            this.groupBox27.Controls.Add(this.L_OverallDays);
+            this.groupBox27.Controls.Add(this.L_DaysPlayed);
+            this.groupBox27.Controls.Add(this.NUD_Seconds);
+            this.groupBox27.Controls.Add(this.NUD_Minutes);
+            this.groupBox27.Controls.Add(this.NUD_OverallDays);
+            this.groupBox27.Controls.Add(this.NUD_Hours);
+            this.groupBox27.Location = new System.Drawing.Point(323, 147);
+            this.groupBox27.Name = "groupBox27";
+            this.groupBox27.Size = new System.Drawing.Size(143, 156);
+            this.groupBox27.TabIndex = 53;
+            this.groupBox27.TabStop = false;
+            this.groupBox27.Text = "Play Time";
+            // 
+            // groupBox28
+            // 
+            this.groupBox28.Controls.Add(this.TB_TownName);
+            this.groupBox28.Controls.Add(this.CB_NativeFruit);
+            this.groupBox28.Controls.Add(this.L_TrainStationColor);
+            this.groupBox28.Controls.Add(this.L_NativeFruit);
+            this.groupBox28.Controls.Add(this.CB_TrainStationColor);
+            this.groupBox28.Controls.Add(this.L_TownHallColor);
+            this.groupBox28.Controls.Add(this.CB_TownHallColor);
+            this.groupBox28.Controls.Add(this.L_GrassShape);
+            this.groupBox28.Controls.Add(this.CB_GrassShape);
+            this.groupBox28.Controls.Add(this.L_TownName);
+            this.groupBox28.Location = new System.Drawing.Point(353, 0);
+            this.groupBox28.Name = "groupBox28";
+            this.groupBox28.Size = new System.Drawing.Size(247, 145);
+            this.groupBox28.TabIndex = 54;
+            this.groupBox28.TabStop = false;
+            this.groupBox28.Text = "Town Info";
+            // 
+            // groupBox29
+            // 
+            this.groupBox29.Controls.Add(this.B_Grass);
+            this.groupBox29.Controls.Add(this.B_PWP);
+            this.groupBox29.Controls.Add(this.B_Desert);
+            this.groupBox29.Controls.Add(this.button1);
+            this.groupBox29.Location = new System.Drawing.Point(489, 151);
+            this.groupBox29.Name = "groupBox29";
+            this.groupBox29.Size = new System.Drawing.Size(113, 185);
+            this.groupBox29.TabIndex = 55;
+            this.groupBox29.TabStop = false;
+            this.groupBox29.Text = "Town Maintenance";
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7182,6 +7229,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox27.ResumeLayout(false);
+            this.groupBox28.ResumeLayout(false);
+            this.groupBox28.PerformLayout();
+            this.groupBox29.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7690,5 +7741,9 @@
         private System.Windows.Forms.GroupBox groupBox26;
         private System.Windows.Forms.CheckBox CB_PrivateDC;
         private System.Windows.Forms.Label LB_DC;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox29;
+        private System.Windows.Forms.GroupBox groupBox28;
+        private System.Windows.Forms.GroupBox groupBox27;
     }
 }
