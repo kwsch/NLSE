@@ -5408,7 +5408,7 @@
             // 
             // TB_TownName
             // 
-            this.TB_TownName.Location = new System.Drawing.Point(466, 9);
+            this.TB_TownName.Location = new System.Drawing.Point(455, 15);
             this.TB_TownName.MaxLength = 9;
             this.TB_TownName.Name = "TB_TownName";
             this.TB_TownName.Size = new System.Drawing.Size(121, 20);
@@ -5434,7 +5434,7 @@
             // 
             // L_TownName
             // 
-            this.L_TownName.Location = new System.Drawing.Point(360, 6);
+            this.L_TownName.Location = new System.Drawing.Point(349, 12);
             this.L_TownName.Name = "L_TownName";
             this.L_TownName.Size = new System.Drawing.Size(100, 23);
             this.L_TownName.TabIndex = 18;
@@ -5457,7 +5457,7 @@
             "Triangle (Square)",
             "Circle (Star)",
             "Square (Circle)"});
-            this.CB_GrassShape.Location = new System.Drawing.Point(466, 62);
+            this.CB_GrassShape.Location = new System.Drawing.Point(455, 68);
             this.CB_GrassShape.Name = "CB_GrassShape";
             this.CB_GrassShape.Size = new System.Drawing.Size(121, 21);
             this.CB_GrassShape.TabIndex = 21;
@@ -5473,7 +5473,7 @@
             // 
             // L_GrassShape
             // 
-            this.L_GrassShape.Location = new System.Drawing.Point(360, 60);
+            this.L_GrassShape.Location = new System.Drawing.Point(349, 66);
             this.L_GrassShape.Name = "L_GrassShape";
             this.L_GrassShape.Size = new System.Drawing.Size(100, 23);
             this.L_GrassShape.TabIndex = 22;
@@ -5497,7 +5497,7 @@
             "Brown",
             "Green",
             "Blue"});
-            this.CB_TownHallColor.Location = new System.Drawing.Point(466, 89);
+            this.CB_TownHallColor.Location = new System.Drawing.Point(455, 95);
             this.CB_TownHallColor.Name = "CB_TownHallColor";
             this.CB_TownHallColor.Size = new System.Drawing.Size(121, 21);
             this.CB_TownHallColor.TabIndex = 23;
@@ -5513,7 +5513,7 @@
             // 
             // L_TownHallColor
             // 
-            this.L_TownHallColor.Location = new System.Drawing.Point(360, 87);
+            this.L_TownHallColor.Location = new System.Drawing.Point(349, 93);
             this.L_TownHallColor.Name = "L_TownHallColor";
             this.L_TownHallColor.Size = new System.Drawing.Size(100, 23);
             this.L_TownHallColor.TabIndex = 24;
@@ -5537,14 +5537,14 @@
             "Green",
             "Blue",
             "Brown"});
-            this.CB_TrainStationColor.Location = new System.Drawing.Point(466, 116);
+            this.CB_TrainStationColor.Location = new System.Drawing.Point(455, 122);
             this.CB_TrainStationColor.Name = "CB_TrainStationColor";
             this.CB_TrainStationColor.Size = new System.Drawing.Size(121, 21);
             this.CB_TrainStationColor.TabIndex = 25;
             // 
             // L_NativeFruit
             // 
-            this.L_NativeFruit.Location = new System.Drawing.Point(360, 33);
+            this.L_NativeFruit.Location = new System.Drawing.Point(349, 39);
             this.L_NativeFruit.Name = "L_NativeFruit";
             this.L_NativeFruit.Size = new System.Drawing.Size(100, 23);
             this.L_NativeFruit.TabIndex = 28;
@@ -5553,7 +5553,7 @@
             // 
             // L_TrainStationColor
             // 
-            this.L_TrainStationColor.Location = new System.Drawing.Point(360, 114);
+            this.L_TrainStationColor.Location = new System.Drawing.Point(349, 120);
             this.L_TrainStationColor.Name = "L_TrainStationColor";
             this.L_TrainStationColor.Size = new System.Drawing.Size(100, 23);
             this.L_TrainStationColor.TabIndex = 26;
@@ -5577,7 +5577,7 @@
             "Mango*",
             "Persimmon*",
             "Banana*"});
-            this.CB_NativeFruit.Location = new System.Drawing.Point(466, 35);
+            this.CB_NativeFruit.Location = new System.Drawing.Point(455, 41);
             this.CB_NativeFruit.Name = "CB_NativeFruit";
             this.CB_NativeFruit.Size = new System.Drawing.Size(121, 21);
             this.CB_NativeFruit.TabIndex = 27;
@@ -6776,21 +6776,21 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -6843,6 +6843,14 @@
             this.CB_Item.Size = new System.Drawing.Size(136, 21);
             this.CB_Item.TabIndex = 12;
             this.CB_Item.SelectedIndexChanged += new System.EventHandler(this.changeItemID);
+            // 
+            // Tool_Info
+            // 
+            this.Tool_Info.AutomaticDelay = 0;
+            this.Tool_Info.AutoPopDelay = 0;
+            this.Tool_Info.InitialDelay = 0;
+            this.Tool_Info.ReshowDelay = 0;
+            this.Tool_Info.ShowAlways = true;
             // 
             // CB_Flag
             // 

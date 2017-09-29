@@ -204,6 +204,7 @@ namespace NLSE
             public byte[] TownBytes;
 
             public string TownName;
+            public uint TownSID;
             public int TownHallColor;
             public int TrainStationColor;
             public int GrassType;
@@ -238,6 +239,8 @@ namespace NLSE
                 Data = data;
                 TownBytes = getTownBytes();
                 TownName = Encoding.Unicode.GetString(Data.Skip(0x621BA).Take(0x12).ToArray()).Trim('\0');
+                TownSID = BitConverter.ToUInt16(Data, 0x621B8);
+
                 GrassType = Data[0x53481];
                 TownHallColor = Data[0x621B8] & 3;
                 TrainStationColor = Data[0x621B9] & 3;
@@ -329,6 +332,7 @@ namespace NLSE
                 Tan, U9;
 
             public string Name;
+            public uint SID;
             public string Comment;
             public int Gender;
             public int PrivateDC;
@@ -366,6 +370,8 @@ namespace NLSE
                 U9 = Data[9];
                 Name = Encoding.Unicode.GetString(Data.Skip(0x55A8).Take(0x12).ToArray()).Trim('\0');
                 Comment = Encoding.Unicode.GetString(Data.Skip(0x6B38).Take(0x50).ToArray());
+
+                SID = BitConverter.ToUInt16(data, 0x55A6);
 
                 Gender = Data[0x55BA];
 
@@ -938,6 +944,7 @@ namespace NLSE
         private void loadPlayer(int i)
         {
             currentPlayer = i;
+            Tool_Info.SetToolTip(TB_Name, "Player SID: 0x" + Players[i].SID.ToString("X"));
             PB_LPlayer0.Image = PlayerPics[i].Image;
             PB_Pocket.Image = getItemPic(16, 16, Players[i].Pockets);
             PB_Dresser1.Image = getItemPic(16, 5, Players[i].Dressers.Take(Players[i].Dressers.Length / 2).ToArray());
@@ -2702,7 +2709,6 @@ namespace NLSE
             {
                 CHK_V01, CHK_V02, CHK_V03, CHK_V04, CHK_V05, CHK_V06, CHK_V07, CHK_V08, CHK_V09, CHK_V10
             };
-
             #endregion
             #region Load Event Methods to Controls
             foreach (PictureBox p in TownAcres) { p.MouseMove += mouseTown; p.MouseClick += clickTown; }
@@ -2718,6 +2724,7 @@ namespace NLSE
             EnableControl();
             reloadCurrentItem(currentItem);
             loaded = true;
+            Tool_Info.SetToolTip(TB_TownName, "Town SID: 0x" + Save.TownSID.ToString("X"));
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3344,6 +3351,7 @@ namespace NLSE
                 CB_HouseDoor.SelectedIndex = PlayersExterior[currentPlayer].HouseDoor;
                 CB_HouseDoorForm.SelectedIndex = PlayersExterior[currentPlayer].HouseDoorForm;
                 CB_HouseMailBox.SelectedIndex = PlayersExterior[currentPlayer].HouseMailBox;
+                reloadOverviewLabel();
             }
         }
 
