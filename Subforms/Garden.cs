@@ -4157,6 +4157,19 @@ namespace NLSE
             }
         }
 
+        private void B_HHD_Click(object sender, EventArgs e)
+        {
+            const int offset = 0x621DC;
+
+            byte[] HHD =
+            {
+                0x8D
+            };
+            Array.Copy(HHD, 0, Save.Data, offset, HHD.Length);
+
+            Util.Alert("HHD Content Unlocked !");
+        }
+
         private void BTN_DMPattern_Click(object sender, EventArgs e)
         {
             if (CB_Choice.SelectedIndex == 0)

@@ -531,7 +531,7 @@
             this.CB_Item = new System.Windows.Forms.ComboBox();
             this.Tool_Info = new System.Windows.Forms.ToolTip(this.components);
             this.CB_Flag = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.B_HHD = new System.Windows.Forms.Button();
             this.groupBox27 = new System.Windows.Forms.GroupBox();
             this.groupBox28 = new System.Windows.Forms.GroupBox();
             this.groupBox29 = new System.Windows.Forms.GroupBox();
@@ -6853,14 +6853,15 @@
             this.CB_Flag.TabIndex = 17;
             this.CB_Flag.SelectedIndexChanged += new System.EventHandler(this.CB_Flag_SelectedIndexChanged);
             // 
-            // button1
+            // B_HHD
             // 
-            this.button1.Location = new System.Drawing.Point(6, 142);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 38);
-            this.button1.TabIndex = 52;
-            this.button1.Text = "Unlock HHD Content";
-            this.button1.UseVisualStyleBackColor = true;
+            this.B_HHD.Location = new System.Drawing.Point(6, 142);
+            this.B_HHD.Name = "B_HHD";
+            this.B_HHD.Size = new System.Drawing.Size(98, 38);
+            this.B_HHD.TabIndex = 52;
+            this.B_HHD.Text = "Unlock HHD Content";
+            this.B_HHD.UseVisualStyleBackColor = true;
+            this.B_HHD.Click += new System.EventHandler(this.B_HHD_Click);
             // 
             // groupBox27
             // 
@@ -6905,7 +6906,7 @@
             this.groupBox29.Controls.Add(this.B_Grass);
             this.groupBox29.Controls.Add(this.B_PWP);
             this.groupBox29.Controls.Add(this.B_Desert);
-            this.groupBox29.Controls.Add(this.button1);
+            this.groupBox29.Controls.Add(this.B_HHD);
             this.groupBox29.Location = new System.Drawing.Point(489, 151);
             this.groupBox29.Name = "groupBox29";
             this.groupBox29.Size = new System.Drawing.Size(113, 185);
@@ -7741,7 +7742,7 @@
         private System.Windows.Forms.GroupBox groupBox26;
         private System.Windows.Forms.CheckBox CB_PrivateDC;
         private System.Windows.Forms.Label LB_DC;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button B_HHD;
         private System.Windows.Forms.GroupBox groupBox29;
         private System.Windows.Forms.GroupBox groupBox28;
         private System.Windows.Forms.GroupBox groupBox27;
