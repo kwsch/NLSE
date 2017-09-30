@@ -416,6 +416,10 @@
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -535,10 +539,6 @@
             this.CB_Item = new System.Windows.Forms.ComboBox();
             this.Tool_Info = new System.Windows.Forms.ToolTip(this.components);
             this.CB_Flag = new System.Windows.Forms.ComboBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -2983,6 +2983,7 @@
             // 
             // NUD_Badge11
             // 
+            this.NUD_Badge11.Enabled = false;
             this.NUD_Badge11.Location = new System.Drawing.Point(169, 397);
             this.NUD_Badge11.Maximum = new decimal(new int[] {
             999999999,
@@ -5659,6 +5660,42 @@
             this.tabPage11.Text = "Museum";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(589, 255);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(40, 13);
+            this.label61.TabIndex = 28;
+            this.label61.Text = "Counts";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(270, 255);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(40, 13);
+            this.label60.TabIndex = 27;
+            this.label60.Text = "Counts";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(589, 4);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(40, 13);
+            this.label59.TabIndex = 26;
+            this.label59.Text = "Counts";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(270, 4);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(40, 13);
+            this.label58.TabIndex = 25;
+            this.label58.Text = "Counts";
+            // 
             // label43
             // 
             this.label43.AutoSize = true;
@@ -6921,42 +6958,6 @@
             this.CB_Flag.Size = new System.Drawing.Size(94, 21);
             this.CB_Flag.TabIndex = 17;
             this.CB_Flag.SelectedIndexChanged += new System.EventHandler(this.CB_Flag_SelectedIndexChanged);
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(270, 4);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(40, 13);
-            this.label58.TabIndex = 25;
-            this.label58.Text = "Counts";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(589, 4);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(40, 13);
-            this.label59.TabIndex = 26;
-            this.label59.Text = "Counts";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(270, 255);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(40, 13);
-            this.label60.TabIndex = 27;
-            this.label60.Text = "Counts";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(589, 255);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(40, 13);
-            this.label61.TabIndex = 28;
-            this.label61.Text = "Counts";
             // 
             // Garden
             // 

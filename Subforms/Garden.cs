@@ -944,89 +944,97 @@ namespace NLSE
         private int currentPlayer = -1;
         private void loadPlayer(int i)
         {
-            currentPlayer = i;
-            Tool_Info.SetToolTip(TB_Name, "Player SID: 0x" + Players[i].SID.ToString("X"));
-            PB_LPlayer0.Image = PlayerPics[i].Image;
-            PB_Pocket.Image = getItemPic(16, 16, Players[i].Pockets);
-            PB_Dresser1.Image = getItemPic(16, 5, Players[i].Dressers.Take(Players[i].Dressers.Length / 2).ToArray());
-            PB_Dresser2.Image = getItemPic(16, 5, Players[i].Dressers.Skip(Players[i].Dressers.Length / 2).ToArray());
-            PB_Island.Image = getItemPic(16, 5, Players[i].IslandBox);
-
-            TB_Name.Text = Players[i].Name;
-            TB_Comment.Text = Players[i].Comment;
-            loadLetter(i);
-
-            for (int j = 0; j < PlayerBadges.Length; j++)
-                PlayerBadges[j].SelectedIndex = Players[i].Badges[j];
-            loadBadge();
-
-            CB_PrivateDC.Checked = Players[i].PrivateDC == 0xE7;
-            CB_HairStyle.SelectedIndex = Players[i].Hair;
-            CB_HairColor.SelectedIndex = Players[i].HairColor;
-            CB_FaceShape.SelectedIndex = Players[i].Face;
-            CB_EyeColor.SelectedIndex = Players[i].EyeColor;
-            CB_SkinColor.SelectedIndex = Players[i].Tan;
-            CB_Gender.SelectedIndex = Players[i].Gender;
-
-            if (Players[i].DCPart1 != 0)
+            try
             {
-                LB_DC.Text = $"Dream Code: {Players[i].DCPart4:X02}{Players[i].DCPart3:X02}-{Players[i].DCPart2:X04}-{Players[i].DCPart1:X04}";
+                currentPlayer = i;
+                Tool_Info.SetToolTip(TB_Name, "Player SID: 0x" + Players[i].SID.ToString("X"));
+                PB_LPlayer0.Image = PlayerPics[i].Image;
+                PB_Pocket.Image = getItemPic(16, 16, Players[i].Pockets);
+                PB_Dresser1.Image = getItemPic(16, 5, Players[i].Dressers.Take(Players[i].Dressers.Length / 2).ToArray());
+                PB_Dresser2.Image = getItemPic(16, 5, Players[i].Dressers.Skip(Players[i].Dressers.Length / 2).ToArray());
+                PB_Island.Image = getItemPic(16, 5, Players[i].IslandBox);
+
+                TB_Name.Text = Players[i].Name;
+                TB_Comment.Text = Players[i].Comment;
+                loadLetter(i);
+
+                for (int j = 0; j < PlayerBadges.Length; j++)
+                    PlayerBadges[j].SelectedIndex = Players[i].Badges[j];
+                loadBadge();
+
+                CB_PrivateDC.Checked = Players[i].PrivateDC == 0xE7;
+                CB_HairStyle.SelectedIndex = Players[i].Hair;
+                CB_HairColor.SelectedIndex = Players[i].HairColor;
+                CB_FaceShape.SelectedIndex = Players[i].Face;
+                CB_EyeColor.SelectedIndex = Players[i].EyeColor;
+                CB_SkinColor.SelectedIndex = Players[i].Tan;
+                CB_Gender.SelectedIndex = Players[i].Gender;
+
+                if (Players[i].DCPart1 != 0)
+                {
+                    LB_DC.Text = $"Dream Code: {Players[i].DCPart4:X02}{Players[i].DCPart3:X02}-{Players[i].DCPart2:X04}-{Players[i].DCPart1:X04}";
+                }
+                NUD_BirthdayDay.Value = Players[i].BirthdayDay;
+                CB_BirthdayMonth.SelectedIndex = Players[i].BirthdayMonth;
+
+                NUD_RegDay.Value = Players[i].RegDay;
+                CB_RegMonth.SelectedIndex = Players[i].RegMonth;
+                NUD_RegYear.Value = Players[i].RegYear;
+
+                CB_HouseStyle.SelectedIndex = PlayersExterior[i].HouseStyle;
+                CB_HouseBrick.SelectedIndex = PlayersExterior[i].HouseBrick;
+                CB_HousePavement.SelectedIndex = PlayersExterior[i].HousePavement;
+                CB_HouseRoof.SelectedIndex = PlayersExterior[i].HouseRoof;
+                CB_HouseFence.SelectedIndex = PlayersExterior[i].HouseFence;
+                CB_HouseDoor.SelectedIndex = PlayersExterior[i].HouseDoor;
+                CB_HouseDoorForm.SelectedIndex = PlayersExterior[i].HouseDoorForm;
+                CB_HouseMailBox.SelectedIndex = PlayersExterior[i].HouseMailBox;
+
+                CB_HouseSize.SelectedIndex = PlayersExterior[i].HouseSize;
+                CB_MainRoomSize.SelectedIndex = PlayersExterior[i].MainRoomSize - 1;
+                CB_UpstairsSize.SelectedIndex = PlayersExterior[i].UpstairsSize - 1;
+                CB_BasementSize.SelectedIndex = PlayersExterior[i].BasementSize - 1;
+                CB_RightRoomSize.SelectedIndex = PlayersExterior[i].RightRoomSize - 1;
+                CB_LeftRoomSize.SelectedIndex = PlayersExterior[i].LeftRoomSize - 1;
+                CB_BackRoomSize.SelectedIndex = PlayersExterior[i].BackRoomSize - 1;
+
+                // Load encrypted $ value
+                NUD_Money.Value = GetDecryptedValue((uint)i, 0x6B8C);
+                NUD_PocketMoney.Value = GetDecryptedValue((uint)i, 0x6FA8 - 0xA0);
+                NUD_IslandMedals.Value = GetDecryptedValue((uint)i, 0x6B9C);
+                NUD_MEOW.Value = GetDecryptedValue((uint)i, 0x8DBC - 0xA0);
+
+                // Load encrypted achievement value (can be improved)
+                NUD_Badge00.Value = GetDecryptedValue((uint)i, 0x567C - 0xA0);
+                NUD_Badge01.Value = GetDecryptedValue((uint)i, 0x5684 - 0xA0);
+                NUD_Badge02.Value = GetDecryptedValue((uint)i, 0x568C - 0xA0);
+                NUD_Badge03.Value = GetDecryptedValue((uint)i, 0x5694 - 0xA0);
+                NUD_Badge04.Value = GetDecryptedValue((uint)i, 0x569C - 0xA0);
+                NUD_Badge05.Value = GetDecryptedValue((uint)i, 0x56A4 - 0xA0);
+                NUD_Badge06.Value = GetDecryptedValue((uint)i, 0x56AC - 0xA0);
+                NUD_Badge07.Value = GetDecryptedValue((uint)i, 0x56B4 - 0xA0);
+                NUD_Badge08.Value = GetDecryptedValue((uint)i, 0x56BC - 0xA0);
+                NUD_Badge09.Value = GetDecryptedValue((uint)i, 0x56C4 - 0xA0);
+                NUD_Badge10.Value = GetDecryptedValue((uint)i, 0x56CC - 0xA0);
+                NUD_Badge11.Value = GetDecryptedValue((uint)i, 0x56D4 - 0xA0);
+                NUD_Badge12.Value = GetDecryptedValue((uint)i, 0x56DC - 0xA0);
+                NUD_Badge13.Value = GetDecryptedValue((uint)i, 0x56E4 - 0xA0);
+                NUD_Badge14.Value = GetDecryptedValue((uint)i, 0x56EC - 0xA0);
+                NUD_Badge15.Value = GetDecryptedValue((uint)i, 0x56F4 - 0xA0);
+                NUD_Badge16.Value = GetDecryptedValue((uint)i, 0x56FC - 0xA0);
+                NUD_Badge17.Value = GetDecryptedValue((uint)i, 0x5704 - 0xA0);
+                NUD_Badge18.Value = GetDecryptedValue((uint)i, 0x570C - 0xA0);
+                NUD_Badge19.Value = GetDecryptedValue((uint)i, 0x5714 - 0xA0);
+                NUD_Badge20.Value = GetDecryptedValue((uint)i, 0x571C - 0xA0);
+                NUD_Badge21.Value = GetDecryptedValue((uint)i, 0x5724 - 0xA0);
+                NUD_Badge22.Value = GetDecryptedValue((uint)i, 0x572C - 0xA0);
+                NUD_Badge23.Value = GetDecryptedValue((uint)i, 0x5734 - 0xA0);
             }
-            NUD_BirthdayDay.Value = Players[i].BirthdayDay;
-            CB_BirthdayMonth.SelectedIndex = Players[i].BirthdayMonth;
-
-            NUD_RegDay.Value = Players[i].RegDay;
-            CB_RegMonth.SelectedIndex = Players[i].RegMonth;
-            NUD_RegYear.Value = Players[i].RegYear;
-
-            CB_HouseStyle.SelectedIndex = PlayersExterior[i].HouseStyle;
-            CB_HouseBrick.SelectedIndex = PlayersExterior[i].HouseBrick;
-            CB_HousePavement.SelectedIndex = PlayersExterior[i].HousePavement;
-            CB_HouseRoof.SelectedIndex = PlayersExterior[i].HouseRoof;
-            CB_HouseFence.SelectedIndex = PlayersExterior[i].HouseFence;
-            CB_HouseDoor.SelectedIndex = PlayersExterior[i].HouseDoor;
-            CB_HouseDoorForm.SelectedIndex = PlayersExterior[i].HouseDoorForm;
-            CB_HouseMailBox.SelectedIndex = PlayersExterior[i].HouseMailBox;
-
-            CB_HouseSize.SelectedIndex = PlayersExterior[i].HouseSize;
-            CB_MainRoomSize.SelectedIndex = PlayersExterior[i].MainRoomSize - 1;
-            CB_UpstairsSize.SelectedIndex = PlayersExterior[i].UpstairsSize - 1;
-            CB_BasementSize.SelectedIndex = PlayersExterior[i].BasementSize - 1;
-            CB_RightRoomSize.SelectedIndex = PlayersExterior[i].RightRoomSize - 1;
-            CB_LeftRoomSize.SelectedIndex = PlayersExterior[i].LeftRoomSize - 1;
-            CB_BackRoomSize.SelectedIndex = PlayersExterior[i].BackRoomSize - 1;
-
-            // Load encrypted $ value
-            NUD_Money.Value = GetDecryptedValue((uint)i, 0x6B8C);
-            NUD_PocketMoney.Value = GetDecryptedValue((uint)i, 0x6FA8 - 0xA0);
-            NUD_IslandMedals.Value = GetDecryptedValue((uint)i, 0x6B9C);
-            NUD_MEOW.Value = GetDecryptedValue((uint)i, 0x8DBC - 0xA0);
-
-            // Load encrypted achievement value (can be improved)
-            NUD_Badge00.Value = GetDecryptedValue((uint)i, 0x567C - 0xA0);
-            NUD_Badge01.Value = GetDecryptedValue((uint)i, 0x5684 - 0xA0);
-            NUD_Badge02.Value = GetDecryptedValue((uint)i, 0x568C - 0xA0);
-            NUD_Badge03.Value = GetDecryptedValue((uint)i, 0x5694 - 0xA0);
-            NUD_Badge04.Value = GetDecryptedValue((uint)i, 0x569C - 0xA0);
-            NUD_Badge05.Value = GetDecryptedValue((uint)i, 0x56A4 - 0xA0);
-            NUD_Badge06.Value = GetDecryptedValue((uint)i, 0x56AC - 0xA0);
-            NUD_Badge07.Value = GetDecryptedValue((uint)i, 0x56B4 - 0xA0);
-            NUD_Badge08.Value = GetDecryptedValue((uint)i, 0x56BC - 0xA0);
-            NUD_Badge09.Value = GetDecryptedValue((uint)i, 0x56C4 - 0xA0);
-            NUD_Badge10.Value = GetDecryptedValue((uint)i, 0x56CC - 0xA0);
-            NUD_Badge11.Value = GetDecryptedValue((uint)i, 0x56D4 - 0xA0);
-            NUD_Badge12.Value = GetDecryptedValue((uint)i, 0x56DC - 0xA0);
-            NUD_Badge13.Value = GetDecryptedValue((uint)i, 0x56E4 - 0xA0);
-            NUD_Badge14.Value = GetDecryptedValue((uint)i, 0x56EC - 0xA0);
-            NUD_Badge15.Value = GetDecryptedValue((uint)i, 0x56F4 - 0xA0);
-            NUD_Badge16.Value = GetDecryptedValue((uint)i, 0x56FC - 0xA0);
-            NUD_Badge17.Value = GetDecryptedValue((uint)i, 0x5704 - 0xA0);
-            NUD_Badge18.Value = GetDecryptedValue((uint)i, 0x570C - 0xA0);
-            NUD_Badge19.Value = GetDecryptedValue((uint)i, 0x5714 - 0xA0);
-            NUD_Badge20.Value = GetDecryptedValue((uint)i, 0x571C - 0xA0);
-            NUD_Badge21.Value = GetDecryptedValue((uint)i, 0x5724 - 0xA0);
-            NUD_Badge22.Value = GetDecryptedValue((uint)i, 0x572C - 0xA0);
-            NUD_Badge23.Value = GetDecryptedValue((uint)i, 0x5734 - 0xA0);
+            catch
+            {
+                MessageBox.Show("Error loading player data, please report this issue.");
+                return;
+            }
         }
 
         private void loadLetter(int i)
