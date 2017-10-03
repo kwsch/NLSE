@@ -4283,7 +4283,11 @@
             "Player 1",
             "Player 2",
             "Player 3",
-            "Player 4"});
+            "Player 4",
+            "?",
+            "?",
+            "?",
+            "?"});
             this.CB_LetterDestination.Location = new System.Drawing.Point(99, 249);
             this.CB_LetterDestination.Name = "CB_LetterDestination";
             this.CB_LetterDestination.Size = new System.Drawing.Size(121, 21);
@@ -5663,7 +5667,7 @@
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(589, 255);
+            this.label61.Location = new System.Drawing.Point(589, 4);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(40, 13);
             this.label61.TabIndex = 28;
@@ -5681,7 +5685,7 @@
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(589, 4);
+            this.label59.Location = new System.Drawing.Point(589, 255);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(40, 13);
             this.label59.TabIndex = 26;

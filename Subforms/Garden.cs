@@ -1,5 +1,4 @@
-﻿// I have to say that most of the code from the functions I added have a bad code, I know it's not good if we want to maintain the project, or if you want to learn how some stuff are working, but at least stuff work as it should. I'll propably fix those bad codes when i'll have more experience.
-using NLSE.Subforms;
+﻿using NLSE.Subforms;
 using System;
 using System.Collections.Generic;
 using System.Data;
