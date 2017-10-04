@@ -7615,6 +7615,56 @@ namespace NLSE.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à K.K. Chorale
+        ///K.K. March
+        ///K.K. Waltz
+        ///K.K. Swing
+        ///K.K. Jazz
+        ///K.K. Fusion
+        ///K.K. Étude
+        ///K.K. Lullaby
+        ///K.K. Aria
+        ///K.K. Samba
+        ///K.K. Bossa
+        ///K.K. Calypso
+        ///K.K. Salsa
+        ///K.K. Mambo
+        ///K.K. Reggae
+        ///K.K. Ska
+        ///K.K. Tango
+        ///K.K. Faire
+        ///Aloha K.K.
+        ///Lucky K.K.
+        ///K.K. Condor
+        ///K.K. Steppe
+        ///Imperial K.K.
+        ///K.K. Casbah
+        ///K.K. Safari
+        ///K.K. Folk
+        ///K.K. Rock
+        ///Rockin&apos; K.K.
+        ///K.K. Ragtime
+        ///K.K. Gumbo
+        ///The K. Funk
+        ///K.K. Blues
+        ///Soulful K.K.
+        ///K.K. Soul
+        ///K.K. Cruisin&apos;
+        ///K.K. Love Song
+        ///K.K. D&amp;B
+        ///K.K. Technopop
+        ///DJ K.K.
+        ///Only Me
+        ///K.K. Country
+        /// [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        public static string KKSong_en {
+            get {
+                return ResourceManager.GetString("KKSong_en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap LTR_1 {
@@ -7715,7 +7765,9 @@ namespace NLSE.Properties {
         ///gallant statue
         ///robust statue
         ///great statue
-        ///mystic statue        /// [le reste de la chaîne a été tronqué]&quot;;.
+        ///mystic statue
+        ///ancient statue
+        ///motherly statue.
         /// </summary>
         public static string MuseumArtNames {
             get {
@@ -7759,7 +7811,9 @@ namespace NLSE.Properties {
         ///pachysaurus skull
         ///pachysaurus torso
         ///pachysaurus tail
-        ///p [le reste de la chaîne a été tronqué]&quot;;.
+        ///parasaur skull
+        ///parasaur torso
+        ///parasa [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         public static string MuseumDinoNames {
             get {
@@ -7814,7 +7868,10 @@ namespace NLSE.Properties {
         ///sea horse
         ///clown fish
         ///surgeonfish
-        ///butte [le reste de la chaîne a été tronqué]&quot;;.
+        ///butterfly fish
+        ///Napoleonfish
+        ///zebra turkeyfish
+        ///blowfi [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         public static string MuseumFishNames {
             get {
@@ -7858,7 +7915,10 @@ namespace NLSE.Properties {
         ///stinkbug
         ///snail
         ///cricket
-        ///bell [le reste de la chaîne a été tronqué]&quot;;.
+        ///bell cricket
+        ///grasshopper
+        ///mole cricket
+        ///w [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         public static string MuseumInsectNames {
             get {

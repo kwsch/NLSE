@@ -961,6 +961,17 @@ namespace NLSE
                     PlayerBadges[j].SelectedIndex = Players[i].Badges[j];
                 loadBadge();
 
+                for (int g = 0; g < 14; g++)
+                {
+                    for (int j = 0; j < 8; j++)
+                    {
+                        if (g * 8 + j < KKList.Items.Count)
+                        {
+                            KKList.SetItemChecked(g * 8 + j, ((Players[currentPlayer].Data[0x8F9C + g] >> j) & 0x1) == 1);
+                        }
+                    }
+                }
+
                 CB_PrivateDC.Checked = Players[i].PrivateDC == 0xE7;
                 CB_HairStyle.SelectedIndex = Players[i].Hair;
                 CB_HairColor.SelectedIndex = Players[i].HairColor;
@@ -1212,6 +1223,20 @@ namespace NLSE
             Players[i].RegYear = (uint)NUD_RegYear.Value;
 
             Players[i].PrivateDC = CB_PrivateDC.Checked == true ? 0xE7 : 0xEF;
+
+            for (int g = 0; g < 14; g++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (g * 8 + j < KKList.Items.Count)
+                    {
+                        if (KKList.GetItemChecked(g * 8 + j))
+                        {
+                            Players[i].Data[0x8F9C + g] |= (byte)(1 << j);
+                        }
+                    }
+                }
+            }
 
             PlayersExterior[currentPlayer].HouseStyle = (byte)CB_HouseStyle.SelectedIndex;
             PlayersExterior[currentPlayer].HouseRoof = (byte)CB_HouseRoof.SelectedIndex;
@@ -2687,6 +2712,7 @@ namespace NLSE
             CB_LetterItem.DataSource = new BindingSource(Main.itemList, null);
             TB_Flag1.KeyPress += EnterKey;
             TB_Flag2.KeyPress += EnterKey;
+            loadStrings();
 
             #region Array Initialization
             TownAcres = new[]
@@ -2862,7 +2888,15 @@ namespace NLSE
                 PB_Face.Image = PlayerFaceFemale[CB_FaceShape.SelectedIndex];
             }
         }
-
+        private void loadStrings()
+        {
+            KKList.Items.Clear();
+            string[] song = Data.getStrings("KKSong", "en");
+            for (int i = 0; i < song.Length; i++)
+            {
+                KKList.Items.Add(song[i]);
+            }
+        }
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!loaded)
@@ -3250,7 +3284,7 @@ namespace NLSE
 
                 byte[] KK = File.ReadAllBytes(path).Skip(0x0).Take(0xC).ToArray();
 
-                Array.Copy(KK, 0, Save.Data, (0x6D30 + currentPlayer * 0xA480), 0xC);
+                Array.Copy(KK, 0, Save.Data, (0x903C + currentPlayer * 0xA480), 0xC);
 
                 for (int i = 0; i < Players.Length; i++) // load
                     Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0xA480).Take(0xA480).ToArray());
@@ -3442,14 +3476,32 @@ namespace NLSE
 
         private void BTN_GetKKSong_Click(object sender, EventArgs e)
         {
+            byte[] kksong =
+            {
+                0xFF, 0xFF, 0xFF, 0xFF,
+                0xFF, 0xFF, 0xFF, 0xFF,
+                0xFF, 0xFF, 0xFF, 0x07,
+            };
+
             for (int i = 0; i < Players.Length; i++) // save
                 Array.Copy(Players[i].Write(), 0, Save.Data, 0xA0 + i * 0xA480, 0xA480);
 
-            for (int i = 0; i < 0xC; i++)
-                Save.Data[0x903C + currentPlayer * 0xA480 + i] = 0xFF;
+            Array.Copy(kksong, 0, Save.Data, 0x903C + currentPlayer * 0xA480, kksong.Length);
 
             for (int i = 0; i < Players.Length; i++) // load
                 Players[i] = new Player(Save.Data.Skip(0xA0 + i * 0xA480).Take(0xA480).ToArray());
+
+            for (int g = 0; g < 14; g++) // reload the list
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (g * 8 + j < KKList.Items.Count)
+                    {
+                        KKList.SetItemChecked(g * 8 + j, ((Players[currentPlayer].Data[0x8F9C + g] >> j) & 0x1) == 1);
+                    }
+                }
+            }
+
             Util.Alert("All K.K. song has been added to " + TB_Name.Text + " music player list.");
         }
 

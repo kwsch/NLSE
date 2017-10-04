@@ -539,6 +539,8 @@
             this.CB_Item = new System.Windows.Forms.ComboBox();
             this.Tool_Info = new System.Windows.Forms.ToolTip(this.components);
             this.CB_Flag = new System.Windows.Forms.ComboBox();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.KKList = new System.Windows.Forms.CheckedListBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -806,6 +808,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.tabPage15.SuspendLayout();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -1593,6 +1596,7 @@
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage9);
+            this.tabControl2.Controls.Add(this.tabPage15);
             this.tabControl2.Controls.Add(this.tabPage10);
             this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Controls.Add(this.tabPage13);
@@ -6963,6 +6967,25 @@
             this.CB_Flag.TabIndex = 17;
             this.CB_Flag.SelectedIndexChanged += new System.EventHandler(this.CB_Flag_SelectedIndexChanged);
             // 
+            // tabPage15
+            // 
+            this.tabPage15.Controls.Add(this.KKList);
+            this.tabPage15.Location = new System.Drawing.Point(4, 22);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage15.Size = new System.Drawing.Size(632, 525);
+            this.tabPage15.TabIndex = 4;
+            this.tabPage15.Text = "K.K. Song";
+            this.tabPage15.UseVisualStyleBackColor = true;
+            // 
+            // KKList
+            // 
+            this.KKList.FormattingEnabled = true;
+            this.KKList.Location = new System.Drawing.Point(197, 72);
+            this.KKList.Name = "KKList";
+            this.KKList.Size = new System.Drawing.Size(229, 304);
+            this.KKList.TabIndex = 3;
+            // 
             // Garden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7283,6 +7306,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tabPage15.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7799,5 +7823,7 @@
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.TabPage tabPage15;
+        private System.Windows.Forms.CheckedListBox KKList;
     }
 }
