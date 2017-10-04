@@ -28,8 +28,8 @@ namespace NLSE
                 case 0x17BE10: // exhibition
                     applyCHK(ref d, 0x0, 0x17BE0C);
                     break;
-                case 0x29600: // friend#
-                    applyCHK(ref d, 0x0, 0x295FC);
+                case 0x29608: // friend#
+                    applyCHK(ref d, 0x0, 0x29604);
                     break;
                 case 0x25F90: // mydsgn1
                     applyCHK(ref d, 0x0, 0x25F8C);

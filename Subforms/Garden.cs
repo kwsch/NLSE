@@ -2807,7 +2807,14 @@ namespace NLSE
 
         private void frienddatEditorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Friend().ShowDialog();
+            try
+            {
+                new Friend().ShowDialog();
+            }
+            catch
+            {
+
+            }
         }
 
         private void dreamFixerToolStripMenuItem_Click(object sender, EventArgs e)

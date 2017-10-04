@@ -7126,6 +7126,16 @@ namespace NLSE.Properties {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.Byte[].
+        /// </summary>
+        public static byte[] friend_empty_data {
+            get {
+                object obj = ResourceManager.GetObject("friend_empty_data", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap hair_F_1 {
