@@ -823,6 +823,17 @@ namespace NLSE
                 CB_StreetMuseum.Checked = Save.MuseumShop == 1;
                 CB_StreetSewing.Checked = Save.SewingMachine == 0x80;
 
+                for (int g = 0; g < 12; g++)
+                {
+                    for (int j = 0; j < 8; j++)
+                    {
+                        if (g * 8 + j < ProjectList.Items.Count)
+                        {
+                            ProjectList.SetItemChecked(g * 8 + j, ((Save.Data[0x50330 + g] >> j) & 0x1) == 1);
+                        }
+                    }
+                }
+
                 checkPlayer();
             }
         }
@@ -926,6 +937,20 @@ namespace NLSE
                 Save.Shampoodle = CB_StreetShampoodle.Checked == true ? 2 : 0;
                 Save.MuseumShop = CB_StreetMuseum.Checked == true ? 1 : 0;
                 Save.SewingMachine = CB_StreetSewing.Checked == true ? 0x80 : 0;
+
+                for (int g = 0; g < 12; g++)
+                {
+                    for (int j = 0; j < 8; j++)
+                    {
+                        if (g * 8 + j < ProjectList.Items.Count)
+                        {
+                            if (ProjectList.GetItemChecked(g * 8 + j))
+                            {
+                                Save.Data[0x50330 + g] |= (byte)(1 << j);
+                            }
+                        }
+                    }
+                }
             }
 
             byte[] finalData = (byte[])Save.Write().Clone();
@@ -2636,18 +2661,26 @@ namespace NLSE
         // https://bitbucket.org/neokamek/leaftools/src
         private void B_PWP_Click(object sender, EventArgs e)
         {
-            const int offset = 0x50328;
+            const int offset = 0x50330;
             byte[] PWPUnlock =
             {
-                0xFF, 0xFF, 0xFF, 0xFF, // 0
-                0xFF, 0xFF, 0xFF, 0xFF, // 1
-                0xFF, 0xFF, 0xFF, 0xFF, // 2
-                0xFF, 0xFF, 0xFF, 0xFF, // 3
-                0xFF, 0xFF, 0xFF, 0xFF, // 4
-                0x2A, 0xD6, 0xE4, 0x58, // 5
+                0xFF, 0xFF, 0xFF, 0xFF, 
+                0xFF, 0xFF, 0xFF, 0xFF, 
+                0xFF, 0xFF,
             };
 
             Array.Copy(PWPUnlock, 0, Save.Data, offset, PWPUnlock.Length);
+
+            for (int g = 0; g < 12; g++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (g * 8 + j < ProjectList.Items.Count)
+                    {
+                        ProjectList.SetItemChecked(g * 8 + j, ((Save.Data[0x50330 + g] >> j) & 0x1) == 1);
+                    }
+                }
+            }
 
             Util.Alert("All Public Works Projects unlocked!");
         }
@@ -2895,6 +2928,13 @@ namespace NLSE
             for (int i = 0; i < song.Length; i++)
             {
                 KKList.Items.Add(song[i]);
+            }
+
+            ProjectList.Items.Clear();
+            string[] project = Data.getStrings("ProjectList", "en");
+            for (int i = 0; i < project.Length; i++)
+            {
+                ProjectList.Items.Add(project[i]);
             }
         }
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)

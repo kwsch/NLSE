@@ -8174,6 +8174,47 @@ namespace NLSE.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à default projects list
+        ///topiary bushes
+        ///?
+        ///?
+        ///café
+        ///reset center
+        ///Town-hall renovation / flower clock
+        ///Station reconstruction
+        ///drinking fountain
+        ///garbage can
+        ///flower bed
+        ///outdoor chair
+        ///flower arch
+        ///fairy-tale clock
+        ///fairy-tale bench
+        ///fairy-tall street light
+        ///fairy-tale bridge
+        ///metal bench
+        ///round streetlight
+        ///illuminated heart
+        ///illuminated clock
+        ///illuminated tree
+        ///bell
+        ///archway sculpture
+        ///statue fontain
+        ///hot spring
+        ///streetlight
+        ///illuminated arch
+        ///tower
+        ///modern clock
+        ///modern bench
+        ///modern streetlight
+        ///scarecr [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        public static string ProjectList_en {
+            get {
+                return ResourceManager.GetString("ProjectList_en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap PSO_1 {

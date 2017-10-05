@@ -175,6 +175,8 @@
             this.L_HairStyle = new System.Windows.Forms.Label();
             this.PB_LPlayer0 = new System.Windows.Forms.PictureBox();
             this.BTN_TPCInject = new System.Windows.Forms.Button();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.KKList = new System.Windows.Forms.CheckedListBox();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.CB_FixBadge = new System.Windows.Forms.CheckBox();
@@ -415,6 +417,8 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage16 = new System.Windows.Forms.TabPage();
+            this.ProjectList = new System.Windows.Forms.CheckedListBox();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
@@ -539,8 +543,14 @@
             this.CB_Item = new System.Windows.Forms.ComboBox();
             this.Tool_Info = new System.Windows.Forms.ToolTip(this.components);
             this.CB_Flag = new System.Windows.Forms.ComboBox();
-            this.tabPage15 = new System.Windows.Forms.TabPage();
-            this.KKList = new System.Windows.Forms.CheckedListBox();
+            this.groupBox30 = new System.Windows.Forms.GroupBox();
+            this.groupBox31 = new System.Windows.Forms.GroupBox();
+            this.InsectList = new System.Windows.Forms.CheckedListBox();
+            this.FishList = new System.Windows.Forms.CheckedListBox();
+            this.SeaFoodList = new System.Windows.Forms.CheckedListBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG0)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -625,6 +635,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_Face)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Hair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_LPlayer0)).BeginInit();
+            this.tabPage15.SuspendLayout();
             this.tabPage10.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -735,6 +746,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_MonPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_MonAM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage16.SuspendLayout();
             this.tabPage11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
@@ -808,7 +820,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.tabPage15.SuspendLayout();
+            this.groupBox30.SuspendLayout();
+            this.groupBox31.SuspendLayout();
             this.SuspendLayout();
             // 
             // PB_JPEG0
@@ -2676,6 +2689,26 @@
             this.BTN_TPCInject.Text = "New TPC Pict ";
             this.BTN_TPCInject.UseVisualStyleBackColor = true;
             this.BTN_TPCInject.Click += new System.EventHandler(this.BTN_TPCInject_Click);
+            // 
+            // tabPage15
+            // 
+            this.tabPage15.Controls.Add(this.groupBox31);
+            this.tabPage15.Controls.Add(this.groupBox30);
+            this.tabPage15.Location = new System.Drawing.Point(4, 22);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage15.Size = new System.Drawing.Size(632, 525);
+            this.tabPage15.TabIndex = 4;
+            this.tabPage15.Text = "Lists";
+            this.tabPage15.UseVisualStyleBackColor = true;
+            // 
+            // KKList
+            // 
+            this.KKList.FormattingEnabled = true;
+            this.KKList.Location = new System.Drawing.Point(6, 19);
+            this.KKList.Name = "KKList";
+            this.KKList.Size = new System.Drawing.Size(229, 484);
+            this.KKList.TabIndex = 3;
             // 
             // tabPage10
             // 
@@ -4973,6 +5006,7 @@
             // tabControl3
             // 
             this.tabControl3.Controls.Add(this.tabPage8);
+            this.tabControl3.Controls.Add(this.tabPage16);
             this.tabControl3.Controls.Add(this.tabPage11);
             this.tabControl3.Controls.Add(this.tabPage12);
             this.tabControl3.Location = new System.Drawing.Point(6, 6);
@@ -5642,6 +5676,25 @@
             this.dataGridView1.Size = new System.Drawing.Size(311, 483);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dropclick);
+            // 
+            // tabPage16
+            // 
+            this.tabPage16.Controls.Add(this.ProjectList);
+            this.tabPage16.Location = new System.Drawing.Point(4, 22);
+            this.tabPage16.Name = "tabPage16";
+            this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage16.Size = new System.Drawing.Size(635, 522);
+            this.tabPage16.TabIndex = 3;
+            this.tabPage16.Text = "Project List";
+            this.tabPage16.UseVisualStyleBackColor = true;
+            // 
+            // ProjectList
+            // 
+            this.ProjectList.FormattingEnabled = true;
+            this.ProjectList.Location = new System.Drawing.Point(210, 73);
+            this.ProjectList.Name = "ProjectList";
+            this.ProjectList.Size = new System.Drawing.Size(229, 304);
+            this.ProjectList.TabIndex = 4;
             // 
             // tabPage11
             // 
@@ -6967,24 +7020,81 @@
             this.CB_Flag.TabIndex = 17;
             this.CB_Flag.SelectedIndexChanged += new System.EventHandler(this.CB_Flag_SelectedIndexChanged);
             // 
-            // tabPage15
+            // groupBox30
             // 
-            this.tabPage15.Controls.Add(this.KKList);
-            this.tabPage15.Location = new System.Drawing.Point(4, 22);
-            this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(632, 525);
-            this.tabPage15.TabIndex = 4;
-            this.tabPage15.Text = "K.K. Song";
-            this.tabPage15.UseVisualStyleBackColor = true;
+            this.groupBox30.Controls.Add(this.KKList);
+            this.groupBox30.Location = new System.Drawing.Point(6, 6);
+            this.groupBox30.Name = "groupBox30";
+            this.groupBox30.Size = new System.Drawing.Size(242, 513);
+            this.groupBox30.TabIndex = 4;
+            this.groupBox30.TabStop = false;
+            this.groupBox30.Text = "K.K. Song available";
             // 
-            // KKList
+            // groupBox31
             // 
-            this.KKList.FormattingEnabled = true;
-            this.KKList.Location = new System.Drawing.Point(197, 72);
-            this.KKList.Name = "KKList";
-            this.KKList.Size = new System.Drawing.Size(229, 304);
-            this.KKList.TabIndex = 3;
+            this.groupBox31.Controls.Add(this.label64);
+            this.groupBox31.Controls.Add(this.label63);
+            this.groupBox31.Controls.Add(this.label62);
+            this.groupBox31.Controls.Add(this.SeaFoodList);
+            this.groupBox31.Controls.Add(this.FishList);
+            this.groupBox31.Controls.Add(this.InsectList);
+            this.groupBox31.Location = new System.Drawing.Point(254, 6);
+            this.groupBox31.Name = "groupBox31";
+            this.groupBox31.Size = new System.Drawing.Size(372, 513);
+            this.groupBox31.TabIndex = 5;
+            this.groupBox31.TabStop = false;
+            this.groupBox31.Text = "Encyclopedia";
+            // 
+            // InsectList
+            // 
+            this.InsectList.FormattingEnabled = true;
+            this.InsectList.Location = new System.Drawing.Point(9, 32);
+            this.InsectList.Name = "InsectList";
+            this.InsectList.Size = new System.Drawing.Size(166, 199);
+            this.InsectList.TabIndex = 4;
+            // 
+            // FishList
+            // 
+            this.FishList.FormattingEnabled = true;
+            this.FishList.Location = new System.Drawing.Point(200, 32);
+            this.FishList.Name = "FishList";
+            this.FishList.Size = new System.Drawing.Size(166, 199);
+            this.FishList.TabIndex = 5;
+            // 
+            // SeaFoodList
+            // 
+            this.SeaFoodList.FormattingEnabled = true;
+            this.SeaFoodList.Location = new System.Drawing.Point(104, 281);
+            this.SeaFoodList.Name = "SeaFoodList";
+            this.SeaFoodList.Size = new System.Drawing.Size(166, 199);
+            this.SeaFoodList.TabIndex = 6;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(67, 16);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(36, 13);
+            this.label62.TabIndex = 7;
+            this.label62.Text = "Insect";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(258, 16);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(26, 13);
+            this.label63.TabIndex = 8;
+            this.label63.Text = "Fish";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(153, 262);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(53, 13);
+            this.label64.TabIndex = 9;
+            this.label64.Text = "Sea Food";
             // 
             // Garden
             // 
@@ -7099,6 +7209,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_Face)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Hair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_LPlayer0)).EndInit();
+            this.tabPage15.ResumeLayout(false);
             this.tabPage10.ResumeLayout(false);
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
@@ -7229,6 +7340,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_MonPM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_MonAM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage16.ResumeLayout(false);
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
@@ -7306,7 +7418,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_JPEG3)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tabPage15.ResumeLayout(false);
+            this.groupBox30.ResumeLayout(false);
+            this.groupBox31.ResumeLayout(false);
+            this.groupBox31.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7825,5 +7939,15 @@
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage tabPage15;
         private System.Windows.Forms.CheckedListBox KKList;
+        private System.Windows.Forms.TabPage tabPage16;
+        private System.Windows.Forms.CheckedListBox ProjectList;
+        private System.Windows.Forms.GroupBox groupBox30;
+        private System.Windows.Forms.GroupBox groupBox31;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.CheckedListBox SeaFoodList;
+        private System.Windows.Forms.CheckedListBox FishList;
+        private System.Windows.Forms.CheckedListBox InsectList;
     }
 }

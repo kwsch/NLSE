@@ -1208,6 +1208,7 @@
     <None Include="Resources\img\acre\acre_214.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\text\ProjectList_en.txt" />
     <None Include="Resources\text\KKSong_en.txt" />
     <None Include="Resources\text\MuseumInsectNames.txt" />
     <None Include="Resources\text\MuseumFishNames.txt" />
