@@ -1,7 +1,7 @@
-common butterfly
-yellow butterfly
-tiger butterfly
-peacock butterfly
+Yellow butterfly
+Common butterfly
+Tigger butterfly
+Peacock butterfly
 monarch butterfly
 emperor butterfly
 agrias butterfly

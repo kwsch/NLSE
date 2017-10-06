@@ -7066,6 +7066,61 @@ namespace NLSE.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à bitterling
+        ///pale chub
+        ///crucian carp
+        ///dace
+        ///barbel steed
+        ///carp
+        ///koi
+        ///goldfish
+        ///pop-eyed goldfish
+        ///killifish
+        ///crawfish
+        ///soft-shelled turtle
+        ///tadpole
+        ///frog
+        ///freshwater goby
+        ///loach
+        ///catfish
+        ///eel
+        ///giant snakehead
+        ///bluegill
+        ///yellow perch
+        ///black bass
+        ///pike
+        ///pond smelt
+        ///sweetfish
+        ///cherry salmon
+        ///char
+        ///rainbow trout
+        ///stringfish
+        ///salmon
+        ///king salmon
+        ///mitten crab
+        ///guppy
+        ///nibble fish
+        ///angelfish
+        ///neon tetra
+        ///piranha
+        ///arowana
+        ///dorado
+        ///gar
+        ///arapaima
+        ///saddled bichir
+        ///sea butterfly
+        ///sea horse
+        ///clown fish
+        ///surgeonfish
+        ///butte [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        public static string FishNames_en {
+            get {
+                return ResourceManager.GetString("FishNames_en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap FLR_1 {
@@ -7516,6 +7571,50 @@ namespace NLSE.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Yellow butterfly
+        ///Common butterfly
+        ///Tigger butterfly
+        ///Peacock butterfly
+        ///monarch butterfly
+        ///emperor butterfly
+        ///agrias butterfly
+        ///Raja B. butterfly
+        ///birdwing butterfly
+        ///moth
+        ///oak silk moth
+        ///honeybee
+        ///bee
+        ///long locust
+        ///migratory locust
+        ///rice grasshopper
+        ///mantis
+        ///orchid mantis
+        ///brown cicada
+        ///robust cicada
+        ///giant cicada
+        ///walker cicada
+        ///evening cicada
+        ///cicada shell
+        ///lantern fly
+        ///red dragonfly
+        ///darner dragonfly
+        ///banded dragonfly
+        ///petaltail dragonfly
+        ///ant
+        ///pondskater
+        ///diving beetle
+        ///stinkbug
+        ///snail
+        ///cricket
+        ///bell  [le reste de la chaîne a été tronqué]&quot;;.
+        /// </summary>
+        public static string InsectName_en {
+            get {
+                return ResourceManager.GetString("InsectName_en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap ISL_1 {
@@ -7903,7 +8002,7 @@ namespace NLSE.Properties {
         ///giant cicada
         ///walker cicada
         ///evening cicada
-        ///evening cicada
+        ///cicada shell
         ///lantern fly
         ///red dragonfly
         ///darner dragonfly
@@ -7918,7 +8017,7 @@ namespace NLSE.Properties {
         ///bell cricket
         ///grasshopper
         ///mole cricket
-        ///w [le reste de la chaîne a été tronqué]&quot;;.
+        ///wal [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         public static string MuseumInsectNames {
             get {
@@ -8271,6 +8370,44 @@ namespace NLSE.Properties {
             get {
                 object obj = ResourceManager.GetObject("RNV_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Seaweed
+        ///Sea grapes
+        ///Sea urchin
+        ///acorn barnacle
+        ///oyster
+        ///turban shell
+        ///abalone
+        ///ear shell
+        ///clam
+        ///pearl oyster
+        ///scallop
+        ///sea anemone
+        ///sea star
+        ///sea cucumber
+        ///sea slug
+        ///flatworm
+        ///mantis shrimp
+        ///sweet shrimp
+        ///tiger prawn
+        ///spiny lobster
+        ///lobster
+        ///snow crab
+        ///horsehair crab
+        ///red king crab
+        ///spider crab
+        ///octopus
+        ///spotted garden eel
+        ///chambered nautilus
+        ///horseshoe crab
+        ///giant isopod.
+        /// </summary>
+        public static string SeafoodNames_en {
+            get {
+                return ResourceManager.GetString("SeafoodNames_en", resourceCulture);
             }
         }
         
