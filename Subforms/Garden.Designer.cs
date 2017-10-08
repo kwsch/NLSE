@@ -177,6 +177,10 @@
             this.BTN_TPCInject = new System.Windows.Forms.Button();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.groupBox31 = new System.Windows.Forms.GroupBox();
+            this.L_SizeType = new System.Windows.Forms.Label();
+            this.B_SaveSize = new System.Windows.Forms.Button();
+            this.label65 = new System.Windows.Forms.Label();
+            this.NUD_Size = new System.Windows.Forms.NumericUpDown();
             this.label64 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
@@ -637,6 +641,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PB_LPlayer0)).BeginInit();
             this.tabPage15.SuspendLayout();
             this.groupBox31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Size)).BeginInit();
             this.groupBox30.SuspendLayout();
             this.tabPage10.SuspendLayout();
             this.groupBox20.SuspendLayout();
@@ -2704,6 +2709,10 @@
             // 
             // groupBox31
             // 
+            this.groupBox31.Controls.Add(this.L_SizeType);
+            this.groupBox31.Controls.Add(this.B_SaveSize);
+            this.groupBox31.Controls.Add(this.label65);
+            this.groupBox31.Controls.Add(this.NUD_Size);
             this.groupBox31.Controls.Add(this.label64);
             this.groupBox31.Controls.Add(this.label63);
             this.groupBox31.Controls.Add(this.label62);
@@ -2717,10 +2726,44 @@
             this.groupBox31.TabStop = false;
             this.groupBox31.Text = "Encyclopedia";
             // 
+            // L_SizeType
+            // 
+            this.L_SizeType.AutoSize = true;
+            this.L_SizeType.Location = new System.Drawing.Point(273, 294);
+            this.L_SizeType.Name = "L_SizeType";
+            this.L_SizeType.Size = new System.Drawing.Size(0, 13);
+            this.L_SizeType.TabIndex = 13;
+            // 
+            // B_SaveSize
+            // 
+            this.B_SaveSize.Location = new System.Drawing.Point(200, 317);
+            this.B_SaveSize.Name = "B_SaveSize";
+            this.B_SaveSize.Size = new System.Drawing.Size(69, 23);
+            this.B_SaveSize.TabIndex = 12;
+            this.B_SaveSize.Text = "Save";
+            this.B_SaveSize.UseVisualStyleBackColor = true;
+            this.B_SaveSize.Click += new System.EventHandler(this.B_SaveSize_Click);
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(197, 275);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(65, 13);
+            this.label65.TabIndex = 11;
+            this.label65.Text = "Record Size";
+            // 
+            // NUD_Size
+            // 
+            this.NUD_Size.Location = new System.Drawing.Point(200, 291);
+            this.NUD_Size.Name = "NUD_Size";
+            this.NUD_Size.Size = new System.Drawing.Size(69, 20);
+            this.NUD_Size.TabIndex = 10;
+            // 
             // label64
             // 
             this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(156, 265);
+            this.label64.Location = new System.Drawing.Point(61, 262);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(53, 13);
             this.label64.TabIndex = 9;
@@ -2747,10 +2790,11 @@
             // SeaFoodList
             // 
             this.SeaFoodList.FormattingEnabled = true;
-            this.SeaFoodList.Location = new System.Drawing.Point(104, 281);
+            this.SeaFoodList.Location = new System.Drawing.Point(9, 278);
             this.SeaFoodList.Name = "SeaFoodList";
             this.SeaFoodList.Size = new System.Drawing.Size(166, 229);
             this.SeaFoodList.TabIndex = 6;
+            this.SeaFoodList.SelectedIndexChanged += new System.EventHandler(this.SeaFoodList_SelectedIndexChanged);
             // 
             // FishList
             // 
@@ -2759,6 +2803,7 @@
             this.FishList.Name = "FishList";
             this.FishList.Size = new System.Drawing.Size(166, 229);
             this.FishList.TabIndex = 5;
+            this.FishList.SelectedIndexChanged += new System.EventHandler(this.FishList_SelectedIndexChanged);
             // 
             // InsectList
             // 
@@ -2767,6 +2812,7 @@
             this.InsectList.Name = "InsectList";
             this.InsectList.Size = new System.Drawing.Size(166, 229);
             this.InsectList.TabIndex = 4;
+            this.InsectList.SelectedIndexChanged += new System.EventHandler(this.InsectList_SelectedIndexChanged);
             // 
             // groupBox30
             // 
@@ -7212,6 +7258,7 @@
             this.tabPage15.ResumeLayout(false);
             this.groupBox31.ResumeLayout(false);
             this.groupBox31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_Size)).EndInit();
             this.groupBox30.ResumeLayout(false);
             this.tabPage10.ResumeLayout(false);
             this.groupBox20.ResumeLayout(false);
@@ -7949,5 +7996,9 @@
         private System.Windows.Forms.CheckedListBox SeaFoodList;
         private System.Windows.Forms.CheckedListBox FishList;
         private System.Windows.Forms.CheckedListBox InsectList;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.NumericUpDown NUD_Size;
+        private System.Windows.Forms.Button B_SaveSize;
+        private System.Windows.Forms.Label L_SizeType;
     }
 }

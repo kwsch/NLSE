@@ -10,6 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using NLSE.Properties;
 using NLSE.Subforms;
+using PackageIO;
 
 namespace NLSE
 {
@@ -3872,6 +3873,104 @@ namespace NLSE
             }
             File.WriteAllBytes(sfd.FileName, data);
         }
+        public int selectedlist;
+
+        private void InsectList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var i = InsectList.SelectedIndex;
+            L_SizeType.Text = "hex size (mm)";
+            NUD_Size.DecimalPlaces = 0;
+            NUD_Size.Maximum = 65535;
+
+            if (i == 0)
+            {
+                uint a = BitConverter.ToUInt16(Players[currentPlayer].Data, 0xA28A);
+                NUD_Size.Value = a;
+            }
+            else if (i == 1)
+            {
+                uint a = BitConverter.ToUInt16(Players[currentPlayer].Data, 0xA288);
+                NUD_Size.Value = a;
+            }
+            else
+            {
+                uint a = BitConverter.ToUInt16(Players[currentPlayer].Data, 0xA288 + i * 2);
+                NUD_Size.Value = a;
+            }
+            selectedlist = 1;
+        }
+
+        private void FishList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var i = FishList.SelectedIndex;
+            L_SizeType.Text = "in.";
+            NUD_Size.DecimalPlaces = 2;
+            NUD_Size.Maximum = 3276.75m;
+
+            uint a = BitConverter.ToUInt16(Players[currentPlayer].Data, 0xA318 + i * 2);
+            decimal b = a * 0.05m;
+            NUD_Size.Value = b;
+
+            selectedlist = 2;
+        }
+
+        private void SeaFoodList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var i = SeaFoodList.SelectedIndex;
+            L_SizeType.Text = "in.";
+            NUD_Size.DecimalPlaces = 2;
+            NUD_Size.Maximum = 3276.75m;
+
+            uint a = BitConverter.ToUInt16(Players[currentPlayer].Data, 0xA3A8 + i * 2);
+            decimal b = a * 0.05m;
+            NUD_Size.Value = b;
+
+            selectedlist = 3;
+        }
+
+        private void B_SaveSize_Click(object sender, EventArgs e)
+        {
+            if (selectedlist == 1)
+            {
+                var i = InsectList.SelectedIndex;
+                if (i == 0)
+                {
+                    uint a = (uint)NUD_Size.Value;
+                    ushort s = (ushort)a;
+                    Array.Copy(BitConverter.GetBytes(s), 0, Players[currentPlayer].Data, 0xA28A, 2);
+                }
+                else if (i == 1)
+                {
+                    uint a = (uint)NUD_Size.Value;
+                    ushort s = (ushort)a;
+                    Array.Copy(BitConverter.GetBytes(s), 0, Players[currentPlayer].Data, 0xA288, 2);
+                }
+                else
+                {
+                    uint a = (uint)NUD_Size.Value;
+                    ushort s = (ushort)a;
+                    Array.Copy(BitConverter.GetBytes(s), 0, Players[currentPlayer].Data, 0xA288 + i * 2, 2);
+                }
+            }
+            else if (selectedlist == 2)
+            {
+                var i = FishList.SelectedIndex;
+                decimal a = NUD_Size.Value;
+                decimal b = a * 20m;
+
+                ushort s = (ushort)b;
+                Array.Copy(BitConverter.GetBytes(s), 0, Players[currentPlayer].Data, 0xA318 + i * 2, 2);
+            }
+            else if (selectedlist == 3)
+            {
+                var i = SeaFoodList.SelectedIndex;
+                decimal a = NUD_Size.Value;
+                decimal b = a * 20m;
+
+                ushort s = (ushort)b;
+                Array.Copy(BitConverter.GetBytes(s), 0, Players[currentPlayer].Data, 0xA3A8 + i * 2, 2);
+            }
+        }
 
         private class GardenData
         {
@@ -4528,6 +4627,7 @@ namespace NLSE
         private readonly Image[] BadgeCDY = {Resources.empty, Resources.CDY_1, Resources.CDY_2, Resources.CDY_3};
         private readonly Image[] BadgeRNV = {Resources.empty, Resources.RNV_1, Resources.RNV_2, Resources.RNV_3};
         private readonly Image[] BadgeLTR = {Resources.empty, Resources.LTR_1, Resources.LTR_2, Resources.LTR_3};
+
         private readonly Image[] BadgeCTL = {Resources.empty, Resources.CTL_1, Resources.CTL_2, Resources.CTL_3};
         private readonly Image[] BadgeKKG = {Resources.empty, Resources.KKG_1, Resources.KKG_2, Resources.KKG_3};
         private readonly Image[] BadgeCRN = {Resources.empty, Resources.CRN_1, Resources.CRN_2, Resources.CRN_3};
