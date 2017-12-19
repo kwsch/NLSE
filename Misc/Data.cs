@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -79,7 +81,7 @@ namespace NLSE
 
                 string[] sortedChoices = new string[unsortedChoices.Length];
                 Array.Copy(unsortedChoices, sortedChoices, unsortedChoices.Length);
-                Array.Sort(sortedChoices);
+
 
                 // Add the rest of the items
                 cbList.AddRange(sortedChoices.Select(t => new cbItem
@@ -152,3 +154,4 @@ namespace NLSE
         }
     }
 }
+

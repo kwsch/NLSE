@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace NLSE
 {
@@ -9,35 +11,35 @@ namespace NLSE
         {
             switch (d.Length)
             {
-                case 0x2BE940: // Happy Home
-                    applyCHK(ref d, 0x1A0, 0x1C);
-                    applyCHK(ref d, 0x1C0, 0x2BE75C);
-                    applyCHK(ref d, 0x2BE920, 0xC);
-                    break;
-                case 0x7FA00: // garden
+                case 0x89B00: // garden
                     applyCHK(ref d, 0x80, 0x1C);
                     for (int i = 0; i < 4; i++)
                     {
-                        applyCHK(ref d, 0xA0 + (0x9F10*i), 0x6B64);
-                        applyCHK(ref d, 0xA0 + (0x9F10*i) + 0x6B68, 0x33A4);
+                        applyCHK(ref d, 0xA0 + (0xA480* i), 0x6B84);
+                        applyCHK(ref d, 0xA0 + (0xA480* i) + 0x6B88, 0x38F4);
                     }
-                    applyCHK(ref d, 0x27CE0, 0x218B0);
-                    applyCHK(ref d, 0x495A0, 0x44B8);
-                    applyCHK(ref d, 0x4DA5C, 0x1E420);
-                    applyCHK(ref d, 0x6BE80, 0x20);
-                    applyCHK(ref d, 0x6BEA4, 0x13AF8);
+                    applyCHK(ref d, 0x292A0, 0x22BC8);
+                    applyCHK(ref d, 0x4BE80, 0x44B8);
+                    applyCHK(ref d, 0x53424, 0x1E4D8);
+                    applyCHK(ref d, 0x71900, 0x20);
+                    applyCHK(ref d, 0x71924, 0xBE4);
+                    applyCHK(ref d, 0x73954, 0x16188);
                     break;
-                case 0x17B80C: // exhibition
-                    applyCHK(ref d, 0x0, 0x17B808);
+                case 0x17BE10: // exhibition
+                    applyCHK(ref d, 0x0, 0x17BE0C);
                     break;
-                case 0x29504: // friend#
-                    applyCHK(ref d, 0x0, 0x29500);
+                case 0x29608: // friend#
+                    applyCHK(ref d, 0x0, 0x29604);
+                    break;
+                case 0x25F90: // mydsgn1
+                    applyCHK(ref d, 0x0, 0x25F8C);
                     break;
 
                 default:
                     throw new Exception("Invalid file size!" + Environment.NewLine + d.Length);
             }
         }
+
         private static void applyCHK(ref byte[] data, int start, int length)
         {
             byte[] region = data.Skip(start + 4).Take(length).ToArray();

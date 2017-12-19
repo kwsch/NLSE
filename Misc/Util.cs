@@ -95,5 +95,42 @@ namespace NLSE
             while ((offset = IndexOfBytes(array, oldPattern, offset, 0)) != -1)
                 Array.Copy(newPattern, 0, array, offset, newPattern.Length);
         }
+        public static uint DecryptACNLMoney(ulong money) // Thanks to SciresM
+        {
+            // Unpack 64-bit value into (u32, u16, u8, u8) values.
+            var enc = (uint)(money & 0xFFFFFFFF);
+            var adjust = (ushort)((money >> 32) & 0xFFFF);
+            var shift_val = (byte)((money >> 48) & 0xFF);
+            var chk = (byte)((money >> 56) & 0xFF);
+
+            // Validate 8-bit checksum
+            if ((((enc >> 0) + (enc >> 8) + (enc >> 16) + (enc >> 24) + 0xBA) & 0xFF) != chk) return 0;
+            var left_shift = (byte)((0x1C - shift_val) & 0xFF);
+            var right_shift = 0x20 - left_shift;
+            // Handle error case: Invalid shift value.
+            if (left_shift >= 0x20)
+            {
+                return 0 + (enc << right_shift) - (adjust + 0x8F187432);
+            }
+            // This case should occur for all game-generated values.
+            return (enc << left_shift) + (enc >> right_shift) - (adjust + 0x8F187432);
+        }
+
+        public static ulong EncryptACNLMoney(uint dec)
+        {
+            // Make a new RNG
+            var r = new Random(Guid.NewGuid().GetHashCode());
+            // Generate random adjustment, shift values.
+            var adjust = (ushort)r.Next(0x10000);
+            var shift_val = (byte)r.Next(0x1A);
+
+            // Encipher value
+            var enc = dec + adjust + 0x8F187432;
+            enc = (enc >> (0x1C - shift_val)) + (enc << (shift_val + 4));
+            // Calculate Checksum
+            var chk = (byte)(((enc >> 0) + (enc >> 8) + (enc >> 16) + (enc >> 24) + 0xBA) & 0xFF);
+            // Pack result
+            return ((ulong)enc << 0) | ((ulong)adjust << 32) | ((ulong)shift_val << 48) | ((ulong)chk << 56);
+        }
     }
 }

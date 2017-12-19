@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NLSE</RootNamespace>
     <AssemblyName>NLSE</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -40,6 +42,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
@@ -49,8 +52,15 @@
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PackageIO">
+      <HintPath>.\PackageIO.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,6 +74,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Misc\Data.cs" />
+    <Compile Include="Subforms\DreamPatcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subforms\DreamPatcher.Designer.cs">
+      <DependentUpon>DreamPatcher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Subforms\Exhibition.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,7 +112,7 @@
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -105,6 +121,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Subforms\DreamPatcher.resx">
+      <DependentUpon>DreamPatcher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Subforms\Exhibition.resx">
       <DependentUpon>Exhibition.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +142,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\VillageData\encyclo.bin" />
+    <None Include="Resources\VillageData\exi_empty_data.bin" />
+    <None Include="Resources\VillageData\friend_empty_data.bin" />
+    <None Include="Resources\VillageData\Museum.bin" />
     <None Include="Resources\VillageData\type.bin" />
     <None Include="Resources\VillageData\VillagerBin\acnl_v_000.bin" />
     <None Include="Resources\VillageData\VillagerBin\acnl_v_001.bin" />
@@ -457,6 +480,72 @@
     <None Include="Resources\VillageData\VillagerBin\acnl_v_330.bin" />
     <None Include="Resources\VillageData\VillagerBin\acnl_v_331.bin" />
     <None Include="Resources\VillageData\VillagerBin\acnl_v_332.bin" />
+    <EmbeddedResource Include="Resources\VillageData\VillagerBin\acnl_v_333.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_334.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_335.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_336.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_337.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_338.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_339.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_340.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_341.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_342.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_343.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_344.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_345.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_346.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_347.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_348.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_349.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_350.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_351.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_352.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_353.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_354.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_355.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_356.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_357.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_358.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_359.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_360.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_361.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_362.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_363.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_364.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_365.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_366.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_367.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_368.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_369.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_370.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_371.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_372.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_373.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_374.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_375.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_376.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_377.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_378.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_379.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_380.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_381.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_382.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_383.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_384.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_385.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_386.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_387.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_388.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_389.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_390.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_391.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_392.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_393.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_394.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_395.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_396.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_397.bin" />
+    <None Include="Resources\VillageData\VillagerBin\acnl_v_398.bin" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -1020,13 +1109,645 @@
     <None Include="Resources\VillageData\name_en.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\text\buildings_en.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\text\building_en.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img\acre\acre_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_154.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_163.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_165.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_168.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_169.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_172.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_173.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_174.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_175.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_176.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_177.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_178.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_179.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_205.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_206.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_208.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_209.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_213.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\acre\acre_214.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text\SeafoodNames_en.txt" />
+    <None Include="Resources\text\FishNames_en.txt" />
+    <None Include="Resources\text\InsectName_en.txt" />
+    <None Include="Resources\text\ProjectList_en.txt" />
+    <None Include="Resources\text\KKSong_en.txt" />
+    <None Include="Resources\text\MuseumInsectNames.txt" />
+    <None Include="Resources\text\MuseumFishNames.txt" />
+    <None Include="Resources\text\MuseumDinoNames.txt" />
+    <None Include="Resources\text\MuseumArtNames.txt" />
+    <None Include="Resources\img\player_head\nothing.png" />
+    <None Include="Resources\img\player_head\hair_M-16.png" />
+    <None Include="Resources\img\player_head\hair_M-15.png" />
+    <None Include="Resources\img\player_head\hair_M-14.png" />
+    <None Include="Resources\img\player_head\hair_M-13.png" />
+    <None Include="Resources\img\player_head\hair_M-12.png" />
+    <None Include="Resources\img\player_head\hair_M-11.png" />
+    <None Include="Resources\img\player_head\hair_M-10.png" />
+    <None Include="Resources\img\player_head\hair_M-9.png" />
+    <None Include="Resources\img\player_head\hair_M-8.png" />
+    <None Include="Resources\img\player_head\hair_M-7.png" />
+    <None Include="Resources\img\player_head\hair_M-6.png" />
+    <None Include="Resources\img\player_head\hair_M-5.png" />
+    <None Include="Resources\img\player_head\hair_M-4.png" />
+    <None Include="Resources\img\player_head\hair_M-3.png" />
+    <None Include="Resources\img\player_head\hair_M-2.png" />
+    <None Include="Resources\img\player_head\hair_M-1.png" />
+    <None Include="Resources\img\player_head\hair_F-16.png" />
+    <None Include="Resources\img\player_head\hair_F-15.png" />
+    <None Include="Resources\img\player_head\hair_F-14.png" />
+    <None Include="Resources\img\player_head\hair_F-13.png" />
+    <None Include="Resources\img\player_head\hair_F-12.png" />
+    <None Include="Resources\img\player_head\hair_F-11.png" />
+    <None Include="Resources\img\player_head\hair_F-10.png" />
+    <None Include="Resources\img\player_head\hair_F-9.png" />
+    <None Include="Resources\img\player_head\hair_F-8.png" />
+    <None Include="Resources\img\player_head\hair_F-7.png" />
+    <None Include="Resources\img\player_head\hair_F-6.png" />
+    <None Include="Resources\img\player_head\hair_F-5.png" />
+    <None Include="Resources\img\player_head\hair_F-4.png" />
+    <None Include="Resources\img\player_head\hair_F-3.png" />
+    <None Include="Resources\img\player_head\hair_F-2.png" />
+    <None Include="Resources\img\player_head\hair_F-1.png" />
+    <None Include="Resources\img\player_faces\face_M-12.png" />
+    <None Include="Resources\img\player_faces\face_M-11.png" />
+    <None Include="Resources\img\player_faces\face_M-10.png" />
+    <None Include="Resources\img\player_faces\face_M-9.png" />
+    <None Include="Resources\img\player_faces\face_M-8.png" />
+    <None Include="Resources\img\player_faces\face_M-7.png" />
+    <None Include="Resources\img\player_faces\face_M-6.png" />
+    <None Include="Resources\img\player_faces\face_M-5.png" />
+    <None Include="Resources\img\player_faces\face_M-4.png" />
+    <None Include="Resources\img\player_faces\face_M-3.png" />
+    <None Include="Resources\img\player_faces\face_M-2.png" />
+    <None Include="Resources\img\player_faces\face_M-1.png" />
+    <None Include="Resources\img\player_faces\face_F-12.png" />
+    <None Include="Resources\img\player_faces\face_F-11.png" />
+    <None Include="Resources\img\player_faces\face_F-10.png" />
+    <None Include="Resources\img\player_faces\face_F-9.png" />
+    <None Include="Resources\img\player_faces\face_F-8.png" />
+    <None Include="Resources\img\player_faces\face_F-7.png" />
+    <None Include="Resources\img\player_faces\face_F-6.png" />
+    <None Include="Resources\img\player_faces\face_F-5.png" />
+    <None Include="Resources\img\player_faces\face_F-4.png" />
+    <None Include="Resources\img\player_faces\face_F-3.png" />
+    <None Include="Resources\img\player_faces\face_F-2.png" />
+    <None Include="Resources\img\player_faces\face_F-1.png" />
+    <None Include="Resources\img\no_tpc.png" />
+    <None Include="Resources\img\villager\villager_398.jpg" />
+    <None Include="Resources\img\villager\villager_397.jpg" />
+    <None Include="Resources\img\villager\villager_396.jpg" />
+    <None Include="Resources\img\villager\villager_395.jpg" />
+    <None Include="Resources\img\villager\villager_394.jpg" />
+    <None Include="Resources\img\villager\villager_393.jpg" />
+    <None Include="Resources\img\villager\villager_392.jpg" />
+    <None Include="Resources\img\villager\villager_391.jpg" />
+    <None Include="Resources\img\villager\villager_390.jpg" />
+    <None Include="Resources\img\villager\villager_389.jpg" />
+    <None Include="Resources\img\villager\villager_388.jpg" />
+    <None Include="Resources\img\villager\villager_387.jpg" />
+    <None Include="Resources\img\villager\villager_386.jpg" />
+    <None Include="Resources\img\villager\villager_385.jpg" />
+    <None Include="Resources\img\villager\villager_384.jpg" />
+    <None Include="Resources\img\villager\villager_383.jpg" />
+    <None Include="Resources\img\villager\villager_382.jpg" />
+    <None Include="Resources\img\villager\villager_381.jpg" />
+    <None Include="Resources\img\villager\villager_380.jpg" />
+    <None Include="Resources\img\villager\villager_379.jpg" />
+    <None Include="Resources\img\villager\villager_378.jpg" />
+    <None Include="Resources\img\villager\villager_377.jpg" />
+    <None Include="Resources\img\villager\villager_376.jpg" />
+    <None Include="Resources\img\villager\villager_375.jpg" />
+    <None Include="Resources\img\villager\villager_374.jpg" />
+    <None Include="Resources\img\villager\villager_373.jpg" />
+    <None Include="Resources\img\villager\villager_372.jpg" />
+    <None Include="Resources\img\villager\villager_371.jpg" />
+    <None Include="Resources\img\villager\villager_370.jpg" />
+    <None Include="Resources\img\villager\villager_369.jpg" />
+    <None Include="Resources\img\villager\villager_368.jpg" />
+    <None Include="Resources\img\villager\villager_367.jpg" />
+    <None Include="Resources\img\villager\villager_366.jpg" />
+    <None Include="Resources\img\villager\villager_365.jpg" />
+    <None Include="Resources\img\villager\villager_364.jpg" />
+    <None Include="Resources\img\villager\villager_363.jpg" />
+    <None Include="Resources\img\villager\villager_362.jpg" />
+    <None Include="Resources\img\villager\villager_361.jpg" />
+    <None Include="Resources\img\villager\villager_360.jpg" />
+    <None Include="Resources\img\villager\villager_359.jpg" />
+    <None Include="Resources\img\villager\villager_358.jpg" />
+    <None Include="Resources\img\villager\villager_357.jpg" />
+    <None Include="Resources\img\villager\villager_356.jpg" />
+    <None Include="Resources\img\villager\villager_355.jpg" />
+    <None Include="Resources\img\villager\villager_354.jpg" />
+    <None Include="Resources\img\villager\villager_353.jpg" />
+    <None Include="Resources\img\villager\villager_352.jpg" />
+    <None Include="Resources\img\villager\villager_351.jpg" />
+    <None Include="Resources\img\villager\villager_350.jpg" />
+    <None Include="Resources\img\villager\villager_349.jpg" />
+    <None Include="Resources\img\villager\villager_348.jpg" />
+    <None Include="Resources\img\villager\villager_347.jpg" />
+    <None Include="Resources\img\villager\villager_346.jpg" />
+    <None Include="Resources\img\villager\villager_345.jpg" />
+    <None Include="Resources\img\villager\villager_344.jpg" />
+    <None Include="Resources\img\villager\villager_343.jpg" />
+    <None Include="Resources\img\villager\villager_342.jpg" />
+    <None Include="Resources\img\villager\villager_341.jpg" />
+    <None Include="Resources\img\villager\villager_340.jpg" />
+    <None Include="Resources\img\villager\villager_339.jpg" />
+    <None Include="Resources\img\villager\villager_338.jpg" />
+    <None Include="Resources\img\villager\villager_337.jpg" />
+    <None Include="Resources\img\villager\villager_336.jpg" />
+    <None Include="Resources\img\villager\villager_335.jpg" />
+    <None Include="Resources\img\villager\villager_334.jpg" />
+    <None Include="Resources\img\villager\villager_333.jpg" />
+    <None Include="Resources\img\villager\villager_332.jpg" />
+    <None Include="Resources\img\villager\villager_331.jpg" />
+    <None Include="Resources\img\villager\villager_330.jpg" />
+    <None Include="Resources\img\villager\villager_329.jpg" />
+    <None Include="Resources\img\villager\villager_328.jpg" />
+    <None Include="Resources\img\villager\villager_327.jpg" />
+    <None Include="Resources\img\villager\villager_326.jpg" />
+    <None Include="Resources\img\villager\villager_325.jpg" />
+    <None Include="Resources\img\villager\villager_324.jpg" />
+    <None Include="Resources\img\villager\villager_323.jpg" />
+    <None Include="Resources\img\villager\villager_322.jpg" />
+    <None Include="Resources\img\villager\villager_321.jpg" />
+    <None Include="Resources\img\villager\villager_320.jpg" />
+    <None Include="Resources\img\villager\villager_319.jpg" />
+    <None Include="Resources\img\villager\villager_318.jpg" />
+    <None Include="Resources\img\villager\villager_317.jpg" />
+    <None Include="Resources\img\villager\villager_316.jpg" />
+    <None Include="Resources\img\villager\villager_315.jpg" />
+    <None Include="Resources\img\villager\villager_314.jpg" />
+    <None Include="Resources\img\villager\villager_313.jpg" />
+    <None Include="Resources\img\villager\villager_312.jpg" />
+    <None Include="Resources\img\villager\villager_311.jpg" />
+    <None Include="Resources\img\villager\villager_310.jpg" />
+    <None Include="Resources\img\villager\villager_309.jpg" />
+    <None Include="Resources\img\villager\villager_308.jpg" />
+    <None Include="Resources\img\villager\villager_307.jpg" />
+    <None Include="Resources\img\villager\villager_306.jpg" />
+    <None Include="Resources\img\villager\villager_305.jpg" />
+    <None Include="Resources\img\villager\villager_304.jpg" />
+    <None Include="Resources\img\villager\villager_303.jpg" />
+    <None Include="Resources\img\villager\villager_302.jpg" />
+    <None Include="Resources\img\villager\villager_301.jpg" />
+    <None Include="Resources\img\villager\villager_300.jpg" />
+    <None Include="Resources\img\villager\villager_299.jpg" />
+    <None Include="Resources\img\villager\villager_298.jpg" />
+    <None Include="Resources\img\villager\villager_297.jpg" />
+    <None Include="Resources\img\villager\villager_296.jpg" />
+    <None Include="Resources\img\villager\villager_295.jpg" />
+    <None Include="Resources\img\villager\villager_294.jpg" />
+    <None Include="Resources\img\villager\villager_293.jpg" />
+    <None Include="Resources\img\villager\villager_292.jpg" />
+    <None Include="Resources\img\villager\villager_291.jpg" />
+    <None Include="Resources\img\villager\villager_290.jpg" />
+    <None Include="Resources\img\villager\villager_289.jpg" />
+    <None Include="Resources\img\villager\villager_288.jpg" />
+    <None Include="Resources\img\villager\villager_287.jpg" />
+    <None Include="Resources\img\villager\villager_286.jpg" />
+    <None Include="Resources\img\villager\villager_285.jpg" />
+    <None Include="Resources\img\villager\villager_284.jpg" />
+    <None Include="Resources\img\villager\villager_283.jpg" />
+    <None Include="Resources\img\villager\villager_282.jpg" />
+    <None Include="Resources\img\villager\villager_281.jpg" />
+    <None Include="Resources\img\villager\villager_280.jpg" />
+    <None Include="Resources\img\villager\villager_279.jpg" />
+    <None Include="Resources\img\villager\villager_278.jpg" />
+    <None Include="Resources\img\villager\villager_277.jpg" />
+    <None Include="Resources\img\villager\villager_276.jpg" />
+    <None Include="Resources\img\villager\villager_275.jpg" />
+    <None Include="Resources\img\villager\villager_274.jpg" />
+    <None Include="Resources\img\villager\villager_273.jpg" />
+    <None Include="Resources\img\villager\villager_272.jpg" />
+    <None Include="Resources\img\villager\villager_271.jpg" />
+    <None Include="Resources\img\villager\villager_270.jpg" />
+    <None Include="Resources\img\villager\villager_269.jpg" />
+    <None Include="Resources\img\villager\villager_268.jpg" />
+    <None Include="Resources\img\villager\villager_267.jpg" />
+    <None Include="Resources\img\villager\villager_266.jpg" />
+    <None Include="Resources\img\villager\villager_265.jpg" />
+    <None Include="Resources\img\villager\villager_264.jpg" />
+    <None Include="Resources\img\villager\villager_263.jpg" />
+    <None Include="Resources\img\villager\villager_262.jpg" />
+    <None Include="Resources\img\villager\villager_261.jpg" />
+    <None Include="Resources\img\villager\villager_260.jpg" />
+    <None Include="Resources\img\villager\villager_259.jpg" />
+    <None Include="Resources\img\villager\villager_258.jpg" />
+    <None Include="Resources\img\villager\villager_257.jpg" />
+    <None Include="Resources\img\villager\villager_256.jpg" />
+    <None Include="Resources\img\villager\villager_255.jpg" />
+    <None Include="Resources\img\villager\villager_254.jpg" />
+    <None Include="Resources\img\villager\villager_253.jpg" />
+    <None Include="Resources\img\villager\villager_252.jpg" />
+    <None Include="Resources\img\villager\villager_251.jpg" />
+    <None Include="Resources\img\villager\villager_250.jpg" />
+    <None Include="Resources\img\villager\villager_249.jpg" />
+    <None Include="Resources\img\villager\villager_248.jpg" />
+    <None Include="Resources\img\villager\villager_247.jpg" />
+    <None Include="Resources\img\villager\villager_246.jpg" />
+    <None Include="Resources\img\villager\villager_245.jpg" />
+    <None Include="Resources\img\villager\villager_244.jpg" />
+    <None Include="Resources\img\villager\villager_243.jpg" />
+    <None Include="Resources\img\villager\villager_242.jpg" />
+    <None Include="Resources\img\villager\villager_241.jpg" />
+    <None Include="Resources\img\villager\villager_240.jpg" />
+    <None Include="Resources\img\villager\villager_239.jpg" />
+    <None Include="Resources\img\villager\villager_238.jpg" />
+    <None Include="Resources\img\villager\villager_237.jpg" />
+    <None Include="Resources\img\villager\villager_236.jpg" />
+    <None Include="Resources\img\villager\villager_235.jpg" />
+    <None Include="Resources\img\villager\villager_234.jpg" />
+    <None Include="Resources\img\villager\villager_233.jpg" />
+    <None Include="Resources\img\villager\villager_232.jpg" />
+    <None Include="Resources\img\villager\villager_231.jpg" />
+    <None Include="Resources\img\villager\villager_230.jpg" />
+    <None Include="Resources\img\villager\villager_229.jpg" />
+    <None Include="Resources\img\villager\villager_228.jpg" />
+    <None Include="Resources\img\villager\villager_227.jpg" />
+    <None Include="Resources\img\villager\villager_226.jpg" />
+    <None Include="Resources\img\villager\villager_225.jpg" />
+    <None Include="Resources\img\villager\villager_224.jpg" />
+    <None Include="Resources\img\villager\villager_223.jpg" />
+    <None Include="Resources\img\villager\villager_222.jpg" />
+    <None Include="Resources\img\villager\villager_221.jpg" />
+    <None Include="Resources\img\villager\villager_220.jpg" />
+    <None Include="Resources\img\villager\villager_219.jpg" />
+    <None Include="Resources\img\villager\villager_218.jpg" />
+    <None Include="Resources\img\villager\villager_217.jpg" />
+    <None Include="Resources\img\villager\villager_216.jpg" />
+    <None Include="Resources\img\villager\villager_215.jpg" />
+    <None Include="Resources\img\villager\villager_214.jpg" />
+    <None Include="Resources\img\villager\villager_213.jpg" />
+    <None Include="Resources\img\villager\villager_212.jpg" />
+    <None Include="Resources\img\villager\villager_211.jpg" />
+    <None Include="Resources\img\villager\villager_210.jpg" />
+    <None Include="Resources\img\villager\villager_209.jpg" />
+    <None Include="Resources\img\villager\villager_208.jpg" />
+    <None Include="Resources\img\villager\villager_207.jpg" />
+    <None Include="Resources\img\villager\villager_206.jpg" />
+    <None Include="Resources\img\villager\villager_205.jpg" />
+    <None Include="Resources\img\villager\villager_204.jpg" />
+    <None Include="Resources\img\villager\villager_203.jpg" />
+    <None Include="Resources\img\villager\villager_202.jpg" />
+    <None Include="Resources\img\villager\villager_201.jpg" />
+    <None Include="Resources\img\villager\villager_200.jpg" />
+    <None Include="Resources\img\villager\villager_199.jpg" />
+    <None Include="Resources\img\villager\villager_198.jpg" />
+    <None Include="Resources\img\villager\villager_197.jpg" />
+    <None Include="Resources\img\villager\villager_196.jpg" />
+    <None Include="Resources\img\villager\villager_195.jpg" />
+    <None Include="Resources\img\villager\villager_194.jpg" />
+    <None Include="Resources\img\villager\villager_193.jpg" />
+    <None Include="Resources\img\villager\villager_192.jpg" />
+    <None Include="Resources\img\villager\villager_191.jpg" />
+    <None Include="Resources\img\villager\villager_190.jpg" />
+    <None Include="Resources\img\villager\villager_189.jpg" />
+    <None Include="Resources\img\villager\villager_188.jpg" />
+    <None Include="Resources\img\villager\villager_187.jpg" />
+    <None Include="Resources\img\villager\villager_186.jpg" />
+    <None Include="Resources\img\villager\villager_185.jpg" />
+    <None Include="Resources\img\villager\villager_184.jpg" />
+    <None Include="Resources\img\villager\villager_183.jpg" />
+    <None Include="Resources\img\villager\villager_182.jpg" />
+    <None Include="Resources\img\villager\villager_181.jpg" />
+    <None Include="Resources\img\villager\villager_180.jpg" />
+    <None Include="Resources\img\villager\villager_179.jpg" />
+    <None Include="Resources\img\villager\villager_178.jpg" />
+    <None Include="Resources\img\villager\villager_177.jpg" />
+    <None Include="Resources\img\villager\villager_176.jpg" />
+    <None Include="Resources\img\villager\villager_175.jpg" />
+    <None Include="Resources\img\villager\villager_174.jpg" />
+    <None Include="Resources\img\villager\villager_173.jpg" />
+    <None Include="Resources\img\villager\villager_172.jpg" />
+    <None Include="Resources\img\villager\villager_171.jpg" />
+    <None Include="Resources\img\villager\villager_170.jpg" />
+    <None Include="Resources\img\villager\villager_169.jpg" />
+    <None Include="Resources\img\villager\villager_168.jpg" />
+    <None Include="Resources\img\villager\villager_167.jpg" />
+    <None Include="Resources\img\villager\villager_166.jpg" />
+    <None Include="Resources\img\villager\villager_165.jpg" />
+    <None Include="Resources\img\villager\villager_164.jpg" />
+    <None Include="Resources\img\villager\villager_163.jpg" />
+    <None Include="Resources\img\villager\villager_162.jpg" />
+    <None Include="Resources\img\villager\villager_161.jpg" />
+    <None Include="Resources\img\villager\villager_160.jpg" />
+    <None Include="Resources\img\villager\villager_159.jpg" />
+    <None Include="Resources\img\villager\villager_158.jpg" />
+    <None Include="Resources\img\villager\villager_157.jpg" />
+    <None Include="Resources\img\villager\villager_156.jpg" />
+    <None Include="Resources\img\villager\villager_155.jpg" />
+    <None Include="Resources\img\villager\villager_154.jpg" />
+    <None Include="Resources\img\villager\villager_153.jpg" />
+    <None Include="Resources\img\villager\villager_152.jpg" />
+    <None Include="Resources\img\villager\villager_151.jpg" />
+    <None Include="Resources\img\villager\villager_150.jpg" />
+    <None Include="Resources\img\villager\villager_149.jpg" />
+    <None Include="Resources\img\villager\villager_148.jpg" />
+    <None Include="Resources\img\villager\villager_147.jpg" />
+    <None Include="Resources\img\villager\villager_146.jpg" />
+    <None Include="Resources\img\villager\villager_145.jpg" />
+    <None Include="Resources\img\villager\villager_144.jpg" />
+    <None Include="Resources\img\villager\villager_143.jpg" />
+    <None Include="Resources\img\villager\villager_142.jpg" />
+    <None Include="Resources\img\villager\villager_141.jpg" />
+    <None Include="Resources\img\villager\villager_140.jpg" />
+    <None Include="Resources\img\villager\villager_139.jpg" />
+    <None Include="Resources\img\villager\villager_138.jpg" />
+    <None Include="Resources\img\villager\villager_137.jpg" />
+    <None Include="Resources\img\villager\villager_136.jpg" />
+    <None Include="Resources\img\villager\villager_135.jpg" />
+    <None Include="Resources\img\villager\villager_134.jpg" />
+    <None Include="Resources\img\villager\villager_133.jpg" />
+    <None Include="Resources\img\villager\villager_132.jpg" />
+    <None Include="Resources\img\villager\villager_131.jpg" />
+    <None Include="Resources\img\villager\villager_130.jpg" />
+    <None Include="Resources\img\villager\villager_129.jpg" />
+    <None Include="Resources\img\villager\villager_128.jpg" />
+    <None Include="Resources\img\villager\villager_127.jpg" />
+    <None Include="Resources\img\villager\villager_126.jpg" />
+    <None Include="Resources\img\villager\villager_125.jpg" />
+    <None Include="Resources\img\villager\villager_124.jpg" />
+    <None Include="Resources\img\villager\villager_123.jpg" />
+    <None Include="Resources\img\villager\villager_122.jpg" />
+    <None Include="Resources\img\villager\villager_121.jpg" />
+    <None Include="Resources\img\villager\villager_120.jpg" />
+    <None Include="Resources\img\villager\villager_119.jpg" />
+    <None Include="Resources\img\villager\villager_118.jpg" />
+    <None Include="Resources\img\villager\villager_117.jpg" />
+    <None Include="Resources\img\villager\villager_116.jpg" />
+    <None Include="Resources\img\villager\villager_115.jpg" />
+    <None Include="Resources\img\villager\villager_114.jpg" />
+    <None Include="Resources\img\villager\villager_113.jpg" />
+    <None Include="Resources\img\villager\villager_112.jpg" />
+    <None Include="Resources\img\villager\villager_111.jpg" />
+    <None Include="Resources\img\villager\villager_110.jpg" />
+    <None Include="Resources\img\villager\villager_109.jpg" />
+    <None Include="Resources\img\villager\villager_108.jpg" />
+    <None Include="Resources\img\villager\villager_107.jpg" />
+    <None Include="Resources\img\villager\villager_106.jpg" />
+    <None Include="Resources\img\villager\villager_105.jpg" />
+    <None Include="Resources\img\villager\villager_104.jpg" />
+    <None Include="Resources\img\villager\villager_103.jpg" />
+    <None Include="Resources\img\villager\villager_102.jpg" />
+    <None Include="Resources\img\villager\villager_101.jpg" />
+    <None Include="Resources\img\villager\villager_100.jpg" />
+    <None Include="Resources\img\villager\villager_99.jpg" />
+    <None Include="Resources\img\villager\villager_98.jpg" />
+    <None Include="Resources\img\villager\villager_97.jpg" />
+    <None Include="Resources\img\villager\villager_96.jpg" />
+    <None Include="Resources\img\villager\villager_95.jpg" />
+    <None Include="Resources\img\villager\villager_94.jpg" />
+    <None Include="Resources\img\villager\villager_93.jpg" />
+    <None Include="Resources\img\villager\villager_92.jpg" />
+    <None Include="Resources\img\villager\villager_91.jpg" />
+    <None Include="Resources\img\villager\villager_90.jpg" />
+    <None Include="Resources\img\villager\villager_89.jpg" />
+    <None Include="Resources\img\villager\villager_88.jpg" />
+    <None Include="Resources\img\villager\villager_87.jpg" />
+    <None Include="Resources\img\villager\villager_86.jpg" />
+    <None Include="Resources\img\villager\villager_85.jpg" />
+    <None Include="Resources\img\villager\villager_84.jpg" />
+    <None Include="Resources\img\villager\villager_83.jpg" />
+    <None Include="Resources\img\villager\villager_82.jpg" />
+    <None Include="Resources\img\villager\villager_81.jpg" />
+    <None Include="Resources\img\villager\villager_80.jpg" />
+    <None Include="Resources\img\villager\villager_79.jpg" />
+    <None Include="Resources\img\villager\villager_78.jpg" />
+    <None Include="Resources\img\villager\villager_77.jpg" />
+    <None Include="Resources\img\villager\villager_76.jpg" />
+    <None Include="Resources\img\villager\villager_75.jpg" />
+    <None Include="Resources\img\villager\villager_74.jpg" />
+    <None Include="Resources\img\villager\villager_73.jpg" />
+    <None Include="Resources\img\villager\villager_72.jpg" />
+    <None Include="Resources\img\villager\villager_71.jpg" />
+    <None Include="Resources\img\villager\villager_70.jpg" />
+    <None Include="Resources\img\villager\villager_69.jpg" />
+    <None Include="Resources\img\villager\villager_68.jpg" />
+    <None Include="Resources\img\villager\villager_67.jpg" />
+    <None Include="Resources\img\villager\villager_66.jpg" />
+    <None Include="Resources\img\villager\villager_65.jpg" />
+    <None Include="Resources\img\villager\villager_64.jpg" />
+    <None Include="Resources\img\villager\villager_63.jpg" />
+    <None Include="Resources\img\villager\villager_62.jpg" />
+    <None Include="Resources\img\villager\villager_61.jpg" />
+    <None Include="Resources\img\villager\villager_60.jpg" />
+    <None Include="Resources\img\villager\villager_59.jpg" />
+    <None Include="Resources\img\villager\villager_58.jpg" />
+    <None Include="Resources\img\villager\villager_57.jpg" />
+    <None Include="Resources\img\villager\villager_56.jpg" />
+    <None Include="Resources\img\villager\villager_55.jpg" />
+    <None Include="Resources\img\villager\villager_54.jpg" />
+    <None Include="Resources\img\villager\villager_53.jpg" />
+    <None Include="Resources\img\villager\villager_52.jpg" />
+    <None Include="Resources\img\villager\villager_51.jpg" />
+    <None Include="Resources\img\villager\villager_50.jpg" />
+    <None Include="Resources\img\villager\villager_49.jpg" />
+    <None Include="Resources\img\villager\villager_48.jpg" />
+    <None Include="Resources\img\villager\villager_47.jpg" />
+    <None Include="Resources\img\villager\villager_46.jpg" />
+    <None Include="Resources\img\villager\villager_45.jpg" />
+    <None Include="Resources\img\villager\villager_44.jpg" />
+    <None Include="Resources\img\villager\villager_43.jpg" />
+    <None Include="Resources\img\villager\villager_42.jpg" />
+    <None Include="Resources\img\villager\villager_41.jpg" />
+    <None Include="Resources\img\villager\villager_40.jpg" />
+    <None Include="Resources\img\villager\villager_39.jpg" />
+    <None Include="Resources\img\villager\villager_38.jpg" />
+    <None Include="Resources\img\villager\villager_37.jpg" />
+    <None Include="Resources\img\villager\villager_36.jpg" />
+    <None Include="Resources\img\villager\villager_35.jpg" />
+    <None Include="Resources\img\villager\villager_34.jpg" />
+    <None Include="Resources\img\villager\villager_33.jpg" />
+    <None Include="Resources\img\villager\villager_32.jpg" />
+    <None Include="Resources\img\villager\villager_31.jpg" />
+    <None Include="Resources\img\villager\villager_30.jpg" />
+    <None Include="Resources\img\villager\villager_29.jpg" />
+    <None Include="Resources\img\villager\villager_28.jpg" />
+    <None Include="Resources\img\villager\villager_27.jpg" />
+    <None Include="Resources\img\villager\villager_26.jpg" />
+    <None Include="Resources\img\villager\villager_25.jpg" />
+    <None Include="Resources\img\villager\villager_24.jpg" />
+    <None Include="Resources\img\villager\villager_23.jpg" />
+    <None Include="Resources\img\villager\villager_22.jpg" />
+    <None Include="Resources\img\villager\villager_21.jpg" />
+    <None Include="Resources\img\villager\villager_20.jpg" />
+    <None Include="Resources\img\villager\villager_19.jpg" />
+    <None Include="Resources\img\villager\villager_18.jpg" />
+    <None Include="Resources\img\villager\villager_17.jpg" />
+    <None Include="Resources\img\villager\villager_16.jpg" />
+    <None Include="Resources\img\villager\villager_15.jpg" />
+    <None Include="Resources\img\villager\villager_14.jpg" />
+    <None Include="Resources\img\villager\villager_13.jpg" />
+    <None Include="Resources\img\villager\villager_12.jpg" />
+    <None Include="Resources\img\villager\villager_11.jpg" />
+    <None Include="Resources\img\villager\villager_10.jpg" />
+    <None Include="Resources\img\villager\villager_9.jpg" />
+    <None Include="Resources\img\villager\villager_8.jpg" />
+    <None Include="Resources\img\villager\villager_7.jpg" />
+    <None Include="Resources\img\villager\villager_6.jpg" />
+    <None Include="Resources\img\villager\villager_5.jpg" />
+    <None Include="Resources\img\villager\villager_4.jpg" />
+    <None Include="Resources\img\villager\villager_3.jpg" />
+    <None Include="Resources\img\villager\villager_2.jpg" />
+    <None Include="Resources\img\villager\villager_1.jpg" />
+    <None Include="Resources\img\villager\villager_0.jpg" />
+    <None Include="Resources\img\badge\VST_3.png" />
+    <None Include="Resources\img\badge\VST_2.png" />
+    <None Include="Resources\img\badge\VST_1.png" />
+    <None Include="Resources\img\badge\TRN_3.png" />
+    <None Include="Resources\img\badge\TRN_2.png" />
+    <None Include="Resources\img\badge\TRN_1.png" />
+    <None Include="Resources\img\badge\STP_3.png" />
+    <None Include="Resources\img\badge\STP_2.png" />
+    <None Include="Resources\img\badge\STP_1.png" />
+    <None Include="Resources\img\badge\RNV_3.png" />
+    <None Include="Resources\img\badge\RNV_2.png" />
+    <None Include="Resources\img\badge\RNV_1.png" />
+    <None Include="Resources\img\badge\PSO_3.png" />
+    <None Include="Resources\img\badge\PSO_2.png" />
+    <None Include="Resources\img\badge\PSO_1.png" />
+    <None Include="Resources\img\badge\PLP_3.png" />
+    <None Include="Resources\img\badge\PLP_2.png" />
+    <None Include="Resources\img\badge\PLP_1.png" />
+    <None Include="Resources\img\badge\PLG_3.png" />
+    <None Include="Resources\img\badge\PLG_2.png" />
+    <None Include="Resources\img\badge\PLG_1.png" />
+    <None Include="Resources\img\badge\empty.png" />
+    <None Include="Resources\img\badge\ARB_1.png" />
+    <None Include="Resources\img\badge\ARB_2.png" />
+    <None Include="Resources\img\badge\ARB_3.png" />
+    <None Include="Resources\img\badge\BLO_1.png" />
+    <None Include="Resources\img\badge\BLO_2.png" />
+    <None Include="Resources\img\badge\BLO_3.png" />
+    <None Include="Resources\img\badge\CDY_1.png" />
+    <None Include="Resources\img\badge\CDY_2.png" />
+    <None Include="Resources\img\badge\CDY_3.png" />
+    <None Include="Resources\img\badge\CLO_1.png" />
+    <None Include="Resources\img\badge\CLO_2.png" />
+    <None Include="Resources\img\badge\CLO_3.png" />
+    <None Include="Resources\img\badge\CRN_1.png" />
+    <None Include="Resources\img\badge\CRN_2.png" />
+    <None Include="Resources\img\badge\CRN_3.png" />
+    <None Include="Resources\img\badge\CTL_1.png" />
+    <None Include="Resources\img\badge\CTL_2.png" />
+    <None Include="Resources\img\badge\CTL_3.png" />
+    <None Include="Resources\img\badge\FLR_1.png" />
+    <None Include="Resources\img\badge\FLR_2.png" />
+    <None Include="Resources\img\badge\FLR_3.png" />
+    <None Include="Resources\img\badge\FLT_1.png" />
+    <None Include="Resources\img\badge\FLT_2.png" />
+    <None Include="Resources\img\badge\FLT_3.png" />
+    <None Include="Resources\img\badge\HRT_1.png" />
+    <None Include="Resources\img\badge\HRT_2.png" />
+    <None Include="Resources\img\badge\HRT_3.png" />
+    <None Include="Resources\img\badge\INS_1.png" />
+    <None Include="Resources\img\badge\INS_2.png" />
+    <None Include="Resources\img\badge\INS_3.png" />
+    <None Include="Resources\img\badge\ISL_1.png" />
+    <None Include="Resources\img\badge\ISL_2.png" />
+    <None Include="Resources\img\badge\ISL_3.png" />
+    <None Include="Resources\img\badge\KKG_1.png" />
+    <None Include="Resources\img\badge\KKG_2.png" />
+    <None Include="Resources\img\badge\KKG_3.png" />
+    <None Include="Resources\img\badge\LTR_1.png" />
+    <None Include="Resources\img\badge\LTR_2.png" />
+    <None Include="Resources\img\badge\LTR_3.png" />
+    <None Include="Resources\img\badge\MSN_1.png" />
+    <None Include="Resources\img\badge\MSN_2.png" />
+    <None Include="Resources\img\badge\MSN_3.png" />
+    <None Include="Resources\img\badge\MVH_1.png" />
+    <None Include="Resources\img\badge\MVH_2.png" />
+    <None Include="Resources\img\badge\MVH_3.png" />
+    <None Include="Resources\img\badge\NVT_1.png" />
+    <None Include="Resources\img\badge\NVT_2.png" />
+    <None Include="Resources\img\badge\NVT_3.png" />
+    <Content Include="Favicon.ico" />
+    <Content Include="Resources\img\badge\PCH_1.png" />
+    <Content Include="Resources\img\badge\PCH_2.png" />
+    <Content Include="Resources\img\badge\PCH_3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
